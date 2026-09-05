@@ -1,0 +1,3 @@
+[submodule "baselines/memesuite-lite"]
+	path = baselines/memesuite-lite
+	url = https://github.com/jmschrei/memesuite-lite.git
