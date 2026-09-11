@@ -40,9 +40,9 @@ python -m experiments.run_m1 --config configs/m1_demo.yaml
 
 该命令会生成清洗后的 TSV/FASTA、序列打乱背景、质量报告、分组统计、位置碱基组成和 PNG 图形。将配置中的 `input` 替换为经来源审计的真实 metadata 表后，可复用同一流程。
 
-问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)，简洁汇报稿见 [`reports/M1问题建模汇报稿.md`](reports/M1问题建模汇报稿.md)。
+问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)。
 
-第一阶段课堂汇报可直接使用 [`reports/M1建模阶段汇报材料_20260911.md`](reports/M1建模阶段汇报材料_20260911.md)，其中包含 6 页逐页文案、3–4 分钟讲稿和答辩问答。
+第一阶段课堂汇报统一使用 [`reports/M1建模阶段汇报材料_20260911.md`](reports/M1建模阶段汇报材料_20260911.md)，每一页同时包含页面内容、讲解提示、展示建议和备查问题，不另列演讲稿。
 
 后续真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。运行 `python -m experiments.preflight --output tmp/preflight.json` 可检查当前环境是否具备 MEME Suite 主线工具。
 
