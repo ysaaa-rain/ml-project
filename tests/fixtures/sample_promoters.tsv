@@ -1,0 +1,9 @@
+sequence_id	species	source_dataset	sequence	sigma_factor_type	evidence_level	promoter_strength
+ecoli_001	Escherichia coli	regulondb	TTGACAACGCGTATATATGCGTATAATGCGC	RpoD	experimental	0.80
+ecoli_002	Escherichia coli	regulondb	TTGACAGGCGTATATATGCGTATAATGCCC	RpoD	experimental	0.72
+ecoli_003	Escherichia coli	regulondb	TTGATAGGCGTATATATGCGTATAATGCCC	RpoD	inferred	0.61
+ecoli_004	Escherichia coli	regulondb	CCGACAAGCGTATATATGCGTATAATGAAA	RpoS	experimental	0.55
+bacillus_001	Bacillus subtilis	dbtbs	TTGAAAACGCGTATATATGCGTATAATGTT	SigA	experimental	0.77
+bacillus_002	Bacillus subtilis	dbtbs	TTGAAAACGCGTATATATGCGTATAATGTT	SigA	experimental	0.77
+bacillus_003	Bacillus subtilis	dbtbs	TTGAAATTTTTTATATATGCGTATAATGTT	SigB	experimental	0.49
+bad_n	Bacillus subtilis	dbtbs	TTGAAAACGNNNNNNNNNNNNNNNNNNGTT	SigB	inferred	0.20
