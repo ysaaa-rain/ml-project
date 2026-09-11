@@ -60,6 +60,16 @@ def normalize_metadata(
         clean.loc[clean[column].eq(""), column] = DEFAULT_UNKNOWN
 
     validation = validate_metadata(clean)
+    missing_identity_mask = (
+        clean["sequence_id"].eq("")
+        | clean["species"].eq("")
+        | clean["source_dataset"].eq("")
+    )
+    empty_sequence_mask = clean["sequence"].eq("")
+    invalid_character_mask = clean["sequence"].map(lambda sequence: bool(set(sequence) - set("ACGTN")))
+    high_n_mask = clean["sequence"].map(
+        lambda sequence: bool(sequence) and sequence.count("N") / len(sequence) > max_n_fraction
+    )
     valid_mask = (
         clean["sequence_id"].ne("")
         & clean["species"].ne("")
@@ -69,12 +79,22 @@ def normalize_metadata(
         & clean["sequence"].map(lambda sequence: sequence.count("N") / len(sequence) <= max_n_fraction)
     )
     clean = clean.loc[valid_mask].copy()
+    quality_filter_counts = {
+        "missing_identity": int(missing_identity_mask.sum()),
+        "empty_sequence": int(empty_sequence_mask.sum()),
+        "invalid_characters": int(invalid_character_mask.sum()),
+        "high_n_fraction": int(high_n_mask.sum()),
+    }
+    duplicate_id_mask = clean["sequence_id"].duplicated(keep="first")
+    quality_filter_counts["duplicate_sequence_id"] = int(duplicate_id_mask.sum())
     clean["sequence_length"] = clean["sequence"].str.len().astype(int)
     clean["gc_fraction"] = clean["sequence"].map(
         lambda sequence: (sequence.count("G") + sequence.count("C")) / len(sequence)
     )
 
     clean = clean.drop_duplicates(subset=["sequence_id"], keep="first")
+    duplicate_sequence_mask = clean["sequence"].duplicated(keep="first")
+    quality_filter_counts["duplicate_sequence"] = int(duplicate_sequence_mask.sum())
     clean = clean.drop_duplicates(subset=["sequence"], keep="first")
 
     validation_source_set = {str(source) for source in validation_sources if str(source).strip()}
@@ -82,6 +102,7 @@ def normalize_metadata(
         lambda source: "validation" if source in validation_source_set else "discovery"
     )
     clean = clean.sort_values("sequence_id").reset_index(drop=True)
+    clean.attrs["quality_filter_counts"] = quality_filter_counts
     return clean, validation
 
 
@@ -99,6 +120,7 @@ def build_quality_report(
         "input_rows": int(len(original)),
         "output_rows": int(len(clean)),
         "removed_rows": int(len(original) - len(clean)),
+        "removed_by_reason": clean.attrs.get("quality_filter_counts", {}),
         "max_n_fraction": max_n_fraction,
         "validation": validation.to_dict(),
         "output_counts": {
