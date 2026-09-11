@@ -1,0 +1,24 @@
+# Fill this manifest during source audit. Do not invent unavailable fields.
+sources:
+  - source_id: regulondb
+    role: discovery_or_known_element_reference
+    status: pending_audit
+    version: null
+    access_date: null
+    landing_page: https://regulondb.ccg.unam.mx/
+    download_url: null
+    license_or_terms: null
+    local_filename: null
+    sha256: null
+    notes: verify promoter sequence, TSS, sigma factor, evidence and redistribution fields
+  - source_id: dbtbs
+    role: cross_species_validation_candidate
+    status: pending_audit
+    version: null
+    access_date: null
+    landing_page: https://dbtbs.hgc.jp/ver4/home.html
+    download_url: null
+    license_or_terms: null
+    local_filename: null
+    sha256: null
+    notes: verify bulk download, promoter orientation, sigma factor and evidence fields
