@@ -284,5 +284,10 @@ function arrow(slide, x, y, w, color = C.teal) {
   tx(s, '阶段结论：完成的是“如何研究这个问题”的建模工作；下一阶段才回答真实数据中的 motif 问题。', 0.96, 6.62, 11.5, 0.24, { fontSize: 12.5, bold: true, color: C.navy, align: 'center' });
 }
 
-pptx.writeFile({ fileName: OUT });
-console.log(OUT);
+(async () => {
+  await pptx.writeFile({ fileName: OUT });
+  console.log(OUT);
+})().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
