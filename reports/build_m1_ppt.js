@@ -94,7 +94,7 @@ function pill(slide, label, x, y, w, fill = C.mint, color = C.tealDark) {
 function bulletList(slide, items, x, y, w, lineH = 0.38, fontSize = 14, color = C.ink, bulletColor = C.teal) {
   items.forEach((item, i) => {
     const yy = y + i * lineH;
-    slide.addShape(pptx.ShapeType.ellipse, { x, y: yy + 0.12, w: 0.09, h: 0.09, fill: { color: bulletColor }, line: { color: bulletColor } });
+    slide.addShape(pptx.ShapeType.ellipse, { x, y: yy + (lineH - 0.09) / 2, w: 0.09, h: 0.09, fill: { color: bulletColor }, line: { color: bulletColor } });
     tx(slide, item, x + 0.20, yy, w - 0.20, lineH, { fontSize, color });
   });
 }
@@ -277,8 +277,10 @@ function arrow(slide, x, y, w, color = C.teal) {
   });
   tx(s, '当前正式 motif 工具尚未安装，不能宣称真实实验已经完成。', 6.58, 3.34, 5.45, 0.25, { fontSize: 11.5, color: C.redDark, italic: true });
   rect(s, 6.25, 4.10, 6.45, 2.43, C.white, 0.17, C.line);
-  tx(s, '环境检查：Python 管线可运行，MEME Suite 待补齐', 6.58, 4.38, 5.5, 0.25, { fontSize: 14, bold: true, color: C.navy });
-  s.addImage({ path: IMG_ENV, x: 6.55, y: 4.75, w: 5.85, h: 1.64 });
+  tx(s, '环境检查：Python 管线可运行，MEME Suite 待补齐', 6.58, 4.34, 5.5, 0.25, { fontSize: 14, bold: true, color: C.navy });
+  tx(s, 'Python 3.13.5\nseed 20260911\n5 个主线工具当前未检测到', 6.58, 4.88, 2.05, 0.92, { fontSize: 11.5, color: C.ink, valign: 'top' });
+  // Keep the evidence screenshot at its original 16:9 aspect ratio.
+  s.addImage({ path: IMG_ENV, x: 8.82, y: 4.66, w: 3.52, h: 1.98 });
   tx(s, '阶段结论：完成的是“如何研究这个问题”的建模工作；下一阶段才回答真实数据中的 motif 问题。', 0.96, 6.62, 11.5, 0.24, { fontSize: 12.5, bold: true, color: C.navy, align: 'center' });
 }
 
