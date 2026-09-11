@@ -42,6 +42,8 @@ python -m experiments.run_m1 --config configs/m1_demo.yaml
 
 问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)，简洁汇报稿见 [`reports/M1问题建模汇报稿.md`](reports/M1问题建模汇报稿.md)。
 
+第一阶段课堂汇报可直接使用 [`reports/M1建模阶段汇报材料_20260911.md`](reports/M1建模阶段汇报材料_20260911.md)，其中包含 6 页逐页文案、3–4 分钟讲稿和答辩问答。
+
 后续真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。运行 `python -m experiments.preflight --output tmp/preflight.json` 可检查当前环境是否具备 MEME Suite 主线工具。
 
 ## 目录约定
