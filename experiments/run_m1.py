@@ -9,6 +9,7 @@ from pathlib import Path
 import yaml
 
 from experiments.eda import run_eda
+from experiments.preflight import collect_environment
 from preprocessing.pipeline import (
     build_quality_report,
     load_metadata,
@@ -17,6 +18,7 @@ from preprocessing.pipeline import (
     write_fasta,
     write_quality_report,
 )
+from preprocessing.provenance import sha256_file
 
 
 def run(config_path: str | Path) -> dict:
@@ -53,14 +55,20 @@ def run(config_path: str | Path) -> dict:
     quality_report.update(
         {
             "config": str(config_path),
+            "config_sha256": sha256_file(config_path),
             "input": str(input_path),
+            "input_sha256": sha256_file(input_path),
             "seed": seed,
             "validation_sources": config.get("validation_sources", []),
         }
     )
     write_quality_report(quality_report, output_dir / "quality_report.json")
     eda_summary = run_eda(output_dir / "promoters_clean.tsv", output_dir)
-    manifest = {"quality_report": quality_report, "eda": eda_summary}
+    manifest = {
+        "quality_report": quality_report,
+        "eda": eda_summary,
+        "environment": collect_environment(),
+    }
     (output_dir / "m1_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
