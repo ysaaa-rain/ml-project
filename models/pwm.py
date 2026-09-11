@@ -101,13 +101,21 @@ def scan_pwm(
     if both_strands:
         strands.append(("-", reverse_complement(sequence)))
     for strand, oriented in strands:
-        for start in range(0, len(oriented) - pwm.width + 1):
-            window = oriented[start : start + pwm.width]
+        for oriented_start in range(0, len(oriented) - pwm.width + 1):
+            window = oriented[oriented_start : oriented_start + pwm.width]
             if set(window) - set(BASES) - {"N"}:
                 continue
             score = pwm.score(window)
             if score < min_score:
                 continue
+            if strand == "+":
+                start = oriented_start
+                end = oriented_start + pwm.width
+            else:
+                # Convert coordinates from the reverse-complement scan back
+                # to half-open coordinates on the original sequence.
+                start = len(sequence) - (oriented_start + pwm.width)
+                end = len(sequence) - oriented_start
             hits.append(
                 PWMHit(
                     motif_name=pwm.name,
