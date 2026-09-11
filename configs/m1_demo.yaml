@@ -1,0 +1,8 @@
+# Demo-only configuration. Replace input with an audited real source table.
+input: tests/fixtures/sample_promoters.tsv
+output_dir: tmp/m1_demo_configured
+max_n_fraction: 0.1
+validation_sources:
+  - dbtbs
+background_replicates: 2
+seed: 20260911

@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成项目初始化、课程要求固化、候选基线锁定和 Git 子模块接入。数据尚未下载，实验结果尚未产生。详细状态见 [\`docs/进度日志.md\`](docs/进度日志.md)。
+当前已完成项目初始化、课程要求固化、候选基线锁定、Git 子模块接入，以及可复现的数据清洗和 M2 EDA 基础管线。仓库仍未提交真实外部数据，当前 demo 只用于验证代码链路，不作为生物学实验结论。详细状态见 [\`docs/进度日志.md\`](docs/进度日志.md)。
 
 ## 快速开始
 
@@ -29,6 +29,16 @@ python -m pip install -r requirements.txt
 \`\`\`
 
 完整实验命令将在 M1 数据构建和 M2 预处理完成后补充到 [\`docs/运行说明.md\`](docs/运行说明.md)，并与当前代码同步维护。
+
+## M1/M2 最小运行示例
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q
+python -m experiments.run_m1 --config configs/m1_demo.yaml
+```
+
+该命令会生成清洗后的 TSV/FASTA、序列打乱背景、质量报告、分组统计、位置碱基组成和 PNG 图形。将配置中的 `input` 替换为经来源审计的真实 metadata 表后，可复用同一流程。
 
 ## 目录约定
 
