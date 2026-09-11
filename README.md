@@ -40,6 +40,8 @@ python -m experiments.run_m1 --config configs/m1_demo.yaml
 
 该命令会生成清洗后的 TSV/FASTA、序列打乱背景、质量报告、分组统计、位置碱基组成和 PNG 图形。将配置中的 `input` 替换为经来源审计的真实 metadata 表后，可复用同一流程。
 
+问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)，简洁汇报稿见 [`reports/M1问题建模汇报稿.md`](reports/M1问题建模汇报稿.md)。
+
 ## 目录约定
 
 \`\`\`text
