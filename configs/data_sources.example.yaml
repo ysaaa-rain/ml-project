@@ -2,23 +2,32 @@
 sources:
   - source_id: regulondb
     role: discovery_or_known_element_reference
-    status: pending_audit
-    version: null
-    access_date: null
+    status: candidate_audited_download_pending
+    version: "12.0.0 (Zenodo snapshot; published 2023-09-14)"
+    access_date: 2026-09-13
     landing_page: https://regulondb.ccg.unam.mx/
+    audit_evidence:
+      - https://github.com/regulondbunam/regulondb-docs/blob/main/00_about_policies/about_us.md
+      - https://zenodo.org/records/8346680
+      - https://github.com/regulondbunam/regulondb-releases/blob/master/LICENSE
     download_url: null
-    license_or_terms: null
+    portal_status: audit_fetch_502
+    license_or_terms: "软件仓库 Apache-2.0；数据集再分发条款待确认"
     local_filename: null
     sha256: null
-    notes: verify promoter sequence, TSS, sigma factor, evidence and redistribution fields
+    notes: "官方资料确认其为 E. coli K-12 调控数据库并包含 promoter/TSS/sigma/evidence 信息；本次未确认可直接下载的完整 promoter 表，也未把软件许可证当作数据许可证。"
   - source_id: dbtbs
     role: cross_species_validation_candidate
-    status: pending_audit
-    version: null
-    access_date: null
+    status: candidate_audited_version_conflict
+    version: "首页标注 release 4.1；统计页标注 release 5（数据截至 2007-09-15）"
+    access_date: 2026-09-13
     landing_page: https://dbtbs.hgc.jp/ver4/home.html
+    audit_evidence:
+      - https://dbtbs.hgc.jp/ver4/aboutDBTBS.html
+      - https://dbtbs.hgc.jp/statistics.html
     download_url: null
-    license_or_terms: null
+    portal_status: reachable_read_only
+    license_or_terms: "页面有版权声明；数据再利用/再分发条款待确认"
     local_filename: null
     sha256: null
-    notes: verify bulk download, promoter orientation, sigma factor and evidence fields
+    notes: "官方页面确认其面向 B. subtilis，含实验验证的调控关系、promoter/上游序列和 sigma 因子信息；版本标注不一致，且本次未确认批量下载入口。"
