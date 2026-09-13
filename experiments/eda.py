@@ -1,4 +1,4 @@
-"""M2 exploratory analysis for the standardized promoter table."""
+"""Bias and quality EDA before DNA foundation-model embedding."""
 
 from __future__ import annotations
 

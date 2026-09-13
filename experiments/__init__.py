@@ -1,1 +1,1 @@
-"""Reproducible experiment entry points for PR01-02."""
+"""Reproducible data, DNA embedding, analysis, and compact-baseline entry points."""

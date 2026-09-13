@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成项目初始化、课程要求固化、候选基线锁定、Git 子模块接入，以及可复现的数据清洗和 M2 EDA 基础管线。仓库仍未提交真实外部数据，当前 demo 只用于验证代码链路，不作为生物学实验结论。DNA 大模型嵌入目前只完成方案设计，尚未下载模型或运行实验。详细状态见 [`docs/进度日志.md`](docs/进度日志.md)。
+当前已完成数据清洗与 EDA、L0-L2 大模型运行骨架、聚类/近邻分析、遮挡窗口解释、产物追踪和自动化测试。固定 revision 的 50M 多物种 Nucleotide Transformer 已在 6 条 demo 上完成真实权重 smoke，生成 `6×512` embedding 和 8 个遮挡窗口。仓库仍未接入真实外部数据，因此这些结果只证明工程链路，不作为生物学结论。详细状态见 [`docs/进度日志.md`](docs/进度日志.md)。
 
 ## 快速开始
 
@@ -28,7 +28,7 @@ cd ml-project
 python -m pip install -r requirements.txt
 ```
 
-完整实验命令将在 M1 数据构建和 M2 预处理完成后补充到 [`docs/运行说明.md`](docs/运行说明.md)，并与当前代码同步维护。
+完整实验命令和各类产物说明见 [`docs/运行说明.md`](docs/运行说明.md)，并与当前代码同步维护。
 
 ## M1/M2 最小运行示例
 
@@ -36,24 +36,23 @@ python -m pip install -r requirements.txt
 python -m pip install -r requirements.txt
 python -m pytest -q
 python -m experiments.run_m1 --config configs/m1_demo.yaml
+python -m experiments.run_embedding --config configs/l0_embedding_hf_demo.yaml
 ```
 
-该命令会生成清洗后的 TSV/FASTA、序列打乱背景、质量报告、分组统计、位置碱基组成和 PNG 图形。将配置中的 `input` 替换为经来源审计的真实 metadata 表后，可复用同一流程。
+前两条入口会生成清洗后的 TSV/FASTA、随机背景、质量报告和 EDA；第三条会用真实预训练权重生成 embedding、聚类、近邻和遮挡窗口结果。demo 仅用于工程验证。
 
 问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)。
 
-第一阶段课堂汇报统一使用 [`reports/M1建模阶段汇报材料_20260911.md`](reports/M1建模阶段汇报材料_20260911.md)，每一页同时包含页面内容、讲解提示、展示建议和备查问题，不另列演讲稿。
+后续真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。`preflight` 已检查 PyTorch、Transformers 和 Accelerate；模型许可证、固定 revision、真实数据和设备资源仍需按实验记录审计。
 
-后续真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。现有 `preflight` 只检查 Python 管线与 MEME 小基线；大模型依赖和设备检查将在嵌入模块实现时加入。
-
-DNA 大模型嵌入是后续实验主线：先用冻结的 DNABERT-2 或 Nucleotide Transformer 提取序列表示，再进行聚类、近邻检索、跨来源验证和局部区域解释。MEME/FIMO 只保留为小型可解释基准。具体设计见 [`docs/05_DNA大模型嵌入扩展方案.md`](docs/05_DNA大模型嵌入扩展方案.md)。
+DNA 大模型嵌入是后续实验主线：第一轮已锁定 50M 多物种 Nucleotide Transformer，再进行聚类、近邻检索、跨来源验证和局部区域解释。MEME/FIMO 只保留为小型可解释基准。具体设计见 [`docs/05_DNA大模型嵌入主线方案.md`](docs/05_DNA大模型嵌入主线方案.md)。
 
 ## 目录约定
 
 ```text
 data/            原始、处理中和标准化后的数据（默认不提交大文件）
 preprocessing/   数据清洗、标准化、分组和背景构造
-models/          motif 表示、相似性和组合分析所需的模型/算法封装
+models/          DNA embedding 后端、无监督分析和小型 PWM 基线
 experiments/     可复现实验入口和参数配置
 results/         表格、图形、日志和报告中间产物
 baselines/       锁定的公开基线依赖
@@ -68,8 +67,8 @@ reports/         阶段报告和最终报告
 ```text
 docs: 固化 PR01-02 研究问题与验收矩阵
 data: 增加多物种启动子数据字段规范
-feat: 增加按 sigma 因子分组的 motif 运行入口
-exp: 记录 MEME 与 STREME 参数对比结果
+feat: 增加固定版本 DNA 模型的 embedding 入口
+analysis: 记录跨来源 embedding 稳定性与偏差诊断
 ```
 
 不提交原始大数据、临时文件、个人密钥和无关对话内容。

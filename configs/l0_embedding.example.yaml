@@ -1,0 +1,27 @@
+# Real L0 mainline configuration. Audit hardware and dependencies before use.
+input: data/processed/m1/promoters_clean.tsv
+output_dir: results/l0_embedding
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 8
+  device: auto
+  seed: 20260913
+
+analysis:
+  n_clusters: 3
+  neighbors: 5
+  seed: 20260913
+
+occlusion:
+  enabled: true
+  max_sequences: 20
+  window_size: 12
+  stride: 3
+  mask_base: N

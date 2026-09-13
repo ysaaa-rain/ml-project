@@ -1,0 +1,27 @@
+# Real foundation-model inference on demo sequences only; no biological conclusion.
+input: tmp/m1_demo_configured/promoters_clean.tsv
+output_dir: tmp/l0_embedding_hf_demo
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 2
+  device: auto
+  seed: 20260913
+
+analysis:
+  n_clusters: 2
+  neighbors: 2
+  seed: 20260913
+
+occlusion:
+  enabled: true
+  max_sequences: 2
+  window_size: 12
+  stride: 6
+  mask_base: N

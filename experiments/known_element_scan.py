@@ -1,4 +1,4 @@
-"""B0 scan for known bacterial promoter core-element consensus sequences."""
+"""Compact B0 interpretation baseline for the DNA embedding mainline."""
 
 from __future__ import annotations
 
