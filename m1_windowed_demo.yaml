@@ -1,0 +1,28 @@
+# Demo configuration exercising TSS windowing and near-homolog clustering.
+# Uses the annotated fixture so both new preprocessing stages are covered.
+# Demo-only: the fixture is synthetic and produces no biological conclusions.
+input: tests/fixtures/tss_promoters.tsv
+output_dir: tmp/m1_windowed_demo
+max_n_fraction: 0.1
+validation_sources:
+  - dbtbs
+background_replicates: 2
+background_methods:
+  - mononucleotide
+  - dinucleotide
+seed: 20260911
+
+# Anchor every sequence to its TSS and reverse-complement minus-strand records
+# so all sequences share one coordinate frame. Requires `tss_position` and
+# `strand` columns.
+tss_window:
+  upstream: 60
+  downstream: 20
+tss_column: tss_position
+strand_column: strand
+
+# Group near-identical sequences and force each cluster onto one side of the
+# discovery/validation split, so homology cannot leak across the boundary.
+homology_clustering: true
+identity_threshold: 0.90
+kmer_size: 15
