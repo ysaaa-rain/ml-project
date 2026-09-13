@@ -1,0 +1,22 @@
+# Code-path smoke test only. Hash vectors are not large-model or biological results.
+input: tmp/m1_demo_configured/promoters_clean.tsv
+output_dir: tmp/l0_embedding_demo
+
+embedding:
+  backend: hash-smoke
+  allow_test_backend: true
+  dimension: 32
+  kmer_size: 4
+  seed: 20260913
+
+analysis:
+  n_clusters: 2
+  neighbors: 2
+  seed: 20260913
+
+occlusion:
+  enabled: true
+  max_sequences: 2
+  window_size: 12
+  stride: 6
+  mask_base: N

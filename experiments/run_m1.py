@@ -1,4 +1,4 @@
-"""Run the complete M1 data build and M2 EDA smoke workflow."""
+"""Build the auditable promoter dataset consumed by the DNA embedding mainline."""
 
 from __future__ import annotations
 

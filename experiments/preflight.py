@@ -1,4 +1,4 @@
-"""Audit the local Python and MEME Suite environment before experiments."""
+"""Audit the DNA embedding mainline and compact MEME baseline environment."""
 
 from __future__ import annotations
 
@@ -22,6 +22,9 @@ PYTHON_PACKAGES = (
     "scipy",
     "seaborn",
     "pytest",
+    "torch",
+    "transformers",
+    "accelerate",
 )
 
 MEME_TOOLS = ("meme", "streme", "dreme", "fimo", "tomtom")
@@ -63,6 +66,7 @@ def collect_environment() -> dict:
             "path": executable,
             "version": _tool_version(executable) if executable else None,
         }
+    package_versions = {package: _package_version(package) for package in PYTHON_PACKAGES}
     return {
         "python": {
             "executable": sys.executable,
@@ -70,7 +74,12 @@ def collect_environment() -> dict:
             "implementation": platform.python_implementation(),
         },
         "platform": platform.platform(),
-        "packages": {package: _package_version(package) for package in PYTHON_PACKAGES},
+        "packages": package_versions,
+        "embedding_runtime": {
+            "ready": package_versions["torch"] is not None and package_versions["transformers"] is not None,
+            "required_packages": ["torch", "transformers"],
+            "note": "ready only means imports exist; model revision, license, download and device still need audit",
+        },
         "meme_suite": {
             "ready": all(tools[tool]["available"] for tool in ("meme", "streme", "fimo", "tomtom")),
             "tools": tools,

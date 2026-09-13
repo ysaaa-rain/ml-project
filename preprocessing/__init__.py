@@ -1,4 +1,4 @@
-"""Data preparation utilities for the PR01-02 promoter motif project."""
+"""Data preparation utilities for the PR01-02 DNA embedding mainline."""
 
 from .pipeline import (
     build_quality_report,

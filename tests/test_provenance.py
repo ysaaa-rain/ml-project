@@ -16,3 +16,5 @@ def test_environment_snapshot_has_required_shape():
     assert snapshot["python"]["version"]
     assert set(snapshot["meme_suite"]["tools"]) == set(MEME_TOOLS)
     assert isinstance(snapshot["meme_suite"]["ready"], bool)
+    assert set(snapshot["embedding_runtime"]["required_packages"]) == {"torch", "transformers"}
+    assert isinstance(snapshot["embedding_runtime"]["ready"], bool)
