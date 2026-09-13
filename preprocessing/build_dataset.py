@@ -13,6 +13,7 @@ from .pipeline import (
     write_fasta,
     write_quality_report,
 )
+from .shuffle import SHUFFLE_METHODS
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -23,6 +24,30 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--validation-source", action="append", default=[])
     parser.add_argument("--background-replicates", type=int, default=1)
     parser.add_argument("--seed", type=int, default=20260911)
+    parser.add_argument(
+        "--background-method",
+        choices=SHUFFLE_METHODS,
+        default="mononucleotide",
+        help="N0 mononucleotide or N1 dinucleotide-preserving shuffle",
+    )
+    parser.add_argument(
+        "--tss-window",
+        nargs=2,
+        type=int,
+        metavar=("UPSTREAM", "DOWNSTREAM"),
+        default=None,
+        help=(
+            "Extract a TSS-anchored window and normalise strand orientation. "
+            "Requires tss_position and strand columns in the input."
+        ),
+    )
+    parser.add_argument(
+        "--homology-clustering",
+        action="store_true",
+        help="Cluster near-homologs and force each cluster onto one side of the split",
+    )
+    parser.add_argument("--identity-threshold", type=float, default=0.90)
+    parser.add_argument("--kmer-size", type=int, default=15)
     return parser
 
 
@@ -34,6 +59,10 @@ def main() -> None:
         original,
         max_n_fraction=args.max_n_fraction,
         validation_sources=args.validation_source,
+        tss_window=tuple(args.tss_window) if args.tss_window else None,
+        homology_clustering=args.homology_clustering,
+        identity_threshold=args.identity_threshold,
+        kmer_size=args.kmer_size,
     )
     output_dir.mkdir(parents=True, exist_ok=True)
     clean.to_csv(output_dir / "promoters_clean.tsv", sep="\t", index=False)
@@ -46,6 +75,7 @@ def main() -> None:
         output_dir / "background_shuffled.fasta",
         replicates=args.background_replicates,
         seed=args.seed,
+        method=args.background_method,
     )
     report = build_quality_report(
         original,
@@ -55,6 +85,7 @@ def main() -> None:
     )
     report["seed"] = args.seed
     report["validation_sources"] = args.validation_source
+    report["background_method"] = args.background_method
     write_quality_report(report, output_dir / "quality_report.json")
     print(f"input_rows={len(original)}")
     print(f"output_rows={len(clean)}")

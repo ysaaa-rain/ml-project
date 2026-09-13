@@ -9,10 +9,17 @@ from typing import Iterable
 
 import pandas as pd
 
+from .homology import cluster_sequences, homology_aware_split
 from .schema import REQUIRED_COLUMNS, ValidationReport, normalize_sequence, validate_metadata
+from .shuffle import SHUFFLE_METHODS, shuffle_sequence
+from .windowing import apply_tss_window
 
 
 DEFAULT_UNKNOWN = "unknown"
+
+# Sentinel meaning "no TSS windowing requested". ``None`` is a valid explicit
+# choice (keep the native sequence), so it cannot double as the sentinel.
+_NO_WINDOW = object()
 
 
 def load_metadata(path: str | Path) -> pd.DataFrame:
@@ -37,19 +44,62 @@ def normalize_metadata(
     *,
     max_n_fraction: float = 0.1,
     validation_sources: Iterable[str] = (),
+    tss_window: tuple[int, int] | None | object = _NO_WINDOW,
+    tss_column: str = "tss_position",
+    strand_column: str = "strand",
+    homology_clustering: bool = False,
+    identity_threshold: float = 0.90,
+    kmer_size: int = 15,
 ) -> tuple[pd.DataFrame, ValidationReport]:
     """Normalize, validate, deduplicate, and assign deterministic data splits.
 
     Rows with empty/invalid DNA, excessive ``N`` content, missing IDs, or
     missing source/species values are removed from the returned clean table.
     Every removal is represented in the returned validation report.
+
+    Pipeline order matters and is deliberate:
+
+    1. **TSS windowing** (optional) is applied *before* validation, because a
+       window that extends past the sequence ends must be recorded as a dropped
+       record, not silently truncated.
+    2. Quality filtering and exact deduplication run on the resulting sequences,
+       so identical TSS windows are deduplicated even when the source records
+       differed.
+    3. **Homology clustering** (optional) runs *after* deduplication and forces
+       whole clusters onto one side of the discovery/validation split, so
+       near-identical sequences cannot leak across the boundary.
+
+    Pass ``tss_window=(upstream, downstream)`` to anchor every sequence to its
+    transcription start site and normalise strand orientation. The annotation
+    columns named by ``tss_column`` and ``strand_column`` must then be present.
     """
 
     if not 0 <= max_n_fraction <= 1:
         raise ValueError("max_n_fraction must be between 0 and 1")
     _require_columns(frame)
 
-    clean = frame.copy()
+    tss_windowing_report: dict | None = None
+    source_frame = frame
+    if tss_window is not _NO_WINDOW and tss_window is not None:
+        upstream, downstream = tss_window
+        missing = [
+            column
+            for column in (tss_column, strand_column, "sequence_id")
+            if column not in source_frame
+        ]
+        if missing:
+            raise ValueError(
+                "TSS windowing requires the annotation columns: " + ", ".join(missing)
+            )
+        source_frame, tss_windowing_report = apply_tss_window(
+            source_frame,
+            upstream=int(upstream),
+            downstream=int(downstream),
+            tss_column=tss_column,
+            strand_column=strand_column,
+        )
+
+    clean = source_frame.copy()
     for column in ("sequence_id", "species", "source_dataset"):
         clean[column] = clean[column].fillna("").astype(str).str.strip()
     clean["sequence"] = clean["sequence"].map(normalize_sequence)
@@ -101,8 +151,22 @@ def normalize_metadata(
     clean["split"] = clean["source_dataset"].map(
         lambda source: "validation" if source in validation_source_set else "discovery"
     )
+
+    homology_report: dict | None = None
+    split_report: dict | None = None
+    if homology_clustering and not clean.empty:
+        clean, homology_report = cluster_sequences(
+            clean,
+            identity_threshold=identity_threshold,
+            kmer_size=kmer_size,
+        )
+        clean, split_report = homology_aware_split(clean)
+
     clean = clean.sort_values("sequence_id").reset_index(drop=True)
     clean.attrs["quality_filter_counts"] = quality_filter_counts
+    clean.attrs["tss_windowing"] = tss_windowing_report
+    clean.attrs["homology_clustering"] = homology_report
+    clean.attrs["homology_split"] = split_report
     return clean, validation
 
 
@@ -116,13 +180,16 @@ def build_quality_report(
     """Build an auditable quality report for a preprocessing run."""
 
     return {
-        "schema_version": "m1.0",
+        "schema_version": "m1.1",
         "input_rows": int(len(original)),
         "output_rows": int(len(clean)),
         "removed_rows": int(len(original) - len(clean)),
         "removed_by_reason": clean.attrs.get("quality_filter_counts", {}),
         "max_n_fraction": max_n_fraction,
         "validation": validation.to_dict(),
+        "tss_windowing": clean.attrs.get("tss_windowing"),
+        "homology_clustering": clean.attrs.get("homology_clustering"),
+        "homology_split": clean.attrs.get("homology_split"),
         "output_counts": {
             "species": clean["species"].value_counts().to_dict() if not clean.empty else {},
             "source_dataset": clean["source_dataset"].value_counts().to_dict() if not clean.empty else {},
@@ -143,7 +210,12 @@ def build_quality_report(
 
 
 def shuffled_sequence(sequence: str, rng: random.Random) -> str:
-    """Shuffle a sequence while preserving its length and base composition."""
+    """Shuffle a sequence while preserving its length and base composition.
+
+    Retained for backward compatibility; it is the N0 mononucleotide control.
+    Use :func:`preprocessing.shuffle.shuffle_sequence` to select between the N0
+    and N1 controls.
+    """
 
     bases = list(sequence)
     rng.shuffle(bases)
@@ -156,22 +228,55 @@ def write_background_fasta(
     *,
     replicates: int = 1,
     seed: int = 20260911,
+    method: str = "mononucleotide",
 ) -> None:
-    """Write sequence-shuffled background controls with deterministic IDs."""
+    """Write shuffled background controls with deterministic IDs.
+
+    ``method`` selects the negative control: ``mononucleotide`` is the N0
+    control that only preserves single-base composition, ``dinucleotide`` is the
+    stricter N1 control that also preserves dinucleotide composition.
+    """
 
     if replicates < 1:
         raise ValueError("replicates must be at least 1")
+    if method not in SHUFFLE_METHODS:
+        raise ValueError(f"method must be one of {SHUFFLE_METHODS}")
     rng = random.Random(seed)
     rows = []
     for _, row in frame.iterrows():
         for replicate in range(1, replicates + 1):
             rows.append(
                 (
-                    f"{row['sequence_id']}__shuffle{replicate}",
-                    shuffled_sequence(row["sequence"], rng),
+                    f"{row['sequence_id']}__{method}{replicate}",
+                    shuffle_sequence(row["sequence"], rng, method=method),
                 )
             )
     write_fasta(rows, output_path)
+
+
+def write_background_controls(
+    frame: pd.DataFrame,
+    output_dir: str | Path,
+    *,
+    replicates: int = 1,
+    seed: int = 20260911,
+    methods: Iterable[str] = ("mononucleotide", "dinucleotide"),
+) -> dict:
+    """Write one background FASTA per shuffle method.
+
+    Both controls share the same seed so that the only difference between them
+    is the shuffle algorithm, not the random stream position.
+    """
+
+    output_dir = Path(output_dir)
+    written: dict[str, str] = {}
+    for method in methods:
+        if method not in SHUFFLE_METHODS:
+            raise ValueError(f"method must be one of {SHUFFLE_METHODS}")
+        path = output_dir / f"background_{method}.fasta"
+        write_background_fasta(frame, path, replicates=replicates, seed=seed, method=method)
+        written[method] = str(path.resolve())
+    return written
 
 
 def write_fasta(records: Iterable[tuple[str, str]], output_path: str | Path) -> None:
