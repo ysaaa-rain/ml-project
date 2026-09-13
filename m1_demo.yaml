@@ -1,0 +1,28 @@
+# Demo-only configuration. Replace input with an audited real source table.
+input: tests/fixtures/sample_promoters.tsv
+output_dir: tmp/m1_demo_configured
+max_n_fraction: 0.1
+validation_sources:
+  - dbtbs
+background_replicates: 2
+background_methods:
+  - mononucleotide
+  - dinucleotide
+seed: 20260911
+
+# --- Optional TSS windowing -------------------------------------------------
+# Anchors each sequence to its transcription start site and reverse-complements
+# minus-strand records so every sequence shares one coordinate frame.
+# Requires `tss_position` and `strand` columns in the input table.
+# tss_window:
+#   upstream: 60
+#   downstream: 20
+# tss_column: tss_position
+# strand_column: strand
+
+# --- Optional near-homolog clustering --------------------------------------
+# Groups near-identical sequences and forces each cluster onto one side of the
+# discovery/validation split, preventing homology leakage into RQ3.
+# homology_clustering: true
+# identity_threshold: 0.90
+# kmer_size: 15
