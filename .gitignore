@@ -10,6 +10,18 @@ venv/
 .env
 .DS_Store
 
+# Tooling and editor caches
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.idea/
+.vscode/
+*.swp
+
 # Course source PDFs are local reading inputs, not project data
 intro-mlproj.pdf
 project-pool.pdf
