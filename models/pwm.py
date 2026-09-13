@@ -51,6 +51,37 @@ class PWM:
             score += math.log2(self.probabilities[position][base] / self.background[base])
         return score
 
+    @property
+    def max_score(self) -> float:
+        """Return the highest score any sequence can reach under this PWM.
+
+        This is the score of the per-position consensus base, i.e. the best
+        possible match. Scan thresholds can therefore be expressed as a
+        fraction of the theoretical maximum instead of an arbitrary absolute
+        number, which keeps them comparable across motifs that differ in
+        information content.
+        """
+
+        total = 0.0
+        for row in self.probabilities:
+            best_base = max(row, key=lambda base: row[base])
+            total += math.log2(row[best_base] / self.background[best_base])
+        return total
+
+    def background_max_score(self, *, pseudocount: float = 0.0) -> float:
+        """Return the score of the reverse-complement consensus sequence.
+
+        Used as a sanity reference: the reverse complement of the consensus is
+        usually the strongest non-cognate competitor of a core promoter motif.
+        """
+
+        complement = {"A": "T", "C": "G", "G": "C", "T": "A", "N": "N"}
+        consensus = "".join(
+            max(row, key=lambda base: row[base]) for row in self.probabilities
+        )
+        reverse = "".join(complement[base] for base in reversed(consensus))
+        return self.score(reverse)
+
 
 def consensus_pwm(
     name: str,
