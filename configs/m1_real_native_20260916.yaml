@@ -1,0 +1,16 @@
+# First real-data build from the teacher-recommended RegulonDB + DBTBS sources.
+# Native source windows are retained for this pass because DBTBS does not expose
+# a verified common TSS/strand coordinate in the scraped promoter table.
+input: data/interim/promoters_metadata_20260916.tsv
+output_dir: data/processed/m1_real_native_20260916
+max_n_fraction: 0.1
+validation_sources:
+  - dbtbs_v4.1
+background_methods:
+  - mononucleotide
+  - dinucleotide
+background_replicates: 1
+seed: 20260916
+homology_clustering: true
+identity_threshold: 0.90
+kmer_size: 15

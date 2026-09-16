@@ -1,33 +1,59 @@
-# Fill this manifest during source audit. Do not invent unavailable fields.
+# Source manifest for the teacher-recommended real-data snapshot.
+# Raw files stay local under data/raw and are ignored by Git; hashes below make
+# the local snapshot auditable without putting large files in the repository.
 sources:
   - source_id: regulondb
-    role: discovery_or_known_element_reference
-    status: candidate_audited_download_pending
-    version: "12.0.0 (Zenodo snapshot; published 2023-09-14)"
-    access_date: 2026-09-13
-    landing_page: https://regulondb.ccg.unam.mx/
+    role: discovery_core_promoter_source
+    status: downloaded_local_snapshot
+    version: "official portal raw-media snapshot (retrieved 2026-09-16)"
+    related_reference_version: "Zenodo v12.0.0 record retained as a public version reference"
+    access_date: 2026-09-16
+    landing_page: "https://regulondb.ccg.unam.mx/"
+    download_urls:
+      promoters_gff3: "https://regulondb.ccg.unam.mx/media/raw/gff3/PromoterSet.gff3"
+      genome_fasta: "https://regulondb.ccg.unam.mx/media/raw/e_coli_k12.fna"
     audit_evidence:
       - https://github.com/regulondbunam/regulondb-docs/blob/main/00_about_policies/about_us.md
       - https://zenodo.org/records/8346680
       - https://github.com/regulondbunam/regulondb-releases/blob/master/LICENSE
-    download_url: null
-    portal_status: audit_fetch_502
+    portal_status: reachable_and_downloaded
     license_or_terms: "软件仓库 Apache-2.0；数据集再分发条款待确认"
-    local_filename: null
-    sha256: null
-    notes: "官方资料确认其为 E. coli K-12 调控数据库并包含 promoter/TSS/sigma/evidence 信息；本次未确认可直接下载的完整 promoter 表，也未把软件许可证当作数据许可证。"
+    download_report: data/interim/regulondb_download_report_20260916.json
+    local_files:
+      - path: data/raw/regulondb_promoters_20260916.gff3
+        bytes: 1322487
+        sha256: 50344119ECAD07A24B724B9FFEAB70E18324CFF77413849B6AC930B8C68CA026
+      - path: data/raw/regulondb_e_coli_k12_20260916.fna
+        bytes: 4703576
+        sha256: 073C4B894974AB1A49F6CEAED0F6A2838FBEDC1D86FCD731F4DA37419C63F1B5
+    derived_metadata:
+      path: data/interim/regulondb_metadata_20260916.tsv
+      rows: 4042
+      sha256: 91720312B6ABD1C8307BE0E87E8ACD061D31441C638BF0820906FAFEFA7E355A
+    notes: "GFF3 由适配器解析；未确认字段不推断。空序列在清洗阶段保留到质量报告后剔除。"
   - source_id: dbtbs
-    role: cross_species_validation_candidate
-    status: candidate_audited_version_conflict
-    version: "首页标注 release 4.1；统计页标注 release 5（数据截至 2007-09-15）"
-    access_date: 2026-09-13
-    landing_page: https://dbtbs.hgc.jp/ver4/home.html
+    role: cross_species_validation_source
+    status: downloaded_local_snapshot
+    version: "release 4.1"
+    access_date: 2026-09-16
+    landing_page: "https://dbtbs.hgc.jp/ver4/home.html"
+    download_url: "https://dbtbs.hgc.jp/ver4/promtable.html"
     audit_evidence:
       - https://dbtbs.hgc.jp/ver4/aboutDBTBS.html
-      - https://dbtbs.hgc.jp/statistics.html
-    download_url: null
-    portal_status: reachable_read_only
+      - https://dbtbs.hgc.jp/ver4/statistics.html
+      - https://dbtbs.hgc.jp/ver4/promtable.html
+    portal_status: reachable_and_downloaded
     license_or_terms: "页面有版权声明；数据再利用/再分发条款待确认"
-    local_filename: null
-    sha256: null
-    notes: "官方页面确认其面向 B. subtilis，含实验验证的调控关系、promoter/上游序列和 sigma 因子信息；版本标注不一致，且本次未确认批量下载入口。"
+    download_report: data/interim/dbtbs_download_report_20260916.json
+    local_files:
+      - path: data/raw/dbtbs_v4.1_20260916/promtable.html
+        bytes: 416735
+        sha256: 9275006CC22E01C15A1694966CCA9F9498A0161C872FFF483AECACFAB09BCE27
+      - path: data/raw/dbtbs_v4.1_20260916/pages/
+        pages_downloaded: 1062
+        pages_failed: 0
+    derived_metadata:
+      path: data/interim/dbtbs_metadata_20260916.tsv
+      rows: 698
+      sha256: 7C7D4DC4A14775A29EE5AA9C4FC5E698CBC6A5E4D033CFEC2D57CC411B8A28DA
+    notes: "只保留官方页面中 Regulation=Promoter 且 Binding factor 为 sigma 的有效 DNA 序列；tss_position 和 strand 保持缺失。"

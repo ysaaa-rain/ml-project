@@ -13,6 +13,7 @@ import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Mapping
+from urllib.parse import unquote
 
 import pandas as pd
 
@@ -322,6 +323,123 @@ def write_adapter_report(report: AdapterReport, output_path: str | Path) -> None
     )
 
 
+def parse_gff3_attributes(value: str) -> dict[str, str]:
+    """Parse the simple ``key=value`` attributes used by source GFF3 files."""
+
+    attributes: dict[str, str] = {}
+    for item in str(value).split(";"):
+        if not item.strip() or "=" not in item:
+            continue
+        key, raw_value = item.split("=", 1)
+        attributes[unquote(key.strip())] = unquote(raw_value.strip())
+    return attributes
+
+
+def adapt_regulondb_gff3(
+    path: str | Path,
+    *,
+    source_id: str = "regulondb",
+    species: str,
+) -> tuple[pd.DataFrame, AdapterReport]:
+    """Adapt RegulonDB ``PromoterSet.gff3`` records to project metadata.
+
+    RegulonDB encodes the local TSS base as the single uppercase nucleotide in
+    its ``Sequence`` attribute. If that marker is absent or ambiguous, the
+    local ``tss_position`` is left missing rather than inferred from a guessed
+    window. The original GFF3 file remains the authoritative provenance record.
+    """
+
+    species = str(species).strip()
+    if not species:
+        raise SourceMappingError("species is required when adapting RegulonDB GFF3")
+    rows: list[dict[str, Any]] = []
+    seen_record_ids: dict[str, int] = {}
+    input_path = Path(path)
+    with input_path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            line = line.rstrip("\n\r")
+            if not line or line.startswith("#"):
+                continue
+            fields = line.split("\t")
+            if len(fields) != 9:
+                raise SourceMappingError(
+                    f"invalid GFF3 row at line {line_number}: expected 9 columns"
+                )
+            seqid, _source, feature_type, start, end, score, strand, phase, raw_attributes = fields
+            attributes = parse_gff3_attributes(raw_attributes)
+            if feature_type not in {"transcription_start_site", "promoter"}:
+                continue
+            raw_sequence = attributes.get("Sequence", "")
+            uppercase_positions = [
+                index + 1
+                for index, nucleotide in enumerate(raw_sequence)
+                if nucleotide in "ACGT"
+            ]
+            local_tss = uppercase_positions[0] if len(uppercase_positions) == 1 else pd.NA
+            record_id = attributes.get("name") or f"{seqid}:{start}-{end}:{strand}:{line_number}"
+            occurrence = seen_record_ids.get(record_id, 0) + 1
+            seen_record_ids[record_id] = occurrence
+            sequence_id = (
+                record_id if occurrence == 1 else f"{record_id}__duplicate_{occurrence}"
+            )
+            rows.append(
+                {
+                    "sequence_id": sequence_id,
+                    "species": species,
+                    "sequence": raw_sequence.upper(),
+                    "taxon_id": pd.NA,
+                    "assembly_accession": seqid,
+                    "sequence_length": len(raw_sequence) if raw_sequence else pd.NA,
+                    "tss_position": local_tss,
+                    "strand": strand,
+                    "sigma_factor_type": attributes.get("SigmaFactor") or pd.NA,
+                    "known_element_annotations": pd.NA,
+                    "promoter_strength": pd.NA,
+                    "evidence_level": attributes.get("Confidence") or pd.NA,
+                    "source_record_id": record_id,
+                    "source_tss_coordinate": start,
+                    "source_tss_end_coordinate": end,
+                    "source_evidence": attributes.get("Evidence") or pd.NA,
+                    "source_feature_type": feature_type,
+                    "source_score": score,
+                    "source_phase": phase,
+                }
+            )
+    frame = pd.DataFrame(rows)
+    if frame.empty:
+        raise SourceMappingError(f"no promoter records found in GFF3: {input_path}")
+    adapted, report = adapt_source_table(
+        frame,
+        source_id=source_id,
+        default_species=species,
+        column_map={
+            "sequence_id": "sequence_id",
+            "species": "species",
+            "sequence": "sequence",
+            "taxon_id": "taxon_id",
+            "assembly_accession": "assembly_accession",
+            "sequence_length": "sequence_length",
+            "tss_position": "tss_position",
+            "strand": "strand",
+            "sigma_factor_type": "sigma_factor_type",
+            "known_element_annotations": "known_element_annotations",
+            "promoter_strength": "promoter_strength",
+            "evidence_level": "evidence_level",
+            "source_record_id": "source_record_id",
+        },
+    )
+    for extra_column in (
+        "source_tss_coordinate",
+        "source_tss_end_coordinate",
+        "source_evidence",
+        "source_feature_type",
+        "source_score",
+        "source_phase",
+    ):
+        adapted[extra_column] = frame[extra_column].reset_index(drop=True)
+    return adapted, report
+
+
 def main() -> None:
     """Adapt a CSV/TSV source file from the command line."""
 
@@ -348,14 +466,25 @@ def main() -> None:
     )
     args = parser.parse_args()
     input_path = Path(args.input)
-    frame = pd.read_csv(input_path, sep="," if input_path.suffix.lower() == ".csv" else "\t")
-    column_map = json.loads(args.column_map) if args.column_map else None
-    adapted, report = adapt_source_table(
-        frame,
-        source_id=args.source_id,
-        default_species=args.default_species,
-        column_map=column_map,
-    )
+    if input_path.suffix.lower() == ".gff3":
+        if not args.default_species:
+            raise SourceMappingError(
+                "--default-species is required for GFF3 because species must be explicit"
+            )
+        adapted, report = adapt_regulondb_gff3(
+            input_path,
+            source_id=args.source_id,
+            species=args.default_species,
+        )
+    else:
+        frame = pd.read_csv(input_path, sep="," if input_path.suffix.lower() == ".csv" else "\t")
+        column_map = json.loads(args.column_map) if args.column_map else None
+        adapted, report = adapt_source_table(
+            frame,
+            source_id=args.source_id,
+            default_species=args.default_species,
+            column_map=column_map,
+        )
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     adapted.to_csv(output_path, sep="\t", index=False)
