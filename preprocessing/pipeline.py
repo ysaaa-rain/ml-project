@@ -126,7 +126,10 @@ def normalize_metadata(
         & clean["source_dataset"].ne("")
         & clean["sequence"].ne("")
         & clean["sequence"].map(lambda sequence: not set(sequence) - set("ACGTN"))
-        & clean["sequence"].map(lambda sequence: sequence.count("N") / len(sequence) <= max_n_fraction)
+        & clean["sequence"].map(
+            lambda sequence: bool(sequence)
+            and sequence.count("N") / len(sequence) <= max_n_fraction
+        )
     )
     clean = clean.loc[valid_mask].copy()
     quality_filter_counts = {

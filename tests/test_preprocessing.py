@@ -46,3 +46,20 @@ def test_shuffled_background_is_deterministic(tmp_path):
     write_background_fasta(clean, first, replicates=2, seed=7)
     write_background_fasta(clean, second, replicates=2, seed=7)
     assert first.read_text(encoding="utf-8") == second.read_text(encoding="utf-8")
+
+
+def test_normalize_metadata_handles_empty_sequences_without_division_error():
+    frame = pd.DataFrame(
+        {
+            "sequence_id": ["empty", "valid"],
+            "species": ["A", "A"],
+            "source_dataset": ["source", "source"],
+            "sequence": ["", "ACGT"],
+        }
+    )
+
+    clean, report = normalize_metadata(frame, max_n_fraction=0.1)
+
+    assert clean["sequence_id"].tolist() == ["valid"]
+    assert report.invalid_row_count == 1
+    assert clean.attrs["quality_filter_counts"]["empty_sequence"] == 1

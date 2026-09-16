@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成数据清洗与 EDA、外部来源字段适配入口、L0-L2 大模型运行骨架、聚类/近邻分析、遮挡窗口解释、产物追踪和自动化测试。固定 revision 的 50M 多物种 Nucleotide Transformer 已在 6 条 demo 上完成真实权重 smoke，生成 `6×512` embedding 和 8 个遮挡窗口。仓库仍未接入真实外部数据，因此这些结果只证明工程链路，不作为生物学结论。详细状态见 [`docs/进度日志.md`](docs/进度日志.md)。
+当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、聚类/近邻分析、遮挡窗口解释、产物追踪和自动化测试。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。固定 revision 的 50M 多物种 Nucleotide Transformer 仍只在 6 条 demo 上完成真实权重 smoke，真实数据 embedding 尚未开始，因此当前数据结果只证明数据管线，不作为生物学结论。详细状态见 [`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
 
 ## 快速开始
 
