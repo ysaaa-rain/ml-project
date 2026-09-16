@@ -1,13 +1,10 @@
 """Calibrate and pre-register the B0 known-element scan threshold.
 
 The B0 baseline previously used ``min_score = 2.0``. Because the scoring scale
-is roughly bimodal (a near-perfect match with zero mismatches scores about
-10.35, while even one mismatch drops the score to about 6.5), a threshold of
-2.0 is not a "weak" filter: at that level every sequence and every shuffled
-background sequence produced hits. Measured on the repository demo data:
-
-    threshold 2.0   -> 60 hits on 6 real sequences, 117 hits on 12 shuffled ones
-    threshold 10.35 ->  8 hits on 6 real sequences,  14 hits on 12 shuffled ones
+is roughly bimodal, a threshold of 2.0 is not a "weak" filter: it can admit
+almost every real and shuffled sequence. The exact effect is recalculated from
+the input whenever this script runs and written to the calibration record; no
+fixed demo hit count is embedded in the source.
 
 The residual background hits are perfect 6-mer matches of the consensus, which
 occur by chance with a probability that depends on how many windows a sequence
