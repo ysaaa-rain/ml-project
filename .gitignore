@@ -25,6 +25,7 @@ dist/
 # Course source PDFs are local reading inputs, not project data
 intro-mlproj.pdf
 project-pool.pdf
+docs/project-pool(1).pdf
 
 # Downloaded/generated data and experiment outputs
 data/raw/*
