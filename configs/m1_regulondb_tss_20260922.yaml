@@ -1,0 +1,19 @@
+# Gate-A-passed TSS-aligned subset for the RegulonDB source only.
+# DBTBS is intentionally excluded because its TSS/strand fields are unconfirmed.
+input: data/interim/regulondb_metadata_20260916.tsv
+output_dir: data/processed/m1_regulondb_tss_20260922
+max_n_fraction: 0.1
+validation_sources: []
+background_methods:
+  - mononucleotide
+  - dinucleotide
+background_replicates: 1
+seed: 20260922
+homology_clustering: true
+identity_threshold: 0.90
+kmer_size: 15
+tss_window:
+  upstream: 60
+  downstream: 20
+tss_column: tss_position
+strand_column: strand

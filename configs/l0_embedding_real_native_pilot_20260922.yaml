@@ -1,0 +1,28 @@
+# Conditional Gate-A pilot on a balanced 64-row sample from the real native-window build.
+# This is a resource/reproducibility check, not a TSS-aligned cross-source result.
+input: tmp/real_native_pilot_20260922.tsv
+output_dir: tmp/l0_embedding_real_native_pilot_20260922
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 4
+  device: auto
+  seed: 20260922
+
+analysis:
+  n_clusters: 3
+  neighbors: 3
+  seed: 20260922
+
+occlusion:
+  enabled: true
+  max_sequences: 2
+  window_size: 12
+  stride: 6
+  mask_base: N

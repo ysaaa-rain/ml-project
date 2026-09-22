@@ -1,0 +1,25 @@
+# Full real-data L0/L1 run on source-native windows.
+# Gate A has not passed for a common TSS coordinate, so this remains descriptive
+# and must not be reported as a final cross-source biological result.
+input: data/processed/m1_real_native_20260916/promoters_clean.tsv
+output_dir: results/l0_embedding_real_native_20260922
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 4
+  device: auto
+  seed: 20260922
+
+analysis:
+  n_clusters: 3
+  neighbors: 5
+  seed: 20260922
+
+occlusion:
+  enabled: false
