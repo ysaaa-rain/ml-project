@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、聚类/近邻分析、遮挡窗口解释、产物追踪和自动化测试。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。固定 revision 的 50M 多物种 Nucleotide Transformer 仍只在 6 条 demo 上完成真实权重 smoke，真实数据 embedding 尚未开始，因此当前数据结果只证明数据管线，不作为生物学结论。详细状态见 [`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
+当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、自动化测试，以及一轮真实数据 L0/L1 推理。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。2026-09-22 在来源原生窗口上完成 64 条 pilot 和全部 4,489 条的固定 revision Nucleotide Transformer embedding；完整结果为 `4489×512`，并生成聚类、近邻和偏差诊断产物。由于 DBTBS 仍缺少可确认的统一 TSS/链方向，这些结果是来源原生窗口的描述性结果，不是最终跨来源生物学结论。详细状态见 [`docs/GateA复核_20260922.md`](docs/GateA复核_20260922.md)、[`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
 
 ## 快速开始
 
@@ -43,9 +43,9 @@ python -m experiments.run_embedding --config configs/l0_embedding_hf_demo.yaml
 
 问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)。
 
-后续真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。`preflight` 已检查 PyTorch、Transformers 和 Accelerate；模型许可证、固定 revision、真实数据和设备资源仍需按实验记录审计。
+真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。`preflight` 已确认本机可运行 PyTorch、Transformers 和 Accelerate；MEME Suite 可执行工具当前未发现，课程 motif/FIMO 线仍不能写成已完成。模型许可证和数据再利用边界也仍需按实验记录继续确认。
 
-DNA 大模型嵌入是后续实验主线：第一轮已锁定 50M 多物种 Nucleotide Transformer，再进行聚类、近邻检索、跨来源验证和局部区域解释。为严格对应老师 M3/M4，另保留一套全序列/分组 motif、FIMO 和间距分析课程线，但不扩展成传统算法主线。具体设计见 [`docs/05_DNA大模型嵌入主线方案.md`](docs/05_DNA大模型嵌入主线方案.md)。
+DNA 大模型嵌入仍是主线：已锁定 50M 多物种 Nucleotide Transformer，并完成来源原生窗口的聚类、近邻和偏差诊断；下一步是固定规则的局部遮挡、TSS 可比子集/独立来源复核，以及课程要求的全序列/分组 motif、FIMO 和间距分析。传统线不扩展成第二条算法主线。具体设计见 [`docs/05_DNA大模型嵌入主线方案.md`](docs/05_DNA大模型嵌入主线方案.md)。
 
 ## 目录约定
 
