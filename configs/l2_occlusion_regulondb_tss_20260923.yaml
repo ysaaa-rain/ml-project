@@ -1,0 +1,29 @@
+# Source-internal exploratory L2 run on the Gate-A-passed RegulonDB TSS subset.
+# Representatives are selected separately: four lexicographically first rows
+# per sigma_factor_type, including the explicit unknown group.
+input: tmp/l2_representatives_regulondb_tss_20260923.tsv
+output_dir: results/l2_occlusion_regulondb_tss_20260923
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 4
+  device: auto
+  seed: 20260923
+
+analysis:
+  n_clusters: 3
+  neighbors: 3
+  seed: 20260923
+
+occlusion:
+  enabled: true
+  max_sequences: 28
+  window_size: 12
+  stride: 3
+  mask_base: N
