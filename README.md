@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、自动化测试，以及一轮真实数据 L0/L1 推理。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。2026-09-22 在来源原生窗口上完成 64 条 pilot 和全部 4,489 条的固定 revision Nucleotide Transformer embedding；完整结果为 `4489×512`，并生成聚类、近邻和偏差诊断产物。由于 DBTBS 仍缺少可确认的统一 TSS/链方向，这些结果是来源原生窗口的描述性结果，不是最终跨来源生物学结论。详细状态见 [`docs/GateA复核_20260922.md`](docs/GateA复核_20260922.md)、[`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
+当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、自动化测试，以及一轮真实数据 L0/L1 推理。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。2026-09-22 在来源原生窗口上完成 64 条 pilot 和全部 4,489 条的固定 revision Nucleotide Transformer embedding；2026-09-23 又在 RegulonDB TSS 对齐子集上固定抽取 28 条分组代表序列，完成一轮来源内探索性 L2 遮挡分析。由于 DBTBS 仍缺少可确认的统一 TSS/链方向，现有 L0/L1/L2 结果均不是最终跨来源生物学结论。详细状态见 [`docs/GateA复核_20260922.md`](docs/GateA复核_20260922.md)、[`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
 
 ## 快速开始
 
