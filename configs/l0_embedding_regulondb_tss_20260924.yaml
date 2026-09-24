@@ -1,0 +1,24 @@
+# Source-internal P10 group diagnostic on the Gate-A-passed RegulonDB TSS set.
+# This is a single-source descriptive analysis; it is not cross-source validation.
+input: data/processed/m1_regulondb_tss_20260922/promoters_clean.tsv
+output_dir: results/l0_embedding_regulondb_tss_20260924
+
+embedding:
+  backend: huggingface
+  model_id: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+  revision: f1ff02bacb08d292ee9c3e227356d692055ac50d
+  model_class: masked_lm
+  trust_remote_code: true
+  pooling: mean
+  max_length: 512
+  batch_size: 4
+  device: auto
+  seed: 20260924
+
+analysis:
+  n_clusters: 3
+  neighbors: 5
+  seed: 20260924
+
+occlusion:
+  enabled: false

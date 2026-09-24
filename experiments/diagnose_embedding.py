@@ -146,7 +146,7 @@ def run(embedding_dir: str | Path, output_dir: str | Path) -> dict:
         "categorical_alignment": alignment.to_dict(orient="records"),
         "numeric_correlations": correlations.replace({np.nan: None}).to_dict(orient="records"),
         "nearest_neighbor": neighbor_summary,
-        "boundary": "Descriptive diagnostics only; source-native windows do not establish common TSS coordinates.",
+        "boundary": "Descriptive diagnostics only; this run does not establish cross-source reproducibility or biological significance.",
     }
     (output_dir / "diagnostics_summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2, allow_nan=False) + "\n",
