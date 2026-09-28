@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、自动化测试，以及多轮真实数据向量分析。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。2026-09-22 在来源原生窗口上完成 64 条 pilot 和全部 4,489 条 embedding；2026-09-23 完成 28 条 RegulonDB TSS 对齐代表序列的遮挡探索；2026-09-24 对 3,807 条 TSS 对齐序列完成分组向量诊断。当前 sigma 与聚类、近邻的一致性接近随机基线，尚无 sigma 特异结构证据。由于 DBTBS 仍缺少可确认的统一 TSS/链方向，现有结果不能作为最终跨来源生物学结论。详细状态见 [`docs/当前进度与协作交接.md`](docs/当前进度与协作交接.md)、[`docs/GateA复核_20260922.md`](docs/GateA复核_20260922.md)、[`docs/分组向量诊断_20260924.md`](docs/分组向量诊断_20260924.md)、[`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
+当前已完成真实来源下载、字段适配、第一轮清洗与 EDA、L0-L2 大模型运行骨架、自动化测试，以及多轮真实数据向量分析。已按老师要求落地 RegulonDB（E. coli）和 DBTBS release 4.1（B. subtilis）：合并 4,740 条，清洗后保留 4,489 条。2026-09-22 在来源原生窗口上完成 64 条 pilot 和全部 4,489 条 embedding；2026-09-23 完成 28 条 RegulonDB TSS 对齐代表序列的遮挡探索；2026-09-24 对 3,807 条 TSS 对齐序列完成分组向量诊断；2026-09-28 对固定 5-NN 图做 2,000 次 sigma 标签置换，观察同组近邻率为 41.691%，全局和 GC 分层单侧富集 p 值为 0.488 和 0.735，未见 sigma 同组富集。当前仍无 sigma 特异结构证据。由于 DBTBS 仍缺少可确认的统一 TSS/链方向，现有结果不能作为最终跨来源生物学结论。详细状态见 [`docs/当前进度与协作交接.md`](docs/当前进度与协作交接.md)、[`docs/GateA复核_20260922.md`](docs/GateA复核_20260922.md)、[`docs/分组向量诊断_20260924.md`](docs/分组向量诊断_20260924.md)、[`docs/近邻Sigma置换诊断_20260928.md`](docs/近邻Sigma置换诊断_20260928.md)、[`docs/数据下载记录_20260916.md`](docs/数据下载记录_20260916.md) 和 [`docs/进度日志.md`](docs/进度日志.md)。
 
 ## 快速开始
 
@@ -39,13 +39,13 @@ python -m experiments.run_m1 --config configs/m1_demo.yaml
 python -m experiments.run_embedding --config configs/l0_embedding_hf_demo.yaml
 ```
 
-前两条入口会生成清洗后的 TSV/FASTA、随机背景、质量报告和 EDA；第三条会用真实预训练权重生成 embedding、聚类、近邻和遮挡窗口结果。demo 仅用于工程验证。
+`run_m1` 会生成清洗后的 TSV/FASTA、随机背景、质量报告和 EDA；`run_embedding` 会用真实预训练权重生成 embedding、聚类、近邻和遮挡窗口结果。demo 仅用于工程验证。
 
 问题建模的正式定义、符号、判定规则和实验矩阵见 [`docs/03_问题建模.md`](docs/03_问题建模.md)。
 
 真实实验按 [`docs/04_两周实验推进计划.md`](docs/04_两周实验推进计划.md) 逐节点推进。`preflight` 已确认本机可运行 PyTorch、Transformers 和 Accelerate；MEME Suite 可执行工具当前未发现，课程 motif/FIMO 线仍不能写成已完成。模型许可证和数据再利用边界也仍需按实验记录继续确认。
 
-DNA 大模型嵌入仍是主线：已锁定 50M 多物种 Nucleotide Transformer，并完成来源原生窗口的聚类、近邻和偏差诊断；下一步是固定规则的局部遮挡、TSS 可比子集/独立来源复核，以及课程要求的全序列/分组 motif、FIMO 和间距分析。传统线不扩展成第二条算法主线。具体设计见 [`docs/05_DNA大模型嵌入主线方案.md`](docs/05_DNA大模型嵌入主线方案.md)。
+DNA 大模型嵌入仍是主线：已锁定 50M 多物种 Nucleotide Transformer，并完成来源原生窗口诊断、RegulonDB TSS 对齐子集分组诊断及固定近邻图上的 sigma 标签置换。下一步优先打通课程要求的 MEME/DREME/STREME、FIMO 和间距分析；同时复核 DBTBS 的 TSS/链方向证据，并对向量和遮挡结果做重采样稳定性检查。具体设计见 [`docs/05_DNA大模型嵌入主线方案.md`](docs/05_DNA大模型嵌入主线方案.md)。
 
 ## 目录约定
 
