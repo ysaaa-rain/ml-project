@@ -10,8 +10,8 @@ Two negative controls are used by this project:
 
 ``dinucleotide`` (N1)
     Preserves the length, the single-base composition *and* the dinucleotide
-    composition, following the Altschul-Erikson shuffle. This is the stricter
-    control required before an E-value may be treated as trustworthy.
+    composition using randomized Eulerian trails. This is a stricter
+    composition-matched control than the mononucleotide shuffle.
 
 Both shuffles are deterministic for a given seed so that a run can be repeated
 exactly.
@@ -48,11 +48,11 @@ def _dinucleotide_alphabet(sequence: str) -> tuple[list[str], dict[str, int]]:
 def shuffled_dinucleotide(sequence: str, rng: random.Random) -> str:
     """Shuffle a sequence while preserving its dinucleotide composition.
 
-    Implements the Altschul-Erikson shuffle: the sequence is treated as an
-    Eulerian trail over a multigraph whose vertices are bases and whose edges
-    are the observed adjacent base pairs. A random Eulerian trail over the same
-    edge multiset yields a sequence with identical mononucleotide and
-    dinucleotide counts.
+    Treats the sequence as an Eulerian trail over a multigraph whose vertices
+    are bases and whose edges are the observed adjacent base pairs. A randomly
+    chosen Eulerian trail over the same edge multiset preserves mono- and
+    dinucleotide counts; the sampling is not claimed to be uniform over all
+    possible trails.
 
     The input is returned unchanged when it cannot be shuffled meaningfully:
     an empty sequence, a single base, or any character outside ``ACGT``. The
@@ -77,7 +77,8 @@ def shuffled_dinucleotide(sequence: str, rng: random.Random) -> str:
 
     # Hierholzer's algorithm with randomised edge choice at each step.
     stack: list[str] = [sequence[0]]
-    trail: list[int] = []
+    stack_edges: list[int] = []
+    reversed_trail: list[int] = []
     while stack:
         vertex = stack[-1]
         available = outgoing[vertex]
@@ -87,21 +88,22 @@ def shuffled_dinucleotide(sequence: str, rng: random.Random) -> str:
             available[index] = available[-1]
             available.pop()
             stack.append(head_of[edge])
-            trail.append(edge)
+            stack_edges.append(edge)
         else:
             stack.pop()
+            if stack_edges:
+                reversed_trail.append(stack_edges.pop())
 
-    if len(trail) != edge_count:
+    if len(reversed_trail) != edge_count:
         # The graph is not traversable from this start (cannot happen for a
         # sequence drawn from ACGT, but never return a corrupt result).
         return sequence
 
-    # ``trail`` is already the forward Eulerian trail from ``sequence[0]``:
-    # appending each chosen edge head reconstructs a valid sequence. Reversing
-    # the trail here would break the directed edge adjacency (AAC -> ACA), so
-    # it is deliberately not reversed.
+    # Hierholzer's algorithm completes paths during backtracking. Discovery
+    # order is not a valid Eulerian trail when a vertex has several outgoing
+    # edges; reverse the completed path before reconstructing the sequence.
     bases = [sequence[0]]
-    bases.extend(head_of[edge] for edge in trail)
+    bases.extend(head_of[edge] for edge in reversed(reversed_trail))
     shuffled = "".join(bases)
     if len(shuffled) != len(sequence):
         return sequence

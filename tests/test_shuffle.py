@@ -46,6 +46,15 @@ def test_dinucleotide_shuffle_holds_for_every_short_sequence():
             assert dinucleotide_counts(result) == dinucleotide_counts(sequence), sequence
 
 
+def test_dinucleotide_shuffle_actually_resamples_a_branched_sequence():
+    # Composition preservation alone missed the old traversal-order bug: it
+    # returned the original for most long sequences after failed verification.
+    sequence = "ACGTGCAATGCTAGTACCGATGACCTAGGCTTACGATCGTACG"
+    shuffled = [shuffled_dinucleotide(sequence, random.Random(seed)) for seed in range(20)]
+    assert sum(result != sequence for result in shuffled) >= 15
+    assert all(dinucleotide_counts(result) == dinucleotide_counts(sequence) for result in shuffled)
+
+
 def test_mononucleotide_shuffle_does_break_dinucleotides():
     # This is the reason N1 exists: the N0 control is usually too easy to beat.
     sequence = "AAAAACGTACGTACGTACGT"
