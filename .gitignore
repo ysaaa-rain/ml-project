@@ -27,7 +27,7 @@ intro-mlproj.pdf
 project-pool.pdf
 docs/project-pool(1).pdf
 
-# Downloaded/generated data and experiment outputs
+# Downloaded/generated data and uncurated experiment outputs
 data/raw/*
 data/interim/*
 data/processed/*
@@ -36,6 +36,26 @@ results/*
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 !results/.gitkeep
+
+# Only reviewed, small, report-facing motif results may be versioned here.
+# Keep raw MEME output in the ignored tmp/ work area, not under results/motif/.
+!results/motif/
+!results/motif/**
+results/motif/**/*.fa
+results/motif/**/*.fasta
+results/motif/**/*.fna
+results/motif/**/*.npy
+results/motif/**/*.npz
+results/motif/**/*.html
+results/motif/**/*.xml
+
+# Reviewed, aggregate M1/M2 outputs may be versioned; source-level sequence
+# tables and full candidate-hit records remain in ignored data/ or tmp/ paths.
+!results/eda/
+!results/eda/**
+
+# Local tool caches are reproducible and should not be committed.
+.cache/
 
 # Temporary PDF renders and local clones
 tmp/

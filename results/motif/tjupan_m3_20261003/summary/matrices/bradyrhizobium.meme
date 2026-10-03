@@ -1,0 +1,98 @@
+MEME version 5
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies
+A 0.197 C 0.303 G 0.303 T 0.197
+
+MOTIF bradyrhizobium_MEME-1 ATCGHC
+letter-probability matrix: alength= 4 w= 6 nsites= 494 E= 0.042
+1 0 0 0
+0 0 0 1
+0 1 0 0
+0 0 1 0
+0.334008 0.431174 0 0.234818
+0 1 0 0
+
+MOTIF bradyrhizobium_MEME-2 CGVMAT
+letter-probability matrix: alength= 4 w= 6 nsites= 896 E= 0.11
+0 1 0 0
+0 0 1 0
+0.454241 0.238839 0.30692 0
+0.4375 0.40067 0.16183 0
+1 0 0 0
+0 0 0 1
+
+MOTIF bradyrhizobium_MEME-3 TTCWYS
+letter-probability matrix: alength= 4 w= 6 nsites= 1987 E= 2.2
+0.146955 0 0.002013 0.851032
+0 0.068445 0.008556 0.922999
+0 0.674383 0.300956 0.02466
+0.532461 0 0.078007 0.389532
+0.074484 0.367388 0.113739 0.444389
+0.000503 0.504781 0.494716 0
+
+MOTIF bradyrhizobium_MEME-4 YTTGCG
+letter-probability matrix: alength= 4 w= 6 nsites= 277 E= 6.7e-08
+0 0.620939 0 0.379061
+0 0 0 1
+0 0 0 1
+0 0 1 0
+0 1 0 0
+0 0 1 0
+
+MOTIF bradyrhizobium_MEME-5 ATCGCG
+letter-probability matrix: alength= 4 w= 6 nsites= 180 E= 2.2e-18
+1 0 0 0
+0 0 0 1
+0 1 0 0
+0 0 1 0
+0 1 0 0
+0 0 1 0
+
+MOTIF bradyrhizobium_MEME-6 TTYGGC
+letter-probability matrix: alength= 4 w= 6 nsites= 224 E= 0.00021
+0 0 0 1
+0 0 0 1
+0 0.602679 0 0.397321
+0 0 1 0
+0 0 1 0
+0 1 0 0
+
+MOTIF bradyrhizobium_MEME-7 GGCGCG
+letter-probability matrix: alength= 4 w= 6 nsites= 451 E= 3.5e-60
+0 0 0.711752 0.288248
+0 0 1 0
+0 1 0 0
+0 0 1 0
+0 1 0 0
+0 0 1 0
+
+MOTIF bradyrhizobium_MEME-8 TTGCCG
+letter-probability matrix: alength= 4 w= 6 nsites= 166 E= 5.9e-14
+0 0 0 1
+0 0 0 1
+0 0 1 0
+0 1 0 0
+0 1 0 0
+0 0 1 0
+
+MOTIF bradyrhizobium_MEME-9 TYTGDA
+letter-probability matrix: alength= 4 w= 6 nsites= 432 E= 0.36
+0 0 0 1
+0 0.583333 0 0.416667
+0 0.275463 0 0.724537
+0.069444 0 0.930556 0
+0.465278 0 0.25463 0.280093
+0.789352 0 0 0.210648
+
+MOTIF bradyrhizobium_MEME-10 TGCTCG
+letter-probability matrix: alength= 4 w= 6 nsites= 120 E= 1.7e-12
+0 0 0 1
+0 0 1 0
+0 1 0 0
+0 0 0 1
+0 1 0 0
+0 0 1 0

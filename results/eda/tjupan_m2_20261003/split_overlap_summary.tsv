@@ -1,0 +1,7 @@
+species	exact_sequences_in_multiple_splits	split_rule
+bacillus_subtilis	0	train/dev/test are partitions of one source dataset, not independent datasets
+baumannii	0	train/dev/test are partitions of one source dataset, not independent datasets
+bradyrhizobium	2	train/dev/test are partitions of one source dataset, not independent datasets
+diphtheria	0	train/dev/test are partitions of one source dataset, not independent datasets
+escherichia_coli	3	train/dev/test are partitions of one source dataset, not independent datasets
+staphylococcus	0	train/dev/test are partitions of one source dataset, not independent datasets

@@ -1,0 +1,30 @@
+project: PR01-02
+stage: M3
+dataset: TJU Pan course cloud drive / reg_and_gen/Datasets
+species:
+  - bacillus_subtilis
+  - baumannii
+  - bradyrhizobium
+  - diphtheria
+  - escherichia_coli
+  - staphylococcus
+primary_sequences: positive_samples.csv
+control_sequences: Dataset.csv rows with label == 0
+sequence_window_bp: 81
+tss_relative_window_claim: [-60, 20]
+orientation_status: unverified_from_csv
+motif_tool: MEME Suite
+motif_tool_version: 5.5.9
+parameters:
+  alphabet: DNA
+  site_distribution: zoops
+  objective: differential_enrichment
+  max_motifs: 10
+  min_width: 6
+  max_width: 20
+  searchsize: 0
+  reverse_complement_search: true
+  random_seed: 20261003
+  max_sites_printed_per_motif: 50
+role_of_regulondb: auxiliary_sigma_factor_analysis_and_second_dataset_comparison
+role_of_dbtbs: optional_validation

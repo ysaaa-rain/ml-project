@@ -1,0 +1,273 @@
+{
+  "schema_version": "tjupan-motif-inputs-1.0",
+  "status": "inputs_validated_and_written",
+  "source": "TJU course cloud drive; reg_and_gen/Datasets",
+  "upstream_reference": "https://github.com/KevinHZS/PromLoop",
+  "coordinate_claim": "81 bp, relative to TSS [-60,+20], as stated by upstream README",
+  "orientation_status": "not independently verified; CSV has no strand field",
+  "sigma_annotation": "not provided by these CSV files",
+  "species": {
+    "bacillus_subtilis": {
+      "source_directory": "Bacillus_subtilis",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/Dataset.csv",
+        "sha256": "87cae44c1e69668866869511f2a58c930a3b61d6a275c8bca718d0fcdb7ddcf5",
+        "records": 1500,
+        "positives": 691,
+        "negatives": 809,
+        "invalid_length_records": [],
+        "seq_type_values": {
+          "gene": 1500
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/positive_samples.csv",
+        "sha256": "244706ab976c98527135078ef0338d425f780bbaf8bac90b36a87920fd736f2c",
+        "records": 691,
+        "unique_sequences": 691,
+        "duplicate_sequence_records": 0,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.positive.fasta",
+        "fasta_sha256": "81d17e4946c968231a2894032296796472467dc77298859078ea61afa492e870"
+      },
+      "negative_control": {
+        "records": 809,
+        "excluded_invalid_length_records": [],
+        "unique_sequences": 809,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.control.fasta",
+        "fasta_sha256": "4c45d921599653cb8e729c36d4a04eb31eefb68d79285227fa3b6fe1c7a2dafe"
+      },
+      "split_records": {
+        "train": 1050,
+        "dev": 150,
+        "test": 300
+      },
+      "cross_split_exact_sequence_count": 0,
+      "positive_file_matches_label_1": true
+    },
+    "baumannii": {
+      "source_directory": "Baumanii",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/Dataset.csv",
+        "sha256": "daaf42590f1c94500240d4c2c659331b9e3ab7774f841c24f54a8a215cd0ac58",
+        "records": 2900,
+        "positives": 1540,
+        "negatives": 1360,
+        "invalid_length_records": [],
+        "seq_type_values": {
+          "gene": 2900
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/positive_samples.csv",
+        "sha256": "4951510c0dd52699ebb32ed92a8eb36ceea6c004fea9805bd17baf3d40af6119",
+        "records": 1540,
+        "unique_sequences": 1540,
+        "duplicate_sequence_records": 0,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/baumannii.positive.fasta",
+        "fasta_sha256": "f1711aac467e4dc9ff585f465d642f115906a6053267d14386c2057173295f2c"
+      },
+      "negative_control": {
+        "records": 1360,
+        "excluded_invalid_length_records": [],
+        "unique_sequences": 1360,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/baumannii.control.fasta",
+        "fasta_sha256": "59232c286d1d65282a9c02a3b071eadf4c647343549381c688ec9573e2209e3b"
+      },
+      "split_records": {
+        "train": 2030,
+        "dev": 290,
+        "test": 580
+      },
+      "cross_split_exact_sequence_count": 0,
+      "positive_file_matches_label_1": true
+    },
+    "bradyrhizobium": {
+      "source_directory": "Bradyrhizobium",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/Dataset.csv",
+        "sha256": "1641cf04a7081cf271ed4ae7903c8a314e874ca987b15e6b829554eb8549bf05",
+        "records": 3940,
+        "positives": 1987,
+        "negatives": 1953,
+        "invalid_length_records": [
+          {
+            "seq_id": "3565",
+            "length": 80
+          }
+        ],
+        "seq_type_values": {
+          "gene": 3940
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/positive_samples.csv",
+        "sha256": "e170a6aeec8749fed970eab4e2be0cc1526924ca7d1f709486060d8dff3c07c3",
+        "records": 1987,
+        "unique_sequences": 1983,
+        "duplicate_sequence_records": 4,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.positive.fasta",
+        "fasta_sha256": "ef3b64c43075437c1d0db810f8ed28172953abe4a653dfb5b8df271e17b89f22"
+      },
+      "negative_control": {
+        "records": 1952,
+        "excluded_invalid_length_records": [
+          {
+            "seq_id": "3565",
+            "length": 80
+          }
+        ],
+        "unique_sequences": 1952,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.control.fasta",
+        "fasta_sha256": "bc620ce804616efb82c939eaddd237b5d1c8cb87cf2dc1dd29210870172ee34f"
+      },
+      "split_records": {
+        "train": 2758,
+        "dev": 394,
+        "test": 788
+      },
+      "cross_split_exact_sequence_count": 2,
+      "positive_file_matches_label_1": true
+    },
+    "diphtheria": {
+      "source_directory": "Diphtheria",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/Dataset.csv",
+        "sha256": "6196a0bb29d884dfe7eb7252ee98a8c70190dfd9132051633f1ab888b7c9f372",
+        "records": 3310,
+        "positives": 1654,
+        "negatives": 1656,
+        "invalid_length_records": [
+          {
+            "seq_id": "32",
+            "length": 80
+          }
+        ],
+        "seq_type_values": {
+          "gene": 3310
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/positive_samples.csv",
+        "sha256": "a28630a57f9381f06719c7de5038f9a24c379df58c7845f6de927bb723100131",
+        "records": 1654,
+        "unique_sequences": 1654,
+        "duplicate_sequence_records": 0,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/diphtheria.positive.fasta",
+        "fasta_sha256": "b3b8f9670bd4291d2ef4cbeeb42c0429fd238d1f3c097e68a65f304535ca55e5"
+      },
+      "negative_control": {
+        "records": 1655,
+        "excluded_invalid_length_records": [
+          {
+            "seq_id": "32",
+            "length": 80
+          }
+        ],
+        "unique_sequences": 1655,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/diphtheria.control.fasta",
+        "fasta_sha256": "c4a4b1e53f3e74cc4e76024102d9826460dd8478b6c6b92ca22984ccc5328d08"
+      },
+      "split_records": {
+        "train": 2317,
+        "dev": 331,
+        "test": 662
+      },
+      "cross_split_exact_sequence_count": 0,
+      "positive_file_matches_label_1": true
+    },
+    "escherichia_coli": {
+      "source_directory": "Escherichia_coli",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/Dataset.csv",
+        "sha256": "5bad20aef49e68d00bce978ea92996c6d16dbc2c027276eff597c6ddce3c6fb3",
+        "records": 3350,
+        "positives": 1645,
+        "negatives": 1705,
+        "invalid_length_records": [
+          {
+            "seq_id": "2444",
+            "length": 80
+          }
+        ],
+        "seq_type_values": {
+          "gene": 3350
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/positive_samples.csv",
+        "sha256": "c573037a6f84feb4adb928684ebb3eef7ba545ba2c2d957b2c433b318b086084",
+        "records": 1645,
+        "unique_sequences": 1637,
+        "duplicate_sequence_records": 8,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/escherichia_coli.positive.fasta",
+        "fasta_sha256": "cecfd39de8086fb5501fa267d64049cd1bf561061862a7ab5bd8097e0d944734"
+      },
+      "negative_control": {
+        "records": 1704,
+        "excluded_invalid_length_records": [
+          {
+            "seq_id": "2444",
+            "length": 80
+          }
+        ],
+        "unique_sequences": 1704,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/escherichia_coli.control.fasta",
+        "fasta_sha256": "db02e3d2f5719f274a87a6358db6c8fc252c6ddf70f99d2d0b39bb9748554463"
+      },
+      "split_records": {
+        "train": 2345,
+        "dev": 335,
+        "test": 670
+      },
+      "cross_split_exact_sequence_count": 3,
+      "positive_file_matches_label_1": true
+    },
+    "staphylococcus": {
+      "source_directory": "Staphylococcus",
+      "dataset_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/Dataset.csv",
+        "sha256": "6c470de4dac8822af6f1e3b07a511f0ecd4ac5f829e77a85d21cb0b0b67fd2b2",
+        "records": 3370,
+        "positives": 2207,
+        "negatives": 1163,
+        "invalid_length_records": [
+          {
+            "seq_id": "3357",
+            "length": 80
+          }
+        ],
+        "seq_type_values": {
+          "gene": 3370
+        }
+      },
+      "positive_samples_csv": {
+        "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/positive_samples.csv",
+        "sha256": "8a3460eb4d02a4008f6407de8c8e66c6216f852d913a5d48e125488a4f2ce9a9",
+        "records": 2207,
+        "unique_sequences": 2206,
+        "duplicate_sequence_records": 1,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.positive.fasta",
+        "fasta_sha256": "eac65f52722e322c883deec44c364e5457fda40afe1d9ab63b9ee763edc54bb4"
+      },
+      "negative_control": {
+        "records": 1162,
+        "excluded_invalid_length_records": [
+          {
+            "seq_id": "3357",
+            "length": 80
+          }
+        ],
+        "unique_sequences": 1162,
+        "fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.control.fasta",
+        "fasta_sha256": "9c75ad6b76ac0f06fcb41b9c1a12d21ce10c232bc0da3cf05e319cb7ca110533"
+      },
+      "split_records": {
+        "train": 2359,
+        "dev": 337,
+        "test": 674
+      },
+      "cross_split_exact_sequence_count": 0,
+      "positive_file_matches_label_1": true
+    }
+  }
+}

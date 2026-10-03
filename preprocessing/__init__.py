@@ -1,4 +1,4 @@
-"""Data preparation utilities for the PR01-02 DNA embedding mainline."""
+"""PR01-02 数据准备、清洗与来源追溯工具。"""
 
 from .pipeline import (
     build_quality_report,

@@ -1,0 +1,67 @@
+{
+  "purpose": "TJU Pan motif matrix vs idealized -10/-35/UP reference similarity; not genomic locus overlap",
+  "status": "complete",
+  "expected_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "included_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "tool": "MEME Suite Tomtom 5.5.9",
+  "parameters": [
+    "-dist ed",
+    "-min-overlap 6",
+    "-thresh 1",
+    "target reverse-complement search enabled"
+  ],
+  "reference_consensus_validation": {
+    "Ecoli_sigma70_minus10": "TATAAT",
+    "Ecoli_sigma70_minus35": "TTGACA"
+  },
+  "reference_motif_ids": [
+    "Ecoli_UP_distal",
+    "Ecoli_UP_proximal",
+    "Ecoli_sigma70_minus10",
+    "Ecoli_sigma70_minus35"
+  ],
+  "matrix_summary_manifest_sha256": "6379c11b0688fdc356c3be13e1c0d7a0a1b8c30c1039f9a821b68652584b54c9",
+  "motif_matrix_sha256": {
+    "bacillus_subtilis": "e51f23deeec0ef802ad26085535f8cfb85f7d714b4ea23d08cff0a2742be450a",
+    "baumannii": "de7809f013f9a8d4f1b221a5bcaf2188f38860a450b74152a618c74264939b92",
+    "bradyrhizobium": "a56660304c8d231bb0f3a93e49877dcad3aa7f8a88d1946a47cf308d88f520b0",
+    "diphtheria": "98debf40048a49ef7df2c029e2e1d82fc4939acd71198b1ee0c1f9bf240e46ea",
+    "escherichia_coli": "a313a14f789ba8ceff5a578d67697a12e06d1736bf55438a994d94bed766129a",
+    "staphylococcus": "cd1d6891067090b1b7d25a2422733ccef2c4aafe9ded5482abff9d83140a9ae3"
+  },
+  "tomtom_output_sha256": {
+    "bacillus_subtilis/tomtom.tsv": "9d8535cc5566bf1ad428c7fd10908e2da8035cae979bdfe6fa8ce2f2b417b6a5",
+    "baumannii/tomtom.tsv": "9adf6a46fe925c78fef25b777d4afebf0998ca3a397b0607f825f552d1ae2b25",
+    "bradyrhizobium/tomtom.tsv": "52c6519bc3f1596fb66692bbf831d668db5207f7f2cc68521968759746de059a",
+    "diphtheria/tomtom.tsv": "82434646edbe26e91274b6fbe04d22e57269313609d7d9584c954eec00504a0e",
+    "escherichia_coli/tomtom.tsv": "42ce140d5edaf221d75f911a338a147f1e976c3d6c206775b7bfb6c70fbd6e2a",
+    "staphylococcus/tomtom.tsv": "f023d8c3e18662822f3306ca17047242b68c736ec12608bd866de14c97303d72"
+  },
+  "pair_count": 240,
+  "statistical_limit": "Only four target motifs and eight strand-aware target comparisons per query; Tomtom p/q values are unreliable and are descriptive ranking fields only.",
+  "biological_limit": "The -10/-35 templates are E. coli sigma70 consensus boxes; matrix similarity does not establish genomic position, co-occurrence, activity, or sigma specificity.",
+  "output_sha256": {
+    "all_species_reference_matches.tsv": {
+      "bytes": 23636,
+      "sha256": "2683445e198ebf7e3961996cf7c666b3c55bb396271d43b2eec4e57b41c298e2"
+    },
+    "best_reference_match_per_motif.tsv": {
+      "bytes": 5185,
+      "sha256": "30bf57840a05d944412e0a35350e5a509bd71cab4eb7b565f54707001bcefb6f"
+    }
+  }
+}

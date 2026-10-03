@@ -1,0 +1,67 @@
+{
+  "purpose": "从 MEME XML 概率矩阵绘制 motif 序列 logo；未读取或输出原始序列",
+  "method": "每列信息量 = 2 - Shannon entropy；字母高度 = 碱基概率 × 列信息量；未作有限样本修正",
+  "status": "complete",
+  "expected_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "included_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "species_motif_counts": {
+    "bacillus_subtilis": 10,
+    "baumannii": 10,
+    "bradyrhizobium": 10,
+    "diphtheria": 10,
+    "escherichia_coli": 10,
+    "staphylococcus": 10
+  },
+  "input_xml_sha256": {
+    "bacillus_subtilis/meme.xml": "3292823ee34bbc5cb21c27144d3af31ed05e11701d71595c439d236986750017",
+    "baumannii/meme.xml": "bfb80dfe8021d320e57acdb49f64d1f721caa503b73cd671ee070a752243f4c2",
+    "bradyrhizobium/meme.xml": "ab4b61b8df95ab4bbec90af1b5e8586995ab96df3e787cb18edb469c672bfa22",
+    "diphtheria/meme.xml": "851bd2d0bfe21038537df501ed18b37b07c043306e56952e39a34b1dc6d63aaa",
+    "escherichia_coli/meme.xml": "ade680712ec759bd7bdb272d0d0aff79daedc2cf7f6bf966860963534ba0f753",
+    "staphylococcus/meme.xml": "a162007e18f2fb885c1af2a5a70eefd23256e94e70b18715d0edb127af14767b"
+  },
+  "outputs": {
+    "six_species_motif_logos.pdf": {
+      "bytes": 281154,
+      "sha256": "0ff04f77b9720513e217809def98c0b9bb88f5f34592bcc993962e67f370bc12"
+    },
+    "bacillus_subtilis_motif_logos.png": {
+      "bytes": 342652,
+      "sha256": "db4946389ae0bb884bfd0ada5245bcb7de5ce56491da3f55367589ff842cb4ca"
+    },
+    "baumannii_motif_logos.png": {
+      "bytes": 354333,
+      "sha256": "f61c5a7a6bcec6353d4baeaa6755239e2ab175515f04ded42cb963d9b445bf05"
+    },
+    "bradyrhizobium_motif_logos.png": {
+      "bytes": 330595,
+      "sha256": "1dcabdc31a1d1bf9e29e299a6d355df67ac2b75304af57b0e89c66d783f1554e"
+    },
+    "diphtheria_motif_logos.png": {
+      "bytes": 372921,
+      "sha256": "dc8ae06cf7b0a83d812d7e887ba01f762557991608e356f84e31039366048f14"
+    },
+    "escherichia_coli_motif_logos.png": {
+      "bytes": 370807,
+      "sha256": "c9d596745eafd2ec218ed890ad77efa92eb3717aaa7a1982fc29bf356152520b"
+    },
+    "staphylococcus_motif_logos.png": {
+      "bytes": 332526,
+      "sha256": "60ee6378485a82e38e3813adfc9eb80785859c2f438f74a0bc22df4754f2a864"
+    }
+  }
+}

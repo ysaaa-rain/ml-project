@@ -266,4 +266,7 @@ def test_scan_applies_the_per_length_calibrated_threshold(tmp_path):
     hits = pd.read_csv(tmp_path / "out" / "known_element_hits.tsv", sep="\t")
     assert list(hits["sequence_id"]) == ["len30_mismatch"]
     assert "exact_length" in summary["thresholds"]
+    exact = summary["thresholds"]["exact_length"]
+    assert exact["candidate_hit_count"] >= exact["hit_count"]
+    assert exact["hit_count"] == 1
     assert summary["calibration"] == str(calibration_path.resolve())

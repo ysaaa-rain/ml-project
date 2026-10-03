@@ -1,9 +1,9 @@
-"""B0 interpretation baseline for the DNA embedding mainline.
+"""B0 interpretation baseline for promoter motif analysis.
 
 Thresholds are calibrated per sequence length by ``experiments.calibrate_b0``.
 When no calibration record is available the scan accepts only a perfect
 (zero-mismatch) consensus match, which is the conservative default. B0 is an
-explanation baseline, not the project's main discovery model.
+explanatory baseline, not a de novo motif discovery method.
 """
 
 from __future__ import annotations
@@ -114,12 +114,21 @@ def run_scan(
         else:
             threshold, source = resolve_threshold(calibration, length_by_id.get(hit.sequence_id, 0))
         usage = threshold_usage.setdefault(
-            source, {"threshold": threshold, "hit_count": 0, "sequences": set()}
+            source,
+            {
+                "threshold": threshold,
+                "candidate_hit_count": 0,
+                "hit_count": 0,
+                "candidate_sequences": set(),
+                "sequences": set(),
+            },
         )
-        usage["hit_count"] += 1
-        usage["sequences"].add(hit.sequence_id)
+        usage["candidate_hit_count"] += 1
+        usage["candidate_sequences"].add(hit.sequence_id)
         if hit.score >= threshold:
             kept.append(hit)
+            usage["hit_count"] += 1
+            usage["sequences"].add(hit.sequence_id)
 
     hits_frame = pd.DataFrame([hit.__dict__ for hit in kept])
     if hits_frame.empty:
@@ -136,6 +145,7 @@ def run_scan(
     summary.to_csv(output_dir / "known_element_summary.tsv", sep="\t", index=False)
 
     for usage in threshold_usage.values():
+        usage["candidate_sequence_count"] = len(usage.pop("candidate_sequences"))
         usage["sequence_count"] = len(usage.pop("sequences"))
     return {
         "input": str(input_path.resolve()),

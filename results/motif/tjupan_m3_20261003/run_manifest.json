@@ -1,0 +1,895 @@
+{
+  "schema_version": "tjupan-meme-runs-1.0",
+  "project": "PR01-02",
+  "dataset": "TJU course cloud drive; reg_and_gen/Datasets",
+  "input_manifest": "results/motif/tjupan_m3_20261003/input_manifest.json",
+  "input_manifest_sha256": "907a902920c60fbbc1471ba53d9d282a57b17e8481902eba3451d946938c7622",
+  "motif_tool": "tmp/meme-suite-5.5.9/bin/meme",
+  "meme_version": "5.5.9",
+  "parameters": {
+    "-dna": true,
+    "-mod": "zoops",
+    "-objfun": "de",
+    "-nmotifs": 10,
+    "-minw": 6,
+    "-maxw": 20,
+    "-searchsize": 0,
+    "-revcomp": true,
+    "-seed": 20261003,
+    "-brief": 50
+  },
+  "search_note": "searchsize=0 disables sequence sampling and uses the full primary dataset; objective-specific holdout behavior still applies; runtime may be long",
+  "results": {
+    "bacillus_subtilis": {
+      "status": "success",
+      "species_directory": "Bacillus_subtilis",
+      "positive_count": 691,
+      "control_count": 809,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.positive.fasta",
+      "positive_sha256": "81d17e4946c968231a2894032296796472467dc77298859078ea61afa492e870",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.control.fasta",
+      "control_sha256": "4c45d921599653cb8e729c36d4a04eb31eefb68d79285227fa3b6fe1c7a2dafe",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/bacillus_subtilis.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/bacillus_subtilis"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/bacillus_subtilis",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/bacillus_subtilis.stdout.log",
+      "started_at": "2026-10-03T14:36:49+08:00",
+      "return_code": 0,
+      "elapsed_seconds": 175.32,
+      "finished_at": "2026-10-03T14:39:45+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13280,
+          "sha256": "9cf1c0f1d746d7c74793310422c9e6057ca9dab200d191a57c6812d04c4c52b6"
+        },
+        "logo10.eps": {
+          "bytes": 13324,
+          "sha256": "d41f911d5c97ad2220dd72ec5686178f525c6823c7601da5138f76790fcfde49"
+        },
+        "logo2.eps": {
+          "bytes": 14591,
+          "sha256": "a1dd86c74dd16b88f1bfd35f810cb544220b081e3b14e033751576f5a7836cc7"
+        },
+        "logo3.eps": {
+          "bytes": 13258,
+          "sha256": "53090e04b8b3453c05877a356dbe54e1d4bbcab3ed225839d64957459cbb4a91"
+        },
+        "logo4.eps": {
+          "bytes": 14297,
+          "sha256": "d965d011310e73a739500be4102a843a5290661808fc3f71f74f9ec3682c8966"
+        },
+        "logo5.eps": {
+          "bytes": 13368,
+          "sha256": "86e91ee38b3ba99cdded8e2a2359bd1ff484f07b5fa35444dd93b39f3dad96f6"
+        },
+        "logo6.eps": {
+          "bytes": 13349,
+          "sha256": "a08cf914fd7b4aba8b6f8a4be65d1deba78dc535cf6db5aa7c80fefd24ff58f0"
+        },
+        "logo7.eps": {
+          "bytes": 13412,
+          "sha256": "6e9402edc086578b59a2b69e25bf0bc9324b7ce9f6cef5d92a9533a81ce801d8"
+        },
+        "logo8.eps": {
+          "bytes": 13444,
+          "sha256": "44749f8e6823a826deeacc65229ae223157c11bd48ddb093060b395b96a7349a"
+        },
+        "logo9.eps": {
+          "bytes": 13839,
+          "sha256": "3cbecbe563036654613d64c4f9a14db3bf847c7c51f6c8dd0bf0ef65fe2daad0"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13280,
+          "sha256": "ae01931c0e856866420fe39e95cfa6c4d6d243c02bf6e4a4d0b33db262927807"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13324,
+          "sha256": "c50bba0325e5d67e8413495d844403394448fe65ed5f88c8e1a4c5b6f1e20fad"
+        },
+        "logo_rc2.eps": {
+          "bytes": 14591,
+          "sha256": "7a3652244d68394b910dd09ae6535c6be891fb1804d1a74c4ac1dec52476e211"
+        },
+        "logo_rc3.eps": {
+          "bytes": 13258,
+          "sha256": "20c47750a3e64712d2644de45cd05a519fa52c45eee13548427df94c9f457601"
+        },
+        "logo_rc4.eps": {
+          "bytes": 14297,
+          "sha256": "96dbd9f0d1b21e1bc0bab97ee9362bddd965a6d7c5f847b77dbba0d98560b9bb"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13368,
+          "sha256": "dc38b239ff4c404897a016fdb0fdac55668fa8b8ec05f7e2f43b600c34a1b08e"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13349,
+          "sha256": "242186a0728d9064d34ddeddded256090a5a7dcff084bfdf252b957670ce3a8b"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13412,
+          "sha256": "c69a91b73fa600fe3b2141b5624855cbed4e0d11be9712bb4971dab007975184"
+        },
+        "logo_rc8.eps": {
+          "bytes": 13444,
+          "sha256": "9aabba2d1f12bfd2b42df75851f19987157fdca518828db8c049696a7aabbf25"
+        },
+        "logo_rc9.eps": {
+          "bytes": 13839,
+          "sha256": "5f2becf38636f5165d964e3de903c45ccb93b307dd22a9882f5930cee13f8cba"
+        },
+        "meme.html": {
+          "bytes": 335019,
+          "sha256": "7b6eccf64e89f4adacaa38c6505ca57b820f71b6c2b1e1a0f028f985c12a3426"
+        },
+        "meme.txt": {
+          "bytes": 32462,
+          "sha256": "9bbe475fb289972a26b6e3f7753a2641f0d98ce5bd79daa5e0cc8f79d74a7e32"
+        },
+        "meme.xml": {
+          "bytes": 44227,
+          "sha256": "3292823ee34bbc5cb21c27144d3af31ed05e11701d71595c439d236986750017"
+        }
+      }
+    },
+    "baumannii": {
+      "status": "success",
+      "species_directory": "Baumanii",
+      "positive_count": 1540,
+      "control_count": 1360,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/baumannii.positive.fasta",
+      "positive_sha256": "f1711aac467e4dc9ff585f465d642f115906a6053267d14386c2057173295f2c",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/baumannii.control.fasta",
+      "control_sha256": "59232c286d1d65282a9c02a3b071eadf4c647343549381c688ec9573e2209e3b",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/baumannii.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/baumannii.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/baumannii"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/baumannii",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/baumannii.stdout.log",
+      "started_at": "2026-10-03T14:39:45+08:00",
+      "return_code": 0,
+      "elapsed_seconds": 868.53,
+      "finished_at": "2026-10-03T14:54:13+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13390,
+          "sha256": "644b078dae41f6ca09b9daeff922b12384b2da3e4d062a76cb3c607812549d4b"
+        },
+        "logo10.eps": {
+          "bytes": 13258,
+          "sha256": "b96241b58cc43fe17f8217421cc7951496d575e14261b56aeb903f97e34bbc33"
+        },
+        "logo2.eps": {
+          "bytes": 13324,
+          "sha256": "233373c040c9bd8b8514e274d2d08bcd5bc468ea5a7ddf66412521cd2decddca"
+        },
+        "logo3.eps": {
+          "bytes": 13302,
+          "sha256": "b046d9f296a69185bb7ad6b34bd02396ec6e20e97affbcc6ad99e8003c7b6afa"
+        },
+        "logo4.eps": {
+          "bytes": 13236,
+          "sha256": "203e497a4ebdd20a77477f8ff89e0fcb7eab169086224d044def35c046dcc7ab"
+        },
+        "logo5.eps": {
+          "bytes": 13258,
+          "sha256": "9dd1b47c3256f0f1a8ea8f3dd3557c2cbe30939e9b78d13af061f4bbe3e868ae"
+        },
+        "logo6.eps": {
+          "bytes": 13459,
+          "sha256": "44c5c38c9dd4630992b63f6c6e08d8a58971b9e2f9d8435c9427716f733385a5"
+        },
+        "logo7.eps": {
+          "bytes": 13236,
+          "sha256": "b65e4cbc38e114a4cdd155175d9b73d0ce9b09b213a8588601948cee17d2c904"
+        },
+        "logo8.eps": {
+          "bytes": 13324,
+          "sha256": "60f0a2bcbfb67940559e5559f6907602426cae809c04de8bb3235f1ee79b6929"
+        },
+        "logo9.eps": {
+          "bytes": 13236,
+          "sha256": "d9bf8fb6f03360d51244d86efc1747e0c84366184d82dd302ee0442c9bb5c541"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13390,
+          "sha256": "4f2b7b9f061938116ea252be7dadb181906d26f2f8413c5513b8cab47d6d7fef"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13258,
+          "sha256": "ce2f01bc5e80d1bce56fec6c588a3b73b601f0bd9e7f47affcef3d5a26bb29c7"
+        },
+        "logo_rc2.eps": {
+          "bytes": 13324,
+          "sha256": "c7c464e5d0f72669b0f828f01e69e9c76efd1a0832bf239065d266aa9ff18b4b"
+        },
+        "logo_rc3.eps": {
+          "bytes": 13302,
+          "sha256": "55cf360187237604f19ff7b6d4b7881854743483945884ce8e53eb992e304c8e"
+        },
+        "logo_rc4.eps": {
+          "bytes": 13236,
+          "sha256": "688199c9a1e40670452d0d171c6638ee8ddaa393e356c247fe041c379a454b7b"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13258,
+          "sha256": "6bc38e86b20e817af5b691df4116bc774d06fd1da0332da9ad0f234196011f51"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13459,
+          "sha256": "1edf83225f3c1395456a8b38b2db9552de5c69a2c503124aa00c7477f66b9a71"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13236,
+          "sha256": "9d985def7d9d93b6e93153623874e7d997ebe2b96564ff0b4be955d5c50dfd4e"
+        },
+        "logo_rc8.eps": {
+          "bytes": 13324,
+          "sha256": "0d58a7e23705c995f4b9495ae93cad281451802a61810f291e62ea72f009ecb3"
+        },
+        "logo_rc9.eps": {
+          "bytes": 13236,
+          "sha256": "38faae19a516c80b9f7fe6924c795a2da1a4cf6a2d2cd258c86fdcb9c8b8ce84"
+        },
+        "meme.html": {
+          "bytes": 332711,
+          "sha256": "2cf4e109cf758e381adad6ba2cb08805f9e86ef1941c065273a6a3fc8481a849"
+        },
+        "meme.txt": {
+          "bytes": 29804,
+          "sha256": "a47fbfb86db4d6f6e8d998740ec6e72c1636681a2e9890344350d6197c171248"
+        },
+        "meme.xml": {
+          "bytes": 34586,
+          "sha256": "bfb80dfe8021d320e57acdb49f64d1f721caa503b73cd671ee070a752243f4c2"
+        }
+      }
+    },
+    "bradyrhizobium": {
+      "status": "success",
+      "species_directory": "Bradyrhizobium",
+      "positive_count": 1987,
+      "control_count": 1952,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.positive.fasta",
+      "positive_sha256": "ef3b64c43075437c1d0db810f8ed28172953abe4a653dfb5b8df271e17b89f22",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.control.fasta",
+      "control_sha256": "bc620ce804616efb82c939eaddd237b5d1c8cb87cf2dc1dd29210870172ee34f",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/bradyrhizobium.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/bradyrhizobium"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/bradyrhizobium",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/bradyrhizobium.stdout.log",
+      "started_at": "2026-10-03T14:54:13+08:00",
+      "return_code": 0,
+      "elapsed_seconds": 1512.84,
+      "finished_at": "2026-10-03T15:19:26+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13258,
+          "sha256": "8bf263f7699f4a57c1a0a10b994440f432cbdd8c8e05733b2d752f8a018656ed"
+        },
+        "logo10.eps": {
+          "bytes": 13214,
+          "sha256": "82f92d49601a7d4fe35743be4d3c0c7eb50758666eb16f47b973c04197153b23"
+        },
+        "logo2.eps": {
+          "bytes": 13302,
+          "sha256": "f415c96c83a5fa8f0b850ab38359f48896a686f2e180e0c6790a3e377bcb15b6"
+        },
+        "logo3.eps": {
+          "bytes": 13500,
+          "sha256": "c5af05c5716271a29aa01cfa39b48358f9fc3fa09bfb97523aa1d72c7b02f22a"
+        },
+        "logo4.eps": {
+          "bytes": 13236,
+          "sha256": "4b1ed066a67577d12d77f07646587f27a4e9c7b649709e5d9a78378041c80fb0"
+        },
+        "logo5.eps": {
+          "bytes": 13214,
+          "sha256": "d37834ffbddb92780081600bc9a30d5f4cd7adf64c24239fe22e8bcc34b84779"
+        },
+        "logo6.eps": {
+          "bytes": 13236,
+          "sha256": "bb988cc78c6d57d8d91dc9b6e71e72e15d697fbc3f659bce514ca648b8a6d7a7"
+        },
+        "logo7.eps": {
+          "bytes": 13236,
+          "sha256": "48378f61b8ac93852930591fed8932c4f65c814486d5f789dd8200eeae1ec2b4"
+        },
+        "logo8.eps": {
+          "bytes": 13214,
+          "sha256": "b039cb2bdd8c38443960175162e8de4d5752fd6cbe983499d62fb5fd79e55d69"
+        },
+        "logo9.eps": {
+          "bytes": 13346,
+          "sha256": "4090c8edef0f1ef142ab5b5b9c290545e5260913705d0caec773d8678139c996"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13258,
+          "sha256": "a66e0917944b1fbef934b9415427150e3ec6ab25cea9171f9b0150f7bfde95b0"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13214,
+          "sha256": "daa45abdb7179507284136000ceedcefa41668c1050178be3a389b8a4c93a4bf"
+        },
+        "logo_rc2.eps": {
+          "bytes": 13302,
+          "sha256": "a5b832e697174ec162388922e43aeb0a471185f3e9d494db72c9fc9516aafcb3"
+        },
+        "logo_rc3.eps": {
+          "bytes": 13500,
+          "sha256": "6446579c31a278fd85f6384686f7a12fbd7b425708fd897babf45daf51e30c63"
+        },
+        "logo_rc4.eps": {
+          "bytes": 13236,
+          "sha256": "12e68099ba52fb186ee579759a38c15c85df2a8bdcfe800cdd66dc993f803531"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13214,
+          "sha256": "f6bc386c868f78bbc4fb4f96536619ad16aab78475b0e0a1b027c46b3c13eff5"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13236,
+          "sha256": "9313b6cd18c1940156f56c98635b73464c4515f72b72afaa1073fd6b723fef2a"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13236,
+          "sha256": "7db8e236affef0342113014f6f3f0ee1eab48f59ca136654e2c41df4b64e9375"
+        },
+        "logo_rc8.eps": {
+          "bytes": 13214,
+          "sha256": "77104bd9c444ba2217b3f63b8b38ecf37cddd104a109e7b8c3f526cf66e21d53"
+        },
+        "logo_rc9.eps": {
+          "bytes": 13346,
+          "sha256": "6c03957dee80d0ef4375c3eafecdaa2194976ced93c5bb6a38592a8c47258574"
+        },
+        "meme.html": {
+          "bytes": 332695,
+          "sha256": "8c8f9e43baa24d3625ee9361449f7a663097d5d8e8156551e443027bed5f7af6"
+        },
+        "meme.txt": {
+          "bytes": 29719,
+          "sha256": "77774a3e37024e82ea383f21a461d4e64d6177b93429437d932f41874a515298"
+        },
+        "meme.xml": {
+          "bytes": 34276,
+          "sha256": "ab4b61b8df95ab4bbec90af1b5e8586995ab96df3e787cb18edb469c672bfa22"
+        }
+      }
+    },
+    "diphtheria": {
+      "status": "success",
+      "species_directory": "Diphtheria",
+      "positive_count": 1654,
+      "control_count": 1655,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/diphtheria.positive.fasta",
+      "positive_sha256": "b3b8f9670bd4291d2ef4cbeeb42c0429fd238d1f3c097e68a65f304535ca55e5",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/diphtheria.control.fasta",
+      "control_sha256": "c4a4b1e53f3e74cc4e76024102d9826460dd8478b6c6b92ca22984ccc5328d08",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/diphtheria.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/diphtheria.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/diphtheria"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/diphtheria",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/diphtheria.stdout.log",
+      "started_at": "2026-10-03T15:19:26+08:00",
+      "return_code": 0,
+      "elapsed_seconds": 1041.5,
+      "finished_at": "2026-10-03T15:36:47+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13412,
+          "sha256": "89721a44f38e2fdf6a8fb2b8b05bd5bf5414f136e1d9b785706276aa4d4e6399"
+        },
+        "logo10.eps": {
+          "bytes": 13349,
+          "sha256": "94549aeec97dd8d7ed847daec709f8a6ace230a92bdc4ac8e1956fb63648ef15"
+        },
+        "logo2.eps": {
+          "bytes": 14757,
+          "sha256": "4959e45dc6334383222ce1fa4a4c4057697c7b6386e2530e939296cfeffba53c"
+        },
+        "logo3.eps": {
+          "bytes": 14735,
+          "sha256": "ecf81abcf2e12d0d360f41de874faabdf217ab17b94c781935b0e19329d8a2c3"
+        },
+        "logo4.eps": {
+          "bytes": 13591,
+          "sha256": "c1013076649a56566d93f2ab998e55dccf762eec54dfa70fdd19cb1a90193438"
+        },
+        "logo5.eps": {
+          "bytes": 13258,
+          "sha256": "e30a862c4de6f1a33693055e76237a199beef713765a2963f91c385a45e717bc"
+        },
+        "logo6.eps": {
+          "bytes": 13305,
+          "sha256": "ab342bed1f2bee069d54a8fb0e5de9c76407f524c990be28d8128a1d9f0278fd"
+        },
+        "logo7.eps": {
+          "bytes": 13280,
+          "sha256": "72488279135b56394bed9084f075cb2ceadad117029dafd7c696a5325f3d8fa2"
+        },
+        "logo8.eps": {
+          "bytes": 14059,
+          "sha256": "0b852bb425f13a827bb0b55b3f791c5eec2c582b5f6242f885f7030526319138"
+        },
+        "logo9.eps": {
+          "bytes": 14125,
+          "sha256": "c513e29f7e284b1092a5793570c94458a1a0e67050f4728ed561eabbe14ae5bf"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13412,
+          "sha256": "24c5eba0e7db9ebeaea3901e6d70d6d616604659fae040d3f24a0d6f73405795"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13349,
+          "sha256": "bce527388814d875741ddfb7a7f1f3bf7fb13758758cc796fc6f2ef496a3c04c"
+        },
+        "logo_rc2.eps": {
+          "bytes": 14757,
+          "sha256": "066453b18473743c2aae1f7e23b934640f73e8fb93ef79641d8c041e469af18f"
+        },
+        "logo_rc3.eps": {
+          "bytes": 14735,
+          "sha256": "edd77539797898a9b31e05117355a7f5b55bf8eaf8cdde8db8c0aca1168a9e33"
+        },
+        "logo_rc4.eps": {
+          "bytes": 13591,
+          "sha256": "9d0647c721958db1ef474a6095b637a9b024c4b53ebb415b8221bdd8f8bc94cc"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13258,
+          "sha256": "55ca0bb9b9fbf701c5971ecacedc7b5ae54fe49e809e5de08475e015c7f614c6"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13305,
+          "sha256": "9a3a2d71e85a9386f4a8e5423a61127cbf31f549e1b283b4d3665d24245eafa6"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13280,
+          "sha256": "09c272a68190d9ebbbb988efd7bbf44063811767186ec0d9929c8d839ebc4cc0"
+        },
+        "logo_rc8.eps": {
+          "bytes": 14059,
+          "sha256": "a7057e10823700cf4464a106a13f8b850e32a8154fc4a96cc31d9b2c2e41292f"
+        },
+        "logo_rc9.eps": {
+          "bytes": 14125,
+          "sha256": "9ef7da721a60c0bade7ef3c04ef31b07c3c143ff88242544bef07d8393b3892c"
+        },
+        "meme.html": {
+          "bytes": 336388,
+          "sha256": "228213661c47afffd7108b05d1f96bbed0e2f5426abd8611d512dace5b50173f"
+        },
+        "meme.txt": {
+          "bytes": 33911,
+          "sha256": "6f3b73a3c80eb10c7c617afc6b2da1cbb0eb2de4c86bcb969ca53a0df290c77b"
+        },
+        "meme.xml": {
+          "bytes": 49650,
+          "sha256": "851bd2d0bfe21038537df501ed18b37b07c043306e56952e39a34b1dc6d63aaa"
+        }
+      }
+    },
+    "escherichia_coli": {
+      "status": "success",
+      "species_directory": "Escherichia_coli",
+      "positive_count": 1645,
+      "control_count": 1704,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/escherichia_coli.positive.fasta",
+      "positive_sha256": "cecfd39de8086fb5501fa267d64049cd1bf561061862a7ab5bd8097e0d944734",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/escherichia_coli.control.fasta",
+      "control_sha256": "db02e3d2f5719f274a87a6358db6c8fc252c6ddf70f99d2d0b39bb9748554463",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/escherichia_coli.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/escherichia_coli.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/escherichia_coli"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/escherichia_coli",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/escherichia_coli.stdout.log",
+      "started_at": "2026-10-03T15:36:47+08:00",
+      "return_code": 0,
+      "elapsed_seconds": 1065.75,
+      "finished_at": "2026-10-03T15:54:33+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13327,
+          "sha256": "dcab1113ba5362d89de36ba8faf5ae2c36a6953ad98e8e0f74e6421e3cd9b09d"
+        },
+        "logo10.eps": {
+          "bytes": 13214,
+          "sha256": "013f3cc8697242556856f1e87c8cd81c0356dc8eaf2f95363c1c6f6822c0e166"
+        },
+        "logo2.eps": {
+          "bytes": 13346,
+          "sha256": "a87b00b5527390da88a9df249c12091e5c29e9d034bc1e98bc810d24550f1b59"
+        },
+        "logo3.eps": {
+          "bytes": 13324,
+          "sha256": "aad4408c75bb22b29c5a08067970c268e8420879e9f5c815fdec403cd99f0a32"
+        },
+        "logo4.eps": {
+          "bytes": 13302,
+          "sha256": "7220d725a0621381365b68b67960153152e224ce33538120f246c679a817c757"
+        },
+        "logo5.eps": {
+          "bytes": 13305,
+          "sha256": "65dd8b3d4073bdcd2fd14888fd4d846f5a5e7d4b19c2d01147c736249fdca87e"
+        },
+        "logo6.eps": {
+          "bytes": 13478,
+          "sha256": "145f6f6e2220e9f9d96b8ea0364ce6e45fb4dbb5e127f594f3bebb5dd531a05e"
+        },
+        "logo7.eps": {
+          "bytes": 13236,
+          "sha256": "0d04145cbb9acd7ccd75ca57af29a783aaca76a189f69a4cec65efb2f937398d"
+        },
+        "logo8.eps": {
+          "bytes": 13280,
+          "sha256": "a19f983e0c43a90f8f488bd356261f0787c30e3649c897d1faefb0465e0eff93"
+        },
+        "logo9.eps": {
+          "bytes": 13214,
+          "sha256": "75bdf9706f5d3cb462edcca1ce15994f533d83fb30dcd5d5f2c117a2d1200b39"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13327,
+          "sha256": "0f17e46785b511e136f841326790a71869860844b9fbbc0401819c1b8b16914d"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13214,
+          "sha256": "d730cc1e9daf5d03d6a950554dcf7a4167ccc7f4c6e5e6ed32fc50d8fdd1c53e"
+        },
+        "logo_rc2.eps": {
+          "bytes": 13346,
+          "sha256": "108e7f64a1be066cb6a49d00a8c0872317a4052139f4fa73d6d3b6eecac603d0"
+        },
+        "logo_rc3.eps": {
+          "bytes": 13324,
+          "sha256": "5c4a0889dff356fa2fb3aa92c45a5929bc8e2293afc203e830cdbe3d4aa4f181"
+        },
+        "logo_rc4.eps": {
+          "bytes": 13302,
+          "sha256": "2a07e8dbe49fa6d32733630091bcccf85187b3ed1d7654b4c80195e4cf3e72be"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13305,
+          "sha256": "22f29f889be56e6f5c3497a4ec5604c26eb57bf121a749f3063246adbc0c4087"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13478,
+          "sha256": "8cd4c776b07c889db432dc9873ea780f29ae648848d497d6526895ed675a09d9"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13236,
+          "sha256": "47d0c57b586916aa2ba12cb284c870a24ad2fd28179502cb0f33759a2730a272"
+        },
+        "logo_rc8.eps": {
+          "bytes": 13280,
+          "sha256": "b922f8860089190b6c51b8a7c84ca460a09d16c25c8b1814532316d95f784c75"
+        },
+        "logo_rc9.eps": {
+          "bytes": 13214,
+          "sha256": "72aac4ce94448b50c3ebd8a03647f46ae93fc10dca43f5130b6ba95230870d11"
+        },
+        "meme.html": {
+          "bytes": 332873,
+          "sha256": "48b7e6402f1b07685af0a7a04df7bd85f5c48ff8a27577acefc3e1d4e934b6af"
+        },
+        "meme.txt": {
+          "bytes": 29924,
+          "sha256": "90a28e0994069269f4f9062869b49ddaf1a67a7237c952275613b590c9503018"
+        },
+        "meme.xml": {
+          "bytes": 34988,
+          "sha256": "ade680712ec759bd7bdb272d0d0aff79daedc2cf7f6bf966860963534ba0f753"
+        }
+      }
+    },
+    "staphylococcus": {
+      "status": "success",
+      "species_directory": "Staphylococcus",
+      "positive_count": 2207,
+      "control_count": 1162,
+      "positive_fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.positive.fasta",
+      "positive_sha256": "eac65f52722e322c883deec44c364e5457fda40afe1d9ab63b9ee763edc54bb4",
+      "control_fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.control.fasta",
+      "control_sha256": "9c75ad6b76ac0f06fcb41b9c1a12d21ce10c232bc0da3cf05e319cb7ca110533",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/meme",
+        "tmp/tjupan_motif_inputs_20261003/staphylococcus.positive.fasta",
+        "-dna",
+        "-mod",
+        "zoops",
+        "-objfun",
+        "de",
+        "-neg",
+        "tmp/tjupan_motif_inputs_20261003/staphylococcus.control.fasta",
+        "-nmotifs",
+        "10",
+        "-minw",
+        "6",
+        "-maxw",
+        "20",
+        "-searchsize",
+        "0",
+        "-revcomp",
+        "-seed",
+        "20261003",
+        "-brief",
+        "50",
+        "-nostatus",
+        "-oc",
+        "tmp/meme_runs/tjupan_promloop_20261003/staphylococcus"
+      ],
+      "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/staphylococcus",
+      "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/staphylococcus.stdout.log",
+      "started_at": "2026-10-03T16:07:06+08:00",
+      "attempt_history": [
+        {
+          "status": "interrupted",
+          "species_directory": "Staphylococcus",
+          "positive_count": 2207,
+          "control_count": 1162,
+          "positive_fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.positive.fasta",
+          "positive_sha256": "eac65f52722e322c883deec44c364e5457fda40afe1d9ab63b9ee763edc54bb4",
+          "control_fasta": "tmp/tjupan_motif_inputs_20261003/staphylococcus.control.fasta",
+          "control_sha256": "9c75ad6b76ac0f06fcb41b9c1a12d21ce10c232bc0da3cf05e319cb7ca110533",
+          "command": [
+            "tmp/meme-suite-5.5.9/bin/meme",
+            "tmp/tjupan_motif_inputs_20261003/staphylococcus.positive.fasta",
+            "-dna",
+            "-mod",
+            "zoops",
+            "-objfun",
+            "de",
+            "-neg",
+            "tmp/tjupan_motif_inputs_20261003/staphylococcus.control.fasta",
+            "-nmotifs",
+            "10",
+            "-minw",
+            "6",
+            "-maxw",
+            "20",
+            "-searchsize",
+            "0",
+            "-revcomp",
+            "-seed",
+            "20261003",
+            "-brief",
+            "50",
+            "-nostatus",
+            "-oc",
+            "tmp/meme_runs/tjupan_promloop_20261003/staphylococcus"
+          ],
+          "output_directory": "tmp/meme_runs/tjupan_promloop_20261003/staphylococcus",
+          "log": "tmp/meme_runs/tjupan_promloop_20261003/logs/staphylococcus.stdout.log",
+          "started_at": "2026-10-03T15:54:33+08:00",
+          "interrupted_at": "2026-10-03T16:05:40+08:00",
+          "interruption_note": "进程在最新检查时已消失，未获得退出码；原生 meme.xml 缺失，不能验收为成功。保留已写出的部分结果并按相同参数重跑。",
+          "partial_motifs_written": 3,
+          "partial_output_archive": "tmp/meme_runs/tjupan_promloop_20261003/interrupted_attempts/staphylococcus_20261003_155433/partial_output",
+          "partial_output_sha256": "a73bbcc7d893640dd11334528cd26257247315bec98d924e10f79cd4f969de1e",
+          "partial_log_archive": "tmp/meme_runs/tjupan_promloop_20261003/interrupted_attempts/staphylococcus_20261003_155433/partial_stdout.log",
+          "partial_log_sha256": "abf3c85e5b0532c9b99e1e3b60214cad7d493fcf4aa440f4be83fe2dc61b9b17"
+        }
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 1417.72,
+      "finished_at": "2026-10-03T16:30:44+08:00",
+      "output_files": {
+        "logo1.eps": {
+          "bytes": 13302,
+          "sha256": "5998483a4261d8f1728cc42aea833ba05b4bc3482a14aa1788ff0919b8b4cd01"
+        },
+        "logo10.eps": {
+          "bytes": 13349,
+          "sha256": "cd1ef5f3f7c6c1ad31f3cee3f10b20ac48d94e70c2a771ff7b691de4efe3171b"
+        },
+        "logo2.eps": {
+          "bytes": 13302,
+          "sha256": "367f292ebcaa4173266119047597d06df78e705f90bc6b44021e6f7c308d1f2a"
+        },
+        "logo3.eps": {
+          "bytes": 13412,
+          "sha256": "62b5681c8841b2ebce769eca17e6bb85355b73d92b653b3e5b1643c69def7d63"
+        },
+        "logo4.eps": {
+          "bytes": 13793,
+          "sha256": "6b8a87bef11b3f1682c691aa674279006baf88df0b77d02f08b131a9f5b4f794"
+        },
+        "logo5.eps": {
+          "bytes": 13302,
+          "sha256": "9f2d80ff9bc1a886cb9767282af3006a8a81f5ef0d171d8f75e5af84a8d78aa9"
+        },
+        "logo6.eps": {
+          "bytes": 13214,
+          "sha256": "2de5d0a2eb85c97287be1fe29db1199e17b9b65faadb156c4ddcfd66324e2147"
+        },
+        "logo7.eps": {
+          "bytes": 13302,
+          "sha256": "847ba220610595bfe1556f26c16f3ebaebdcde4009a327fa10274adc9412feb3"
+        },
+        "logo8.eps": {
+          "bytes": 13214,
+          "sha256": "f23f9a0043869dd07286d98e6fe9a50ab5eb87ac018f8355788a809906aa202e"
+        },
+        "logo9.eps": {
+          "bytes": 13280,
+          "sha256": "a6442c5b68145a58834a2958d982bd10207ba1169e4ca6d8174b488fd0d82db1"
+        },
+        "logo_rc1.eps": {
+          "bytes": 13302,
+          "sha256": "d1f094e27c9b30f7bf84c1e343f0a52936b49a8e634655409d795443d93865c4"
+        },
+        "logo_rc10.eps": {
+          "bytes": 13349,
+          "sha256": "0592de890875f313ea5528b6467721edc1d253c5da52dc1dde7fd8bbf198a408"
+        },
+        "logo_rc2.eps": {
+          "bytes": 13302,
+          "sha256": "067332a5a66cd7101ce959849da7f466744f88152b10cdb4235e48e220688041"
+        },
+        "logo_rc3.eps": {
+          "bytes": 13412,
+          "sha256": "898800eb8260f6603d55f6f0b34f90208334753b997112d1bb4e9f1da775c2f9"
+        },
+        "logo_rc4.eps": {
+          "bytes": 13793,
+          "sha256": "2a634b7fce52a4f87b3ae1d5b99ef67066845067eb1ae6e765a3c66bd96adef6"
+        },
+        "logo_rc5.eps": {
+          "bytes": 13302,
+          "sha256": "2df1d9ed90e43267efc07850eb447a7fb229a5030455f2cfa7c2deb26aa63afb"
+        },
+        "logo_rc6.eps": {
+          "bytes": 13214,
+          "sha256": "2de5d0a2eb85c97287be1fe29db1199e17b9b65faadb156c4ddcfd66324e2147"
+        },
+        "logo_rc7.eps": {
+          "bytes": 13302,
+          "sha256": "c1ec74adcb9a6ffbf0c8ae733e3bf1dae74bbc0aef656a58fda5afffaaf567a7"
+        },
+        "logo_rc8.eps": {
+          "bytes": 13214,
+          "sha256": "7047f73090b4dbbc81f2533933c9150f2650734b65fac6f326bc3c1a0ce9757a"
+        },
+        "logo_rc9.eps": {
+          "bytes": 13280,
+          "sha256": "bf871a9de50bdd2420444641591eb55939e202caeaab17ec6893676114eeb676"
+        },
+        "meme.html": {
+          "bytes": 332914,
+          "sha256": "1700177273571445312287ee10a45c8e218cacb9146bd33e00ca776cf295f322"
+        },
+        "meme.txt": {
+          "bytes": 30024,
+          "sha256": "38b49fa891f45e8068ee473623b8ea2d3c945f3c39d7635a7eee284d763889bc"
+        },
+        "meme.xml": {
+          "bytes": 35316,
+          "sha256": "a162007e18f2fb885c1af2a5a70eefd23256e94e70b18715d0edb127af14767b"
+        }
+      }
+    }
+  }
+}

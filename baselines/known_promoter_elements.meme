@@ -1,0 +1,52 @@
+MEME version 4
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies
+A 0.294 C 0.206 G 0.206 T 0.294
+
+MOTIF Ecoli_sigma70_minus10
+letter-probability matrix: alength= 4 w= 6 nsites= 1 E= 0
+0 0 0 1
+1 0 0 0
+0 0 0 1
+1 0 0 0
+1 0 0 0
+0 0 0 1
+
+MOTIF Ecoli_sigma70_minus35
+letter-probability matrix: alength= 4 w= 6 nsites= 1 E= 0
+0 0 0 1
+0 0 0 1
+0 0 1 0
+1 0 0 0
+0 1 0 0
+1 0 0 0
+
+MOTIF Ecoli_UP_proximal
+letter-probability matrix: alength= 4 w= 9 nsites= 1 E= 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+0.5 0 0.5 0
+0.25 0.25 0.25 0.25
+0.5 0 0.5 0
+
+MOTIF Ecoli_UP_distal
+letter-probability matrix: alength= 4 w= 11 nsites= 1 E= 0
+1 0 0 0
+0.5 0 0 0.5
+0.5 0 0 0.5
+0.5 0 0 0.5
+0.5 0 0 0.5
+0.5 0 0 0.5
+0 0 0 1
+0 0 0 1
+0 0 0 1
+0 0 0 1
+0 0 0 1

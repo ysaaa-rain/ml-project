@@ -23,11 +23,45 @@ def run(input_path: str | Path, hits_path: str | Path, output_dir: str | Path) -
         raise ValueError(f"TSS-aligned input is missing columns: {', '.join(missing)}")
     if hits.empty:
         raise ValueError("B0 hit table is empty")
-    offsets = metadata[["sequence_id", "tss_offset_in_window"]]
+    metadata_columns = ["sequence_id", "tss_offset_in_window"]
+    if "sigma_factor_type" in metadata:
+        metadata_columns.append("sigma_factor_type")
+    offsets = metadata[metadata_columns].copy()
+    if "sigma_factor_type" not in offsets:
+        offsets["sigma_factor_type"] = "unknown"
+    offsets["sigma_factor_type"] = offsets["sigma_factor_type"].fillna("unknown").astype(str)
+    group_sizes = offsets["sigma_factor_type"].value_counts().to_dict()
     frame = hits.merge(offsets, on="sequence_id", how="left", validate="many_to_one")
     if frame["tss_offset_in_window"].isna().any():
         raise ValueError("some B0 hits have no TSS offset in the input table")
     frame["relative_start"] = frame["start"] - frame["tss_offset_in_window"]
+    motif_names = ("minus_10_box", "minus_35_box")
+    sigma_labels = sorted(group_sizes)
+    presence = (
+        frame.groupby(["sigma_factor_type", "motif_name"], sort=True)
+        .agg(hit_count=("sequence_id", "size"), sequence_count=("sequence_id", "nunique"))
+        .reset_index()
+    )
+    full_index = pd.MultiIndex.from_product(
+        [sigma_labels, motif_names], names=["sigma_factor_type", "motif_name"]
+    ).to_frame(index=False)
+    presence = full_index.merge(presence, on=["sigma_factor_type", "motif_name"], how="left")
+    presence[["hit_count", "sequence_count"]] = presence[["hit_count", "sequence_count"]].fillna(0).astype(int)
+    presence["group_size"] = presence["sigma_factor_type"].map(group_sizes).astype(int)
+    presence["sequence_hit_fraction"] = presence["sequence_count"] / presence["group_size"]
+    presence.to_csv(output_dir / "presence_by_sigma.tsv", sep="\t", index=False)
+
+    overall_presence = (
+        frame.groupby("motif_name", sort=True)
+        .agg(hit_count=("sequence_id", "size"), sequence_count=("sequence_id", "nunique"))
+        .reindex(motif_names, fill_value=0)
+        .rename_axis("motif_name")
+        .reset_index()
+    )
+    overall_presence["group_size"] = len(metadata)
+    overall_presence["sequence_hit_fraction"] = overall_presence["sequence_count"] / len(metadata)
+    overall_presence.to_csv(output_dir / "presence_overall.tsv", sep="\t", index=False)
+
     summary = (
         frame.groupby(["motif_name", "strand"], sort=True)
         .agg(
@@ -41,7 +75,25 @@ def run(input_path: str | Path, hits_path: str | Path, output_dir: str | Path) -
         )
         .reset_index()
     )
+    summary["group_size"] = len(metadata)
+    summary["sequence_hit_fraction"] = summary["sequence_count"] / summary["group_size"]
     summary.to_csv(output_dir / "position_summary.tsv", sep="\t", index=False)
+    by_sigma = (
+        frame.groupby(["sigma_factor_type", "motif_name", "strand"], sort=True, dropna=False)
+        .agg(
+            hit_count=("sequence_id", "size"),
+            sequence_count=("sequence_id", "nunique"),
+            relative_start_median=("relative_start", "median"),
+            relative_start_q1=("relative_start", lambda values: values.quantile(0.25)),
+            relative_start_q3=("relative_start", lambda values: values.quantile(0.75)),
+            relative_start_min=("relative_start", "min"),
+            relative_start_max=("relative_start", "max"),
+        )
+        .reset_index()
+    )
+    by_sigma["group_size"] = by_sigma["sigma_factor_type"].map(group_sizes).astype(int)
+    by_sigma["sequence_hit_fraction"] = by_sigma["sequence_count"] / by_sigma["group_size"]
+    by_sigma.to_csv(output_dir / "position_summary_by_sigma.tsv", sep="\t", index=False)
 
     figure, axes = plt.subplots(2, 1, figsize=(8, 6), sharex=True, sharey=True)
     for axis, strand in zip(axes, ("+", "-")):
@@ -71,6 +123,7 @@ def run(input_path: str | Path, hits_path: str | Path, output_dir: str | Path) -
         "hits": str(hits_path.resolve()),
         "hit_count": int(len(frame)),
         "position_summary": summary.to_dict(orient="records"),
+        "position_summary_by_sigma": by_sigma.to_dict(orient="records"),
         "positive_strand_medians": {
             str(row.motif_name): float(row.relative_start_median)
             for row in positive.itertuples()

@@ -1,0 +1,101 @@
+MEME version 5
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies
+A 0.372 C 0.128 G 0.128 T 0.372
+
+MOTIF staphylococcus_MEME-1 TATMAT
+letter-probability matrix: alength= 4 w= 6 nsites= 1957 E= 1.7e-54
+0 0 0 1
+1 0 0 0
+0.218191 0.252427 0 0.529382
+0.576392 0.423608 0 0
+1 0 0 0
+0 0.018396 0 0.981604
+
+MOTIF staphylococcus_MEME-2 CWCCTY
+letter-probability matrix: alength= 4 w= 6 nsites= 422 E= 1.8e-41
+0 1 0 0
+0.443128 0.125592 0 0.43128
+0 1 0 0
+0 1 0 0
+0 0.092417 0 0.907583
+0 0.400474 0 0.599526
+
+MOTIF staphylococcus_MEME-3 KTYRMC
+letter-probability matrix: alength= 4 w= 6 nsites= 721 E= 1.9e-64
+0 0.199723 0.321775 0.478502
+0.016644 0 0.0319 0.951456
+0 0.617198 0 0.382802
+0.349515 0 0.650485 0
+0.60749 0.39251 0 0
+0.23301 0.708738 0.058252 0
+
+MOTIF staphylococcus_MEME-4 TTTAAAAA
+letter-probability matrix: alength= 4 w= 8 nsites= 2206 E= 0.046
+0.003173 0.005893 0.166364 0.824569
+0.124207 0.152312 0.170444 0.553037
+0.283318 0.012239 0 0.704442
+0.788305 0 0.00816 0.203536
+0.55757 0.208069 0.166364 0.067996
+0.778332 0.213962 0.003626 0.00408
+0.81641 0.170898 0.010879 0.001813
+0.721215 0.164098 0.091115 0.023572
+
+MOTIF staphylococcus_MEME-5 GRWGTG
+letter-probability matrix: alength= 4 w= 6 nsites= 272 E= 6.7e-22
+0 0 1 0
+0.430147 0 0.569853 0
+0.540441 0 0 0.459559
+0.327206 0 0.672794 0
+0 0 0.268382 0.731618
+0 0 1 0
+
+MOTIF staphylococcus_MEME-6 CAATTG
+letter-probability matrix: alength= 4 w= 6 nsites= 39 E= 0.0075
+0 1 0 0
+1 0 0 0
+1 0 0 0
+0 0 0 1
+0 0 0 1
+0 0 1 0
+
+MOTIF staphylococcus_MEME-7 AYGCTT
+letter-probability matrix: alength= 4 w= 6 nsites= 245 E= 1.4e-05
+0.738776 0 0.085714 0.17551
+0 0.64898 0 0.35102
+0 0 1 0
+0 1 0 0
+0 0 0 1
+0.159184 0 0 0.840816
+
+MOTIF staphylococcus_MEME-8 TGATGA
+letter-probability matrix: alength= 4 w= 6 nsites= 117 E= 1.3e-08
+0 0 0 1
+0 0 1 0
+1 0 0 0
+0 0 0 1
+0 0 1 0
+1 0 0 0
+
+MOTIF staphylococcus_MEME-9 ATAGTR
+letter-probability matrix: alength= 4 w= 6 nsites= 489 E= 3.6e-09
+0.799591 0 0.200409 0
+0.184049 0 0 0.815951
+1 0 0 0
+0 0 1 0
+0 0 0 1
+0.597137 0 0.402863 0
+
+MOTIF staphylococcus_MEME-10 CTTYKTC
+letter-probability matrix: alength= 4 w= 7 nsites= 45 E= 0.00084
+0 1 0 0
+0 0 0 1
+0 0 0 1
+0 0.488889 0.222222 0.288889
+0 0 0.466667 0.533333
+0 0 0.022222 0.977778
+0 1 0 0
