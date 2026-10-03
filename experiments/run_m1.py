@@ -1,4 +1,4 @@
-"""Build the auditable promoter dataset consumed by the DNA embedding mainline."""
+"""Build and audit the M1 promoter dataset."""
 
 from __future__ import annotations
 

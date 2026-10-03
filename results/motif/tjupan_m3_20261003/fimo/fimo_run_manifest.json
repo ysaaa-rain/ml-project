@@ -1,0 +1,522 @@
+{
+  "schema_version": "tjupan-fimo-runs-1.0",
+  "project": "PR01-02",
+  "dataset": "TJU course cloud drive; reg_and_gen/Datasets",
+  "input_manifest": "results/motif/tjupan_m3_20261003/input_manifest.json",
+  "input_manifest_sha256": "907a902920c60fbbc1471ba53d9d282a57b17e8481902eba3451d946938c7622",
+  "meme_summary_manifest": "results/motif/tjupan_m3_20261003/summary/summary_manifest.json",
+  "meme_summary_manifest_sha256": "6379c11b0688fdc356c3be13e1c0d7a0a1b8c30c1039f9a821b68652584b54c9",
+  "fimo_tool": "tmp/meme-suite-5.5.9/bin/fimo",
+  "fimo_version": "5.5.9",
+  "parameters": {
+    "qvalue_threshold": 0.05,
+    "threshold_type": "FIMO-estimated q-value; the local 5.5.9 implementation estimates pi0 from a uniformly sampled p-value reservoir",
+    "qvalue_scope": "computed separately for each motif across that motif's tested positions, not pooled across the 10 motifs",
+    "reverse_complement_search": "enabled by MEME matrix strands + -; FIMO --norc is not set",
+    "motif_scope": "all 10 MEME motifs discovered for each species, scanned on that species' positive and control sequences",
+    "background_model": "zero-order A/C/G/T frequencies estimated from that species' valid 81-bp negative controls",
+    "max_stored_scores": 1000000,
+    "coordinates": "1-based positions in the input FASTA; not converted to TSS-relative coordinates"
+  },
+  "results": {
+    "bacillus_subtilis": {
+      "status": "success",
+      "positive_count": 691,
+      "control_count": 809,
+      "positive_unique_sequences": 691,
+      "control_unique_sequences": 809,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta",
+      "combined_fasta_sha256": "ea8748a6bafa49f4700f3c21d585019414ea57ff4f2033e39108b95b59eaf3d0",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+      "background_file_sha256": "8df4ddd809f0da23ef9e53226a7ac6d1d766ff46109447958a9f1f2a882034ae",
+      "background_base_counts": {
+        "T": 15910,
+        "G": 16445,
+        "A": 19439,
+        "C": 13735
+      },
+      "background_frequencies": {
+        "A": 0.29664728593447176,
+        "C": 0.2096018556669566,
+        "G": 0.25095759129545697,
+        "T": 0.24279326710311466
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+      "matrix_sha256": "e51f23deeec0ef802ad26085535f8cfb85f7d714b4ea23d08cff0a2742be450a",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/bacillus_subtilis",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/bacillus_subtilis",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/bacillus_subtilis.log",
+      "started_at": "2026-10-03T16:42:25+08:00",
+      "finished_at": "2026-10-03T16:42:26+08:00",
+      "elapsed_seconds": 0.35,
+      "return_code": 0,
+      "attempt_history": [
+        {
+          "status": "failed",
+          "positive_count": 691,
+          "control_count": 809,
+          "positive_unique_sequences": 691,
+          "control_unique_sequences": 809,
+          "cross_label_exact_sequence_overlap": 0,
+          "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta",
+          "combined_fasta_sha256": "ea8748a6bafa49f4700f3c21d585019414ea57ff4f2033e39108b95b59eaf3d0",
+          "background_file": "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+          "background_file_sha256": "4741b4d5b29f5655a8240e8db023938b365b1e316972d570cf5b63fa1f1da94c",
+          "background_base_counts": {
+            "T": 15910,
+            "G": 16445,
+            "A": 19439,
+            "C": 13735
+          },
+          "background_frequencies": {
+            "A": 0.29664728593447176,
+            "C": 0.2096018556669566,
+            "G": 0.25095759129545697,
+            "T": 0.24279326710311466
+          },
+          "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+          "matrix_sha256": "e51f23deeec0ef802ad26085535f8cfb85f7d714b4ea23d08cff0a2742be450a",
+          "command": [
+            "tmp/meme-suite-5.5.9/bin/fimo",
+            "--oc",
+            "tmp/fimo_runs/tjupan_promloop_20261003/bacillus_subtilis",
+            "--bfile",
+            "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+            "--qv-thresh",
+            "--thresh",
+            "0.05",
+            "--max-stored-scores",
+            "1000000",
+            "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+            "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta"
+          ],
+          "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/bacillus_subtilis",
+          "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/bacillus_subtilis.log",
+          "started_at": "2026-10-03T16:41:57+08:00",
+          "finished_at": "2026-10-03T16:41:57+08:00",
+          "elapsed_seconds": 0.0,
+          "return_code": 1
+        }
+      ],
+      "fimo_tsv_sha256": "4320b818fce0c6b68f4faee0a19a1d58d944b57e1e19a8ec028c9cbd5e72d9fb",
+      "fimo_tsv_bytes": 13325,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 13325,
+          "sha256": "4320b818fce0c6b68f4faee0a19a1d58d944b57e1e19a8ec028c9cbd5e72d9fb"
+        },
+        "fimo.xml": {
+          "bytes": 3869,
+          "sha256": "9973894f8e74f8b27e70e1f44a4773fbbc2aaddeaac788cbbfe56e76dc986360"
+        },
+        "cisml.xml": {
+          "bytes": 1261888,
+          "sha256": "87b53fac4e94ebc626754cc822bd8509baeb932728a46be22883d793bc2c5de0"
+        }
+      },
+      "log_sha256": "4d9f2e913b30ea55e83e2fba3f15d7f8749e84b8241497d7f15f1c6210f81fad",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.992103,
+        "MEME-2": 0.930805,
+        "MEME-3": 0.997056,
+        "MEME-4": 0.875088,
+        "MEME-5": 0.999899,
+        "MEME-6": 0.905769,
+        "MEME-7": 0.999799,
+        "MEME-8": 0.878716,
+        "MEME-9": 0.906767,
+        "MEME-10": 0.939839
+      }
+    },
+    "baumannii": {
+      "status": "success",
+      "positive_count": 1540,
+      "control_count": 1360,
+      "positive_unique_sequences": 1540,
+      "control_unique_sequences": 1360,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/baumannii.combined.fasta",
+      "combined_fasta_sha256": "eb4a4913c6f52a377a3ac0aed9bfcf11915953371b9da7caac6a5de09fba0819",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/baumannii.control.background",
+      "background_file_sha256": "738dce76f8336f968db6e0f07ab0d95d95f17fc9dbe5b03e0dbf1d970f7aecd7",
+      "background_base_counts": {
+        "A": 33088,
+        "T": 31587,
+        "C": 21243,
+        "G": 24242
+      },
+      "background_frequencies": {
+        "A": 0.30036310820624545,
+        "C": 0.19283769063180828,
+        "G": 0.22006172839506172,
+        "T": 0.28673747276688455
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/baumannii.meme",
+      "matrix_sha256": "de7809f013f9a8d4f1b221a5bcaf2188f38860a450b74152a618c74264939b92",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/baumannii",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/baumannii.meme",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/baumannii",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/baumannii.log",
+      "started_at": "2026-10-03T16:42:53+08:00",
+      "finished_at": "2026-10-03T16:42:53+08:00",
+      "elapsed_seconds": 0.59,
+      "return_code": 0,
+      "fimo_tsv_sha256": "0e7b9c964a6d591529eb658eb83de1aadddd6574cc0af7d014e4affd1b3d17ad",
+      "fimo_tsv_bytes": 512,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 512,
+          "sha256": "0e7b9c964a6d591529eb658eb83de1aadddd6574cc0af7d014e4affd1b3d17ad"
+        },
+        "fimo.xml": {
+          "bytes": 3660,
+          "sha256": "a4e35068190fd79bedf9f7c14e0797101b1486c149e25a88f69ca22fb5c57aa8"
+        },
+        "cisml.xml": {
+          "bytes": 2417514,
+          "sha256": "ce142ece27363ce1c363ea0639533fc550d6125cc2d4929d561f81eaa1af645b"
+        }
+      },
+      "log_sha256": "a08a8d0056b9dca1954248d273b7572006b2400efeab9af6b7f25b1040d2cf7b",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.957677,
+        "MEME-2": 0.998995,
+        "MEME-3": 0.997688,
+        "MEME-4": 0.944503,
+        "MEME-5": 0.999196,
+        "MEME-6": 1.0,
+        "MEME-7": 1.0,
+        "MEME-8": 0.938667,
+        "MEME-9": 1.0,
+        "MEME-10": 1.0
+      }
+    },
+    "bradyrhizobium": {
+      "status": "success",
+      "positive_count": 1987,
+      "control_count": 1952,
+      "positive_unique_sequences": 1983,
+      "control_unique_sequences": 1952,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.combined.fasta",
+      "combined_fasta_sha256": "908de8a9164f91532e78a807699582325078a7526b37d2d436b8e454f85dc0de",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.control.background",
+      "background_file_sha256": "b16c011c6c0d3c805049868fd94e2ccaf5ef0c0cc56028bce6854602ab72bf5a",
+      "background_base_counts": {
+        "A": 28172,
+        "G": 50355,
+        "T": 27154,
+        "C": 52431
+      },
+      "background_frequencies": {
+        "A": 0.17817749443432504,
+        "C": 0.3316067091681846,
+        "G": 0.31847677595628415,
+        "T": 0.17173902044120623
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/bradyrhizobium.meme",
+      "matrix_sha256": "a56660304c8d231bb0f3a93e49877dcad3aa7f8a88d1946a47cf308d88f520b0",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/bradyrhizobium",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/bradyrhizobium.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/bradyrhizobium",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/bradyrhizobium.log",
+      "started_at": "2026-10-03T16:42:53+08:00",
+      "finished_at": "2026-10-03T16:42:54+08:00",
+      "elapsed_seconds": 0.8,
+      "return_code": 0,
+      "fimo_tsv_sha256": "1419d8069d27e278af1aebf0d57f2b2aae2ec871e9e93d12d730b87b4a9b1418",
+      "fimo_tsv_bytes": 532,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 532,
+          "sha256": "1419d8069d27e278af1aebf0d57f2b2aae2ec871e9e93d12d730b87b4a9b1418"
+        },
+        "fimo.xml": {
+          "bytes": 3753,
+          "sha256": "08728a89423349536d2f8cec2f3f30c714643ffc28d1df106962fe0148ac2a2a"
+        },
+        "cisml.xml": {
+          "bytes": 3290353,
+          "sha256": "a37c36e23b8c180940a49b77847d2ecbddd04e97ad31312a237fa26a8b1cb743"
+        }
+      },
+      "log_sha256": "2117c9db53da84b3fa62b93f88f810338ecb165b900ea293954e70114121d337",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.989286,
+        "MEME-2": 0.981895,
+        "MEME-3": 0.960725,
+        "MEME-4": 0.996633,
+        "MEME-5": 0.980526,
+        "MEME-6": 0.988649,
+        "MEME-7": 0.998492,
+        "MEME-8": 0.996545,
+        "MEME-9": 0.967805,
+        "MEME-10": 0.992
+      }
+    },
+    "diphtheria": {
+      "status": "success",
+      "positive_count": 1654,
+      "control_count": 1655,
+      "positive_unique_sequences": 1654,
+      "control_unique_sequences": 1655,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/diphtheria.combined.fasta",
+      "combined_fasta_sha256": "5e5be8a2acc1d9fe6bba16113c502434c1dcaa85d07a2313addd5d337038edae",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/diphtheria.control.background",
+      "background_file_sha256": "19ccd9955b56a43b1bebef6a0e0ad00c8ed6712dbfc25ac8f065c557a47c8152",
+      "background_base_counts": {
+        "G": 36604,
+        "C": 37268,
+        "A": 30019,
+        "T": 30164
+      },
+      "background_frequencies": {
+        "A": 0.22393047629704227,
+        "C": 0.27800529633359444,
+        "G": 0.2730521054790944,
+        "T": 0.22501212189026892
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/diphtheria.meme",
+      "matrix_sha256": "98debf40048a49ef7df2c029e2e1d82fc4939acd71198b1ee0c1f9bf240e46ea",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/diphtheria",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/diphtheria.meme",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/diphtheria",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/diphtheria.log",
+      "started_at": "2026-10-03T16:42:54+08:00",
+      "finished_at": "2026-10-03T16:42:55+08:00",
+      "elapsed_seconds": 0.69,
+      "return_code": 0,
+      "fimo_tsv_sha256": "361cfddc57248e4192e9a822ea86d43bf6e0b4d50c66fb58ff0fe0d35f800d9c",
+      "fimo_tsv_bytes": 23212,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 23212,
+          "sha256": "361cfddc57248e4192e9a822ea86d43bf6e0b4d50c66fb58ff0fe0d35f800d9c"
+        },
+        "fimo.xml": {
+          "bytes": 3767,
+          "sha256": "22797221af7d84ed3c76466948cc39e924e51e5b5c414b2d462a31e1d20e97dd"
+        },
+        "cisml.xml": {
+          "bytes": 2798227,
+          "sha256": "7d222298655da7901516cc74ef7eb48ad175dce98a7ac87b9373763f043aab4b"
+        }
+      },
+      "log_sha256": "cf04a92ee1a9a11bb768078b0430b4f55e4d57ce4fb959d4098474cfdeed873d",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.978462,
+        "MEME-2": 0.96475,
+        "MEME-3": 0.958421,
+        "MEME-4": 0.965399,
+        "MEME-5": 1.0,
+        "MEME-6": 1.0,
+        "MEME-7": 1.0,
+        "MEME-8": 0.990159,
+        "MEME-9": 0.950923,
+        "MEME-10": 0.943009
+      }
+    },
+    "escherichia_coli": {
+      "status": "success",
+      "positive_count": 1645,
+      "control_count": 1704,
+      "positive_unique_sequences": 1637,
+      "control_unique_sequences": 1704,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.combined.fasta",
+      "combined_fasta_sha256": "2713ae457be29dbc687903b48db3fbb03b7620a5468b13f282f11520002621af",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.control.background",
+      "background_file_sha256": "ee0bb2793d539b13c5d7effef273794b65e04b9324c0a03edb6c5d6701138136",
+      "background_base_counts": {
+        "C": 34712,
+        "A": 32617,
+        "G": 38399,
+        "T": 32296
+      },
+      "background_frequencies": {
+        "A": 0.23631397438126703,
+        "C": 0.25149249405900426,
+        "G": 0.27820523966846344,
+        "T": 0.2339882918912653
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+      "matrix_sha256": "a313a14f789ba8ceff5a578d67697a12e06d1736bf55438a994d94bed766129a",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/escherichia_coli",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/escherichia_coli",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/escherichia_coli.log",
+      "started_at": "2026-10-03T16:42:55+08:00",
+      "finished_at": "2026-10-03T16:42:56+08:00",
+      "elapsed_seconds": 0.7,
+      "return_code": 0,
+      "fimo_tsv_sha256": "94300471adbd59f92ad6249060783566f9f1379b82293d601a3423675bb5e415",
+      "fimo_tsv_bytes": 540,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 540,
+          "sha256": "94300471adbd59f92ad6249060783566f9f1379b82293d601a3423675bb5e415"
+        },
+        "fimo.xml": {
+          "bytes": 3795,
+          "sha256": "3965e1529dc1114e88da21526d9310ee833d4529ca6e75fe38604cfce57c48d2"
+        },
+        "cisml.xml": {
+          "bytes": 2794787,
+          "sha256": "838a8f12c473791d92fa55a0fb23b66c182b0722b823cf3c8d13add3fdba0cfa"
+        }
+      },
+      "log_sha256": "3c1b1e652ebb3d08611565b6167473e225726543b44b0c3353d208f34b79effb",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.993535,
+        "MEME-2": 0.955581,
+        "MEME-3": 0.999196,
+        "MEME-4": 0.991443,
+        "MEME-5": 0.999397,
+        "MEME-6": 0.961943,
+        "MEME-7": 1.0,
+        "MEME-8": 0.998693,
+        "MEME-9": 0.979872,
+        "MEME-10": 0.962436
+      }
+    },
+    "staphylococcus": {
+      "status": "success",
+      "positive_count": 2207,
+      "control_count": 1162,
+      "positive_unique_sequences": 2206,
+      "control_unique_sequences": 1162,
+      "cross_label_exact_sequence_overlap": 0,
+      "combined_fasta": "tmp/tjupan_fimo_inputs_20261003/staphylococcus.combined.fasta",
+      "combined_fasta_sha256": "c3f55e5e23c79a643df5ff70c30a451aa5e5ec25dfec36b175e93249a8fa4963",
+      "background_file": "tmp/tjupan_fimo_inputs_20261003/staphylococcus.control.background",
+      "background_file_sha256": "c288c53bd5c4e8c354cf0727df5226553578b2a2de0701f2291582c2a81b068d",
+      "background_base_counts": {
+        "G": 17935,
+        "A": 34146,
+        "T": 27736,
+        "C": 14305
+      },
+      "background_frequencies": {
+        "A": 0.3627844712182062,
+        "C": 0.15198359575869616,
+        "G": 0.1905505620365058,
+        "T": 0.29468137098659186
+      },
+      "matrix_file": "results/motif/tjupan_m3_20261003/summary/matrices/staphylococcus.meme",
+      "matrix_sha256": "cd1d6891067090b1b7d25a2422733ccef2c4aafe9ded5482abff9d83140a9ae3",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/staphylococcus",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "results/motif/tjupan_m3_20261003/summary/matrices/staphylococcus.meme",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/staphylococcus",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/logs/staphylococcus.log",
+      "started_at": "2026-10-03T16:42:56+08:00",
+      "finished_at": "2026-10-03T16:42:56+08:00",
+      "elapsed_seconds": 0.69,
+      "return_code": 0,
+      "fimo_tsv_sha256": "dcc786f68f40150eb905176ab170ea77eec70367616c7c9c295203ce91c45903",
+      "fimo_tsv_bytes": 532,
+      "output_files": {
+        "fimo.tsv": {
+          "bytes": 532,
+          "sha256": "dcc786f68f40150eb905176ab170ea77eec70367616c7c9c295203ce91c45903"
+        },
+        "fimo.xml": {
+          "bytes": 3759,
+          "sha256": "9f0a8703f4d629bba4b64e4f4138d2aefacb36149e7ea7e550851bbb791973e6"
+        },
+        "cisml.xml": {
+          "bytes": 2811556,
+          "sha256": "197a06c9df9bf82d337c7353c873fc3bbb4fe9c40ad4449f20289aa91e86f6b6"
+        }
+      },
+      "log_sha256": "7d32a911b4cc193e59e2f8538c58500e24d5a5b64b39f8ed95cca5192f79cdf5",
+      "motif_pi0_estimates": {
+        "MEME-1": 0.930229,
+        "MEME-2": 1.0,
+        "MEME-3": 1.0,
+        "MEME-4": 0.939412,
+        "MEME-5": 1.0,
+        "MEME-6": 0.998848,
+        "MEME-7": 0.983924,
+        "MEME-8": 0.992275,
+        "MEME-9": 0.939389,
+        "MEME-10": 1.0
+      }
+    }
+  },
+  "status": "complete"
+}

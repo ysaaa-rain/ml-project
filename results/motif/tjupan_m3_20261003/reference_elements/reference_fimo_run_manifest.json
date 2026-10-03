@@ -1,0 +1,216 @@
+{
+  "schema_version": "tjupan-known-reference-fimo-1.0",
+  "project": "PR01-02",
+  "dataset": "TJU course cloud drive; reg_and_gen/Datasets",
+  "status": "complete",
+  "fimo_version": "5.5.9",
+  "fimo_executable": "tmp/meme-suite-5.5.9/bin/fimo",
+  "reference_meme": "baselines/known_promoter_elements.meme",
+  "reference_meme_sha256": "83ac30cf41f4cf66b18e9d9008515ffdb896a0dbee43a78032d9b21090fabfa5",
+  "de_novo_fimo_manifest": "results/motif/tjupan_m3_20261003/fimo/fimo_run_manifest.json",
+  "de_novo_fimo_manifest_sha256": "d2c3c9f4dcded17d8eab7cb83c5a72fd45ea09f9c906e4998ddd1f6aefc9c91c",
+  "parameters": {
+    "reference_motifs": [
+      "Ecoli_UP_distal",
+      "Ecoli_UP_proximal",
+      "Ecoli_sigma70_minus10",
+      "Ecoli_sigma70_minus35"
+    ],
+    "qvalue_threshold": 0.05,
+    "qvalue_scope": "FIMO computes q-values separately for each reference motif across its tested positions",
+    "background_model": "same species-specific zero-order frequencies estimated from valid label=0 controls in the de novo FIMO run",
+    "reverse_complement_search": "enabled by strands + - in the reference MEME file",
+    "coordinates": "1-based inclusive positions in the source FASTA; not converted to TSS-relative coordinates",
+    "max_stored_scores": 1000000,
+    "purpose": "reference-site localization and coordinate overlap with de novo FIMO sites; not proof of conserved function"
+  },
+  "results": {
+    "bacillus_subtilis": {
+      "status": "success",
+      "combined_fasta_sha256": "ea8748a6bafa49f4700f3c21d585019414ea57ff4f2033e39108b95b59eaf3d0",
+      "background_sha256": "8df4ddd809f0da23ef9e53226a7ac6d1d766ff46109447958a9f1f2a882034ae",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/bacillus_subtilis",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/bacillus_subtilis",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/bacillus_subtilis.log",
+      "started_at": "2026-10-03T20:29:32+08:00",
+      "elapsed_seconds": 0.14,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "accf2e1bf4e567e2722327b645ad7c9ba4ae53fa09a135a8d6b50db2483fc630",
+      "output_sha256": {
+        "fimo.tsv": "accf2e1bf4e567e2722327b645ad7c9ba4ae53fa09a135a8d6b50db2483fc630",
+        "fimo.xml": "89665207bddee29c9c73660b4f25ec8f10195385fb24f52782c28883c13ee0cd",
+        "cisml.xml": "37ecf1704a73a58e52a52e555c1485c9a5fdefdd38ef187a57318b57cad92a67"
+      }
+    },
+    "baumannii": {
+      "status": "success",
+      "combined_fasta_sha256": "eb4a4913c6f52a377a3ac0aed9bfcf11915953371b9da7caac6a5de09fba0819",
+      "background_sha256": "738dce76f8336f968db6e0f07ab0d95d95f17fc9dbe5b03e0dbf1d970f7aecd7",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/baumannii",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/baumannii",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/baumannii.log",
+      "started_at": "2026-10-03T20:29:32+08:00",
+      "elapsed_seconds": 0.22,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "d078fe6baad3962a917e83e029d48f8e0bfb81f1f687f7b9930feb8c5bacff65",
+      "output_sha256": {
+        "fimo.tsv": "d078fe6baad3962a917e83e029d48f8e0bfb81f1f687f7b9930feb8c5bacff65",
+        "fimo.xml": "1af3260591186e90ddfffed223e83b98871b2a542a9c5024fe7db0f940f9043e",
+        "cisml.xml": "0eb7896d7fbddcedf20134ba2fb5d938b88c0afc4fe6b9c2edd86f75f344d14c"
+      }
+    },
+    "bradyrhizobium": {
+      "status": "success",
+      "combined_fasta_sha256": "908de8a9164f91532e78a807699582325078a7526b37d2d436b8e454f85dc0de",
+      "background_sha256": "b16c011c6c0d3c805049868fd94e2ccaf5ef0c0cc56028bce6854602ab72bf5a",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/bradyrhizobium",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/bradyrhizobium",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/bradyrhizobium.log",
+      "started_at": "2026-10-03T20:29:33+08:00",
+      "elapsed_seconds": 0.29,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "e2e83314daccea00515ac335d5da614ed02c4112b09bb4d447f86d1c54ea1cfc",
+      "output_sha256": {
+        "fimo.tsv": "e2e83314daccea00515ac335d5da614ed02c4112b09bb4d447f86d1c54ea1cfc",
+        "fimo.xml": "05a07cd1fd9f5ca7db72d45b50c5da4e5be1bcef5058c3892976da858c84a6fc",
+        "cisml.xml": "b95e47164838cebddf8d88d31e21c94d7e0ccd68ba85ce0d68fbdaf58a8dade0"
+      }
+    },
+    "diphtheria": {
+      "status": "success",
+      "combined_fasta_sha256": "5e5be8a2acc1d9fe6bba16113c502434c1dcaa85d07a2313addd5d337038edae",
+      "background_sha256": "19ccd9955b56a43b1bebef6a0e0ad00c8ed6712dbfc25ac8f065c557a47c8152",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/diphtheria",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/diphtheria",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/diphtheria.log",
+      "started_at": "2026-10-03T20:29:33+08:00",
+      "elapsed_seconds": 0.26,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "39fdd598b618e1f00b027f7d7afbf44d74cf8baa86b349cd910b52e01bbb4d30",
+      "output_sha256": {
+        "fimo.tsv": "39fdd598b618e1f00b027f7d7afbf44d74cf8baa86b349cd910b52e01bbb4d30",
+        "fimo.xml": "6c0c112cea3725e263121414e0eac244b4a82d863e0a5ce426fba6b20d55f6e8",
+        "cisml.xml": "dc90d54c2b9b15bfb6c452dc39a8a7f64fe1d7c85f0a641279732183e28d5726"
+      }
+    },
+    "escherichia_coli": {
+      "status": "success",
+      "combined_fasta_sha256": "2713ae457be29dbc687903b48db3fbb03b7620a5468b13f282f11520002621af",
+      "background_sha256": "ee0bb2793d539b13c5d7effef273794b65e04b9324c0a03edb6c5d6701138136",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/escherichia_coli",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/escherichia_coli",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/escherichia_coli.log",
+      "started_at": "2026-10-03T20:29:33+08:00",
+      "elapsed_seconds": 0.28,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "a510b80bda8280a7011ea76de410dd5217ed762dfaf0e1407da5a59310034fc1",
+      "output_sha256": {
+        "fimo.tsv": "a510b80bda8280a7011ea76de410dd5217ed762dfaf0e1407da5a59310034fc1",
+        "fimo.xml": "0670c85b0fd25316ef46070d4157a54af78fdb846b7bf509ee5dd186ff341117",
+        "cisml.xml": "5c39851053a4bbc02271e8d631ef080c04e6d7b3b4751d130895e0e94f5a161f"
+      }
+    },
+    "staphylococcus": {
+      "status": "success",
+      "combined_fasta_sha256": "c3f55e5e23c79a643df5ff70c30a451aa5e5ec25dfec36b175e93249a8fa4963",
+      "background_sha256": "c288c53bd5c4e8c354cf0727df5226553578b2a2de0701f2291582c2a81b068d",
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/staphylococcus",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.control.background",
+        "--qv-thresh",
+        "--thresh",
+        "0.05",
+        "--max-stored-scores",
+        "1000000",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.combined.fasta"
+      ],
+      "output_directory": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/staphylococcus",
+      "log": "tmp/fimo_runs/tjupan_promloop_20261003/reference_elements/logs/staphylococcus.log",
+      "started_at": "2026-10-03T20:29:34+08:00",
+      "elapsed_seconds": 0.3,
+      "return_code": 0,
+      "missing_outputs": [],
+      "fimo_tsv_sha256": "3f42f44ec53f7b8573528dcbc2917567662b95fdb82746bc08d260ee4356c132",
+      "output_sha256": {
+        "fimo.tsv": "3f42f44ec53f7b8573528dcbc2917567662b95fdb82746bc08d260ee4356c132",
+        "fimo.xml": "9cb62073061b36b1366f008810efeb9f5507c234e47337d85da921513d28f1c9",
+        "cisml.xml": "f3b3475ece8ce6b1b88832526811764dfbbaa0d201c8967937de48951bedd273"
+      }
+    }
+  },
+  "completed_at": "2026-10-03T20:29:34+08:00"
+}

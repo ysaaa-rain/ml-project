@@ -1,0 +1,68 @@
+{
+  "schema_version": "tjupan-known-reference-overlap-summary-1.0",
+  "project": "PR01-02",
+  "status": "complete",
+  "purpose": "aggregate known-reference motif coverage and coordinate overlap with de novo FIMO hits; no record identifiers or sequences are exported",
+  "reference_source": "four idealized E. coli sigma70 -10/-35 and UP templates; not species-specific gold standards",
+  "fimo_version": "5.5.9",
+  "q_threshold": 0.05,
+  "q_value_scope": "each reference motif and each de novo motif is thresholded separately by FIMO",
+  "overlap_definition": "same input FASTA record and inclusive 1-based intervals share at least one base; strand ignored for any-strand overlap, same input-strand reported separately",
+  "association_test": "two-sided Fisher exact test on unique exact sequences, with cross-label shared sequences excluded; Benjamini-Hochberg across 24 species-by-reference comparisons",
+  "interpretation_limits": [
+    "reference motifs are idealized E. coli templates; matches in other species are exploratory and do not establish orthology or function",
+    "de novo motifs were discovered from the same positive sequences later scanned, so overlap is not independent validation",
+    "negative controls are source label=0, not experimentally verified non-promoters",
+    "input orientation is not independently verified; coordinates remain 1-81 and strand is relative to the input string",
+    "coordinate overlap indicates shared bases, not biological interaction or functional equivalence"
+  ],
+  "species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "reference_motif_count": 4,
+  "de_novo_species_motif_count": 60,
+  "fisher_tests": 24,
+  "fisher_bh_q_le_0_05_count": 0,
+  "source_sha256": {
+    "reference_run_manifest": "f749d4d451825cd86ff9ae67577f79017ed6f8f58f5773608abf85111856c251",
+    "de_novo_run_manifest": "d2c3c9f4dcded17d8eab7cb83c5a72fd45ea09f9c906e4998ddd1f6aefc9c91c",
+    "input_manifest": "907a902920c60fbbc1471ba53d9d282a57b17e8481902eba3451d946938c7622",
+    "meme_summary": "bd833dbfba07ab1663e412b22c39482ad7b21b735dbb71ed894811bc2c8090dc",
+    "de_novo_fimo_summary_manifest": "2fe5ba5830219e3309ef9dae6ec1caf6ce919bc8dfd3296ad584aa552991f07c",
+    "combined_fasta_and_fimo_inputs": {
+      "bacillus_subtilis/reference_fimo": "accf2e1bf4e567e2722327b645ad7c9ba4ae53fa09a135a8d6b50db2483fc630",
+      "bacillus_subtilis/denovo_fimo": "4320b818fce0c6b68f4faee0a19a1d58d944b57e1e19a8ec028c9cbd5e72d9fb",
+      "bacillus_subtilis/combined_fasta": "ea8748a6bafa49f4700f3c21d585019414ea57ff4f2033e39108b95b59eaf3d0",
+      "baumannii/reference_fimo": "d078fe6baad3962a917e83e029d48f8e0bfb81f1f687f7b9930feb8c5bacff65",
+      "baumannii/denovo_fimo": "0e7b9c964a6d591529eb658eb83de1aadddd6574cc0af7d014e4affd1b3d17ad",
+      "baumannii/combined_fasta": "eb4a4913c6f52a377a3ac0aed9bfcf11915953371b9da7caac6a5de09fba0819",
+      "bradyrhizobium/reference_fimo": "e2e83314daccea00515ac335d5da614ed02c4112b09bb4d447f86d1c54ea1cfc",
+      "bradyrhizobium/denovo_fimo": "1419d8069d27e278af1aebf0d57f2b2aae2ec871e9e93d12d730b87b4a9b1418",
+      "bradyrhizobium/combined_fasta": "908de8a9164f91532e78a807699582325078a7526b37d2d436b8e454f85dc0de",
+      "diphtheria/reference_fimo": "39fdd598b618e1f00b027f7d7afbf44d74cf8baa86b349cd910b52e01bbb4d30",
+      "diphtheria/denovo_fimo": "361cfddc57248e4192e9a822ea86d43bf6e0b4d50c66fb58ff0fe0d35f800d9c",
+      "diphtheria/combined_fasta": "5e5be8a2acc1d9fe6bba16113c502434c1dcaa85d07a2313addd5d337038edae",
+      "escherichia_coli/reference_fimo": "a510b80bda8280a7011ea76de410dd5217ed762dfaf0e1407da5a59310034fc1",
+      "escherichia_coli/denovo_fimo": "94300471adbd59f92ad6249060783566f9f1379b82293d601a3423675bb5e415",
+      "escherichia_coli/combined_fasta": "2713ae457be29dbc687903b48db3fbb03b7620a5468b13f282f11520002621af",
+      "staphylococcus/reference_fimo": "3f42f44ec53f7b8573528dcbc2917567662b95fdb82746bc08d260ee4356c132",
+      "staphylococcus/denovo_fimo": "dcc786f68f40150eb905176ab170ea77eec70367616c7c9c295203ce91c45903",
+      "staphylococcus/combined_fasta": "c3f55e5e23c79a643df5ff70c30a451aa5e5ec25dfec36b175e93249a8fa4963"
+    }
+  },
+  "output_sha256": {
+    "known_reference_coverage_association.tsv": {
+      "bytes": 2301,
+      "sha256": "5782d97fd18cb6e94c16e723656bf8d6f5d0e0424db6546d67af57f38976d9b7"
+    },
+    "denovo_known_reference_overlap.tsv": {
+      "bytes": 17907,
+      "sha256": "5532f2484f77c691a07029ac2973762b920e700987b54bc448bde68c3fb9d071"
+    }
+  }
+}

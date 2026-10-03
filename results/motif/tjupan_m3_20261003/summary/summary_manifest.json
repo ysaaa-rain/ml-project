@@ -1,0 +1,102 @@
+{
+  "purpose": "六物种 MEME motif 概要及概率矩阵导出；不含逐条序列或样本 ID",
+  "status": "complete",
+  "expected_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "included_species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "dataset": "TJU Pan course cloud drive / reg_and_gen/Datasets",
+  "meme_version": "5.5.9",
+  "parameters": {
+    "-dna": true,
+    "-mod": "zoops",
+    "-objfun": "de",
+    "-nmotifs": 10,
+    "-minw": 6,
+    "-maxw": 20,
+    "-searchsize": 0,
+    "-revcomp": true,
+    "-seed": 20261003,
+    "-brief": 50
+  },
+  "input_manifest_sha256": "907a902920c60fbbc1471ba53d9d282a57b17e8481902eba3451d946938c7622",
+  "species_motif_counts": {
+    "bacillus_subtilis": 10,
+    "baumannii": 10,
+    "bradyrhizobium": 10,
+    "diphtheria": 10,
+    "escherichia_coli": 10,
+    "staphylococcus": 10
+  },
+  "e_value_definition": "MEME-reported statistic; a small E-value is a candidate-ranking measure under this search design, not a probability of biological function",
+  "sites_limit": "sites_reported is MEME's site count and is not the number of unique promoter sequences",
+  "composition_limit": "mean GC probability and high-probability run are descriptive QC fields, not low-complexity or functional significance tests",
+  "source_sha256": {
+    "bacillus_subtilis/meme.xml": "3292823ee34bbc5cb21c27144d3af31ed05e11701d71595c439d236986750017",
+    "bacillus_subtilis/meme.txt": "9bbe475fb289972a26b6e3f7753a2641f0d98ce5bd79daa5e0cc8f79d74a7e32",
+    "bacillus_subtilis/positive_fasta": "81d17e4946c968231a2894032296796472467dc77298859078ea61afa492e870",
+    "bacillus_subtilis/control_fasta": "4c45d921599653cb8e729c36d4a04eb31eefb68d79285227fa3b6fe1c7a2dafe",
+    "baumannii/meme.xml": "bfb80dfe8021d320e57acdb49f64d1f721caa503b73cd671ee070a752243f4c2",
+    "baumannii/meme.txt": "a47fbfb86db4d6f6e8d998740ec6e72c1636681a2e9890344350d6197c171248",
+    "baumannii/positive_fasta": "f1711aac467e4dc9ff585f465d642f115906a6053267d14386c2057173295f2c",
+    "baumannii/control_fasta": "59232c286d1d65282a9c02a3b071eadf4c647343549381c688ec9573e2209e3b",
+    "bradyrhizobium/meme.xml": "ab4b61b8df95ab4bbec90af1b5e8586995ab96df3e787cb18edb469c672bfa22",
+    "bradyrhizobium/meme.txt": "77774a3e37024e82ea383f21a461d4e64d6177b93429437d932f41874a515298",
+    "bradyrhizobium/positive_fasta": "ef3b64c43075437c1d0db810f8ed28172953abe4a653dfb5b8df271e17b89f22",
+    "bradyrhizobium/control_fasta": "bc620ce804616efb82c939eaddd237b5d1c8cb87cf2dc1dd29210870172ee34f",
+    "diphtheria/meme.xml": "851bd2d0bfe21038537df501ed18b37b07c043306e56952e39a34b1dc6d63aaa",
+    "diphtheria/meme.txt": "6f3b73a3c80eb10c7c617afc6b2da1cbb0eb2de4c86bcb969ca53a0df290c77b",
+    "diphtheria/positive_fasta": "b3b8f9670bd4291d2ef4cbeeb42c0429fd238d1f3c097e68a65f304535ca55e5",
+    "diphtheria/control_fasta": "c4a4b1e53f3e74cc4e76024102d9826460dd8478b6c6b92ca22984ccc5328d08",
+    "escherichia_coli/meme.xml": "ade680712ec759bd7bdb272d0d0aff79daedc2cf7f6bf966860963534ba0f753",
+    "escherichia_coli/meme.txt": "90a28e0994069269f4f9062869b49ddaf1a67a7237c952275613b590c9503018",
+    "escherichia_coli/positive_fasta": "cecfd39de8086fb5501fa267d64049cd1bf561061862a7ab5bd8097e0d944734",
+    "escherichia_coli/control_fasta": "db02e3d2f5719f274a87a6358db6c8fc252c6ddf70f99d2d0b39bb9748554463",
+    "staphylococcus/meme.xml": "a162007e18f2fb885c1af2a5a70eefd23256e94e70b18715d0edb127af14767b",
+    "staphylococcus/meme.txt": "38b49fa891f45e8068ee473623b8ea2d3c945f3c39d7635a7eee284d763889bc",
+    "staphylococcus/positive_fasta": "eac65f52722e322c883deec44c364e5457fda40afe1d9ab63b9ee763edc54bb4",
+    "staphylococcus/control_fasta": "9c75ad6b76ac0f06fcb41b9c1a12d21ce10c232bc0da3cf05e319cb7ca110533"
+  },
+  "output_sha256": {
+    "motif_summary.tsv": {
+      "bytes": 4881,
+      "sha256": "bd833dbfba07ab1663e412b22c39482ad7b21b735dbb71ed894811bc2c8090dc"
+    },
+    "matrices/bacillus_subtilis.meme": {
+      "bytes": 3083,
+      "sha256": "e51f23deeec0ef802ad26085535f8cfb85f7d714b4ea23d08cff0a2742be450a"
+    },
+    "matrices/baumannii.meme": {
+      "bytes": 2013,
+      "sha256": "de7809f013f9a8d4f1b221a5bcaf2188f38860a450b74152a618c74264939b92"
+    },
+    "matrices/bradyrhizobium.meme": {
+      "bytes": 1907,
+      "sha256": "a56660304c8d231bb0f3a93e49877dcad3aa7f8a88d1946a47cf308d88f520b0"
+    },
+    "matrices/diphtheria.meme": {
+      "bytes": 3599,
+      "sha256": "98debf40048a49ef7df2c029e2e1d82fc4939acd71198b1ee0c1f9bf240e46ea"
+    },
+    "matrices/escherichia_coli.meme": {
+      "bytes": 2047,
+      "sha256": "a313a14f789ba8ceff5a578d67697a12e06d1736bf55438a994d94bed766129a"
+    },
+    "matrices/staphylococcus.meme": {
+      "bytes": 2230,
+      "sha256": "cd1d6891067090b1b7d25a2422733ccef2c4aafe9ded5482abff9d83140a9ae3"
+    }
+  }
+}

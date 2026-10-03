@@ -1,0 +1,100 @@
+MEME version 5
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies
+A 0.279 C 0.221 G 0.221 T 0.279
+
+MOTIF escherichia_coli_MEME-1 TGCCGCT
+letter-probability matrix: alength= 4 w= 7 nsites= 112 E= 6.4e-13
+0 0 0 1
+0 0 1 0
+0 1 0 0
+0 0.741071 0 0.258929
+0 0 1 0
+0 0.776786 0.223214 0
+0 0.232143 0 0.767857
+
+MOTIF escherichia_coli_MEME-2 VAHAAA
+letter-probability matrix: alength= 4 w= 6 nsites= 1477 E= 0.00043
+0.248477 0.381855 0.369668 0
+0.711578 0 0.288422 0
+0.392011 0.335139 0 0.27285
+1 0 0 0
+1 0 0 0
+0.825322 0 0 0.174678
+
+MOTIF escherichia_coli_MEME-3 CAGMGC
+letter-probability matrix: alength= 4 w= 6 nsites= 379 E= 9.2e-45
+0 1 0 0
+0.823219 0 0.176781 0
+0 0.258575 0.741425 0
+0.292876 0.490765 0.108179 0.108179
+0 0 1 0
+0 1 0 0
+
+MOTIF escherichia_coli_MEME-4 CRSCAR
+letter-probability matrix: alength= 4 w= 6 nsites= 599 E= 7.5e-84
+0 1 0 0
+0.370618 0 0.629382 0
+0 0.539232 0.460768 0
+0 1 0 0
+1 0 0 0
+0.337229 0 0.507513 0.155259
+
+MOTIF escherichia_coli_MEME-5 CAGGMTG
+letter-probability matrix: alength= 4 w= 7 nsites= 61 E= 2.1e-06
+0 1 0 0
+1 0 0 0
+0 0 1 0
+0 0.131148 0.868852 0
+0.590164 0.409836 0 0
+0 0 0 1
+0 0 1 0
+
+MOTIF escherichia_coli_MEME-6 GTTRAW
+letter-probability matrix: alength= 4 w= 6 nsites= 1624 E= 1
+0.169951 0.000616 0.721059 0.108374
+0.2617 0.101601 0.100985 0.535714
+0 0.012315 0 0.987685
+0.399015 0.027709 0.573276 0
+1 0 0 0
+0.378079 0.187192 0.043719 0.39101
+
+MOTIF escherichia_coli_MEME-7 CWGGCA
+letter-probability matrix: alength= 4 w= 6 nsites= 176 E= 3.4e-23
+0 1 0 0
+0.397727 0 0 0.602273
+0 0 1 0
+0 0 1 0
+0 1 0 0
+1 0 0 0
+
+MOTIF escherichia_coli_MEME-8 CGCMGH
+letter-probability matrix: alength= 4 w= 6 nsites= 245 E= 3.5e-32
+0 1 0 0
+0 0 1 0
+0 1 0 0
+0.587755 0.412245 0 0
+0 0 1 0
+0.22449 0.420408 0 0.355102
+
+MOTIF escherichia_coli_MEME-9 CTGGAA
+letter-probability matrix: alength= 4 w= 6 nsites= 69 E= 6.4e-06
+0 1 0 0
+0 0 0 1
+0 0 1 0
+0 0 1 0
+1 0 0 0
+1 0 0 0
+
+MOTIF escherichia_coli_MEME-10 CGCAAT
+letter-probability matrix: alength= 4 w= 6 nsites= 51 E= 0.018
+0 1 0 0
+0 0 1 0
+0 1 0 0
+1 0 0 0
+1 0 0 0
+0 0 0 1

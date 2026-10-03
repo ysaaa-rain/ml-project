@@ -1,4 +1,4 @@
-"""Audit the DNA embedding mainline and compact MEME baseline environment."""
+"""Check Python packages and MEME Suite tools for PR01-02 motif analysis."""
 
 from __future__ import annotations
 
@@ -13,21 +13,15 @@ import sys
 
 
 PYTHON_PACKAGES = (
-    "biopython",
     "matplotlib",
     "numpy",
     "pandas",
     "pyyaml",
-    "scikit-learn",
-    "scipy",
-    "seaborn",
     "pytest",
-    "torch",
-    "transformers",
-    "accelerate",
 )
 
 MEME_TOOLS = ("meme", "streme", "dreme", "fimo", "tomtom")
+LOCAL_MEME_BIN = Path(__file__).resolve().parents[1] / "tmp" / "meme-suite-5.5.9" / "bin"
 
 
 def _package_version(package: str) -> str | None:
@@ -50,9 +44,17 @@ def _tool_version(executable: str) -> str | None:
         except (OSError, subprocess.TimeoutExpired):
             continue
         output = (completed.stdout or completed.stderr).strip()
-        if output:
+        if completed.returncode == 0 and output:
             return output.splitlines()[0]
     return None
+
+
+def _tool_path(tool: str) -> str | None:
+    system_path = shutil.which(tool)
+    if system_path:
+        return system_path
+    local_path = LOCAL_MEME_BIN / tool
+    return str(local_path) if local_path.is_file() else None
 
 
 def collect_environment() -> dict:
@@ -60,7 +62,7 @@ def collect_environment() -> dict:
 
     tools = {}
     for tool in MEME_TOOLS:
-        executable = shutil.which(tool)
+        executable = _tool_path(tool)
         tools[tool] = {
             "available": executable is not None,
             "path": executable,
@@ -75,11 +77,6 @@ def collect_environment() -> dict:
         },
         "platform": platform.platform(),
         "packages": package_versions,
-        "embedding_runtime": {
-            "ready": package_versions["torch"] is not None and package_versions["transformers"] is not None,
-            "required_packages": ["torch", "transformers"],
-            "note": "ready only means imports exist; model revision, license, download and device still need audit",
-        },
         "meme_suite": {
             "ready": all(tools[tool]["available"] for tool in ("meme", "streme", "fimo", "tomtom")),
             "tools": tools,

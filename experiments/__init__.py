@@ -1,1 +1,1 @@
-"""Reproducible data, DNA embedding, analysis, and compact-baseline entry points."""
+"""可复现的数据准备、motif 发现和统计分析入口。"""
