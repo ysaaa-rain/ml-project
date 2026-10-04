@@ -12,7 +12,7 @@
 
 | 来源 | 后续角色 | 已确认边界 |
 |---|---|---|
-| RegulonDB E. coli K-12 | 经证据审计的主发现候选 | 原始序列已转录定向；旧负链二次翻转须纠错；Weak/Strong/Confirmed分层；multi_sigma保留 |
+| RegulonDB E. coli K-12 | 经审计的主发现输入 | 真基因组窗口与统一同源簇划分已重建；Gold限Strong/Confirmed；multi_sigma保留；旧结果不覆盖 |
 | DBTBS B. subtilis | 经标注审计的主发现候选 | 本地698记录缺TSS/strand，暂限非位置发现；不能填猜测坐标 |
 | TJU Pan/PromLoop六物种 | 其他来源/物种的验证候选 | CSV无sigma及可确认方向；其旧60PWM发现结果保留原角色，不能以同批样本验证自身发现 |
 | strenth E_coli.txt | 课程原选做5历史扩展 | 弱关联，标签条件/单位仍需追溯；不是新5验证 |
@@ -28,6 +28,8 @@
 - 旧六物种FIMO353个位点与跨物种比较阴性等均保留原参数和证据级别。新1–5尚未全部按新标准验收，新6/7未做。
 
 ## 本地运行
+
+2026-10-04已完成[RegulonDB G0重建与冻结划分](docs/09_G0重建与冻结划分_20261004.md)：3,822个位点、3,296个联合同源簇、1,100个Gold代表，三个窗口穷举跨split核查均无符合冻结标准的近同源对。两套训练背景已准备；Sigma28仅8条训练样本，Sigma70其他sigma背景仅159匹配对。DBTBS证据/坐标与外部来源隔离仍待审计，新motif实验尚未运行。
 
 当前Windows尚无可运行MEME Suite；远端历史构建记录不能当作本机环境。当前Python依赖版本也不同于requirements锁定值。原始数据在被Git忽略的 `data/raw/course_share/`、RegulonDB和DBTBS本地目录中；原始序列、大型缓存不提交。
 
