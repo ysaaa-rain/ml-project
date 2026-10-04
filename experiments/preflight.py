@@ -17,6 +17,7 @@ PYTHON_PACKAGES = (
     "numpy",
     "pandas",
     "pyyaml",
+    "scipy",
     "pytest",
 )
 
@@ -65,9 +66,12 @@ def collect_environment() -> dict:
         executable = _tool_path(tool)
         tools[tool] = {
             "available": executable is not None,
+            "runnable": False,
             "path": executable,
             "version": _tool_version(executable) if executable else None,
         }
+    for tool in tools.values():
+        tool["runnable"] = tool["available"] and tool["version"] is not None
     package_versions = {package: _package_version(package) for package in PYTHON_PACKAGES}
     return {
         "python": {
@@ -78,7 +82,7 @@ def collect_environment() -> dict:
         "platform": platform.platform(),
         "packages": package_versions,
         "meme_suite": {
-            "ready": all(tools[tool]["available"] for tool in ("meme", "streme", "fimo", "tomtom")),
+            "ready": all(tools[tool]["runnable"] for tool in ("meme", "streme", "fimo", "tomtom")),
             "tools": tools,
         },
     }

@@ -142,7 +142,10 @@ def run(
     fimo_work_dir: Path | None = None,
     result_dir: Path = DEFAULT_RESULT_DIR,
     reuse_meme_runs: bool = False,
+    legacy_record_split: bool = False,
 ) -> dict[str, Any]:
+    if not legacy_record_split:
+        raise ValueError("Legacy record-level split is not homology-isolated. Use a new cluster-aware workflow; --legacy-record-split is only for historical reproduction.")
     if not meme.is_file() or not fimo.is_file():
         raise FileNotFoundError("MEME and FIMO executables must both exist")
     _require_project_output(work_dir)
@@ -299,6 +302,8 @@ def run(
         "holdout_fraction": HOLDOUT_FRACTION,
         "holdout_size_rule": "ceil(0.20*N) per sigma group",
         "split_unit": "paired promoter and its own N1 control",
+        "homology_isolated": False,
+        "audit_limit": "2026-10-04 audit confirmed cross-partition near duplicates; historical reproduction only.",
         "groups": split_groups,
         "training_meme_runs": training_runs,
         "training_fasta_sha256": train_hashes,
@@ -343,6 +348,7 @@ def main() -> None:
     parser.add_argument("--work-dir", type=Path, default=DEFAULT_WORK_DIR)
     parser.add_argument("--fimo-work-dir", type=Path)
     parser.add_argument("--result-dir", type=Path, default=DEFAULT_RESULT_DIR)
+    parser.add_argument("--legacy-record-split", action="store_true", help="仅复现历史记录随机划分；不满足新规范的同源簇隔离")
     parser.add_argument("--reuse-meme-runs", action="store_true", help="复用工作目录中已通过验收的六组 MEME 原生输出")
     args = parser.parse_args()
     result = run(
@@ -354,6 +360,7 @@ def main() -> None:
         fimo_work_dir=args.fimo_work_dir,
         result_dir=args.result_dir,
         reuse_meme_runs=args.reuse_meme_runs,
+        legacy_record_split=args.legacy_record_split,
     )
     print(f"Completed six-group held-out validation: {result['rows']}")
 

@@ -1,0 +1,910 @@
+我把你发来的聊天记录、两份 embedding/motif 文档和目前的 PR01-02 主线一起看完了。我的判断很明确：**你们现在最合理的路线不是把前面的 MEME/STREME/FIMO 换成机器学习，而是把前五个实验做成一条完整、可验证的生物信息学主线，再让机器学习承担“验证已有规律”和“独立发现 motif”两个角色。**
+
+这样项目会比“堆很多算法”强得多。你们最后能形成一个很完整的逻辑：
+
+> **motif 发现 → motif 定位 → 已知元件验证 → sigma 特异性及 motif grammar → 跨数据集/跨物种验证 → ML 检验这些规律是否真的具有判别能力 → ML 独立发现 motif 与传统方法交叉验证**
+
+这条线和老师前面的意见并不冲突，而且能够自然把后面的实验 6、7 拉到机器学习上。
+
+你们上传的材料本身也强调了一件非常关键的事：**embedding 本身不等于 motif discovery**，完整链条应该是“序列 → 表示 → 特征/重要性提取 → motif 实例聚合 → motif 构建 → 生物学评价”。预训练 DNA LM 更适合作为 representation backbone，后面还需要 attention、attribution、SAE、clustering 等 motif extraction 机制。motif-embedding-methods motif-embedding-methods
+
+---
+
+# 一、先给你们整个项目定一个最终版本
+
+我建议把实验明确成下面 7 个。
+
+| 实验 | 核心问题 | 方法 | 最终回答什么 |
+|---|---|---|---|
+| **实验1** | 不同 sigma 能发现什么 motif？ | MEME / STREME | motif discovery |
+| **实验2** | motif 出现在启动子的什么位置？ | FIMO | position |
+| **实验3** | motif 是否对应已知调控元件？ | Tomtom + RegulonDB/DBTBS 已知 motif | RQ1 |
+| **实验4** | 不同 sigma 的 motif 在序列、位置、间距、组合上有什么不同？ | FIMO统计 + spacing/co-occurrence | RQ2 |
+| **实验5** | 这些规律换数据集、换物种还成立吗？ | hold-out / cross-dataset / cross-species | RQ3 |
+| **实验6** | 前面发现的 motif 规律是否真的足以区分 sigma？ | Logistic / RF 或 XGBoost | ML 功能验证 |
+| **实验7** | ML 能否独立发现相同或额外 motif？ | CNN + attribution + TF-MoDISco；或 embedding 路线 | 方法交叉验证 |
+
+其中**实验1—5就是你现在说的主线**。实验6和7才正式进入 ML。
+
+这样做最大的好处是，ML 不是突然冒出来的一块，而是在回答：
+
+**“前五个实验找到的 pattern 到底是真规律，还是描述性现象？”**
+
+---
+
+# 二、数据集这一步必须比原方案做得更严谨
+
+这是整个项目最容易失分、同时也是最容易体现你们专业性的地方。
+
+你们不要一上来把“所有物种 promoter”扔在一起跑 MEME。应该建立两级数据。
+
+**一级：Gold-standard 主实验数据。**
+
+建议至少保留：
+
+**E. coli K-12：RegulonDB**
+
+RegulonDB 本身就是 E. coli K-12 transcriptional regulatory network 数据库。[RegulonDB](https://regulondb.ccg.unam.mx/?utm_source=chatgpt.com)
+
+**B. subtilis：DBTBS**
+
+DBTBS 中明确记录 sigma factor、promoter、cis-element 位置和实验信息，而且不同 sigma 已经有相当数量的 promoter，例如 SigA、SigB、SigD、SigE 等。[DBTBS](https://dbtbs.hgc.jp/terms.html?utm_source=chatgpt.com)
+
+这两个应该作为你们主要的 motif discovery 数据。
+
+**二级：External validation 数据。**
+
+再去增加其他物种或者独立数据集。
+
+这里的原则不是“物种越多越好”，而是：
+
+**训练/发现数据可靠 + 外部验证独立。**
+
+如果你们把十几个物种混起来发现 motif，然后再说“跨物种验证成功”，这个结论实际上是不成立的，因为验证物种已经参与了 motif discovery。
+
+---
+
+## 数据表建议固定成这个结构
+
+Agent 最终必须生成类似：
+
+| sequence_id | species | strain | sigma_raw | sigma_family | promoter | TSS | strand | evidence | sequence | source |
+|---|---|---|---|---|---|---|---|---|---|---|
+
+另外一定增加：
+
+`single_sigma / multi_sigma`
+
+因为一个 promoter 可能被多个 sigma factor 识别。
+
+这类 promoter：
+
+**可以参加 motif discovery；**
+
+但在实验6做严格 multiclass sigma classification 时，最好先把 multi-sigma promoter 排除，单独作为扩展实验。
+
+否则标签本身存在冲突。
+
+---
+
+# 三、统一 promoter 坐标，这是前五个实验的地基
+
+所有序列必须首先转成：
+
+**相对于 TSS 的同一方向。**
+
+例如主分析统一：
+
+**−80 bp ～ +20 bp**
+
+然后做一个简单敏感性实验：
+
+−60～+20  
+−100～+20
+
+看主要结果是否变化。
+
+负链 promoter 必须 reverse-complement，使：
+
+**所有序列都是转录方向 5' → 3'。**
+
+否则实验2的位置分布会直接乱掉。
+
+没有可靠 TSS 的 promoter：
+
+可以参加实验1的 motif discovery；
+
+但是**不要参加位置和 spacing 的严格统计**。
+
+---
+
+# 四、实验1：Motif Discovery
+
+这里我建议你们不要机械地：
+
+> MEME + DREME + STREME 每组全部跑一次
+
+这会显得像“工具使用实验”。
+
+更好的设计是根据数据规模选择工具。
+
+MEME Suite 官方建议：序列数少于约 50 条时优先考虑 MEME；50 条以上的数据更适合 STREME。STREME本身就是针对大量序列的 enrichment motif discovery。[MEME Suite](https://meme-suite.org/meme/tools/streme?utm_source=chatgpt.com)
+
+所以：
+
+| 样本数 | 主方法 |
+|---:|---|
+| <10 | 不作为正式统计组 |
+| 10–49 | MEME |
+| ≥50 | STREME |
+| 代表性数据集 | 可以额外跑 MEME/DREME/STREME 做 robustness comparison |
+
+这样比三种工具全部堆上去合理。
+
+### 一个非常重要的设计：做两种背景
+
+第一次：
+
+**目标 sigma promoters vs shuffled promoters**
+
+得到“这个 sigma promoter 中富集了什么”。
+
+第二次：
+
+**目标 sigma promoters vs 同一物种其他 sigma promoters**
+
+得到：
+
+**“什么 motif 是这个 sigma 特异的？”**
+
+第二个实验其实更重要。
+
+因为如果只拿随机 DNA 当背景，你很可能得到的是：
+
+“这是 promoter motif”
+
+而不是：
+
+“这是 sigma-X 特异 motif”。
+
+背景序列还要尽量匹配长度和 GC。2025 年一项多物种 bacterial promoter ML 研究专门发现，不合理的 negative dataset 会造成 GC-content bias。[OUP Academic](https://academic.oup.com/bioinformatics/article/41/4/btaf135/8098048?utm_source=chatgpt.com)
+
+### motif width
+
+第一轮建议：
+
+**5–15 bp**
+
+不要试图直接让 MEME 学出整套 −35 + spacer + −10。
+
+两个元件之间的 spacing 应该留给实验4分析。
+
+每个 sigma 输出：
+
+`motif_id / consensus / width / E-value / sites / information content / logo`
+
+最后得到：
+
+**sigma × motif 表。**
+
+---
+
+# 五、实验2：FIMO 定位
+
+这一步你的原理解基本是对的，但汇报时不要说：
+
+> FIMO 得到 motif 的“真实精确位置”
+
+应该说：
+
+> **FIMO 得到 motif 的预测 occurrence position。**
+
+FIMO 的职责就是拿已经得到的 motif 去扫描序列，找到单个 motif occurrence；官方文档也明确把 promoter 中定位 TF motif 作为典型用途。[MEME Suite](https://meme-suite.org/meme/doc/fimo-tutorial.html?utm_source=chatgpt.com)
+
+建议保留：
+
+`sequence_id`
+`motif_id`
+`start`
+`stop`
+`strand`
+`score`
+`p-value`
+`q-value`
+`TSS_relative_position`
+
+候选扫描可以保留官方常用的 `p < 1e-4`，严格分析再使用 `q < 0.05`。FIMO本身支持 p-value 和 BH 校正后的 q-value。[MEME Suite](https://meme-suite.org/meme/doc/fimo.html?man_type=cmd\&utm_source=chatgpt.com)
+
+这一实验最后不是只出一个表。
+
+至少要形成：
+
+**motif positional density 图。**
+
+例如一眼看到：
+
+sigma A 的 motif1 集中在 −10；
+
+motif2 集中在 −35；
+
+sigma B 则出现不同位置峰。
+
+这会直接为实验4铺路。
+
+---
+
+# 六、实验3：已知调控元件验证——回答 RQ1
+
+这一步不要只写：
+
+> 和数据库比一下。
+
+建议正式定义成：
+
+**Known motif recovery experiment。**
+
+用 Tomtom 将你们发现的 PWM 与已知 PWM 做比较。Tomtom 会报告 motif alignment、p-value、E-value 和 q-value。[MEME Suite](https://meme-suite.org/meme/doc/tomtom.html?man_type=web\&utm_source=chatgpt.com)
+
+但是这里有一个容易踩的坑：
+
+### 不要把 JASPAR 当成唯一标准库。
+
+你们研究的是 bacterial sigma promoter。
+
+应该优先建立：
+
+**RegulonDB + DBTBS + 文献中 sigma consensus/PWM**
+
+组成自己的 known-sigma motif library。
+
+例如 DBTBS 中 SigH 已经直接给出：
+
+`AGGTATT (-35)` 与 `GAATT (-10)` 这样的 consensus。[DBTBS](https://dbtbs.hgc.jp/ver1/tfac/SigH.html?utm_source=chatgpt.com)
+
+如果数据库只有一组已知 binding sequences，没有 PWM，就让 Agent：
+
+对齐这些实验已知 sites → 构建 PWM → 转 MEME format → Tomtom。
+
+实验3最后要回答：
+
+> 我们的方法能否重新发现生物学上已经知道的 sigma recognition elements？
+
+而不是单纯“相似度是多少”。
+
+---
+
+# 七、实验4应该成为你们项目里最漂亮的一块
+
+你们原来的：
+
+**sigma差异 + 间距/排列**
+
+建议合并成：
+
+# Sigma-specific motif grammar
+
+因为真正有价值的不只是：
+
+“sigma A motif 是 AAA，sigma B motif 是 CCC”。
+
+而是：
+
+**不同 sigma 识别的 promoter pattern，在 sequence、position、spacing、co-occurrence 上是否形成不同规则。**
+
+你们可以形成四层比较：
+
+| 层次 | 比较 |
+|---|---|
+| Sequence | PWM / consensus / information content |
+| Occurrence | motif 出现率、FIMO score |
+| Position | 相对 TSS 的位置分布 |
+| Grammar | motif A–B spacing、顺序、orientation、co-occurrence |
+
+这里还有一个非常重要的生物学细节：
+
+### 不要把所有 sigma 都强行按“−35 / −10”分析。
+
+大多数 σ70-family promoter 可以讨论 −35/−10 architecture。
+
+但是 **σ54 是典型的 −24/−12 architecture**。
+
+所以 Agent 必须先做：
+
+**sigma family mapping**
+
+然后根据 sigma family 定义 spacing grammar。
+
+这个细节如果你们在答辩里讲出来，会显得比简单跑工具成熟很多。
+
+---
+
+## spacing 最好增加 SpaMo
+
+其实 MEME Suite 已经有一个专门工具：
+
+**SpaMo — Spaced Motif Analysis**
+
+它就是检测两个 motifs 之间是否存在显著富集的 spacing，并考虑 orientation。[MEME Suite](https://meme-suite.org/meme/doc/spamo.html?utm_source=chatgpt.com)
+
+所以实验4可以：
+
+**FIMO + 自己统计 spacing**
+
+同时：
+
+**SpaMo 做独立验证。**
+
+不过注意：SpaMo 默认 margin 是 150 bp，而你们 promoter window 可能只有约100 bp，所以不能直接使用默认参数，必须根据序列长度调小 `margin/range`，否则短序列会被丢弃。[MEME Suite](https://meme-suite.org/meme/doc/spamo.html?utm_source=chatgpt.com)
+
+这会是一个很好看的 method robustness point。
+
+---
+
+# 八、实验5：跨数据集 / 跨物种验证——回答 RQ3
+
+这个实验是你们能不能从“跑实验”变成“研究”的分水岭。
+
+正确方法不是：
+
+> E. coli 跑一次、Bacillus 跑一次，看着差不多。
+
+而应该是：
+
+**Discovery 和 Validation 严格分开。**
+
+例如：
+
+### 模式 A：within-species hold-out
+
+70% promoter：
+
+MEME/STREME discover motif。
+
+30%：
+
+只用固定 motif + FIMO scan。
+
+**禁止在测试集重新 discover motif。**
+
+### 模式 B：cross-dataset
+
+Dataset A：
+
+discover motif。
+
+Dataset B：
+
+固定 motif scan。
+
+### 模式 C：cross-species
+
+Species A：
+
+discover。
+
+Species B：
+
+validation。
+
+但是必须比较**生物学上对应的 sigma family**。
+
+不能简单认为：
+
+“E. coli sigma 名称 = Bacillus sigma 名称”。
+
+你们真正要研究的是：
+
+> 哪些 recognition pattern 是 family-level conserved，哪些是 species-specific？
+
+这比简单说“跨物种一致/不一致”高级得多。
+
+你们的综述材料本身也把**跨物种泛化**和**motif combination / high-order grammar**列为目前 motif discovery 的关键问题。motif-embedding-overview
+
+---
+
+# 九、实验6：机器学习不要预测“是不是 promoter”，而是预测 sigma
+
+这个地方我非常推荐你们这么设计：
+
+## 输入不是原始 DNA，而是前四个实验得到的 motif features。
+
+例如每个 promoter 形成一个 feature vector：
+
+| 特征 |
+|---|
+| motif1 maximum FIMO score |
+| motif1 presence |
+| motif1 position |
+| motif2 score |
+| motif2 position |
+| motif1–motif2 spacing |
+| co-occurrence |
+| information content-related features |
+| GC content，作为控制变量 |
+
+标签：
+
+**sigma factor**
+
+然后做：
+
+**Multinomial Logistic Regression**
+
++
+
+**Random Forest 或 XGBoost**
+
+足够了。
+
+不要再塞 SVM、KNN、CNN、Transformer 五六个模型。
+
+你们这个实验的研究问题是：
+
+> 前面发现的 motif sequence + position + spacing，是否真的包含 sigma recognition 信息？
+
+---
+
+## 实验6最重要的是 ablation
+
+Agent 必须依次训练：
+
+| Feature set | 内容 |
+|---|---|
+| A | k-mer baseline |
+| B | motif score |
+| C | motif score + position |
+| D | motif score + position + spacing |
+
+然后比较：
+
+**Macro-F1、Balanced Accuracy、MCC、Macro-AUROC。**
+
+最漂亮的结果不是“准确率98%”。
+
+而是例如：
+
+> motif score：0.71  
+> + position：0.80  
+> + spacing：0.86
+
+那么你们就可以非常有底气地说：
+
+> **motif 的序列内容并不是 sigma specificity 的全部信息，空间位置与 motif grammar 提供了额外判别信息。**
+
+这直接把实验2和实验4“证明”了。
+
+---
+
+# 十、实验7才做真正的 ML motif discovery
+
+这一实验我有两个方案。
+
+## 我更推荐方案 A：CNN + attribution + TF-MoDISco
+
+输入：
+
+promoter sequence
+
+↓
+
+one-hot
+
+↓
+
+1D CNN
+
+↓
+
+sigma classification
+
+然后不是停在 accuracy。
+
+而是：
+
+CNN  
+↓  
+Integrated Gradients / DeepSHAP  
+↓  
+importance map  
+↓  
+TF-MoDISco  
+↓  
+ML-discovered motifs
+
+最后再：
+
+**Tomtom：ML motif vs MEME/STREME motif**
+
+**FIMO：ML motif position**
+
+**known sigma motifs：biological match**
+
+这会形成一个特别漂亮的闭环。
+
+PromoterLCNN 等已有研究已经证明，用 CNN 区分 E. coli 的 σ70、σ24、σ32、σ38、σ28、σ54 等 promoter subtype 是完全合理的实验任务。[PubMed](https://pubmed.ncbi.nlm.nih.gov/35885909/?utm_source=chatgpt.com)
+
+而你们上传的技术资料也明确指出，attribution 与 TF-MoDISco 的优势就在于它不是只问“模型关注哪里”，而是把模型输出敏感性进一步转成 motif。motif-embedding-methods
+
+---
+
+# 十一、embedding 我不建议当你们当前主模型，但可以作为高阶替代方案
+
+如果老师或者你们自己特别希望体现 embedding，那实验7可以把 CNN 换成：
+
+**DNABERT-2 / Nucleotide Transformer**
+
+↓
+
+frozen embedding
+
+↓
+
+sigma classifier / linear probe
+
+↓
+
+Integrated Gradients / Attention / SAE
+
+↓
+
+motif reconstruction
+
+而不能写成：
+
+> DNABERT embedding → motif
+
+因为这中间缺了一层 extraction。
+
+你们资料明确指出：
+
+**representation ≠ interpretation**，PLM embedding 中“有信息”不代表 motif 能直接被读出来。motif-embedding-methods
+
+而且 SAE 虽然很新，但训练本身复杂、feature 仍可能 entangle，而且有 sparsity–reconstruction trade-off。对于你们这个课程项目，我不建议把它作为必做项。motif-embedding-methods
+
+如果真想做 embedding，建议只做：
+
+**1–2 个物种 / 数据集**
+
+作为实验7扩展。
+
+这一方向本身是有价值的——2026 年的 PromoterAtlas transformer 工作甚至发现，其 embedding 会更倾向按 sigma identity 而不是 species 聚类，说明“跨物种 sigma representation”是一个非常好的扩展问题。[PubMed](https://pubmed.ncbi.nlm.nih.gov/42140912/?utm_source=chatgpt.com)
+
+---
+
+# 十二、你们最终的 RQ1–RQ3 应该这样闭环
+
+### RQ1：发现的 motif 是否对应已知调控元件？
+
+证据链：
+
+**MEME/STREME → FIMO位置 → Tomtom已知motif → known motif recovery**
+
+不要只靠 motif 长得像。
+
+### RQ2：不同 sigma 是否存在不同调控模式？
+
+证据链：
+
+**PWM差异 + position差异 + spacing差异 + co-occurrence差异**
+
+再加：
+
+**实验6 ML ablation**
+
+证明这些差异有实际判别能力。
+
+### RQ3：这些 pattern 是否具有跨数据集 / 跨物种稳定性？
+
+证据链：
+
+**train discovery → independent test scan**
+
+再比较：
+
+motif recovery  
+position consistency  
+spacing consistency  
+enrichment  
+family-specific vs species-specific pattern
+
+这样 RQ3 就非常扎实。
+
+---
+
+# 十三、最终的 motif pattern report 不要只是几十张 Logo
+
+每个 sigma 最后生成一张标准 summary card：
+
+| 内容 | 结果 |
+|---|---|
+| Sigma | σX |
+| Core motif 1 | PWM / consensus |
+| Core motif 2 | PWM / consensus |
+| Typical position | −XX |
+| Typical spacing | XX bp |
+| Known element match | Yes / No |
+| Tomtom q-value | xxx |
+| Cross-dataset recovery | xx% |
+| Cross-species recovery | xx% |
+| ML feature importance | xx |
+| CNN motif support | Yes / No |
+| Confidence | A / B / C |
+
+我甚至建议最后人为规定：
+
+**A类 motif：** known match + enrichment + positional consistency + independent validation。
+
+**B类 motif：** database 未匹配，但 enrichment + positional consistency + external recovery。
+
+**C类 motif：** 只在单数据集发现，作为 candidate。
+
+这会让“新 motif”不会因为没匹配数据库就被你们错误地当成垃圾。你们综述也指出，仅依赖已知 motif 数据库会低估真正的新 motif。motif-embedding-overview
+
+---
+
+# 十四、Agent 必须遵守的实验规范
+
+这一部分你可以直接给 Agent。
+
+```text
+PR01-02 实验总目标：
+
+从多物种 bacterial promoter 中研究不同 sigma factor 对应的 motif 序列模式、
+motif 相对 TSS 的位置、motif 之间的 spacing/co-occurrence，
+并通过独立数据验证其可靠性。
+在完成传统 motif discovery 主线后，引入机器学习进行 pattern validation
+以及独立的 ML-based motif discovery。
+
+【数据原则】
+
+1. 优先使用具有可靠 promoter、TSS、sigma factor 和 evidence 的数据。
+2. 主数据使用高质量 curated 数据，如 E. coli RegulonDB 和 B. subtilis DBTBS。
+3. 所有 promoter 统一到转录方向，并建立 TSS-relative coordinate。
+4. 默认分析窗口使用 -80:+20，同时在 -60:+20 和 -100:+20 做敏感性检查。
+5. 删除完全重复及高度近似序列，并记录 sequence cluster，后续 ML 划分不能让同 cluster 同时进入 train/test。
+6. 标记 multi-sigma promoter。严格 multiclass ML 主实验只使用 single-sigma subset。
+7. 没有可靠 TSS 的序列可以做 motif discovery，但不得进入严格 position/spacing validation。
+8. 所有中间数据、软件版本、随机种子、命令、参数必须保存。
+
+【实验1 Motif discovery】
+
+按 species × sigma 分组。
+
+如果 n >= 50，以 STREME 为主；
+如果 10 <= n < 50，以 MEME 为主；
+n < 10 不作为正式统计组。
+
+至少进行两套背景：
+
+A. sigma promoter vs composition-preserving shuffled sequences；
+B. sigma promoter vs same-species other-sigma promoters。
+
+主要 motif width 5–15 bp。
+
+保存：
+PWM、consensus、sequence logo、E-value、site count、
+information content 和输入样本数。
+
+在代表性 sigma 上用 MEME/STREME/DREME 进行方法鲁棒性比较，
+但不要机械地所有组全部跑三种方法。
+
+【实验2 Motif localization】
+
+使用实验1固定得到的 motif，通过 FIMO 扫描 promoter。
+
+保存：
+sequence_id、motif_id、start、stop、strand、score、
+p-value、q-value、TSS-relative center。
+
+生成：
+不同 sigma 的 motif position density；
+各 motif hit rate；
+motif score distribution。
+
+严格分析主要使用 q <= 0.05，
+同时保留 p < 1e-4 的候选结果供敏感性分析。
+
+注意：FIMO 坐标应描述为 predicted motif occurrence，
+不能称为实验验证的真实 binding position。
+
+【实验3 Known motif recovery】
+
+收集 RegulonDB、DBTBS 和文献中实验支持的 sigma promoter elements。
+
+若只有 known binding sequences：
+对齐 → PWM → MEME motif format。
+
+使用 Tomtom：
+
+discovered PWM vs known sigma PWM。
+
+报告：
+match target、alignment、p-value、E-value、q-value、
+matched consensus 和 biological annotation。
+
+回答 RQ1：
+发现的 motif 能否恢复已知 sigma recognition elements？
+
+【实验4 Sigma-specific motif grammar】
+
+比较不同 sigma：
+
+1. PWM/sequence；
+2. motif occurrence；
+3. TSS-relative position；
+4. motif pair spacing；
+5. motif order/orientation；
+6. motif co-occurrence。
+
+必须先建立 sigma-family mapping。
+
+σ70-family 按 -35/-10 architecture 分析；
+σ54 不允许强行按 -35/-10 分析，应单独考虑 -24/-12 architecture。
+
+spacing 的定义必须全项目统一。
+
+使用自编统计 + SpaMo 进行独立 spacing verification。
+如果 promoter window 较短，不得直接使用 SpaMo 默认 margin=150，
+需根据序列长度重新设定 margin/range。
+
+连续变量根据分布选择 ANOVA 或 Kruskal-Wallis；
+类别变量使用 Chi-square/Fisher；
+多重比较使用 BH-FDR；
+同时报告 effect size，而不仅是 p-value。
+
+回答 RQ2：
+不同 sigma 是否具有不同 sequence-position-spacing grammar？
+
+【实验5 Independent validation】
+
+严格区分 discovery set 和 validation set。
+
+设置：
+
+A. within-species train/hold-out；
+B. cross-dataset validation；
+C. biologically homologous sigma-family cross-species validation。
+
+motif 只能在 discovery set 中产生。
+
+validation set 不允许重新调 motif 或调整阈值后再宣称 generalization。
+
+比较：
+
+motif hit rate；
+enrichment odds ratio；
+position distribution；
+spacing distribution；
+motif similarity；
+bootstrap confidence interval。
+
+回答 RQ3：
+哪些 pattern 是 conserved，
+哪些 pattern 是 species-specific？
+
+【实验6 ML pattern validation】
+
+目标：
+验证实验1–4得到的 motif pattern 是否具有 sigma-factor predictive information。
+
+输入 features：
+
+motif presence；
+max FIMO score；
+motif hit count；
+motif relative position；
+motif-pair spacing；
+co-occurrence；
+GC content control。
+
+模型：
+
+Multinomial Logistic Regression
++
+Random Forest 或 XGBoost。
+
+不要堆大量模型。
+
+进行四套 ablation：
+
+A. k-mer baseline；
+B. motif only；
+C. motif + position；
+D. motif + position + spacing。
+
+指标：
+
+Macro-F1；
+Balanced Accuracy；
+MCC；
+Macro-AUROC；
+confusion matrix。
+
+必须使用 group-aware train/test split，
+不能让高度相似 promoter 同时进入 train 和 test。
+
+解释模型：
+permutation importance 或 SHAP。
+
+实验6结论不是单纯追求最高准确率，
+而是量化 motif、position 和 spacing 各自增加了多少预测信息。
+
+【实验7 ML-based motif discovery】
+
+优先方案：
+
+one-hot promoter
+→ compact 1D CNN
+→ sigma classification
+→ Integrated Gradients / DeepSHAP
+→ TF-MoDISco
+→ ML motifs。
+
+然后比较：
+
+ML motifs vs MEME/STREME motifs；
+ML motifs vs known sigma motifs；
+ML motif positions；
+ML motif spacing。
+
+使用 Tomtom 进行 PWM comparison。
+
+实验7核心问题：
+
+机器学习能否在不直接使用 MEME/STREME 结果的情况下，
+独立恢复相同 motif；
+是否能够发现传统统计方法遗漏的 motif。
+
+如果计算资源充足，可将 CNN 替换/补充为：
+
+DNABERT-2 / Nucleotide Transformer
+→ frozen embedding
+→ classifier
+→ attribution / attention / SAE
+→ motif extraction。
+
+禁止直接将 embedding 称为 motif discovery，
+必须存在明确 extraction mechanism。
+
+【最终输出】
+
+results/
+  data_audit/
+  exp1_motif_discovery/
+  exp2_fimo_position/
+  exp3_known_motif/
+  exp4_sigma_grammar/
+  exp5_validation/
+  exp6_ml_validation/
+  exp7_ml_motif/
+  final_report/
+
+每个实验必须输出：
+
+README；
+参数；
+原始结果表；
+汇总表；
+图；
+统计结果；
+成功/失败说明。
+
+最终生成：
+
+1. RQ1-RQ3 conclusion table；
+2. sigma motif pattern report；
+3. traditional vs ML motif comparison；
+4. limitations；
+5. reproducibility manifest。
+
+严禁为了得到“好结果”而在测试集上反复修改阈值、
+重新发现 motif 或挑选数据。
+```
+
+---
+
+如果你们按这个框架执行，**项目最有竞争力的地方不是用了多少算法，而是形成了三重证据**：
+
+**传统统计发现 → 独立数据复现 → 机器学习验证/再发现。**
+
+这比单独做一个 CNN 分类器，或者单独跑 MEME/FIMO，都完整得多。尤其是实验6的 feature ablation 和实验7的 **CNN/TF-MoDISco vs MEME/STREME**，我认为会是你们最后汇报里最容易拉开差距的两块。

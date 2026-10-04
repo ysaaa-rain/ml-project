@@ -59,3 +59,14 @@ results/motif/**/*.xml
 
 # Temporary PDF renders and local clones
 tmp/
+
+# Reviewable aggregate audit evidence; raw sequences and machine paths stay local.
+!results/data_audit/
+results/data_audit/*
+!results/data_audit/audit_20261004_final/
+results/data_audit/audit_20261004_final/*
+!results/data_audit/audit_20261004_final/README.md
+!results/data_audit/audit_20261004_final/data_profiles.json
+!results/data_audit/audit_20261004_final/artifact_hash_checks.tsv
+!results/data_audit/audit_20261004_final/legacy_holdout_near_duplicates.tsv
+!results/data_audit/audit_20261004_final/public_audit_summary.json
