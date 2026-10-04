@@ -57,7 +57,7 @@ def _write_matrix(path: Path, motifs: list[dict[str, Any]], background: dict[str
         handle.write("MEME version 5\n\nALPHABET= ACGT\n\nstrands: + -\n\n")
         handle.write("Background letter frequencies\n")
         handle.write(" ".join(f"{letter} {background[letter]:.8g}" for letter in LETTERS) + "\n\n")
-        for motif in motifs:
+        for index, motif in enumerate(motifs):
             handle.write(f"MOTIF {species}_{motif['id']} {motif['consensus']}\n")
             handle.write(
                 f"letter-probability matrix: alength= 4 w= {motif['width']} "
@@ -65,7 +65,8 @@ def _write_matrix(path: Path, motifs: list[dict[str, Any]], background: dict[str
             )
             for column in motif["columns"]:
                 handle.write(" ".join(f"{column[letter]:.8g}" for letter in LETTERS) + "\n")
-            handle.write("\n")
+            if index < len(motifs) - 1:
+                handle.write("\n")
 
 
 def _write_tsv(path: Path, rows: list[dict[str, Any]]) -> None:

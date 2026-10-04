@@ -1,0 +1,348 @@
+{
+  "schema_version": "pr01-02-regulondb-sigma-fimo-1.0",
+  "status": "complete",
+  "purpose": "以 RegulonDB 六个 sigma 组 MEME 矩阵交叉扫描六组启动子，比较组内对照富集、跨组命中频率及组内 motif 间距；属于辅助分析",
+  "dataset": "RegulonDB E. coli K-12 TSS-aligned discovery subset",
+  "groups": [
+    "Sigma70",
+    "Sigma24",
+    "Sigma32",
+    "Sigma38",
+    "Sigma28",
+    "Sigma54"
+  ],
+  "input_counts": {
+    "Sigma70": {
+      "positive_records": 1942,
+      "control_records": 1942
+    },
+    "Sigma24": {
+      "positive_records": 513,
+      "control_records": 513
+    },
+    "Sigma32": {
+      "positive_records": 300,
+      "control_records": 300
+    },
+    "Sigma38": {
+      "positive_records": 176,
+      "control_records": 176
+    },
+    "Sigma28": {
+      "positive_records": 140,
+      "control_records": 140
+    },
+    "Sigma54": {
+      "positive_records": 96,
+      "control_records": 96
+    }
+  },
+  "cross_group_exact_sequence_overlap": [
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma24",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma32",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma32",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma38",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma38",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma28",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    }
+  ],
+  "input_sha256": {
+    "Sigma70_positive_fasta": "46e1ad75e9bc94f85213abc0198731c594b05fbecc12dbe07993a49d2d30f3cf",
+    "Sigma70_N1_fasta": "1367488c5f7af659e342884e9a644c1a31db425f7e0c9e3c1fd2b85359c1365c",
+    "Sigma24_positive_fasta": "23837d1b2a2782b3e9106d04b0a19e1c509bcf6e6adcd0c44047a0a49d779643",
+    "Sigma24_N1_fasta": "4255eeaabaab9a105eb319593dceb664f4ba19642410562a104da808e7cdc15b",
+    "Sigma32_positive_fasta": "3d66af45de65aeca9881f2ec250a360dfb3575269cbd17fb71429e26f93ce17c",
+    "Sigma32_N1_fasta": "c3198c2d9cb61808490e647a13bcce5ba8e6559fe67884967b0cbf7b8a261e9f",
+    "Sigma38_positive_fasta": "3c06c2c7c9bf51b3eca2f991e683584f21948b5a89a467d11dcac57fc18b8540",
+    "Sigma38_N1_fasta": "29e65fcd43ee6675f975bd502ebddf1f251efe93e04941dc93a1d2d5bfa64ac2",
+    "Sigma28_positive_fasta": "1adf51042750cd0ad38093376e3ec58453cd692aba6f21bf7b5831c6fd460ab1",
+    "Sigma28_N1_fasta": "784a7968669b1ebe65381935c58da22edc4996d722997333a6cf2aad9e42a3eb",
+    "Sigma54_positive_fasta": "f06ab820e7e7d6a13abb5fae91b0459c278e7b41e8de9782d52b6fbd754167bd",
+    "Sigma54_N1_fasta": "f7de9b15d8b44dc4a4897b8964e3176e84e2a6583ecaf0c656b4672f4b3ace7c",
+    "combined_fasta": "29fdbaa89b1dd3f79728f6810aebfdb61fc7d12bcfff025350824d38cb3a543b",
+    "pooled_N1_background": "40471b442830acd47386c9814f8c0a6b23d955ef68114f29f1f1274fc21d681f"
+  },
+  "input_manifest_sha256": "58e46b43e47a7ea022a7e796bedfeca9a3ec92630f567c8bf27cbd997ea48e6c",
+  "comparison_manifest_sha256": "37831e80d8e74524fe975a9797b4b60da5c6afaeecacc52bb5292b7bd4bc2704",
+  "matrix_sha256": {
+    "matrices/Sigma70.meme": "020c3063690e9474fcc8082635604b5474394f4080155a773fcdd2832733c9a9",
+    "matrices/Sigma24.meme": "e44e807d1e7b262192de51f06243e19cf0b24cd6fd6c3c8b4471d7b0e9a3c674",
+    "matrices/Sigma32.meme": "464d1e551a632dc91f69046e09da11be4f50fb465bf33327c6c9d22d1a0cd965",
+    "matrices/Sigma38.meme": "60a61dd994b5e5c1c782228e15012873bab8b39dbddf3e05771a37903865bd49",
+    "matrices/Sigma28.meme": "033e52745b700634c8b77c8f963f83c4177dded4f3b6232cc68927be9e7901f0",
+    "matrices/Sigma54.meme": "4b392b15862d7919aca8253771f72de91261f0589bb0c5a7f29577bc61ab71f4"
+  },
+  "tool": {
+    "fimo_version": "5.5.9",
+    "fimo_executable": "tmp/meme-suite-5.5.9/bin/fimo"
+  },
+  "parameters": {
+    "all_target_sequences": "每个 sigma 组的正类与一一匹配 N1 对照；六组在每个矩阵任务中同时扫描",
+    "background": "六组 N1 对照 pooled zero-order A/C/G/T frequencies",
+    "strands": "both strands",
+    "site_output_cutoff": 0.05,
+    "reported_site_p_thresholds": [
+      0.05,
+      0.01,
+      0.001
+    ],
+    "site_q_threshold": 0.05,
+    "motif_pseudocount": 0.1,
+    "max_stored_scores": 15000000,
+    "paired_control_test": "exact McNemar on positive/N1 sequence-paired hit presence; BH separately within each raw-p threshold across 360 source-motif by target-group tests",
+    "group_specificity_test": "two-sided Fisher comparing each target sigma group's positive hit rate against the other five groups; BH separately within each raw-p threshold across 360 source-motif by target-group tests",
+    "spacing": "for each discovery group's own 10 motifs, compare paired positive/N1 sequence co-occurrence using exact McNemar and BH separately across 270 group-motif pairs per raw-p threshold; report nearest signed-gap summaries in both classes",
+    "selection_limit": "motifs and FIMO target sequences overlap for the source sigma group; group-origin comparisons are exploratory and require holdout replication",
+    "position_limit": "RegulonDB inputs are TSS-oriented; site coordinates are 1-81 in input direction. This auxiliary result does not replace six-species TJU Pan analysis."
+  },
+  "background": {
+    "counts": {
+      "A": 75574,
+      "G": 52260,
+      "T": 75792,
+      "C": 52901
+    },
+    "frequencies": {
+      "A": 0.29460446658636325,
+      "C": 0.2062200080303438,
+      "G": 0.20372124571682512,
+      "T": 0.29545427966646787
+    }
+  },
+  "fimo_runs": {
+    "Sigma70": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma70",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma70.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 497443,
+      "fimo_tsv_sha256": "2b18b48ce40e7fa3acadffa643a4ef68a4d86168cabfa74774c5fd0a99a9afa5",
+      "stderr_sha256": "7a30ce209fc1d8cbf5070844d02029ed632c116ebb934af99431717d8609db76"
+    },
+    "Sigma24": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma24",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma24.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 477488,
+      "fimo_tsv_sha256": "50244456e15ef6f323985f30379644bb6f03d3c9d99f23aa678bce1807f420f2",
+      "stderr_sha256": "3f6969741cdf7169f752c2f6d8746658952fa02d037a6e95af876c1293490a6b"
+    },
+    "Sigma32": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma32",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma32.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 482796,
+      "fimo_tsv_sha256": "85773639e59b4da6d5171b1de09ee3797b1bf313e620144623769f9f711b3d27",
+      "stderr_sha256": "eb2950f292770d31573a414d15f346192afd989a5467aa748a52db6fd497fc8b"
+    },
+    "Sigma38": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma38",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma38.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 486001,
+      "fimo_tsv_sha256": "3e0e7c752c404a936119c5b1ea4430d51870c0bb3ea28cf0df8e4c4d7f747bff",
+      "stderr_sha256": "93bdcd0042bc8996b86d6da491a49198891b45015840fbf104ac206f5cb8978c"
+    },
+    "Sigma28": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma28",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma28.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 484682,
+      "fimo_tsv_sha256": "27946ee1dc01ab03cdbd3ba5a1806faa5a549fcbeb5927c2dc5916c5ecf70ec9",
+      "stderr_sha256": "92bbe93805d3dc0c1f70f5cf36c453c01e6103ff6cbe2998a8be966a5509ab0d"
+    },
+    "Sigma54": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_fimo_20261004/fimo_Sigma54",
+        "--bfile",
+        "tmp/regulondb_sigma_fimo_20261004/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "results/motif/m3_20260930/matrices/Sigma54.meme",
+        "tmp/regulondb_sigma_fimo_20261004/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 461320,
+      "fimo_tsv_sha256": "ef9cbccb8ea58b91bffd9fa42039fd31ee860534c84aacecfc76de85278fea9e",
+      "stderr_sha256": "d4b37088bcebdc17aac8d0da12f5461359030f299456320d27b976e25088b506"
+    }
+  },
+  "rows": {
+    "sigma_motif_coverage.tsv": 360,
+    "sigma_motif_group_specificity.tsv": 1080,
+    "sigma_motif_pair_spacing.tsv": 810,
+    "pair_spacing_bh_significant_by_threshold": {
+      "0.05": 0,
+      "0.01": 130,
+      "0.001": 134
+    }
+  },
+  "output_sha256": {
+    "sigma_motif_coverage.tsv": {
+      "bytes": 109551,
+      "sha256": "8d0a898f2795e9b9e01ac57408bf1cd04eacf7385ea32ff5add5bf96acd516b4"
+    },
+    "sigma_motif_group_specificity.tsv": {
+      "bytes": 137691,
+      "sha256": "8f0c753d4e0145aec0d0a602b275677d42829e6bcbf314cd58f3da761c2774be"
+    },
+    "sigma_motif_pair_spacing.tsv": {
+      "bytes": 133742,
+      "sha256": "11dd5e2b75c25d6a0aae96545ad73c58e0d7fcbe2ba3d7e087648d3bfb52559e"
+    }
+  },
+  "created_at": "2026-10-04T00:14:49+08:00"
+}

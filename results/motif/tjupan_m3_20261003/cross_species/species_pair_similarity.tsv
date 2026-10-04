@@ -1,0 +1,16 @@
+species_a	species_b	per_query_q_candidates_a_to_b	per_query_q_candidates_b_to_a	global_bh_significant_pairs_a_to_b	global_bh_significant_pairs_b_to_a	best_cross_species_query_motif	best_cross_species_target_motif	best_p_value	best_e_value	best_q_value_within_query_60_targets	best_global_bh_q_3000_cross_species_comparisons	best_overlap_bp	best_orientation
+bacillus_subtilis	baumannii	0	0	0	0	bacillus_subtilis:MEME-3	baumannii:MEME-9	0.0032357	0.194142	0.190529	0.37335	6	-
+bacillus_subtilis	bradyrhizobium	0	0	0	0	bradyrhizobium:MEME-3	bacillus_subtilis:MEME-2	0.0269892	1.61935	0.848015	0.9306620689655173	6	+
+bacillus_subtilis	diphtheria	2	2	0	0	bacillus_subtilis:MEME-4	diphtheria:MEME-3	0.000162971	0.00977825	0.00539306	0.1294488	13	+
+bacillus_subtilis	escherichia_coli	1	0	0	0	bacillus_subtilis:MEME-2	escherichia_coli:MEME-2	0.000703976	0.0422385	0.0265373	0.1407952	6	-
+bacillus_subtilis	staphylococcus	0	0	0	0	bacillus_subtilis:MEME-9	staphylococcus:MEME-4	0.00293239	0.175944	0.171845	0.3642276	7	+
+baumannii	bradyrhizobium	0	0	0	0	bradyrhizobium:MEME-6	baumannii:MEME-7	0.0276015	1.65609	0.82527	0.9354133333333334	6	+
+baumannii	diphtheria	2	2	0	0	diphtheria:MEME-3	baumannii:MEME-8	4.07046e-05	0.00244228	0.00155065	0.06443655	6	-
+baumannii	escherichia_coli	1	1	0	0	baumannii:MEME-1	escherichia_coli:MEME-2	0.000285075	0.0171045	0.0168453	0.1294488	6	+
+baumannii	staphylococcus	1	0	0	0	baumannii:MEME-8	staphylococcus:MEME-1	0.000625389	0.0375233	0.0181615	0.1407952	6	+
+bradyrhizobium	diphtheria	0	0	0	0	bradyrhizobium:MEME-7	diphtheria:MEME-6	0.0261097	1.56658	0.618107	0.9215188235294117	6	+
+bradyrhizobium	escherichia_coli	2	3	0	0	bradyrhizobium:MEME-4	escherichia_coli:MEME-10	0.000362362	0.0217417	0.0213265	0.1294488	6	-
+bradyrhizobium	staphylococcus	0	0	0	0	bradyrhizobium:MEME-6	staphylococcus:MEME-10	0.0138727	0.83236	0.82527	0.6822639344262295	6	+
+diphtheria	escherichia_coli	0	0	0	0	escherichia_coli:MEME-5	diphtheria:MEME-10	0.0157936	0.947614	0.624336	0.7178909090909091	7	+
+diphtheria	staphylococcus	0	0	0	0	diphtheria:MEME-8	staphylococcus:MEME-7	0.00506201	0.303721	0.199412	0.3996323684210526	6	-
+escherichia_coli	staphylococcus	0	1	0	0	staphylococcus:MEME-3	escherichia_coli:MEME-6	0.000565103	0.0339062	0.0221498	0.1407952	6	-

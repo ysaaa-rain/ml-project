@@ -1,0 +1,19 @@
+species	site_p_cutoff	unique_motif_pairs	positive_pair_fisher_bh_q_le_0_05	matched_shuffle_seed_1_bh_q_le_0_05	matched_shuffle_seed_2_bh_q_le_0_05	matched_shuffle_seed_3_bh_q_le_0_05	matched_shuffle_worst_replicate_bh_q_le_0_05	robust_pairs_positive_excess	robust_pairs_null_excess	median_robust_pair_coverage_difference_percentage_points
+bacillus_subtilis	0.05	45	1	0	0	0	0	0	0	
+baumannii	0.05	45	0	0	0	0	0	0	0	
+bradyrhizobium	0.05	45	0	0	0	0	0	0	0	
+diphtheria	0.05	45	0	0	0	0	0	0	0	
+escherichia_coli	0.05	45	1	0	0	0	0	0	0	
+staphylococcus	0.05	45	0	0	0	8	0	0	0	
+bacillus_subtilis	0.01	45	17	44	42	45	39	39	0	12.879884225759769
+baumannii	0.01	45	30	25	22	17	16	16	0	7.586580086580087
+bradyrhizobium	0.01	45	20	26	26	30	23	13	10	4.420911077492016
+diphtheria	0.01	45	13	37	37	35	32	32	0	7.0435308343409915
+escherichia_coli	0.01	45	33	40	40	43	38	38	0	9.152922011810222
+staphylococcus	0.01	45	13	31	34	34	28	28	0	5.840132970686009
+bacillus_subtilis	0.001	45	6	24	30	29	18	18	0	5.209840810419681
+baumannii	0.001	45	14	7	10	9	0	0	0	
+bradyrhizobium	0.001	45	6	16	16	12	10	10	0	2.050764834425954
+diphtheria	0.001	45	2	25	28	25	18	18	0	2.569528415961306
+escherichia_coli	0.001	45	14	27	26	26	20	20	0	2.667481164732233
+staphylococcus	0.001	45	7	18	21	20	14	14	0	2.0625566636446058

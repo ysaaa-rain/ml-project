@@ -1,0 +1,15 @@
+sigma_factor_type	motif_name	hit_count	sequence_count	group_size	sequence_hit_fraction
+Sigma24	minus_10_box	16	15	513	0.029239766081871343
+Sigma24	minus_35_box	16	16	513	0.031189083820662766
+Sigma28	minus_10_box	7	7	140	0.05
+Sigma28	minus_35_box	1	1	140	0.007142857142857143
+Sigma32	minus_10_box	12	11	300	0.03666666666666667
+Sigma32	minus_35_box	10	9	300	0.03
+Sigma38	minus_10_box	9	8	176	0.045454545454545456
+Sigma38	minus_35_box	10	10	176	0.056818181818181816
+Sigma54	minus_10_box	0	0	96	0.0
+Sigma54	minus_35_box	1	1	96	0.010416666666666666
+Sigma70	minus_10_box	272	230	1942	0.1184346035015448
+Sigma70	minus_35_box	131	127	1942	0.06539649845520082
+unknown	minus_10_box	51	47	640	0.0734375
+unknown	minus_35_box	21	21	640	0.0328125

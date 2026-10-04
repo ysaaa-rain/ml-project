@@ -1,0 +1,143 @@
+{
+  "schema_version": "reference-pwm-sensitivity-1.0",
+  "status": "complete",
+  "tool": "MEME Suite FIMO",
+  "version": "5.5.9",
+  "reference_meme_sha256": "83ac30cf41f4cf66b18e9d9008515ffdb896a0dbee43a78032d9b21090fabfa5",
+  "source_fimo_manifest_sha256": "d2c3c9f4dcded17d8eab7cb83c5a72fd45ea09f9c906e4998ddd1f6aefc9c91c",
+  "parameters": {
+    "max_site_p_value": 0.05,
+    "reported_site_p_cutoffs": [
+      0.05,
+      0.01,
+      0.001
+    ],
+    "background": "same species-specific zero-order model estimated from label=0 controls",
+    "strands": "both strands",
+    "sequence_unit": "unique exact sequences for coverage; sequences shared across labels excluded from Fisher tests",
+    "multiple_testing": "Benjamini-Hochberg over 24 species-by-reference Fisher tests separately at each site p cutoff",
+    "position": "Input FASTA coordinates; expected windows test sigma70-like -10 starts 49-54 and -35 starts 24-29 under the stated [-60,+20] orientation",
+    "expected_window_null": "10,000 Monte Carlo label permutations within exact GC-count strata; Benjamini-Hochberg over all 12 motif/strand/cutoff tests"
+  },
+  "species_runs": {
+    "bacillus_subtilis": {
+      "combined_fasta_sha256": "ea8748a6bafa49f4700f3c21d585019414ea57ff4f2033e39108b95b59eaf3d0",
+      "background_sha256": "8df4ddd809f0da23ef9e53226a7ac6d1d766ff46109447958a9f1f2a882034ae",
+      "raw_pvalue_tsv_sha256": "4a10c304c662ee7d0ef9b179ebf62bb07477b6d09bc9869d655a7afae1562f03",
+      "raw_pvalue_tsv_bytes": 3843600,
+      "raw_site_count_at_max_threshold": 66465,
+      "elapsed_seconds": 0.206,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bacillus_subtilis.combined.fasta"
+      ]
+    },
+    "baumannii": {
+      "combined_fasta_sha256": "eb4a4913c6f52a377a3ac0aed9bfcf11915953371b9da7caac6a5de09fba0819",
+      "background_sha256": "738dce76f8336f968db6e0f07ab0d95d95f17fc9dbe5b03e0dbf1d970f7aecd7",
+      "raw_pvalue_tsv_sha256": "e7f23bad56d25ccffae61c1fe575bda57cd4080e2f11f4586abc41d9b38ebedd",
+      "raw_pvalue_tsv_bytes": 5208966,
+      "raw_site_count_at_max_threshold": 89667,
+      "elapsed_seconds": 0.285,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/baumannii.combined.fasta"
+      ]
+    },
+    "bradyrhizobium": {
+      "combined_fasta_sha256": "908de8a9164f91532e78a807699582325078a7526b37d2d436b8e454f85dc0de",
+      "background_sha256": "b16c011c6c0d3c805049868fd94e2ccaf5ef0c0cc56028bce6854602ab72bf5a",
+      "raw_pvalue_tsv_sha256": "b2d12313fec02c40778862835740c10d55fabc3bd9ae1cead757e86ca3ec9dd2",
+      "raw_pvalue_tsv_bytes": 5575584,
+      "raw_site_count_at_max_threshold": 95888,
+      "elapsed_seconds": 0.329,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/bradyrhizobium.combined.fasta"
+      ]
+    },
+    "diphtheria": {
+      "combined_fasta_sha256": "5e5be8a2acc1d9fe6bba16113c502434c1dcaa85d07a2313addd5d337038edae",
+      "background_sha256": "19ccd9955b56a43b1bebef6a0e0ad00c8ed6712dbfc25ac8f065c557a47c8152",
+      "raw_pvalue_tsv_sha256": "805474dfb7b17673570812a43fc26bf0d0b6337e4ed7fee3f643ca9c00f973e3",
+      "raw_pvalue_tsv_bytes": 5902130,
+      "raw_site_count_at_max_threshold": 101844,
+      "elapsed_seconds": 0.324,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/diphtheria.combined.fasta"
+      ]
+    },
+    "escherichia_coli": {
+      "combined_fasta_sha256": "2713ae457be29dbc687903b48db3fbb03b7620a5468b13f282f11520002621af",
+      "background_sha256": "ee0bb2793d539b13c5d7effef273794b65e04b9324c0a03edb6c5d6701138136",
+      "raw_pvalue_tsv_sha256": "ac92b62eeb06eac1bc1af2aa738b570d06ad41c36d404cd1f9a04ed38ff0665a",
+      "raw_pvalue_tsv_bytes": 7315692,
+      "raw_site_count_at_max_threshold": 126347,
+      "elapsed_seconds": 0.525,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.combined.fasta"
+      ]
+    },
+    "staphylococcus": {
+      "combined_fasta_sha256": "c3f55e5e23c79a643df5ff70c30a451aa5e5ec25dfec36b175e93249a8fa4963",
+      "background_sha256": "c288c53bd5c4e8c354cf0727df5226553578b2a2de0701f2291582c2a81b068d",
+      "raw_pvalue_tsv_sha256": "d61b46d1ed8e2212f2741c5c9313df34c6d26af53360086abde153b3422cc106",
+      "raw_pvalue_tsv_bytes": 6099645,
+      "raw_site_count_at_max_threshold": 105510,
+      "elapsed_seconds": 0.328,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--text",
+        "--skip-matched-sequence",
+        "--thresh",
+        "0.05",
+        "--bfile",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.control.background",
+        "baselines/known_promoter_elements.meme",
+        "tmp/tjupan_fimo_inputs_20261003/staphylococcus.combined.fasta"
+      ]
+    }
+  },
+  "summary_sha256": "cad47c6a3ee479724c640c8c55c68f5b645f985392eea3619cf777ace0c08ed4",
+  "position_distribution_sha256": "892ecf0124d0f0bc55774b468abf8efcdcbf195a46a5cf6959f9cc7db9a773e8",
+  "ecoli_expected_window_tests_sha256": "7e41714afc70640502d3e98707d43378b47e4889421e2bf678f97c5cba3d2b78",
+  "summary_rows": 72,
+  "raw_sites_at_max_cutoff": 585721
+}
