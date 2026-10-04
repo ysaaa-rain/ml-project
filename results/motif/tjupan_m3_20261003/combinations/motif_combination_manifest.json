@@ -1,0 +1,469 @@
+{
+  "schema_version": "tjupan-motif-combination-test-1.0",
+  "status": "complete",
+  "purpose": "sequence-level motif combination and spacing comparisons against paired dinucleotide-preserving nulls",
+  "tool": "MEME Suite FIMO",
+  "version": "5.5.9",
+  "dataset": "TJU Pan six-species positive promoter sequences",
+  "motif_count": 60,
+  "species": [
+    "bacillus_subtilis",
+    "baumannii",
+    "bradyrhizobium",
+    "diphtheria",
+    "escherichia_coli",
+    "staphylococcus"
+  ],
+  "motif_pairs_per_species": 45,
+  "replicates_per_species": 3,
+  "seed_rule": "base seed + 100 * species index + replicate index - 1",
+  "site_p_thresholds": [
+    0.05,
+    0.01,
+    0.001
+  ],
+  "sequence_unit": "unique exact positive sequences; one dinucleotide-preserving shuffle paired per positive sequence and replicate",
+  "background_model": "per-species mononucleotide frequencies; dinucleotide shuffle preserves each positive sequence's dinucleotide and mononucleotide counts",
+  "independence_test": "two-sided Fisher exact test of motif A x motif B presence within true positive sequences; BH across 270 species x motif-pair tests per site-p cutoff",
+  "matched_null_test": "paired exact McNemar test comparing motif-pair co-occurrence for each true sequence and its dinucleotide shuffle; BH across 270 species x motif-pair tests separately per replicate and per cutoff; robust q-value uses each pair's worst (largest) p-value across all shuffle replicates, then BH across 270 unique pairs",
+  "spacing": "one nearest site pair per co-occurring sequence; positive gap counts intervening bases, negative gap counts overlap; order uses input-string orientation",
+  "interpretation_limit": "motifs were discovered on the same positives; this is an exploratory combination analysis and not independent validation; no TSS-relative orientation is assumed",
+  "input_sha256": {
+    "input_manifest": "907a902920c60fbbc1471ba53d9d282a57b17e8481902eba3451d946938c7622",
+    "fimo_run_manifest": "d2c3c9f4dcded17d8eab7cb83c5a72fd45ea09f9c906e4998ddd1f6aefc9c91c",
+    "motif_matrices": {
+      "bacillus_subtilis": "b2b050b235f2febe149fd678b8a3816528c216cb7bfb04546ad95968b5f783b8",
+      "baumannii": "811c6841dc29c65dea51b3c18dd539cb7d0f834ca966e00cdf3fca024a52842c",
+      "bradyrhizobium": "90813d893a7244bc5568d7a374ae4aa91a9efc362d73e30d9e09e1c36a448cd0",
+      "diphtheria": "28cb6e5af35e00f4339d4ce724ad94c91adf4920f8ef0260194fe138b3e17423",
+      "escherichia_coli": "eb31e411511edca282208e98a4d885de240d3ca2f83550260fa261dac74ccd1f",
+      "staphylococcus": "4850006c5403bb9d8b3153070d4cc62482ca28415c9d171f183000f8b3047e5b"
+    }
+  },
+  "paired_rows": 2430,
+  "spacing_rows": 2430,
+  "positive_pair_independence_tests_bh_q_le_0_05_by_cutoff": {
+    "0.05": 2,
+    "0.01": 126,
+    "0.001": 49
+  },
+  "matched_shuffle_replicate_bh_q_le_0_05_by_cutoff": {
+    "0.05": {
+      "1": 0,
+      "2": 0,
+      "3": 8
+    },
+    "0.01": {
+      "1": 203,
+      "2": 201,
+      "3": 204
+    },
+    "0.001": {
+      "1": 117,
+      "2": 131,
+      "3": 121
+    }
+  },
+  "matched_shuffle_worst_replicate_bh_q_le_0_05_by_cutoff": {
+    "0.05": 0,
+    "0.01": 176,
+    "0.001": 80
+  },
+  "output_sha256": {
+    "motif_combination_tests.tsv": "fa21bd7e738a657e848989f525268022f0850564b61c23ac05233a4fa744eeb8",
+    "motif_combination_spacing.tsv": "9b43123e32e9b7eb06dd9abe2051ac54247838000ea83ef263e51b283bb651b1",
+    "motif_combination_summary.tsv": "1cb1f6678974705863801bda6a509366bffba67978bca49448c6f280ee30db30"
+  },
+  "species_runs": {
+    "bacillus_subtilis": [
+      {
+        "replicate": 1,
+        "seed": 20261003,
+        "positive_records_before_dedup": 691,
+        "positive_unique_sequences": 691,
+        "shuffle_unique_sequences": 691,
+        "positive_fasta_sha256": "0c2bac811029dfbcf4f4c23a901d1ac163e5e3482fb5b24a656cb86d93f83218",
+        "background_sha256": "2663fb444b189bce12ada0308e479e4314a83fc733b23b4ce5644364069e967d",
+        "raw_fimo_tsv_sha256": "d2124710515011dd7a5db13e240e5f56a448608ce10f60d89d96e7f5e6920263",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261004,
+        "positive_records_before_dedup": 691,
+        "positive_unique_sequences": 691,
+        "shuffle_unique_sequences": 691,
+        "positive_fasta_sha256": "4e5f39315a0a634f1263438f7a687bc033725062e0f2a06f7551f1c80569c4f1",
+        "background_sha256": "2663fb444b189bce12ada0308e479e4314a83fc733b23b4ce5644364069e967d",
+        "raw_fimo_tsv_sha256": "2cb075aa837a1bbf0e44403605ada5c5c2c02c583dbd9c59779cd3e4b300e54b",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261005,
+        "positive_records_before_dedup": 691,
+        "positive_unique_sequences": 691,
+        "shuffle_unique_sequences": 691,
+        "positive_fasta_sha256": "10700d2b088647633be5620c57c8595bee72c5c8d76b38fb62d3ee1fbdf63b53",
+        "background_sha256": "2663fb444b189bce12ada0308e479e4314a83fc733b23b4ce5644364069e967d",
+        "raw_fimo_tsv_sha256": "e0f3653417b3d2164540954a9cbc90dbf48b3773c9b509747c3a731abd4b2b17",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bacillus_subtilis.meme",
+          "tmp/tjupan_motif_combinations_20261003/bacillus_subtilis.combination_inputs.fasta"
+        ]
+      }
+    ],
+    "baumannii": [
+      {
+        "replicate": 1,
+        "seed": 20261103,
+        "positive_records_before_dedup": 1540,
+        "positive_unique_sequences": 1540,
+        "shuffle_unique_sequences": 1540,
+        "positive_fasta_sha256": "942838e66e2638e0b3e3c66a598d7d31ab4ef8e01f7ccd091f1f516c1b5d31c1",
+        "background_sha256": "6d759c129e0d27d5c10f87121921fc96e03a05b493529c23fee04f39e5b0101d",
+        "raw_fimo_tsv_sha256": "d571ffd716cb1fb0a0a018671bc88c99383ed0431795b71525d4be7cb3771176",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/baumannii.meme",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261104,
+        "positive_records_before_dedup": 1540,
+        "positive_unique_sequences": 1540,
+        "shuffle_unique_sequences": 1540,
+        "positive_fasta_sha256": "f93921d029914311210c243bd29c6a832c6e311cd437ed86e4afa3b2ebd2f347",
+        "background_sha256": "6d759c129e0d27d5c10f87121921fc96e03a05b493529c23fee04f39e5b0101d",
+        "raw_fimo_tsv_sha256": "00589035c0e407e7965828585d895c972162061f297f85e527819ea754e67e41",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/baumannii.meme",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261105,
+        "positive_records_before_dedup": 1540,
+        "positive_unique_sequences": 1540,
+        "shuffle_unique_sequences": 1540,
+        "positive_fasta_sha256": "7e00fd98171b5e1403b341349ec8f97a382d6b1d240882d76d1425287a372620",
+        "background_sha256": "6d759c129e0d27d5c10f87121921fc96e03a05b493529c23fee04f39e5b0101d",
+        "raw_fimo_tsv_sha256": "e03e85c5ec30740e57188d86569297c3fe58645361614f18e3e19b18ad6ba084",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/baumannii.meme",
+          "tmp/tjupan_motif_combinations_20261003/baumannii.combination_inputs.fasta"
+        ]
+      }
+    ],
+    "bradyrhizobium": [
+      {
+        "replicate": 1,
+        "seed": 20261203,
+        "positive_records_before_dedup": 1987,
+        "positive_unique_sequences": 1983,
+        "shuffle_unique_sequences": 1983,
+        "positive_fasta_sha256": "0dfe046d4eaae5b897fab65e6802cd50a4c17bbf59fe4d266522c2765d2099a9",
+        "background_sha256": "576f167d06fc3a178c5a69f84738a9fc66316ffd119ad655e4625e09ac0f3359",
+        "raw_fimo_tsv_sha256": "48ab4b4e644c257ef94cf1f83331d3b1cc35949eeaf90eef2c08fbe314c260ae",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bradyrhizobium.meme",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261204,
+        "positive_records_before_dedup": 1987,
+        "positive_unique_sequences": 1983,
+        "shuffle_unique_sequences": 1983,
+        "positive_fasta_sha256": "28526018787cebfa868984364f0e6e5619d6d1e7fbc77c4757c7ae10e0d2614a",
+        "background_sha256": "576f167d06fc3a178c5a69f84738a9fc66316ffd119ad655e4625e09ac0f3359",
+        "raw_fimo_tsv_sha256": "88647e5ac014e66831d02c43b8688d68a1fb35b8a071d3c46fb0863239de5ec3",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bradyrhizobium.meme",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261205,
+        "positive_records_before_dedup": 1987,
+        "positive_unique_sequences": 1983,
+        "shuffle_unique_sequences": 1983,
+        "positive_fasta_sha256": "f9ac5a96e5f51926aa725a8c1befc8ca74fdd2b3a13fd3249b8b3555deae07b9",
+        "background_sha256": "576f167d06fc3a178c5a69f84738a9fc66316ffd119ad655e4625e09ac0f3359",
+        "raw_fimo_tsv_sha256": "38a273bafdf08565a80de51d8eeb6df7b480810bcd4d249423624b232988dfc5",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/bradyrhizobium.meme",
+          "tmp/tjupan_motif_combinations_20261003/bradyrhizobium.combination_inputs.fasta"
+        ]
+      }
+    ],
+    "diphtheria": [
+      {
+        "replicate": 1,
+        "seed": 20261303,
+        "positive_records_before_dedup": 1654,
+        "positive_unique_sequences": 1654,
+        "shuffle_unique_sequences": 1654,
+        "positive_fasta_sha256": "f3b457c60d7c4dfa661f9fe302ebea5fd03bb2cc8772d91150d60f1f690f3ab5",
+        "background_sha256": "5dfe368ca23922ba069a2b1225b519e3e059d99efc96a3df76ecfcec95e6bc94",
+        "raw_fimo_tsv_sha256": "bb43ec4fd7cf877186b470b875dfb7b74279e058622b3647085398a0a3f1e586",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/diphtheria.meme",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261304,
+        "positive_records_before_dedup": 1654,
+        "positive_unique_sequences": 1654,
+        "shuffle_unique_sequences": 1654,
+        "positive_fasta_sha256": "995e0c1e78fe0436fb5ccddd7fd348af04386fd7317123d117b4ea53eb02f9ba",
+        "background_sha256": "5dfe368ca23922ba069a2b1225b519e3e059d99efc96a3df76ecfcec95e6bc94",
+        "raw_fimo_tsv_sha256": "04769315fb34ac87a57c23cd95aed71786fec8d64dbc6b11cdc0e35a5f6b6164",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/diphtheria.meme",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261305,
+        "positive_records_before_dedup": 1654,
+        "positive_unique_sequences": 1654,
+        "shuffle_unique_sequences": 1654,
+        "positive_fasta_sha256": "77939002d0060f7c2f28ca80f3a13c3dd89be8df52ac8128349134c6f62a8df7",
+        "background_sha256": "5dfe368ca23922ba069a2b1225b519e3e059d99efc96a3df76ecfcec95e6bc94",
+        "raw_fimo_tsv_sha256": "bf78e5eaef28fba7e1d487bc8873f7f63003c2bdd2c13330ca8bd9f3b59d7abe",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/diphtheria.meme",
+          "tmp/tjupan_motif_combinations_20261003/diphtheria.combination_inputs.fasta"
+        ]
+      }
+    ],
+    "escherichia_coli": [
+      {
+        "replicate": 1,
+        "seed": 20261403,
+        "positive_records_before_dedup": 1645,
+        "positive_unique_sequences": 1637,
+        "shuffle_unique_sequences": 1637,
+        "positive_fasta_sha256": "706e2182ee8021bf20f7acefd172ce43926d12c71873a8512b806efe199db364",
+        "background_sha256": "9ee84ef967e586dd1ceff5f07813475d97c1d581ab58eaf192014b7f42a81d27",
+        "raw_fimo_tsv_sha256": "e23ba59caecd7e4373a6395cf5a15654402d953c80414c2009a4f52ccb1dbec5",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261404,
+        "positive_records_before_dedup": 1645,
+        "positive_unique_sequences": 1637,
+        "shuffle_unique_sequences": 1637,
+        "positive_fasta_sha256": "acf92685ff6d2e28ceadbc252c320dbf372bef0fd98a78dd18beee17049189f4",
+        "background_sha256": "9ee84ef967e586dd1ceff5f07813475d97c1d581ab58eaf192014b7f42a81d27",
+        "raw_fimo_tsv_sha256": "7f76391edaee8cac0aa014f4e4111e62b99886ec5c118dd9c458d26d5faf322f",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261405,
+        "positive_records_before_dedup": 1645,
+        "positive_unique_sequences": 1637,
+        "shuffle_unique_sequences": 1637,
+        "positive_fasta_sha256": "35b21d2e524363a93f263d86fa6a5dae1a218f9c3d5677dd385724a11f418025",
+        "background_sha256": "9ee84ef967e586dd1ceff5f07813475d97c1d581ab58eaf192014b7f42a81d27",
+        "raw_fimo_tsv_sha256": "a5cc2e7606e533c68a676be4662400c948a72b292507a67eb62a99a8d26b440a",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+          "tmp/tjupan_motif_combinations_20261003/escherichia_coli.combination_inputs.fasta"
+        ]
+      }
+    ],
+    "staphylococcus": [
+      {
+        "replicate": 1,
+        "seed": 20261503,
+        "positive_records_before_dedup": 2207,
+        "positive_unique_sequences": 2206,
+        "shuffle_unique_sequences": 2206,
+        "positive_fasta_sha256": "4d6b0b128e22a0e48e58280badd8700d932334689dbbe44615e037f3349ce321",
+        "background_sha256": "1aabb8e3dcb4c5a9e8e11278ec86d77a431d404fa972bf729569edb394a2d69b",
+        "raw_fimo_tsv_sha256": "07bd8f8191345705410c07ddea780c94d68a8f92f2ced5824011d8c08f6893b0",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/staphylococcus.meme",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 2,
+        "seed": 20261504,
+        "positive_records_before_dedup": 2207,
+        "positive_unique_sequences": 2206,
+        "shuffle_unique_sequences": 2206,
+        "positive_fasta_sha256": "6b755d2a151bd39e097428045a805ea6f47fa21abe48dc8b9042d016fca6c459",
+        "background_sha256": "1aabb8e3dcb4c5a9e8e11278ec86d77a431d404fa972bf729569edb394a2d69b",
+        "raw_fimo_tsv_sha256": "68bd518d6b7b7c5b8d47752e234930ecaccaf7ce6fdd732a2ac96e3908fa6ff2",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/staphylococcus.meme",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.combination_inputs.fasta"
+        ]
+      },
+      {
+        "replicate": 3,
+        "seed": 20261505,
+        "positive_records_before_dedup": 2207,
+        "positive_unique_sequences": 2206,
+        "shuffle_unique_sequences": 2206,
+        "positive_fasta_sha256": "6b43157c638a8814ac7f997fdc8c85fc9f4285c5db691e72329b0072156eee5e",
+        "background_sha256": "1aabb8e3dcb4c5a9e8e11278ec86d77a431d404fa972bf729569edb394a2d69b",
+        "raw_fimo_tsv_sha256": "5614746adaf4d0d8efb515523625c073c6a4489c569fd61a6faf6efe6532b3c3",
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/fimo",
+          "--text",
+          "--skip-matched-sequence",
+          "--thresh",
+          "0.05",
+          "--bfile",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.shuffle.background",
+          "results/motif/tjupan_m3_20261003/summary/matrices/staphylococcus.meme",
+          "tmp/tjupan_motif_combinations_20261003/staphylococcus.combination_inputs.fasta"
+        ]
+      }
+    ]
+  }
+}

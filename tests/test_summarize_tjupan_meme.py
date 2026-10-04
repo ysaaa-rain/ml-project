@@ -44,6 +44,7 @@ def test_export_writes_sequence_free_matrices_and_hashed_summary(tmp_path):
     matrix = (tmp_path / "summary" / "matrices" / "bacillus_subtilis.meme").read_text(encoding="utf-8")
     summary = (tmp_path / "summary" / "motif_summary.tsv").read_text(encoding="utf-8")
     assert "0.8 0.1 0.05 0.05" in matrix
+    assert not matrix.endswith("\n\n")
     assert "seq_id" not in matrix and "ACGTAC" not in matrix
     assert "mean_information_bits" in summary
     assert manifest["species_motif_counts"] == {"bacillus_subtilis": 1}

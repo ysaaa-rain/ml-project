@@ -75,28 +75,28 @@
       "sha256": "bd833dbfba07ab1663e412b22c39482ad7b21b735dbb71ed894811bc2c8090dc"
     },
     "matrices/bacillus_subtilis.meme": {
-      "bytes": 3083,
-      "sha256": "e51f23deeec0ef802ad26085535f8cfb85f7d714b4ea23d08cff0a2742be450a"
+      "bytes": 3082,
+      "sha256": "b2b050b235f2febe149fd678b8a3816528c216cb7bfb04546ad95968b5f783b8"
     },
     "matrices/baumannii.meme": {
-      "bytes": 2013,
-      "sha256": "de7809f013f9a8d4f1b221a5bcaf2188f38860a450b74152a618c74264939b92"
+      "bytes": 2012,
+      "sha256": "811c6841dc29c65dea51b3c18dd539cb7d0f834ca966e00cdf3fca024a52842c"
     },
     "matrices/bradyrhizobium.meme": {
-      "bytes": 1907,
-      "sha256": "a56660304c8d231bb0f3a93e49877dcad3aa7f8a88d1946a47cf308d88f520b0"
+      "bytes": 1906,
+      "sha256": "90813d893a7244bc5568d7a374ae4aa91a9efc362d73e30d9e09e1c36a448cd0"
     },
     "matrices/diphtheria.meme": {
-      "bytes": 3599,
-      "sha256": "98debf40048a49ef7df2c029e2e1d82fc4939acd71198b1ee0c1f9bf240e46ea"
+      "bytes": 3598,
+      "sha256": "28cb6e5af35e00f4339d4ce724ad94c91adf4920f8ef0260194fe138b3e17423"
     },
     "matrices/escherichia_coli.meme": {
-      "bytes": 2047,
-      "sha256": "a313a14f789ba8ceff5a578d67697a12e06d1736bf55438a994d94bed766129a"
+      "bytes": 2046,
+      "sha256": "eb31e411511edca282208e98a4d885de240d3ca2f83550260fa261dac74ccd1f"
     },
     "matrices/staphylococcus.meme": {
-      "bytes": 2230,
-      "sha256": "cd1d6891067090b1b7d25a2422733ccef2c4aafe9ded5482abff9d83140a9ae3"
+      "bytes": 2229,
+      "sha256": "4850006c5403bb9d8b3153070d4cc62482ca28415c9d171f183000f8b3047e5b"
     }
   }
 }

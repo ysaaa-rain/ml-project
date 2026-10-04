@@ -1,0 +1,108 @@
+{
+  "schema_version": "pr01-02-exp5-strength-1.0",
+  "status": "complete",
+  "purpose": "关联 TJU Pan E. coli de novo motif 得分与另一份 dRNA-seq 派生启动子数值标签，不训练强度预测模型",
+  "source_description": "TJU cloud shared strength files; E. coli K-12 MG1655 natural promoter set described in mSystems 2025; numeric labels are the supplied dRNA-seq-derived values",
+  "source_files": {
+    "strength_table": {
+      "path": "data/raw/tju_pan_promoter/strenth/data/supplementary/E_coli.txt",
+      "sha256": "f46674bc24ac0d43aae3285cb1aa6fc1863ccf4f60ccd45426d71c72c6bb8116",
+      "bytes": 697129
+    },
+    "tjupan_ecoli_fasta": {
+      "path": "tmp/tjupan_fimo_inputs_20261003/escherichia_coli.combined.fasta",
+      "sha256": "2713ae457be29dbc687903b48db3fbb03b7620a5468b13f282f11520002621af",
+      "bytes": 320397
+    },
+    "meme_matrix": {
+      "path": "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+      "sha256": "eb31e411511edca282208e98a4d885de240d3ca2f83550260fa261dac74ccd1f",
+      "bytes": 2046
+    },
+    "meme_summary_manifest": {
+      "path": "results/motif/tjupan_m3_20261003/summary/summary_manifest.json",
+      "sha256": "0bf0420db945470a51f013f99d2c56d7858799b89b8137a595f56c11fa981424"
+    }
+  },
+  "fimo": {
+    "version": "5.5.9",
+    "path": "tmp/meme-suite-5.5.9/bin/fimo"
+  },
+  "counts": {
+    "strength_records": 11884,
+    "unique_strength_sequences": 11884,
+    "retained_after_conservative_overlap_exclusion": 11137,
+    "fimo_sites_streamed": 9978752,
+    "tju_pan_positive_sequences": 1637,
+    "tju_pan_control_sequences": 1704,
+    "strength_sequences_matching_positive_any_50nt_window_or_reverse_complement": 655,
+    "strength_sequences_matching_control_any_50nt_window_or_reverse_complement": 93,
+    "strength_sequences_matching_both_labels": 1,
+    "strength_sequences_excluded_for_overlap": 747
+  },
+  "parameters": {
+    "sequence_window_overlap_rule": "remove any 50-mer equal to a 50-nt substring of any TJU Pan E. coli 81-nt positive/control sequence, in either orientation; windows are checked at all 32 offsets",
+    "motif_count": 10,
+    "scan_strands": "both strands according to MEME matrix; reverse-complement scanning enabled",
+    "fimo_site_p_threshold_for_streaming": 1.0,
+    "motif_pseudocount": 0.1,
+    "background": "zero-order frequencies estimated from retained strength-set sequences",
+    "primary_test": "Spearman correlation between each promoter's maximum FIMO site score across both strands/positions and log10 supplied dRNA-seq value; BH across 10 motifs",
+    "composition_sensitivity": "partial Spearman correlation on ranked variables, adjusting for promoter GC fraction; BH across 10 motifs",
+    "hit_sensitivity": "Mann-Whitney U tests on log10 values, sequence-positive if any site p<=0.05, 0.01, or 0.001; BH across all 30 motif-threshold tests",
+    "raw_site_output": "streamed and aggregated; individual sites, IDs, and DNA sequences are not retained in report-facing results"
+  },
+  "background": {
+    "base_counts": {
+      "A": 147354,
+      "C": 122037,
+      "G": 125812,
+      "T": 161647
+    },
+    "frequencies": {
+      "A": 0.2646206339229595,
+      "C": 0.21915596659782707,
+      "G": 0.2259351710514501,
+      "T": 0.2902882284277633
+    }
+  },
+  "strength_distribution": {
+    "minimum": 8.67,
+    "median": 130.03,
+    "maximum": 2755441.06,
+    "log10_median": 2.1140435625480776
+  },
+  "execution": {
+    "started_at": "2026-10-03T23:57:52+08:00",
+    "elapsed_seconds": 12.537,
+    "return_code": 0,
+    "command": [
+      "tmp/meme-suite-5.5.9/bin/fimo",
+      "--text",
+      "--skip-matched-sequence",
+      "--no-qvalue",
+      "--thresh",
+      "1",
+      "--motif-pseudo",
+      "0.1",
+      "--bfile",
+      "tmp/experiment5_strength/tjupan_ecoli_20261003_canonical/target.background",
+      "--max-stored-scores",
+      "15000000",
+      "results/motif/tjupan_m3_20261003/summary/matrices/escherichia_coli.meme",
+      "tmp/experiment5_strength/tjupan_ecoli_20261003_canonical/strength_disjoint.fasta"
+    ]
+  },
+  "outputs": {
+    "motif_strength_associations.tsv": {
+      "sha256": "447ea3d9055a2adaad9643a7558576772939d00e137e4870feae411a66ec9e5b",
+      "bytes": 2104,
+      "rows": 10
+    },
+    "motif_strength_hit_threshold_sensitivity.tsv": {
+      "sha256": "e64c4e30aef439ae86f3dd75b81244954ac675b062046e717b1f062990751586",
+      "bytes": 5606,
+      "rows": 30
+    }
+  }
+}

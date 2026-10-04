@@ -1,0 +1,5 @@
+motif_name	strand	hit_count	sequence_count	relative_start_median	relative_start_q1	relative_start_q3	relative_start_min	relative_start_max	group_size	sequence_hit_fraction
+minus_10_box	+	180	168	-13.0	-31.0	-10.0	-60.0	14.0	3807	0.04412923561859732
+minus_10_box	-	187	182	-33.0	-35.0	-15.0	-60.0	13.0	3807	0.0478066719201471
+minus_35_box	+	97	95	-33.0	-39.0	-8.0	-60.0	15.0	3807	0.024954032046230628
+minus_35_box	-	93	92	-26.0	-43.0	-10.0	-60.0	15.0	3807	0.024166009981612818

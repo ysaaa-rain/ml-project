@@ -1,0 +1,44 @@
+{
+  "schema_version": "tjupan-cross-species-motif-similarity-1.0",
+  "status": "complete",
+  "tool": "MEME Suite Tomtom",
+  "version": "5.5.9",
+  "query_and_target_motifs": 60,
+  "ordered_query_target_comparisons": 3600,
+  "cross_species_comparisons": 3000,
+  "q_threshold": 0.05,
+  "q_value_scope": "Tomtom q-value reported per query motif across the 60 target motifs, including same-species targets",
+  "global_test_correction": "Benjamini-Hochberg across all 3,000 directed cross-species query-target comparisons; used for confirmatory significance",
+  "parameters": [
+    "-dist ed",
+    "-min-overlap 6",
+    "-thresh 1",
+    "reverse-complement target scoring enabled"
+  ],
+  "background": "pooled mononucleotide frequencies from all six species label=0 controls",
+  "pooled_background_frequencies": {
+    "A": 0.25354356130411054,
+    "C": 0.24813357676120926,
+    "G": 0.2628278204919415,
+    "T": 0.23549504144273872
+  },
+  "matrix_sha256": {
+    "bacillus_subtilis": "b2b050b235f2febe149fd678b8a3816528c216cb7bfb04546ad95968b5f783b8",
+    "baumannii": "811c6841dc29c65dea51b3c18dd539cb7d0f834ca966e00cdf3fca024a52842c",
+    "bradyrhizobium": "90813d893a7244bc5568d7a374ae4aa91a9efc362d73e30d9e09e1c36a448cd0",
+    "diphtheria": "28cb6e5af35e00f4339d4ce724ad94c91adf4920f8ef0260194fe138b3e17423",
+    "escherichia_coli": "eb31e411511edca282208e98a4d885de240d3ca2f83550260fa261dac74ccd1f",
+    "staphylococcus": "4850006c5403bb9d8b3153070d4cc62482ca28415c9d171f183000f8b3047e5b"
+  },
+  "fimo_manifest_sha256": "d2c3c9f4dcded17d8eab7cb83c5a72fd45ea09f9c906e4998ddd1f6aefc9c91c",
+  "pooled_meme_sha256": "36cbbcc179a033e075a122a623272f2639ed9b89759720e24982bc58186ed453",
+  "raw_tomtom_sha256": "a66566ba403e2a340df47934719b615f5abb36974097d5806cd4f9c4c6a48ed9",
+  "per_query_q_candidate_cross_species_pairs": 18,
+  "globally_significant_cross_species_pairs_bh_q_le_threshold": 0,
+  "species_pair_count": 15,
+  "biological_interpretation": "PWM similarity identifies sequence-pattern resemblance; it does not establish shared function, genomic position, or common regulatory mechanism.",
+  "output_sha256": {
+    "significant_cross_species_motif_matches.tsv": "21490b45a2e62d3b1cfc9711e158bc896734fba690841bc0c9af44a881f4ff92",
+    "species_pair_similarity.tsv": "9d8230ec291f3fc3de93451c99948d3aa0dd088171edb0a6441b01cb4ef43c33"
+  }
+}

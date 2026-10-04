@@ -1,0 +1,131 @@
+{
+  "purpose": "MEME motifs vs idealized literature consensus sequence similarity; not genomic locus overlap",
+  "comparison_revision": "2026-10-03: reference matrix consensus audit and full Tomtom rerun",
+  "tool": "MEME Suite Tomtom 5.5.9",
+  "meme_run": {
+    "tool": "MEME Suite MEME 5.5.9",
+    "exit_status": "all seven formal jobs exited 0; each XML parsed with xmllint",
+    "parameters": [
+      "-dna",
+      "-mod zoops",
+      "-objfun de",
+      "-neg matched N1",
+      "-nmotifs 10",
+      "-minw 6",
+      "-maxw 20",
+      "-revcomp",
+      "-seed 20260930",
+      "-brief 50"
+    ],
+    "width_search": "MEME default heuristic seed widths; -allw was not used in final jobs",
+    "all_group_command": "meme all.fasta -dna -mod zoops -objfun de -neg all_n1.fasta -nmotifs 10 -minw 6 -maxw 20 -revcomp -seed 20260930 -brief 50 -oc all",
+    "sigma_group_command": "meme <group>.fasta -dna -mod zoops -objfun de -neg <group>_n1.fasta -nmotifs 10 -minw 6 -maxw 20 -searchsize 100000 -revcomp -seed 20260930 -brief 50 -nostatus -oc <group>"
+  },
+  "distance": "Euclidean distance (-dist ed)",
+  "minimum_overlap": 6,
+  "tomtom_threshold": 1.0,
+  "orientation": "Tomtom default: target reverse complements are also compared",
+  "tomtom_command": "tomtom -dist ed -thresh 1 -min-overlap 6 -oc <output_dir> <group>/meme.txt baselines/known_promoter_elements.meme",
+  "reference_motifs": [
+    "Ecoli_sigma70_minus10",
+    "Ecoli_sigma70_minus35",
+    "Ecoli_UP_proximal",
+    "Ecoli_UP_distal"
+  ],
+  "validated_reference_consensus": {
+    "Ecoli_sigma70_minus10": "TATAAT",
+    "Ecoli_sigma70_minus35": "TTGACA"
+  },
+  "group_counts": {
+    "all": {
+      "sequences": 3807,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma70": {
+      "sequences": 1942,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma24": {
+      "sequences": 513,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma32": {
+      "sequences": 300,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma38": {
+      "sequences": 176,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma28": {
+      "sequences": 140,
+      "motifs": 10,
+      "matches": 40
+    },
+    "Sigma54": {
+      "sequences": 96,
+      "motifs": 10,
+      "matches": 40
+    }
+  },
+  "total_discovered_motifs": 70,
+  "total_query_reference_rows": 280,
+  "statistical_limit": "The target database contains only four idealized motifs. Tomtom warns that p-values are inaccurate for such a small target database; reported p/q values are retained for audit but are not used as confirmatory significance. Best matches are descriptive rankings only.",
+  "biological_limit": "These references are E. coli sigma70 -10/-35 consensus and UP subsite consensus templates. Sequence similarity does not establish promoter-specific presence, TSS-relative position, functional activity, or sigma-specificity.",
+  "input_sha256": {
+    "reference_meme": "83ac30cf41f4cf66b18e9d9008515ffdb896a0dbee43a78032d9b21090fabfa5",
+    "all_primary_fasta": "8514a6521df4a708d621aa06ca92573f0b561d0d091987360daaf82ec06df874",
+    "all_N1_fasta": "757f25fd64e6a29cac08a9a1f5c220f3532c6546d8830cb6fb27ad65f6961c78",
+    "Sigma70_primary_fasta": "46e1ad75e9bc94f85213abc0198731c594b05fbecc12dbe07993a49d2d30f3cf",
+    "Sigma70_N1_fasta": "1367488c5f7af659e342884e9a644c1a31db425f7e0c9e3c1fd2b85359c1365c",
+    "Sigma24_primary_fasta": "23837d1b2a2782b3e9106d04b0a19e1c509bcf6e6adcd0c44047a0a49d779643",
+    "Sigma24_N1_fasta": "4255eeaabaab9a105eb319593dceb664f4ba19642410562a104da808e7cdc15b",
+    "Sigma32_primary_fasta": "3d66af45de65aeca9881f2ec250a360dfb3575269cbd17fb71429e26f93ce17c",
+    "Sigma32_N1_fasta": "c3198c2d9cb61808490e647a13bcce5ba8e6559fe67884967b0cbf7b8a261e9f",
+    "Sigma38_primary_fasta": "3c06c2c7c9bf51b3eca2f991e683584f21948b5a89a467d11dcac57fc18b8540",
+    "Sigma38_N1_fasta": "29e65fcd43ee6675f975bd502ebddf1f251efe93e04941dc93a1d2d5bfa64ac2",
+    "Sigma28_primary_fasta": "1adf51042750cd0ad38093376e3ec58453cd692aba6f21bf7b5831c6fd460ab1",
+    "Sigma28_N1_fasta": "784a7968669b1ebe65381935c58da22edc4996d722997333a6cf2aad9e42a3eb",
+    "Sigma54_primary_fasta": "f06ab820e7e7d6a13abb5fae91b0459c278e7b41e8de9782d52b6fbd754167bd",
+    "Sigma54_N1_fasta": "f7de9b15d8b44dc4a4897b8964e3176e84e2a6583ecaf0c656b4672f4b3ace7c"
+  },
+  "intermediate_sha256": {
+    "all_meme_txt": "6ed1cbb08090e3f29f2f325059c3180243865735d535d20024daa577199e1957",
+    "all_meme_xml": "707b40e1004383b41a97f2cc456701c6b33f8fd79e78798cdb80a32aa1da02b0",
+    "all_tomtom_tsv": "46a4bb5551509911fb5b4e7c66d68f985cd965e19f37227e77f326cbfdca3d0b",
+    "Sigma70_meme_txt": "580efe5edf60170c827ffd079cda83e5824c5c27bc67c3eeea86821da907dfc9",
+    "Sigma70_meme_xml": "1e7bb4e6c377df4dd4114cfeb91fd2edfe38df523d7111df08ccf4aa06ee89cc",
+    "Sigma70_tomtom_tsv": "2f813adc4148ae8c1f4bd1a92bd499adb740864c1bb8d9a1495fa42e455dec05",
+    "Sigma24_meme_txt": "9a703a2e04b65151d5b5a9f8a872a653477e07d2ed218b1f248be75d71d7de93",
+    "Sigma24_meme_xml": "2e01f5fcc9f4a4a8671bae0e923bb65198ce25f6c60ca4413978a5f9a84cd8e9",
+    "Sigma24_tomtom_tsv": "acdc90726c0522dd8f85fb635b3887634d037bf1521abbaab3b6463a2a43a846",
+    "Sigma32_meme_txt": "a214f677634915318d4268db9cab88dca51c6ab23fb6e830a7c9b40fcd873ba3",
+    "Sigma32_meme_xml": "f942b5c47698c571537680868886ac15fea3dcb4d36001cdaa56b293e97c384d",
+    "Sigma32_tomtom_tsv": "0adcdae0e8e5a480049257c89665b8c12f7f4f1f7dd0e59f833cb4b084e634fe",
+    "Sigma38_meme_txt": "468dcc216c3e7ff50363b7423df36db2f7afd33e8ffdf145d45fa3ce69473794",
+    "Sigma38_meme_xml": "7bf3050b84ab1c076a8b003e37294b3d43092842d7b1c16b05b1956e0cb97120",
+    "Sigma38_tomtom_tsv": "6858cbbbbca80edfb5beec2df19a83549c83eed8874cacf64e9c3fb736163698",
+    "Sigma28_meme_txt": "c07d2866222c5ecdfc718e78ed234d4758579c19e72a7628576eb49d2a46475a",
+    "Sigma28_meme_xml": "f9fdc576c9bf38e09dea605de488915ba8c171c1c6303844e7be902b7f8d402a",
+    "Sigma28_tomtom_tsv": "2dd86e3e06af7057f298b286f5e6bac6e814c96da7847a288d9d4e6e4488ae2d",
+    "Sigma54_meme_txt": "5a4a688b7550083b8352ed98a795d93c6e29c8e7143084d28632e4d72cc3a350",
+    "Sigma54_meme_xml": "6379e83789e9d2c21ed6f3e12ac047d226b5843a1cb88ad0da7ed711600facd4",
+    "Sigma54_tomtom_tsv": "1c2b4055e8cbb7e2c79b94a250942a1b5801aeed9fc24eb9a67a05cee67a6f5d"
+  },
+  "output_sha256": {
+    "all_query_reference_matches.tsv": "d024112ead5e528d96840426c91b1c0a55d4714da6070a0cf3e633f579c252d5",
+    "best_reference_match_per_motif.tsv": "6627f2b536c332915a402b208aaeef3e300752717a06e6c62756fd652a986d71",
+    "matrices/Sigma24.meme": "e44e807d1e7b262192de51f06243e19cf0b24cd6fd6c3c8b4471d7b0e9a3c674",
+    "matrices/Sigma28.meme": "033e52745b700634c8b77c8f963f83c4177dded4f3b6232cc68927be9e7901f0",
+    "matrices/Sigma32.meme": "464d1e551a632dc91f69046e09da11be4f50fb465bf33327c6c9d22d1a0cd965",
+    "matrices/Sigma38.meme": "60a61dd994b5e5c1c782228e15012873bab8b39dbddf3e05771a37903865bd49",
+    "matrices/Sigma54.meme": "4b392b15862d7919aca8253771f72de91261f0589bb0c5a7f29577bc61ab71f4",
+    "matrices/Sigma70.meme": "020c3063690e9474fcc8082635604b5474394f4080155a773fcdd2832733c9a9",
+    "matrices/all.meme": "7efc8299c02e79e37ed2f80790b3bff7c024a36a3ebff66d82b41519aae7735a"
+  }
+}

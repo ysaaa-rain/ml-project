@@ -1,0 +1,1 @@
+query_species	query_motif	target_species	target_motif	p_value	e_value	q_value_within_query_60_targets	global_bh_q_3000_cross_species_comparisons	overlap_bp	orientation	query_consensus	target_consensus
