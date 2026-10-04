@@ -1,0 +1,712 @@
+{
+  "schema_version": "pr01-02-regulondb-sigma-holdout-1.0",
+  "status": "complete",
+  "purpose": "在未参与 MEME 发现的 RegulonDB 六 sigma 组留出序列上，复核 motif 命中率与配对背景共现。",
+  "dataset": "RegulonDB E. coli K-12 TSS-aligned discovery subset",
+  "groups": [
+    "Sigma70",
+    "Sigma24",
+    "Sigma32",
+    "Sigma38",
+    "Sigma28",
+    "Sigma54"
+  ],
+  "input_counts": {
+    "Sigma70": {
+      "positive_records": 389,
+      "control_records": 389
+    },
+    "Sigma24": {
+      "positive_records": 103,
+      "control_records": 103
+    },
+    "Sigma32": {
+      "positive_records": 60,
+      "control_records": 60
+    },
+    "Sigma38": {
+      "positive_records": 36,
+      "control_records": 36
+    },
+    "Sigma28": {
+      "positive_records": 28,
+      "control_records": 28
+    },
+    "Sigma54": {
+      "positive_records": 20,
+      "control_records": 20
+    }
+  },
+  "cross_group_exact_sequence_overlap": [
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma24",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma32",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma70",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma32",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma24",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma38",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma32",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma38",
+      "group_b": "Sigma28",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma38",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    },
+    {
+      "group_a": "Sigma28",
+      "group_b": "Sigma54",
+      "same_orientation_exact_overlap": 0,
+      "reverse_complement_exact_overlap": 0
+    }
+  ],
+  "input_sha256": {
+    "Sigma70_positive_fasta": "902f380e0baf76934f24af3c214001278f9821cb91dd03a629be85fe68c71c1e",
+    "Sigma70_N1_fasta": "616541201e1e7702ed044ac1be340af0be37858d3be914757615540462e1fb73",
+    "Sigma24_positive_fasta": "da8265084b54fbae07564fbb889f08e96b4304361179b183806bf7d582176140",
+    "Sigma24_N1_fasta": "6360fd2d12e3ca1af806da5ef9ea15249f8817b286f7b716df7b7bc5278f8f42",
+    "Sigma32_positive_fasta": "96f5a73a10eae363f415c2176d713df32e325974c0d9154062e18d6def8492aa",
+    "Sigma32_N1_fasta": "311b1c0c8bacea6fdc6cf4e465014dd7514eb31c9fb621f16601c5a6da6d0fab",
+    "Sigma38_positive_fasta": "127790fbf7b844b794740bcc84145b77ed448b8b451438199138f6b13af020c4",
+    "Sigma38_N1_fasta": "224c5e9763b64f32ba3bd266a30bfaa64576ff144023fcb124365094c32d21a1",
+    "Sigma28_positive_fasta": "301e4665d7dadac1b7a8807538476f3098b61609983e40759d1de77f97165e65",
+    "Sigma28_N1_fasta": "b0a36133153ef2c66ea6927a0b95a7a2c13c6fc06a419cbe7409a154beab9384",
+    "Sigma54_positive_fasta": "705bb5728cf8698da53b9ad662c160fc94cdab3b415ba05bcc3e391dfb2337d6",
+    "Sigma54_N1_fasta": "85094d9ec6c5c5e69af8e495e34cd29cfa23c4a3f8d2f554ced0eef1da800fa8",
+    "combined_fasta": "33a785f238b4aa74d5c0bdadeaed00f2ec44b16dcad22ce5ebb6825061b1fc35",
+    "pooled_N1_background": "8f5f6653da9b56d795fb9af5c45139f9cff04b6143d20a6841a67b171e203ce2"
+  },
+  "input_manifest_sha256": "dadf4bfe41628dd2f2de88b00bf06ae1bc6eefb64e106d11de5382d40ea710c6",
+  "comparison_manifest_sha256": "e25bb638f02c9005b993a0e49ca99425789ad3559b6548112f9e965281656bb1",
+  "matrix_sha256": {
+    "matrices/Sigma70.meme": "0ffa851da11c13f61d01486461f829a1bbe95c33ec448abc0f010482de39846e",
+    "matrices/Sigma24.meme": "8ae15c1c67c52b375eac08a62b15350b220aa486e6ff24ed6e87a8b4bd4ae38a",
+    "matrices/Sigma32.meme": "15d8dea31ad122b119ac26a93357cf6769c8dca281d82c5e920ded1dfd0920b0",
+    "matrices/Sigma38.meme": "3bfa04e9e2d1074349c85d2e9f5d82a58629fe422df505e3968b3771a3852001",
+    "matrices/Sigma28.meme": "696a1d59d59868ce9c716ced59793d5aa3e5921a6e73e9d27b2ed23367e75927",
+    "matrices/Sigma54.meme": "4b7f9f75e201d86a95ca984353d991dd9527319ff77cd47b1d8ca71cae51e2fa"
+  },
+  "tool": {
+    "fimo_version": "5.5.9",
+    "fimo_executable": "tmp/meme-suite-5.5.9/bin/fimo"
+  },
+  "parameters": {
+    "all_target_sequences": "每个 sigma 组的正类与一一匹配 N1 对照；六组在每个矩阵任务中同时扫描",
+    "background": "六组 N1 对照 pooled zero-order A/C/G/T frequencies",
+    "strands": "both strands",
+    "site_output_cutoff": 0.05,
+    "reported_site_p_thresholds": [
+      0.05,
+      0.01,
+      0.001
+    ],
+    "site_q_threshold": 0.05,
+    "motif_pseudocount": 0.1,
+    "max_stored_scores": 15000000,
+    "paired_control_test": "exact McNemar on positive/N1 sequence-paired hit presence; BH separately within each raw-p threshold across 360 source-motif by target-group tests",
+    "group_specificity_test": "two-sided Fisher comparing each target sigma group's positive hit rate against the other five groups; BH separately within each raw-p threshold across 360 source-motif by target-group tests",
+    "spacing": "for each discovery group's own 10 motifs, compare paired positive/N1 sequence co-occurrence using exact McNemar and BH separately across 270 group-motif pairs per raw-p threshold; report nearest signed-gap summaries in both classes",
+    "selection_limit": "Each motif was discovered only on its source group's train partition and tested on disjoint holdout records. This is an internal split of one RegulonDB dataset, not an independent external-dataset replication.",
+    "position_limit": "RegulonDB inputs are TSS-oriented; site coordinates are 1-81 in input direction. This auxiliary result does not replace six-species TJU Pan analysis."
+  },
+  "background": {
+    "counts": {
+      "A": 15180,
+      "T": 15359,
+      "G": 10483,
+      "C": 10494
+    },
+    "frequencies": {
+      "A": 0.29466573491730724,
+      "C": 0.2037037037037037,
+      "G": 0.2034901778088361,
+      "T": 0.298140383570153
+    }
+  },
+  "fimo_runs": {
+    "Sigma70": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma70",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma70.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 101970,
+      "fimo_tsv_sha256": "5570640a6cba40f3dae5e0ef84a0d2e29904dc83ed6200bea1174618e6841c03",
+      "stderr_sha256": "91de9d1fe7f36b6b42d3eb77b989b3a2d7d65a98484916aedc71b9a50db71628"
+    },
+    "Sigma24": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma24",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma24.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 99733,
+      "fimo_tsv_sha256": "cb65b9115ad62fb829a62db3cdaf7f756a26ddae3ac1d284989565317822156a",
+      "stderr_sha256": "fd9247cb145ae934f49d7d7dc4ec4bd8e036ec4420993d1cc0a2aa95bca71fd4"
+    },
+    "Sigma32": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma32",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma32.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 92550,
+      "fimo_tsv_sha256": "3379491c58a6fbc01d9891d393def045c88d8efd5fefeb5de5b30e9212110877",
+      "stderr_sha256": "0077bb3067ae67495c8c20b95ec25dd93c710a58a512ed91aa48ca88ea0804ed"
+    },
+    "Sigma38": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma38",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma38.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 90748,
+      "fimo_tsv_sha256": "0804d5e8b79311ec73e0e32e533728000796d1c1ec8b6ef1072eee27103e63bc",
+      "stderr_sha256": "fbcbe8eb8e724cefab106a010fd71e76b4b2266a31952607b5cfb0512ebb5528"
+    },
+    "Sigma28": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma28",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma28.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 97436,
+      "fimo_tsv_sha256": "7decad350503c63b16f00463b6341f4920e72b827a6629d6f5a9013d55a49f55",
+      "stderr_sha256": "2a6aaf91f38d840945f1228d1d867dd2a62cfec8778e654d7db005c3fe4ebb8d"
+    },
+    "Sigma54": {
+      "return_code": 0,
+      "command": [
+        "tmp/meme-suite-5.5.9/bin/fimo",
+        "--oc",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/fimo_Sigma54",
+        "--bfile",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/pooled_N1_background.txt",
+        "--thresh",
+        "0.05",
+        "--motif-pseudo",
+        "0.1",
+        "--max-stored-scores",
+        "15000000",
+        "tmp/regulondb_sigma_holdout_20261004/matrices/Sigma54.meme",
+        "tmp/regulondb_sigma_holdout_20261004/fimo_analysis_final2/all_sigma_primary_and_N1.fasta"
+      ],
+      "site_rows_p_le_0.05": 98364,
+      "fimo_tsv_sha256": "ccbe38323d2829f6f959ee7029052fdecaad353a7eefc016aad982cbcf9e2688",
+      "stderr_sha256": "856b304a68fbe9feee76dc03f11f2c9195a198cb6eb9d069fc3bbb7fbc09c0e9"
+    }
+  },
+  "rows": {
+    "sigma_motif_coverage.tsv": 360,
+    "sigma_motif_group_specificity.tsv": 1080,
+    "sigma_motif_pair_spacing.tsv": 810,
+    "pair_spacing_bh_significant_by_threshold": {
+      "0.05": 0,
+      "0.01": 13,
+      "0.001": 0
+    }
+  },
+  "output_sha256": {
+    "sigma_motif_coverage.tsv": {
+      "bytes": 91337,
+      "sha256": "83a46487a21783d13b7ccf6a1e211bd23bd6794c3fbbcda62ab938c04de5fd32"
+    },
+    "sigma_motif_group_specificity.tsv": {
+      "bytes": 127630,
+      "sha256": "902a4e286e988afc1a5975d3e396a2d072d1a7ac0ba0e4e7fd77ed958668acae"
+    },
+    "sigma_motif_pair_spacing.tsv": {
+      "bytes": 113948,
+      "sha256": "6c7bb7586f5448e1b4b3f0af35a96bc0d48f603bf5e71a059a0e552f247adcd5"
+    },
+    "matrices/Sigma70.meme": {
+      "bytes": 32556,
+      "sha256": "0ffa851da11c13f61d01486461f829a1bbe95c33ec448abc0f010482de39846e"
+    },
+    "matrices/Sigma24.meme": {
+      "bytes": 31254,
+      "sha256": "8ae15c1c67c52b375eac08a62b15350b220aa486e6ff24ed6e87a8b4bd4ae38a"
+    },
+    "matrices/Sigma32.meme": {
+      "bytes": 31888,
+      "sha256": "15d8dea31ad122b119ac26a93357cf6769c8dca281d82c5e920ded1dfd0920b0"
+    },
+    "matrices/Sigma38.meme": {
+      "bytes": 30265,
+      "sha256": "3bfa04e9e2d1074349c85d2e9f5d82a58629fe422df505e3968b3771a3852001"
+    },
+    "matrices/Sigma28.meme": {
+      "bytes": 30652,
+      "sha256": "696a1d59d59868ce9c716ced59793d5aa3e5921a6e73e9d27b2ed23367e75927"
+    },
+    "matrices/Sigma54.meme": {
+      "bytes": 33132,
+      "sha256": "4b7f9f75e201d86a95ca984353d991dd9527319ff77cd47b1d8ca71cae51e2fa"
+    }
+  },
+  "created_at": "2026-10-04T14:03:46+08:00",
+  "holdout_design": {
+    "seed": 20261004,
+    "seed_scheme": "base seed plus zero-based index in GROUPS",
+    "train_fraction_approx": 0.8,
+    "holdout_fraction": 0.2,
+    "holdout_size_rule": "ceil(0.20*N) per sigma group",
+    "split_unit": "paired promoter and its own N1 control",
+    "groups": {
+      "Sigma70": {
+        "total_pairs": 1942,
+        "train_pairs": 1553,
+        "holdout_pairs": 389,
+        "split_seed": 20261004,
+        "train_primary_sha256": "ea8337a304fc3a2a17067ab4d1d21e5de9add39538d26353d3916b1d58e2234c",
+        "train_N1_sha256": "7e4b758eec408d75f916c2aad0ce587d247acd6bb4f577dba9716d60fea1a15f",
+        "holdout_primary_sha256": "902f380e0baf76934f24af3c214001278f9821cb91dd03a629be85fe68c71c1e",
+        "holdout_N1_sha256": "616541201e1e7702ed044ac1be340af0be37858d3be914757615540462e1fb73"
+      },
+      "Sigma24": {
+        "total_pairs": 513,
+        "train_pairs": 410,
+        "holdout_pairs": 103,
+        "split_seed": 20261005,
+        "train_primary_sha256": "b3ecdfd03d9a02f89a34bfd2b1ed97816346d5a9766a4e38c6f45c304cd3055d",
+        "train_N1_sha256": "d5d9067894ba3be8ff84695e3cd8e0eab6d592bdc743864873d0acb21abaace8",
+        "holdout_primary_sha256": "da8265084b54fbae07564fbb889f08e96b4304361179b183806bf7d582176140",
+        "holdout_N1_sha256": "6360fd2d12e3ca1af806da5ef9ea15249f8817b286f7b716df7b7bc5278f8f42"
+      },
+      "Sigma32": {
+        "total_pairs": 300,
+        "train_pairs": 240,
+        "holdout_pairs": 60,
+        "split_seed": 20261006,
+        "train_primary_sha256": "f3861c9a862e10e6f114d0974d340425e53fa65449f99e14d880a506cc96cce1",
+        "train_N1_sha256": "774387bace0d92cba51e9f6630d5d2f5dc9a20bec509678ee71dd664c106b0b3",
+        "holdout_primary_sha256": "96f5a73a10eae363f415c2176d713df32e325974c0d9154062e18d6def8492aa",
+        "holdout_N1_sha256": "311b1c0c8bacea6fdc6cf4e465014dd7514eb31c9fb621f16601c5a6da6d0fab"
+      },
+      "Sigma38": {
+        "total_pairs": 176,
+        "train_pairs": 140,
+        "holdout_pairs": 36,
+        "split_seed": 20261007,
+        "train_primary_sha256": "2619abb05ac0506fd2a444f5e313ae2bacd57f8794380b4950779c03c2c57ec4",
+        "train_N1_sha256": "687219065a3906761a89537c696902d8ce0df49e457e0a7909c1c057e94b6d28",
+        "holdout_primary_sha256": "127790fbf7b844b794740bcc84145b77ed448b8b451438199138f6b13af020c4",
+        "holdout_N1_sha256": "224c5e9763b64f32ba3bd266a30bfaa64576ff144023fcb124365094c32d21a1"
+      },
+      "Sigma28": {
+        "total_pairs": 140,
+        "train_pairs": 112,
+        "holdout_pairs": 28,
+        "split_seed": 20261008,
+        "train_primary_sha256": "be5f4bf0febe3925bf61ef2459875ee7343b9f097277c919407092e43041753f",
+        "train_N1_sha256": "8fae8532ccdee5d694448c94fb47be83db46ca2b21ca88639fb0f7689f7cf0f8",
+        "holdout_primary_sha256": "301e4665d7dadac1b7a8807538476f3098b61609983e40759d1de77f97165e65",
+        "holdout_N1_sha256": "b0a36133153ef2c66ea6927a0b95a7a2c13c6fc06a419cbe7409a154beab9384"
+      },
+      "Sigma54": {
+        "total_pairs": 96,
+        "train_pairs": 76,
+        "holdout_pairs": 20,
+        "split_seed": 20261009,
+        "train_primary_sha256": "6e133033119943a609d3b313e5db0dc7ab6406affc939891dab59c3f8b5765d6",
+        "train_N1_sha256": "df79ab6d6329ac50c04d8f6c76d33844884873e8c5f21d258b855d7414b9d046",
+        "holdout_primary_sha256": "705bb5728cf8698da53b9ad662c160fc94cdab3b415ba05bcc3e391dfb2337d6",
+        "holdout_N1_sha256": "85094d9ec6c5c5e69af8e495e34cd29cfa23c4a3f8d2f554ced0eef1da800fa8"
+      }
+    },
+    "training_meme_runs": {
+      "Sigma70": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma70.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma70_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma70"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "67c98710038263c2cd3779007894f698e998880fca492772c2e6c81c89d0cbb1",
+        "meme_xml_sha256": "38b45cf1e163cee1f8439d0005c71a8c6b54a89864c18b0f5e5c6bb06fc040eb",
+        "matrix_sha256": "0ffa851da11c13f61d01486461f829a1bbe95c33ec448abc0f010482de39846e",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      },
+      "Sigma24": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma24.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma24_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma24"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "6a8da5a2afed0e78d36d27ce8c5a299a8899e8a5ff7672cf04c544d60b48dd77",
+        "meme_xml_sha256": "d7a9c5d2c391f12d3b0cfc814813cb1a025324f0b386194e3cbd8f9fbc88b0b8",
+        "matrix_sha256": "8ae15c1c67c52b375eac08a62b15350b220aa486e6ff24ed6e87a8b4bd4ae38a",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      },
+      "Sigma32": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma32.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma32_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma32"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "3b1faa664e95167fabf8bb9a62df25107859f0713401cacfec921467e070b73f",
+        "meme_xml_sha256": "f9a03340037522c41644f658265561790d8c3f73bf7c52a5a5f9753cf0d03849",
+        "matrix_sha256": "15d8dea31ad122b119ac26a93357cf6769c8dca281d82c5e920ded1dfd0920b0",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      },
+      "Sigma38": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma38.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma38_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma38"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "77a91d94c79dd43098ba7c164c5a0cef0990a55be27cda936b24b28ae935b402",
+        "meme_xml_sha256": "8856b82ab937c88b212e7916f619cd8a65cf5a3e3795f2196fffebae387a7422",
+        "matrix_sha256": "3bfa04e9e2d1074349c85d2e9f5d82a58629fe422df505e3968b3771a3852001",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      },
+      "Sigma28": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma28.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma28_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma28"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "7f70d284065965d5d1570b979bfbe319feaad11bda1f977ddfbb48a99b829ca4",
+        "meme_xml_sha256": "ee0b56e28e4977ed50e4ade4ee059976d1e340d8df758e305ae4aad975aa455c",
+        "matrix_sha256": "696a1d59d59868ce9c716ced59793d5aa3e5921a6e73e9d27b2ed23367e75927",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      },
+      "Sigma54": {
+        "return_code": 0,
+        "command": [
+          "tmp/meme-suite-5.5.9/bin/meme",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma54.fasta",
+          "-dna",
+          "-mod",
+          "zoops",
+          "-objfun",
+          "de",
+          "-neg",
+          "tmp/regulondb_sigma_holdout_20261004/training_inputs/Sigma54_n1.fasta",
+          "-nmotifs",
+          "10",
+          "-minw",
+          "6",
+          "-maxw",
+          "20",
+          "-searchsize",
+          "100000",
+          "-revcomp",
+          "-seed",
+          "20261004",
+          "-brief",
+          "50",
+          "-nostatus",
+          "-oc",
+          "tmp/regulondb_sigma_holdout_20261004/meme_runs/Sigma54"
+        ],
+        "motif_count": 10,
+        "meme_txt_sha256": "1731c814d0631d6e5974057201a3d72a6cfd2cabe7b4d3f4594cd29a2209cee6",
+        "meme_xml_sha256": "1d611f050145aa09c2e0bf15ca33a3b27e6724f3b73410cbe8b116ee7ff7c6d1",
+        "matrix_sha256": "4b7f9f75e201d86a95ca984353d991dd9527319ff77cd47b1d8ca71cae51e2fa",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "b738b2abd6c28ebaa3ed9a7cf643a448479d3c318aa007fa89a6203d3e0897bf"
+      }
+    },
+    "training_fasta_sha256": {
+      "Sigma70": "ea8337a304fc3a2a17067ab4d1d21e5de9add39538d26353d3916b1d58e2234c",
+      "Sigma70_N1": "7e4b758eec408d75f916c2aad0ce587d247acd6bb4f577dba9716d60fea1a15f",
+      "Sigma24": "b3ecdfd03d9a02f89a34bfd2b1ed97816346d5a9766a4e38c6f45c304cd3055d",
+      "Sigma24_N1": "d5d9067894ba3be8ff84695e3cd8e0eab6d592bdc743864873d0acb21abaace8",
+      "Sigma32": "f3861c9a862e10e6f114d0974d340425e53fa65449f99e14d880a506cc96cce1",
+      "Sigma32_N1": "774387bace0d92cba51e9f6630d5d2f5dc9a20bec509678ee71dd664c106b0b3",
+      "Sigma38": "2619abb05ac0506fd2a444f5e313ae2bacd57f8794380b4950779c03c2c57ec4",
+      "Sigma38_N1": "687219065a3906761a89537c696902d8ce0df49e457e0a7909c1c057e94b6d28",
+      "Sigma28": "be5f4bf0febe3925bf61ef2459875ee7343b9f097277c919407092e43041753f",
+      "Sigma28_N1": "8fae8532ccdee5d694448c94fb47be83db46ca2b21ca88639fb0f7689f7cf0f8",
+      "Sigma54": "6e133033119943a609d3b313e5db0dc7ab6406affc939891dab59c3f8b5765d6",
+      "Sigma54_N1": "df79ab6d6329ac50c04d8f6c76d33844884873e8c5f21d258b855d7414b9d046"
+    },
+    "holdout_fasta_sha256": {
+      "Sigma70": "902f380e0baf76934f24af3c214001278f9821cb91dd03a629be85fe68c71c1e",
+      "Sigma70_N1": "616541201e1e7702ed044ac1be340af0be37858d3be914757615540462e1fb73",
+      "Sigma24": "da8265084b54fbae07564fbb889f08e96b4304361179b183806bf7d582176140",
+      "Sigma24_N1": "6360fd2d12e3ca1af806da5ef9ea15249f8817b286f7b716df7b7bc5278f8f42",
+      "Sigma32": "96f5a73a10eae363f415c2176d713df32e325974c0d9154062e18d6def8492aa",
+      "Sigma32_N1": "311b1c0c8bacea6fdc6cf4e465014dd7514eb31c9fb621f16601c5a6da6d0fab",
+      "Sigma38": "127790fbf7b844b794740bcc84145b77ed448b8b451438199138f6b13af020c4",
+      "Sigma38_N1": "224c5e9763b64f32ba3bd266a30bfaa64576ff144023fcb124365094c32d21a1",
+      "Sigma28": "301e4665d7dadac1b7a8807538476f3098b61609983e40759d1de77f97165e65",
+      "Sigma28_N1": "b0a36133153ef2c66ea6927a0b95a7a2c13c6fc06a419cbe7409a154beab9384",
+      "Sigma54": "705bb5728cf8698da53b9ad662c160fc94cdab3b415ba05bcc3e391dfb2337d6",
+      "Sigma54_N1": "85094d9ec6c5c5e69af8e495e34cd29cfa23c4a3f8d2f554ced0eef1da800fa8"
+    },
+    "source_manifest_sha256": "58e46b43e47a7ea022a7e796bedfeca9a3ec92630f567c8bf27cbd997ea48e6c",
+    "source_input_manifest_path": "tmp/motif_inputs_20260930/motif_input_manifest.json",
+    "holdout_input_manifest_sha256": "dadf4bfe41628dd2f2de88b00bf06ae1bc6eefb64e106d11de5382d40ea710c6",
+    "reproduction_command": ".venv/bin/python -m experiments.validate_regulondb_sigma_holdout",
+    "meme_version": "5.5.9",
+    "meme_parameters": [
+      "-dna",
+      "-mod zoops",
+      "-objfun de",
+      "-nmotifs 10",
+      "-minw 6",
+      "-maxw 20",
+      "-searchsize 100000",
+      "-revcomp",
+      "-seed 20261004"
+    ]
+  },
+  "training_motif_matrix_sha256": {
+    "matrices/Sigma70.meme": "0ffa851da11c13f61d01486461f829a1bbe95c33ec448abc0f010482de39846e",
+    "matrices/Sigma24.meme": "8ae15c1c67c52b375eac08a62b15350b220aa486e6ff24ed6e87a8b4bd4ae38a",
+    "matrices/Sigma32.meme": "15d8dea31ad122b119ac26a93357cf6769c8dca281d82c5e920ded1dfd0920b0",
+    "matrices/Sigma38.meme": "3bfa04e9e2d1074349c85d2e9f5d82a58629fe422df505e3968b3771a3852001",
+    "matrices/Sigma28.meme": "696a1d59d59868ce9c716ced59793d5aa3e5921a6e73e9d27b2ed23367e75927",
+    "matrices/Sigma54.meme": "4b7f9f75e201d86a95ca984353d991dd9527319ff77cd47b1d8ca71cae51e2fa"
+  }
+}
