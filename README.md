@@ -42,6 +42,8 @@ python -B -m experiments.audit_repository --output-dir results/data_audit/<new_r
 
 ## 目录与协作
 
+队友M1/M2原稿与当前实现的衔接、统一数据口径及建议分工见[协作核查](docs/10_仓库协作核查与报告衔接_20261004.md)。原DOCX为问题定义/分析计划稿，正式M2结果需引用新输入EDA；旧暂存修改不能整批恢复。
+
 `preprocessing/` 数据处理；`experiments/` 审计与统计入口；`results/` 审阅过的摘要/图/manifest；`docs/` 指导、验收、审计、运行和交接；`reports/` 历史阶段报告（受影响内容已加审计说明）。
 
 保留历史结果与会议原稿；每次运行记录Git状态、软件、命令、参数、输入输出hash、随机种子、split/cluster和限制。每次推送更新交接。完整实验报告、课程必做项与答辩材料仍须按证据交付。
