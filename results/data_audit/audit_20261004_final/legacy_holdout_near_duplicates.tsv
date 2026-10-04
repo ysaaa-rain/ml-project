@@ -1,0 +1,5 @@
+train_group	train_id	holdout_group	holdout_id	matching_bases	length	orientation
+Sigma70	rrsDp2	Sigma70	rrsHp2	78	81	reverse_complement
+Sigma70	rrsEp2	Sigma70	rrsHp2	78	81	direct
+Sigma28	insLp5__duplicate_2	Sigma28	insLp5	77	81	direct
+Sigma28	insLp6	Sigma28	insLp5	78	81	direct

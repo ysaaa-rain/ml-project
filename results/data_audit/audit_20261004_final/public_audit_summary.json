@@ -1,0 +1,90 @@
+{
+  "audit_type": "source/evidence audit; no new motif experiment",
+  "tracked_files": 228,
+  "hash_check_counts": {
+    "match": 80
+  },
+  "source_orientation": {
+    "+|matches_transcription_direction": 1899,
+    "-|matches_transcription_direction": 2050,
+    "+|source_genome_disagreement": 1
+  },
+  "source_genome_anomalies": [
+    {
+      "source_record_id": "ygiWp6",
+      "strand": "+",
+      "genomic_tss": 3169749,
+      "local_tss": 61
+    }
+  ],
+  "historical_processed_orientation": {
+    "+|unchanged": 1822,
+    "-|reverse_complemented": 1985
+  },
+  "legacy_split_reconstruction": [
+    {
+      "group": "Sigma70",
+      "train_count": 1553,
+      "holdout_count": 389,
+      "historical_split_hashes_match": true
+    },
+    {
+      "group": "Sigma24",
+      "train_count": 410,
+      "holdout_count": 103,
+      "historical_split_hashes_match": true
+    },
+    {
+      "group": "Sigma32",
+      "train_count": 240,
+      "holdout_count": 60,
+      "historical_split_hashes_match": true
+    },
+    {
+      "group": "Sigma38",
+      "train_count": 140,
+      "holdout_count": 36,
+      "historical_split_hashes_match": true
+    },
+    {
+      "group": "Sigma28",
+      "train_count": 112,
+      "holdout_count": 28,
+      "historical_split_hashes_match": true
+    },
+    {
+      "group": "Sigma54",
+      "train_count": 76,
+      "holdout_count": 20,
+      "historical_split_hashes_match": true
+    }
+  ],
+  "legacy_holdout_full_length_90pct_pairs": 4,
+  "affected_holdout_records": 2,
+  "scope_limits": [
+    "Local historical genome only; flagged disagreement needs provenance reconciliation.",
+    "Split check covers full-length ungapped 81bp, <=8 substitutions in either orientation; not shifted/indel alignments.",
+    "Missing native XML/site TSV/logs cannot be certified from public summary hashes."
+  ],
+  "baseline_git_head": "8aa70af9616b28e016eb314dcc2809bc533a1114",
+  "verification": {
+    "existing_test_suite": "124 passed",
+    "command": "python -B -m pytest -p no:cacheprovider -q",
+    "biological_experiments_rerun": false,
+    "corrected_source_in_memory": {
+      "intact_81bp_windows": 3950,
+      "multi_sigma_exact_sequence_groups_preserved": 123,
+      "source_sequence_changes": 0,
+      "old_outputs_overwritten": false
+    }
+  },
+  "audited_code_sha256": {
+    "experiments/audit_repository.py": "47c68dce09e2887d75caea1bb645e2894e3b03bc87f3105619de642d8bed836c",
+    "preprocessing/windowing.py": "2ec056a8e4871566191aca0dd6e23b297845bce3b434e3e8bd14b07b91eba170",
+    "preprocessing/pipeline.py": "4fa4e1ead0577d0e8c8761aea0f6c9f284f81da26df05f6044292c020134c673",
+    "preprocessing/source_adapters.py": "4133110b7407db0032cbbc290ef20f0db9599df00e151e44f72c76724b2a6910",
+    "preprocessing/homology.py": "e04b83b837f87100032d382dbaf07defe25717d06664a9c5513c8f1525437fd4",
+    "experiments/preflight.py": "0f3590ca2e21bf76fad23f1e3e4d392a4f48ab3445cbc2dfd053d3d168750932",
+    "experiments/validate_regulondb_sigma_holdout.py": "3a1af2008d9aafdaff2cd977638f9e09b6bf2e5a9f5418c392941356fe30a401"
+  }
+}

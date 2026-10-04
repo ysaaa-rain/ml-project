@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-04",
+  "guidance_source": "user-provided attachment: 已粘贴的文本.txt",
+  "files": [
+    {
+      "file": "PR01-02_后续实验指导_20261004.txt",
+      "bytes": 25800,
+      "sha256": "d57a703defd7ce15f363a3c3b2f54a929e34b8c68830b268f81aa9189bb11f1d"
+    },
+    {
+      "file": "motif-embedding-overview.pdf",
+      "bytes": 560238,
+      "sha256": "68a79e8bfb775d5aed77562e6c1cd74668bd1a15a03878f5e1ba67c8b55750a2"
+    },
+    {
+      "file": "motif-embedding-methods.pdf",
+      "bytes": 261522,
+      "sha256": "0a9ed1b7ce927933f384cf05f791e2bc6f7e2e3b84f67db5a887392c0364a8a5"
+    }
+  ]
+}

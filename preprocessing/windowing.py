@@ -66,7 +66,10 @@ def parse_tss_position(value: Any) -> int | None:
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return None
     try:
-        position = int(float(str(value).strip()))
+        numeric = float(str(value).strip())
+        if not numeric.is_integer():
+            return None
+        position = int(numeric)
     except (TypeError, ValueError):
         return None
     return position if position > 0 else None
@@ -96,6 +99,8 @@ def apply_tss_window(
         raise ValueError(f"frame is missing the sequence column: {sequence_column}")
 
     work = frame.copy()
+    if "source_dataset" in work and work["source_dataset"].eq("regulondb").any() and "sequence_orientation" not in work:
+        raise ValueError("RegulonDB metadata lacks sequence_orientation; re-adapt the raw GFF3 before windowing, rather than reversing genomic strand twice")
     sequences = work[sequence_column].map(normalize_sequence)
 
     windowed_sequences: list[str] = []
@@ -149,35 +154,31 @@ def apply_tss_window(
             record(sequence, keep_row=not require_annotations, reason="missing_strand", identifier=identifier)
             continue
 
-        # Window around the TSS: [tss - upstream, tss + downstream], 1-based and
-        # inclusive. ``raw_start`` may be 0 when the TSS sits exactly
-        # ``upstream`` bases from the start of the sequence, which is a valid
-        # although tight window rather than an error. Anything that would reach
-        # past either end of the sequence is rejected instead of being clipped.
-        raw_start = tss - upstream
-        raw_end = tss + downstream
-        if raw_start < 0 or raw_end > len(sequence):
-            record(
-                sequence,
-                keep_row=not require_annotations,
-                reason="window_out_of_range",
-                identifier=identifier,
-            )
+        # Source strings may already be in transcription direction (RegulonDB).
+        # Strand is genomic provenance; it must not trigger a second reversal.
+        orientation = str(work.at[index, "sequence_orientation"]).strip().lower() if "sequence_orientation" in work else "genomic"
+        if orientation not in {"genomic", "transcription"}:
+            raise ValueError(f"unknown sequence_orientation for {identifier}: {orientation}")
+        reverse_input = orientation == "genomic" and strand == -1
+        raw_start = tss - (downstream if reverse_input else upstream)
+        raw_end = tss + (upstream if reverse_input else downstream)
+        if raw_start < 1 or raw_end > len(sequence):
+            record(sequence, keep_row=not require_annotations,
+                   reason="window_out_of_range", identifier=identifier)
             continue
-
-        window = sequence[max(0, raw_start - 1) : raw_end]
+        window = sequence[raw_start - 1 : raw_end]
         if not window:
             record(sequence, keep_row=False, reason="empty_window", identifier=identifier)
             continue
 
-        if strand == -1:
+        if reverse_input:
             window = reverse_complement(window)
         # Position 0 of the window is the base at -upstream relative to the TSS.
         record(
             sequence,
             keep_row=True,
             window=window,
-            start=max(1, raw_start),
+            start=raw_start,
             end=raw_end,
             offset=upstream,
             strand=strand,
@@ -190,6 +191,7 @@ def apply_tss_window(
     work["window_strand"] = strands
     work["window_upstream"] = upstream
     work["window_downstream"] = downstream
+    work["sequence_orientation"] = ["transcription" if value is not None else None for value in offsets]
     work = work.loc[keep].copy()
 
     report = {

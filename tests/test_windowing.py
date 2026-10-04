@@ -56,11 +56,11 @@ def test_forward_strand_window_keeps_orientation_and_records_coordinates():
 
     row = windowed.loc[windowed["sequence_id"].eq("tss_f01")].iloc[0]
     assert row["window_start_1based"] == 1
-    assert row["window_end_1based"] == 80
+    assert row["window_end_1based"] == 81
     assert row["tss_offset_in_window"] == 60
     assert row["window_strand"] == 1
-    assert len(row["sequence"]) == 80
-    # The window is [tss-60, tss+20] = positions 1..80, so the window starts 60
+    assert len(row["sequence"]) == 81
+    # The window is [tss-60, tss+20] = positions 1..81, so the window starts 60
     # bases upstream of the TSS. The fixture puts the -35 box at 1-based 28 and
     # the -10 box at 1-based 48, i.e. 33 and 13 bases upstream of the TSS.
     assert row["sequence"][60 - 33 : 60 - 27] == "TTGACA"
@@ -74,7 +74,7 @@ def test_minus_strand_window_is_reverse_complemented_so_elements_read_forward():
     for identifier in ("tss_r01", "tss_r02"):
         row = windowed.loc[windowed["sequence_id"].eq(identifier)].iloc[0]
         assert row["window_strand"] == -1
-        # Window [-60,+20] around TSS 80 -> positions 20..100, 81 bp.
+        # Window [-60,+20] around TSS 40 -> positions 20..100, 81 bp.
         assert row["window_start_1based"] == 20
         assert row["window_end_1based"] == 100
         assert len(row["sequence"]) == 81
@@ -172,9 +172,9 @@ def test_windowing_through_normalize_metadata_records_the_report():
     clean, _ = normalize_metadata(frame, tss_window=(60, 20), validation_sources=["dbtbs"])
 
     assert "window_start_1based" in clean.columns
-    # Forward records are TSS 60 with window [0,80]; the TSS 62 record yields
-    # [2,82]. The minus-strand records use TSS 80 and yield [20,100].
-    assert set(clean["sequence_length"]) == {80, 81}
+    # Forward records are TSS 61 with window [1,81]; the TSS 62 record yields
+    # [2,82]. The minus-strand records use TSS 40 and yield [20,100].
+    assert set(clean["sequence_length"]) == {81}
     report = clean.attrs["tss_windowing"]
     assert report is not None
     assert report["window_upstream"] == 60

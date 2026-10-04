@@ -145,6 +145,20 @@ def normalize_metadata(
         lambda sequence: (sequence.count("G") + sequence.count("C")) / len(sequence)
     )
 
+    # Preserve all labels before collapsing exact duplicates. Choosing the first
+    # row used to turn multi-sigma promoters into apparently single-label data.
+    import json
+    labels_by_sequence = {}
+    records_by_sequence = {}
+    for sequence, records in clean.groupby("sequence", sort=False):
+        labels_by_sequence[sequence] = sorted({label for label in records["sigma_factor_type"]
+                                               if label != DEFAULT_UNKNOWN})
+        records_by_sequence[sequence] = records[["sequence_id", "source_dataset", "sigma_factor_type", "evidence_level"]].to_dict("records")
+    clean["sigma_labels"] = clean["sequence"].map(lambda s: json.dumps(labels_by_sequence[s]))
+    clean["sigma_label_status"] = clean["sequence"].map(
+        lambda s: "multi_sigma" if len(labels_by_sequence[s]) > 1 else "single_sigma" if labels_by_sequence[s] else "unknown")
+    clean["duplicate_annotations"] = clean["sequence"].map(lambda s: json.dumps(records_by_sequence[s]))
+    clean.loc[clean["sigma_label_status"].eq("multi_sigma"), "sigma_factor_type"] = "multi_sigma"
     clean = clean.drop_duplicates(subset=["sequence_id"], keep="first")
     duplicate_sequence_mask = clean["sequence"].duplicated(keep="first")
     quality_filter_counts["duplicate_sequence"] = int(duplicate_sequence_mask.sum())
