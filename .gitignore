@@ -70,3 +70,12 @@ results/data_audit/audit_20261004_final/*
 !results/data_audit/audit_20261004_final/artifact_hash_checks.tsv
 !results/data_audit/audit_20261004_final/legacy_holdout_near_duplicates.tsv
 !results/data_audit/audit_20261004_final/public_audit_summary.json
+
+# Frozen G0 aggregate evidence; genomic sequences and raw source pages stay local.
+!results/data_audit/g0_rebuild_20261004/
+results/data_audit/g0_rebuild_20261004/*
+!results/data_audit/g0_rebuild_20261004/rebuild_summary.json
+!results/data_audit/g0_rebuild_20261004/independent_gate_complete.json
+!results/data_audit/g0_rebuild_20261004/*_summary.tsv
+!results/data_audit/g0_rebuild_20261004/label_retention.tsv
+!results/data_audit/g0_rebuild_20261004/supplement_manifest.json

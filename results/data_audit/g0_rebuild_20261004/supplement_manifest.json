@@ -1,0 +1,10 @@
+{
+  "command": "python -B -m experiments.summarize_gold_backgrounds",
+  "config_sha256": "a68fef8235366cc535df96ecb955d99d470a96feb59712e2f45ce2d886bfcd0d",
+  "script_sha256": "014ae108f35e71a96ee67f43c0dfabf2da273245a258ebbfaa8a1bac2540794a",
+  "input_metadata_sha256": "259da00acb0bf7e80c436b8aafc3fc8c7be0cfa828a095c5d3d81641d8c1deb7",
+  "output_sha256": {
+    "results/data_audit/g0_rebuild_20261004/background_gc_summary.tsv": "4d5100f33e80bbe6a932b3990e6e091e684206bd825ec8fe68c69484ccbb5938",
+    "data/processed/g0_rebuild_20261004/sequence_hash_and_selection.tsv": "00850852a05f4c34ef8745d18f72e9f2f725b2ce9b04d0f747457b7010e7b4aa"
+  }
+}
