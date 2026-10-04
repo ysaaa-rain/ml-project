@@ -54,6 +54,18 @@
 
 现有结果支持“不同 σ 组的候选 motif 命中频率和组合背景存在差异”这一探索性结论。尚不能确认稳定的 σ 特异性调控语法：motif 与扫描序列有重叠；raw p≤0.05/0.01/0.001 得出的显著 pair 数不同；各组间距只作描述，未对组间间距分布做独立推断。下一步用留出序列复核 motif 频率和 spacing/order，并与 TJU Pan 主分析的结论分开报告。
 
+## 同来源留出复核
+
+为避免在同一批序列上发现并检验，六组分别按配对启动子/N1 对照划分训练集和留出集：训练集约 80%，留出集为 `ceil(0.20×N)`。训练集 MEME 每组输出 10 个 motif；FIMO 只扫描未参与发现的留出序列，共 3,167 对中的 636 对。FIMO 汇总表含 360 行 motif 覆盖、1,080 行组特异性及 810 行 motif-pair 共现/间距统计。拆分种子、逐组样本数、软件参数和文件哈希见留出复核 manifest。
+
+15 个训练集 motif 的 MEME E-value≤0.05。对 15 个 motif 的来源组留出序列，raw site p≤0.01 时正类命中率合计为 79.7%，配对 N1 为 74.6%，配对检验经每档 360 项“来源 motif×目标 σ 组”BH 校正后没有一项显著；p≤0.001 时两者分别为 23.2% 和 15.6%，3/15 个来源组比较通过校正。p≤0.05 时两类命中率均约 99%，接近饱和，不能区分正类与背景。严格 FIMO site q≤0.05 下，仅 Sigma70 MEME-10（正类 4 条、N1 2 条）和 Sigma54 MEME-1（正类 1 条、N1 0 条）在正类留出序列出现命中。
+
+来源组与其余五组比较时（每档对 360 项检验做 BH），Sigma70 的 MEME-10 和 Sigma24 的 MEME-3 在 p≤0.01、0.001 两档均通过；p≤0.01 命中率分别为 65.6% 对 51.4%、94.2% 对 76.2%。其余候选未通过。270 个组内 motif pair 中（每档对 270 项检验做 BH），p≤0.01 有 13 个共现率高于 N1 且通过校正，均来自 Sigma70（9 个）和 Sigma24（4 个）；正类与 N1 共现率差中位数为 13.4 个百分点，最近有符号间隔中位数为 0 bp。p≤0.05 和 p≤0.001 均无 pair 通过校正。
+
+留出复核表明，少数 motif 的命中频率和组合在同一数据来源的新序列中可重现；多数候选未通过校正，pair 结果只在中间阈值成立。RQ2 目前只能回答为“存在部分 σ 组相关候选”，不足以确认普遍、稳定的 σ 特异 motif 或调控语法。该实验只验证 RegulonDB 内部留出，不等同于独立数据集或物种验证。
+
+结果文件位于 `results/motif/regulondb_sigma_holdout_20261004/`：覆盖、组特异性和 pair 间距表，六组训练 PWM 矩阵及 `sigma_fimo_manifest.json`。完整输入拆分和逐位点 FIMO 记录保存在项目内忽略目录 `tmp/regulondb_sigma_holdout_20261004/`。
+
 ## 结果文件与复现
 
 - `results/motif/regulondb_sigma_fimo_20261004/sigma_motif_coverage.tsv`：60 个来源 motif 在六组正序列/N1 的命中率与配对检验。
@@ -66,6 +78,7 @@
 
 ```bash
 .venv/bin/python -m experiments.analyze_regulondb_sigma_fimo --work-dir tmp/regulondb_sigma_fimo_reproduction --result-dir results/motif/regulondb_sigma_fimo_reproduction
+.venv/bin/python -m experiments.validate_regulondb_sigma_holdout --work-dir tmp/regulondb_sigma_holdout_reproduction --result-dir results/motif/regulondb_sigma_holdout_reproduction
 ```
 
 逐位点 FIMO 输出、FASTA 和序列 ID 留在本机 `tmp/`；Git 报告表不含逐序列 ID 或 DNA 序列。
