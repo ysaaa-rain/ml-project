@@ -1,0 +1,313 @@
+{
+  "method": "recoverable_move_to_macOS_Trash",
+  "entries": [
+    {
+      "original_path": "configs/m1_real_native_20260916.yaml",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/configs/m1_real_native_20260916.yaml",
+      "files": 1,
+      "bytes": 553,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "configs/m1_regulondb_tss_20260922.yaml",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/configs/m1_regulondb_tss_20260922.yaml",
+      "files": 1,
+      "bytes": 547,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "configs/m1_regulondb_tss_20260930.yaml",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/configs/m1_regulondb_tss_20260930.yaml",
+      "files": 1,
+      "bytes": 542,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/interim/regulondb_adapter_report_20260930.json",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/interim/regulondb_adapter_report_20260930.json",
+      "files": 1,
+      "bytes": 714,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/interim/regulondb_metadata_20260930.tsv",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/interim/regulondb_metadata_20260930.tsv",
+      "files": 1,
+      "bytes": 1268686,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/processed/m1_regulondb_tss_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/processed/m1_regulondb_tss_20260930",
+      "files": 14,
+      "bytes": 3169732,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/GSE135464_final_means_ids_added.csv",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/GSE135464_final_means_ids_added.csv",
+      "files": 1,
+      "bytes": 97306573,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/Training dataset.xlsx",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/Training dataset.xlsx",
+      "files": 1,
+      "bytes": 201062,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/gene_expression_yeast.npy",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/gene_expression_yeast.npy",
+      "files": 1,
+      "bytes": 614936,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/promoter_physicochemical.csv",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/promoter_physicochemical.csv",
+      "files": 1,
+      "bytes": 1243066,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/promoter_physicochemical.npy",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/promoter_physicochemical.npy",
+      "files": 1,
+      "bytes": 760704,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/promoter_yeast.npy",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/promoter_yeast.npy",
+      "files": 1,
+      "bytes": 4074093,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/promoter_yeast_physicochemical.csv",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/promoter_yeast_physicochemical.csv",
+      "files": 1,
+      "bytes": 8101844,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/promoter_yeast_physicochemical.npy",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/promoter_yeast_physicochemical.npy",
+      "files": 1,
+      "bytes": 4918592,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/supplementary/Cyanobacterium.xlsx",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/supplementary/Cyanobacterium.xlsx",
+      "files": 1,
+      "bytes": 201062,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/supplementary/Figure1.pdf",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/supplementary/Figure1.pdf",
+      "files": 1,
+      "bytes": 687990,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/yeast_promoters_processed.csv",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/yeast_promoters_processed.csv",
+      "files": 1,
+      "bytes": 4359135,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "data/raw/tju_pan_promoter/strenth/data/论文所用图片",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/data/raw/tju_pan_promoter/strenth/data/论文所用图片",
+      "files": 13,
+      "bytes": 411828,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "docs/GateA复核_20260922.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/docs/GateA复核_20260922.md",
+      "files": 1,
+      "bytes": 3025,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "docs/N1背景复核与motif输入_20260928.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/docs/N1背景复核与motif输入_20260928.md",
+      "files": 1,
+      "bytes": 4961,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "reports/M1阶段报告.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/reports/M1阶段报告.md",
+      "files": 1,
+      "bytes": 5150,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "reports/M2阶段报告.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/reports/M2阶段报告.md",
+      "files": 1,
+      "bytes": 9219,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "reports/M3阶段报告.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/reports/M3阶段报告.md",
+      "files": 1,
+      "bytes": 11007,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "reports/RQ2_RegulonDB_sigma_FIMO与间距分析.md",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/reports/RQ2_RegulonDB_sigma_FIMO与间距分析.md",
+      "files": 1,
+      "bytes": 7774,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "results/eda/M2_regulondb_tss_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/results/eda/M2_regulondb_tss_20260930",
+      "files": 16,
+      "bytes": 660372,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "results/motif/m3_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/results/motif/m3_20260930",
+      "files": 10,
+      "bytes": 76653,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "results/motif/regulondb_sigma_fimo_20261004",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/results/motif/regulondb_sigma_fimo_20261004",
+      "files": 4,
+      "bytes": 393682,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "results/motif/regulondb_sigma_holdout_20261004",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/results/motif/regulondb_sigma_holdout_20261004",
+      "files": 11,
+      "bytes": 553007,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "results/motif/tjupan_m3_20261003/cross_dataset",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/results/motif/tjupan_m3_20261003/cross_dataset",
+      "files": 3,
+      "bytes": 48293,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/m2_b0_regulondb_tss_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/m2_b0_regulondb_tss_20260930",
+      "files": 11,
+      "bytes": 186864,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/meme_runs/regulondb_tss_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/meme_runs/regulondb_tss_20260930",
+      "files": 210,
+      "bytes": 7344665,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/motif_inputs_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/motif_inputs_20260930",
+      "files": 15,
+      "bytes": 1372781,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/motif_inputs_regulondb_tss_rebuild_20260930",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/motif_inputs_regulondb_tss_rebuild_20260930",
+      "files": 15,
+      "bytes": 1372781,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_external_validation_20261003",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_external_validation_20261003",
+      "files": 9,
+      "bytes": 233536763,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_external_validation_20261003_multi",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_external_validation_20261003_multi",
+      "files": 45,
+      "bytes": 1168705290,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_external_validation_20261003_paired",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_external_validation_20261003_paired",
+      "files": 45,
+      "bytes": 1168705400,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_external_validation_20261003_paired2",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_external_validation_20261003_paired2",
+      "files": 45,
+      "bytes": 1168705510,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_external_validation_20261003_sensitivity2",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_external_validation_20261003_sensitivity2",
+      "files": 9,
+      "bytes": 233537049,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_fimo_20261004",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_fimo_20261004",
+      "files": 44,
+      "bytes": 1257026521,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_fimo_20261004_attempt1",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_fimo_20261004_attempt1",
+      "files": 3,
+      "bytes": 673625,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_fimo_20261004_attempt2",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_fimo_20261004_attempt2",
+      "files": 44,
+      "bytes": 1257026521,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_fimo_20261004_initial_results",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_fimo_20261004_initial_results",
+      "files": 4,
+      "bytes": 316050,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_holdout_20261004",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_holdout_20261004",
+      "files": 316,
+      "bytes": 774015100,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    },
+    {
+      "original_path": "tmp/regulondb_sigma_holdout_fimo_sanitized",
+      "trash_path": "/Users/mac/.Trash/ml-pro-invalid-20261005/tmp/regulondb_sigma_holdout_fimo_sanitized",
+      "files": 44,
+      "bytes": 256298955,
+      "reason": "invalid RegulonDB derived data/results or definitively unused non-target assets"
+    }
+  ]
+}

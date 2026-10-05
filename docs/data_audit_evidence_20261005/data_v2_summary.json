@@ -1,0 +1,277 @@
+{
+  "schema": "pr01-02-data-v2",
+  "status": "data_rebuilt_no_motif_experiment",
+  "seed": 20261005,
+  "primary": "TJU six species; upstream TSS alignment accepted",
+  "auxiliary": "RegulonDB and DBTBS sigma annotation/analysis and source-disjoint holdout checks",
+  "tss_index_1based": 61,
+  "excluded_reasons": {
+    "invalid_81nt_ACGT": 4,
+    "split_record_conflict": 2,
+    "missing_or_invalid_sequence_TSS": 92,
+    "reference_window_mismatch": 1,
+    "multiple_or_conflicting_TSS_marks": 169,
+    "Location_ND_or_unresolved": 112,
+    "inconsistent_location_endpoints": 15
+  },
+  "counts": {
+    "dbtbs_bsub/core": {
+      "discovery.positive.fasta": 296,
+      "development.positive.fasta": 39,
+      "holdout.positive.fasta": 97,
+      "external_validation.positive.fasta": 1
+    },
+    "regulondb_ecoli/core": {
+      "discovery.positive.fasta": 1284,
+      "development.positive.fasta": 160,
+      "holdout.positive.fasta": 349,
+      "external_validation.positive.fasta": 250
+    },
+    "regulondb_ecoli/extended": {
+      "discovery.positive.fasta": 1421,
+      "development.positive.fasta": 191,
+      "holdout.positive.fasta": 408,
+      "external_validation.positive.fasta": 308
+    },
+    "tjupan_bacillus_subtilis/main": {
+      "discovery.positive.fasta": 473,
+      "discovery.natural_control.fasta": 559,
+      "development.positive.fasta": 67,
+      "development.natural_control.fasta": 77,
+      "holdout.positive.fasta": 151,
+      "holdout.natural_control.fasta": 173
+    },
+    "tjupan_baumannii/main": {
+      "discovery.positive.fasta": 1099,
+      "discovery.natural_control.fasta": 959,
+      "development.positive.fasta": 162,
+      "development.natural_control.fasta": 130,
+      "holdout.positive.fasta": 279,
+      "holdout.natural_control.fasta": 271
+    },
+    "tjupan_bradyrhizobium/main": {
+      "discovery.positive.fasta": 1364,
+      "discovery.natural_control.fasta": 1383,
+      "development.positive.fasta": 171,
+      "development.natural_control.fasta": 168,
+      "holdout.positive.fasta": 448,
+      "holdout.natural_control.fasta": 401
+    },
+    "tjupan_diphtheria/main": {
+      "discovery.positive.fasta": 1186,
+      "discovery.natural_control.fasta": 1143,
+      "development.positive.fasta": 156,
+      "development.natural_control.fasta": 167,
+      "holdout.positive.fasta": 311,
+      "holdout.natural_control.fasta": 345
+    },
+    "tjupan_escherichia_coli/main": {
+      "discovery.positive.fasta": 1143,
+      "discovery.natural_control.fasta": 1183,
+      "development.positive.fasta": 163,
+      "development.natural_control.fasta": 167,
+      "holdout.positive.fasta": 329,
+      "holdout.natural_control.fasta": 353
+    },
+    "tjupan_staphylococcus/main": {
+      "discovery.positive.fasta": 1480,
+      "discovery.natural_control.fasta": 801,
+      "development.positive.fasta": 248,
+      "development.natural_control.fasta": 131,
+      "holdout.positive.fasta": 478,
+      "holdout.natural_control.fasta": 230
+    }
+  },
+  "statistical_units": 22594,
+  "source_records_retained": 22757,
+  "sigma_associations": 22757,
+  "leakage_graph_links": 3430,
+  "cross_split_leakage_groups": 0,
+  "known_limits": [
+    "TJU alignment relies on upstream statement, not per-record genomic verification",
+    "DBTBS .2 matches accepted binding intervals; exact 2005 genome flank identity unverified",
+    "promoter confidence does not prove sigma association confidence",
+    "small sigma groups require post-split eligibility check",
+    "fitting edit-distance threshold is an operational isolation rule, not proof of biological independence"
+  ],
+  "sigma_groups": [
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma24",
+      "single_sigma_sequences": 66,
+      "discovery": 45,
+      "development": 8,
+      "holdout": 13,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma28",
+      "single_sigma_sequences": 12,
+      "discovery": 10,
+      "development": 1,
+      "holdout": 1,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma32",
+      "single_sigma_sequences": 52,
+      "discovery": 34,
+      "development": 5,
+      "holdout": 13,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma38",
+      "single_sigma_sequences": 110,
+      "discovery": 84,
+      "development": 10,
+      "holdout": 16,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma54",
+      "single_sigma_sequences": 21,
+      "discovery": 14,
+      "development": 1,
+      "holdout": 6,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "regulondb_ecoli",
+      "sigma": "Sigma70",
+      "single_sigma_sequences": 817,
+      "discovery": 583,
+      "development": 67,
+      "holdout": 167,
+      "eligibility": "confirmation_candidate"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigA",
+      "single_sigma_sequences": 249,
+      "discovery": 163,
+      "development": 24,
+      "holdout": 62,
+      "eligibility": "confirmation_candidate"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigB",
+      "single_sigma_sequences": 29,
+      "discovery": 22,
+      "development": 3,
+      "holdout": 4,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigD",
+      "single_sigma_sequences": 9,
+      "discovery": 5,
+      "development": 3,
+      "holdout": 1,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigE",
+      "single_sigma_sequences": 33,
+      "discovery": 22,
+      "development": 2,
+      "holdout": 9,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigF",
+      "single_sigma_sequences": 8,
+      "discovery": 7,
+      "development": 0,
+      "holdout": 1,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigG",
+      "single_sigma_sequences": 29,
+      "discovery": 24,
+      "development": 1,
+      "holdout": 4,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigH",
+      "single_sigma_sequences": 17,
+      "discovery": 10,
+      "development": 1,
+      "holdout": 6,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigI",
+      "single_sigma_sequences": 1,
+      "discovery": 1,
+      "development": 0,
+      "holdout": 0,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigK",
+      "single_sigma_sequences": 24,
+      "discovery": 18,
+      "development": 3,
+      "holdout": 3,
+      "eligibility": "exploratory_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigL",
+      "single_sigma_sequences": 3,
+      "discovery": 2,
+      "development": 1,
+      "holdout": 0,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigM",
+      "single_sigma_sequences": 1,
+      "discovery": 1,
+      "development": 0,
+      "holdout": 0,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigW",
+      "single_sigma_sequences": 12,
+      "discovery": 10,
+      "development": 0,
+      "holdout": 2,
+      "eligibility": "descriptive_only"
+    },
+    {
+      "source": "dbtbs_bsub",
+      "sigma": "SigX",
+      "single_sigma_sequences": 5,
+      "discovery": 4,
+      "development": 0,
+      "holdout": 1,
+      "eligibility": "descriptive_only"
+    }
+  ],
+  "annotation_candidate_links": 772,
+  "independent_fasta_boundary_verification": {
+    "includes_generated_controls": true,
+    "related_pairs": 0,
+    "training_sequences_including_controls": 24697,
+    "test_sequences_including_controls": 10680
+  }
+}

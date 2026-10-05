@@ -1,0 +1,67 @@
+{
+  "downloaded_pages_at_audit": 1062,
+  "sigma_promoter_rows": 740,
+  "all_regulatory_rows": 1498,
+  "location_ND": 112,
+  "coordinate_consistent": 613,
+  "bold_single_tss": 456,
+  "bold_coordinate_agree": 444,
+  "missing_strand": 0,
+  "versions": {
+    "NC_000964.1": {
+      "binding_sequence_exact_matches": 40,
+      "coordinate_and_binding_verified_records": 38,
+      "recoverable_81bp_records": 38,
+      "oriented_unique_81bp": 37,
+      "sigma_verified_counts": {
+        "SigA": 21,
+        "SigE": 5,
+        "SigB": 3,
+        "SigG": 4,
+        "SigW": 2,
+        "SigH": 1,
+        "SigK": 1,
+        "SigX": 1
+      }
+    },
+    "NC_000964.2": {
+      "binding_sequence_exact_matches": 698,
+      "coordinate_and_binding_verified_records": 613,
+      "recoverable_81bp_records": 613,
+      "oriented_unique_81bp": 593,
+      "sigma_verified_counts": {
+        "SigW": 25,
+        "SigX": 12,
+        "SigA": 303,
+        "SigL": 6,
+        "SigG": 54,
+        "SigE": 68,
+        "SigB": 36,
+        "SigK": 47,
+        "SigD": 13,
+        "SigH": 21,
+        "SigF": 25,
+        "SigI": 1,
+        "SigY": 1,
+        "SigM": 1
+      }
+    }
+  },
+  "location_patterns": {
+    "ND": 112,
+    "-36:+12": 1,
+    "-63:+10": 1,
+    "-50:+10": 2,
+    "-60:+12": 1,
+    "-43:+6": 1,
+    "-43:+11": 1,
+    "-38:+2": 1,
+    "-45:+4": 1,
+    "-37:+5": 1,
+    "-42:+4": 1,
+    "-39:+4": 1,
+    "-39:+1": 1,
+    "-38:+56": 1,
+    "-58:+10": 1
+  }
+}

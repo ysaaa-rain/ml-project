@@ -1,0 +1,445 @@
+evidence	promoter_confidence	sequence_id	sigma_association_evidence	sigma_id	sigma_raw	source_record_id
+Ramirez MI, et al. (2004): PE NB RT-PCR	experimental_page	dbtbs_bsub_core_0ba2ad2fd14630a8	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	ytkD.html:8
+Huang X & Helmann JD (1998): DB RG Huang X, et al. (1998): RO Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_c2d54a415a7d048a	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yrhH.html:7
+Huang X & Helmann JD (1998): RO Huang X, et al. (1998): RO Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_c2d54a415a7d048a	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	yrhH.html:8
+Matsuoka H, et al. (2006): PE NB	experimental_page	dbtbs_bsub_core_c9a32e1db5125d7c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lcfA-ysiAB-etfBA.html:13
+Holmberg C & Rutberg B (1991): PE	experimental_page	dbtbs_bsub_core_2c8e4076a462c87c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glpD.html:8
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_90a64d4511c49526	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	ydfR.html:7
+Ricca E, et al. (1992): DP Ireton K & Grossman AD (1992): PE RG DB OV	experimental_page	dbtbs_bsub_core_6f408d5e786e413f	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	bofA.html:7
+Engelmann S, et al. (1995): HB NB DB PE	experimental_page	dbtbs_bsub_core_f5fed123a3ffd242	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	katE-yxiS.html:8
+Gomez M & Cutting SM (1997): PE	experimental_page	dbtbs_bsub_core_4c306bb2d4b261c8	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	csbX-bofC.html:8
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_f452c4bef1ed8b92	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yraGF-adhB-yraED.html:11
+Predich M, et al. (1992): PE, in vitro addition of E-SigH Antoniewski C, et al. (1990): RG	experimental_page	dbtbs_bsub_core_89a40bf9e0650967	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	kinA.html:7
+Mekjian KR, et al. (1999): PE RG	experimental_page	dbtbs_bsub_core_150dcd3daf63d162	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	uxaC-yjmBCD-uxuA-yjmF-exuTR-uxaBA.html:19
+Silvaggi JM, et al. (2005): PE NB	experimental_page	dbtbs_bsub_core_e445a9d379a1812a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	txpA.html:7
+Stulke J, et al. (1997): RG NB PE	experimental_page	dbtbs_bsub_core_0cc8abc9b551141c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ptsGHI.html:10
+Rowland BM & Taber HW (1996): PE	experimental_page	dbtbs_bsub_core_cd5426fc6bacf792	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	dhbACEBF.html:12
+Feavers IM, et al. (1988): S1 DB, fumarase activity Tatti KM, et al. (1990): PE	experimental_page	dbtbs_bsub_core_003aab288e2535c0	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	citG.html:9
+Mantsala P, et al. (1992): PE	experimental_page	dbtbs_bsub_core_fde7c2aaac5c57ce	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	guaA.html:7
+Krispin O, et al. (1998): PE	experimental_page	dbtbs_bsub_core_b24feeda89db5dfd	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	galE.html:7
+Beier L, et al. (2002): PE HM	experimental_page	dbtbs_bsub_core_66bdec0f6e49230b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yurHG.html:9
+Sekowska A & Danchin A (2002): PE	experimental_page	dbtbs_bsub_core_eba4a3762545b3d4	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mtnKA.html:8
+Shin BS, et al. (1999): PE	experimental_page	dbtbs_bsub_core_392493dcd47df6e8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pta.html:9
+McQuade RS, et al. (2001): PE RG DB	experimental_page	dbtbs_bsub_core_f2d1e33176b05430	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapF-phrF.html:9
+Gaballa A, et al. (2002): PE	experimental_page	dbtbs_bsub_core_adaec4e024668ee2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ycdHI-yceA.html:9
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_adbf75412ef7d5a0	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yxeD.html:7
+Raposo MP, et al. (2004): RG PE	experimental_page	dbtbs_bsub_core_ab3313558a015086	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	xsa.html:9
+Stragier P (2003): personal communication: PE RG	experimental_page	dbtbs_bsub_core_406595c5fb599c06	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yqhV-spoIIIAABCDEFGH.html:18
+Foulger D & Errington J (1989): PE RG	experimental_page	dbtbs_bsub_core_85a34ab094cb765f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spoIIIE.html:7
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_a26ee3e07cf1eedf	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	yrrRS.html:9
+Ogura M, et al. (1997): PE HM	experimental_page	dbtbs_bsub_core_c190339743385950	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	med-comZ.html:9
+Chu F, et al. (2006): PE	experimental_page	dbtbs_bsub_core_f246415af5cfc524	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yqxM-sipW-tasA.html:9
+Henkin TM, et al. (1992): PE	experimental_page	dbtbs_bsub_core_a17af317a6534d5f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	tyrS.html:7
+Robichon D, et al. (2000): NB PE	experimental_page	dbtbs_bsub_core_ade9dc791ab39f6c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ykzB-ykoL.html:11
+Sekowska A, et al. (1998): PE	experimental_page	dbtbs_bsub_core_ef6dc517178d6adf	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	speE-speB.html:8
+Stulke J, et al. (1997): RG NB PE	experimental_page	dbtbs_bsub_core_256978383d162d01	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ptsGHI.html:11
+Schuch R, et al. (1999): PE	experimental_page	dbtbs_bsub_core_962b839f321a2605	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	drm-punA.html:9
+Whipple FW, et al. (1992): RO FT Le Grice SF & Sonenshein AL (1982): FT NB Moran CP Jr, et al. (1982): RO, in-vitro transcription Fukushima T, et al. (2003): PE NB RG	experimental_page	dbtbs_bsub_core_9a6d97baf1c02d30	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	veg.html:7
+Asai K, et al. (2001): NB DB PE	experimental_page	dbtbs_bsub_core_ef1d1fbaad689e40	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yabMNOPQ-divIC-yabR.html:13
+Cabrera-Hernandez A, et al. (1999): PE RG DB OV	experimental_page	dbtbs_bsub_core_50224837ca8eceb5	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspL.html:7
+Antelmann H, et al. (1996): PE HM	experimental_page	dbtbs_bsub_core_272e2f2c83a48fab	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ahpCF.html:9
+Sekowska A & Danchin A (2002): PE	experimental_page	dbtbs_bsub_core_10eda96ea4199e8c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mtnWXBD.html:11
+Zheng LB & Losick R (1990): PE	experimental_page	dbtbs_bsub_core_d9da0a0033167763	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotB.html:9
+Grundy FJ, et al. (1993): PE	experimental_page	dbtbs_bsub_core_61d216a2a24189d0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ackA.html:9
+Frandsen N & Stragier P (1995): RG PE DB OV	experimental_page	dbtbs_bsub_core_238ba8da2c883516	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIIP-yqxA.html:8
+Allmansberger R (1997): PE DP	experimental_page	dbtbs_bsub_core_dbf995194ebf2b2d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	fla-che.html:40
+Mantsala P, et al. (1992): PE	experimental_page	dbtbs_bsub_core_9daaa0d103ffad86	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	purA.html:8
+Martin I, et al. (1989): PE Debarbouille M, et al. (1991): DB RG	experimental_page	dbtbs_bsub_core_20bbba0ce59de449	source_label_not_independently_verified	bacillus_subtilis:SigL	SigL	levDEFG-sacC.html:14
+Kruger E, et al. (1996): NB PE	experimental_page	dbtbs_bsub_core_79220287475133e5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ctsR-mcsAB-clpC-radA-yacK.html:13
+Saxild HH, et al. (1995): PE	experimental_page	dbtbs_bsub_core_77dc78ed29025116	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	purT.html:7
+Ishikawa S, et al. (1998): PE	experimental_page	dbtbs_bsub_core_fe60102a69552e4c	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	lytE.html:7
+Varon D, et al. (1996): PE DB RG, plasmid integration	experimental_page	dbtbs_bsub_core_ba2dc8596ef2486c	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ytxGHJ.html:9
+Guillouard I, et al. (2002): PE	experimental_page	dbtbs_bsub_core_bd96a60828361996	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yvgRQ.html:9
+Wray LV Jr, et al. (1997): PE RG	experimental_page	dbtbs_bsub_core_f7751f4d985a025a	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	ureABC.html:14
+Derre I, et al. (1999): PE	experimental_page	dbtbs_bsub_core_ad6e1b40396f6528	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	clpE.html:12
+Kuwana R, et al. (2003): NB DB PE	experimental_page	dbtbs_bsub_core_a2bee6d81c2dad89	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	yjcB-yjcZ-spoVIF.html:11
+Quinn CL, et al. (1991): NB PE	experimental_page	dbtbs_bsub_core_13f40cc0545c5514	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pyrRPBCAAABKDFE.html:18
+Kemp EH, et al. (1991): RG DB OV PE RO	experimental_page	dbtbs_bsub_core_b578e9e0d96d144a	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	gerD.html:7
+Servant P, et al. (2005): PE	experimental_page	dbtbs_bsub_core_ad5b6a3a851181b1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gapB-speD.html:9
+Huang X & Helmann JD (1998): RG DB PE RO	experimental_page	dbtbs_bsub_core_49fc6b8175a85db6	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	rapD.html:9
+Chen NY, et al. (1993): PE	experimental_page	dbtbs_bsub_core_691e7ded333dd616	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spoVFAB-asd-dapG-dapA.html:12
+Wu JJ, et al. (1989): PE DP RG DB Wu JJ, et al. (1991): DP RG RO PE	experimental_page	dbtbs_bsub_core_2f595036325a838d	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	dacF-spoIIAAB-sigF.html:13
+Yamamoto H, et al. (2001): PE NB RG	experimental_page	dbtbs_bsub_core_dbd8ff77ae99e6b2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	malA-yfiA-malP.html:11
+Errington J, et al. (1989): RG Foulger D & Errington J (1991): PE RG	experimental_page	dbtbs_bsub_core_993a308bb6e190e1	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoVK.html:7
+Slack FJ, et al. (1991): PE	experimental_page	dbtbs_bsub_core_3717e132a7502e54	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	dppABCDE.html:13
+Melin L, et al. (1989): PE	experimental_page	dbtbs_bsub_core_103f2a1ec6daa8c4	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sdhCAB.html:9
+Wu JJ, et al. (1992): NB PE Schuch R & Piggot PJ (1994): RG	experimental_page	dbtbs_bsub_core_514b8f929bc7e41e	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	dacF-spoIIAAB-sigF.html:10
+Schuch R & Piggot PJ (1994): DB RG OV	experimental_page	dbtbs_bsub_core_514b8f929bc7e41e	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	dacF-spoIIAAB-sigF.html:11
+Kim HJ, et al. (2002): PE	experimental_page	dbtbs_bsub_core_8f7d87652de79d90	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ykuJK-ykzF-ykuL-ccpC.html:13
+Gardan R, et al. (1995): PE	experimental_page	dbtbs_bsub_core_6fced8053295ec76	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rocR.html:8
+Antelmann H, et al. (2000): NB PE	experimental_page	dbtbs_bsub_core_7db2115bdd0ac0b7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glpTQ.html:11
+Cao M, et al. (2001): PE RG DB OV Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_cb8c6e383b33abd4	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yndN.html:7
+Sekiguchi J, et al. (1995): PE NB DB	experimental_page	dbtbs_bsub_core_f437934750393c99	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	ybaK-cwlD.html:10
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_353517642ee5f1c8	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yfkJIH.html:10
+Jin S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_413a4bed9f6cfeea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citR.html:7
+Boylan SA, et al. (1991): PE DB RG	experimental_page	dbtbs_bsub_core_1373e064636d6c9b	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	csbA.html:8
+Henriques AO, et al. (1997): PE DB RG Reischl S, et al. (2001): RG HB DB	experimental_page	dbtbs_bsub_core_44be1bddac760e1c	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotM.html:8
+Cutting S, et al. (1989): PE RG	experimental_page	dbtbs_bsub_core_42074f78c0199323	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	gerE.html:7
+Yang M, et al. (1986): S1	experimental_page	dbtbs_bsub_core_f9edd67964b41200	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	degQ.html:9
+Popham DL, et al. (1994): PE	experimental_page	dbtbs_bsub_core_cc5f6c158edc4a26	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pbpD-yuxK.html:8
+Zheng LB & Losick R (1990): S1 RG	experimental_page	dbtbs_bsub_core_0710c2f2267154d3	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotD.html:9
+Decatur A & Losick R (1996): RG Rong S, et al. (1986): dinucleotide priming	experimental_page	dbtbs_bsub_core_1cd26aa95d9363dc	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	csfC.html:7
+Chen L & Helmann JD (1994): RG DB Singer V (1987): Ph.D. thesis. University of California, Berkeley: PE?	experimental_page	dbtbs_bsub_core_c648ac4df22b0f89	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	yvyC-fliDST.html:10
+Darmon E, et al. (2002): PE	experimental_page	dbtbs_bsub_core_e1fd6875b30f4c73	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cssRS.html:10
+Bohannon DE, et al. (1989): S1 Belitsky BR & Sonenshein AL (1997): PE	experimental_page	dbtbs_bsub_core_80658004858af746	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gltAB.html:11
+Ogura M, et al. (1997): PE HM	experimental_page	dbtbs_bsub_core_d9cd9789d0fb01a3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	med-comZ.html:8
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_92b62a9d8d87ace9	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yhcQ.html:7
+Luo D, et al. (1997): PE NB	experimental_page	dbtbs_bsub_core_3be839d09df1dbe1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	valS-folC.html:8
+West JT, et al. (2000): PE DP, Western blot Estacio W, et al. (1998): PE	experimental_page	dbtbs_bsub_core_101463e41079a20e	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	fla-che.html:38
+Hayashi K, et al. (2006): PE	experimental_page	dbtbs_bsub_core_c3203172750b14fc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rapH-phrH.html:10
+Schock F & Dahl MK (1996): PE	experimental_page	dbtbs_bsub_core_ec009cfbae4f5210	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	trePAR.html:10
+Roels S, et al. (1992): NB RG DB OV PE	experimental_page	dbtbs_bsub_core_59b38cd2f2ea112d	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIVA.html:7
+Trach K, et al. (1988): S1 Lewandoski M, et al. (1986): S1	experimental_page	dbtbs_bsub_core_721ac29c5ef7c9f0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spo0F.html:7
+Christiansen LC, et al. (1997): PE HM	experimental_page	dbtbs_bsub_core_80e6166752a88520	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	xpt-pbuX.html:9
+Schuch R, et al. (1999): PE	experimental_page	dbtbs_bsub_core_c85d16d0349424ba	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	drm-punA.html:8
+Chibazakura T, et al. (1991): S1 Eymann C, et al. (2001): NB	experimental_page	dbtbs_bsub_core_7f6b99b6e57e33e0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spo0A.html:7
+Fujita Y, et al. (1986): S1	experimental_page	dbtbs_bsub_core_36eed70446e6810b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gntRKPZ.html:13
+Rong S, et al. (1986): RO S1	experimental_page	dbtbs_bsub_core_c2a5e00f908ba88c	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIID.html:7
+Perego M, et al. (1988): PE NB RG	experimental_page	dbtbs_bsub_core_a032a3114b7dbf1c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	abrB.html:8
+Dartois V, et al. (1998): PE RG	experimental_page	dbtbs_bsub_core_6cf2c0e47935a8c2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	wapA-yxxG.html:10
+Margot P, et al. (1999): DB SDS-PAGE Ohnishi R, et al. (1999): PE DB NB	experimental_page	dbtbs_bsub_core_cd9626c39ea075d5	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	lytF.html:7
+Gilman MZ, et al. (1984): RNA probes Estacio W, et al. (1998): PE	experimental_page	dbtbs_bsub_core_747f22d2323a8765	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	fla-che.html:39
+McQuade RS, et al. (2001): PE RG	experimental_page	dbtbs_bsub_core_0346364171f10446	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rapE-phrE.html:9
+Roels S, et al. (1995): PE NB DB	experimental_page	dbtbs_bsub_core_a7483c08b039ad5c	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cgeAB.html:13
+Sun G, et al. (1996): PE	experimental_page	dbtbs_bsub_core_ecef2875a7a372ba	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	resABCDE.html:15
+Gonzy-Treboul G, et al. (1992): PE RG Fukuchi K, et al. (2000): DP RG	experimental_page	dbtbs_bsub_core_04b586dca879bfb9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ftsAZ.html:11
+Zhang Y, et al. (1997): PE NB	experimental_page	dbtbs_bsub_core_6fcd42bdf8073a65	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ywbI-thiME.html:9
+Schiott T & Hederstedt L (2000): PE NB	experimental_page	dbtbs_bsub_core_f05d30123c592277	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ccdA-yneIJ.html:9
+Sato T & Kobayashi Y (1998): PE HM	experimental_page	dbtbs_bsub_core_eb847cafc60502c2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	arsR-yqcK-arsBC.html:11
+Takamatsu H, et al. (1999): PE	experimental_page	dbtbs_bsub_core_4cf64b5587e1d04e	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	safA-coxA.html:8
+Ellermeier CD, et al. (2006): PE	experimental_page	dbtbs_bsub_core_4c8b5a3cc4c24c6c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sdpRI.html:9
+Sun D & Setlow P (1993): PE	experimental_page	dbtbs_bsub_core_ed12f07c80365cbc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	nifS-yrxA.html:8
+Cao M, et al. (2002): AR Cao M & Helmann JD (2004): RO PE	experimental_page	dbtbs_bsub_core_98d6bef120e2925b	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	ywnJ.html:8
+Cao M & Helmann JD (2004): ROMA RG PE Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_98d6bef120e2925b	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	ywnJ.html:9
+Harry EJ, et al. (1994): PE DB SDM RG DP NB	experimental_page	dbtbs_bsub_core_bb1d2472f35efe20	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	murE-mraY-murD-spoVE-murG-murB-divIB-ylxWX-sbp.html:20
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_4bc80a03a2dd2795	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	dctB-ydbD.html:8
+Morohoshi F, et al. (1993): PE	experimental_page	dbtbs_bsub_core_efde358c620c36bd	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	adaAB.html:9
+Holmberg C, et al. (1990): PE	experimental_page	dbtbs_bsub_core_f6c5351a3e225d0c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glpFK.html:10
+Nakano MM, et al. (1991): PE	experimental_page	dbtbs_bsub_core_412fe696982b64f9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	srfAA-srfAB-comS-srfAC-srfAD.html:15
+Schujman GE, et al. (2003): PE	experimental_page	dbtbs_bsub_core_44a8eefb4951c2dc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	fabHAF.html:8
+O'Reilly M, et al. (1994): PE Smith MC, et al. (1986): S1, mung-bean nuclease mapping	experimental_page	dbtbs_bsub_core_c180878a6f782e9f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	argCJBD-carAB-argF.html:17
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_ca7144caa797f7bc	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ydfO.html:7
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_8bf0684d999843b1	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	yuiC.html:7
+Cao M & Helmann JD (2004): ROMA RG	experimental_page	dbtbs_bsub_core_e4e4a1be67374f28	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	pssA-ybfM-psd.html:11
+Varon D, et al. (1993): PE DB	experimental_page	dbtbs_bsub_core_ff3d11f785ddd890	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	gtaB.html:8
+Gerth U, et al. (1998): PE	experimental_page	dbtbs_bsub_core_2cae3be54c2b91c7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	clpX.html:8
+De Saizieu A, et al. (1997): PE RG NB	experimental_page	dbtbs_bsub_core_1b58b9006f9baf4f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pabBAC-sul-folBK-yazB-yacF-lysS.html:15
+Renna MC, et al. (1993): PE	experimental_page	dbtbs_bsub_core_66a79c370c059251	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	alsSD.html:10
+O'Reilly M, et al. (1994): PE	experimental_page	dbtbs_bsub_core_3ddf4cd9046f5358	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rbsRKDACB.html:15
+Margot P, et al. (1994): PE SDS-PAGE	experimental_page	dbtbs_bsub_core_a01aac1976e7647d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pmi.html:7
+Soldo B, et al. (1999): PE	experimental_page	dbtbs_bsub_core_b558e80410906098	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	tuaABCDEFGH.html:15
+Derre I, et al. (1999): PE	experimental_page	dbtbs_bsub_core_fe6ee2b447e01adf	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	clpE.html:13
+Price CW, et al. (2001): RACE-PCR	experimental_page	dbtbs_bsub_core_dc95e7cdf3939931	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yfkJIH.html:9
+Moran CP Jr, et al. (1982): RO, dinucleotide priming Henkin TM, et al. (1988): Genetics and biotechnology of Bacilli, vol.2 p.63-67: SDM RG RO Whipple FW, et al. (1992): RO	experimental_page	dbtbs_bsub_core_05b3d931ff35d8e8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gcaD-prs-ctc.html:9
+Nugroho FA, et al. (1999): RG PE HM	experimental_page	dbtbs_bsub_core_ead71e426f5191e8	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cwlH.html:8
+Henriques AO, et al. (1995): PE DB RG	experimental_page	dbtbs_bsub_core_0b7b75ba67f19880	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	cotJABC-yesJK.html:11
+Kuwana R, et al. (2002): RG Eichenberger P, et al. (2003): AR, 5'-RACE-PCR	experimental_page	dbtbs_bsub_core_ff8c346476498240	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	ydcC.html:7
+Whipple FW, et al. (1992): RO	experimental_page	dbtbs_bsub_core_700614a2577d51a9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citB.html:12
+Antelmann H, et al. (1997): NB PE	experimental_page	dbtbs_bsub_core_be897b68bd393df0	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	nadE.html:8
+Eichenberger P, et al. (2004): Race-PCR	experimental_page	dbtbs_bsub_core_2bafb1a73b5c7300	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	yngK.html:7
+Wang PZ & Doi RH (1984): S1 RO Song BH & Neuhard J (1989): HM	experimental_page	dbtbs_bsub_core_bb68072522710571	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cdd-era.html:8
+Wang LF, et al. (1984): S1 RO Song BH & Neuhard J (1989): HM	experimental_page	dbtbs_bsub_core_bb68072522710571	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	cdd-era.html:9
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_729454a84a667dd8	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yvdQ.html:7
+Zheng LB & Losick R (1990): PE S1 RG DP Eichenberger P, et al. (2004): GS	experimental_page	dbtbs_bsub_core_d04a67d8cb9ad084	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotE.html:8
+Wang LF, et al. (1987): S1	experimental_page	dbtbs_bsub_core_71eaf5cbf249113b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yqxD-dnaG-sigA.html:9
+Shimotsu H & Henner DJ (1986): S1 Steinmetz M & Aymerich S (1986): DP, levansucrase activity	experimental_page	dbtbs_bsub_core_d52b0eed3ebbab2d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sacB-yveBA.html:12
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_9d34f9d9e0ee0e26	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yuaFGI.html:9
+Sakaguchi R, et al. (1988): S1	experimental_page	dbtbs_bsub_core_0b4e887f7ea9c424	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	tetLB.html:8
+Corfe BM, et al. (1994): PE	experimental_page	dbtbs_bsub_core_06588c97cd7288a8	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	gerBABC.html:9
+Kuwana R, et al. (2003): NB DB PE	experimental_page	dbtbs_bsub_core_3663067b11c5f568	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yjcA.html:7
+Servant P, et al. (2005): PE	experimental_page	dbtbs_bsub_core_c0bc8e5bde1832a5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pckA.html:8
+Akbar S & Price CW (1996): RG Huang X & Helmann JD (1998): PE RG	experimental_page	dbtbs_bsub_core_6c11169e185f76df	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	csbB.html:7
+Kunkel B, et al. (1989): RG DB Tatti KM, et al. (1991): PE SDM RG DB OV Decatur A, et al. (1997): RG	experimental_page	dbtbs_bsub_core_e391b9fe5a0b653f	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	usd-spoIIID-mbl-flhOP.html:11
+Fujita Y, et al. (1998): PE	experimental_page	dbtbs_bsub_core_8559682da7e0b4ef	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	fbp.html:7
+Sato T, et al. (1994): PE S1	experimental_page	dbtbs_bsub_core_5d881eac8b46d627	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIVCA.html:7
+Drzewiecki K, et al. (1998): PE NB DB Eymann C & Hecker M (2001): PE	experimental_page	dbtbs_bsub_core_342a4291e30f5e80	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yvyD.html:7
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_b7c0b4323e70fc71	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yobJ.html:7
+Sarsero JP, et al. (2000): PE	experimental_page	dbtbs_bsub_core_39e8d21f598046d9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yhaG.html:7
+Sekowska A, et al. (2000): PE NB	experimental_page	dbtbs_bsub_core_56fbf5e1ebfb46d1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gapB-speD.html:10
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_31e9b84e91bc40d3	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yuzA.html:7
+Homuth G, et al. (1999): PE NB	experimental_page	dbtbs_bsub_core_6f5bfd2e001a2697	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	hemZ.html:9
+Kuwana R, et al. (2002): SDS-PAGE, RG Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_db7eebd0b9425a4f	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yhcV.html:7
+Auger S (2003): Thesis: PE Even S, et al. (2006): PE	experimental_page	dbtbs_bsub_core_6736f212a82e3343	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yrrT-mtn-yrhABC.html:11
+Aguilar PS, et al. (1999): PE HM	experimental_page	dbtbs_bsub_core_d38f72abf66add23	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	des.html:8
+Schulz A, et al. (1997): PE NB	experimental_page	dbtbs_bsub_core_3613f20526b705b5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	htpG.html:8
+Smith K, et al. (1993): RG DB PE RO, in-vitro transcription, OV	experimental_page	dbtbs_bsub_core_74de924b5fe0230a	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIIM.html:7
+Baranova NN, et al. (1999): RO	experimental_page	dbtbs_bsub_core_249bda19c3fc4eb0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	blt-bltD.html:10
+Belitsky BR & Sonenshein AL (1998): PE	experimental_page	dbtbs_bsub_core_3fc49c30d289564d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gudB.html:7
+Schiott T & Hederstedt L (2000): PE NB	experimental_page	dbtbs_bsub_core_35bf7199ae44b70c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ccdA-yneIJ.html:11
+Belitsky BR & Sonenshein AL (1997): PE	experimental_page	dbtbs_bsub_core_0b60ccf6975080e3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gltR.html:9
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_047cd13bb02a9cd5	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yrrD.html:7
+Gomez M, et al. (1996): PE DB RG	experimental_page	dbtbs_bsub_core_7bc9aa9d4ad371af	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	spoIVB.html:7
+Gomez M, et al. (1996): PE DB RG	experimental_page	dbtbs_bsub_core_7bc9aa9d4ad371af	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	spoIVB.html:8
+Schnetz K, et al. (1996): PE	experimental_page	dbtbs_bsub_core_74093c37f51cf5dd	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	licT-bglS.html:11
+Huang X, et al. (1997): RO, in-vitro transcription, PE DB RG Huang X & Helmann JD (1998): SDM RG DB PE	experimental_page	dbtbs_bsub_core_b88e63af220c116b	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	sigX-rsiX.html:9
+Sun D & Setlow P (1993): PE	experimental_page	dbtbs_bsub_core_09dd4c8ba7bc09c6	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	nadBCA.html:9
+Matsumoto T, et al. (2005): NB PE RACE-PCR	experimental_page	dbtbs_bsub_core_1732506bbac23b7c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ylaABCD.html:11
+Crutz AM & Steinmetz M (1992): PE	experimental_page	dbtbs_bsub_core_a10efd4241f739c2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sacXY.html:11
+Yoshida K, et al. (1999): NB PE	experimental_page	dbtbs_bsub_core_41815df9927fe319	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	asnO.html:7
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_6901d7d50287d8c1	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ywmE.html:7
+Sa Nogueira I & Ramos SS (1997): PE HM	experimental_page	dbtbs_bsub_core_0ae6c956a3d4cdf5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	araABDLMNPQ-abfA.html:18
+Kempf B, et al. (1996): PE	experimental_page	dbtbs_bsub_core_e49352f30490cc9d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	amhX.html:7
+McQuade RS, et al. (2001): PE RG DB	experimental_page	dbtbs_bsub_core_9d885dd9226ab16e	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapE-phrE.html:10
+Petersohn A, et al. (1999): NB PE DB 2D-PAGE	experimental_page	dbtbs_bsub_core_e0774d83207a7dd7	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	katX.html:8
+Nilsson RP, et al. (1994): S1	experimental_page	dbtbs_bsub_core_985497388ed40f60	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glpTQ.html:9
+Deuerling E, et al. (1995): PE	experimental_page	dbtbs_bsub_core_70674ca5339f2fea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ftsH.html:7
+Yu J, et al. (1995): PE HM	experimental_page	dbtbs_bsub_core_5bcaee6240f23d4b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	qcrABC.html:10
+Popham DL, et al. (1993): PE	experimental_page	dbtbs_bsub_core_5eb05bc57612da6d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pbpF.html:7
+Errington J, et al. (1992): PE RG	experimental_page	dbtbs_bsub_core_666dd7e391a36890	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spoIIIJ-jag.html:8
+Cabrera-Hernandez A & Setlow P (2000): PE	experimental_page	dbtbs_bsub_core_1b59e97126764790	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspK.html:7
+Stephens MA, et al. (1984): S1 DP RG DB	experimental_page	dbtbs_bsub_core_f6e924d0656980ad	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspF.html:7
+Bagyan I, et al. (1998): PE RG Petersohn A, et al. (1999): 2D-PAGE	experimental_page	dbtbs_bsub_core_2b17d905bac0c3bc	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	katX.html:9
+Petersohn A, et al. (1999): HB PE	experimental_page	dbtbs_bsub_core_b2e461bb3b5d3d88	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	gabTD.html:10
+Petersohn A, et al. (1999): PE HB Antelmann H, et al. (2000): PE NB	experimental_page	dbtbs_bsub_core_f09c3556dc31a575	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yjbCD.html:8
+Huang X & Helmann JD (1998): PE RO RG Jarmer H, et al. (2001): HM	experimental_page	dbtbs_bsub_core_d59578e8446625f3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rapD.html:8
+Wang LF, et al. (1987): S1	experimental_page	dbtbs_bsub_core_82e1287a21b69715	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yqxD-dnaG-sigA.html:10
+Fredrick KL & Helmann JD (1994): PE DB RG, in-vitro transcription	experimental_page	dbtbs_bsub_core_8f5b60fc07e381f2	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	cheV.html:7
+Zhang J, et al. (1994): NB PE DB RO	experimental_page	dbtbs_bsub_core_86c973796d10f50f	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotVWX.html:10
+Winstedt L, et al. (1998): PE RG NB	experimental_page	dbtbs_bsub_core_e72b843a494a35db	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cydABCD.html:12
+Amaya EI & Piggot PJ (2001): PE Londono-Vallejo JA, et al. (1997): DB	experimental_page	dbtbs_bsub_core_67a8fe9203485bd0	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	spoIIQ.html:7
+Paul S, et al. (2004): PE, In-vitro reconstitution, DB (unclear result)	experimental_page	dbtbs_bsub_core_da7f3c0608c35165	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	phoPR.html:18
+Msadek T, et al. (1990): PE	experimental_page	dbtbs_bsub_core_89ecb38b4ff0148f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	degSU.html:8
+Albano M, et al. (1989): PE	experimental_page	dbtbs_bsub_core_5dd7cccc54d589c3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comGABCDEFG-yqzE.html:17
+Brakhage AA, et al. (1990): PE S1	experimental_page	dbtbs_bsub_core_c6bf2a4b574cb040	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pheST.html:8
+Hayashi K, et al. (2006): PE	experimental_page	dbtbs_bsub_core_c204793b69b45448	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rapG-phrG.html:9
+Erwin KN, et al. (2005): PE	experimental_page	dbtbs_bsub_core_f1a08ae721706b38	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ytlI.html:10
+Ragkousi K, et al. (2003): PE RG	experimental_page	dbtbs_bsub_core_a723fdca1013c0b5	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	ywdL.html:7
+Kong L, et al. (1993): PE	experimental_page	dbtbs_bsub_core_a18a06666ab8afa6	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mecA.html:7
+Ferson AE, et al. (1996): PE HM	experimental_page	dbtbs_bsub_core_ab5345ed831420ec	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gabP.html:8
+Beier L, et al. (2002): PE HM	experimental_page	dbtbs_bsub_core_f4d81ad6a0709a55	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pucRJKLM.html:12
+Ferson AE, et al. (1996): PE HM	experimental_page	dbtbs_bsub_core_9d5c52bb0fa0ffad	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gabP.html:9
+Feavers IM, et al. (1988): S1 Tatti KM, et al. (1990): PE Price VA, et al. (1990): DB	experimental_page	dbtbs_bsub_core_0b104549c8fd9755	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citG.html:8
+Scharf C, et al. (1998): PE, 2D-gel Petersohn A, et al. (1999): HB	experimental_page	dbtbs_bsub_core_9a3039245c2a72a0	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	trxA.html:9
+Sarsero JP, et al. (2000): PE	experimental_page	dbtbs_bsub_core_41b76e09c674d652	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rtpA-ycbK.html:9
+Huang X & Helmann JD (1998): PE RG Huang X, et al. (1998): RO	experimental_page	dbtbs_bsub_core_175bcd2ea2263ee4	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	abh.html:8
+LaCelle M, et al. (1996): PE DP RG Nakano MM, et al. (2006): PE	experimental_page	dbtbs_bsub_core_1edc8da3b582b0a5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	hmp.html:8
+McQuade RS, et al. (2001): PE RG DB	experimental_page	dbtbs_bsub_core_5c6ce2f66e66fe9e	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapE-phrE.html:11
+Cutting S, et al. (1991): PE	experimental_page	dbtbs_bsub_core_06d485c4aaa12e15	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotF.html:7
+Sekowska A & Danchin A (2002): PE	experimental_page	dbtbs_bsub_core_d15d85b8bcf10615	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mtnV.html:7
+Burkholder WF, et al. (2001): PE RG	experimental_page	dbtbs_bsub_core_622ede2444a72fdb	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sda.html:9
+Gaur NK, et al. (1988): PE HM Shafikhani SH, et al. (2002): PE	experimental_page	dbtbs_bsub_core_f8ce2fa963a01405	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sinIR.html:11
+Jin S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_97e2f0f25b1bf8be	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citZ-icd-mdh.html:12
+Struck JC, et al. (1989): S1	experimental_page	dbtbs_bsub_core_c94ae7322b918d76	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yaaJ-scr.html:9
+Urtiz-Estrada N, et al. (2003): PE NB RT-PCR	experimental_page	dbtbs_bsub_core_21353889dec56b85	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yqfSU.html:8
+Lazazzera BA, et al. (1999): PE	experimental_page	dbtbs_bsub_core_6c2abe31101de325	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rapC-phrC.html:10
+Riethdorf S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_e9623f8193af34e0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lonA-ysxC.html:10
+Gardan R, et al. (1995): PE	experimental_page	dbtbs_bsub_core_0fcba0431054cde6	source_label_not_independently_verified	bacillus_subtilis:SigL	SigL	rocDEF.html:12
+Gao H, et al. (2002): NB PE Hemila H, et al. (1990): NB	experimental_page	dbtbs_bsub_core_4b605fb92095125a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pdhABCD.html:11
+Ishikawa S, et al. (1998): PE	experimental_page	dbtbs_bsub_core_0cf1b276406d69b8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lytE.html:8
+Hippler B, et al. (1997): PE	experimental_page	dbtbs_bsub_core_60fba3476102cddc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lepA-hemN-hrcA-grpE-dnaKJ-yqeTUV.html:15
+Kodama T, et al. (1999): NB PE Kobayashi K, et al. (2001): AR	experimental_page	dbtbs_bsub_core_e4779b38e09f1d01	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yaaH.html:7
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_b3df5d74f56f0610	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ywjC.html:7
+Petersohn A, et al. (1999): HB PE	experimental_page	dbtbs_bsub_core_e5f400f6f8de25f5	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yhdF.html:7
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_bebf1b31befd9c3c	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yjoB.html:7
+Pujic P, et al. (1998): PE	experimental_page	dbtbs_bsub_core_db8af39a8e3babd7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	kdgRKAT.html:11
+Huang X, et al. (1998): RO Cao M, et al. (2002): ROMA AR RG PE	experimental_page	dbtbs_bsub_core_7d4ab0bb11e39295	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	ywbLMN.html:10
+Huang X & Helmann JD (1998): RO PE Huang X, et al. (1998): RO	experimental_page	dbtbs_bsub_core_7d4ab0bb11e39295	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	ywbLMN.html:11
+Ebbole DJ & Zalkin H (1987): S1 PE	experimental_page	dbtbs_bsub_core_6f6446b7ed912162	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	purEKBCSQLFMNHD.html:19
+Micka B, et al. (1991): PE Micka B & Marahiel MA (1992): PE NB Fernandez S & Alonso JC (1999): RG	experimental_page	dbtbs_bsub_core_8bde36b216b3390f	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	hbs.html:11
+Sun DX, et al. (1991): PE RG	experimental_page	dbtbs_bsub_core_8d6e5863a10aab48	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	spoIIGA-sigE-sigG.html:15
+Sun DX, et al. (1991): PE RG	experimental_page	dbtbs_bsub_core_8d6e5863a10aab48	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	spoIIGA-sigE-sigG.html:16
+Huang X, et al. (1999): S1	experimental_page	dbtbs_bsub_core_9571d32ab22eb9a0	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yxzE.html:8
+Volker U, et al. (1998): PE HM	experimental_page	dbtbs_bsub_core_dccf4ca03cd1642b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yklA.html:8
+Trach K, et al. (1989): S1	experimental_page	dbtbs_bsub_core_bc41d7d0760497f9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spo0B-obg.html:8
+Ali NO, et al. (2001): PE HM	experimental_page	dbtbs_bsub_core_a7a45131c45395c8	source_label_not_independently_verified	bacillus_subtilis:SigL	SigL	acoABCL.html:12
+Strauch MA, et al. (1988): RO	experimental_page	dbtbs_bsub_core_42eaa371353368b2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glnRA.html:10
+Yoshida KI, et al. (1997): PE	experimental_page	dbtbs_bsub_core_4e075fab78334012	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	iolRS.html:10
+Cabrera-Hernandez A & Setlow P (2000): PE	experimental_page	dbtbs_bsub_core_260ddc8adeedb788	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspI.html:7
+Lazarevic V, et al. (1992): PE Huang X & Helmann JD (1998): RG PE RO	experimental_page	dbtbs_bsub_core_08bda2c99b5822bc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lytR.html:8
+LeDeaux JR, et al. (1995): PE Kobayashi K, et al. (1995): PE	experimental_page	dbtbs_bsub_core_11066f3e95c7986c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	kinC.html:7
+Van Sinderen D, et al. (1994): PE	experimental_page	dbtbs_bsub_core_89ab3601fa8ac055	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comK.html:14
+Cabrera-Hernandez A, et al. (1999): PE DB OV RG	experimental_page	dbtbs_bsub_core_8a4a22c637647f42	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspN-tlp.html:9
+Micka B, et al. (1991): PE NB Micka B & Marahiel MA (1992): PE NB Fernandez S & Alonso JC (1999): RG PE	experimental_page	dbtbs_bsub_core_d5153844984277ea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	hbs.html:9
+McQuade RS, et al. (2001): PE RG DB	experimental_page	dbtbs_bsub_core_ded59c0e5907f970	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapK-phrK.html:8
+Petersohn A, et al. (1999): PE RG	experimental_page	dbtbs_bsub_core_47d2cdeb8a491885	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	bmrU-bmr-bmrR.html:9
+McQuade RS, et al. (2001): PE RG DB Ogura M, et al. (2003): DB NB RG	experimental_page	dbtbs_bsub_core_1478640e036e0224	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapG-phrG.html:10
+Petersohn A, et al. (1999): PE NB 2D-gel	experimental_page	dbtbs_bsub_core_56695775e253190c	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ydaDEFG.html:11
+Eichenberger P, et al. (2003): AR, 5'-RACE-PCR	experimental_page	dbtbs_bsub_core_5cf240f92a00f0e3	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yqfCD.html:8
+Sandman K, et al. (1988): RG DP S1	experimental_page	dbtbs_bsub_core_60150ba1e82823d4	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotA.html:8
+Jin S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_c890b4346c03f247	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citZ-icd-mdh.html:13
+Eder S, et al. (1999): PE	experimental_page	dbtbs_bsub_core_99f7f9ee26c6c5b7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	phoD.html:8
+Henriques AO, et al. (1997): PE HM OV DB RG	experimental_page	dbtbs_bsub_core_8f9b814f5e8b18ae	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yteV.html:7
+Bagyan I, et al. (1998): DB OV PE RG	experimental_page	dbtbs_bsub_core_cb8975beecd17a84	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspJ.html:7
+Qin X, et al. (1996): PE	experimental_page	dbtbs_bsub_core_324baeb0b4deda5d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	menBEC.html:12
+Weir J, et al. (1991): PE	experimental_page	dbtbs_bsub_core_7231d94d9d77331f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sigH.html:8
+Wetzstein M, et al. (1992): PE NB Homuth G, et al. (1997): NB	experimental_page	dbtbs_bsub_core_d831e470618beda7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lepA-hemN-hrcA-grpE-dnaKJ-yqeTUV.html:18
+Trach KA & Hoch JA (1993): PE	experimental_page	dbtbs_bsub_core_92b4b76a8a2e8dbc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	kinB-kapB.html:9
+Paul S, et al. (2001): PE DB Mueller JP & Taber HW (1989): S1	experimental_page	dbtbs_bsub_core_60443aba927f96b3	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	ctaA.html:10
+Bagyan I, et al. (1998): PE DB OV RG	experimental_page	dbtbs_bsub_core_954deecd8ab02ea9	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	yhcN.html:7
+Bagyan I, et al. (1998): PE DB OV RG	experimental_page	dbtbs_bsub_core_954deecd8ab02ea9	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yhcN.html:8
+Wendrich TM, et al. (1997): PE	experimental_page	dbtbs_bsub_core_e365baa66d245063	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	relA-yrvI.html:8
+Cabrera-Hernandez A & Setlow P (2000): PE	experimental_page	dbtbs_bsub_core_bba2e45eb636482b	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspOP.html:8
+Yoshida KI, et al. (2000): NB PE	experimental_page	dbtbs_bsub_core_e4dda028e03de313	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ytrABCDEF.html:12
+Grundy FJ, et al. (1990): PE	experimental_page	dbtbs_bsub_core_b15e4e0770f6de99	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rpsD.html:7
+Antelmann H, et al. (1997): PE	experimental_page	dbtbs_bsub_core_e3549a9c12f5ac55	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	nadE.html:7
+Gaballa A, et al. (2002): PE	experimental_page	dbtbs_bsub_core_84dd417c8e2a2948	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yciABC.html:11
+Herrler M, et al. (1994): PE	experimental_page	dbtbs_bsub_core_1c4407f77cf4bab2	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ppiB.html:7
+Auger S, et al. (2002): PE	experimental_page	dbtbs_bsub_core_0e5e92df8dafa46f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yjcIJ.html:8
+Zhang J, et al. (1994): NB PE DB RO	experimental_page	dbtbs_bsub_core_99013d44fc3df9d1	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotVWX.html:13
+Moldover B, et al. (1991): PE Sun DX, et al. (1989): DB RG	experimental_page	dbtbs_bsub_core_9c3cc423ec1465b1	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	spoVAABCDEF-lysA.html:13
+Matsuoka H, et al. (2006): PE NB	experimental_page	dbtbs_bsub_core_bb482769c888cf21	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yhfL.html:8
+Weinrauch Y, et al. (1989): PE	experimental_page	dbtbs_bsub_core_abcad526e0b9b317	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yuxH.html:7
+Kenney TJ, et al. (1989): PE	experimental_page	dbtbs_bsub_core_0d578393adbcde98	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spoIIGA-sigE-sigG.html:9
+Chung KM, et al. (2004): PE RG	experimental_page	dbtbs_bsub_core_adfd8c4b409d850c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ezrA.html:8
+McQuade RS, et al. (2001): PE RG DB	experimental_page	dbtbs_bsub_core_27472703561d982d	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapI-phrI.html:9
+Shimotsu H & Henner DJ (1984): S1 DP RG Shimotsu H, et al. (1986): S1	experimental_page	dbtbs_bsub_core_cdccc2e2972286a4	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	trpEDCFBA-hisC-tyrA-aroE.html:16
+Belitsky BR & Sonenshein AL (2002): PE	experimental_page	dbtbs_bsub_core_1dc2eb4818f9715a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gabR.html:8
+Antelmann H, et al. (1997): 2D-PAGE, NB PE DB	experimental_page	dbtbs_bsub_core_396da27afda34e05	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	dps.html:7
+Carter HL 3rd, et al. (1988): PE DB RG	experimental_page	dbtbs_bsub_core_17e47e1a392f38fd	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	yqxD-dnaG-sigA.html:14
+Sun DX, et al. (1991): PE	experimental_page	dbtbs_bsub_core_32a70db45859cbb9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ansAB.html:9
+Illing N & Errington J (1991): RG DB PE OV	experimental_page	dbtbs_bsub_core_3e3a825c0d09de99	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yqhV-spoIIIAABCDEFGH.html:16
+Zuber U, et al. (2001): DB PE Asai K, et al. (2007): DB RG PE DP NB	experimental_page	dbtbs_bsub_core_a1b8ecb6878276b4	source_label_not_independently_verified	bacillus_subtilis:SigI	SigI	sigI-rsgI.html:8
+Schujman GE, et al. (2006): PE	experimental_page	dbtbs_bsub_core_f61bc82d0f452a68	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	fapR-plsX-fabDG.html:10
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_93b5da0b5f842573	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	yhfM.html:7
+Moriyama R, et al. (1999): NB PE HB DB	experimental_page	dbtbs_bsub_core_c2ee7abb48038f6f	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sleB-ypeB.html:8
+Ramirez MI, et al. (2004): PE NB RT-PCR	experimental_page	dbtbs_bsub_core_b928ebfb52e4cb48	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ytkD.html:7
+Bryan EM, et al. (1996): RG OV PE	experimental_page	dbtbs_bsub_core_137eff58d766cefa	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	mmgABCDE-yqiQ.html:13
+Beier L, et al. (2002): PE HM	experimental_page	dbtbs_bsub_core_bed50366d672059d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pucABCDE.html:12
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_94e9d8c40cf791b3	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yknWXYZ.html:11
+Hahn J, et al. (1993): PE S1	experimental_page	dbtbs_bsub_core_f1fe1806a852fcba	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comEABC.html:11
+Siranosian KJ, et al. (1993): PE	experimental_page	dbtbs_bsub_core_d25c674b3a14df1a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ald.html:7
+Doan T, et al. (2003): PE	experimental_page	dbtbs_bsub_core_380666e4ad2529dd	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ywkAB.html:8
+Carter HL 3rd, et al. (1990): PE RO, in-vitro transcription Lazazzera BA, et al. (1999): RG DB	experimental_page	dbtbs_bsub_core_6e525afed4c0ab9e	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	rapC-phrC.html:11
+Henner DJ, et al. (1988): PE NB DP Ferrari E, et al. (1988): RG PE DP NB Park SS, et al. (1989): DP S1, in-vitro transcription assay	experimental_page	dbtbs_bsub_core_b5cc4aad42c9a683	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	aprE.html:13
+Chesnut RS, et al. (1991): PE DP Abdel-Fattah WR, et al. (2005): RG Allenby NE, et al. (2005): DB AR	experimental_page	dbtbs_bsub_core_e14a6f906af1fa54	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	phoB-ydhF.html:10
+Mekjian KR, et al. (1999): PE SDM RG	experimental_page	dbtbs_bsub_core_26786ec6f94b1750	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	uxaC-yjmBCD-uxuA-yjmF-exuTR-uxaBA.html:18
+Levin PA, et al. (1993): DB PE RG OV	experimental_page	dbtbs_bsub_core_f7573fed016c047b	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoVM.html:7
+Huang X, et al. (1999): S1 DB RG Popham DL, et al. (1993): PE Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_2b804fb4a3064282	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	pbpE-racX.html:10
+Rather PN, et al. (1986): S1 RO	experimental_page	dbtbs_bsub_core_ba3becfc7c3e4e17	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yoaW.html:8
+Huang X, et al. (1997): RO PE RG Huang X & Helmann JD (1998): PE	experimental_page	dbtbs_bsub_core_cc6c006e658b45a5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sigX-rsiX.html:8
+Boylan SA, et al. (1991): PE DB RG	experimental_page	dbtbs_bsub_core_389fa8167dbeceea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	csbA.html:7
+Varon D, et al. (1993): PE	experimental_page	dbtbs_bsub_core_7730e205ee5d9991	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gtaB.html:7
+Predich M, et al. (1992): PE Chibazakura T, et al. (1995): S1 DB RG Eymann C, et al. (2001): NB DB; Western blot	experimental_page	dbtbs_bsub_core_585820026d8d814d	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	spo0A.html:9
+Wang LF, et al. (1999): S1	experimental_page	dbtbs_bsub_core_bb5ca17cb9317fea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	antE.html:7
+Howell A, et al. (2003): PE	experimental_page	dbtbs_bsub_core_1ee6e81d7c1d1fa1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yocH.html:8
+Yoshida KI, et al. (1997): PE	experimental_page	dbtbs_bsub_core_bba92a46eba6f8e0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mmsA-iolBCDEF-idh-iolHI-fbaB.html:19
+Leelakriangsak M, et al. (2007): ND Thackray PD, et al. (2003): RG	experimental_page	dbtbs_bsub_core_f1028676a1f89b0e	source_label_not_independently_verified	bacillus_subtilis:SigM	SigM	yjbCD.html:14
+Beloin C, et al. (2000): PE	experimental_page	dbtbs_bsub_core_12585b08a658046e	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lrpC.html:8
+Kalman S, et al. (1990): PE S1 DB RG Boylan SA, et al. (1993): PE; Western blot; RG Voelker U, et al. (1994): 2D PAGE, HB	experimental_page	dbtbs_bsub_core_f748f853b4ec2056	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	rsbRSTUVW-sigB-rsbX.html:15
+Fisher SH & Wray LV Jr (2002): PE	experimental_page	dbtbs_bsub_core_1f38e2f4287dbc6d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yccC.html:7
+Silvaggi JM, et al. (2006): PE NB DB Eichenberger P, et al. (2004): AR	experimental_page	dbtbs_bsub_core_e2f191a04a63a5f0	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	yndL.html:7
+Lazarevic V, et al. (1992): PE	experimental_page	dbtbs_bsub_core_f7a2628d99aff81a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lytABC.html:10
+Zheng LB & Losick R (1990): PE S1 RG DP DB	experimental_page	dbtbs_bsub_core_24d902b4a53f2d5d	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	cotE.html:7
+Baranova NN, et al. (1999): RO	experimental_page	dbtbs_bsub_core_995cac2849b55fde	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mta.html:8
+Rashid MH, et al. (1995): DB, SDS-PAGE Margot P, et al. (1994): PE DB	experimental_page	dbtbs_bsub_core_6ea15316fd0787d8	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	lytD.html:7
+Petersohn A, et al. (1999): HB PE	experimental_page	dbtbs_bsub_core_045e4f174337aedd	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yacLMN.html:9
+Varon D, et al. (1996): PE DB RG, plasmid integration	experimental_page	dbtbs_bsub_core_dc5af08cd1bffe94	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	ytxGHJ.html:10
+Huang X & Helmann JD (1998): DB RG PE Lazarevic V, et al. (1992): PE	experimental_page	dbtbs_bsub_core_f1e6e06788e9c9fd	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	lytR.html:9
+Cabrera-Hernandez A, et al. (1999): PE RG	experimental_page	dbtbs_bsub_core_b11aff47b9c426f3	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	acoR-sspH.html:9
+Beier L, et al. (2002): PE HM	experimental_page	dbtbs_bsub_core_7b26bab7de636614	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pucH.html:8
+Sun G, et al. (1996): PE	experimental_page	dbtbs_bsub_core_712e4b81f6fdb41a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	resABCDE.html:13
+Zheng G, et al. (2000): PE	experimental_page	dbtbs_bsub_core_fcf1520effc316d9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sboAX-albABCDEFG.html:18
+Meng Q, et al. (2004): PE	experimental_page	dbtbs_bsub_core_6cadf10f2f906812	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pyrG.html:7
+Cruz Ramos H, e al. (2000): PE	experimental_page	dbtbs_bsub_core_dcef15bdfb353954	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ldh-lctP.html:10
+Baranova NN, et al. (1999): RO	experimental_page	dbtbs_bsub_core_de0183aa73a1a38a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ydfK.html:8
+Yamamoto H, et al. (1999): PE NB DB	experimental_page	dbtbs_bsub_core_9b12482ac6eea2d4	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yfhS.html:7
+Price CW, et al. (2001): RACE-PCR DB	experimental_page	dbtbs_bsub_core_2fc6e10224ce632e	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	yqgZ.html:7
+Predich M, et al. (1992): PE Eymann C, et al. (2001): NB	experimental_page	dbtbs_bsub_core_49f21071b1307fc7	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spo0A.html:8
+Tobisch S, et al. (1997): PE NB	experimental_page	dbtbs_bsub_core_483b39fd11d75b28	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	licBCAH.html:12
+Bolhuis A, et al. (1996): PE NB RG	experimental_page	dbtbs_bsub_core_9d26dfa3049d6f00	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	sipS.html:8
+Darmon E, et al. (2002): PE	experimental_page	dbtbs_bsub_core_fae71e59d553e455	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cssRS.html:9
+Cao M, et al. (2002): ROMA AR RG PE RO	experimental_page	dbtbs_bsub_core_c18c3f10dff5c627	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	ywaC.html:7
+Honda K, et al. (1993): PE	experimental_page	dbtbs_bsub_core_245b899eb3255120	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ylxM-ffh.html:8
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_e326833d29b8752f	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yitGF.html:8
+Grundy FJ, et al. (1994): PE	experimental_page	dbtbs_bsub_core_fea876b7208e46e3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	acuABC.html:10
+Sekowska A & Danchin A (2002): PE	experimental_page	dbtbs_bsub_core_66bbc7d7bf0c2dea	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mtnU.html:7
+Matsuoka H, et al. (2006): PE NB	experimental_page	dbtbs_bsub_core_8cdaaf6e0b90f5df	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ykuFG.html:9
+Antelmann H, et al. (1995): PE HB DB NB Petersohn A, et al. (1999): HB	experimental_page	dbtbs_bsub_core_330278903b492910	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	gspA.html:7
+Sa Nogueira I & Ramos SS (1997): PE	experimental_page	dbtbs_bsub_core_b8b8ac7ece3bed55	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	araR.html:8
+Moch C, et al. (2000): PE	experimental_page	dbtbs_bsub_core_a63e45c266a8243f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	nfrA-ywcH.html:8
+Moch C, et al. (1998): PE SDM HM	experimental_page	dbtbs_bsub_core_a63e45c266a8243f	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	nfrA-ywcH.html:9
+Sekowska A & Danchin A (2002): PE	experimental_page	dbtbs_bsub_core_5d3712ff0aeb1916	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	mtnWXBD.html:10
+Driscoll JR, et al. (1992): PE	experimental_page	dbtbs_bsub_core_4631e0ee0e2e12e5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	menBEC.html:13
+Cruz Ramos H, et al. (1995): PE	experimental_page	dbtbs_bsub_core_6d139485f356aaca	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	narK-fnr.html:9
+Pedraza-Reyes M, et al. (1994): RG DB OV PE Pedraza-Reyes M, et al. (1997): DB RG OV	experimental_page	dbtbs_bsub_core_946ad3835c6af00d	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	splAB.html:10
+Zhang J, et al. (1994): NB PE DB RO	experimental_page	dbtbs_bsub_core_2ab03862f0e9dd2f	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotYZ.html:10
+Weinrauch Y, et al. (1991): PE	experimental_page	dbtbs_bsub_core_07bcce23a89f64fb	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comQX.html:8
+Matsuoka H, et al. (2006): PE NB	experimental_page	dbtbs_bsub_core_2fc6766ca8c365d3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ywjF-acdA-rpoE.html:10
+Beall B, et al. (1993): PE RG DB OV	experimental_page	dbtbs_bsub_core_d618c1525725d045	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoVID-ysxE.html:8
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_4e960695d4b362e6	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yeaA-ydjP-ydjO.html:9
+Driscoll JR, et al. (1992): PE	experimental_page	dbtbs_bsub_core_6dc10c0d490555ae	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	menBEC.html:14
+Karow ML, et al. (1995): RG	experimental_page	dbtbs_bsub_core_c09026f88bb6438b	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	spoIIR.html:8
+Fuangthong M, et al. (2002): PE HM	experimental_page	dbtbs_bsub_core_dc8c32e7cfbca6d1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	perR.html:9
+Henriques AO, et al. (1997): PE HM OV DB RG	experimental_page	dbtbs_bsub_core_c3f1d43df18e6b0a	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	yknT.html:7
+Cabrera-Hernandez A & Setlow P (2000): PE	experimental_page	dbtbs_bsub_core_866d6e8af07c9412	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspI.html:8
+Antelmann H, et al. (2000): PE NB Cao M, et al. (2002): HM RO RG DB Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_20f77243a5b2c4ab	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yjbCD.html:9
+Antelmann H, et al. (2000): PE NB Cao M, et al. (2002): HM RO RG DB Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_20f77243a5b2c4ab	source_label_not_independently_verified	bacillus_subtilis:SigX	SigX	yjbCD.html:11
+Sekiguchi J, et al. (1995): PE NB DB	experimental_page	dbtbs_bsub_core_cfddcd51a76889fd	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	ybaK-cwlD.html:9
+Mohan S, et al. (1990): PE	experimental_page	dbtbs_bsub_core_7a9c3b7d79cfafb8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comC.html:9
+Gilman MZ, et al. (1981): S1 RO, in-vitro transcription Gilman MZ & Chamberlin ML (1982): S1 Mirel DB, et al. (1994): RO	experimental_page	dbtbs_bsub_core_c956a5fd581ed80a	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	comFABC-yvyF-flgM-yvyG-flgKL.html:17
+Ye R, et al. (1994): PE SDM	experimental_page	dbtbs_bsub_core_e2251470d219464a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	gutBP.html:9
+Kumano M, et al. (2003): PE	experimental_page	dbtbs_bsub_core_1e88ee3171b0395f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lmrAB.html:9
+Bagyan I, et al. (1998): PE RG DB	experimental_page	dbtbs_bsub_core_bdbae944a25ddfff	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	sspG-yurS.html:10
+Nakano MM, et al. (1995): PE	experimental_page	dbtbs_bsub_core_872c1380ac7bb81f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	nasBCDEF.html:12
+Wray LV Jr, et al. (1994): PE	experimental_page	dbtbs_bsub_core_0bfdb592513badc4	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	hut.html:16
+Ollington JF, et al. (1981): NB DP RO, in-vitro transcription Moran CP Jr, et al. (1981): FT S1 RO, dinucleotide priming Tatti KM & Moran CP Jr (1984): RO SDM Igo MM & Losick R (1986): RG NB DP Boylan SA, et al. (1993): RG Voelker U, et al. (1994): 2D PAGE, HB Petersohn A, et al. (1999): HB	experimental_page	dbtbs_bsub_core_79142b70125d7f77	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	gcaD-prs-ctc.html:10
+Kuwana R, et al. (2003): NB DB PE	experimental_page	dbtbs_bsub_core_601150b85493a7a1	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	yjcB-yjcZ-spoVIF.html:12
+Simpson EB, et al. (1994): PE Buchanan CE & Ling ML (1992): DB, immunoassay	experimental_page	dbtbs_bsub_core_f17d11f3eca6315b	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	dacB-spmAB.html:9
+Mauel C, et al. (1995): PE	experimental_page	dbtbs_bsub_core_af75962c5aaa60ac	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	tagAB.html:11
+Perego M, et al. (1991): PE	experimental_page	dbtbs_bsub_core_975fc641de00609f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	spo0E.html:8
+Perego M, et al. (1988): PE NB RG, binding site mutation	experimental_page	dbtbs_bsub_core_0561dd78dc44b145	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	abrB.html:9
+Gonzy-Treboul G, et al. (1992): PE RG Fukuchi K, et al. (2000): DP RG	experimental_page	dbtbs_bsub_core_5dbc73ad42aeab56	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ftsAZ.html:10
+Feavers IM, et al. (1990): RG PE	experimental_page	dbtbs_bsub_core_6ad8465fe6a3a3af	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	gerAABC.html:9
+Feavers IM, et al. (1990): RG PE	experimental_page	dbtbs_bsub_core_6ad8465fe6a3a3af	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	gerAABC.html:10
+Morohoshi F, et al. (1993): PE, dinucleotide primer experiment	experimental_page	dbtbs_bsub_core_abc060d81660f90c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	alkA.html:8
+Ludwig H, et al. (2001): PE	experimental_page	dbtbs_bsub_core_ea5509009da1e1aa	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cggR-gapA-pgk-tpiA-pgm-eno.html:14
+Boor KJ, et al. (1995): PE SDM	experimental_page	dbtbs_bsub_core_77a7b73eeb200478	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	rpoB.html:7
+Van der Ploeg JR, et al. (2001): PE	experimental_page	dbtbs_bsub_core_f859289dc167ed3a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cysK.html:7
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_ffa38d6978ad48aa	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	yoaR.html:7
+Grundy FJ, et al. (1994): PE	experimental_page	dbtbs_bsub_core_3348625232a23256	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	acsA.html:9
+Cruz Ramos H, et al. (1995): PE	experimental_page	dbtbs_bsub_core_bf9535fab79dbf8f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	narK-fnr.html:11
+Hulett FM, et al. (1994): PE	experimental_page	dbtbs_bsub_core_b35218f45c0f11c8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	phoA.html:8
+Willimsky G, et al. (1992): PE	experimental_page	dbtbs_bsub_core_5cddd19c752675c8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cspB.html:8
+Rather PN & Moran CP Jr (1988): PE, promoter mutation	experimental_page	dbtbs_bsub_core_524b4e4fff089e6c	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	glcU-gdh.html:8
+Mironov VN, et al. (1994): NB S1 Perkins JB, et al. (1999): RG NB	experimental_page	dbtbs_bsub_core_16fb2108119b7eaf	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ypuE-ribDEAHT.html:12
+You C, et al. (2005): PE	experimental_page	dbtbs_bsub_core_bdba293c4926b88d	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yflG-yflH.html:8
+Raposo MP, et al. (2004): RG PE	experimental_page	dbtbs_bsub_core_644db499b3b79fda	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	abnA.html:8
+Huang X, et al. (1999): DB RG PE, in vitro transcription, RO Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_c62c8589a5774a74	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	sigW-ybbM.html:9
+Kakeshita H, et al. (2000): PE	experimental_page	dbtbs_bsub_core_76d28d1be3f9f514	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	rnc-smc-ftsY.html:12
+Nicholson WL, et al. (1987): S1 Chambliss GH, et al. (1988): Genetics and biotechnology of Bacilli, vol.2 p.85-89: S1	experimental_page	dbtbs_bsub_core_0fcadafa827fb8cf	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	amyE.html:9
+Chung KM, et al. (2004): PE RG	experimental_page	dbtbs_bsub_core_76636d30cbe1eec3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ezrA.html:7
+Grandoni JA, et al. (1992): PE SDM RG	experimental_page	dbtbs_bsub_core_a797439cbe2b0d85	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ilvBHC-leuABCD.html:15
+Nygaaard P, et al. (2000): PE HM	experimental_page	dbtbs_bsub_core_f039c4e5fee11aa3	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	guaD.html:8
+Foulger D & Errington J (1991): PE RG DP DB	experimental_page	dbtbs_bsub_core_3f773ca1224c0e26	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	spoVK.html:8
+Pragai Z, et al. (2004): NB PE Paul S, et al. (2004): PE, in-vitro reconstitution	experimental_page	dbtbs_bsub_core_1040bc6c885c848a	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	phoPR.html:14
+Huang X, et al. (1999): S1 Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_b905bf06b88d4e46	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yxjJI.html:9
+Baranova NN, et al. (1999): RO	experimental_page	dbtbs_bsub_core_426aaa712ced5536	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	bmrU-bmr-bmrR.html:12
+Saxild HH, et al. (2001): PE RG	experimental_page	dbtbs_bsub_core_bb9b7e6c3977d37c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	glyA.html:10
+Chen G, et al. (2006): PE	experimental_page	dbtbs_bsub_core_9f8920eabad07adf	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	skf.html:16
+Drzewiecki K, et al. (1998): PE NB DB Eymann C, et al. (2001): PE	experimental_page	dbtbs_bsub_core_ea8d4f3f59e482ac	source_label_not_independently_verified	bacillus_subtilis:SigH	SigH	yvyD.html:8
+Gilman MZ, et al. (1981): S1 RO, in-vitro transcription Gilman MZ & Chamberlin ML (1982): S1	experimental_page	dbtbs_bsub_core_79aa8a5c0f3b9558	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	motAB.html:8
+Volker U, et al. (1998): PE HM	experimental_page	dbtbs_bsub_core_d1a4fbb8ec4bd212	source_label_not_independently_verified	bacillus_subtilis:SigB	SigB	ohrB.html:7
+Slack FJ, et al. (1995): PE	experimental_page	dbtbs_bsub_core_ef9625ff29774e65	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	codV-clpQY-codY.html:10
+Cabrera-Hernandez A & Setlow P (2000): PE	experimental_page	dbtbs_bsub_core_32548c7fec9dc4f2	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	sspM.html:7
+Cao M, et al. (2002): ROMA AR RG RO PE Cao M, et al. (2002): AR	experimental_page	dbtbs_bsub_core_26df9f2bc48cdc42	source_label_not_independently_verified	bacillus_subtilis:SigW	SigW	yceCDEFGH.html:13
+Muller J, et al. (1997): PE DB RG	experimental_page	dbtbs_bsub_core_e964a63647aab2c6	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	mcpC.html:7
+Schiott T & Hederstedt L (2000): PE NB	experimental_page	dbtbs_bsub_core_8f473f826c608a81	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ccdA-yneIJ.html:10
+Gerth U, et al. (1998): PE HM	experimental_page	dbtbs_bsub_core_3a6c62def340fb72	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	clpP.html:8
+Gaballa A, et al. (2002): PE	experimental_page	dbtbs_bsub_core_539bc60476254ff5	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yciABC.html:9
+Moriya S, et al. (1988): S1 Ogasawara N, et al. (1985): S1	experimental_page	dbtbs_bsub_core_e82d4ff28ccc2c95	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	dnaAN.html:17
+Sacco M, et al. (1995): PE RG	experimental_page	dbtbs_bsub_core_5742761e1938e2d4	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotG.html:8
+Mansilla MC, et al. (2000): NB DP	experimental_page	dbtbs_bsub_core_cdde7ecc62be5bf9	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	cysHP-sat-cysC-ylnDEF.html:13
+Gaballa A, et al. (2002): PE	experimental_page	dbtbs_bsub_core_39acf3daf47ccd69	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yfmPO.html:8
+Satomura T, et al. (2005): PE	experimental_page	dbtbs_bsub_core_0f2b9fdbfe61378c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ybgJ-ybgH.html:9
+Tobisch S, et al. (1997): PE NB	experimental_page	dbtbs_bsub_core_50819f6cb2562fd8	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	licR.html:7
+Inaoka T, et al. (2004): PE	experimental_page	dbtbs_bsub_core_edd6f2ee95c58508	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ntdABC-glcP.html:10
+Ando Y, et al. (2002): NB PE	experimental_page	dbtbs_bsub_core_33318fe6256d39ff	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	bsrB.html:7
+Gao H, et al. (2002): NB PE Hemila H, et al. (1990): NB	experimental_page	dbtbs_bsub_core_1a44bafede819df1	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	pdhABCD.html:10
+Paul S, et al. (2001): PE, in-vitro transcription assay	experimental_page	dbtbs_bsub_core_89ad3abb800dad9f	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ctaA.html:9
+Henriques AO, et al. (1997): PE HM DB RG	experimental_page	dbtbs_bsub_core_7af4b19797611ae3	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	yobW.html:7
+Abe A, et al. (1995): NB PE Takamatsu H, et al. (1998): DB NB RG Kuwana R, et al. (2002): SDS-PAGE, RG	experimental_page	dbtbs_bsub_core_d50ffa4df9b8add7	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotSA-cotS-ytxO.html:9
+Herbort M, et al. (1999): PE RG, Western blotting	experimental_page	dbtbs_bsub_core_35445cef3104bf74	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	secA-prfB.html:8
+Jin S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_a955cdf3a08d689c	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	citA.html:8
+Resnekov O, et al. (1992): PE	experimental_page	dbtbs_bsub_core_0ce0cc9e187b5d37	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	odhAB.html:8
+Wang S, et al. (2006): AR, Race-PCR	experimental_page	dbtbs_bsub_core_340ffe292c28e826	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	ypzA.html:7
+Riethdorf S, et al. (1994): PE	experimental_page	dbtbs_bsub_core_9227d765f6fbc517	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	lonA-ysxC.html:9
+Sussman MD & Setlow P (1991): RG PE DB, in-vitro transcription	experimental_page	dbtbs_bsub_core_8c6f4b9eba960292	source_label_not_independently_verified	bacillus_subtilis:SigF	SigF	gpr.html:8
+Sussman MD & Setlow P (1991): RG PE DB OV, in-vitro transcription	experimental_page	dbtbs_bsub_core_8c6f4b9eba960292	source_label_not_independently_verified	bacillus_subtilis:SigG	SigG	gpr.html:9
+Zheng L, et al. (1992): PE Zheng LB & Losick R (1990): PE RG DP	experimental_page	dbtbs_bsub_core_be0e53c334974f0a	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cotC.html:9
+Roels S, et al. (1995): PE NB DB	experimental_page	dbtbs_bsub_core_710c0cbad80c03b6	source_label_not_independently_verified	bacillus_subtilis:SigK	SigK	cgeCDE.html:10
+Cao M, et al. (2002): PE	experimental_page	dbtbs_bsub_core_37e129b87e312ba0	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	yceCDEFGH.html:12
+Helmann JD, et al. (1988): Genetics and Biotechnology of Bacilli, Vol. 2, pp. 189-193: in-vitro transcription Ogura M, et al. (1996): RG DB PE	experimental_page	dbtbs_bsub_core_93f240a64705adb6	source_label_not_independently_verified	bacillus_subtilis:SigD	SigD	degR.html:8
+Guillouard I, et al. (2002): PE	experimental_page	dbtbs_bsub_core_6990407cd148d57b	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	ywfK.html:8
+Roels S, et al. (1992): NB RG DB OV PE	experimental_page	dbtbs_bsub_core_0fedc539a64a99b7	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoIVA.html:8
+Londono-Vallejo JA, et al. (1993): PE S1	experimental_page	dbtbs_bsub_core_71c43b52121900cc	source_label_not_independently_verified	bacillus_subtilis:SigA	SigA	comFABC-yvyF-flgM-yvyG-flgKL.html:16
+Daniel RA, et al. (1994): RG DB OV PE	experimental_page	dbtbs_bsub_core_6283778d7895bd00	source_label_not_independently_verified	bacillus_subtilis:SigE	SigE	spoVD.html:7

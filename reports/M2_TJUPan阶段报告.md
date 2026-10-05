@@ -1,5 +1,18 @@
 # TJU Pan 六物种 M2 阶段报告：描述性数据探索
 
+## 当前采用规则（2026-10-05）
+
+更新：2026-10-05。当前数据版本：`data/processed/pr01_02_data_v2/`。
+
+TJU 六物种为主数据；RegulonDB / DBTBS 主要负责 sigma annotation、sigma-specific motif 与隔离后的不同来源验证。
+
+本研究采用 PromLoop 发布的标准化 promoter 序列，并按其数据集定义视为已经完成 TSS 对齐及必要的方向标准化。81 bp 对应相对 TSS 的 [-60,+20]，TSS 为局部第61位；TJU 不重新截取或反向互补。genomic coordinate、逐条 strand 和原始数据库映射不是 TJU 主实验必要输入。
+
+本轮仅修复和构建数据，没有运行正式 MEME/STREME/DREME/FIMO。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
+
+以下数值如属于旧TJU全量探索，保留为历史结果，不作为v2冻结验证结论。旧RegulonDB相关结果已撤回，链接若指向旧输入不再有效。当前构建/状态见《数据修复与输入验收_20261005》。
+
+
 更新日期：2026-10-03
 分析范围：TJU Pan 云盘 reg_and_gen/Datasets 的六物种完整数据。本报告不作 motif 发现或功能显著性结论。
 

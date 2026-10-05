@@ -1,0 +1,120 @@
+{
+  "sha256_manifest_entries": 59,
+  "matched": 59,
+  "species_details": {
+    "Escherichia_coli": {
+      "seq_type_values": {
+        "gene": 3350
+      },
+      "split_label_counts": {
+        "train": {
+          "1": 1156,
+          "0": 1189
+        },
+        "dev": {
+          "1": 170,
+          "0": 165
+        },
+        "test": {
+          "0": 351,
+          "1": 319
+        }
+      }
+    },
+    "Bacillus_subtilis": {
+      "seq_type_values": {
+        "gene": 1500
+      },
+      "split_label_counts": {
+        "train": {
+          "1": 472,
+          "0": 578
+        },
+        "dev": {
+          "0": 83,
+          "1": 67
+        },
+        "test": {
+          "1": 152,
+          "0": 148
+        }
+      }
+    },
+    "Bradyrhizobium": {
+      "seq_type_values": {
+        "gene": 3940
+      },
+      "split_label_counts": {
+        "train": {
+          "1": 1408,
+          "0": 1350
+        },
+        "dev": {
+          "1": 197,
+          "0": 197
+        },
+        "test": {
+          "0": 406,
+          "1": 382
+        }
+      }
+    },
+    "Diphtheria": {
+      "seq_type_values": {
+        "gene": 3310
+      },
+      "split_label_counts": {
+        "train": {
+          "0": 1157,
+          "1": 1160
+        },
+        "dev": {
+          "1": 161,
+          "0": 170
+        },
+        "test": {
+          "0": 329,
+          "1": 333
+        }
+      }
+    },
+    "Staphylococcus": {
+      "seq_type_values": {
+        "gene": 3370
+      },
+      "split_label_counts": {
+        "train": {
+          "1": 1545,
+          "0": 814
+        },
+        "dev": {
+          "0": 127,
+          "1": 210
+        },
+        "test": {
+          "1": 452,
+          "0": 222
+        }
+      }
+    },
+    "Baumanii": {
+      "seq_type_values": {
+        "gene": 2900
+      },
+      "split_label_counts": {
+        "train": {
+          "1": 1078,
+          "0": 952
+        },
+        "dev": {
+          "0": 133,
+          "1": 157
+        },
+        "test": {
+          "1": 305,
+          "0": 275
+        }
+      }
+    }
+  }
+}

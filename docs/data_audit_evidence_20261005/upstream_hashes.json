@@ -1,0 +1,212 @@
+[
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/test.csv",
+    "upstream": "Datasets/Escherichia coli/test.csv",
+    "sha256": "6bb76f847fc8c66676aafb35cb7461a0df8b4ca537729cb66da4383ad9e7c5f9",
+    "upstream_sha256": "6bb76f847fc8c66676aafb35cb7461a0df8b4ca537729cb66da4383ad9e7c5f9",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/dev.csv",
+    "upstream": "Datasets/Escherichia coli/dev.csv",
+    "sha256": "6d6683e55f8755985b24b1bf86f2b1e28d64bec0286d9cd1f1ef17dc55f16bdd",
+    "upstream_sha256": "6d6683e55f8755985b24b1bf86f2b1e28d64bec0286d9cd1f1ef17dc55f16bdd",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/train.csv",
+    "upstream": "Datasets/Escherichia coli/train.csv",
+    "sha256": "03d338a859248cd6f4ac55aee523428723a4b0b899d39b07bd458ac7111eae60",
+    "upstream_sha256": "03d338a859248cd6f4ac55aee523428723a4b0b899d39b07bd458ac7111eae60",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/Dataset.csv",
+    "upstream": "Datasets/Escherichia coli/Dataset.csv",
+    "sha256": "5bad20aef49e68d00bce978ea92996c6d16dbc2c027276eff597c6ddce3c6fb3",
+    "upstream_sha256": "5bad20aef49e68d00bce978ea92996c6d16dbc2c027276eff597c6ddce3c6fb3",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Escherichia_coli/positive_samples.csv",
+    "upstream": "Datasets/Escherichia coli/positive_samples.csv",
+    "sha256": "c573037a6f84feb4adb928684ebb3eef7ba545ba2c2d957b2c433b318b086084",
+    "upstream_sha256": "c573037a6f84feb4adb928684ebb3eef7ba545ba2c2d957b2c433b318b086084",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/test.csv",
+    "upstream": "Datasets/Bacillus subtilis/test.csv",
+    "sha256": "277aba9284dfb39433d36d292c41c105dc9b02117bca18787812c1fcd8b12add",
+    "upstream_sha256": "277aba9284dfb39433d36d292c41c105dc9b02117bca18787812c1fcd8b12add",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/dev.csv",
+    "upstream": "Datasets/Bacillus subtilis/dev.csv",
+    "sha256": "a447aa59378e8a691e70e07ddeff478b05f0e578a3dd948ffb879b25edccd929",
+    "upstream_sha256": "a447aa59378e8a691e70e07ddeff478b05f0e578a3dd948ffb879b25edccd929",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/train.csv",
+    "upstream": "Datasets/Bacillus subtilis/train.csv",
+    "sha256": "4ff889a76a2e00a2d35479be4d83e4eee786e1a9c8b20868a4e342c4c4ab239d",
+    "upstream_sha256": "4ff889a76a2e00a2d35479be4d83e4eee786e1a9c8b20868a4e342c4c4ab239d",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/Dataset.csv",
+    "upstream": "Datasets/Bacillus subtilis/Dataset.csv",
+    "sha256": "87cae44c1e69668866869511f2a58c930a3b61d6a275c8bca718d0fcdb7ddcf5",
+    "upstream_sha256": "87cae44c1e69668866869511f2a58c930a3b61d6a275c8bca718d0fcdb7ddcf5",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bacillus_subtilis/positive_samples.csv",
+    "upstream": "Datasets/Bacillus subtilis/positive_samples.csv",
+    "sha256": "244706ab976c98527135078ef0338d425f780bbaf8bac90b36a87920fd736f2c",
+    "upstream_sha256": "244706ab976c98527135078ef0338d425f780bbaf8bac90b36a87920fd736f2c",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/test.csv",
+    "upstream": "Datasets/Bradyrhizobium/test.csv",
+    "sha256": "bdb09356fc3bc3abb663453a9221e19d2ae21b463c3eb0d3850ab84ed15b0465",
+    "upstream_sha256": "bdb09356fc3bc3abb663453a9221e19d2ae21b463c3eb0d3850ab84ed15b0465",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/dev.csv",
+    "upstream": "Datasets/Bradyrhizobium/dev.csv",
+    "sha256": "4144e3c0bfa4627881534b9afccf2f2c2ec639cd0185a80e212fc9b08abf4708",
+    "upstream_sha256": "4144e3c0bfa4627881534b9afccf2f2c2ec639cd0185a80e212fc9b08abf4708",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/train.csv",
+    "upstream": "Datasets/Bradyrhizobium/train.csv",
+    "sha256": "c1841cc3e17cb7d56d895b5a8b968ece15276ebda5a830b519727d98270801e5",
+    "upstream_sha256": "c1841cc3e17cb7d56d895b5a8b968ece15276ebda5a830b519727d98270801e5",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/Dataset.csv",
+    "upstream": "Datasets/Bradyrhizobium/Dataset.csv",
+    "sha256": "1641cf04a7081cf271ed4ae7903c8a314e874ca987b15e6b829554eb8549bf05",
+    "upstream_sha256": "1641cf04a7081cf271ed4ae7903c8a314e874ca987b15e6b829554eb8549bf05",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Bradyrhizobium/positive_samples.csv",
+    "upstream": "Datasets/Bradyrhizobium/positive_samples.csv",
+    "sha256": "e170a6aeec8749fed970eab4e2be0cc1526924ca7d1f709486060d8dff3c07c3",
+    "upstream_sha256": "e170a6aeec8749fed970eab4e2be0cc1526924ca7d1f709486060d8dff3c07c3",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/test.csv",
+    "upstream": "Datasets/Diphtheria/test.csv",
+    "sha256": "d62c2207f149f34520cbacf367892f4629b0c954637fe9576f6c24830a8ed6f5",
+    "upstream_sha256": "d62c2207f149f34520cbacf367892f4629b0c954637fe9576f6c24830a8ed6f5",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/dev.csv",
+    "upstream": "Datasets/Diphtheria/dev.csv",
+    "sha256": "556e9522b923d5f51ceef7c54379853085a87ccc4dfdde1889ef5e0e112fcde0",
+    "upstream_sha256": "556e9522b923d5f51ceef7c54379853085a87ccc4dfdde1889ef5e0e112fcde0",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/train.csv",
+    "upstream": "Datasets/Diphtheria/train.csv",
+    "sha256": "c53e11f7501338938012a5a67637c3cea5857e0f506a17353363436264923b17",
+    "upstream_sha256": "c53e11f7501338938012a5a67637c3cea5857e0f506a17353363436264923b17",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/Dataset.csv",
+    "upstream": "Datasets/Diphtheria/Dataset.csv",
+    "sha256": "6196a0bb29d884dfe7eb7252ee98a8c70190dfd9132051633f1ab888b7c9f372",
+    "upstream_sha256": "6196a0bb29d884dfe7eb7252ee98a8c70190dfd9132051633f1ab888b7c9f372",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Diphtheria/positive_samples.csv",
+    "upstream": "Datasets/Diphtheria/positive_samples.csv",
+    "sha256": "a28630a57f9381f06719c7de5038f9a24c379df58c7845f6de927bb723100131",
+    "upstream_sha256": "a28630a57f9381f06719c7de5038f9a24c379df58c7845f6de927bb723100131",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/test.csv",
+    "upstream": "Datasets/Staphylococcus/test.csv",
+    "sha256": "5a163daaaf0f74541f26066c12f6c8eef275e14c92fdd280a59aa24344a4ddb0",
+    "upstream_sha256": "5a163daaaf0f74541f26066c12f6c8eef275e14c92fdd280a59aa24344a4ddb0",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/dev.csv",
+    "upstream": "Datasets/Staphylococcus/dev.csv",
+    "sha256": "6c752ea4b470c616adba454dd6e11d2a73320485a36080a9f16cb08e92505cdf",
+    "upstream_sha256": "6c752ea4b470c616adba454dd6e11d2a73320485a36080a9f16cb08e92505cdf",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/train.csv",
+    "upstream": "Datasets/Staphylococcus/train.csv",
+    "sha256": "ea4d33cecbf151b3cbbda09906b9dcbe1f0c389b8a64887584c276346c705c76",
+    "upstream_sha256": "ea4d33cecbf151b3cbbda09906b9dcbe1f0c389b8a64887584c276346c705c76",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/Dataset.csv",
+    "upstream": "Datasets/Staphylococcus/Dataset.csv",
+    "sha256": "6c470de4dac8822af6f1e3b07a511f0ecd4ac5f829e77a85d21cb0b0b67fd2b2",
+    "upstream_sha256": "6c470de4dac8822af6f1e3b07a511f0ecd4ac5f829e77a85d21cb0b0b67fd2b2",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Staphylococcus/positive_samples.csv",
+    "upstream": "Datasets/Staphylococcus/positive_samples.csv",
+    "sha256": "8a3460eb4d02a4008f6407de8c8e66c6216f852d913a5d48e125488a4f2ce9a9",
+    "upstream_sha256": "8a3460eb4d02a4008f6407de8c8e66c6216f852d913a5d48e125488a4f2ce9a9",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/test.csv",
+    "upstream": "Datasets/Baumanii/test.csv",
+    "sha256": "61bd861079da4aa528b1edad75b1598783ef4fe6e7a7ca43b2fd413aa737b1a3",
+    "upstream_sha256": "61bd861079da4aa528b1edad75b1598783ef4fe6e7a7ca43b2fd413aa737b1a3",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/dev.csv",
+    "upstream": "Datasets/Baumanii/dev.csv",
+    "sha256": "7ef3268c15032a97f01f026c2cc1dd6498dc3767a32adda230a5d4e7f0b12c41",
+    "upstream_sha256": "7ef3268c15032a97f01f026c2cc1dd6498dc3767a32adda230a5d4e7f0b12c41",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/train.csv",
+    "upstream": "Datasets/Baumanii/train.csv",
+    "sha256": "e0a476a410f66b6b8814bf45b4d654cc3abbd99df5e0eca7ce6ccb318d8b052c",
+    "upstream_sha256": "e0a476a410f66b6b8814bf45b4d654cc3abbd99df5e0eca7ce6ccb318d8b052c",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/Dataset.csv",
+    "upstream": "Datasets/Baumanii/Dataset.csv",
+    "sha256": "daaf42590f1c94500240d4c2c659331b9e3ab7774f841c24f54a8a215cd0ac58",
+    "upstream_sha256": "daaf42590f1c94500240d4c2c659331b9e3ab7774f841c24f54a8a215cd0ac58",
+    "matches": true
+  },
+  {
+    "path": "data/raw/tju_pan_promoter/reg_and_gen/Datasets/Baumanii/positive_samples.csv",
+    "upstream": "Datasets/Baumanii/positive_samples.csv",
+    "sha256": "4951510c0dd52699ebb32ed92a8eb36ceea6c004fea9805bd17baf3d40af6119",
+    "upstream_sha256": "4951510c0dd52699ebb32ed92a8eb36ceea6c004fea9805bd17baf3d40af6119",
+    "matches": true
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "species": {
+    "bacillus_subtilis": {
+      "labels": {
+        "1": {
+          "records": 691,
+          "unique_exact": 691,
+          "unique_rc_canonical": 691,
+          "mean_gc": 0.3286880706079934
+        },
+        "0": {
+          "records": 809,
+          "unique_exact": 809,
+          "unique_rc_canonical": 809,
+          "mean_gc": 0.4605594469624135
+        }
+      },
+      "split_row_mismatches": 0,
+      "cross_split_rc_canonical_sequences": 0,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {}
+    },
+    "baumannii": {
+      "labels": {
+        "1": {
+          "records": 1540,
+          "unique_exact": 1540,
+          "unique_rc_canonical": 1540,
+          "mean_gc": 0.331401314734648
+        },
+        "0": {
+          "records": 1360,
+          "unique_exact": 1360,
+          "unique_rc_canonical": 1360,
+          "mean_gc": 0.41289941902687
+        }
+      },
+      "split_row_mismatches": 0,
+      "cross_split_rc_canonical_sequences": 0,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {}
+    },
+    "bradyrhizobium": {
+      "labels": {
+        "1": {
+          "records": 1987,
+          "unique_exact": 1983,
+          "unique_rc_canonical": 1983,
+          "mean_gc": 0.6057459909162644
+        },
+        "0": {
+          "records": 1953,
+          "unique_exact": 1953,
+          "unique_rc_canonical": 1953,
+          "mean_gc": 0.6500962431966016
+        }
+      },
+      "split_row_mismatches": 0,
+      "cross_split_rc_canonical_sequences": 2,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {
+        "80": 1
+      }
+    },
+    "diphtheria": {
+      "labels": {
+        "1": {
+          "records": 1654,
+          "unique_exact": 1654,
+          "unique_rc_canonical": 1653,
+          "mean_gc": 0.46627703882842936
+        },
+        "0": {
+          "records": 1656,
+          "unique_exact": 1656,
+          "unique_rc_canonical": 1656,
+          "mean_gc": 0.5510643115942029
+        }
+      },
+      "split_row_mismatches": 0,
+      "cross_split_rc_canonical_sequences": 1,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {
+        "80": 1
+      }
+    },
+    "escherichia_coli": {
+      "labels": {
+        "1": {
+          "records": 1645,
+          "unique_exact": 1637,
+          "unique_rc_canonical": 1636,
+          "mean_gc": 0.44162257495590823
+        },
+        "0": {
+          "records": 1705,
+          "unique_exact": 1705,
+          "unique_rc_canonical": 1705,
+          "mean_gc": 0.529731635349915
+        }
+      },
+      "split_row_mismatches": 2,
+      "cross_split_rc_canonical_sequences": 3,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {
+        "80": 1
+      }
+    },
+    "staphylococcus": {
+      "labels": {
+        "1": {
+          "records": 2207,
+          "unique_exact": 2206,
+          "unique_rc_canonical": 2206,
+          "mean_gc": 0.2563168817511062
+        },
+        "0": {
+          "records": 1163,
+          "unique_exact": 1163,
+          "unique_rc_canonical": 1163,
+          "mean_gc": 0.3424868369372525
+        }
+      },
+      "split_row_mismatches": 0,
+      "cross_split_rc_canonical_sequences": 0,
+      "conflicting_label_canonical_sequences": 0,
+      "dataset_hash_matches_manifest": true,
+      "invalid_lengths": {
+        "80": 1
+      }
+    }
+  },
+  "holdout": {
+    "Sigma24": {
+      "train": 410,
+      "test": 103,
+      "canonical_overlap": 0,
+      "train_duplicates": 1,
+      "test_duplicates": 0
+    },
+    "Sigma28": {
+      "train": 112,
+      "test": 28,
+      "canonical_overlap": 0,
+      "train_duplicates": 1,
+      "test_duplicates": 0
+    },
+    "Sigma32": {
+      "train": 240,
+      "test": 60,
+      "canonical_overlap": 0,
+      "train_duplicates": 0,
+      "test_duplicates": 0
+    },
+    "Sigma38": {
+      "train": 140,
+      "test": 36,
+      "canonical_overlap": 0,
+      "train_duplicates": 0,
+      "test_duplicates": 0
+    },
+    "Sigma54": {
+      "train": 76,
+      "test": 20,
+      "canonical_overlap": 0,
+      "train_duplicates": 0,
+      "test_duplicates": 0
+    },
+    "Sigma70": {
+      "train": 1553,
+      "test": 389,
+      "canonical_overlap": 0,
+      "train_duplicates": 0,
+      "test_duplicates": 0
+    }
+  },
+  "holdout_all_groups_canonical_overlap": 0
+}

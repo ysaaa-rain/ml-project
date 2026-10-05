@@ -437,6 +437,7 @@ def adapt_regulondb_gff3(
         "source_phase",
     ):
         adapted[extra_column] = frame[extra_column].reset_index(drop=True)
+    adapted["input_orientation"] = "transcription_forward"
     return adapted, report
 
 

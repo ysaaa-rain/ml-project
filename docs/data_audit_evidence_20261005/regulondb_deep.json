@@ -1,0 +1,69 @@
+{
+  "raw_nonempty": {
+    "records": 3950,
+    "oriented_unique": 3813,
+    "rc_canonical_unique": 3805,
+    "multi_sigma_unique_sequences": 123,
+    "sigma_memberships_unique": {
+      "Sigma24": 517,
+      "Sigma32": 309,
+      "Sigma70": 1990,
+      "Sigma38": 240,
+      "Sigma54": 99,
+      "Sigma28": 141
+    },
+    "unknown_only_unique": 641
+  },
+  "genome_valid": {
+    "records": 3949,
+    "oriented_unique": 3812,
+    "rc_canonical_unique": 3804,
+    "multi_sigma_unique_sequences": 123,
+    "sigma_memberships_unique": {
+      "Sigma24": 517,
+      "Sigma32": 309,
+      "Sigma70": 1989,
+      "Sigma38": 240,
+      "Sigma54": 99,
+      "Sigma28": 141
+    },
+    "unknown_only_unique": 641
+  },
+  "strong_confirmed_genome_valid": {
+    "records": 1899,
+    "oriented_unique": 1793,
+    "rc_canonical_unique": 1790,
+    "multi_sigma_unique_sequences": 104,
+    "sigma_memberships_unique": {
+      "Sigma70": 920,
+      "Sigma38": 193,
+      "Sigma28": 12,
+      "Sigma24": 71,
+      "Sigma54": 24,
+      "Sigma32": 67
+    },
+    "unknown_only_unique": 611
+  },
+  "mismatches": [
+    {
+      "id": "ygiWp6",
+      "sigma": "Sigma70",
+      "confidence": "Strong",
+      "evidence": "[IDA|S|Inferred from direct assay],[ICWHO|W|Inferred computationally without human oversight]",
+      "tss": 3169749,
+      "strand": "+",
+      "genome_match": false
+    }
+  ],
+  "overlap_genome_valid_vs_tju_positive": {
+    "no_positive_overlap": 3065,
+    "exact_same_orientation": 743,
+    "exact_reverse_complement": 2,
+    "high_similarity_ge_90pct": 2
+  },
+  "remaining_vs_discovery_negative": {
+    "none": 3047,
+    "exact_same_orientation": 18
+  },
+  "raw_file_sha256": "50344119ecad07a24b724b9ffeab70e18324cff77413849b6ac930b8c68ca026"
+}

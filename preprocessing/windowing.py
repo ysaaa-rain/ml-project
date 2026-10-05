@@ -149,28 +149,19 @@ def apply_tss_window(
             record(sequence, keep_row=not require_annotations, reason="missing_strand", identifier=identifier)
             continue
 
-        # Window around the TSS: [tss - upstream, tss + downstream], 1-based and
-        # inclusive. ``raw_start`` may be 0 when the TSS sits exactly
-        # ``upstream`` bases from the start of the sequence, which is a valid
-        # although tight window rather than an error. Anything that would reach
-        # past either end of the sequence is rejected instead of being clipped.
-        raw_start = tss - upstream
-        raw_end = tss + downstream
-        if raw_start < 0 or raw_end > len(sequence):
-            record(
-                sequence,
-                keep_row=not require_annotations,
-                reason="window_out_of_range",
-                identifier=identifier,
-            )
+        # Input sequence orientation is distinct from genomic strand.
+        orientation = str(work.at[index, "input_orientation"]) if "input_orientation" in work else "genomic_forward"
+        if orientation not in {"transcription_forward", "genomic_forward"}:
+            raise ValueError(f"unknown input_orientation: {orientation}")
+        flip = strand == -1 and orientation == "genomic_forward"
+        raw_start = tss - (downstream if flip else upstream)
+        raw_end = tss + (upstream if flip else downstream)
+        if raw_start < 1 or raw_end > len(sequence):
+            record(sequence, keep_row=not require_annotations,
+                   reason="window_out_of_range", identifier=identifier)
             continue
-
-        window = sequence[max(0, raw_start - 1) : raw_end]
-        if not window:
-            record(sequence, keep_row=False, reason="empty_window", identifier=identifier)
-            continue
-
-        if strand == -1:
+        window = sequence[raw_start - 1:raw_end]
+        if flip:
             window = reverse_complement(window)
         # Position 0 of the window is the base at -upstream relative to the TSS.
         record(
@@ -188,6 +179,7 @@ def apply_tss_window(
     work["window_end_1based"] = ends
     work["tss_offset_in_window"] = offsets
     work["window_strand"] = strands
+    work["input_orientation"] = "transcription_forward"
     work["window_upstream"] = upstream
     work["window_downstream"] = downstream
     work = work.loc[keep].copy()
