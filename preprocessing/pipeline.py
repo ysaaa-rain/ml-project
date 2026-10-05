@@ -148,6 +148,10 @@ def normalize_metadata(
     clean = clean.drop_duplicates(subset=["sequence_id"], keep="first")
     duplicate_sequence_mask = clean["sequence"].duplicated(keep="first")
     quality_filter_counts["duplicate_sequence"] = int(duplicate_sequence_mask.sum())
+    # Retain all sigma associations when generic callers deduplicate sequences.
+    associations = clean.groupby("sequence")["sigma_factor_type"].agg(
+        lambda values: "|".join(sorted(set(values) - {DEFAULT_UNKNOWN})) or DEFAULT_UNKNOWN)
+    clean["sigma_factor_type"] = clean["sequence"].map(associations)
     clean = clean.drop_duplicates(subset=["sequence"], keep="first")
 
     validation_source_set = {str(source) for source in validation_sources if str(source).strip()}

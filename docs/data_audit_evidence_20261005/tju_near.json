@@ -1,0 +1,86 @@
+{
+  "Bacillus_subtilis": {
+    "train__dev": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "train__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "dev__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    }
+  },
+  "Baumanii": {
+    "train__dev": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "train__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "dev__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    }
+  },
+  "Bradyrhizobium": {
+    "train__dev": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "train__test": {
+      "pairs_ge73of81": 3,
+      "records_in_second_split_with_match": 3
+    },
+    "dev__test": {
+      "pairs_ge73of81": 1,
+      "records_in_second_split_with_match": 1
+    }
+  },
+  "Diphtheria": {
+    "train__dev": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "train__test": {
+      "pairs_ge73of81": 1,
+      "records_in_second_split_with_match": 1
+    },
+    "dev__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    }
+  },
+  "Escherichia_coli": {
+    "train__dev": {
+      "pairs_ge73of81": 1,
+      "records_in_second_split_with_match": 1
+    },
+    "train__test": {
+      "pairs_ge73of81": 2,
+      "records_in_second_split_with_match": 2
+    },
+    "dev__test": {
+      "pairs_ge73of81": 1,
+      "records_in_second_split_with_match": 1
+    }
+  },
+  "Staphylococcus": {
+    "train__dev": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "train__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    },
+    "dev__test": {
+      "pairs_ge73of81": 0,
+      "records_in_second_split_with_match": 0
+    }
+  }
+}

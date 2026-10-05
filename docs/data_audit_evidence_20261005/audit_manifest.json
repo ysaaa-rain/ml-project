@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-05",
+  "repo": "ysaaa-rain/ml-project",
+  "baseline_commit": "468e96d9085c431791c7146184c79766641b9c28",
+  "formal_motif_experiments_run": false,
+  "raw_files_deleted": false,
+  "summary_sha256": {
+    "docs/data_audit_evidence_20261005/dbtbs_deep.json": "0e95287b165658c5bb6b362c6eb48041a3f46d5990d4f360d0881212e7ed8151",
+    "docs/data_audit_evidence_20261005/dbtbs_final_counts.json": "90ca64f99ddbaabf751004a0650b15ada2075a47a76ee9e8f37bc372a5d67d6e",
+    "docs/data_audit_evidence_20261005/final_candidate_counts.json": "f09670c8aabd67adad50ea0bb8439f485f4feea7e40eaf4fab75364ee60c62f7",
+    "docs/data_audit_evidence_20261005/holdout_near.json": "0a28c2e4cbdb6333003e7786b36d42fbf598caf7d1222c52d67c0a8dab5cd206",
+    "docs/data_audit_evidence_20261005/regulondb_deep.json": "6310beb0728a140580290a53cc8f63c3f51200fb292ce5d1b9276b55a5ac7434",
+    "docs/data_audit_evidence_20261005/summary.json": "3d5d58a05dfa6a9ca24b2b75d4e4d290ac852a6f3069c2a7fd1defa10d7ffb57",
+    "docs/data_audit_evidence_20261005/tju_extra.json": "b20f69d973f56f53c5aa591572e371da58357151886956ca90e0b04ec5090489",
+    "docs/data_audit_evidence_20261005/tju_near.json": "5a47b87a73b45549eb7758bf155f9592f7eb35eff18d9d9ee1e1a0a4da0cd8aa",
+    "docs/data_audit_evidence_20261005/upstream_hashes.json": "008dce9d2606fa5a0e871807a82a33e0131cb8790362ffd4d05f77d148cf6f87"
+  },
+  "local_audit_script_sha256": {
+    "tmp/data_selection_audit_20261005/check.py": "0af2ebc561633ce73e1c05d769b6da3b304247590ca570aa4cd28ce69bde414e",
+    "tmp/data_selection_audit_20261005/dbtbs_deep.py": "55f8f5e549744bbd255ef82f0b0e3185d00a197c2a717fb43f590cd8cf3c3867",
+    "tmp/data_selection_audit_20261005/dbtbs_final_counts.py": "17cf2f73623738ee31040e97cb30f5ac9efccc6352dc4327061b790b242a18e8",
+    "tmp/data_selection_audit_20261005/fetch_reference.py": "73e06a94c82966d04691930a38be2a9cd7596540b7f1c78ab13573196e3af5bb",
+    "tmp/data_selection_audit_20261005/fetch_source_notes.py": "a1b4cd9be01443c8e6199dd3af40a14fdb365cdef4fbd43c949b976ce439986c",
+    "tmp/data_selection_audit_20261005/final_candidate_counts.py": "519e24faab7ed9906983f1476259ed19d877a094460ccded6a2d61656d574f5b",
+    "tmp/data_selection_audit_20261005/near.py": "ef6cb78d76ee968668f1bfee7c9ae24340f70f78096aae61d40f2130208c3892",
+    "tmp/data_selection_audit_20261005/regulondb_deep.py": "a4321e9b97124c14049e5a1b9102a0cbb8459a0690fa7c4ed0dbfc9ecbaf0728",
+    "tmp/data_selection_audit_20261005/tju_extra.py": "9deddbc8e2a32e7eb40583dd0a711deaeb66493bc829605cde5579f83820a5d1",
+    "tmp/data_selection_audit_20261005/tju_near.py": "936457061c3d3c395c9f4b9ab716d851a784ec6e9a7e1dd4f632932b59d8c2f0",
+    "tmp/data_selection_audit_20261005/verify_upstream.py": "1b930a45e3862990f4927cac50400be7f00449fd45bfe2178b24fcdff9e47b0e"
+  },
+  "new_dbtbs_download_report": "data/interim/dbtbs_download_report_20261005.json",
+  "reference_download_manifest": "data/raw/dbtbs_reference_20261005/download_manifest.json",
+  "limitations": [
+    "No full shifted or indel-aware homology audit",
+    "No final v2 FASTA emitted",
+    "Sigma-association evidence not individually verified",
+    "No 2005 historical DBTBS reference genome identity confirmed"
+  ]
+}

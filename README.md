@@ -1,69 +1,56 @@
-# PR01-02：多物种启动子调控模式发现
+# PR01-02：启动子调控模式发现
 
-本项目围绕课程题目 PR01-02，研究细菌启动子 DNA 序列中反复出现的短调控模式（motif），分析 motif 与已知元件的关系、不同 σ 因子组的差异，以及规律能否跨物种、跨数据集重现。
+更新：2026-10-05。当前数据版本：`data/processed/pr01_02_data_v2/`。
 
-## 研究问题
+TJU 六物种为主数据；RegulonDB / DBTBS 主要负责 sigma annotation、sigma-specific motif 与隔离后的不同来源验证。
 
-- **RQ1：** 从启动子中发现的 motif 与已知 −10/−35 box、UP 元件等有多大重合？
-- **RQ2：** 不同 σ 因子类型的启动子在 motif 组成、出现频率、间距和排列上有什么差异？
-- **RQ3：** 发现的规律能否在其他物种或独立数据集中重现？哪些是共同规律，哪些只出现在特定数据中？
+本研究采用 PromLoop 发布的标准化 promoter 序列，并按其数据集定义视为已经完成 TSS 对齐及必要的方向标准化。81 bp 对应相对 TSS 的 [-60,+20]，TSS 为局部第61位；TJU 不重新截取或反向互补。genomic coordinate、逐条 strand 和原始数据库映射不是 TJU 主实验必要输入。
 
-## 数据角色
+本轮仅修复和构建数据，没有运行正式 MEME/STREME/DREME/FIMO。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
 
-| 数据 | 在项目中的用途 | 当前边界 |
-| --- | --- | --- |
-| 天津大学课程云盘 reg_and_gen 六物种 | 主数据；正类启动子分别做 MEME/STREME、FIMO、位置及物种比较；负类作差异富集对照 | CSV 无 σ 标签或链方向列；对 TSS 方向的位置解释须先审计 |
-| RegulonDB E. coli K-12 | σ 因子分组分析；与云盘 E. coli 去除序列重叠后的跨数据集比较 | 原始 3,807 条 motif 与六个 σ 组的 MEME 结果已存在，当前作为辅助数据使用 |
-| DBTBS release 4.1 B. subtilis | 有余力时进行增强验证 | 当前坐标与方向解析仍需复核 |
-| 云盘 strenth | 实验 5 的候选强度数据 | 来源、测量单位、样本映射和许可通过审计后再用 |
+## 数据链条与实验主线
 
-云盘 reg_and_gen 共 18,370 条记录、9,724 条正类启动子，覆盖 B. subtilis、A. baumannii、Bradyrhizobium、C. diphtheriae、E. coli 和 Staphylococcus。每个物种只使用一份 Dataset.csv 建立输入；train/dev/test 是它的拆分，不能当成额外独立数据。上游项目说明窗口为 81 bp、相对 TSS −60 到 +20 bp；原始 CSV 没有证明负链是否统一到转录方向。
+TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → MEME/STREME → FIMO → motif position/spacing/cross-species。
 
-原始云盘文件保存在本地 data/raw/tju_pan_promoter/，由 SHA256 清单校验并被 Git 忽略。正式结果引用到的表、图和运行 manifest 应进入仓库；原始数据、完整序列、运行缓存和大型中间文件不进入普通 Git。
+RegulonDB E. coli → σ关系表/σ-specific motif → 与 TJU E. coli 做去重叠 cross-dataset validation。
 
-## 当前进度
+DBTBS B. subtilis → 可靠坐标恢复/σ-specific motif → 与 TJU B. subtilis 做去重叠 cross-dataset validation。
 
-- **M1：** PR01-02 的目标、问题、数据分工与审计规则已固化。
-- **M2：** RegulonDB 辅助数据和 TJU Pan 六物种的描述性 EDA 均已生成；云盘方向未核实，所以其位置统计只按序列内坐标描述。主数据报告见[reports/M2_TJUPan阶段报告.md](reports/M2_TJUPan阶段报告.md)。
-- **M3：** TJU Pan 六物种全量 MEME、60 个 motif 矩阵/summary、统一 logo 和 240 条 −10/−35/UP Tomtom 初步比较已完成；这是矩阵相似性探索，不是 motif 基因组位置重叠的证明。完整证据见[六物种 M3 阶段报告](reports/M3_TJUPan阶段报告.md)。
-- **M4：** 六物种第一轮 de novo FIMO 已完成：每 motif q≤0.05 共 353 个位点；五个“物种×motif”正负覆盖差异在 60 项 BH 后 q≤0.05，均属同批发现数据上的探索性线索。另已扫描四个理想化大肠杆菌 −10/−35/UP 参考矩阵；site q≤0.05 下没有参考位点通过，因此当前阈值下不能据此评估坐标重叠，不能把“零重叠”解释成这些元件不存在。motif pair 首轮共现/间距描述已完成，但 540 项检验无一经 BH 显著，且没有位置随机化；方向坐标、敏感性分析、跨物种和跨数据集复核仍待完成。详见[M4 FIMO 阶段报告](reports/M4_TJUPan_FIMO阶段报告.md)。
-- **扩展实验：** 小组选定实验 6（motif 组合）和实验 5（motif 与启动子强度关联），均纳入计划；之后推进调控语法和自定义 RQ4。实验 7 为有余力时的扩展。
+同来源holdout与不同来源验证分别报告；共享序列用于注释，不重复计作独立验证。不同发布来源不保证原始研究独立。
 
-当前每个实验的准确状态、限制和下一步见 docs/当前进度与协作交接.md。
+## 当前数据数量
 
-## 环境与运行
+| 数据 | discovery 正类 | development 正类 | holdout 正类 |
+| --- | ---: | ---: | ---: |
+| dbtbs_bsub/core | 296 | 39 | 97 |
+| regulondb_ecoli/core | 1284 | 160 | 349 |
+| regulondb_ecoli/extended | 1421 | 191 | 408 |
+| tjupan_bacillus_subtilis/main | 473 | 67 | 151 |
+| tjupan_baumannii/main | 1099 | 162 | 279 |
+| tjupan_bradyrhizobium/main | 1364 | 171 | 448 |
+| tjupan_diphtheria/main | 1186 | 156 | 311 |
+| tjupan_escherichia_coli/main | 1143 | 163 | 329 |
+| tjupan_staphylococcus/main | 1480 | 248 | 478 |
 
-需要 Python 3.11+、requirements.txt 中的依赖以及 MEME Suite 5.5.9。MEME Suite 官方源码构建记录见 docs/MEME环境与Smoke测试_20260930.md。
+跨来源可用样本以v2生成清单为准。RegulonDB核心中完全不关联任何TJU正负输入且属于冻结留出的外部候选250条；DBTBS核心相同条件只有1条，无法支撑稳健的独立来源结论。不能退回重复样本或降低隔离规则来增加显著性；DBTBS当前以σ注释和可靠坐标数据为主要补充，若要充分验证需要新独立采集来源。
 
-~~~bash
+Promoter的Strong/Confirmed不等于σ关联已逐条实验确认，σ证据状态单独保留。小组需总数≥50、发现≥30、留出≥20才作为确认候选；20–49探索，<20描述。详细实际分组见sigma_group_summary.tsv。
+
+E.coli 50nt强度原文件保留为Exp5候选，单位/条件/聚合定义未确认；kucao_test保留待核，不进入正式输入。确定不用的酵母/蓝细菌/派生物化特征/图片资产已移出项目。历史TJU实验可保留为探索，不能替代v2冻结检验。
+
+## 构建与复现
+
+```bash
 python -m pip install -r requirements.txt
-python -m experiments.prepare_tjupan_motif_inputs
-python -m experiments.run_tjupan_meme
-python -m experiments.render_meme_logos --meme-root tmp/meme_runs/tjupan_promloop_20261003 --output-dir results/motif/tjupan_m3_20261003/logos --species bacillus_subtilis baumannii bradyrhizobium diphtheria escherichia_coli staphylococcus
-python -m experiments.summarize_tjupan_meme --meme-root tmp/meme_runs/tjupan_promloop_20261003 --run-manifest results/motif/tjupan_m3_20261003/run_manifest.json --output-dir results/motif/tjupan_m3_20261003/summary
-python -m experiments.run_tjupan_fimo
-python -m experiments.summarize_tjupan_fimo
-python -m experiments.run_tjupan_reference_fimo
-python -m experiments.summarize_tjupan_reference_overlap
-python -m experiments.analyze_tjupan_motif_pairs
-~~~
+python -m preprocessing.rebuild_audited_data
+python -m preprocessing.finalize_audited_inputs
+python -m pytest -q
+```
 
-输入准备命令会逐条核验六个物种的正类文件、序列长度、碱基字符、拆分关系和 SHA256，并生成本地 FASTA。MEME 命令按物种逐个搜索，使用 positive_samples.csv 作 primary、Dataset.csv 的 label=0 作真实负类对照。参数和软件版本写入运行 manifest。当前正类共 9,724 条，四条不等长负类已排除。复现说明见 docs/运行说明.md。
+重建命令拒绝覆盖已有v2目录；要复现到新目录，可在Python调用run(output=Path("新的项目内目录"))并将同一目录传给finalize的run(base=...)。固定原始快照必须存在，按manifest原始SHA256核对；不会自动重新下载或覆盖现有数据。
 
-## 项目目录
+首份修复后的辅助FASTA：`data/processed/pr01_02_data_v2/regulondb_ecoli/core/discovery.positive.fasta`（1284条），配对`discovery.dinucleotide_null.fasta`。正式主实验从各`tjupan_*/main/discovery.positive.fasta`开始；STREME背景选择需在正式实验配置中固定，不能边看结果边换。
 
-~~~text
-data/            本地原始与处理中数据（不提交）
-preprocessing/   输入验证、清洗、来源适配和序列窗口处理
-models/          可解释 PWM 基线
-experiments/     数据审计、motif 发现和统计分析入口
-results/         审核过的结果表、图和 manifest
-baselines/       已知启动子元件参考矩阵
-configs/         固定的实验参数
-docs/            任务定义、数据、方法、复现与进度记录
-reports/         阶段报告和最终报告
-~~~
+当前不得使用旧实验脚本默认的20260930/20261003输入路径直接启动实验。正式实验启动前需要将MEME/STREME/FIMO入口更新到v2并锁定参数；本轮没有执行它们。
 
-## 协作与记录
-
-每项正式分析都要记录输入来源、样本数、软件版本、完整参数、随机种子、命令、输出位置、SHA256、解释边界和下一步。Git 提交应表达实际改动，例如：feat: prepare six-species promoter motif inputs。数据与结果许可未确认前，不推送原始记录或可还原原始序列的文件。
+详细方案：[数据源选择与处理规范](docs/PR01-02_数据源选择与处理规范_20261005.md)。修复/清理记录：[数据修复与输入验收](reports/数据修复与输入验收_20261005.md)。

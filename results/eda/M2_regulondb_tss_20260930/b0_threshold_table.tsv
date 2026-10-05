@@ -1,2 +1,0 @@
-sequence_length	threshold	background_sequences	background_sequences_above_threshold	achieved_false_positive_rate	requires_perfect_match	max_background_best_score
-81	10.354950219366033	3807	554	0.14552	True	10.355

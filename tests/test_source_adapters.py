@@ -163,7 +163,8 @@ def test_dbtbs_parser_keeps_sigma_promoters_and_skips_tf_binding_rows():
     assert records[0]["sigma_factor_type"] == "SigA"
     assert records[0]["sequence"] == "TTGACAAATATAAT"
     assert records[0]["evidence_level"] == "experimental"
-    assert records[0]["source_tss_coordinate"] == 100
+    assert pd.isna(records[0]["source_tss_coordinate"])
+    assert records[0]["source_interval_start"] == 100
     assert counts["promoter_rows_seen"] == 3
     assert counts["non_sigma_promoters_skipped"] == 1
     assert counts["invalid_or_missing_sequence_skipped"] == 1

@@ -1,0 +1,41 @@
+{
+  "sigma_rows": 740,
+  "accepted_records": 444,
+  "oriented_unique_81bp": 432,
+  "multi_sigma_unique": 12,
+  "sigma_memberships": {
+    "SigX": 9,
+    "SigA": 251,
+    "SigL": 3,
+    "SigG": 35,
+    "SigE": 33,
+    "SigB": 30,
+    "SigK": 24,
+    "SigD": 10,
+    "SigH": 17,
+    "SigF": 14,
+    "SigW": 16,
+    "SigI": 1,
+    "SigM": 1
+  },
+  "single_sigma_memberships": {
+    "SigX": 5,
+    "SigA": 249,
+    "SigL": 3,
+    "SigG": 29,
+    "SigE": 33,
+    "SigB": 29,
+    "SigK": 24,
+    "SigD": 9,
+    "SigH": 17,
+    "SigF": 8,
+    "SigW": 12,
+    "SigI": 1,
+    "SigM": 1
+  },
+  "quarantine_reasons": {
+    "multiple_bold_TSS_ambiguous": 169,
+    "unresolved_coordinate": 127
+  },
+  "ND_with_single_bold_TSS": 0
+}

@@ -1,0 +1,21 @@
+{
+  "regulondb_high_confidence_single_sigma": {
+    "Sigma70": 817,
+    "Sigma38": 110,
+    "Sigma28": 12,
+    "Sigma24": 66,
+    "Sigma54": 21,
+    "Sigma32": 52
+  },
+  "regulondb_multi_sigma": 104,
+  "tju_ecoli_canonical_after_conflict_exclusion": 1635,
+  "tju_ecoli_vs_high_confidence_regulondb": {
+    "retained": 1273,
+    "exact_same_orientation": 362
+  },
+  "tju_bsub_vs_dbtbs_strict": {
+    "exact_same_orientation": 409,
+    "retained": 267,
+    "near_ge73of81": 15
+  }
+}

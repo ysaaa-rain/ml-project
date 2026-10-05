@@ -1,0 +1,7 @@
+{
+  "method": "81bp same-offset direct and reverse complement exhaustive >=73/81 identity",
+  "train_records": 2531,
+  "holdout_records": 636,
+  "holdout_records_with_near_train": 2,
+  "near_pairs": 4
+}
