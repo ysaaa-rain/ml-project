@@ -1,0 +1,30 @@
+{
+  "audit_date": "2026-10-05",
+  "status": "RegulonDB_internal_M1_checks_passed; overall_M1_partial",
+  "command": "python -B -m experiments.audit_shared_m1",
+  "script_sha256": "b1be5ed3ec5c52998c1e598afcced67022775656b4f701e3e14b3659abf158e0",
+  "share_manifest_sha256": "6b38253609451e6c30590aa7cb6b5d99573836932f1f3cfdf979bc704248603e",
+  "checked_windows": 11466,
+  "verified_loci": 3822,
+  "clusters": 3296,
+  "excluded_source_records": 93,
+  "gold_representatives": 1100,
+  "single_sigma_ml": 961,
+  "checks": [
+    "shared payload byte hashes",
+    "original source hashes",
+    "all genomic windows and bounds",
+    "all source evidence and sigma labels",
+    "one deterministic representative per gold cluster",
+    "seeded global split reconstruction",
+    "strict ML eligibility",
+    "exact/RC overlap across split"
+  ],
+  "near_homology_gate": "reuse exhaustive 2026-10-04 gate after verifying byte-identical inputs; not rerun here",
+  "remaining_M1_requirements": [
+    "DBTBS record-level evidence and reliable TSS/strand",
+    "external-source homology separation",
+    "explicit data reuse/redistribution terms not verified; do not substitute software license"
+  ],
+  "experiment_status": "No new motif discovery, scanning or classifier training"
+}

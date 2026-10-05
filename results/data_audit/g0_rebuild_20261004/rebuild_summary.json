@@ -1,0 +1,90 @@
+{
+  "run_id": "g0_rebuild_20261004",
+  "created_at": "2026-10-04T19:07:51.681896+08:00",
+  "status": "RegulonDB genomic inputs rebuilt; no motif experiment",
+  "source_records": 4042,
+  "excluded_records": 93,
+  "verified_loci": 3822,
+  "clusters": 3296,
+  "gold_representatives": 1100,
+  "split_seed": 20261004,
+  "holdout_fraction_requested": 0.3,
+  "split_unit": "global homology cluster across all three windows, including weak/unknown records",
+  "cluster_stats": [
+    {
+      "upstream": 80,
+      "length": 101,
+      "candidate_pairs": 112096,
+      "confirmed_pairs": 406,
+      "cutoff": 10
+    },
+    {
+      "upstream": 60,
+      "length": 81,
+      "candidate_pairs": 72669,
+      "confirmed_pairs": 346,
+      "cutoff": 8
+    },
+    {
+      "upstream": 100,
+      "length": 121,
+      "candidate_pairs": 156742,
+      "confirmed_pairs": 470,
+      "cutoff": 12
+    }
+  ],
+  "cross_split_cluster_overlap": 0,
+  "DBTBS": {
+    "records": 698,
+    "missing_tss": 698,
+    "missing_strand": 698,
+    "coordinate_gate": "not_passed",
+    "permitted": "nonpositional candidate discovery after evidence audit; no strict positional validation"
+  },
+  "config": {
+    "run_id": "g0_rebuild_20261004",
+    "regulondb_gff3": "data/raw/regulondb_promoters_20260916.gff3",
+    "genome_fasta": "data/raw/regulondb_e_coli_k12_20260916.fna",
+    "expected_gff3_sha256": "50344119ecad07a24b724b9ffeab70e18324cff77413849b6ac930b8c68ca026",
+    "expected_genome_sha256": "073c4b894974ab1a49f6ceaed0f6a2838fbedc1d86fcd731f4da37419c63f1b5",
+    "source_snapshot": "2026-09-16",
+    "accepted_confidence": [
+      "Strong",
+      "Confirmed"
+    ],
+    "windows_upstream": [
+      80,
+      60,
+      100
+    ],
+    "downstream": 20,
+    "similarity": 0.9,
+    "clustering": "union across 81/101/121bp; global Levenshtein or shifted overlap identity; either orientation",
+    "holdout_fraction": 0.3,
+    "seed": 20261004,
+    "gc_bin_width": 0.05,
+    "background": "dinucleotide-preserving shuffle and same-species other-sigma; train only",
+    "data_output": "data/processed/g0_rebuild_20261004",
+    "summary_output": "results/data_audit/g0_rebuild_20261004"
+  },
+  "source_sha256": {
+    "data/raw/regulondb_promoters_20260916.gff3": "50344119ecad07a24b724b9ffeab70e18324cff77413849b6ac930b8c68ca026",
+    "data/raw/regulondb_e_coli_k12_20260916.fna": "073c4b894974ab1a49f6ceaed0f6a2838fbedc1d86fcd731f4da37419c63f1b5"
+  },
+  "git_head": "a0f9065c2f60348fdee0049b6ec0910178173ab4",
+  "git_dirty": true,
+  "limits": [
+    "No motif discovery/scan/classifier was run.",
+    "Gold confidence supports source annotation, not wet-lab confirmation of each new motif.",
+    "Clusters use stated global-edit/shifted-overlap criteria, not arbitrary local alignments.",
+    "Other-sigma controls use frozen GC strata without replacement; unmatched primaries are reported.",
+    "External datasets have not yet been certified disjoint from discovery; DBTBS coordinates remain missing."
+  ],
+  "data_manifest_sha256": "4787664985138d9b4461582a4d818ce0b0d5e09891f127b3ee230055204584d9",
+  "summary_sha256": {
+    "background_summary.tsv": "66ce1a53aad3e1a50e034a9c2652246f10b8946a9bb1ae7b98ec2739644b7fab",
+    "cluster_summary.tsv": "e9fe92a9c95b86008b80cc76b2e83510c82dede7c839f26f30dac3941f604bd1",
+    "exclusion_summary.tsv": "3d620d97bc9f3f0145fd530395dd2c20ed76c00bfa74dea6ff1ed273bd5eaaaa",
+    "sigma_split_summary.tsv": "bc88c33a6d1086d9471558bdac7d070ead15f362672d7ac97446bc3391cacf97"
+  }
+}

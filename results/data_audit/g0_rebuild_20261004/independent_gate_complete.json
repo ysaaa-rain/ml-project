@@ -1,0 +1,62 @@
+{
+  "status": "passed_for_stated_cross_split_criteria",
+  "created_at": "2026-10-04T19:13:47.799884+08:00",
+  "command": "python -B -m experiments.certify_gold_inputs ",
+  "cross_split_audit": [
+    {
+      "upstream": 80,
+      "length": 101,
+      "train_loci": 2660,
+      "holdout_loci": 1162,
+      "pairs_per_orientation": 3090920,
+      "edit_distance_hits": 0,
+      "shifted_overlap_hits": 0
+    },
+    {
+      "upstream": 60,
+      "length": 81,
+      "train_loci": 2660,
+      "holdout_loci": 1162,
+      "pairs_per_orientation": 3090920,
+      "edit_distance_hits": 0,
+      "shifted_overlap_hits": 0
+    },
+    {
+      "upstream": 100,
+      "length": 121,
+      "train_loci": 2660,
+      "holdout_loci": 1162,
+      "pairs_per_orientation": 3090920,
+      "edit_distance_hits": 0,
+      "shifted_overlap_hits": 0
+    }
+  ],
+  "input_manifest_sha256": "4787664985138d9b4461582a4d818ce0b0d5e09891f127b3ee230055204584d9",
+  "config_sha256": "a68fef8235366cc535df96ecb955d99d470a96feb59712e2f45ce2d886bfcd0d",
+  "builder_sha256": "05e1f6e6cdead5a297ca7a057a6fdd5309a67de3d24e098f2ca93d39fd8e8679",
+  "gate_script_sha256": "c90c39ed28c8f7d7e98baed3739fe2a0509b53a99664089a79440096ac83ccef",
+  "build_command": "python -B -m experiments.rebuild_gold_inputs",
+  "software": {
+    "numpy": "2.1.3",
+    "rapidfuzz": "3.14.5"
+  },
+  "multi_sigma_loci": 125,
+  "supplement_output_sha256": {
+    "dbtbs_audited_candidates.tsv": "ba18a1ed7a98cda7e11aa8de5a390ebd73e3364a7fa820ec82b5e829af3edad3",
+    "label_retention.tsv": "f47801eb3a0d683619ec034efb707e3d827e72cb565019568d43857ff31d7b75"
+  },
+  "single_sigma_ml_representatives": 961,
+  "DBTBS": {
+    "downloaded_pages_matching_hash": 1062,
+    "missing_pages": 0,
+    "changed_pages": 0,
+    "nonempty_source_evidence": 698,
+    "evidence_gate": "references retained; experimental label assigned by old importer is not independently verified",
+    "coordinate_gate": "not_passed; source_tss_coordinate is a promoter-region boundary, not a verified TSS"
+  },
+  "limits": [
+    "No motifs discovered or validated.",
+    "Each cluster has one representative; sigma labels of other members are not transferred to it.",
+    "The criteria do not certify arbitrary shorter local alignments or external-source separation."
+  ]
+}

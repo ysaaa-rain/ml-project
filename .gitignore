@@ -29,6 +29,7 @@ docs/project-pool(1).pdf
 
 # Downloaded/generated data and uncurated experiment outputs
 results/*
+# User-authorized frozen collaboration input; other generated data remain ignored.
 !results/.gitkeep
 
 # Only reviewed, small, report-facing motif results may be versioned here.
@@ -53,3 +54,24 @@ results/motif/**/*.xml
 
 # Temporary PDF renders and local clones
 tmp/
+
+# Reviewable aggregate audit evidence; raw sequences and machine paths stay local.
+!results/data_audit/
+results/data_audit/*
+!results/data_audit/audit_20261004_final/
+results/data_audit/audit_20261004_final/*
+!results/data_audit/audit_20261004_final/README.md
+!results/data_audit/audit_20261004_final/data_profiles.json
+!results/data_audit/audit_20261004_final/artifact_hash_checks.tsv
+!results/data_audit/audit_20261004_final/legacy_holdout_near_duplicates.tsv
+!results/data_audit/audit_20261004_final/public_audit_summary.json
+
+# Frozen G0 aggregate evidence; genomic sequences and raw source pages stay local.
+!results/data_audit/g0_rebuild_20261004/
+results/data_audit/g0_rebuild_20261004/*
+!results/data_audit/g0_rebuild_20261004/rebuild_summary.json
+!results/data_audit/g0_rebuild_20261004/independent_gate_complete.json
+!results/data_audit/g0_rebuild_20261004/*_summary.tsv
+!results/data_audit/g0_rebuild_20261004/label_retention.tsv
+!results/data_audit/g0_rebuild_20261004/supplement_manifest.json
+!results/data_audit/g0_rebuild_20261004/m1_acceptance_20261005.json

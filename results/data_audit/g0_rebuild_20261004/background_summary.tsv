@@ -1,0 +1,19 @@
+upstream	sigma	primary	N1	other_matched	other_unique	unmatched_primary	gc_bin_width	sampling	other_background_method
+80	Sigma24	47	47	47	47	0	0.05	without_replacement; one control per matched primary	MEME
+80	Sigma28	8	8	8	8	0	0.05	without_replacement; one control per matched primary	not_formal
+80	Sigma32	35	35	35	35	0	0.05	without_replacement; one control per matched primary	MEME
+80	Sigma38	121	121	121	121	0	0.05	without_replacement; one control per matched primary	STREME
+80	Sigma54	16	16	16	16	0	0.05	without_replacement; one control per matched primary	MEME
+80	Sigma70	588	588	159	159	429	0.05	without_replacement; one control per matched primary	STREME
+60	Sigma24	47	47	47	47	0	0.05	without_replacement; one control per matched primary	MEME
+60	Sigma28	8	8	8	8	0	0.05	without_replacement; one control per matched primary	not_formal
+60	Sigma32	35	35	35	35	0	0.05	without_replacement; one control per matched primary	MEME
+60	Sigma38	121	121	121	121	0	0.05	without_replacement; one control per matched primary	STREME
+60	Sigma54	16	16	16	16	0	0.05	without_replacement; one control per matched primary	MEME
+60	Sigma70	588	588	159	159	429	0.05	without_replacement; one control per matched primary	STREME
+100	Sigma24	47	47	47	47	0	0.05	without_replacement; one control per matched primary	MEME
+100	Sigma28	8	8	8	8	0	0.05	without_replacement; one control per matched primary	not_formal
+100	Sigma32	35	35	35	35	0	0.05	without_replacement; one control per matched primary	MEME
+100	Sigma38	121	121	121	121	0	0.05	without_replacement; one control per matched primary	STREME
+100	Sigma54	16	16	16	16	0	0.05	without_replacement; one control per matched primary	MEME
+100	Sigma70	588	588	159	159	429	0.05	without_replacement; one control per matched primary	STREME
