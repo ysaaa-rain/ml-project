@@ -1,8 +1,0 @@
-species	source_dataset	sigma_factor_type	split	sequence_count	length_min	length_median	length_max	gc_fraction_mean	gc_fraction_median
-Escherichia coli	regulondb	Sigma24	discovery	513	81	81.0	81	0.42887396818520923	0.4320987654320987
-Escherichia coli	regulondb	Sigma28	discovery	140	81	81.0	81	0.4580246913580247	0.4691358024691358
-Escherichia coli	regulondb	Sigma32	discovery	300	81	81.0	81	0.45329218106995883	0.4567901234567901
-Escherichia coli	regulondb	Sigma38	discovery	176	81	81.0	81	0.41694725028058355	0.419753086419753
-Escherichia coli	regulondb	Sigma54	discovery	96	81	81.0	81	0.4660493827160494	0.4567901234567901
-Escherichia coli	regulondb	Sigma70	discovery	1942	81	81.0	81	0.39136819620856694	0.3950617283950617
-Escherichia coli	regulondb	unknown	discovery	640	81	81.0	81	0.42511574074074066	0.4320987654320987
