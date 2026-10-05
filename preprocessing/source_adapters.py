@@ -343,6 +343,8 @@ def adapt_regulondb_gff3(
 ) -> tuple[pd.DataFrame, AdapterReport]:
     """Adapt RegulonDB ``PromoterSet.gff3`` records to project metadata.
 
+    The Sequence attribute is already in transcription direction; genomic
+    strand is provenance, not an instruction to reverse it again.
     RegulonDB encodes the local TSS base as the single uppercase nucleotide in
     its ``Sequence`` attribute. If that marker is absent or ambiguous, the
     local ``tss_position`` is left missing rather than inferred from a guessed
@@ -397,6 +399,7 @@ def adapt_regulondb_gff3(
                     "promoter_strength": pd.NA,
                     "evidence_level": attributes.get("Confidence") or pd.NA,
                     "source_record_id": record_id,
+                    "sequence_orientation": "transcription",
                     "source_tss_coordinate": start,
                     "source_tss_end_coordinate": end,
                     "source_evidence": attributes.get("Evidence") or pd.NA,
@@ -429,6 +432,7 @@ def adapt_regulondb_gff3(
         },
     )
     for extra_column in (
+        "sequence_orientation",
         "source_tss_coordinate",
         "source_tss_end_coordinate",
         "source_evidence",

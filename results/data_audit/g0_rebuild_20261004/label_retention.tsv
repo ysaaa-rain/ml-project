@@ -1,0 +1,7 @@
+sigma	gold_loci_before_deduplication	clusters_containing_gold_label	representatives_with_actual_gold_label	clusters_without_representative_label
+Sigma24	71	71	69	2
+Sigma28	12	12	11	1
+Sigma32	67	65	63	2
+Sigma38	193	187	181	6
+Sigma54	24	24	22	2
+Sigma70	921	859	855	4

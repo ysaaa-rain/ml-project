@@ -27,7 +27,8 @@ def test_tss_at_sixty_cannot_supply_sixty_upstream_bases():
 def test_sigma_dedup_retains_both_labels():
     df=pd.DataFrame([{'sequence_id':str(i),'species':'E','source_dataset':'s','sequence':'ACGT'*21,'sigma_factor_type':z} for i,z in enumerate(['Sigma70','Sigma38'])])
     out,_=normalize_metadata(df)
-    assert len(out)==1 and set(out.iloc[0].sigma_factor_type.split('|'))=={'Sigma70','Sigma38'}
+    assert len(out)==1 and set(__import__('json').loads(out.iloc[0].sigma_labels))=={'Sigma70','Sigma38'}
+    assert out.iloc[0].sigma_label_status == 'multi_sigma'
 
 def test_edit_and_reverse_complement_leakage():
     s='ACGT'*20+'A';changed=list(s)

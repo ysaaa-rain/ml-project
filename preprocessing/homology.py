@@ -9,10 +9,10 @@ This module groups sequences into homologous clusters and then assigns whole
 clusters to a single side of the split, guaranteeing that no cluster straddles
 discovery and validation.
 
-Similarity is computed as alignment-free percent identity over the shorter
+Similarity is computed as alignment-free percent identity over the longer
 sequence, restricted to offsets that keep most of the shorter sequence aligned::
 
-    identity = matches / min(len(a), len(b))
+    identity = matches / max(len(a), len(b))
 
 Candidate pairs are found with a k-mer sketch (Jaccard on distinct k-mers) and
 then confirmed exactly, which keeps the cost near-linear for the sequence counts
@@ -75,7 +75,7 @@ def pair_identity(first: str, second: str, *, max_offset_fraction: float = 0.25)
     even when they are shifted relative to each other, without a full alignment.
 
     The denominator is the *longer* sequence: scoring against the shorter one
-    would report a near-zero identity for a pair that is identical except for a
+    would report an inflated identity for a pair that is identical except for a
     few bases missing at one end, which is a common real difference between two
     records describing the same promoter. The default offset window is
     correspondingly wide for the same reason.
@@ -173,7 +173,8 @@ def homology_pairs(
         union = len(sketches[first] | sketches[second])
         if union and len(sketches[first] & sketches[second]) / union < sketch_jaccard:
             continue
-        identity = pair_identity(sequence_a, sequence_b)
+        identity = max(pair_identity(sequence_a, sequence_b),
+                       pair_identity(sequence_a, _reverse_complement(sequence_b)))
         if identity >= identity_threshold:
             pairs.append((first, second, identity))
     return pairs
