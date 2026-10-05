@@ -1,0 +1,28 @@
+{
+  "source_id": "regulondb",
+  "source_version": "official portal raw-media snapshot",
+  "access_date": "2026-09-30",
+  "landing_page": "https://regulondb.ccg.unam.mx/",
+  "documentation": "https://github.com/regulondbunam/regulondb-docs/blob/main/00_about_policies/about_us.md",
+  "assets": [
+    {
+      "asset_id": "promoters_gff3",
+      "url": "https://regulondb.ccg.unam.mx/media/raw/gff3/PromoterSet.gff3",
+      "local_path": "/Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/data/raw/regulondb_promoters_20260916.gff3",
+      "bytes": 1322487,
+      "sha256": "50344119ecad07a24b724b9ffeab70e18324cff77413849b6ac930b8c68ca026",
+      "etag": "\"54236b6fba5efdac66c2da035a14a19c3651ffdc\"",
+      "content_type": ""
+    },
+    {
+      "asset_id": "genome_fasta",
+      "url": "https://regulondb.ccg.unam.mx/media/raw/e_coli_k12.fna",
+      "local_path": "/Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/data/raw/regulondb_e_coli_k12_20260916.fna",
+      "bytes": 4703576,
+      "sha256": "073c4b894974ab1a49f6ceaed0f6a2838fbedc1d86fcd731f4da37419c63f1b5",
+      "etag": "\"073b58dd7816c0171a3012d50f4e023f1c074fb3\"",
+      "content_type": ""
+    }
+  ],
+  "note": "Raw files are ignored by Git; the report records provenance and hashes for local reproduction."
+}

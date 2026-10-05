@@ -1,0 +1,24 @@
+{
+  "source_id": "regulondb",
+  "input_rows": 4042,
+  "output_rows": 4042,
+  "mapped_columns": {
+    "sequence_id": "sequence_id",
+    "species": "species",
+    "sequence": "sequence",
+    "source_record_id": "source_record_id",
+    "taxon_id": "taxon_id",
+    "assembly_accession": "assembly_accession",
+    "sequence_length": "sequence_length",
+    "tss_position": "tss_position",
+    "strand": "strand",
+    "sigma_factor_type": "sigma_factor_type",
+    "known_element_annotations": "known_element_annotations",
+    "promoter_strength": "promoter_strength",
+    "evidence_level": "evidence_level"
+  },
+  "missing_required_fields": [],
+  "missing_optional_fields": [],
+  "derived_fields": [],
+  "warnings": []
+}
