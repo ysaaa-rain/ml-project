@@ -1,0 +1,16 @@
+[
+  {
+    "version": 1,
+    "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_000964.1&db=nuccore&report=fasta&retmode=text",
+    "bytes": 4275075,
+    "sha256": "e23b84380bff6dbe1b86a7619adcad08169b55290fe02c98d36f81f7f6c23235",
+    "header": ">NC_000964.1 Bacillus subtilis, complete genome"
+  },
+  {
+    "version": 2,
+    "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_000964.2&db=nuccore&report=fasta&retmode=text",
+    "bytes": 4274913,
+    "sha256": "ccfaa28d643e0fe37bb027a012171e6e94e34ba88279109e2033b6e9818e317b",
+    "header": ">NC_000964.2 Bacillus subtilis subsp. subtilis str. 168, complete genome"
+  }
+]

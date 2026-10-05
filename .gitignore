@@ -28,17 +28,8 @@ project-pool.pdf
 docs/project-pool(1).pdf
 
 # Downloaded/generated data and uncurated experiment outputs
-data/raw/*
-data/interim/*
-data/processed/*
 results/*
-!data/raw/.gitkeep
-!data/interim/.gitkeep
-!data/processed/.gitkeep
 # User-authorized frozen collaboration input; other generated data remain ignored.
-!data/processed/g0_rebuild_20261004/
-!data/processed/g0_rebuild_20261004/**
-data/processed/g0_rebuild_20261004/run_manifest.json
 !results/.gitkeep
 
 # Only reviewed, small, report-facing motif results may be versioned here.
