@@ -29,9 +29,11 @@
 
 ## 本地运行
 
+2026-10-05依用户要求，已将[重建数据目录](data/processed/g0_rebuild_20261004/)纳入共享，拉取即可继续M2，无需重新下载/清洗。范围包括标准表、三个窗口FASTA、固定划分与两套训练背景；原机器环境manifest仍本地保留。源文件至共享输入的逐项核查与M1未通过项见[M1验收说明](docs/11_M1验收与数据共享_20261005.md)。RegulonDB内部M1通过，不表示DBTBS/外部来源和整个多来源M1已全部完成。
+
 2026-10-04已完成[RegulonDB G0重建与冻结划分](docs/09_G0重建与冻结划分_20261004.md)：3,822个位点、3,296个联合同源簇、1,100个Gold代表，三个窗口穷举跨split核查均无符合冻结标准的近同源对。两套训练背景已准备；Sigma28仅8条训练样本，Sigma70其他sigma背景仅159匹配对。DBTBS证据/坐标与外部来源隔离仍待审计，新motif实验尚未运行。
 
-当前Windows尚无可运行MEME Suite；远端历史构建记录不能当作本机环境。当前Python依赖版本也不同于requirements锁定值。原始数据在被Git忽略的 `data/raw/course_share/`、RegulonDB和DBTBS本地目录中；原始序列、大型缓存不提交。
+当前Windows尚无可运行MEME Suite；远端历史构建记录不能当作本机环境。当前Python依赖版本也不同于requirements锁定值。原始下载数据在被Git忽略的 `data/raw/course_share/`、RegulonDB和DBTBS本地目录中；本轮仅明确共享上述G0派生输入，其他原始下载与大型缓存不提交。
 
 ```powershell
 python -B -m experiments.preflight --output tmp/preflight_audit.json

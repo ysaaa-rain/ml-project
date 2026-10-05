@@ -5,4 +5,5 @@
 *.pdf binary
 *.docx binary
 *.py text eol=lf
+data/processed/g0_rebuild_20261004/** text eol=lf
 "docs/参考资料/PR01-02_后续实验指导_20261004.txt" -text whitespace=-blank-at-eol
