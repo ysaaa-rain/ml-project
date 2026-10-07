@@ -1,0 +1,20 @@
+source	source_cn	sigma	total	discovery	development	holdout	summary_total	eligibility	eligibility_cn
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigA	249	163	24	62	249	confirmation_candidate	可做正式结论
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	29	22	3	4	29	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	9	5	3	1	9	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	33	22	2	9	33	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	8	7	0	1	8	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	29	24	1	4	29	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	17	10	1	6	17	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	1	1	0	0	1	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	24	18	3	3	24	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	3	2	1	0	3	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	1	1	0	0	1	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	12	10	0	2	12	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	5	4	0	1	5	descriptive_only	只能描述
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	66	45	8	13	66	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	12	10	1	1	12	descriptive_only	只能描述
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	52	34	5	13	52	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	110	84	10	16	110	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	21	14	1	6	21	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma70	817	583	67	167	817	confirmation_candidate	可做正式结论
