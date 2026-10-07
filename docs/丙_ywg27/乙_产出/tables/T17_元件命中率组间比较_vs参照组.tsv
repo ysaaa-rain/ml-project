@@ -1,0 +1,35 @@
+source	source_cn	sigma	element	n	hit_n	hit_pct	reference_sigma	reference_n	reference_hit_n	reference_hit_pct	risk_diff_pp	ci95_lo_pp	ci95_hi_pp	odds_ratio	fisher_p	bh_q	eligibility	eligibility_cn	inferential_reported
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	-35 box (TTGACA)	45	1	2.22	Sigma70	583	25	4.29	-2.07	-6.68	2.54	0.507	1.0000	1.0000	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	-35 box (TTGACA)	10	0	0.00	Sigma70	583	25	4.29	-4.29	NA	NA	—	—		descriptive_only	只能描述	否
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	-35 box (TTGACA)	34	1	2.94	Sigma70	583	25	4.29	-1.35	-7.26	4.57	0.676	1.0000	1.0000	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	-35 box (TTGACA)	84	3	3.57	Sigma70	583	25	4.29	-0.72	-5.01	3.58	0.827	1.0000	1.0000	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	-35 box (TTGACA)	14	0	0.00	Sigma70	583	25	4.29	-4.29	-5.93	-2.64	0.000	1.0000	1.0000	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	-10 box (TATAAT)	45	1	2.22	Sigma70	583	42	7.20	-4.98	-9.77	-0.19	0.293	0.3527	0.6270	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	-10 box (TATAAT)	10	0	0.00	Sigma70	583	42	7.20	-7.20	NA	NA	—	—		descriptive_only	只能描述	否
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	-10 box (TATAAT)	34	1	2.94	Sigma70	583	42	7.20	-4.26	-10.32	1.79	0.390	0.5015	0.7295	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	-10 box (TATAAT)	84	3	3.57	Sigma70	583	42	7.20	-3.63	-8.12	0.86	0.477	0.3483	0.6270	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	-10 box (TATAAT)	14	0	0.00	Sigma70	583	42	7.20	-7.20	-9.30	-5.11	0.000	0.6139	0.8185	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	-35 box (TTGACA)	22	1	4.55	SigA	163	20	12.27	-7.72	-17.78	2.33	0.340	0.4766	0.7295	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	-35 box (TTGACA)	5	1	20.00	SigA	163	20	12.27	7.73	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	-35 box (TTGACA)	22	0	0.00	SigA	163	20	12.27	-12.27	-17.31	-7.23	0.000	0.1370	0.4385	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	-35 box (TTGACA)	7	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	-35 box (TTGACA)	24	0	0.00	SigA	163	20	12.27	-12.27	-17.31	-7.23	0.000	0.0813	0.4335	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	-35 box (TTGACA)	10	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	-35 box (TTGACA)	1	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	-35 box (TTGACA)	18	0	0.00	SigA	163	20	12.27	-12.27	-17.31	-7.23	0.000	0.2276	0.5202	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	-35 box (TTGACA)	2	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	-35 box (TTGACA)	1	1	100.00	SigA	163	20	12.27	87.73	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	-35 box (TTGACA)	10	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	-35 box (TTGACA)	4	0	0.00	SigA	163	20	12.27	-12.27	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	-10 box (TATAAT)	22	2	9.09	SigA	163	44	26.99	-17.90	-31.71	-4.09	0.270	0.1114	0.4385	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	-10 box (TATAAT)	5	2	40.00	SigA	163	44	26.99	13.01	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	-10 box (TATAAT)	22	1	4.55	SigA	163	44	26.99	-22.45	-33.50	-11.39	0.129	0.0179	0.2862	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	-10 box (TATAAT)	7	0	0.00	SigA	163	44	26.99	-26.99	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	-10 box (TATAAT)	24	2	8.33	SigA	163	44	26.99	-18.66	-31.65	-5.67	0.246	0.0723	0.4335	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	-10 box (TATAAT)	10	2	20.00	SigA	163	44	26.99	-6.99	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	-10 box (TATAAT)	1	0	0.00	SigA	163	44	26.99	-26.99	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	-10 box (TATAAT)	18	2	11.11	SigA	163	44	26.99	-15.88	-31.92	0.16	0.338	0.1666	0.4442	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	-10 box (TATAAT)	2	1	50.00	SigA	163	44	26.99	23.01	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	-10 box (TATAAT)	1	0	0.00	SigA	163	44	26.99	-26.99	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	-10 box (TATAAT)	10	0	0.00	SigA	163	44	26.99	-26.99	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	-10 box (TATAAT)	4	0	0.00	SigA	163	44	26.99	-26.99	NA	NA	—	—		descriptive_only	只能描述	否
