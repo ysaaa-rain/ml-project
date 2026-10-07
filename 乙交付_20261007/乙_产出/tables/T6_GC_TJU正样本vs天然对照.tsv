@@ -1,0 +1,7 @@
+species	n_positive	mean_positive	median_positive	n_natural_control	mean_natural_control	median_natural_control	median_diff_pp	mannwhitney_p	rank_biserial
+bacillus_subtilis	691	32.869	33.333	809	46.056	46.914	-13.580	0.000000	-0.842
+baumannii	1540	33.140	33.333	1360	41.290	40.741	-7.407	0.000000	-0.624
+bradyrhizobium	1983	60.582	60.494	1952	65.008	65.432	-4.938	0.000000	-0.374
+diphtheria	1653	46.633	46.914	1655	55.106	55.556	-8.642	0.000000	-0.651
+escherichia_coli	1635	44.154	44.444	1703	52.972	53.086	-8.642	0.000000	-0.596
+staphylococcus	2206	25.633	24.691	1162	34.253	34.568	-9.877	0.000000	-0.715

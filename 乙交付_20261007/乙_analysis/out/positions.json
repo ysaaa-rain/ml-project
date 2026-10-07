@@ -1,0 +1,651 @@
+{
+  "elements": [
+    {
+      "name": "-35 box (TTGACA)",
+      "motif": "TTGACA",
+      "window_offsets": [
+        -37,
+        -32
+      ]
+    },
+    {
+      "name": "-10 box (TATAAT)",
+      "motif": "TATAAT",
+      "window_offsets": [
+        -12,
+        -7
+      ]
+    }
+  ],
+  "main": {
+    "-35 box (TTGACA)|exact": {
+      "n_positive": 1284,
+      "n_null": 1284,
+      "positive_any": 42,
+      "null_any": 33,
+      "rate_positive": 0.03271028037383177,
+      "rate_null": 0.02570093457943925,
+      "excess": 0.007009345794392521,
+      "excess_lo": -0.0060130597932457445,
+      "excess_hi": 0.020031751382030786,
+      "fold": 1.2727272727272727,
+      "fisher_p": 0.34854496781057714,
+      "odds_ratio": 1.2819499341238472,
+      "hits_per_seq_positive": 0.03348909657320872,
+      "hits_per_seq_null": 0.0264797507788162,
+      "n_patterns": 1,
+      "summary": {
+        "n_matches": 43,
+        "mode_offset": -36,
+        "mode_count": 7,
+        "upstream_frac": 0.7674418604651163,
+        "window_frac": 0.37209302325581395,
+        "median_upstream": -36.0
+      },
+      "seqs_hit_in_window": 16
+    },
+    "-35 box (TTGACA)|mis1": {
+      "n_positive": 1284,
+      "n_null": 1284,
+      "positive_any": 551,
+      "null_any": 476,
+      "rate_positive": 0.42912772585669784,
+      "rate_null": 0.3707165109034268,
+      "excess": 0.05841121495327106,
+      "excess_lo": 0.02058377887686988,
+      "excess_hi": 0.09623865102967225,
+      "fold": 1.1575630252100841,
+      "fisher_p": 0.0028659758295008584,
+      "odds_ratio": 1.2760039895903792,
+      "hits_per_seq_positive": 0.5412772585669782,
+      "hits_per_seq_null": 0.45950155763239875,
+      "n_patterns": 19,
+      "summary": {
+        "n_matches": 695,
+        "mode_offset": -36,
+        "mode_count": 39,
+        "upstream_frac": 0.8316546762589928,
+        "window_frac": 0.18992805755395684,
+        "median_upstream": -34.0
+      },
+      "seqs_hit_in_window": 132
+    },
+    "-10 box (TATAAT)|exact": {
+      "n_positive": 1284,
+      "n_null": 1284,
+      "positive_any": 74,
+      "null_any": 67,
+      "rate_positive": 0.05763239875389408,
+      "rate_null": 0.05218068535825545,
+      "excess": 0.00545171339563863,
+      "excess_lo": -0.012168326494223117,
+      "excess_hi": 0.023071753285500377,
+      "fold": 1.1044776119402986,
+      "fisher_p": 0.6033714076286126,
+      "odds_ratio": 1.1108671518440854,
+      "hits_per_seq_positive": 0.05996884735202492,
+      "hits_per_seq_null": 0.053738317757009345,
+      "n_patterns": 1,
+      "summary": {
+        "n_matches": 77,
+        "mode_offset": -12,
+        "mode_count": 17,
+        "upstream_frac": 0.922077922077922,
+        "window_frac": 0.4155844155844156,
+        "median_upstream": -12.0
+      },
+      "seqs_hit_in_window": 32
+    },
+    "-10 box (TATAAT)|mis1": {
+      "n_positive": 1284,
+      "n_null": 1284,
+      "positive_any": 762,
+      "null_any": 650,
+      "rate_positive": 0.5934579439252337,
+      "rate_null": 0.5062305295950156,
+      "excess": 0.08722741433021808,
+      "excess_lo": 0.04889072699732785,
+      "excess_hi": 0.1255641016631083,
+      "fold": 1.1723076923076923,
+      "fisher_p": 1.0554414114068995e-05,
+      "odds_ratio": 1.4238373121131742,
+      "hits_per_seq_positive": 0.8839563862928349,
+      "hits_per_seq_null": 0.7819314641744548,
+      "n_patterns": 19,
+      "summary": {
+        "n_matches": 1135,
+        "mode_offset": -12,
+        "mode_count": 147,
+        "upstream_frac": 0.8651982378854626,
+        "window_frac": 0.26784140969162995,
+        "median_upstream": -14.0
+      },
+      "seqs_hit_in_window": 297
+    }
+  },
+  "sigma_groups": {
+    "Sigma24": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.022222222222222223,
+        "rate_null": 0.0,
+        "excess": 0.022222222222222223,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": Infinity,
+        "positive_any": 1,
+        "null_any": 0,
+        "n_null": 45,
+        "n_matches": 1,
+        "mode_offset": -13,
+        "upstream_frac": 1.0,
+        "window_frac": 0.0,
+        "median_upstream": -13.0,
+        "seqs_hit_in_window": 0
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.022222222222222223,
+        "rate_null": 0.022222222222222223,
+        "excess": 0.0,
+        "fold": 1.0,
+        "fisher_p": 1.0,
+        "odds_ratio": 1.0,
+        "positive_any": 1,
+        "null_any": 1,
+        "n_null": 45,
+        "n_matches": 1,
+        "mode_offset": -15,
+        "upstream_frac": 1.0,
+        "window_frac": 0.0,
+        "median_upstream": -15.0,
+        "seqs_hit_in_window": 0
+      }
+    },
+    "Sigma28": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.0,
+        "rate_null": 0.0,
+        "excess": 0.0,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": NaN,
+        "positive_any": 0,
+        "null_any": 0,
+        "n_null": 10,
+        "n_matches": 0,
+        "mode_offset": null,
+        "upstream_frac": NaN,
+        "window_frac": NaN,
+        "median_upstream": NaN,
+        "seqs_hit_in_window": 0
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.0,
+        "rate_null": 0.0,
+        "excess": 0.0,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": NaN,
+        "positive_any": 0,
+        "null_any": 0,
+        "n_null": 10,
+        "n_matches": 0,
+        "mode_offset": null,
+        "upstream_frac": NaN,
+        "window_frac": NaN,
+        "median_upstream": NaN,
+        "seqs_hit_in_window": 0
+      }
+    },
+    "Sigma32": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.029411764705882353,
+        "rate_null": 0.0,
+        "excess": 0.029411764705882353,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": Infinity,
+        "positive_any": 1,
+        "null_any": 0,
+        "n_null": 34,
+        "n_matches": 2,
+        "mode_offset": -50,
+        "upstream_frac": 1.0,
+        "window_frac": 0.0,
+        "median_upstream": -29.0,
+        "seqs_hit_in_window": 0
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.029411764705882353,
+        "rate_null": 0.0,
+        "excess": 0.029411764705882353,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": Infinity,
+        "positive_any": 1,
+        "null_any": 0,
+        "n_null": 34,
+        "n_matches": 1,
+        "mode_offset": -3,
+        "upstream_frac": 1.0,
+        "window_frac": 0.0,
+        "median_upstream": -3.0,
+        "seqs_hit_in_window": 0
+      }
+    },
+    "Sigma38": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.03571428571428571,
+        "rate_null": 0.023809523809523808,
+        "excess": 0.011904761904761904,
+        "fold": 1.5,
+        "fisher_p": 1.0,
+        "odds_ratio": 1.5185185185185186,
+        "positive_any": 3,
+        "null_any": 2,
+        "n_null": 84,
+        "n_matches": 3,
+        "mode_offset": -23,
+        "upstream_frac": 1.0,
+        "window_frac": 0.3333333333333333,
+        "median_upstream": -34.0,
+        "seqs_hit_in_window": 1
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.03571428571428571,
+        "rate_null": 0.047619047619047616,
+        "excess": -0.011904761904761904,
+        "fold": 0.75,
+        "fisher_p": 1.0,
+        "odds_ratio": 0.7407407407407407,
+        "positive_any": 3,
+        "null_any": 4,
+        "n_null": 84,
+        "n_matches": 4,
+        "mode_offset": -16,
+        "upstream_frac": 1.0,
+        "window_frac": 0.25,
+        "median_upstream": -14.5,
+        "seqs_hit_in_window": 1
+      }
+    },
+    "Sigma54": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.0,
+        "rate_null": 0.0,
+        "excess": 0.0,
+        "fold": Infinity,
+        "fisher_p": 1.0,
+        "odds_ratio": NaN,
+        "positive_any": 0,
+        "null_any": 0,
+        "n_null": 14,
+        "n_matches": 0,
+        "mode_offset": null,
+        "upstream_frac": NaN,
+        "window_frac": NaN,
+        "median_upstream": NaN,
+        "seqs_hit_in_window": 0
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.0,
+        "rate_null": 0.07142857142857142,
+        "excess": -0.07142857142857142,
+        "fold": 0.0,
+        "fisher_p": 1.0,
+        "odds_ratio": 0.0,
+        "positive_any": 0,
+        "null_any": 1,
+        "n_null": 14,
+        "n_matches": 0,
+        "mode_offset": null,
+        "upstream_frac": NaN,
+        "window_frac": NaN,
+        "median_upstream": NaN,
+        "seqs_hit_in_window": 0
+      }
+    },
+    "Sigma70": {
+      "-35 box (TTGACA)": {
+        "rate_positive": 0.04288164665523156,
+        "rate_null": 0.0274442538593482,
+        "excess": 0.01543739279588336,
+        "fold": 1.5625,
+        "fisher_p": 0.20288269260464353,
+        "odds_ratio": 1.5877016129032258,
+        "positive_any": 25,
+        "null_any": 16,
+        "n_null": 583,
+        "n_matches": 25,
+        "mode_offset": -36,
+        "upstream_frac": 0.8,
+        "window_frac": 0.48,
+        "median_upstream": -36.0,
+        "seqs_hit_in_window": 12
+      },
+      "-10 box (TATAAT)": {
+        "rate_positive": 0.07204116638078903,
+        "rate_null": 0.05660377358490566,
+        "excess": 0.015437392795883367,
+        "fold": 1.2727272727272727,
+        "fisher_p": 0.33963636283977483,
+        "odds_ratio": 1.2939001848428835,
+        "positive_any": 42,
+        "null_any": 33,
+        "n_null": 583,
+        "n_matches": 44,
+        "mode_offset": -12,
+        "upstream_frac": 1.0,
+        "window_frac": 0.4772727272727273,
+        "median_upstream": -12.0,
+        "seqs_hit_in_window": 21
+      }
+    }
+  },
+  "sigma_groups_n": {
+    "Sigma24": 45,
+    "Sigma28": 10,
+    "Sigma32": 34,
+    "Sigma38": 84,
+    "Sigma54": 14,
+    "Sigma70": 583
+  },
+  "cooccurrence": {
+    "exact": {
+      "n": 1284,
+      "both": 2,
+      "only_35": 40,
+      "only_10": 72,
+      "neither": 1170
+    },
+    "mis1": {
+      "n": 1284,
+      "both": 314,
+      "only_35": 237,
+      "only_10": 448,
+      "neither": 285
+    }
+  },
+  "combined_either_element": {
+    "exact": {
+      "positive_any": 114,
+      "n_positive": 1284,
+      "null_any": 97,
+      "n_null": 1284,
+      "rate_positive": 0.08878504672897196,
+      "rate_null": 0.07554517133956386,
+      "excess": 0.013239875389408101,
+      "excess_lo": -0.007996888298544058,
+      "excess_hi": 0.03447663907736026,
+      "fold": 1.175257731958763,
+      "fisher_p": 0.25020466158295074,
+      "odds_ratio": 1.192334126354745
+    },
+    "mis1": {
+      "positive_any": 999,
+      "n_positive": 1284,
+      "null_any": 884,
+      "n_null": 1284,
+      "rate_positive": 0.7780373831775701,
+      "rate_null": 0.6884735202492211,
+      "excess": 0.08956386292834895,
+      "excess_lo": 0.055528838954269036,
+      "excess_hi": 0.12359888690242886,
+      "fold": 1.1300904977375565,
+      "fisher_p": 3.4798616811648064e-07,
+      "odds_ratio": 1.5860919266492022
+    }
+  },
+  "spacing": {
+    "rule": "mis1",
+    "n_pairs": 179,
+    "mean": 18.217877094972067,
+    "sd": 11.514159039604406,
+    "median": 17.0,
+    "q1": 10.0,
+    "q3": 26.0,
+    "min": -4.0,
+    "max": 40.0,
+    "mode": 18,
+    "exact_n_pairs": 1,
+    "exact_median": 18.0
+  },
+  "consensus_position_check": {
+    "-35 box (TTGACA)": {
+      "consensus": "TTGACA",
+      "observed_argmax": "TTTTTT",
+      "positions": 6,
+      "match_positions": 2
+    },
+    "-10 box (TATAAT)": {
+      "consensus": "TATAAT",
+      "observed_argmax": "TAAAAT",
+      "positions": 6,
+      "match_positions": 5
+    }
+  },
+  "position_information_main": {
+    "max_info_vs_uniform": 0.22127819692575623,
+    "max_info_vs_uniform_offset": -11,
+    "max_info_vs_null": 0.13945623381953376,
+    "max_info_vs_null_offset": 0
+  },
+  "appendix": {
+    "dbtbs_bsub": {
+      "n": 296,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.0777027027027027,
+          "rate_null": 0.04054054054054054,
+          "excess": 0.03716216216216216,
+          "fold": 1.9166666666666665,
+          "fisher_p": 0.08008734600367165,
+          "positive_any": 23,
+          "null_any": 12,
+          "n_null": 296,
+          "mode_offset": -35,
+          "window_frac": 0.6956521739130435,
+          "seqs_hit_in_window": 16
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.1891891891891892,
+          "rate_null": 0.05067567567567568,
+          "excess": 0.13851351351351351,
+          "fold": 3.7333333333333334,
+          "fisher_p": 2.1087106879231808e-07,
+          "positive_any": 56,
+          "null_any": 15,
+          "n_null": 296,
+          "mode_offset": -12,
+          "window_frac": 0.3793103448275862,
+          "seqs_hit_in_window": 22
+        }
+      }
+    },
+    "tjupan_bacillus_subtilis": {
+      "n": 473,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.07399577167019028,
+          "rate_null": 0.04439746300211417,
+          "excess": 0.029598308668076112,
+          "fold": 1.6666666666666667,
+          "fisher_p": 0.07245032566723507,
+          "positive_any": 35,
+          "null_any": 21,
+          "n_null": 473,
+          "mode_offset": -35,
+          "window_frac": 0.6571428571428571,
+          "seqs_hit_in_window": 23
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.1839323467230444,
+          "rate_null": 0.09090909090909091,
+          "excess": 0.09302325581395349,
+          "fold": 2.0232558139534884,
+          "fisher_p": 4.275820606453015e-05,
+          "positive_any": 87,
+          "null_any": 43,
+          "n_null": 473,
+          "mode_offset": -12,
+          "window_frac": 0.3829787234042553,
+          "seqs_hit_in_window": 36
+        }
+      }
+    },
+    "tjupan_baumannii": {
+      "n": 1099,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.039126478616924476,
+          "rate_null": 0.02183803457688808,
+          "excess": 0.017288444040036394,
+          "fold": 1.7916666666666665,
+          "fisher_p": 0.02483194443677943,
+          "positive_any": 43,
+          "null_any": 24,
+          "n_null": 1099,
+          "mode_offset": -35,
+          "window_frac": 0.2608695652173913,
+          "seqs_hit_in_window": 12
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.09645131938125569,
+          "rate_null": 0.06278434940855324,
+          "excess": 0.03366696997270245,
+          "fold": 1.536231884057971,
+          "fisher_p": 0.004443970565386523,
+          "positive_any": 106,
+          "null_any": 69,
+          "n_null": 1099,
+          "mode_offset": -12,
+          "window_frac": 0.3486238532110092,
+          "seqs_hit_in_window": 38
+        }
+      }
+    },
+    "tjupan_bradyrhizobium": {
+      "n": 1364,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.011730205278592375,
+          "rate_null": 0.009530791788856305,
+          "excess": 0.00219941348973607,
+          "fold": 1.2307692307692308,
+          "fisher_p": 0.709577094068734,
+          "positive_any": 16,
+          "null_any": 13,
+          "n_null": 1364,
+          "mode_offset": -42,
+          "window_frac": 0.25,
+          "seqs_hit_in_window": 4
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.0036656891495601175,
+          "rate_null": 0.0036656891495601175,
+          "excess": 0.0,
+          "fold": 1.0,
+          "fisher_p": 1.0,
+          "positive_any": 5,
+          "null_any": 5,
+          "n_null": 1364,
+          "mode_offset": -12,
+          "window_frac": 0.6,
+          "seqs_hit_in_window": 3
+        }
+      }
+    },
+    "tjupan_diphtheria": {
+      "n": 1186,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.023608768971332208,
+          "rate_null": 0.022765598650927487,
+          "excess": 0.0008431703204047208,
+          "fold": 1.037037037037037,
+          "fisher_p": 1.0,
+          "positive_any": 28,
+          "null_any": 27,
+          "n_null": 1186,
+          "mode_offset": -36,
+          "window_frac": 0.32142857142857145,
+          "seqs_hit_in_window": 9
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.013490725126475547,
+          "rate_null": 0.026138279932546374,
+          "excess": -0.012647554806070826,
+          "fold": 0.5161290322580645,
+          "fisher_p": 0.03804357980995973,
+          "positive_any": 16,
+          "null_any": 31,
+          "n_null": 1186,
+          "mode_offset": -12,
+          "window_frac": 0.4375,
+          "seqs_hit_in_window": 7
+        }
+      }
+    },
+    "tjupan_escherichia_coli": {
+      "n": 1143,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.026246719160104987,
+          "rate_null": 0.023622047244094488,
+          "excess": 0.0026246719160104987,
+          "fold": 1.1111111111111112,
+          "fisher_p": 0.7887636362347651,
+          "positive_any": 30,
+          "null_any": 27,
+          "n_null": 1143,
+          "mode_offset": -35,
+          "window_frac": 0.3,
+          "seqs_hit_in_window": 9
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.03762029746281715,
+          "rate_null": 0.03237095363079615,
+          "excess": 0.005249343832020997,
+          "fold": 1.162162162162162,
+          "fisher_p": 0.5695738769684304,
+          "positive_any": 43,
+          "null_any": 37,
+          "n_null": 1143,
+          "mode_offset": -11,
+          "window_frac": 0.3953488372093023,
+          "seqs_hit_in_window": 17
+        }
+      }
+    },
+    "tjupan_staphylococcus": {
+      "n": 1480,
+      "elements": {
+        "-35 box (TTGACA)": {
+          "rate_positive": 0.030405405405405407,
+          "rate_null": 0.025675675675675677,
+          "excess": 0.00472972972972973,
+          "fold": 1.1842105263157894,
+          "fisher_p": 0.5043535206399369,
+          "positive_any": 45,
+          "null_any": 38,
+          "n_null": 1480,
+          "mode_offset": -35,
+          "window_frac": 0.35555555555555557,
+          "seqs_hit_in_window": 16
+        },
+        "-10 box (TATAAT)": {
+          "rate_positive": 0.19864864864864865,
+          "rate_null": 0.16554054054054054,
+          "excess": 0.0331081081081081,
+          "fold": 1.2,
+          "fisher_p": 0.022189225480676592,
+          "positive_any": 294,
+          "null_any": 245,
+          "n_null": 1480,
+          "mode_offset": -12,
+          "window_frac": 0.275,
+          "seqs_hit_in_window": 88
+        }
+      }
+    }
+  }
+}
