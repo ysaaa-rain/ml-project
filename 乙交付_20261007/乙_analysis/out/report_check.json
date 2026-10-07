@@ -1,0 +1,1384 @@
+{
+  "total_checks": 229,
+  "passed": 229,
+  "failed": 0,
+  "failures": [],
+  "all": [
+    {
+      "report": "乙_数据交接核验_20261007.md",
+      "text": "210",
+      "why": "manifest 登记文件数 210",
+      "found": true
+    },
+    {
+      "report": "乙_数据交接核验_20261007.md",
+      "text": "29564814",
+      "why": "zip 字节数（用 JSON 记录值）",
+      "found": true
+    },
+    {
+      "report": "乙_数据交接核验_20261007.md",
+      "text": "0d25d7e778b9b8e1e7d3d34b8741bcd6957e5de6db48721666036273ffb5fc79",
+      "why": "zip SHA256",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "22594",
+      "why": "T2 n_all 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "13953",
+      "why": "T2 n_positive 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "8641",
+      "why": "T2 n_natural_control 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "1498",
+      "why": "T3 total 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "1059",
+      "why": "T3 discovery 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "18349",
+      "why": "TJU 六物种合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "9708",
+      "why": "TJU 正样本合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "249",
+      "why": "SigA 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "817",
+      "why": "Sigma70 合计",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "49",
+      "why": "C2 核对文件数",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "27",
+      "why": "C3 核对文件数",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "76",
+      "why": "C1 核对格数",
+      "found": true
+    },
+    {
+      "report": "乙_数人头_20261007.md",
+      "text": "3,812",
+      "why": "RegulonDB 唯一序列并集",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "22,594",
+      "why": "记录总数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "81",
+      "why": "序列长度",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "1,169",
+      "why": "跨来源同划分重复序列数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "0.000",
+      "why": "打乱对照 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "24.691",
+      "why": "葡萄球菌正样本 GC 中位数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "60.494",
+      "why": "慢生根瘤菌正样本 GC 中位数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "41.975",
+      "why": "RegulonDB 正样本 GC 中位数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "33.333",
+      "why": "DBTBS 正样本 GC 中位数",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-13.580",
+      "why": "bacillus_subtilis 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.842",
+      "why": "bacillus_subtilis 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-7.407",
+      "why": "baumannii 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.624",
+      "why": "baumannii 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-4.938",
+      "why": "bradyrhizobium 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.374",
+      "why": "bradyrhizobium 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-8.642",
+      "why": "diphtheria 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.651",
+      "why": "diphtheria 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-8.642",
+      "why": "escherichia_coli 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.596",
+      "why": "escherichia_coli 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-9.877",
+      "why": "staphylococcus 正负 GC 差",
+      "found": true
+    },
+    {
+      "report": "乙_质控_GC与长度_20261007.md",
+      "text": "-0.715",
+      "why": "staphylococcus 效应量",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "3.27",
+      "why": "-35 box (TTGACA) 精确匹配(0错配) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "2.57",
+      "why": "-35 box (TTGACA) 精确匹配(0错配) 背景率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.70",
+      "why": "-35 box (TTGACA) 精确匹配(0错配) 超出",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "-36",
+      "why": "-35 box (TTGACA) 精确匹配(0错配) 众数偏移",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "42.91",
+      "why": "-35 box (TTGACA) ≤1错配(敏感性) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "37.07",
+      "why": "-35 box (TTGACA) ≤1错配(敏感性) 背景率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "5.84",
+      "why": "-35 box (TTGACA) ≤1错配(敏感性) 超出",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "-36",
+      "why": "-35 box (TTGACA) ≤1错配(敏感性) 众数偏移",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "5.76",
+      "why": "-10 box (TATAAT) 精确匹配(0错配) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "5.22",
+      "why": "-10 box (TATAAT) 精确匹配(0错配) 背景率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.55",
+      "why": "-10 box (TATAAT) 精确匹配(0错配) 超出",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "-12",
+      "why": "-10 box (TATAAT) 精确匹配(0错配) 众数偏移",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "59.35",
+      "why": "-10 box (TATAAT) ≤1错配(敏感性) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "50.62",
+      "why": "-10 box (TATAAT) ≤1错配(敏感性) 背景率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "8.72",
+      "why": "-10 box (TATAAT) ≤1错配(敏感性) 超出",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "-12",
+      "why": "-10 box (TATAAT) ≤1错配(敏感性) 众数偏移",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.3485",
+      "why": "-35 精确 Fisher p",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.6034",
+      "why": "-10 精确 Fisher p",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.0029",
+      "why": "-35 ≤1 错配 Fisher p",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "1.06e-05",
+      "why": "-10 ≤1 错配 Fisher p",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "0.221",
+      "why": "全窗口最大信息量",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "TTTTTT",
+      "why": "-35 实测最优碱基",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "TAAAAT",
+      "why": "-10 实测最优碱基",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "2/6",
+      "why": "-35 一致位数",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "5/6",
+      "why": "-10 一致位数",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "8.88",
+      "why": "合并口径 精确匹配(0错配) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_已知元件位置与背景校准_20261007.md",
+      "text": "77.80",
+      "why": "合并口径 ≤1错配(敏感性) 正样本率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma24 GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-3.70",
+      "why": "Sigma24 CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.70",
+      "why": "Sigma24 CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.8540",
+      "why": "Sigma24 BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.47",
+      "why": "Sigma28 GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.09",
+      "why": "Sigma32 GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "1.23",
+      "why": "Sigma32 CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "6.17",
+      "why": "Sigma32 CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.0064",
+      "why": "Sigma32 BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma38 GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-2.47",
+      "why": "Sigma38 CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.47",
+      "why": "Sigma38 CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.8540",
+      "why": "Sigma38 BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.09",
+      "why": "Sigma54 GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-7.41",
+      "why": "Sigma54 CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "6.79",
+      "why": "Sigma54 CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.4462",
+      "why": "Sigma54 BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "6.17",
+      "why": "SigB GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigB CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "8.64",
+      "why": "SigB CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.0034",
+      "why": "SigB BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "1.23",
+      "why": "SigD GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "4.94",
+      "why": "SigE GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.47",
+      "why": "SigE CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "7.41",
+      "why": "SigE CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.0018",
+      "why": "SigE BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "7.41",
+      "why": "SigF GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "5.56",
+      "why": "SigG GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "1.85",
+      "why": "SigG CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "7.41",
+      "why": "SigG CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.0014",
+      "why": "SigG BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "1.23",
+      "why": "SigH GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "4.94",
+      "why": "SigI GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "6.17",
+      "why": "SigK GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.47",
+      "why": "SigK CI 下界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "8.64",
+      "why": "SigK CI 上界",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.0018",
+      "why": "SigK BH q",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "8.64",
+      "why": "SigL GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-3.70",
+      "why": "SigM GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "5.56",
+      "why": "SigW GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.62",
+      "why": "SigX GC 中位数差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-2.07",
+      "why": "Sigma24 -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.22",
+      "why": "Sigma24 -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-1.35",
+      "why": "Sigma32 -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.94",
+      "why": "Sigma32 -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-0.72",
+      "why": "Sigma38 -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.57",
+      "why": "Sigma38 -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-4.29",
+      "why": "Sigma54 -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma54 -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-4.98",
+      "why": "Sigma24 -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.22",
+      "why": "Sigma24 -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-4.26",
+      "why": "Sigma32 -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.94",
+      "why": "Sigma32 -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-3.63",
+      "why": "Sigma38 -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.57",
+      "why": "Sigma38 -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-7.20",
+      "why": "Sigma54 -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma54 -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-7.72",
+      "why": "SigB -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "4.55",
+      "why": "SigB -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-12.27",
+      "why": "SigE -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigE -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-12.27",
+      "why": "SigG -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigG -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-12.27",
+      "why": "SigK -35 box (TTGACA) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigK -35 box (TTGACA) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-17.90",
+      "why": "SigB -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "9.09",
+      "why": "SigB -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-22.45",
+      "why": "SigE -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "4.55",
+      "why": "SigE -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-18.66",
+      "why": "SigG -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "8.33",
+      "why": "SigG -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "-15.88",
+      "why": "SigK -10 box (TATAAT) 风险差",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "11.11",
+      "why": "SigK -10 box (TATAAT) 命中率",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "30.86",
+      "why": "SigA GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "26.99",
+      "why": "SigA -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "36.42",
+      "why": "SigG GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "8.33",
+      "why": "SigG -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "35.80",
+      "why": "SigE GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "4.55",
+      "why": "SigE -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "37.04",
+      "why": "SigB GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "9.09",
+      "why": "SigB -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "37.04",
+      "why": "SigK GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "11.11",
+      "why": "SigK -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "32.10",
+      "why": "SigH GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "20.00",
+      "why": "SigH -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "36.42",
+      "why": "SigW GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigW -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "38.27",
+      "why": "SigF GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigF -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "32.10",
+      "why": "SigD GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "40.00",
+      "why": "SigD -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "31.48",
+      "why": "SigX GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigX -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "39.51",
+      "why": "SigL GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "50.00",
+      "why": "SigL -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "35.80",
+      "why": "SigI GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigI -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "27.16",
+      "why": "SigM GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "SigM -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "40.74",
+      "why": "Sigma70 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "7.20",
+      "why": "Sigma70 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "40.74",
+      "why": "Sigma38 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "3.57",
+      "why": "Sigma38 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "40.74",
+      "why": "Sigma24 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.22",
+      "why": "Sigma24 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "43.83",
+      "why": "Sigma32 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "2.94",
+      "why": "Sigma32 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "43.83",
+      "why": "Sigma54 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma54 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "43.21",
+      "why": "Sigma28 GC 中位数（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_组间差异_20261007.md",
+      "text": "0.00",
+      "why": "Sigma28 -10 命中率（描述表）",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "22,594",
+      "why": "总记录数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-35.0",
+      "why": "Sigma70 -35 box (TTGACA) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "29.0",
+      "why": "Sigma70 -35 box (TTGACA) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "25",
+      "why": "Sigma70 -35 box (TTGACA) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-24.76",
+      "why": "Sigma70 -35 box (TTGACA) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-12.0",
+      "why": "Sigma70 -10 box (TATAAT) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "3.0",
+      "why": "Sigma70 -10 box (TATAAT) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "42",
+      "why": "Sigma70 -10 box (TATAAT) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-15.02",
+      "why": "Sigma70 -10 box (TATAAT) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-34.0",
+      "why": "Sigma38 -35 box (TTGACA) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "11.0",
+      "why": "Sigma38 -35 box (TTGACA) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "3",
+      "why": "Sigma38 -35 box (TTGACA) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-34.00",
+      "why": "Sigma38 -35 box (TTGACA) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-13.0",
+      "why": "Sigma38 -10 box (TATAAT) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "3.5",
+      "why": "Sigma38 -10 box (TATAAT) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "3",
+      "why": "Sigma38 -10 box (TATAAT) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-12.67",
+      "why": "Sigma38 -10 box (TATAAT) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-13.0",
+      "why": "Sigma24 -35 box (TTGACA) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "0.0",
+      "why": "Sigma24 -35 box (TTGACA) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma24 -35 box (TTGACA) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-13.00",
+      "why": "Sigma24 -35 box (TTGACA) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-15.0",
+      "why": "Sigma24 -10 box (TATAAT) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "0.0",
+      "why": "Sigma24 -10 box (TATAAT) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma24 -10 box (TATAAT) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-15.00",
+      "why": "Sigma24 -10 box (TATAAT) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-50.0",
+      "why": "Sigma32 -35 box (TTGACA) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "0.0",
+      "why": "Sigma32 -35 box (TTGACA) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma32 -35 box (TTGACA) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-50.00",
+      "why": "Sigma32 -35 box (TTGACA) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-3.0",
+      "why": "Sigma32 -10 box (TATAAT) 位置中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "0.0",
+      "why": "Sigma32 -10 box (TATAAT) IQR",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma32 -10 box (TATAAT) 有命中序列数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "-3.00",
+      "why": "Sigma32 -10 box (TATAAT) 位置均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "64",
+      "why": "Sigma70 -35 极差",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "46",
+      "why": "Sigma70 -10 极差",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma70 精确 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "18.0",
+      "why": "Sigma70 精确 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "97",
+      "why": "Sigma70 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "17.0",
+      "why": "Sigma70 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "10",
+      "why": "Sigma38 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "20.0",
+      "why": "Sigma38 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "6",
+      "why": "Sigma32 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "19.0",
+      "why": "Sigma32 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "4",
+      "why": "Sigma24 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "19.5",
+      "why": "Sigma24 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "1",
+      "why": "Sigma54 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "7.0",
+      "why": "Sigma54 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "2",
+      "why": "Sigma28 ≤1错配 有效间距对数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "31.5",
+      "why": "Sigma28 ≤1错配 间距中位数",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "163",
+      "why": "Sigma70 ≤1 两元件都有",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "17.42",
+      "why": "Sigma70 ≤1 间距均值",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "10.74",
+      "why": "Sigma70 ≤1 间距 SD",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "77.3",
+      "why": "Sigma70 ≤1 非典型 17±1",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "74.2",
+      "why": "Sigma70 ≤1 非典型 17±2",
+      "found": true
+    },
+    {
+      "report": "乙_位置与间距_按sigma组_20261007.md",
+      "text": "120",
+      "why": "≤1 错配间距对数合计（与图 F11 一致）",
+      "found": true
+    }
+  ],
+  "internal_links_checked": 55,
+  "internal_links_broken": []
+}

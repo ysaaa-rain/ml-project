@@ -1,0 +1,20 @@
+source	source_cn	sigma	n_discovery	gc_mean	gc_median	gc_q1	gc_q3	minus35_hit_seqs	minus35_hit_pct	minus10_hit_seqs	minus10_hit_pct	eligibility	eligibility_cn
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigA	163	30.87	30.86	27.16	34.57	20/163	12.27	44/163	26.99	confirmation_candidate	可做正式结论
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	24	35.75	36.42	33.02	38.27	0/24	0.00	2/24	8.33	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	22	35.97	35.80	32.72	39.20	0/22	0.00	1/22	4.55	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	22	35.58	37.04	29.94	40.43	1/22	4.55	2/22	9.09	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	18	35.87	37.04	33.64	39.51	0/18	0.00	2/18	11.11	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	10	32.59	32.10	30.86	35.19	0/10	0.00	2/10	20.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	10	36.05	36.42	32.41	38.27	0/10	0.00	0/10	0.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	7	37.21	38.27	32.72	43.83	0/7	0.00	0/7	0.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	5	30.62	32.10	27.16	33.33	1/5	20.00	2/5	40.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	4	27.78	31.48	27.16	32.10	0/4	0.00	0/4	0.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	2	39.51	39.51	38.27	40.74	0/2	0.00	1/2	50.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	1	35.80	35.80	35.80	35.80	0/1	0.00	0/1	0.00	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	1	27.16	27.16	27.16	27.16	1/1	100.00	0/1	0.00	descriptive_only	只能描述
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma70	583	40.25	40.74	35.80	45.68	25/583	4.29	42/583	7.20	confirmation_candidate	可做正式结论
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	84	40.31	40.74	35.80	46.91	3/84	3.57	3/84	3.57	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	45	40.52	40.74	35.80	46.91	1/45	2.22	1/45	2.22	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	34	44.19	43.83	39.51	49.07	1/34	2.94	1/34	2.94	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	14	42.77	43.83	33.33	46.91	0/14	0.00	0/14	0.00	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	10	43.70	43.21	41.05	45.99	0/10	0.00	0/10	0.00	descriptive_only	只能描述

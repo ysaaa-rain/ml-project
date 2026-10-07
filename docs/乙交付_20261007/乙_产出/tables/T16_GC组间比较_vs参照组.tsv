@@ -1,0 +1,18 @@
+source	source_cn	sigma	n	gc_median	reference_sigma	reference_n	reference_gc_median	median_diff_pp	ci95_lo_pp	ci95_hi_pp	rank_biserial_r	mannwhitney_p	bh_q	eligibility	eligibility_cn	inferential_reported
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	45	40.74	Sigma70	583	40.74	0.00	-3.70	3.70	0.029	0.7498	0.8540	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	10	43.21	Sigma70	583	40.74	2.47	NA	NA	—	—		descriptive_only	只能描述	否
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	34	43.83	Sigma70	583	40.74	3.09	1.23	6.17	0.293	0.0040	0.0064	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	84	40.74	Sigma70	583	40.74	0.00	-2.47	2.47	0.012	0.8540	0.8540	exploratory_only	只能探索	是
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	14	43.83	Sigma70	583	40.74	3.09	-7.41	6.79	0.151	0.3346	0.4462	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	22	37.04	SigA	163	30.86	6.17	0.00	8.64	0.413	0.0017	0.0034	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	5	32.10	SigA	163	30.86	1.23	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	22	35.80	SigA	163	30.86	4.94	2.47	7.41	0.447	0.0007	0.0018	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	7	38.27	SigA	163	30.86	7.41	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	24	36.42	SigA	163	30.86	5.56	1.85	7.41	0.475	0.0002	0.0014	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	10	32.10	SigA	163	30.86	1.23	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	1	35.80	SigA	163	30.86	4.94	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	18	37.04	SigA	163	30.86	6.17	2.47	8.64	0.493	0.0006	0.0018	exploratory_only	只能探索	是
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	2	39.51	SigA	163	30.86	8.64	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	1	27.16	SigA	163	30.86	-3.70	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	10	36.42	SigA	163	30.86	5.56	NA	NA	—	—		descriptive_only	只能描述	否
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	4	31.48	SigA	163	30.86	0.62	NA	NA	—	—		descriptive_only	只能描述	否
