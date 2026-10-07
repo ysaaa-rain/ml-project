@@ -1,9 +1,0 @@
-source	source_cn	species	n_all	n_positive	n_natural_control
-dbtbs_bsub	DBTBS 枯草芽孢杆菌	bacillus_subtilis	432	432	0
-regulondb_ecoli	RegulonDB 大肠杆菌	escherichia_coli	3813	3813	0
-tjupan_bacillus_subtilis	TJU 枯草芽孢杆菌	bacillus_subtilis	1500	691	809
-tjupan_baumannii	TJU 鲍曼不动杆菌	baumannii	2900	1540	1360
-tjupan_bradyrhizobium	TJU 慢生根瘤菌	bradyrhizobium	3935	1983	1952
-tjupan_diphtheria	TJU 白喉杆菌	diphtheria	3308	1653	1655
-tjupan_escherichia_coli	TJU 大肠杆菌	escherichia_coli	3338	1635	1703
-tjupan_staphylococcus	TJU 金黄色葡萄球菌	staphylococcus	3368	2206	1162
