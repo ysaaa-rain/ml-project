@@ -2,6 +2,9 @@
 
 ## 后续实验路线（用户指定，2026-10-05）
 
+在启动 PR01-02 新 STREME/FIMO/已知元件对照之前，必须阅读 `docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md`。该文件是 2026-10-08 最新预注册规则：TJU 主 STREME 使用发布的 `label=0` 天然对照，不新增 GC-matched 背景、不把已有 dinucleotide-shuffled 数据用于本轮主比较；背景组成差异作为解释限制保留。DBTBS 不再主张独立外部验证，只保留 sigma/TSS/位点注释。真实参考 PWM 库须按该文件整理验收后才可宣称“库已冻结”，不能把理想 consensus 当实测 PWM。
+
+
 开始任何实验设计、数据处理、运行、结果解释或报告前，阅读 `docs/07_后续实验执行规范_20261004.md`、`docs/08_全方位核查审计_20261004.md` 和当前数据审计/交接文档。后续实验以用户最新决定为准；与旧路线冲突时，以本文件及最新数据规范为准。
 
 PR01-02 当前数据架构固定为：**TJU Pan / PromLoop 六物种是主序列数据源；RegulonDB 与 DBTBS 主要承担 sigma factor annotation、机制解释和同物种独立来源验证。** 不再采用“RegulonDB/DBTBS 为主发现、TJU 仅为辅助探索”的旧全局路线。
