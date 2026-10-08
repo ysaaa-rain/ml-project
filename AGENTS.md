@@ -11,7 +11,7 @@ PR01-02 当前数据架构固定为：**TJU Pan / PromLoop 六物种是主序列
 
 TJU `reg_and_gen/Datasets` 已与 PromLoop 固定提交逐文件核验一致；项目采用 PromLoop 已发布的 81 bp、相对 TSS `[-60,+20]` 标准化序列。对 TJU 不重新执行 TSS 截取或按 strand 反向互补，不因 CSV 未逐条提供 genomic coordinate/strand 而阻塞主 motif 分析。不得声称已经逐条独立验证上游每个负链样本的方向处理；报告中应表述为“采用 PromLoop 发布的 TSS-aligned 标准化序列”。TJU 缺逐条 sigma 标签，因此不作为 RQ2 的主 sigma 证据。
 
-核心实验顺序为：先完成数据审计与清洗 → TJU 六物种主 motif discovery（MEME/STREME/DREME）→ FIMO/position/spacing/arrangement → 已知元件对比 → RQ3 分层验证；RegulonDB 用于 E. coli sigma-specific RQ2 和 TJU E. coli 的同物种跨数据集验证；DBTBS 用于 B. subtilis sigma 补充和 TJU B. subtilis 的同物种跨数据集验证。跨物种、同来源留出、同物种跨数据集三种验证必须分开报告。
+核心实验顺序为：先完成数据审计与清洗 → TJU 六物种主 motif discovery（MEME/STREME/DREME）→ FIMO/position/spacing/arrangement → 已知元件对比 → RQ3 分层验证；RegulonDB 用于 E. coli sigma-specific RQ2 和 TJU E. coli 的同物种跨数据集验证；DBTBS 用于 TJU B. subtilis 的可靠 sigma/坐标/文献注释，不设置正式独立验证分支。跨物种、同来源留出、同物种跨数据集三种验证必须分开报告。
 
 embedding / Nucleotide Transformer / clustering / occlusion / SAE 等路线全部后置为探索项。不能把 pooled embedding、attention 或分类性能直接称为 motif/因果发现。
 

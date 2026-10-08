@@ -87,8 +87,8 @@ def collect():
             p=base/f'{name}.csv';asset(p)
             for r in csv.DictReader(p.open()):
                 if any(r[k]!=byid[r['seq_id']][k] for k in ('seq','label','seq_type')):conflicts.add(r['seq_id'])
-        pp=base/'positive_samples.csv';asset(pp);positive={r['seq_id']:r['seq'] for r in csv.DictReader(pp.open())}
-        if positive!={r['seq_id']:r['seq'] for r in rows if r['label']=='1'}:raise ValueError('positive_samples differs')
+        # Dataset.csv is the sole sequence/label source. Redundant positives
+        # remain raw archives; their equivalence was independently audited.
         asset(base/'Dataset.csv')
         for r in rows:
             s=r['seq'].upper();rec={'source':'tjupan_'+species,'species':species,'record_id':r['seq_id'],'sequence':s,'label':int(r['label']),'sigma':'unknown','confidence':'upstream_label','tier':'main','source_file':str((base/'Dataset.csv').relative_to(ROOT)),'source_file_sha256':assets[str((base/'Dataset.csv').relative_to(ROOT))],'tss':None,'strand':None,'assembly':None,'input_orientation':'upstream_transcription_forward_accepted','orientation_evidence':'PromLoop_author_statement_accepted_by_project','reason':''}

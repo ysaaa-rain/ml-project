@@ -75,3 +75,20 @@ results/data_audit/g0_rebuild_20261004/*
 !results/data_audit/g0_rebuild_20261004/label_retention.tsv
 !results/data_audit/g0_rebuild_20261004/supplement_manifest.json
 !results/data_audit/g0_rebuild_20261004/m1_acceptance_20261005.json
+
+# M3 publication allowlist: raw native outputs and per-sequence hits remain local.
+results/motif/tju_streme_v2_20261008/**
+!results/motif/tju_streme_v2_20261008/README.md
+!results/motif/tju_streme_v2_20261008/*_summary.tsv
+!results/motif/tju_streme_v2_20261008/selected_main_motifs.tsv
+!results/motif/tju_streme_v2_20261008/protocol_frozen.md
+!results/motif/tju_streme_v2_20261008/positive_subset_verification.json
+!results/motif/tju_streme_v2_20261008/public_evidence/
+!results/motif/tju_streme_v2_20261008/public_evidence/**
+!results/motif/tju_streme_v2_20261008/tjupan_*/
+!results/motif/tju_streme_v2_20261008/tjupan_*/selected_main.meme
+!results/motif/tju_streme_v2_20261008/tjupan_*/natural/
+!results/motif/tju_streme_v2_20261008/tjupan_*/dinucleotide/
+!results/motif/tju_streme_v2_20261008/tjupan_*/*/streme.txt
+!results/motif/tju_streme_v2_20261008/tjupan_*/robustness_tomtom/
+!results/motif/tju_streme_v2_20261008/tjupan_*/robustness_tomtom/tomtom.tsv

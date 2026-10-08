@@ -1,0 +1,13 @@
+species	background	reported_motifs	p_le_0_05	E_le_0_05
+tjupan_bacillus_subtilis	natural	10	3	1
+tjupan_bacillus_subtilis	dinucleotide	10	0	0
+tjupan_baumannii	natural	10	2	1
+tjupan_baumannii	dinucleotide	10	1	0
+tjupan_bradyrhizobium	natural	10	4	2
+tjupan_bradyrhizobium	dinucleotide	10	3	0
+tjupan_diphtheria	natural	10	3	2
+tjupan_diphtheria	dinucleotide	10	2	1
+tjupan_escherichia_coli	natural	10	3	1
+tjupan_escherichia_coli	dinucleotide	10	1	0
+tjupan_staphylococcus	natural	10	2	2
+tjupan_staphylococcus	dinucleotide	10	2	2
