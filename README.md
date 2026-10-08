@@ -8,7 +8,7 @@ TJU 六物种为主数据；RegulonDB 负责 E. coli sigma 注释/专项与独�
 
 本研究采用 PromLoop 发布的标准化 promoter 序列，并按其数据集定义视为已经完成 TSS 对齐及必要的方向标准化。81 bp 对应相对 TSS 的 [-60,+20]，TSS 为局部第61位；TJU 不重新截取或反向互补。genomic coordinate、逐条 strand 和原始数据库映射不是 TJU 主实验必要输入。
 
-本轮仅修复和构建数据，没有运行正式 MEME/STREME/DREME/FIMO。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
+2026-10-05 的数据重建提交未运行正式 MEME/STREME/DREME/FIMO；后续 STREME 已由本地 agent 接手，实时进展应以新的结果 manifest 和本地执行日志为准。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
 
 ## 数据链条与实验主线
 
