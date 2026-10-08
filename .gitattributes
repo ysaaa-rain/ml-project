@@ -11,3 +11,7 @@ data/raw/tju_pan_promoter/strenth/data/GSE135464_final_means_ids_added.csv filte
 
 # Frozen v2 artifacts retain the exact bytes recorded in SHA256 manifests.
 data/processed/pr01_02_data_v2/** -text whitespace=-blank-at-eol
+
+# Preserve native M3 matrix bytes and their recorded hashes.
+results/motif/tju_streme_v2_20261008/**/*.meme -text whitespace=-blank-at-eol,-blank-at-eof
+results/motif/tju_streme_v2_20261008/**/streme.txt -text whitespace=-blank-at-eol
