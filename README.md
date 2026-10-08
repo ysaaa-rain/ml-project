@@ -1,22 +1,24 @@
 # PR01-02：启动子调控模式发现
 
-更新（2026-10-08）：已完成TJU六物种两背景共12组STREME，冻结17个natural主候选。FIMO/holdout/位置间距尚未执行。详见[STREME报告](reports/TJU_STREME_主发现与稳健性_20261008.md)。DBTBS仅注释补充；positive_samples仅raw归档/一次性审计，正式构建只读Dataset.csv。
+本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。参考库与FIMO尚未完成，候选不会按匹配或holdout表现筛除。
 
-更新：2026-10-05。当前数据版本：`data/processed/pr01_02_data_v2/`。
+**最新文档入口：[docs/README.md](docs/README.md)**；M1/M2 阶段报告：[M1M2_阶段调查与描述性发现](docs/M1M2_阶段调查与描述性发现_20261008.md)。历史组员原稿仅从 Git 固定提交追溯。
 
-TJU 六物种为主数据；RegulonDB / DBTBS 主要负责 sigma annotation、sigma-specific motif 与隔离后的不同来源验证。
+更新：2026-10-08。当前数据版本：`data/processed/pr01_02_data_v2/`。
+
+TJU 六物种为主数据；RegulonDB 负责 E. coli sigma 注释/专项与独立来源候选，DBTBS 负责 B. subtilis sigma、TSS、文献注释（因严格外部 holdout 仅 1 条，不做正式独立统计验证）。
 
 本研究采用 PromLoop 发布的标准化 promoter 序列，并按其数据集定义视为已经完成 TSS 对齐及必要的方向标准化。81 bp 对应相对 TSS 的 [-60,+20]，TSS 为局部第61位；TJU 不重新截取或反向互补。genomic coordinate、逐条 strand 和原始数据库映射不是 TJU 主实验必要输入。
 
-本轮仅修复和构建数据，没有运行正式 MEME/STREME/DREME/FIMO。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
+2026-10-05 的数据重建提交未运行正式 MEME/STREME/DREME/FIMO；后续 STREME 已由本地 agent 接手，实时进展应以新的结果 manifest 和本地执行日志为准。旧 RegulonDB 3,807 条处理输入及其实验结果已从项目移除，不能继续引用旧覆盖率、σ显著性或位置结论。
 
 ## 数据链条与实验主线
 
-TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → MEME/STREME → FIMO → motif position/spacing/cross-species。
+TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → STREME（natural 与 dinucleotide 两背景）→ FIMO → motif position/spacing/cross-species。
 
 RegulonDB E. coli → σ关系表/σ-specific motif → 与 TJU E. coli 做去重叠 cross-dataset validation。
 
-DBTBS B. subtilis → 可靠坐标恢复/σ-specific motif → 与 TJU B. subtilis 做去重叠 cross-dataset validation。
+DBTBS B. subtilis → 经 NC_000964.2 核验的 σ/TSS/位点与文献注释；不作为独立外部统计验证集。
 
 同来源holdout与不同来源验证分别报告；共享序列用于注释，不重复计作独立验证。不同发布来源不保证原始研究独立。
 
