@@ -1,0 +1,13 @@
+sigma	match_rule	n_sequences	both_elements	only_35	only_10	neither	n_spacers	mean_spacer	median_spacer	q1	q3	sd	min	max	n_in_16_18	n_in_15_19	atypical_pct_17p1	atypical_pct_17p2
+Sigma24	exact	45	0	1	1	43	0								0	0	NA	NA
+Sigma24	mis1	45	14	7	10	14	4	18.75	19.5	13.0	25.2	16.40	-2	38	1	1	75.0	75.0
+Sigma28	exact	10	0	0	0	10	0								0	0	NA	NA
+Sigma28	mis1	10	2	1	3	4	2	31.50	31.5	28.2	34.8	9.19	25	38	0	0	100.0	100.0
+Sigma32	exact	34	0	1	1	32	0								0	0	NA	NA
+Sigma32	mis1	34	10	9	5	10	6	21.00	19.0	16.5	26.0	9.78	8	36	2	2	66.7	66.7
+Sigma38	exact	84	0	3	3	78	0								0	0	NA	NA
+Sigma38	mis1	84	23	13	25	23	10	21.90	20.0	13.8	32.2	11.22	5	37	2	2	80.0	80.0
+Sigma54	exact	14	0	0	0	14	0								0	0	NA	NA
+Sigma54	mis1	14	3	2	1	8	1	7.00	7.0	7.0	7.0	0.00	7	7	0	0	100.0	100.0
+Sigma70	exact	583	2	23	40	518	1	18.00	18.0	18.0	18.0	0.00	18	18	1	1	0.0	0.0
+Sigma70	mis1	583	163	101	221	98	97	17.42	17.0	10.0	24.0	10.74	-4	39	22	25	77.3	74.2
