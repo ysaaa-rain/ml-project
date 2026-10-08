@@ -1,0 +1,15 @@
+source	source_cn	species	label	label_cn	n	mean	sd	median	q1	q3	min	max
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	bacillus_subtilis	1	正样本	432	32.547	6.387	33.333	28.395	37.037	16.049	48.148
+regulondb_ecoli	RegulonDB 大肠杆菌	escherichia_coli	1	正样本	3813	41.244	8.830	41.975	35.802	46.914	12.346	66.667
+tjupan_bacillus_subtilis	TJU 枯草芽孢杆菌	bacillus_subtilis	0	天然对照	809	46.056	6.553	46.914	41.975	50.617	24.691	70.370
+tjupan_bacillus_subtilis	TJU 枯草芽孢杆菌	bacillus_subtilis	1	正样本	691	32.869	6.622	33.333	28.395	37.037	16.049	55.556
+tjupan_baumannii	TJU 鲍曼不动杆菌	baumannii	0	天然对照	1360	41.290	6.123	40.741	37.037	44.444	18.519	70.370
+tjupan_baumannii	TJU 鲍曼不动杆菌	baumannii	1	正样本	1540	33.140	6.981	33.333	28.395	38.272	11.111	54.321
+tjupan_bradyrhizobium	TJU 慢生根瘤菌	bradyrhizobium	0	天然对照	1952	65.008	5.393	65.432	61.728	69.136	43.210	82.716
+tjupan_bradyrhizobium	TJU 慢生根瘤菌	bradyrhizobium	1	正样本	1983	60.582	7.053	60.494	55.556	65.432	29.630	85.185
+tjupan_diphtheria	TJU 白喉杆菌	diphtheria	0	天然对照	1655	55.106	6.217	55.556	50.617	59.259	34.568	77.778
+tjupan_diphtheria	TJU 白喉杆菌	diphtheria	1	正样本	1653	46.633	6.594	46.914	41.975	50.617	24.691	66.667
+tjupan_escherichia_coli	TJU 大肠杆菌	escherichia_coli	0	天然对照	1703	52.972	6.319	53.086	49.383	56.790	23.457	76.543
+tjupan_escherichia_coli	TJU 大肠杆菌	escherichia_coli	1	正样本	1635	44.154	8.380	44.444	38.272	50.617	17.284	64.198
+tjupan_staphylococcus	TJU 金黄色葡萄球菌	staphylococcus	0	天然对照	1162	34.253	5.729	34.568	30.864	38.272	14.815	53.086
+tjupan_staphylococcus	TJU 金黄色葡萄球菌	staphylococcus	1	正样本	2206	25.633	5.879	24.691	20.988	29.630	8.642	53.086
