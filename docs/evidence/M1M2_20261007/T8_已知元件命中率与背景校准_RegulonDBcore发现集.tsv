@@ -1,0 +1,5 @@
+element	motif	expected_window_offsets	match_rule	n_patterns	n_positive	positive_with_hit	positive_rate_pct	n_null	null_with_hit	null_rate_pct	excess_pp	excess_95CI_pp	fold	odds_ratio	fisher_p	hits_per_seq_positive	hits_per_seq_null	mode_offset	mode_count	upstream_pct	in_expected_window_pct	n_seqs_with_hit_in_expected_window
+-35 box (TTGACA)	TTGACA	-37..-32	精确匹配(0错配)	1	1284	42	3.27	1284	33	2.57	0.70	[-0.60, 2.00]	1.27	1.282	0.3485	0.033	0.026	-36	7	76.7	37.2	16
+-35 box (TTGACA)	TTGACA	-37..-32	≤1错配(敏感性)	19	1284	551	42.91	1284	476	37.07	5.84	[2.06, 9.62]	1.16	1.276	0.0029	0.541	0.460	-36	39	83.2	19.0	132
+-10 box (TATAAT)	TATAAT	-12..-7	精确匹配(0错配)	1	1284	74	5.76	1284	67	5.22	0.55	[-1.22, 2.31]	1.10	1.111	0.6034	0.060	0.054	-12	17	92.2	41.6	32
+-10 box (TATAAT)	TATAAT	-12..-7	≤1错配(敏感性)	19	1284	762	59.35	1284	650	50.62	8.72	[4.89, 12.56]	1.17	1.424	1.06e-05	0.884	0.782	-12	147	86.5	26.8	297
