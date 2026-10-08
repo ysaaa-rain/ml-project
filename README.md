@@ -1,8 +1,10 @@
 # PR01-02：启动子调控模式发现
 
-更新：2026-10-05。当前数据版本：`data/processed/pr01_02_data_v2/`。
+**最新文档入口：[docs/README.md](docs/README.md)**；M1/M2 阶段报告：[M1M2_阶段调查与描述性发现](docs/M1M2_阶段调查与描述性发现_20261008.md)。历史组员原稿仅从 Git 固定提交追溯。
 
-TJU 六物种为主数据；RegulonDB / DBTBS 主要负责 sigma annotation、sigma-specific motif 与隔离后的不同来源验证。
+更新：2026-10-08。当前数据版本：`data/processed/pr01_02_data_v2/`。
+
+TJU 六物种为主数据；RegulonDB 负责 E. coli sigma 注释/专项与独立来源候选，DBTBS 负责 B. subtilis sigma、TSS、文献注释（因严格外部 holdout 仅 1 条，不做正式独立统计验证）。
 
 本研究采用 PromLoop 发布的标准化 promoter 序列，并按其数据集定义视为已经完成 TSS 对齐及必要的方向标准化。81 bp 对应相对 TSS 的 [-60,+20]，TSS 为局部第61位；TJU 不重新截取或反向互补。genomic coordinate、逐条 strand 和原始数据库映射不是 TJU 主实验必要输入。
 
@@ -10,11 +12,11 @@ TJU 六物种为主数据；RegulonDB / DBTBS 主要负责 sigma annotation、si
 
 ## 数据链条与实验主线
 
-TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → MEME/STREME → FIMO → motif position/spacing/cross-species。
+TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → STREME（natural 与 dinucleotide 两背景）→ FIMO → motif position/spacing/cross-species。
 
 RegulonDB E. coli → σ关系表/σ-specific motif → 与 TJU E. coli 做去重叠 cross-dataset validation。
 
-DBTBS B. subtilis → 可靠坐标恢复/σ-specific motif → 与 TJU B. subtilis 做去重叠 cross-dataset validation。
+DBTBS B. subtilis → 经 NC_000964.2 核验的 σ/TSS/位点与文献注释；不作为独立外部统计验证集。
 
 同来源holdout与不同来源验证分别报告；共享序列用于注释，不重复计作独立验证。不同发布来源不保证原始研究独立。
 
