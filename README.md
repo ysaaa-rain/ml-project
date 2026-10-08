@@ -49,7 +49,7 @@ python -m pytest -q
 
 重建命令拒绝覆盖已有v2目录；要复现到新目录，可在Python调用run(output=Path("新的项目内目录"))并将同一目录传给finalize的run(base=...)。固定原始快照必须存在，按manifest原始SHA256核对；不会自动重新下载或覆盖现有数据。
 
-首份修复后的辅助FASTA：`data/processed/pr01_02_data_v2/regulondb_ecoli/core/discovery.positive.fasta`（1284条），配对`discovery.dinucleotide_null.fasta`。正式主实验从各`tjupan_*/main/discovery.positive.fasta`开始；STREME背景选择需在正式实验配置中固定，不能边看结果边换。
+首份修复后的辅助FASTA：`data/processed/pr01_02_data_v2/regulondb_ecoli/core/discovery.positive.fasta`（1284条）。正式主实验从各`tjupan_*/main/discovery.positive.fasta`开始；每个物种使用两套已生成、按manifest验收的 STREME 对照：`discovery.natural_control.fasta` 为正式主背景，`discovery.dinucleotide_null.fasta` 为组成控制的稳健性背景。两次 discovery STREME 分开运行；不新增 GC-matched。详见[2026-10-08 主分析与语法统计预注册](docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md)。
 
 当前不得使用旧实验脚本默认的20260930/20261003输入路径直接启动实验。正式实验启动前需要将MEME/STREME/FIMO入口更新到v2并锁定参数；本轮没有执行它们。
 
