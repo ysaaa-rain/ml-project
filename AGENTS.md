@@ -2,7 +2,7 @@
 
 ## 后续实验路线（用户指定，2026-10-05）
 
-在启动 PR01-02 新 STREME/FIMO/已知元件对照之前，必须阅读 `docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md`。该文件是 2026-10-08 最新预注册规则：TJU 主 STREME 使用发布的 `label=0` 天然对照，不新增 GC-matched 背景、不把已有 dinucleotide-shuffled 数据用于本轮主比较；背景组成差异作为解释限制保留。DBTBS 不再主张独立外部验证，只保留 sigma/TSS/位点注释。真实参考 PWM 库须按该文件整理验收后才可宣称“库已冻结”，不能把理想 consensus 当实测 PWM。
+在启动 PR01-02 新 STREME/FIMO/已知元件对照之前，必须阅读 `docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md`。该文件是 2026-10-08 最新预注册规则：TJU 主 STREME 使用发布的 `label=0` 天然对照；另用已生成的 `discovery.dinucleotide_null.fasta` 进行必须执行的 STREME 稳健性分析。两套背景独立运行、禁止混合；不新增 GC-matched 背景；背景组成差异作为解释限制保留。DBTBS 不再主张有效规模的独立外部验证，保留 sigma/TSS/位点注释及明确标记的探索工作。真实参考 PWM 库须按该文件整理验收后才可宣称“库已冻结”，不能把理想 consensus 当实测 PWM。
 
 
 开始任何实验设计、数据处理、运行、结果解释或报告前，阅读 `docs/07_后续实验执行规范_20261004.md`、`docs/08_全方位核查审计_20261004.md` 和当前数据审计/交接文档。后续实验以用户最新决定为准；与旧路线冲突时，以本文件及最新数据规范为准。
@@ -23,7 +23,7 @@ RegulonDB：官方 GFF3 `Sequence` 已按转录方向给出，genomic strand 只
 
 DBTBS：原始 release 4.1 页面中的 Gene `Direction`、promoter `Location`、`Absolute position` 和 cis-element sequence 必须重新解析。能可靠恢复 TSS/strand/统一窗口的记录进入 TSS-aligned 核心子集；`Location=ND` 或坐标证据不足的记录保留原始 provenance，但不进入依赖精确 TSS 的位置/间距主分析。不得通过 motif 命中或模型预测反推缺失 TSS。对应参考基因组版本必须记录并校验。
 
-TJU：`positive_samples.csv` 与 `Dataset.csv label=1` 的关系必须逐 ID/序列验收后冻结主正样本入口；原 train/dev/test 只视为同一数据集发布拆分，不自动视作独立验证。已发现的拆分标签冲突、exact/RC 重复及近同源泄漏必须在派生数据中显式隔离，原始 CSV 不做静默修改。label=0 可作为一种背景候选，但鉴于六物种正负样本 GC 差异，还应准备 GC-matched 与 dinucleotide-shuffled 敏感性背景；正式使用哪套背景必须写入 manifest。
+TJU：`positive_samples.csv` 与 `Dataset.csv label=1` 的关系必须逐 ID/序列验收后冻结主正样本入口；原 train/dev/test 只视为同一数据集发布拆分，不自动视作独立验证。已发现的拆分标签冲突、exact/RC 重复及近同源泄漏必须在派生数据中显式隔离，原始 CSV 不做静默修改。TJU `label=0` 固定为 STREME 主背景；已生成的 `dinucleotide-shuffled`（`discovery.dinucleotide_null.fasta`）固定为第二套稳健性背景。明确不新增 GC-matched；两套对照必须分别运行、记录输入哈希与参数，不能根据结果切换主结论。
 
 所有正式派生数据必须保存：来源版本、原始记录 ID、处理规则、排除原因、序列长度、TSS 相对定义（如适用）、strand/orientation 来源（如适用）、sigma 规范化结果、去重/同源簇信息、split、输入输出 SHA256 和处理日志。原始资料与用户已有修改优先保留；删除仅限已确认错误或明确淘汰的派生产物。
 
