@@ -5,8 +5,8 @@
 ## 1. 项目数据角色与主程序
 
 - TJU 六物种 v2 discovery 为 RQ1/跨物种主输入；holdout 不参与 motif 发现或参数选择。
-- **六物种主发现工具为 STREME**。每物种正类使用 `discovery.positive.fasta`，唯一显式对照为同物种 `discovery.natural_control.fasta`（发布的 label=0）。固定 `--dna --p <positive> --n <natural_control> --minw 5 --maxw 15 --nmotifs 10 --seed 20261005 --thresh 0.05`，按实际版本与软件帮助核验参数。`--nmotifs 10` 为搜索上限，不代表十个 motif 均显著；只按软件给出的显著性及事前筛选规则解释。
-- 不新造 GC-matched 负样本，不按 GC 分层或聚类，不把已生成 `dinucleotide_null` 纳入本轮正式主比较；这些旧文件可留作可追溯历史，不得当成实际使用的对照。**限制**：发现的区分力只能声称相对于原发布 label=0；正负 GC 差异可能解释部分 A/T 偏好，不能宣称已排除此混杂。
+- **六物种主发现工具为 STREME**。每物种正类使用固定的 `discovery.positive.fasta`；准备两套彼此独立运行、不得混合的背景：主对照 `discovery.natural_control.fasta`（发布的 label=0），以及稳健性对照 `discovery.dinucleotide_null.fasta`（现成的二核苷酸组成保持 shuffle）。两次运行均只使用相同 discovery 正样本，参数冻结为 `--dna --p <positive> --n <对应背景> --minw 5 --maxw 15 --nmotifs 10 --seed 20261005 --thresh 0.05`，须按实际软件版本核验参数。`--nmotifs 10` 为搜索上限，不代表十个 motif 均显著；只按软件实际结果解释。正式 motif 主列表从 natural-control 的 STREME 结果依事前规则选定，不根据 shuffled 结果挑选更漂亮的主结论。
+- 不新造 GC-matched 负样本，不按 GC 分层或聚类。**必须保留并实际使用已经生成的 `dinucleotide_null`**：运行 discovery positive vs dinucleotide-null 的 STREME 作为预注册的稳健性实验；比较其得到的 motifs 与自然负样本主实验 motifs 的 PWM 相似、共识、位置和显著性，不把 dinucleotide-shuffled 序列当作真实非启动子。可对主 PWM 在两套背景上做固定 FIMO 扫描，阈值不能从 holdout 优化。**限制**：主实验是相对于原发布 label=0 的富集；正负 GC 差异可能解释部分 A/T 偏好，dinucleotide-null 稳健性可减轻但不能证明彻底消除所有组成偏差。
 - MEME 用于选定组（如 TJU E. coli 和 B. subtilis）的验证性方法交叉检查，不重新从验证集发现；DREME 非必做。RegulonDB 为 sigma 专项，DBTBS 主要作 B. subtilis sigma/TSS/位点注释，不作为有效规模的独立验证集（432 核心，外部 holdout 仅 1 条）。
 - 所有命令只读取 v2 冻结路径，不能继续读取 20260930/20261003 旧默认输入。正式启动前固定工具版本、参数、输入 hash 与输出目录。
 
@@ -30,7 +30,7 @@ Tomtom 对照按适用物种/家族做；输出全部匹配、offset、overlap�
 
 ## 3. FIMO 与统计分析冻结
 
-- 使用固定 discovery PWM 扫描 discovery、development、holdout 和对应 natural_control；阈值只在 discovery/development 上定，holdout 不调。正式 site 过滤为 **FIMO q ≤ 0.05**。另将 raw p < 1e-4 定义为探索候选，不能混同。FIMO 检验家族、`--max-stored-scores`、q 值算法和输出完整性写入 manifest。不要用截断 raw p 表自己伪算全局 q。
+- 使用固定 natural-control 主实验得到的 discovery PWM 扫描 discovery、development、holdout 和对应 natural_control；另在 discovery 的 dinucleotide_null 上做固定 PWM 稳健性扫描/背景比较（不改变主 motif 列表，不用 holdout 调参）。阈值只在 discovery/development 上定，holdout 不调。正式 site 过滤为 **FIMO q ≤ 0.05**。另将 raw p < 1e-4 定义为探索候选，不能混同。FIMO 检验家族、`--max-stored-scores`、q 值算法和输出完整性写入 manifest。不要用截断 raw p 表自己伪算全局 q。
 - FIMO start/stop 是本 81bp 输入序列内 1-based inclusive；TSS 在第 61 位。motif 中心相对 TSS = `(start+stop)/2−61`。motif hit strand 是相对输入串的方向，不代表原始 genomic strand。
 - 选模仅用 discovery：每物种最多 5 个通过 STREME 事前显著性条件的非完全重复 motif（相似去重规则和选择顺序要随参数文件保存）；固定列表进入下游统计，绝不使用 holdout 调整其身份。
 - 每个 promoter 对每个 motif 只取 q 最小、其次 score 最大、再次 start 最小的一个主 site；另保留所有 site 供完整审计。没有 site 记为 absent，不把位置缺失填成 0。对同一 motif-pair，使用两主 site；排序为转录方向位置靠前/靠后，`gap=downstream.start−upstream.stop−1`，负值为重叠，另存 center distance、二者 strand、原始两个 site。
@@ -55,5 +55,5 @@ SpaMo 仅作方法对照：81bp 短窗要特别说明 margin/range、扫描集�
 
 1) 重新运行 `preprocessing.verify_tjupan_positive_subset` 并归档输出（不动 raw）。
 2) 确认 v2 manifest/hash 完整，保存本预注册规则和主 STREME 配置。
-3) TJU 六物种 discovery STREME；其后固定 motif，再进行必要的 MEME 方法对照、已知参考库构建与 Tomtom、FIMO、position/spacing、holdout。
+3) TJU 六物种 discovery 各跑两组 STREME（主：positive vs natural_control；稳健性：相同 positive vs dinucleotide_null），分别保存实际命令、输入 hash、随机种子、完整 outputs；按 natural 主结果固定候选 motif，将 shuffled 结果只用于稳健性比较。之后进行必要的 MEME 方法对照、已知参考库构建与 Tomtom、FIMO、position/spacing、holdout。
 4) RQ2 以 RegulonDB E. coli sigma 为主；DBTBS 仅注释/探索。严格跨来源测试只报有效样本规模，不用重合的数据拼出独立性。
