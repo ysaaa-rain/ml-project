@@ -1,3 +1,0 @@
-scope	match_rule	n_positive	positive_with_hit	positive_rate_pct	n_null	null_with_hit	null_rate_pct	excess_pp	excess_95CI_pp	fold	fisher_p
-≥1 个元件命中（-35 或 -10）	精确匹配(0错配)	1284	114	8.88	1284	97	7.55	1.32	[-0.80, 3.45]	1.18	0.2502
-≥1 个元件命中（-35 或 -10）	≤1错配(敏感性)	1284	999	77.80	1284	884	68.85	8.96	[5.55, 12.36]	1.13	3.48e-07
