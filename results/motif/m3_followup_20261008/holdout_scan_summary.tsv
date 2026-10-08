@@ -1,0 +1,7 @@
+species	split	q_le_0_05_sites	sequence_hit_count
+tjupan_bacillus_subtilis	holdout	1	1
+tjupan_baumannii	holdout	0	0
+tjupan_bradyrhizobium	holdout	0	0
+tjupan_diphtheria	holdout	1	1
+tjupan_escherichia_coli	holdout	0	0
+tjupan_staphylococcus	holdout	14	14

@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+后续实测（2026-10-08）：参考库4个短元件PWM本地构建、17主候选不变，已完成18组FIMO及四组BH统计。确认富集/共现均无BH显著，位置/间距因样本不足只描述。详见[参考/FIMO报告](reports/M3_参考库_FIMO与语法检验_20261008.md)。
+
 本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。参考库与FIMO尚未完成，候选不会按匹配或holdout表现筛除。
 
 **最新文档入口：[docs/README.md](docs/README.md)**；M1/M2 阶段报告：[M1M2_阶段调查与描述性发现](docs/M1M2_阶段调查与描述性发现_20261008.md)。历史组员原稿仅从 Git 固定提交追溯。

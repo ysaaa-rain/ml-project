@@ -1,0 +1,69 @@
+BH_q	CI_method	OR_CI_high	OR_CI_low	family	motif1	motif2	negative_clusters	negative_hits	odds_ratio	positive_clusters	positive_hits	raw_p	species	status
+1.0	log_Wald_Haldane0.5	87.2822443812036	0.1426696257038128	presence	1-TATAATAAAWA		173	0	inf	148	1	0.4610591900311526	tjupan_bacillus_subtilis	tested
+NA				position	1-TATAATAAAWA			0			1	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-TAAAAAWA		173	0	NA	148	0	1.0	tjupan_bacillus_subtilis	tested
+NA				position	2-TAAAAAWA			0			0	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	3-AAAGGAGG		173	0	NA	148	0	1.0	tjupan_bacillus_subtilis	tested
+NA				position	3-AAAGGAGG			0			0	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-TATAATAAAWA	2-TAAAAAWA	173	0	NA	148	0	1.0	tjupan_bacillus_subtilis	tested
+NA				gap	1-TATAATAAAWA	2-TAAAAAWA		0			0	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-TATAATAAAWA	3-AAAGGAGG	173	0	NA	148	0	1.0	tjupan_bacillus_subtilis	tested
+NA				gap	1-TATAATAAAWA	3-AAAGGAGG		0			0	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	2-TAAAAAWA	3-AAAGGAGG	173	0	NA	148	0	1.0	tjupan_bacillus_subtilis	tested
+NA				gap	2-TAAAAAWA	3-AAAGGAGG		0			0	NA	tjupan_bacillus_subtilis	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	1-ATTWTARMADAWWW		269	0	NA	219	0	1.0	tjupan_baumannii	tested
+NA				position	1-ATTWTARMADAWWW			0			0	NA	tjupan_baumannii	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-AYAAAAAA		269	0	NA	219	0	1.0	tjupan_baumannii	tested
+NA				position	2-AYAAAAAA			0			0	NA	tjupan_baumannii	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-ATTWTARMADAWWW	2-AYAAAAAA	269	0	NA	219	0	1.0	tjupan_baumannii	tested
+NA				gap	1-ATTWTARMADAWWW	2-AYAAAAAA		0			0	NA	tjupan_baumannii	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	1-BYTARV		399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				position	1-BYTARV			0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-GAATSA		399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				position	2-GAATSA			0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	3-CCYCTCCC		399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				position	3-CCYCTCCC			0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	4-SAAAAAAB		399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				position	4-SAAAAAAB			0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-BYTARV	2-GAATSA	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	1-BYTARV	2-GAATSA		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-BYTARV	3-CCYCTCCC	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	1-BYTARV	3-CCYCTCCC		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-BYTARV	4-SAAAAAAB	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	1-BYTARV	4-SAAAAAAB		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	2-GAATSA	3-CCYCTCCC	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	2-GAATSA	3-CCYCTCCC		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	2-GAATSA	4-SAAAAAAB	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	2-GAATSA	4-SAAAAAAB		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	3-CCYCTCCC	4-SAAAAAAB	399	0	NA	431	0	1.0	tjupan_bradyrhizobium	tested
+NA				gap	3-CCYCTCCC	4-SAAAAAAB		0			0	NA	tjupan_bradyrhizobium	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	log_Wald_Haldane0.5	9.656384337589946	0.01590128019031234	presence	1-ABHBTARHVVNDWW		342	1	0.0	290	0	1.0	tjupan_diphtheria	tested
+NA				position	1-ABHBTARHVVNDWW			1			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-WTWWSWWAW		342	0	NA	290	0	1.0	tjupan_diphtheria	tested
+NA				position	2-WTWWSWWAW			0			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	3-TATAA		342	0	NA	290	0	1.0	tjupan_diphtheria	tested
+NA				position	3-TATAA			0			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-ABHBTARHVVNDWW	2-WTWWSWWAW	342	0	NA	290	0	1.0	tjupan_diphtheria	tested
+NA				gap	1-ABHBTARHVVNDWW	2-WTWWSWWAW		0			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-ABHBTARHVVNDWW	3-TATAA	342	0	NA	290	0	1.0	tjupan_diphtheria	tested
+NA				gap	1-ABHBTARHVVNDWW	3-TATAA		0			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	2-WTWWSWWAW	3-TATAA	342	0	NA	290	0	1.0	tjupan_diphtheria	tested
+NA				gap	2-WTWWSWWAW	3-TATAA		0			0	NA	tjupan_diphtheria	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	1-TTADWHTAA		353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				position	1-TTADWHTAA			0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-AGTATA		353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				position	2-AGTATA			0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	3-CTTWAAG		353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				position	3-CTTWAAG			0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-TTADWHTAA	2-AGTATA	353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				gap	1-TTADWHTAA	2-AGTATA		0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-TTADWHTAA	3-CTTWAAG	353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				gap	1-TTADWHTAA	3-CTTWAAG		0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	2-AGTATA	3-CTTWAAG	353	0	NA	314	0	1.0	tjupan_escherichia_coli	tested
+NA				gap	2-AGTATA	3-CTTWAAG		0			0	NA	tjupan_escherichia_coli	descriptive_only_insufficient_20_double_hit_clusters_per_arm
+0.24486799456910174	log_Wald_Haldane0.5	213.58037442264802	0.7164617268262929	presence	1-WWWATTWTAWYATWW		229	0	inf	361	9	0.014403999680535396	tjupan_staphylococcus	tested
+NA				position	1-WWWATTWTAWYATWW			0			9	NA	tjupan_staphylococcus	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	presence	2-AATATAA		229	0	NA	361	0	1.0	tjupan_staphylococcus	tested
+NA				position	2-AATATAA			0			0	NA	tjupan_staphylococcus	descriptive_only_insufficient_20_hit_clusters_per_arm
+1.0	unidentifiable_all_hit_or_all_absent	NA	NA	cooccurrence	1-WWWATTWTAWYATWW	2-AATATAA	229	0	NA	361	0	1.0	tjupan_staphylococcus	tested
+NA				gap	1-WWWATTWTAWYATWW	2-AATATAA		0			0	NA	tjupan_staphylococcus	descriptive_only_insufficient_20_double_hit_clusters_per_arm

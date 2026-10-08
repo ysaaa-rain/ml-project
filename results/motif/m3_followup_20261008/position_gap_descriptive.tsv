@@ -1,0 +1,69 @@
+independent_hit_clusters	kind	label	max	median	min	motif1	motif2	species
+1	position	positive	-16.0	-16.0	-16.0	1-TATAATAAAWA		tjupan_bacillus_subtilis
+0	position	negative	NA	NA	NA	1-TATAATAAAWA		tjupan_bacillus_subtilis
+0	position	positive	NA	NA	NA	2-TAAAAAWA		tjupan_bacillus_subtilis
+0	position	negative	NA	NA	NA	2-TAAAAAWA		tjupan_bacillus_subtilis
+0	position	positive	NA	NA	NA	3-AAAGGAGG		tjupan_bacillus_subtilis
+0	position	negative	NA	NA	NA	3-AAAGGAGG		tjupan_bacillus_subtilis
+0	gap	positive	NA	NA	NA	1-TATAATAAAWA	2-TAAAAAWA	tjupan_bacillus_subtilis
+0	gap	negative	NA	NA	NA	1-TATAATAAAWA	2-TAAAAAWA	tjupan_bacillus_subtilis
+0	gap	positive	NA	NA	NA	1-TATAATAAAWA	3-AAAGGAGG	tjupan_bacillus_subtilis
+0	gap	negative	NA	NA	NA	1-TATAATAAAWA	3-AAAGGAGG	tjupan_bacillus_subtilis
+0	gap	positive	NA	NA	NA	2-TAAAAAWA	3-AAAGGAGG	tjupan_bacillus_subtilis
+0	gap	negative	NA	NA	NA	2-TAAAAAWA	3-AAAGGAGG	tjupan_bacillus_subtilis
+0	position	positive	NA	NA	NA	1-ATTWTARMADAWWW		tjupan_baumannii
+0	position	negative	NA	NA	NA	1-ATTWTARMADAWWW		tjupan_baumannii
+0	position	positive	NA	NA	NA	2-AYAAAAAA		tjupan_baumannii
+0	position	negative	NA	NA	NA	2-AYAAAAAA		tjupan_baumannii
+0	gap	positive	NA	NA	NA	1-ATTWTARMADAWWW	2-AYAAAAAA	tjupan_baumannii
+0	gap	negative	NA	NA	NA	1-ATTWTARMADAWWW	2-AYAAAAAA	tjupan_baumannii
+0	position	positive	NA	NA	NA	1-BYTARV		tjupan_bradyrhizobium
+0	position	negative	NA	NA	NA	1-BYTARV		tjupan_bradyrhizobium
+0	position	positive	NA	NA	NA	2-GAATSA		tjupan_bradyrhizobium
+0	position	negative	NA	NA	NA	2-GAATSA		tjupan_bradyrhizobium
+0	position	positive	NA	NA	NA	3-CCYCTCCC		tjupan_bradyrhizobium
+0	position	negative	NA	NA	NA	3-CCYCTCCC		tjupan_bradyrhizobium
+0	position	positive	NA	NA	NA	4-SAAAAAAB		tjupan_bradyrhizobium
+0	position	negative	NA	NA	NA	4-SAAAAAAB		tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	1-BYTARV	2-GAATSA	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	1-BYTARV	2-GAATSA	tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	1-BYTARV	3-CCYCTCCC	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	1-BYTARV	3-CCYCTCCC	tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	1-BYTARV	4-SAAAAAAB	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	1-BYTARV	4-SAAAAAAB	tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	2-GAATSA	3-CCYCTCCC	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	2-GAATSA	3-CCYCTCCC	tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	2-GAATSA	4-SAAAAAAB	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	2-GAATSA	4-SAAAAAAB	tjupan_bradyrhizobium
+0	gap	positive	NA	NA	NA	3-CCYCTCCC	4-SAAAAAAB	tjupan_bradyrhizobium
+0	gap	negative	NA	NA	NA	3-CCYCTCCC	4-SAAAAAAB	tjupan_bradyrhizobium
+0	position	positive	NA	NA	NA	1-ABHBTARHVVNDWW		tjupan_diphtheria
+1	position	negative	-8.5	-8.5	-8.5	1-ABHBTARHVVNDWW		tjupan_diphtheria
+0	position	positive	NA	NA	NA	2-WTWWSWWAW		tjupan_diphtheria
+0	position	negative	NA	NA	NA	2-WTWWSWWAW		tjupan_diphtheria
+0	position	positive	NA	NA	NA	3-TATAA		tjupan_diphtheria
+0	position	negative	NA	NA	NA	3-TATAA		tjupan_diphtheria
+0	gap	positive	NA	NA	NA	1-ABHBTARHVVNDWW	2-WTWWSWWAW	tjupan_diphtheria
+0	gap	negative	NA	NA	NA	1-ABHBTARHVVNDWW	2-WTWWSWWAW	tjupan_diphtheria
+0	gap	positive	NA	NA	NA	1-ABHBTARHVVNDWW	3-TATAA	tjupan_diphtheria
+0	gap	negative	NA	NA	NA	1-ABHBTARHVVNDWW	3-TATAA	tjupan_diphtheria
+0	gap	positive	NA	NA	NA	2-WTWWSWWAW	3-TATAA	tjupan_diphtheria
+0	gap	negative	NA	NA	NA	2-WTWWSWWAW	3-TATAA	tjupan_diphtheria
+0	position	positive	NA	NA	NA	1-TTADWHTAA		tjupan_escherichia_coli
+0	position	negative	NA	NA	NA	1-TTADWHTAA		tjupan_escherichia_coli
+0	position	positive	NA	NA	NA	2-AGTATA		tjupan_escherichia_coli
+0	position	negative	NA	NA	NA	2-AGTATA		tjupan_escherichia_coli
+0	position	positive	NA	NA	NA	3-CTTWAAG		tjupan_escherichia_coli
+0	position	negative	NA	NA	NA	3-CTTWAAG		tjupan_escherichia_coli
+0	gap	positive	NA	NA	NA	1-TTADWHTAA	2-AGTATA	tjupan_escherichia_coli
+0	gap	negative	NA	NA	NA	1-TTADWHTAA	2-AGTATA	tjupan_escherichia_coli
+0	gap	positive	NA	NA	NA	1-TTADWHTAA	3-CTTWAAG	tjupan_escherichia_coli
+0	gap	negative	NA	NA	NA	1-TTADWHTAA	3-CTTWAAG	tjupan_escherichia_coli
+0	gap	positive	NA	NA	NA	2-AGTATA	3-CTTWAAG	tjupan_escherichia_coli
+0	gap	negative	NA	NA	NA	2-AGTATA	3-CTTWAAG	tjupan_escherichia_coli
+9	position	positive	-5.0	-24.0	-30.0	1-WWWATTWTAWYATWW		tjupan_staphylococcus
+0	position	negative	NA	NA	NA	1-WWWATTWTAWYATWW		tjupan_staphylococcus
+0	position	positive	NA	NA	NA	2-AATATAA		tjupan_staphylococcus
+0	position	negative	NA	NA	NA	2-AATATAA		tjupan_staphylococcus
+0	gap	positive	NA	NA	NA	1-WWWATTWTAWYATWW	2-AATATAA	tjupan_staphylococcus
+0	gap	negative	NA	NA	NA	1-WWWATTWTAWYATWW	2-AATATAA	tjupan_staphylococcus

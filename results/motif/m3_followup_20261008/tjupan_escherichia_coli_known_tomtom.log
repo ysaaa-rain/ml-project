@@ -1,0 +1,15 @@
+Warning: Target database size too small (2) for accurate p-value computation.
+Provide at least 50 motifs for accurate p-value computation.
+Writing results to output directory '/Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/tmp/m3_followup_20261008/tjupan_escherichia_coli/known_tomtom'.
+Processing query 1 out of 3 
+# Computing q-values.
+#   Cannot estimate pi_0 accurately from fewer than 100 p-values.
+#   Total p-values = 4. Using pi_zero = 1.0.
+Processing query 2 out of 3 
+# Computing q-values.
+#   Cannot estimate pi_0 accurately from fewer than 100 p-values.
+#   Total p-values = 4. Using pi_zero = 1.0.
+Processing query 3 out of 3 
+# Computing q-values.
+#   Cannot estimate pi_0 accurately from fewer than 100 p-values.
+#   Total p-values = 4. Using pi_zero = 1.0.
