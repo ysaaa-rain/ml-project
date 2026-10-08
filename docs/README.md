@@ -26,4 +26,4 @@
 
 本轮已废止 GC-matched 分组/背景要求。采用真实 `label=0` 作为 STREME 主对照、已冻结 `dinucleotide_null` 作为稳健性对照。DBTBS 不做独立外部统计验证；仍供 B. subtilis σ/TSS/文献注释。TJU 正式流水线仅使用 Dataset.csv；positive_samples.csv 原件保留 raw 归档。
 
-> 整编实施状态（2026-10-08）：新导航和报告已发布；甲乙丙原交付、重复旧文档仍留在当前分支，待本地 agent 依据审核清单完成目录清理。不要因为新索引存在而声称旧目录已删除。
+> **目录整编状态（2026-10-08）：已实施。** 甲乙丙 84 个历史交付文件退出当前工作树，15 份重要 TSV 按原 blob SHA 转存至 `evidence/`，6 份独立历史审计记录转入 `archive/history/`；过时的根级重复说明已清除。组员完整原稿可从 `archive/README.md` 的固定 Git 提交还原。本次未执行 M1/M2 尚欠缺的三来源只读复算，亦未参与本地 agent 正在进行的 STREME。
