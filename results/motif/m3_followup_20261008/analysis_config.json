@@ -1,0 +1,178 @@
+{
+  "main_candidates_sha256": "44c18d4d4b292c97e4fd8c811a2f5148b6911c0b4a3b6a9bb129a17b83f9be39",
+  "main_motifs": [
+    {
+      "species": "tjupan_bacillus_subtilis",
+      "rank": 1,
+      "motif_id": "1-TATAATAAAWA",
+      "width": "11",
+      "internal_test_p": "2.8e-007",
+      "internal_test_E": "2.8e-006",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bacillus_subtilis",
+      "rank": 2,
+      "motif_id": "2-TAAAAAWA",
+      "width": "8",
+      "internal_test_p": "1.2e-002",
+      "internal_test_E": "1.2e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bacillus_subtilis",
+      "rank": 3,
+      "motif_id": "3-AAAGGAGG",
+      "width": "8",
+      "internal_test_p": "2.5e-002",
+      "internal_test_E": "2.5e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_baumannii",
+      "rank": 1,
+      "motif_id": "1-ATTWTARMADAWWW",
+      "width": "14",
+      "internal_test_p": "5.6e-013",
+      "internal_test_E": "5.6e-012",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_baumannii",
+      "rank": 2,
+      "motif_id": "2-AYAAAAAA",
+      "width": "8",
+      "internal_test_p": "2.1e-002",
+      "internal_test_E": "2.1e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bradyrhizobium",
+      "rank": 1,
+      "motif_id": "1-BYTARV",
+      "width": "6",
+      "internal_test_p": "6.4e-004",
+      "internal_test_E": "6.4e-003",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bradyrhizobium",
+      "rank": 2,
+      "motif_id": "2-GAATSA",
+      "width": "6",
+      "internal_test_p": "1.0e-003",
+      "internal_test_E": "1.0e-002",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bradyrhizobium",
+      "rank": 3,
+      "motif_id": "3-CCYCTCCC",
+      "width": "8",
+      "internal_test_p": "2.0e-002",
+      "internal_test_E": "2.0e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_bradyrhizobium",
+      "rank": 4,
+      "motif_id": "4-SAAAAAAB",
+      "width": "8",
+      "internal_test_p": "2.7e-002",
+      "internal_test_E": "2.7e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_diphtheria",
+      "rank": 1,
+      "motif_id": "1-ABHBTARHVVNDWW",
+      "width": "14",
+      "internal_test_p": "1.9e-024",
+      "internal_test_E": "1.9e-023",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_diphtheria",
+      "rank": 2,
+      "motif_id": "2-WTWWSWWAW",
+      "width": "9",
+      "internal_test_p": "3.7e-006",
+      "internal_test_E": "3.7e-005",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_diphtheria",
+      "rank": 3,
+      "motif_id": "3-TATAA",
+      "width": "5",
+      "internal_test_p": "2.8e-002",
+      "internal_test_E": "2.8e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_escherichia_coli",
+      "rank": 1,
+      "motif_id": "1-TTADWHTAA",
+      "width": "9",
+      "internal_test_p": "4.0e-006",
+      "internal_test_E": "4.0e-005",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_escherichia_coli",
+      "rank": 2,
+      "motif_id": "2-AGTATA",
+      "width": "6",
+      "internal_test_p": "8.0e-003",
+      "internal_test_E": "8.0e-002",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_escherichia_coli",
+      "rank": 3,
+      "motif_id": "3-CTTWAAG",
+      "width": "7",
+      "internal_test_p": "1.7e-002",
+      "internal_test_E": "1.7e-001",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_staphylococcus",
+      "rank": 1,
+      "motif_id": "1-WWWATTWTAWYATWW",
+      "width": "15",
+      "internal_test_p": "4.3e-022",
+      "internal_test_E": "4.3e-021",
+      "selection_source": "natural_only"
+    },
+    {
+      "species": "tjupan_staphylococcus",
+      "rank": 2,
+      "motif_id": "2-AATATAA",
+      "width": "7",
+      "internal_test_p": "7.0e-006",
+      "internal_test_E": "7.0e-005",
+      "selection_source": "natural_only"
+    }
+  ],
+  "reference_sha256": "bf59ea422df65ab39c3f798ddbbfa9616cf4c0d764068f787547312677535e8c",
+  "site_q": 0.05,
+  "fimo_q_family": "per motif across all positions and strands in combined positive/natural-negative sequences of one species and one split",
+  "fimo_native_q_method": "native BH/Storey pi0 implementation, reservoir sampling per native defaults; no truncated-table recalculation",
+  "max_stored_scores": 5000000,
+  "motif_pseudocount": 0.1,
+  "background": "zero-order, estimated once from discovery natural negatives; complement symmetric; total uniform pseudocount1",
+  "primary_site_sort": [
+    "q ascending",
+    "score descending",
+    "start ascending",
+    "stop ascending",
+    "strand lexical"
+  ],
+  "cluster_unit": "holdout homogeneous-label clusters only; one lexicographically smallest sequence_id chosen per cluster BEFORE site inspection; mixed-label clusters excluded from confirmation and logged",
+  "tests": "Fisher presence/cooccurrence; two-sided KS with5000 whole-cluster permutations positions/gap; each distribution arm >=20 hit clusters",
+  "BH": "four separate families across all six species; NA not included; total hypothesis count retained",
+  "CI": "OR log-Wald with Haldane0.5 only for zero cells; cluster bootstrap 2000 for median differences",
+  "seed": 20261005,
+  "status": "frozen_before_any_project_holdout_scan"
+}

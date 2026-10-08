@@ -1,0 +1,11 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+1-TTADWHTAA	ecoli_Sigma70_minus10	-1	0.0333475	0.0666951	0.0666951	6	TTATTATAA	TATAAT	+
+1-TTADWHTAA	ecoli_Sigma70_minus35	0	0.992271	1.98454	0.992271	6	TTATTATAA	TTGTCA	+
+2-AGTATA	ecoli_Sigma70_minus10	0	0.0214583	0.0429166	0.0858332	6	AGTATA	ATTATA	-
+2-AGTATA	ecoli_Sigma70_minus35	1	0.96967	1.93934	0.99481	5	AGTATA	TTGTCA	+
+3-CTTWAAG	ecoli_Sigma70_minus10	-1	0.612236	1.22447	0.988208	6	CTTAAAG	TATAAT	+
+3-CTTWAAG	ecoli_Sigma70_minus35	0	0.988208	1.97642	0.988208	6	CTTAAAG	TTGTCA	+
+
+# Tomtom (Motif Comparison Tool): Version 5.5.9 compiled on Sep 30 2026 at 09:59:06
+# The format of this file is described at https://meme-suite.org/meme/doc/tomtom-output-format.html.
+# tomtom --o /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/tmp/m3_followup_20261008/tjupan_escherichia_coli/known_tomtom --dist pearson --min-overlap 5 --thresh 1 /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/results/motif/tju_streme_v2_20261008/tjupan_escherichia_coli/selected_main.meme /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/tmp/m3_followup_20261008/tjupan_escherichia_coli/reference.meme

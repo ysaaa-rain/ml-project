@@ -1,0 +1,11 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+1-TATAATAAAWA	bsub_SigA_minus10	0	0.00260839	0.00521679	0.0104336	6	TATAATAAAAA	TATAAT	+
+1-TATAATAAAWA	bsub_SigA_minus35	-3	0.998741	1.99748	0.999772	6	TATAATAAAAA	TGTCAA	-
+2-TAAAAAWA	bsub_SigA_minus10	0	0.376359	0.752718	0.983971	6	TAAAAATA	TATAAT	+
+2-TAAAAAWA	bsub_SigA_minus35	0	0.979207	1.95841	0.983971	6	TAAAAATA	TGTCAA	-
+3-AAAGGAGG	bsub_SigA_minus10	-2	0.854568	1.70914	0.995028	6	AAAGGAGG	ATTATA	-
+3-AAAGGAGG	bsub_SigA_minus35	-2	0.987932	1.97586	0.995028	6	AAAGGAGG	TTGACA	+
+
+# Tomtom (Motif Comparison Tool): Version 5.5.9 compiled on Sep 30 2026 at 09:59:06
+# The format of this file is described at https://meme-suite.org/meme/doc/tomtom-output-format.html.
+# tomtom --o /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/tmp/m3_followup_20261008/tjupan_bacillus_subtilis/known_tomtom --dist pearson --min-overlap 5 --thresh 1 /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/results/motif/tju_streme_v2_20261008/tjupan_bacillus_subtilis/selected_main.meme /Users/mac/Desktop/DEVELOP/code_brandnewme/ml-pro/tmp/m3_followup_20261008/tjupan_bacillus_subtilis/reference.meme
