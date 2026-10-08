@@ -1,0 +1,20 @@
+source	source_cn	sigma	n_discovery	mean	sd	median	q1	q3	eligibility	eligibility_cn
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigA	163	30.872	6.457	30.864	27.160	34.568	confirmation_candidate	可做正式结论
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigB	22	35.578	6.008	37.037	29.938	40.432	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigD	5	30.617	5.339	32.099	27.160	33.333	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigE	22	35.971	5.590	35.802	32.716	39.198	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigF	7	37.213	7.591	38.272	32.716	43.827	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigG	24	35.751	4.237	36.420	33.025	38.272	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigH	10	32.593	5.276	32.099	30.864	35.185	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigI	1	35.802	0.000	35.802	35.802	35.802	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigK	18	35.871	4.307	37.037	33.642	39.506	exploratory_only	只能探索
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigL	2	39.506	3.492	39.506	38.272	40.741	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigM	1	27.160	0.000	27.160	27.160	27.160	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigW	10	36.049	4.721	36.420	32.407	38.272	descriptive_only	只能描述
+dbtbs_bsub	DBTBS 枯草芽孢杆菌	SigX	4	27.778	7.841	31.481	27.160	32.099	descriptive_only	只能描述
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma24	45	40.521	7.941	40.741	35.802	46.914	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma28	10	43.704	5.678	43.210	41.049	45.988	descriptive_only	只能描述
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma32	34	44.190	7.035	43.827	39.506	49.074	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma38	84	40.315	8.442	40.741	35.802	46.914	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma54	14	42.769	9.435	43.827	33.333	46.914	exploratory_only	只能探索
+regulondb_ecoli	RegulonDB 大肠杆菌	Sigma70	583	40.252	7.527	40.741	35.802	45.679	confirmation_candidate	可做正式结论
