@@ -1,5 +1,7 @@
 # Repository instructions
 
+2026-10-09 实测完成：新增 42 组 MEME/STREME（27 MEME、15 STREME）与原 12 组 STREME 合计 54 套；540 个报告 PWM 均接 FIMO，344 次扫描成功且无截断。157 项测试通过。8 次辅助 SEA 因 development 仅 1 条正样本失败，保留日志；原 17 主候选和旧结果哈希不变。扩展 holdout 出现率 3 项 BH 显著、σ 特异性 0 项，全部按探索性报告。 [完整结果](reports/M3_扩展双方法与sigma实验_20261009.md)。
+
 最新执行范围见 `docs/PR01-02_expanded_M3_protocol_20261009.md`：MEME/STREME 均须运行；TJU 按物种与两套背景，RegulonDB/DBTBS 按整体与 σ 分组；每套 PWM 接 FIMO。DBTBS 自身探索分支恢复，但不恢复独立外部统计验证角色。原 17 主候选不替换。
 
 本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。此段是初次 STREME 完成时状态；参考库及原 17 FIMO 后续已完成，详见 M3_参考库_FIMO与语法检验_20261008.md。候选不会按匹配或holdout表现筛除。
@@ -11,7 +13,7 @@
 在启动 PR01-02 新 STREME/FIMO/已知元件对照之前，必须阅读 `docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md`。该文件是 2026-10-08 最新预注册规则：TJU 主 STREME 使用发布的 `label=0` 天然对照；另用已生成的 `discovery.dinucleotide_null.fasta` 进行必须执行的 STREME 稳健性分析。两套背景独立运行、禁止混合；不新增 GC-matched 背景；背景组成差异作为解释限制保留。DBTBS 不再主张有效规模的独立外部验证，保留 sigma/TSS/位点注释及明确标记的探索工作。真实参考 PWM 库须按该文件整理验收后才可宣称“库已冻结”，不能把理想 consensus 当实测 PWM。
 
 
-开始任何实验设计、数据处理、运行、结果解释或报告前，阅读 `docs/README.md`、`docs/07_后续实验执行规范_20261004.md`、`docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md` 和当前数据审计/交接文档。后续实验以用户最新决定为准；与旧路线冲突时，以本文件及最新数据规范为准。
+开始任何实验设计、数据处理、运行、结果解释或报告前，先阅读 `docs/PR01-02_expanded_M3_protocol_20261009.md`，再阅读 `docs/README.md`、`docs/07_后续实验执行规范_20261004.md`、`docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md` 和当前数据审计/交接文档。后续实验以用户最新决定为准；与旧路线冲突时，以本文件及最新数据规范为准。
 
 PR01-02 当前数据架构固定为：**TJU Pan / PromLoop 六物种是主序列数据源；RegulonDB 用于 E. coli σ 专项与可隔离的外部验证；DBTBS 用于 B. subtilis σ/TSS/位置和文献注释，不作独立外部统计验证。** 不再采用“RegulonDB/DBTBS 为主发现、TJU 仅为辅助探索”的旧全局路线。
 

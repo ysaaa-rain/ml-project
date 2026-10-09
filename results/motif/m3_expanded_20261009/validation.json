@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "hash_entries_verified": {
+    "tmp/m3_expanded_20261009": 823,
+    "tmp/m3_expanded_followup_20261009": 3686,
+    "data/processed/pr01_02_data_v2": 210,
+    "tmp/m3_followup_20261008": 168,
+    "results/motif/tju_streme_v2_20261008": 126
+  },
+  "discovery_new_success": 42,
+  "discovery_new_failure": 0,
+  "reused_streme": 12,
+  "total_cases": 54,
+  "reported_PWMs": 540,
+  "FIMO_modes": {
+    "strict": 160,
+    "diagnostic_raw_p": 106,
+    "strict_sigma_pool": 78
+  },
+  "FIMO_failures": 0,
+  "FIMO_truncations": 0,
+  "auxiliary_SEA_failures": 8,
+  "auxiliary_SEA_failure_reason": "development primary n=1 < required 2",
+  "verified_method_Tomtom_pairs": 27,
+  "original17_and_old_results_unchanged": true,
+  "pytest_passed": 157,
+  "postprocess_manifest_sha256": "b1c20101172296ce70e78002216f2ee387628963fea691e5d265ad0bfdd86230",
+  "public_has_no_long_ACGT_sequence_blocks": true
+}

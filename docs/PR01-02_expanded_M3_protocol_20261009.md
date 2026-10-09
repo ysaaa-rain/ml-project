@@ -29,7 +29,7 @@ MEME 内部评估比例 0.5，STREME 0.1；内部拆分由工具实现，不保�
 
 只使用严格位点。每序列/每 motif 选 q 最小、score 最大、start 最小、stop 最小、strand 字典序第一的主位点，TSS 相对中心为 `(start+stop)/2-61`。位置只报告描述性分布；不据此改候选。
 
-出现率以同源簇为单位，规则不依赖命中结果：天然对照/σ 对照的混标签簇排除，纯标签簇取字典序最小 ID；shuffle 对照按正样本簇选一个 ID 与其 shuffle 成对，采用 discordant pairs 的精确二项检验。天然正负与目标 σ/其他 σ 用双侧 Fisher。每项报告有效簇数、出现率差与原始 p。
+出现率以同源簇为单位，规则不依赖命中结果：天然对照/σ 对照的混标签簇排除，纯标签簇取字典序最小 ID；shuffle 对照按正样本簇选一个 ID 与其 shuffle 成对，采用 discordant pairs 的精确二项检验。天然正负与目标 σ/其他 σ 用双侧 Fisher。每项报告有效簇数、出现率差与原始 p。汇总阶段统一补充所有效应的 95% 保守区间：两个边际各取 97.5% Clopper–Pearson，再用 Bonferroni 差值界；成对 shuffle 使用正/负 discordant 事件边际，不按独立两组估计。区间规则不改变任何检验或候选。
 
 BH 分别按 split 和比较目的跨所有扩展 case/PWM 校正：`natural_presence`、`paired_null_presence`、`sigma_specificity`。空组无法检验记 NA，不补显著性。小组的推断限制始终保留。新增 holdout 检验全部探索性，不优化参数。原 17 的既有四组检验家族不被替换。
 
