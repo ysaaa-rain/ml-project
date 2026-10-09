@@ -1,13 +1,15 @@
 # PR01-02：已知 motif 参考与空间语法检验预注册（2026-10-08）
 
-状态：**分析规则冻结；真实参考 PWM 文件仍待按本规范构建与 SHA256 验收**。此文件不宣称已有可审计的 reference_library_v1.meme，也不代表已运行 MEME/STREME/FIMO。
+最新执行范围见 `PR01-02_expanded_M3_protocol_20261009.md`：MEME/STREME 均须运行；TJU 按物种与两套背景，RegulonDB/DBTBS 按整体与 σ 分组；每套 PWM 接 FIMO。DBTBS 自身探索分支恢复，但不恢复独立外部统计验证角色。原 17 主候选不替换。
+
+原规则冻结；后续实测已在本地构建并记录 4 个真实短元件 PWM、完成原 17 候选 FIMO。实际证据见 reports/M3_参考库_FIMO与语法检验_20261008.md；本文件保留原 17 的预注册规则，扩展实验按 2026-10-09 规范执行。
 
 ## 1. 项目数据角色与主程序
 
 - TJU 六物种 v2 discovery 为 RQ1/跨物种主输入；holdout 不参与 motif 发现或参数选择。
 - **六物种主发现工具为 STREME**。每物种正类使用固定的 `discovery.positive.fasta`；准备两套彼此独立运行、不得混合的背景：主对照 `discovery.natural_control.fasta`（发布的 label=0），以及稳健性对照 `discovery.dinucleotide_null.fasta`（现成的二核苷酸组成保持 shuffle）。两次运行均只使用相同 discovery 正样本，参数冻结为 `--dna --p <positive> --n <对应背景> --minw 5 --maxw 15 --nmotifs 10 --seed 20261005 --thresh 0.05`，须按实际软件版本核验参数。`--nmotifs 10` 为搜索上限，不代表十个 motif 均显著；只按软件实际结果解释。正式 motif 主列表从 natural-control 的 STREME 结果依事前规则选定，不根据 shuffled 结果挑选更漂亮的主结论。
 - 不新造 GC-matched 负样本，不按 GC 分层或聚类。**必须保留并实际使用已经生成的 `dinucleotide_null`**：运行 discovery positive vs dinucleotide-null 的 STREME 作为预注册的稳健性实验；比较其得到的 motifs 与自然负样本主实验 motifs 的 PWM 相似、共识、位置和显著性，不把 dinucleotide-shuffled 序列当作真实非启动子。可对主 PWM 在两套背景上做固定 FIMO 扫描，阈值不能从 holdout 优化。**限制**：主实验是相对于原发布 label=0 的富集；正负 GC 差异可能解释部分 A/T 偏好，dinucleotide-null 稳健性可减轻但不能证明彻底消除所有组成偏差。
-- MEME 用于选定组（如 TJU E. coli 和 B. subtilis）的验证性方法交叉检查，不重新从验证集发现；DREME 非必做。RegulonDB 为 sigma 专项，DBTBS 主要作 B. subtilis sigma/TSS/位点注释，不作为有效规模的独立验证集（432 核心，外部 holdout 仅 1 条）。
+- MEME 按 2026-10-09 新要求运行六物种双背景，并对 RegulonDB/DBTBS 整体及可用 σ 组与 STREME 同时运行，不重新从验证集发现；DREME 非必做。RegulonDB 为 sigma 专项，DBTBS 主要作 B. subtilis sigma/TSS/位点注释，不作为有效规模的独立验证集（432 核心，外部 holdout 仅 1 条）。
 - 所有命令只读取 v2 冻结路径，不能继续读取 20260930/20261003 旧默认输入。正式启动前固定工具版本、参数、输入 hash 与输出目录。
 
 ## 2. 已知 motif 参考库——已冻结的来源选择和构建规范

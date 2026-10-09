@@ -1,6 +1,8 @@
 # Repository instructions
 
-本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。参考库与FIMO尚未完成，候选不会按匹配或holdout表现筛除。
+最新执行范围见 `docs/PR01-02_expanded_M3_protocol_20261009.md`：MEME/STREME 均须运行；TJU 按物种与两套背景，RegulonDB/DBTBS 按整体与 σ 分组；每套 PWM 接 FIMO。DBTBS 自身探索分支恢复，但不恢复独立外部统计验证角色。原 17 主候选不替换。
+
+本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。此段是初次 STREME 完成时状态；参考库及原 17 FIMO 后续已完成，详见 M3_参考库_FIMO与语法检验_20261008.md。候选不会按匹配或holdout表现筛除。
 
 ## 后续实验路线（用户指定，2026-10-08）
 
@@ -15,7 +17,7 @@ PR01-02 当前数据架构固定为：**TJU Pan / PromLoop 六物种是主序列
 
 TJU `reg_and_gen/Datasets` 已与 PromLoop 固定提交逐文件核验一致；项目采用 PromLoop 已发布的 81 bp、相对 TSS `[-60,+20]` 标准化序列。对 TJU 不重新执行 TSS 截取或按 strand 反向互补，不因 CSV 未逐条提供 genomic coordinate/strand 而阻塞主 motif 分析。不得声称已经逐条独立验证上游每个负链样本的方向处理；报告中应表述为“采用 PromLoop 发布的 TSS-aligned 标准化序列”。TJU 缺逐条 sigma 标签，因此不作为 RQ2 的主 sigma 证据。
 
-核心实验顺序为：先完成数据审计与清洗 → TJU 六物种主 motif discovery（STREME 双背景分开运行，MEME 代表性对照，DREME 暂不跑）→ FIMO/position/spacing/arrangement → 已知元件对比 → RQ3 分层验证；RegulonDB 用于 E. coli sigma-specific RQ2 和 TJU E. coli 的同物种跨数据集验证；DBTBS 用于 B. subtilis σ/TSS/位点注释；因外部严格留出仅 1 条，不做正式独立统计验证。跨物种、同来源留出、同物种跨数据集三种验证必须分开报告。
+核心实验顺序为：先完成数据审计与清洗 → TJU 六物种主 motif discovery（STREME 双背景分开运行，MEME 全六物种双背景对照，DREME 暂不跑）→ FIMO/position/spacing/arrangement → 已知元件对比 → RQ3 分层验证；RegulonDB 用于 E. coli sigma-specific RQ2 和 TJU E. coli 的同物种跨数据集验证；DBTBS 用于 B. subtilis σ/TSS/位点注释；因外部严格留出仅 1 条，不做正式独立统计验证。跨物种、同来源留出、同物种跨数据集三种验证必须分开报告。
 
 embedding / Nucleotide Transformer / clustering / occlusion / SAE 等路线全部后置为探索项。不能把 pooled embedding、attention 或分类性能直接称为 motif/因果发现。
 
