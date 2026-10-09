@@ -1,8 +1,10 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-09 新执行要求：[扩展 M3 规范](docs/PR01-02_expanded_M3_protocol_20261009.md)；MEME/STREME 均覆盖 TJU 六物种双背景及 RegulonDB/DBTBS 整体和可用 σ 组，每套 PWM 接 FIMO。[首次 FIMO 诊断](reports/M3_首次FIMO诊断_20261009.md)未发现明显输入/截断错误，原严格阈值与 17 主候选不变。
+
 后续实测（2026-10-08）：参考库4个短元件PWM本地构建、17主候选不变，已完成18组FIMO及四组BH统计。确认富集/共现均无BH显著，位置/间距因样本不足只描述。详见[参考/FIMO报告](reports/M3_参考库_FIMO与语法检验_20261008.md)。
 
-本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。参考库与FIMO尚未完成，候选不会按匹配或holdout表现筛除。
+本地实测更新：2026-10-08 已完成六物种双背景12组STREME，冻结natural主候选17个；全套142项测试通过。正式报告：reports/TJU_STREME_主发现与稳健性_20261008.md。命令及哈希：results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json。诊断初次输出仅保留本地，诊断参数/哈希已归档。此段记录初次 STREME 完成时的状态；参考库/FIMO 后续实测见上方报告，候选不会按匹配或holdout表现筛除。
 
 **最新文档入口：[docs/README.md](docs/README.md)**；M1/M2 阶段报告：[M1M2_阶段调查与描述性发现](docs/M1M2_阶段调查与描述性发现_20261008.md)。历史组员原稿仅从 Git 固定提交追溯。
 
@@ -16,7 +18,7 @@ TJU 六物种为主数据；RegulonDB 负责 E. coli sigma 注释/专项与独�
 
 ## 数据链条与实验主线
 
-TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → STREME（natural 与 dinucleotide 两背景）→ FIMO → motif position/spacing/cross-species。
+TJU 六物种 positive promoter → 清洗/去重/泄漏隔离 → STREME + MEME（natural 与 dinucleotide 两背景）→ FIMO → motif position/spacing/cross-species。
 
 RegulonDB E. coli → σ关系表/σ-specific motif → 与 TJU E. coli 做去重叠 cross-dataset validation。
 
@@ -57,6 +59,6 @@ python -m pytest -q
 
 首份修复后的辅助FASTA：`data/processed/pr01_02_data_v2/regulondb_ecoli/core/discovery.positive.fasta`（1284条）。正式主实验从各`tjupan_*/main/discovery.positive.fasta`开始；每个物种使用两套已生成、按manifest验收的 STREME 对照：`discovery.natural_control.fasta` 为正式主背景，`discovery.dinucleotide_null.fasta` 为组成控制的稳健性背景。两次 discovery STREME 分开运行；不新增 GC-matched。详见[2026-10-08 主分析与语法统计预注册](docs/PR01-02_motif_reference_and_grammar_protocol_20261008.md)。
 
-当前不得使用旧实验脚本默认的20260930/20261003输入路径直接启动实验。正式实验启动前需要将MEME/STREME/FIMO入口更新到v2并锁定参数；本轮没有执行它们。
+当前不得使用旧实验脚本默认的20260930/20261003输入路径直接启动实验。2026-10-09 扩展实验入口已锁定 v2 与参数；新增运行、完成状态与限制以新 manifest/报告为准。
 
 详细方案：[数据源选择与处理规范](docs/PR01-02_数据源选择与处理规范_20261005.md)。修复/清理记录：[数据修复与输入验收](reports/数据修复与输入验收_20261005.md)。
