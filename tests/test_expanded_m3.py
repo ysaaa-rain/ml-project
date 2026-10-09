@@ -39,3 +39,17 @@ def test_bh_families_and_splits_are_separate():
 def test_streme_validity_uses_test_partition_not_hit_count(tmp_path):
  (tmp_path/'streme.xml').write_text('<STREME><model><test_positives count="100"/><test_negatives count="100"/></model><motifs><motif id="1-AAA" width="1" test_pvalue="0.001" test_pos_count="20" test_neg_count="0"><pos A="0.7" C="0.1" G="0.1" T="0.1"/></motif></motifs></STREME>')
  rows,_=f.parse_candidates(tmp_path,'streme','group');assert rows[0]['native_significant'];assert rows[0]['internal_test_valid']
+
+
+def test_missing_empty_partition_requires_skip_evidence(tmp_path):
+ from experiments.summarize_expanded_m3 import partition
+ assert partition(tmp_path/'missing.fasta',True)==[]
+ with pytest.raises(FileNotFoundError):partition(tmp_path/'missing.fasta')
+
+
+def test_no_discordant_pairs_still_has_nonzero_uncertainty():
+ master={str(i):{'leakage_group':str(i)} for i in range(10)}
+ r=compare({sid:1 for sid in master},master,set(),True)
+ assert r['rate_difference']==0
+ assert r['rate_difference_CI95_lower']<0<r['rate_difference_CI95_upper']
+ assert 'discordant_marginals' in r['CI_method']

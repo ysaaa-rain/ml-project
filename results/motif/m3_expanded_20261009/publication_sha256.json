@@ -1,0 +1,13 @@
+{
+  "strict_FIMO_summary.tsv": "73ee25a18cf3107d6be5a6f7b796786e45ba72e91d8139fc271897371695d8a8",
+  "run_evidence.json": "47d29b89efb4ed4e305fa2a9500937b3cd3812edcf8e8e438c6356aa4267265d",
+  "cluster_tests.tsv": "c9af526bf48fc101b15f2c0696077ded6f15d57afaf6e806f095c25a0a85b34d",
+  "PWM_similarity.tsv": "458b933d55285e9cf00e5bc769215110f0c2013ae61fddb63cc615c0dc0dc154",
+  "candidates.tsv": "d5e42a447b5cd587f1023ae85ec042583fa22395eaf5d358257ef90b8d3b55c5",
+  "README.md": "a4d3682bd7cdd95f144ff54feb93c38b82a005d507daf7efc26f20701110f0ad",
+  "original17_diagnostic_distribution.tsv": "d0f8acb5c14c0daab3051618f36b9e910aae0cf501302a6e1200f609e0e44711",
+  "validation.json": "04ecd199bd9329b5ff5ac4144e4bf51e690b26e68e7659bf57ef91aacc08a2b9",
+  "cases.tsv": "987efd008d2ceb92e5aa388888d6772f204567b7f8df8222ce5a29ba88a8745d",
+  "original17_diagnostic_evidence.json": "dfd957859d9e2fdc3e26f1c860432d70704f70ac0b1a94bf8165b300837de7dd",
+  "original17_SEA.tsv": "f05ff03f33266298f375cef814a7b591aa975fae46bfef4c3828b513b385c8aa"
+}
