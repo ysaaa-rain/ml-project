@@ -1,0 +1,25 @@
+species	element_type	qualified_annotated_sites	unique_PMIDs	sources	candidate_count	candidate_reference	candidate_context	coverage_status	evidence_scope
+escherichia_coli	minus10	26	25	RegulonDB	0			local qualified reference coverage	curated short element in experimentally supported promoter; PMID/source record retained locally
+escherichia_coli	minus35	20	20	RegulonDB	0			local qualified reference coverage	curated short element in experimentally supported promoter; PMID/source record retained locally
+escherichia_coli	UP	0	0	RegulonDB narrative snapshot	1	RDBECOLIPRC22477 (PMID unresolved locally)	guaBp relative interval (-59, -38); source note gives promoter sequence/TSS, but underlying element citation record has no resolved PMID in this snapshot; not included in qualified reference PWM	1 narrative coordinate candidate; not qualified for formal motif recovery until citation/evidence mapping is resolved	Unqualified candidate is context only; do not calculate recovery rate
+escherichia_coli	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bacillus_subtilis	minus10	218	198	DBTBS	0			local qualified reference coverage	curated short element in experimentally supported promoter; PMID/source record retained locally
+bacillus_subtilis	minus35	198	181	DBTBS	0			local qualified reference coverage	curated short element in experimentally supported promoter; PMID/source record retained locally
+bacillus_subtilis	UP	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bacillus_subtilis	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+acinetobacter_baumannii	minus10	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+acinetobacter_baumannii	minus35	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+acinetobacter_baumannii	UP	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+acinetobacter_baumannii	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bradyrhizobium	minus10	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bradyrhizobium	minus35	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bradyrhizobium	UP	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+bradyrhizobium	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+corynebacterium_diphtheriae	minus10	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+corynebacterium_diphtheriae	minus35	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+corynebacterium_diphtheriae	UP	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+corynebacterium_diphtheriae	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+staphylococcus_aureus	minus10	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+staphylococcus_aureus	minus35	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+staphylococcus_aureus	UP	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
+staphylococcus_aureus	TFBS	0	0		0			尚无合格结构化位点（不表示公开数据库全局不存在）	Unqualified candidate is context only; do not calculate recovery rate
