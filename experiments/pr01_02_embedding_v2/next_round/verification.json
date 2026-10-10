@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "holdout_used": false,
+  "hashes_checked": 5626,
+  "historical_runs": 53,
+  "new_real_runs": 24,
+  "new_real_instances": 226456,
+  "synthetic_conditions": 27,
+  "synthetic_fits": 132,
+  "synthetic_instances": 535631,
+  "synthetic_truth_sites": 16896,
+  "exact_cross_split_duplicates": 0,
+  "limits": [
+    "hash audit verifies frozen inputs and outputs, not historical execution independently",
+    "model fitting and truth separation reviewed in benchmark.py; no exhaustive homology audit rerun",
+    "metrics are reference-assisted localization; not unsupervised biological discovery precision"
+  ]
+}

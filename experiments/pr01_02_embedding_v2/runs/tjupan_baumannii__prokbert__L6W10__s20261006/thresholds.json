@@ -1,0 +1,29 @@
+{
+  "calibration_split": "discovery_natural",
+  "comparison": ">",
+  "target_sequence_fpr": 0.05,
+  "thresholds": {
+    "EMB_prokbert_C00": 5.470548572534362,
+    "EMB_prokbert_C01": 3.119535820054614,
+    "EMB_prokbert_C02": 4.703167675754371,
+    "EMB_prokbert_C03": 4.23976736992008,
+    "EMB_prokbert_C04": 5.362595576064996,
+    "EMB_prokbert_C05": 4.71799810825695,
+    "EMB_prokbert_C06": 6.215425255762188,
+    "EMB_prokbert_C07": 5.267891165707245,
+    "EMB_prokbert_C08": 6.2539079804956685,
+    "EMB_prokbert_C09": 4.066414999429572,
+    "EMB_prokbert_C11": 4.26563316180794,
+    "EMB_prokbert_C12": 3.2604102224793374,
+    "EMB_prokbert_C13": 4.19586031772698,
+    "EMB_prokbert_C14": 4.127457128461927,
+    "EMB_prokbert_C16": 5.495814548665926,
+    "EMB_prokbert_C17": 6.151293802793361,
+    "EMB_prokbert_C19": 2.434000097659896,
+    "EMB_prokbert_C20": 3.8731610422253087,
+    "EMB_prokbert_C21": 4.160471090133492,
+    "STREME_1-ATTWTARMADAWWW": 8.130048438252858,
+    "STREME_2-AYAAAAAA": 9.116492679351698
+  },
+  "scan": "maximum zero-order log-odds over both strands; not FIMO site p/q"
+}

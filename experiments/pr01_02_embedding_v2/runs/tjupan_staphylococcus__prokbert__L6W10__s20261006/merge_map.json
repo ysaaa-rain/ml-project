@@ -1,0 +1,50 @@
+[
+  {
+    "motif": "EMB_prokbert_C04",
+    "representative": "EMB_prokbert_C01"
+  },
+  {
+    "motif": "EMB_prokbert_C05",
+    "representative": "EMB_prokbert_C01"
+  },
+  {
+    "motif": "EMB_prokbert_C09",
+    "representative": "EMB_prokbert_C06"
+  },
+  {
+    "motif": "EMB_prokbert_C12",
+    "representative": "EMB_prokbert_C00"
+  },
+  {
+    "motif": "EMB_prokbert_C13",
+    "representative": "EMB_prokbert_C00"
+  },
+  {
+    "motif": "EMB_prokbert_C14",
+    "representative": "EMB_prokbert_C00"
+  },
+  {
+    "motif": "EMB_prokbert_C15",
+    "representative": "EMB_prokbert_C11"
+  },
+  {
+    "motif": "EMB_prokbert_C16",
+    "representative": "EMB_prokbert_C08"
+  },
+  {
+    "motif": "EMB_prokbert_C17",
+    "representative": "EMB_prokbert_C01"
+  },
+  {
+    "motif": "EMB_prokbert_C19",
+    "representative": "EMB_prokbert_C01"
+  },
+  {
+    "motif": "EMB_prokbert_C21",
+    "representative": "EMB_prokbert_C20"
+  },
+  {
+    "motif": "EMB_prokbert_C23",
+    "representative": "EMB_prokbert_C00"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "source": "tjupan_bacillus_subtilis",
+  "method": "prokbert",
+  "stage": "discovery_instances",
+  "motif_a": "EMB_prokbert_C17",
+  "motif_b": "EMB_prokbert_C01",
+  "seed_a": 20261006,
+  "seed_b": 20261007,
+  "sequence_id": "tjupan_bacillus_subtilis_main_01ae3d26fad13b71",
+  "delta_bp": 22,
+  "canonical_strand_match": false,
+  "start_a0": 36,
+  "start_b0": 58
+}

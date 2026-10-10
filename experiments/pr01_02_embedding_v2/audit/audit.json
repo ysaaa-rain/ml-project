@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETED",
+  "data_manifest_sha256": "449dca1e3ba5efb3d49b4427515b9cb953fff4e1061ef311c081ddf681927608",
+  "hash_files": 1305,
+  "hash_failures": [],
+  "cross_split_groups": 0,
+  "shuffle_unbound": 0,
+  "shuffle_dinucleotide_failures": 0,
+  "references": {
+    "docs\\参考资料\\motif-embedding-methods.pdf": {
+      "sha256": "0a9ed1b7ce927933f384cf05f791e2bc6f7e2e3b84f67db5a887392c0364a8a5",
+      "pages": 23,
+      "unresolved_citation_markers": 0
+    },
+    "docs\\参考资料\\motif-embedding-overview.pdf": {
+      "sha256": "68a79e8bfb775d5aed77562e6c1cd74668bd1a15a03878f5e1ba67c8b55750a2",
+      "pages": 8,
+      "unresolved_citation_markers": 34
+    }
+  },
+  "git_head": "55d0c96797c14ff9b53c8f47ee568d486192c67a",
+  "limitations": [
+    "Upstream TJU TSS alignment accepted, not independently reconstructed.",
+    "Reference PDFs contain unresolved citations; hypotheses only.",
+    "DBTBS external holdout n=1 is not statistical validation.",
+    "Existing traditional holdout has been viewed; future EMB evaluation is exploratory."
+  ]
+}

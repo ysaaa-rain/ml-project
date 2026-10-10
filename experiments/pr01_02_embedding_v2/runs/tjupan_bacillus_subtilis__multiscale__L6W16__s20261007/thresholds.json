@@ -1,0 +1,32 @@
+{
+  "calibration_split": "discovery_natural",
+  "comparison": ">",
+  "target_sequence_fpr": 0.05,
+  "thresholds": {
+    "EMB_multiscale_C00": 6.5011669309466145,
+    "EMB_multiscale_C01": 8.154124541251878,
+    "EMB_multiscale_C02": 5.593555355700613,
+    "EMB_multiscale_C03": 5.926320021638781,
+    "EMB_multiscale_C04": 9.191982371303446,
+    "EMB_multiscale_C06": 7.023277516828733,
+    "EMB_multiscale_C07": 4.627802844604502,
+    "EMB_multiscale_C08": 7.111866645066631,
+    "EMB_multiscale_C09": 3.4720819784768553,
+    "EMB_multiscale_C10": 7.0165543014265275,
+    "EMB_multiscale_C11": 8.56205893545527,
+    "EMB_multiscale_C12": 5.414917165132069,
+    "EMB_multiscale_C14": 7.167009397763099,
+    "EMB_multiscale_C15": 5.419474811771469,
+    "EMB_multiscale_C16": 6.197996631881924,
+    "EMB_multiscale_C17": 9.09489126129329,
+    "EMB_multiscale_C18": 4.807512059748643,
+    "EMB_multiscale_C19": 6.38069705152085,
+    "EMB_multiscale_C20": 6.794227554905547,
+    "EMB_multiscale_C21": 6.345079745478049,
+    "EMB_multiscale_C22": 5.5331604766044595,
+    "STREME_1-TATAATAAAWA": 7.857664431278852,
+    "STREME_2-TAAAAAWA": 9.267838025520733,
+    "STREME_3-AAAGGAGG": 7.9378779844522525
+  },
+  "scan": "maximum zero-order log-odds over both strands; not FIMO site p/q"
+}

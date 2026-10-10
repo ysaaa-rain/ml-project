@@ -1,0 +1,3 @@
+family	candidate	cosine	offset	alignment_strand	eligible	threshold	target_length	candidate_width
+0	C22	0.6149585765808204	0	-	False	6.2782555053150295	6	6
+1	C14	0.5862323835723383	0	-	False	6.592844552968891	6	6

@@ -1,0 +1,46 @@
+{
+  "overall": "PARTIAL",
+  "EMB-01": {
+    "status": "COMPLETED",
+    "scope": "read-only frozen-input, auxiliary, reference and CPU/model audit"
+  },
+  "EMB-02": {
+    "status": "COMPLETED",
+    "scope": "all 6745 Discovery positives, layers 3/6 and five window scales; model/code/weights pinned"
+  },
+  "EMB-03": {
+    "status": "COMPLETED",
+    "scope": "engineering Embedding-to-PWM loop, three-seed six-species baseline and Development validation; no confirmed functional motifs"
+  },
+  "EMB-04": {
+    "status": "PARTIAL",
+    "scope": "six-species One-hot/contextual comparisons; B.subtilis layer/scale/multiscale ablations; window-internal-token diagnostic",
+    "pending": [
+      "standalone local encoding versus full-context fusion",
+      "DNABERT-2 conditional comparison",
+      "multi-species scale ablations"
+    ]
+  },
+  "EMB-05": {
+    "status": "PARTIAL",
+    "scope": "Development motif centers/strands/order/gaps exported descriptively",
+    "pending": [
+      "preregistered cluster-aware grammar permutation tests",
+      "sigma-specific experiments"
+    ]
+  },
+  "EMB-06": {
+    "status": "PLANNED",
+    "not_started_reason": "Current sequence evidence does not pass robust biological candidate gate; no justification for expensive SAE training yet."
+  },
+  "EMB-07": {
+    "status": "PARTIAL",
+    "scope": "real six-species baselines, discovery seed stability, synthetic discovery recovery, separate controls, GC diagnostics, cost and failure records",
+    "pending": [
+      "current reference PWM assets unavailable locally",
+      "external statistical evaluation",
+      "locked final Holdout evaluation",
+      "peak CPU memory measurement"
+    ]
+  }
+}

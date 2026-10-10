@@ -1,0 +1,9 @@
+{
+  "status": "PARTIAL",
+  "report_sha256": "e3407ea9f8e031df1d6b5727c317747718bef0cce60cd9fb729387e90bcebf32",
+  "status_sha256": "05ca4b1c8e16dc6ccf2fa27929d8ba6dfd68965d9093a5c360deda7b78d3116c",
+  "actual_real_runs": 53,
+  "synthetic_runs": 2,
+  "holdout_evaluated": false,
+  "sae_trained": false
+}

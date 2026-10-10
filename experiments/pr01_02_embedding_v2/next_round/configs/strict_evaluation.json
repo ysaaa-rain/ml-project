@@ -1,0 +1,8 @@
+{
+  "version": "strict-full-shorter-matrix-overlap",
+  "minimum_overlap": "min(candidate_width, reference_width)",
+  "similarity_threshold": 0.8,
+  "rationale": "A six-column local match must not count as recovering a 10- or 12-column motif; all methods use the same stricter rule.",
+  "data_reuse": "frozen discovery PWMs rescored; no model refitting, no test-driven threshold choice",
+  "original_evaluation": "preserved in each run; initial local matches treated only as diagnostic"
+}

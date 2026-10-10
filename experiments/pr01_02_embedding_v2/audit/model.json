@@ -1,0 +1,20 @@
+{
+  "model": "neuralbioinfo/prokbert-mini",
+  "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+  "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+  "loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "files": {
+    "config.json": "6d68c922f919e0de3f87de60c07ebc1823927df806645937f94911c5b8245de6",
+    "model.safetensors": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+    "models.py": "a439e05c2964051697a0a40d6d2d5207eb4be67c949a9b3c8510ef6ba44bea1e",
+    "tokenizer.py": "baf8437c2ced0f49da60cc9e56d43b8940476f3ac25cf03dd01a8fc8e40965b3",
+    "vocab.txt": "09ac66138ad9a2a5cbf2ae7f4057021489986c85f2772ddf3b1d9a7c4e408603"
+  },
+  "parameters": 20489472,
+  "device": "cpu"
+}

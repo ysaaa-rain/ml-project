@@ -1,0 +1,14 @@
+[
+  {
+    "motif": "EMB_multiscale_C05",
+    "representative": "EMB_multiscale_C04"
+  },
+  {
+    "motif": "EMB_multiscale_C13",
+    "representative": "EMB_multiscale_C04"
+  },
+  {
+    "motif": "EMB_multiscale_C23",
+    "representative": "EMB_multiscale_C01"
+  }
+]

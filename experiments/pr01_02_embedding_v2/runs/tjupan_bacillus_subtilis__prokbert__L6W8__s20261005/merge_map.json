@@ -1,0 +1,34 @@
+[
+  {
+    "motif": "EMB_prokbert_C02",
+    "representative": "EMB_prokbert_C00"
+  },
+  {
+    "motif": "EMB_prokbert_C04",
+    "representative": "EMB_prokbert_C03"
+  },
+  {
+    "motif": "EMB_prokbert_C07",
+    "representative": "EMB_prokbert_C01"
+  },
+  {
+    "motif": "EMB_prokbert_C09",
+    "representative": "EMB_prokbert_C08"
+  },
+  {
+    "motif": "EMB_prokbert_C12",
+    "representative": "EMB_prokbert_C03"
+  },
+  {
+    "motif": "EMB_prokbert_C15",
+    "representative": "EMB_prokbert_C08"
+  },
+  {
+    "motif": "EMB_prokbert_C16",
+    "representative": "EMB_prokbert_C08"
+  },
+  {
+    "motif": "EMB_prokbert_C22",
+    "representative": "EMB_prokbert_C08"
+  }
+]

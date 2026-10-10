@@ -1,0 +1,14 @@
+[
+  {
+    "motif": "EMB_tokenwindow_C02",
+    "representative": "EMB_tokenwindow_C00"
+  },
+  {
+    "motif": "EMB_tokenwindow_C12",
+    "representative": "EMB_tokenwindow_C11"
+  },
+  {
+    "motif": "EMB_tokenwindow_C14",
+    "representative": "EMB_tokenwindow_C13"
+  }
+]

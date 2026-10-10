@@ -1,0 +1,7 @@
+source	old_candidates	recalculated_candidates	median_matched_pwm_similarity	interpretation
+tjupan_bacillus_subtilis	20	20	1.0	small floating point changes can alter clustering; no biological improvement claim
+tjupan_baumannii	18	18	1.0	small floating point changes can alter clustering; no biological improvement claim
+tjupan_bradyrhizobium	20	20	1.0	small floating point changes can alter clustering; no biological improvement claim
+tjupan_diphtheria	20	20	1.0	small floating point changes can alter clustering; no biological improvement claim
+tjupan_escherichia_coli	19	19	1.0	small floating point changes can alter clustering; no biological improvement claim
+tjupan_staphylococcus	13	13	1.0	small floating point changes can alter clustering; no biological improvement claim

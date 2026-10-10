@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETED",
+  "config": {
+    "primary_seed": 20261005,
+    "family": "new exploratory family, original q preserved"
+  },
+  "started_unix": 1791550507.825643,
+  "holdout_used": false,
+  "device": "cpu",
+  "git_head": "55d0c96797c14ff9b53c8f47ee568d486192c67a",
+  "input_sha256": {
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A0_recalc__s20261005\\development_enrichment.tsv": "78cd8780ba1673150c8d79fac2be24256ef6f0aca3c0ec01ce1cbfe67c7641eb",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261005\\development_enrichment.tsv": "e442649fe6b4397599050cbc97a737ccdd41ccf151f14d9221942980362957a8",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261006\\development_enrichment.tsv": "9c022ab280e2bd48383cfc9a883e63cf88f32addcf17ad5fe9185820cd4f9513",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261007\\development_enrichment.tsv": "6304502d01dcf9179de4e8767f409f5c201dd1e0f78359222c50e46d5f79d884",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_baumannii__A0_recalc__s20261005\\development_enrichment.tsv": "d6075b99f0cff685dcb2e53e6746eff7ea7f3f10dd29cd15917aa31a66503789",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_baumannii__A2__s20261005\\development_enrichment.tsv": "d0f1d272b993258caf2c85d188505e39547943f48f0bc2c0bf4172e3080bb011",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_baumannii__A2__s20261006\\development_enrichment.tsv": "bf9fa02b34a4f44ad222e89ab25c1f5e029b9fa8bdfd1c40620ee5f69d151e1f",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_baumannii__A2__s20261007\\development_enrichment.tsv": "adc80e70f8afd96be337de65303b0ef22eb54db6e829ac4c0fa5b14b71f4ca6f",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bradyrhizobium__A0_recalc__s20261005\\development_enrichment.tsv": "f88c06b1a53834f8b6e5efdbef2422161103b63a2d8c065ce3a6ce7f17afa1b0",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bradyrhizobium__A2__s20261005\\development_enrichment.tsv": "124c4286eb76b255719d4f31712e8a1d151eba3748405d0ec2f097813ddd609c",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bradyrhizobium__A2__s20261006\\development_enrichment.tsv": "a50b49fdfd2b75e57fda3c477e6d3d4c49cadabee34f7ff6b6fe0f868edd370d",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bradyrhizobium__A2__s20261007\\development_enrichment.tsv": "8d1a9cae0a29a5743a92cc8b1421813671a963af88329ba1bcf33f87b028cc62",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_diphtheria__A0_recalc__s20261005\\development_enrichment.tsv": "cdb6d4905208b102622d74637840fbca8bd5ddcea3a8879410558b549f770d6b",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_diphtheria__A2__s20261005\\development_enrichment.tsv": "d2ef2656acddde95583f7cfc0c2727628afc5a9da795e89768850c6369b15e79",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_diphtheria__A2__s20261006\\development_enrichment.tsv": "40d13fed90b23c3c2c62a317818fb2c5f2e57a1636cde188814e8375febdd691",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_diphtheria__A2__s20261007\\development_enrichment.tsv": "9b871403b51a1974d030a6a96a6cc9b1e22b2a409f5127c1f2200582fbcfdc22",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_escherichia_coli__A0_recalc__s20261005\\development_enrichment.tsv": "267f210db3994f467cd7daee3c746ea0ed3bb7d82ccaf4c9384b99fec39ddcbc",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_escherichia_coli__A2__s20261005\\development_enrichment.tsv": "462ff7111aae6ca7b29917342fd4270005308582ea15e863f962cda2426d99bf",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_escherichia_coli__A2__s20261006\\development_enrichment.tsv": "62883237207735b5649f792be057ca219f0dea0408951cb03f81b450d920de7c",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_escherichia_coli__A2__s20261007\\development_enrichment.tsv": "e510bbb2e87d744b66ed6e2ab142f314a32bcccabb5d19330b8056ccddc3999e",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_staphylococcus__A0_recalc__s20261005\\development_enrichment.tsv": "d6c1a395508a06599aac7ad3a7204e2de8ae7d29bd3ca4b0f798b08f315f97ad",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_staphylococcus__A2__s20261005\\development_enrichment.tsv": "77159f6290000ee3ed7c86aedf054f625e5230513f9a274fa3d9d0911d534687",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_staphylococcus__A2__s20261006\\development_enrichment.tsv": "d99742a1c6ccf7b2baa75439e2f5e63bf4afadd1b382851ad4f4d0fe1972ef27",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_staphylococcus__A2__s20261007\\development_enrichment.tsv": "44d3f04d3c89afbaded655c0e4d5c3d981fa1ce75c171b7864effebb27697503",
+    "experiments\\pr01_02_embedding_v2\\summary\\all_development_enrichment.tsv": "a840d57bbd73691f587a6eae986c46f240902eb894ac15378a48c0530c102764"
+  },
+  "code_sha256": {
+    "benchmark.py": "36699be0ecaaccf035db08bec6d22850ded96a1e521f9be73fdd5e2a48112a21",
+    "centroids.py": "c934041680c0144333af69a2b81acab7f2a54df43492b7431a959353bdac4da9",
+    "collect.py": "2dc431466d2971a0fd9a88004ca15cdb959521be3e2c1d02b5bea38dd1e4b6d3",
+    "common.py": "56d6c7dca4b43691dc0b461faf3883d66662eff71f1937669d30c2aebbbfb068",
+    "diagnostics.py": "8de36b7a12f6168a64ffacb648ce6e59de8349acce233e35b7e7dc5bcd83c4cf",
+    "real.py": "6646049d085b93fe910bd85920908b5b644778786ab13d5e462cdae61d6b2c0a",
+    "strict_evaluate.py": "8dcb54f73a1c7a87c3e768f4012642e808da77d32203286b51eb54a76174f89a",
+    "test_methods.py": "afa9261a25459f9ebdcbe8d357503ec4bfaaa438b86f69433c65ea090c043c87",
+    "__init__.py": "ce5de0ae7fc69174869d17caae0328f02d41d16eca8a5524307ff5b56bfbfd0e"
+  },
+  "dependencies": {
+    "torch": "2.7.1",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "transformers": "5.8.0"
+  },
+  "elapsed_seconds": 2.1371243000030518,
+  "process_peak_memory_bytes": 163086336,
+  "memory_scope": "process high-water mark; shared sequential experiments are not isolated peaks",
+  "output_sha256": {
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\A0_numerical_control.tsv": "e472e699a065908ab83836e2b2b213362993c87da5a649614650fe8b5434210e",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\A2_seed_stability.tsv": "b32ae25640ffd4a49d951af7a776404ec5dcb6f65d98867f59b781807692a50f",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\all_methods_enrichment.tsv": "343b51671a116b0fdc4d1830facbe377c07c508e70f84ad98153b96161cf4e65",
+    "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\primary_seed_counts.tsv": "d3c79a01e0495b98e7e9d9f9b61c4d9e3fd06de6f52a54f3857cdebb0ebfa60d",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\traditional_development_positions.tsv": "b260f5c5a0a803d2b0f5c983eaa54aa830abf52916bbd9a66da0ce0912347900",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\traditional_development_pairs.tsv": "d37edff4a261cba5ae8e2825d4e1f6057602048926be3a6e4e4669522fbad62b"
+  }
+}

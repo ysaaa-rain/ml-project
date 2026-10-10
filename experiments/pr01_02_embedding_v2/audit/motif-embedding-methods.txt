@@ -1,0 +1,805 @@
+下面按照你综述中的六类技术路线展开。为了便于后续把它整理成论文/课程材料，我把每一类都统一拆成四个问题：
+1. 基本原理：motif是在哪里被“表示”出来的？
+2. 核心算法：如何从模型内部表示中把 motif 提取出来？
+3. Motif 评价：发现出来以后如何判断它是否可靠、有生物学意义？
+4. 优缺点：这种路线真正解决了什么问题，又有什么局限？
+需要特别区分一点：embedding本身并不等于 motif discovery。真正的技术链条通常是
+序列 → 表示学习 → 特征/重要性提取 → motif 实例聚合 → motif 模型构建 → 生物学评价
+你综述中的六类方法，主要区别就在于“从表示中如何提取 motif”这一环节。综述将其划分为 CNN 卷积核、预训练
+LM embedding、SAE、注意力解释、GNN embedding、特征归因/ISM 六类。
+一、六类方法的总体框架
+先给出一个总览：
+类别 Motif 在哪里 核心提取机制 是否需要额外训练 典型 motif 表示
+CNN 卷积核 卷积核参数 激活卷积核 → 提取高响
+应序列
+通常需要监督训练 PWM/PSSM
+预训练 LM
+embedding
+embedding 空
+间
+embedding/重建/聚
+类/解释
+通常不需要 motif 标注 embedding feature /
+PWM
+SAE 稀疏 latent
+feature
+embedding → SAE →
+稀疏特征
+需要训练 SAE，但不需要
+motif 标签
+稀疏 feature + motif
+注意力解释 Attention
+matrix
+高注意力区域 → motif 通常无需额外训练 PWM/sequence logo
+GNN
+embedding
+graph/node
+embedding
+k-mer 节点注意力/聚合 通常需要任务训练 k-mer motif / graph
+pattern
+特征归因 attribution map mutation/gradient →
+高贡献片段
+依赖已有预测模型 importance profile
+→ motif
+其中有一个很重要的演化关系：
+CNN：motif 是模型参数中的局部滤波器 ↓ Transformer：motif 是模型内部上下文表示中的潜在模式
+↓ Attention：试图从模型的关系矩阵中定位 motif ↓ Attribution：从“模型输出对序列的敏感性”反推
+motif ↓ SAE：从 embedding 空间显式分解出稀疏、可解释的 latent feature
+这比简单地说“从 CNN 到 Transformer 再到 SAE”更准确，因为它实际上体现了 motif 表示对象的变化。
+二、CNN 卷积核作为 Motif Detector
+代表方法包括 DeepBind、DeepSEA、scBasset。综述中将其定位为最早的一类深度学习 motif discovery 方法，并强
+调第一层卷积核可以直接充当 motif scanner。
+2.1 基本原理
+假设 DNA 序列经过 one-hot encoding：
+𝑋 ∈ {0, 1}4×𝐿
+一个长度为 (k) 的卷积核：
+𝑊 ∈ ℝ 4×𝑘
+1
+在序列上滑动：
+𝑎𝑖 = 𝑓(𝑊 ⊙ 𝑋𝑖∶𝑖+𝑘−1 + 𝑏)
+因此，一个卷积核实际上是在回答：
+“这个位置附近是否出现了我学习到的这种序列模式？ ”
+如果某个卷积核在大量具有相同功能的序列上都产生高响应，那么这个卷积核就很可能对应一个 motif。
+因此 CNN 的特殊之处在于：
+CNN filter ≈ motif detector
+2.2 核心算法
+典型流程：
+DNA/RNA sequence
+↓
+One-hot encoding
+↓
+CNN
+↓
+First-layer convolution filters
+↓
+scan sequence
+↓
+high activation sites
+↓
+extract sequence instances
+↓
+align
+↓
+PWM / sequence logo
+具体来说：
+Step 1：训练 CNN
+使用 ChIP-seq、CLIP-seq、A TAC-seq等监督信号训练模型。
+Step 2：提取第一层卷积核
+对于第 (j) 个 filter：
+𝑊𝑗 = [𝑤𝐴, 𝑤𝐶, 𝑤𝐺, 𝑤𝑇 ]
+可以把其参数直接解释为位置特异性模式。
+Step 3：寻找高激活区域
+对于每个序列：
+𝑖∗ = arg max
+𝑖
+𝑎𝑖𝑗
+得到该 filter 最敏感的序列位置。
+2
+Step 4：构造 motif
+从大量高激活序列片段中提取 motif instances，然后：
+• clustering
+• alignment
+• PWM construction
+最终形成 sequence logo。
+2.3 Motif 评价
+这一类方法的评价通常分为三层。
+￿ 与已知 motif 比较
+使用：
+• JASPAR
+• HOCOMOCO
+• CIS-BP
+• TRANSFAC
+等数据库。
+常见方法是 TOMTOM。
+核心思想是：
+𝑀discovered ↔ 𝑀known
+比较两个 PWM 的相似性。
+￿ 分类/预测性能
+如果这个 motif 被去掉之后模型性能下降：
+Δ𝑃 𝑒𝑟𝑓𝑜𝑟𝑚𝑎𝑛𝑐𝑒 = 𝑃 𝑒𝑟𝑓𝑜𝑟𝑚𝑎𝑛𝑐𝑒(𝑀 ) − 𝑃 𝑒𝑟𝑓𝑜𝑟𝑚𝑎𝑛𝑐𝑒(𝑀 −motif)
+则说明该 motif 对模型预测具有功能贡献。
+￿ 生物学验证
+例如：
+• ChIP-seq binding
+• A TAC-seq accessibility
+• TF binding
+• reporter assay
+• mutagenesis
+3
+2.4 优点
+最大优势是可解释性。
+因为 motif 并不是从模型外部“猜”出来的，而是：
+卷积核本身就是模型学习到的 pattern detector。
+优点包括：
+• 结构简单；
+• motif 定位清晰；
+• 易于转换成 PWM；
+• 计算成本低；
+• 结果容易解释。
+2.5 缺点
+￿ 一个 filter ≠ 一个纯粹 motif
+现代 CNN 中，一个卷积核可能学习：
+• motif；
+• motif + context ；
+• motif combination；
+• 非生物学的统计模式。
+因此“一个 kernel 就是一个 motif”其实只是近似。
+￿ 局部感受野
+CNN 天然偏向局部模式：
+local pattern
+对于：
+𝑚𝑜𝑡𝑖𝑓𝐴 ⋯ 𝑚𝑜𝑡𝑖𝑓 𝐵
+这种长距离组合关系不够自然。
+￿ 监督依赖
+模型通常是：
+𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 → 𝑙𝑎𝑏𝑒𝑙
+因此发现出来的是与预测任务相关的 motif，而不是所有潜在 motif。
+三、预训练 DNA Language Model Embedding
+代表包括 DNABERT、Nucleotide Transformer、GPN、HyenaDNA。综述将这一类定义为利用大规模未标注基因组
+进行 MLM/CLM 预训练，再从 embedding 中提取 motif。
+这里需要特别注意：
+“预训练 LM”本身不是一种具体的 motif discovery algorithm 。
+4
+它提供的是一个更强的表示空间：
+𝑓𝜃 ∶ 𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 → 𝑒𝑚𝑏𝑒𝑑𝑑𝑖𝑛𝑔
+motif discovery 还需要后面的 extraction mechanism。
+3.1 基本原理
+以 MLM 为例：
+𝑥1, 𝑥2, … , 𝑥𝐿
+随机 mask 一些 token：
+𝑥𝑖 → [𝑀 𝐴𝑆𝐾]
+模型学习：
+𝑃 (𝑥𝑖|𝑥∖𝑖)
+经过大规模预训练后，embedding：
+ℎ𝑖 = 𝑓𝜃(𝑥1, … , 𝑥𝐿)
+包含上下文信息。
+于是一个核心假设是：
+如果某种序列模式具有稳定的生物学意义，那么预训练模型可能会在 embedding 中编码这种模式。
+四、预训练 LM 的 motif discovery 怎么做？
+这是这一类最容易混淆的地方。
+实际上存在多种 extraction strategy：
+路线 A：Attention
+𝐸𝑚𝑏𝑒𝑑𝑑𝑖𝑛𝑔 → 𝐴𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 → ℎ𝑖𝑔ℎ − 𝑎𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛𝑟𝑒𝑔𝑖𝑜𝑛 → 𝑚𝑜𝑡𝑖𝑓
+对应 DNABERT-viz。
+路线 B：输入重建
+例如 GPN：
+𝑒𝑚𝑏𝑒𝑑𝑑𝑖𝑛𝑔 → 𝑛𝑢𝑐𝑙𝑒𝑜𝑡𝑖𝑑𝑒𝑟𝑒𝑐𝑜𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛
+通过改变输入碱基观察重建概率变化。
+路线 C：embedding clustering
+ℎ𝑖 → 𝑐𝑙𝑢𝑠𝑡𝑒𝑟𝑖𝑛𝑔 → 𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒𝑝𝑎𝑡𝑡𝑒𝑟𝑛
+5
+路线 D：后续解释模型
+例如：
+𝐿𝑀 𝑒𝑚𝑏𝑒𝑑𝑑𝑖𝑛𝑔 → 𝑆𝐴𝐸 → 𝑠𝑝𝑎𝑟𝑠𝑒𝑓𝑒𝑎𝑡𝑢𝑟𝑒 → 𝑚𝑜𝑡𝑖𝑓
+这实际上已经进入下一类 SAE。
+因此更严谨地说：
+Pretrained LM 是 motif discovery 的 representation backbone，而不是单独的 motif extraction
+algorithm。
+五、预训练 LM 的 Motif 评价
+主要包括：
+￿ 已知 motif database matching
+例如：
+discovered motif → JASPAR/CIS-BP/ELM
+计算：
+• TOMTOM (p)-value
+• similarity
+• database hit rate
+￿ motif enrichment
+比较 motif 在目标序列和背景序列中的富集程度：
+𝐸𝑛𝑟𝑖𝑐ℎ𝑚𝑒𝑛𝑡 = 𝑃 (𝑀 |𝑝𝑜𝑠𝑖𝑡𝑖𝑣𝑒)
+𝑃 (𝑀 |𝑏𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑)
+￿ predictive importance
+通过：
+• masking
+• mutation
+• perturbation
+判断 motif 是否影响模型预测。
+￿ biological downstream task
+例如：
+• TF binding
+• chromatin accessibility
+• enhancer activity
+• splice prediction
+• variant effect prediction
+6
+优点
+相对于 CNN：
+￿ 不需要大量 motif 标注
+可以直接利用：
+genome-scale unlabeled sequence
+￿ 上下文感知
+embedding 不只是局部 (k)-mer：
+ℎ𝑖 = 𝑓(𝑥1, … , 𝑥𝐿)
+因此可能包含：
+𝑙𝑜𝑐𝑎𝑙 𝑚𝑜𝑡𝑖𝑓 + 𝑐𝑜𝑛𝑡𝑒𝑥𝑡 + 𝑙𝑜𝑛𝑔 − 𝑟𝑎𝑛𝑔𝑒 𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑐𝑦
+￿ 跨任务迁移
+同一个 pretrained model 可以用于：
+• motif；
+• variant；
+• regulatory element；
+• gene expression；
+• chromatin accessibility。
+缺点
+最主要的问题是：
+embedding 中“有信息”不等于能够直接“读出 motif” 。
+也就是说：
+representation ≠ interpretation
+因此出现了后面的：
+• attention interpretation；
+• attribution；
+• SAE。
+这三类方法本质上都是在解决：
+How do we decode motifs from a pretrained representation?
+六、SAE：从 Embedding 中分解 Motif
+这是你综述中最值得重点展开的一类。综述将 MotifAE、InterPLM、SAE-RNA 归入这一范式，并强调其核心是把
+LM embedding 转换成高维、稀疏的 latent features。
+7
+6.1 基本原理
+假设 PLM 输出：
+𝑥 ∈ ℝ 𝑑
+普通 embedding 的问题是：
+一个 embedding dimension 往往混合编码多个生物学概念。
+即：
+𝑥 = 𝑓𝑒𝑎𝑡𝑢𝑟𝑒1 + 𝑓𝑒𝑎𝑡𝑢𝑟𝑒2 + 𝑓𝑒𝑎𝑡𝑢𝑟𝑒3 + ⋯
+这就是所谓的 polysemanticity / feature superposition 问题。
+SAE 希望找到：
+𝑧 ∈ ℝ 𝐷, 𝐷 ≫ 𝑑
+且 (z) 是稀疏的：
+‖𝑧‖0 ≪ 𝐷
+然后：
+𝑥 ≈ 𝐷𝑧
+其中：
+• (x)：PLM embedding
+• (z)：sparse latent feature
+• (D)：decoder dictionary
+七、SAE 的核心算法
+典型 SAE：
+𝑧 = 𝑓(𝑊𝑒𝑥 + 𝑏𝑒)
+̂ 𝑥 = 𝑊𝑑𝑧 + 𝑏𝑑
+优化：
+ℒ = ‖𝑥 − ̂ 𝑥‖ 2⏟
+𝑟𝑒𝑐𝑜𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛
++𝜆 ‖𝑧‖ 1⏟
+𝑠𝑝𝑎𝑟𝑠𝑖𝑡𝑦
+因此：
+PLM
+↓
+embedding
+↓
+Encoder
+↓
+8
+high-dimensional sparse latent space
+↓
+Decoder
+↓
+reconstruct embedding
+真正关键的是：
+𝑥 → 𝑧
+如果某一个 latent feature (z_j) 只在一组特定序列模式出现，那么：
+𝑧𝑗 ≈ 𝑏𝑖𝑜𝑙𝑜𝑔𝑖𝑐𝑎𝑙 𝑐𝑜𝑛𝑐𝑒𝑝𝑡
+例如可能对应：
+• DNA motif；
+• protein active-site motif ；
+• secondary-structure pattern；
+• ligand-binding pattern。
+八、MotifAE 为什么特别适合 motif discovery？
+你综述特别提到了 MotifAE 的 local similarity loss 。
+普通 SAE 主要要求：
+𝑥 ≈ ̂ 𝑥
+但 motif 是一个局部连续模式。
+因此 MotifAE 进一步要求相邻位置的 latent representation 保持一定一致性：
+ℒ = ℒ 𝑟𝑒𝑐𝑜𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛 + 𝜆ℒ𝑠𝑝𝑎𝑟𝑠𝑖𝑡𝑦 + 𝛼ℒ𝑙𝑜𝑐𝑎𝑙
+于是 latent feature 不仅：
+sparse
+而且：
+spatially coherent
+这对于 motif 非常重要。
+九、如何从 SAE feature 得到 motif？
+假设某个 feature：
+𝑧𝑗
+在大量蛋白序列位置激活。
+可以收集：
+{𝑠1, 𝑠2, … , 𝑠𝑛}
+9
+其中 (s_i) 是 feature 高激活位置附近的序列片段。
+然后：
+SAE feature
+↓
+high activation positions
+↓
+extract sequence windows
+↓
+cluster / align
+↓
+motif
+↓
+PWM / sequence logo
+于是 SAE 的核心逻辑可以概括为：
+𝑃 𝐿𝑀 → 𝐸𝑚𝑏𝑒𝑑𝑑𝑖𝑛𝑔 → 𝑆𝑝𝑎𝑟𝑠𝑒 𝐹 𝑒𝑎𝑡𝑢𝑟𝑒 → 𝑀 𝑜𝑡𝑖𝑓
+十、SAE Motif 评价
+除了传统 database matching，更重要的是增加：
+￿ Feature purity
+一个 feature 是否主要对应一种生物学模式？
+例如：
+𝑃 𝑢𝑟𝑖𝑡𝑦(𝑓𝑒𝑎𝑡𝑢𝑟𝑒) =dominant motif instances
+all activating instances
+￿ Activation specificity
+feature 是否只在特定 motif 出现时激活？
+￿ Reconstruction quality
+例如：
+𝑀 𝑆𝐸(𝑥, ̂ 𝑥)
+但需要注意：
+reconstruction 好并不意味着 motif discovery 好。
+因此：
+𝑅𝑒𝑐𝑜𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛 𝑞𝑢𝑎𝑙𝑖𝑡𝑦 ≠ 𝐼𝑛𝑡𝑒𝑟𝑝𝑟𝑒𝑡𝑎𝑏𝑖𝑙𝑖𝑡𝑦
+10
+￿ Known motif recovery
+与：
+• ELM
+• PROSITE
+• JASPAR
+• Pfam
+等数据库比较。
+￿ Functional alignment
+这是 SAE 相比传统 motif discovery 更有潜力的一点。
+例如 feature 与：
+• protein stability
+• binding affinity
+• enzymatic activity
+之间是否存在对应关系。
+￿ Feature intervention
+进一步直接操控：
+𝑧𝑗
+观察输出：
+𝑧𝑗 → 𝑧 𝑗 + Δ
+是否改变目标功能。
+这一步实际上把：
+motif discovery
+推进到了：
+feature discovery → functional interpretation → intervention
+综述中提到 MotifAE 已尝试形成这种“发现—验证—操控”闭环。
+十一、SAE 的优势与缺点
+优势
+￿ 无监督
+不需要：
+𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 → 𝑚𝑜𝑡𝑖𝑓 𝑙𝑎𝑏𝑒𝑙
+11
+￿ feature 数量大
+可以：
+𝐷 ≫ 𝑑
+因此理论上可以表示大量细粒度模式。
+￿ 更接近“概念级”解释
+CNN：
+𝑓𝑖𝑙𝑡𝑒𝑟 → 𝑝𝑎𝑡𝑡𝑒𝑟𝑛
+SAE：
+𝑙𝑎𝑡𝑒𝑛𝑡 𝑓𝑒𝑎𝑡𝑢𝑟𝑒 → 𝑏𝑖𝑜𝑙𝑜𝑔𝑖𝑐𝑎𝑙 𝑐𝑜𝑛𝑐𝑒𝑝𝑡
+￿ 有机会发现数据库之外的 motif
+这也是你综述中强调的一个重要趋势。
+缺点
+￿ SAE 本身也是一个模型
+因此：
+𝑃 𝐿𝑀 𝑏𝑙𝑎𝑐𝑘 𝑏𝑜𝑥 + 𝑆𝐴𝐸 𝑏𝑙𝑎𝑐𝑘 𝑏𝑜𝑥
+并不意味着解释问题完全解决。
+￿ Feature 不一定单义
+一个 feature 仍可能包含：
+𝑚𝑜𝑡𝑖𝑓𝐴 + 𝑚𝑜𝑡𝑖𝑓𝐵
+即所谓 feature entanglement。
+￿ 稀疏度存在 trade-off
+太稀疏：
+reconstruction 差。
+太不稀疏：
+interpretability 差。
+￿ 训练成本高
+尤其是：
+𝐷 = 104 ∼ 106
+规模的 SAE。
+12
+十二、Attention-based Motif Discovery
+代表：
+• DNABERT-viz
+• TF-EPI
+• BertSNR
+综述将其归为直接利用 Transformer attention matrix 的解释方法。
+12.1 基本原理
+Transformer 中：
+𝐴𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛(𝑄, 𝐾, 𝑉 ) = 𝑠𝑜𝑓𝑡𝑚𝑎𝑥 (𝑄𝐾𝑇
+√𝑑𝑘
+) 𝑉
+因此得到：
+𝐴 ∈ ℝ𝐿×𝐿
+其中：
+𝐴𝑖𝑗
+表示位置 (i) 对位置 (j) 的注意程度。
+核心假设：
+如果模型特别关注某些位置，那么这些位置可能包含功能性 motif。
+十三、核心算法：DNABERT-viz
+你综述给出的流程非常典型：
+DNA sequence
+↓
+DNABERT
+↓
+Attention matrix
+↓
+high-attention region
+↓
+motif instances
+↓
+statistical enrichment test
+↓
+alignment
+↓
+PWM
+↓
+TOMTOM
+其中可以进一步拆成：
+13
+Step 1
+获得：
+𝐴(𝑙,ℎ)
+即 layer (l)、head (h) 的 attention。
+Step 2
+筛选高 attention：
+𝐴𝑖𝑗 > 𝜏
+或者寻找连续高分区域。
+Step 3
+进行统计显著性检验。
+Step 4
+聚类、对齐。
+Step 5
+生成 PWM。
+十四、Attention 方法的评价
+主要看：
+￿ Attention 与已知 motif 的 overlap
+𝑂𝑣𝑒𝑟𝑙𝑎𝑝 = |𝑀𝑝𝑟𝑒𝑑 ∩ 𝑀𝑘𝑛𝑜𝑤𝑛|
+|𝑀𝑘𝑛𝑜𝑤𝑛|
+￿ motif enrichment
+￿ TOMTOM/JASPAR matching
+￿ downstream prediction
+例如：
+masking 掉 attention-selected motif 后，模型预测性能是否下降？
+十五、Attention 方法的关键问题
+这是这一类方法必须强调的理论问题：
+𝐴𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 ≠ 𝐸𝑥𝑝𝑙𝑎𝑛𝑎𝑡𝑖𝑜𝑛
+即：
+attention weight 高，并不必然意味着该位置对最终 prediction 的因果贡献高。
+14
+因此：
+• 某个 attention head 可能关注 motif；
+• 也可能关注语法关系；
+• 也可能只是模型内部的信息路由机制。
+综述也明确指出 attention 权重与功能重要性并不完全等价。
+十六、GNN / Graph Embedding Motif Discovery
+代表方法 MMGA T。综述将其定义为把 k-mer 组成建模成图，通过节点 embedding 和图注意力发现 motif。
+16.1 基本原理
+与 CNN/Transformer 最大区别是：
+不是把序列仅看成一维 token sequence，而是显式构造 graph。
+例如：
+𝐺 = (𝑉 , 𝐸)
+其中：
+• (V)：k-mer nodes
+• (E)：k-mer 之间的关系
+例如：
+𝑘𝑚𝑒𝑟𝑖 → 𝑘𝑚𝑒𝑟𝑗
+表示它们在序列中具有：
+• adjacency；
+• co-occurrence；
+• functional relationship。
+十七、核心算法：GAT
+Graph Attention Network ：
+ℎ′
+𝑖 = 𝜎 ⎛⎜
+⎝
+∑
+𝑗∈𝑁(𝑖)
+𝛼𝑖𝑗𝑊 ℎ𝑗⎞⎟
+⎠
+其中：
+𝛼𝑖𝑗 = 𝑠𝑜𝑓𝑡𝑚𝑎𝑥𝑗 (𝑎(𝑊 ℎ𝑖, 𝑊 ℎ𝑗))
+于是模型学习：
+哪些 k-mer 之间的关系更加重要？
+15
+这使它天然适合寻找：
+𝑚𝑜𝑡𝑖𝑓𝐴 + 𝑚𝑜𝑡𝑖𝑓𝐵
+这种组合 motif。
+Motif 提取
+可以根据：
+• 高 attention edge；
+• 高 attention node；
+• 高 activation subgraph；
+寻找重要的 graph pattern。
+最终：
+𝑖𝑚𝑝𝑜𝑟𝑡𝑎𝑛𝑡 𝑠𝑢𝑏𝑔𝑟𝑎𝑝ℎ → 𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 𝑝𝑎𝑡𝑡𝑒𝑟𝑛 → 𝑚𝑜𝑡𝑖𝑓
+十八、GNN Motif 评价
+除了普通 motif matching，还应该重点评价：
+￿ node importance
+￿ edge importance
+￿ subgraph enrichment
+￿ motif co-occurrence
+尤其是：
+𝑃 (𝑀𝐵|𝑀𝐴)
+以及 motif spacing/orientation。
+这是 GNN 方法相比普通 motif discovery 很有价值的地方：
+它不仅可能发现“是什么 motif” ，还可以研究“motif 与 motif 如何共同出现” 。
+十九、GNN 的优缺点
+优点
+• 可以显式建模 motif 共现；
+• 能表达组合关系；
+• attention 提供一定解释性；
+• 适合复杂调控网络。
+16
+缺点
+• graph construction 本身带有先验；
+• k-mer graph 如何定义会影响结果；
+• 可解释性不如 CNN 直接；
+• 模型复杂度高；
+• 目前应用范围相对有限。
+二十、特征归因与 In Silico Mutagenesis
+这一类包括：
+• ISM
+• Integrated Gradients
+• TF-MoDISco
+综述将它们归为从模型输出反向寻找重要序列区域的方法。
+它和前面的 Attention 有一个根本区别：
+Attention 问的是“模型看哪里？ ”Attribution 问的是“改变哪里会影响模型输出？ ”
+这是非常重要的区别。
+二十一、ISM
+基本原理
+假设序列：
+𝑥 = 𝑥 1𝑥2 ⋯ 𝑥𝐿
+对第 (i) 个位置进行所有可能突变。
+DNA 中：
+𝐴 → 𝐶, 𝐺, 𝑇
+分别计算模型输出：
+𝑓(𝑥𝑖→𝐴), 𝑓(𝑥𝑖→𝐶), 𝑓(𝑥𝑖→𝐺), 𝑓(𝑥𝑖→𝑇 )
+与原始预测比较：
+Δ𝑖(𝑏) = 𝑓(𝑥𝑖→𝑏) − 𝑓(𝑥)
+于是得到：
+𝐼 ∈ ℝ 𝐿×4
+这就是 nucleotide importance map 。
+17
+二十二、ISM 如何变成 motif？
+ISM 本身实际上不是 motif detector。
+它产生的是：
+𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 → 𝑖𝑚𝑝𝑜𝑟𝑡𝑎𝑛𝑐𝑒 𝑝𝑟𝑜𝑓𝑖𝑙𝑒
+然后：
+ISM
+↓
+importance scores
+↓
+high-importance regions
+↓
+extract sequence segments
+↓
+cluster
+↓
+align
+↓
+motif
+因此：
+𝐼𝑆𝑀 = 𝑎𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑖𝑜𝑛
+而不是：
+𝐼𝑆𝑀 = 𝑚𝑜𝑡𝑖𝑓 𝑑𝑖𝑠𝑐𝑜𝑣𝑒𝑟𝑦
+这一区分对于你的综述非常值得强调。
+二十三、ISM 的评价
+￿ 与已知 motif overlap
+￿ deletion/mutation validation
+把 motif 删除：
+𝑓(𝑥) − 𝑓(𝑥∖𝑚𝑜𝑡𝑖𝑓 )
+看模型输出是否显著下降。
+￿ insertion test
+把 motif 插入背景序列：
+𝑓(𝑏𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑 + 𝑚𝑜𝑡𝑖𝑓)
+是否产生预期功能？
+这比单纯数据库匹配更接近功能验证。
+18
+二十四、Integrated Gradients
+ISM 的问题是：
+3𝐿
+次前向传播。
+因此对于长序列非常昂贵。
+Integrated Gradients 从 baseline：
+𝑥′
+到真实输入：
+𝑥
+沿路径积分：
+𝐼𝐺𝑖(𝑥) = (𝑥𝑖 − 𝑥′
+𝑖) ∫
+1
+0
+𝜕𝐹 (𝑥′ + 𝛼(𝑥 − 𝑥′))
+𝜕𝑥𝑖
+𝑑𝛼
+从而获得每个位置的 attribution。
+因此：
+𝐼𝑆𝑀 ∶ 𝑝𝑒𝑟𝑡𝑢𝑟𝑏 𝑒𝑥𝑝𝑙𝑖𝑐𝑖𝑡𝑙𝑦
+而：
+𝐼𝐺 ∶ 𝑖𝑛𝑡𝑒𝑔𝑟𝑎𝑡𝑒 𝑔𝑟𝑎𝑑𝑖𝑒𝑛𝑡𝑠
+二十五、TF-MoDISco
+TF-MoDISco 是这一类中特别重要的“从 attribution 到 motif”算法。
+它不是直接生成 attribution，而是：
+把已有 attribution map 转化成 motif。
+基本流程：
+Deep model
+↓
+gradient / DeepSHAP / IG
+↓
+importance scores
+↓
+select high-scoring sequence segments
+↓
+sequence + attribution clustering
+↓
+motif instances
+↓
+alignment
+↓
+motif
+19
+也就是说：
+𝐴𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑖𝑜𝑛 → 𝑇 𝐹 − 𝑀 𝑜𝐷𝐼𝑆𝑐𝑜 → 𝑀 𝑜𝑡𝑖𝑓
+二十六、TF-MoDISco 的核心思想
+不能只按照 sequence similarity 聚类。
+因为：
+ACTGTT
+和
+ACCGTT
+可能是相似 motif；
+但是：
+AAAAAA
+如果模型认为没有功能贡献，就不应该因为 sequence similarity 被识别成 motif。
+因此 TF-MoDISco 同时利用：
+𝑠𝑒𝑞𝑢𝑒𝑛𝑐𝑒 𝑠𝑖𝑚𝑖𝑙𝑎𝑟𝑖𝑡𝑦 + 𝑖𝑚𝑝𝑜𝑟𝑡𝑎𝑛𝑐𝑒 𝑠𝑖𝑚𝑖𝑙𝑎𝑟𝑖𝑡𝑦
+来聚类。
+这一点是它比单纯 sequence clustering 更适合深度模型 motif discovery 的原因。
+二十七、六类方法的核心差异
+如果把六类方法放在一起，可以得到一个非常清晰的框架：
+方法 它观察什么？ Motif 如何产生？ 最核心的问题
+CNN filter activation filter → motif 模型学到了什么局部模式？
+PLM
+embedding
+hidden representation representation → pattern embedding 中编码了什么？
+SAE sparse latent feature latent feature → motif 能否把混合表示拆开？
+Attention attention matrix high attention → motif 模型“关注”哪里？
+GNN node/edge/subgraph important graph pattern → motif 哪些模式共同出现？
+Attribution output sensitivity high attribution → motif 哪些位置真正影响预测？
+这张表实际上比“六类模型”更能体现这篇综述的技术逻辑。
+二十八、Motif 评价最好建立一个统一体系
+你原综述目前对“motif 评价”的讨论相对弱。第 5.1 节只指出目前评价过度依赖 JASPAR、ELM、CIS-BP 等已知数
+据库。
+如果要把综述进一步提升，我建议把评价明确拆成 四个层次：
+20
+Level 1：Pattern-level
+评价“长得像不像 motif” 。
+包括：
+• PWM similarity
+• sequence logo
+• TOMTOM
+• edit distance
+• information content
+核心问题：
+Is it a recognizable sequence pattern?
+Level 2：Enrichment-level
+评价 motif 是否在目标数据中显著富集。
+例如：
+𝑂𝑅 = 𝑎/𝑏
+𝑐/𝑑
+以及：
+• Fisher’s exact test
+• hypergeometric test
+• FDR
+核心问题：
+Does this pattern occur more frequently than expected?
+Level 3：Predictive-level
+评价 motif 对模型预测是否重要：
+Δ𝐹 = 𝐹 (𝑋) − 𝐹 (𝑋∖𝑀 )
+或者：
+𝐹 (𝑋 + 𝑀 ) − 𝐹 (𝑋)
+核心问题：
+Does the motif matter for the learned function?
+Level 4：Biological / Causal-level
+最高层次是：
+𝑚𝑜𝑡𝑖𝑓 → 𝑚𝑜𝑙𝑒𝑐𝑢𝑙𝑎𝑟 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛
+例如：
+• ChIP-seq validation；
+21
+• reporter assay；
+• CRISPR perturbation；
+• protein mutagenesis；
+• binding affinity；
+• enzymatic activity；
+• stability assay。
+核心问题：
+Does manipulating the motif change the biological phenotype?
+二十九、因此可以建立一个更完整的评价金字塔
+Biological / Causal
+▲
+│
+Functional effect
+▲
+│
+Predictive value
+▲
+│
+Enrichment
+▲
+│
+Pattern similarity
+▲
+│
+Sequence pattern
+这实际上对应了 motif discovery 从：
+“发现一个看起来像 motif 的东西”
+逐步走向：
+“证明它是一个具有功能作用的 motif” 。
+三十、六类方法的优缺点最终对照
+方法 主要优势 主要缺点 最适合解决的问题
+CNN 简单、快速、直接可解释 局部性强、依赖监督 已知任务中的局部 motif
+PLM 表示能力强、上下文丰富、可迁
+移
+embedding 本身难解释 从大规模无标注数据学习序
+列规律
+SAE 无监督、特征稀疏、可发现细粒
+度模式
+SAE 训练复杂、feature 仍可
+能纠缠
+从 PLM 中发现潜在生物学
+概念
+Attention 无需额外模型、直接利用
+Transformer
+attention ≠ causal
+importance
+快速定位候选 motif
+GNN 能建模 motif 共现和组合关系 graph construction 较强依赖
+先验
+组合 motif / motif
+grammar
+ISM/IG/TF-
+MoDISco
+与模型输出直接关联、可做扰动
+验证
+计算成本/依赖已有预测模型 找到真正影响模型预测的序
+列区域
+22
+三十一、我认为这篇综述最值得修改的一点
+目前你的六分类存在一定的分类层级混杂。
+例如：
+CNN、GNN 是模型架构；DNABERT、NT、GPN 是表示学习模型；SAE 是解释模型；Attention 是解
+释信号；ISM、IG 是归因方法。
+它们其实不是同一个层级。
+因此，如果这是准备正式发表的综述，我更建议把整个领域重新组织成下面这个框架：
+第一层：Representation Backbone
+𝐶𝑁 𝑁 | 𝑇 𝑟𝑎𝑛𝑠𝑓𝑜𝑟𝑚𝑒𝑟/𝑃 𝐿𝑀 | 𝐺𝑁 𝑁
+第二层：Motif Extraction / Interpretation
+𝐹 𝑖𝑙𝑡𝑒𝑟 𝑎𝑐𝑡𝑖𝑣𝑎𝑡𝑖𝑜𝑛 | 𝐴𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 | 𝐴𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑖𝑜𝑛 | 𝑆𝐴𝐸 | 𝐶𝑙𝑢𝑠𝑡𝑒𝑟𝑖𝑛𝑔
+第三层：Motif Reconstruction
+𝑖𝑛𝑠𝑡𝑎𝑛𝑐𝑒𝑠 → 𝑐𝑙𝑢𝑠𝑡𝑒𝑟𝑖𝑛𝑔 → 𝑎𝑙𝑖𝑔𝑛𝑚𝑒𝑛𝑡 → 𝑃 𝑊 𝑀
+第四层：Motif Validation
+𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒 → 𝑒𝑛𝑟𝑖𝑐ℎ𝑚𝑒𝑛𝑡 → 𝑝𝑟𝑒𝑑𝑖𝑐𝑡𝑖𝑜𝑛 → 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛𝑎𝑙/𝑐𝑎𝑢𝑠𝑎𝑙
+这样整个领域就从“六种互相并列的方法”变成了一个统一的：
+Representation → Extraction → Reconstruction → Validation
+pipeline。
+这可能比目前综述中“六大类并列”的分类更有理论解释力，也更容易自然地引出你在第4 节所说的从 CNN 到 PLM、
+从监督到无监督、从描述到功能的演化趋势。综述目前已经明确观察到了这些趋势，只是分类框架还没有完全把这种演
+化关系表达出来。
+23

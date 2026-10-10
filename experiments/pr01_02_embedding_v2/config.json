@@ -1,0 +1,20 @@
+{
+  "schema": "emb-v2-1",
+  "model": "neuralbioinfo/prokbert-mini",
+  "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+  "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+  "weights_sha256": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+  "seed": 20261005,
+  "layers": [3, 6],
+  "windows": [6, 8, 10, 12, 16],
+  "baseline_layer": 6,
+  "baseline_window": 10,
+  "pca_components": 24,
+  "clusters": 24,
+  "batch_size": 16,
+  "min_promoters": 20,
+  "pseudocount": 0.5,
+  "development_control_fpr": 0.05,
+  "threads": 4,
+  "holdout_enabled": false
+}

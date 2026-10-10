@@ -1,0 +1,9 @@
+{
+  "completed_runs": 53,
+  "total_serial_run_seconds": 1277.2590136528015,
+  "branch_disk_bytes": 11862431603,
+  "cuda": false,
+  "gpu_memory": "not applicable",
+  "peak_cpu_memory": "not measured",
+  "timing_limit": "concurrent CPU jobs; sums are not wall time; cached repeat seeds are cheaper"
+}

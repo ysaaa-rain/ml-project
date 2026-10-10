@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETED",
+  "config": {
+    "gc_bins": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "cmh_min_per_class": 5
+  },
+  "started_unix": 1791550062.896904,
+  "holdout_used": false,
+  "device": "cpu",
+  "git_head": "55d0c96797c14ff9b53c8f47ee568d486192c67a",
+  "input_sha256": {
+    "data\\processed\\pr01_02_data_v2\\tjupan_bacillus_subtilis\\main\\sequence_master.tsv": "3777bea90a8d03236cce2d694b41346026e7d162e3644169bc1ae2e6dda11e08",
+    "data\\processed\\pr01_02_data_v2\\tjupan_baumannii\\main\\sequence_master.tsv": "a274e9a4338b4f33a8b07ab50a1918d2845786230e5ef542703c2f49f23a0752",
+    "data\\processed\\pr01_02_data_v2\\tjupan_bradyrhizobium\\main\\sequence_master.tsv": "2fc6a9c68337c8681037a0601f62cf13236eba875bb64d896012fb93defcd635",
+    "data\\processed\\pr01_02_data_v2\\tjupan_diphtheria\\main\\sequence_master.tsv": "a53b4c8318b4ba45f56b67cce9355c2175bb5b3c8e616fcb3332a68a13e2a874",
+    "data\\processed\\pr01_02_data_v2\\tjupan_escherichia_coli\\main\\sequence_master.tsv": "8321efca340896c6da64587b53f4a5a388f9b4b6b439e2b8c073855f4dfd74ea",
+    "data\\processed\\pr01_02_data_v2\\tjupan_staphylococcus\\main\\sequence_master.tsv": "6663823a873d704e392139f6e42fe87a9c4095c26572d69c08006b18c5b7b42a"
+  },
+  "code_sha256": {
+    "benchmark.py": "36699be0ecaaccf035db08bec6d22850ded96a1e521f9be73fdd5e2a48112a21",
+    "common.py": "56d6c7dca4b43691dc0b461faf3883d66662eff71f1937669d30c2aebbbfb068",
+    "diagnostics.py": "8de36b7a12f6168a64ffacb648ce6e59de8349acce233e35b7e7dc5bcd83c4cf",
+    "real.py": "604895a0b6d19878727ba0a0be318883243b92bdede09624e3f608e14bb7e5c6",
+    "strict_evaluate.py": "8dcb54f73a1c7a87c3e768f4012642e808da77d32203286b51eb54a76174f89a",
+    "test_methods.py": "afa9261a25459f9ebdcbe8d357503ec4bfaaa438b86f69433c65ea090c043c87",
+    "__init__.py": "ce5de0ae7fc69174869d17caae0328f02d41d16eca8a5524307ff5b56bfbfd0e"
+  },
+  "dependencies": {
+    "torch": "2.7.1",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "transformers": "5.8.0"
+  },
+  "elapsed_seconds": 7.488030195236206,
+  "process_peak_memory_bytes": 313004032,
+  "memory_scope": "process high-water mark; shared sequential experiments are not isolated peaks",
+  "output_sha256": {
+    "experiments\\pr01_02_embedding_v2\\next_round\\gc_diagnostics\\gc_distribution_overlap.tsv": "cc96ef4730f1f97742ffc989bab117dec0ffaf487d39f5df0dabae4b3b40819c",
+    "experiments\\pr01_02_embedding_v2\\next_round\\gc_diagnostics\\gc_per_sequence.tsv": "147d7b0bd41042fca5de7d7456d922deab96940edb33695b9897941df5046af5",
+    "experiments\\pr01_02_embedding_v2\\next_round\\gc_diagnostics\\gc_strata_effects.tsv": "ff0a970466f0a0559b279ce660f098a0ff8c5ceed9f1e15674c0343a7175138e",
+    "experiments\\pr01_02_embedding_v2\\next_round\\gc_diagnostics\\motif_gc_adjustment.tsv": "743148506013f2b0e0e48095c2c751a42b3a04b8b93b8a5e1fae9bd9233a9eb4",
+    "experiments\\pr01_02_embedding_v2\\next_round\\gc_diagnostics\\shuffle_discordance_diagnostic.tsv": "ee077a745de00db719dcc648fea9fc702f281ea272540f5b3a6570f88aea4e20"
+  },
+  "interpretation": "CMH is additional exploration, original q family preserved; attainable-p bounds are not post-hoc power estimates."
+}

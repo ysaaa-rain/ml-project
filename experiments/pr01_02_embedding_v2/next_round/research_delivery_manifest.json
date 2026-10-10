@@ -1,0 +1,28 @@
+{
+  "status": "RESEARCH_MATERIALS_READY",
+  "ppt_and_script": "deferred per latest user instruction",
+  "figures_visually_reviewed": 12,
+  "claims_verified": 13,
+  "report_images_verified": 11,
+  "output_sha256": {
+    "experiments\\pr01_02_embedding_v2\\next_round\\REPORT.md": "8f064ada0c2aa2fb6cac8a4f1265232b36aa244402301746f7246b9d87d05de2",
+    "experiments\\pr01_02_embedding_v2\\next_round\\README.md": "30d1419603c7501a9587f646717565a1d1efc19a96a81e4ff246787b339ce4a5",
+    "experiments\\pr01_02_embedding_v2\\next_round\\STATUS.json": "52a948ac6567b059e4507cfd30ced967652fe8e0aa19ef0347db9180c025d66b",
+    "experiments\\pr01_02_embedding_v2\\next_round\\verification.json": "4a19ce210375f93e07b4a424983abcf3e5ce8a65ca025aa1cb48cad9ad0bd0e3",
+    "experiments\\pr01_02_embedding_v2\\presentation\\06_backup_materials.md": "781e966519c32384e0488a1ee86e5ed979afe8a6562611f5ae82347d77612840",
+    "experiments\\pr01_02_embedding_v2\\presentation\\07_claim_evidence_matrix.csv": "6f670d4db3363ace3d268b76bed658124d50391fda7873d4b850ff4897f29f6c",
+    "experiments\\pr01_02_embedding_v2\\presentation\\evidence\\figure_index.csv": "541681a5419c8b713243547413b9db7f6e9970e00a888b545f30a3b659e1ebf4",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F01_data.png": "e719626762e40259070e7736ac8c30b500abbd861a9afdb8fcbea3ce3f26d31b",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F02_stability.png": "246b164d18ba2f0c01cd3562009430b3b9b52baa3bd462c16d943dad99837305",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F03_offsets.png": "40737628d86909950c501187ae468a84234573b63ffd10b2ad768c61887e3bf0",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F04_gc.png": "561b82ee7d74e849ab9921013d6d8b8e8c438413743021f8285f8776828e588c",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F05_controls.png": "359462a772fc36802eb08be597c73d73ad5b0086c4d1d9022f8fa56e433b7777",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F06_pooling.png": "4c3b18cfd3ed0fbd1ee620c852ef8b4cb3c1e60d64fd72b797f645f53404a76e",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F07_synthetic.png": "7a54b88903e30e95e424e86b138021c7e93e98968425439cc7116225418984e7",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F08_width.png": "b7e8fbdfcfb8acf697b70260d35b096a7225f32b576e78e12580a1e42ff7df77",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F09_pair.png": "8df5a9e4216cce30afa83eda767879f4480f2afc8f10e6bd4d848ff50193da99",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F10_grammar.png": "c9dda6eec6c5c588c73ef4257448b54ec6418680ac11c3c15a7498260729b368",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F11_instance.png": "747be335036d4972b90a40eafd68216a75ac2bb3a520b55fc4380a83b08dbef9",
+    "experiments\\pr01_02_embedding_v2\\next_round\\figures\\F12_streme_logo.png": "00b9acec3b06aa669ea17cae5e715d1d38e18f4a521dd6ad0736b22cd5a6f86c"
+  }
+}
