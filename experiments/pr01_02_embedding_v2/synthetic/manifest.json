@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETED",
+  "config": {
+    "schema": "emb-v2-1",
+    "model": "neuralbioinfo/prokbert-mini",
+    "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+    "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+    "weights_sha256": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+    "seed": 20261005,
+    "layers": [
+      3,
+      6
+    ],
+    "windows": [
+      6,
+      8,
+      10,
+      12,
+      16
+    ],
+    "baseline_layer": 6,
+    "baseline_window": 10,
+    "pca_components": 24,
+    "clusters": 24,
+    "batch_size": 16,
+    "min_promoters": 20,
+    "pseudocount": 0.5,
+    "development_control_fpr": 0.05,
+    "threads": 4,
+    "holdout_enabled": false
+  },
+  "elapsed_post_encoding_seconds": 14.045036315917969,
+  "recovery_criteria": "PWM cosine >=0.8 over >=10bp, localization overlap >=8 purity >=0.5, dev q<=0.05",
+  "recovered": {
+    "onehot": 3,
+    "prokbert": 0
+  },
+  "code_sha256": {
+    "ablate.py": "f6320162436e08b21fd77aaab7de81171506b797af9dc873c55485a8328c78cb",
+    "audit.py": "bfe10f41004eabb86ef994224715756b28f62d1bcb6299df4312e392e3661995",
+    "discovery.py": "f69c4b98b4f694865ab2cbdac9499a5a624948b75317c9ea05aaea96ee9abb8d",
+    "encoder.py": "a21d83a8f517978dc7a1632d28220a8dff6190b7d83fb3b92d8673d70bc275c2",
+    "run.py": "b501ec410951f7c475bb0e22092f7975227cb21ed0335464636069a70e0b79b9",
+    "summarize.py": "a8cf5565b8bf414cbf50586862ac2c40ef4cb081c166cea2d6f4dde504e92194",
+    "synthetic.py": "1a21a77b73c3da5bbccc68c48557e82d71d55437ef738e9f33de7ea83d789fc6",
+    "test_pipeline.py": "d17ce74d04324475c4bd55456442a1fde3a7f87de35e511eb51d4e83ba435871",
+    "__init__.py": "0ddd0b7c3d248ea880bbc7e33294d3644ae898cc2835235c71d690ef8ae3fd5f"
+  },
+  "output_sha256": {
+    "discovery.tsv": "bd14d85d54c8eef1a9fc84447711e98e6d4f5fa058f6b5adf7867172d091cf86",
+    "input.json": "c44abd1cc10108129ba3126fac64c3eebe46f3f36f1ae1a8066c2e9c66246473",
+    "instances.tsv": "9d477efa17c0ce48ab50759cc2426f2b1fd0d993fc127b78a0fdbb330cbe8df0",
+    "onehot.meme": "377c7f3fec106798a7afeae6b6d9a667979f0967adbf38f7405d72992b3db3a3",
+    "prokbert.meme": "5da2bf9a483acc807839fe4b7a383109373e1c4780e3f2fe651bf6484e05b69c",
+    "recovery.tsv": "e16db8dcffaf4d4b62269a0c2bad36133eef11b810da149fe2873f413120670e"
+  }
+}

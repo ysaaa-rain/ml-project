@@ -1,0 +1,22 @@
+[
+  {
+    "motif": "EMB_prokbert_C08",
+    "representative": "EMB_prokbert_C07"
+  },
+  {
+    "motif": "EMB_prokbert_C13",
+    "representative": "EMB_prokbert_C07"
+  },
+  {
+    "motif": "EMB_prokbert_C17",
+    "representative": "EMB_prokbert_C07"
+  },
+  {
+    "motif": "EMB_prokbert_C20",
+    "representative": "EMB_prokbert_C16"
+  },
+  {
+    "motif": "EMB_prokbert_C22",
+    "representative": "EMB_prokbert_C14"
+  }
+]

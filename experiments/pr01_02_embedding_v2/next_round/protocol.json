@@ -1,0 +1,9 @@
+{
+ "version":"EMB-next-1",
+ "presentation":{"slides":3,"max_seconds":120,"target_hanzi":[250,320],"priority":"research evidence first"},
+ "real":{"width":10,"layer":6,"seeds":[20261005,20261006,20261007],"new_methods":["A2"],"pca":24,"clusters":24,"calibration":"Discovery natural maximum score 95th percentile, strict greater","evaluation":"Development only"},
+ "synthetic":{"discovery":256,"development":128,"test":128,"calibration_control":256,"seeds":[20261010,20261011,20261012],"methods":["OH","A0","A1","A2"],"main_width_single":10,"main_width_pair":6,"extra_widths_strong_random":[6,16],"pca":24,"clusters":24,"reference_similarity":0.8,"tolerances":[0,1,2,3],"minimum_promoters":20},
+ "diagnostics":{"random_site_repetitions":200,"seed":20261009,"pwm_thresholds":[0.6,0.7,0.8,0.9],"gc_bins":[0,0.2,0.4,0.6,0.8,1],"cmh":"exploratory; strata need >=5 groups in each class; no replacement of original family"},
+ "holdout_enabled":false,
+ "A3_A4":"conditional, not compulsory; decide from algebraic A2 audit and controlled results"
+}

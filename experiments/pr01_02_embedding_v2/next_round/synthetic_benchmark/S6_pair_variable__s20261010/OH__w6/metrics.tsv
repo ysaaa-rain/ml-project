@@ -1,0 +1,17 @@
+split	family	candidate	tolerance_bp	precision	recall	f1	true_positives	prediction_count_positive	prediction_count_control	truth_count	pwm_similarity	reference_eligible	mean_interval_iou_of_predictions	scenario	seed	method	width	candidate_count
+development	0	C10	0	0.9548872180451128	0.9921875	0.9731800766283524	127	128	5	128	1.0	True	0.9921875	S6_pair_variable	20261010	OH	6	24
+development	0	C10	1	0.9548872180451128	0.9921875	0.9731800766283524	127	128	5	128	1.0	True	0.9921875	S6_pair_variable	20261010	OH	6	24
+development	0	C10	2	0.9548872180451128	0.9921875	0.9731800766283524	127	128	5	128	1.0	True	0.9921875	S6_pair_variable	20261010	OH	6	24
+development	0	C10	3	0.9548872180451128	0.9921875	0.9731800766283524	127	128	5	128	1.0	True	0.9921875	S6_pair_variable	20261010	OH	6	24
+test	0	C10	0	0.9398496240601504	0.9765625	0.9578544061302682	125	128	5	128	1.0	True	0.9765625	S6_pair_variable	20261010	OH	6	24
+test	0	C10	1	0.9398496240601504	0.9765625	0.9578544061302682	125	128	5	128	1.0	True	0.9765625	S6_pair_variable	20261010	OH	6	24
+test	0	C10	2	0.9398496240601504	0.9765625	0.9578544061302682	125	128	5	128	1.0	True	0.9765625	S6_pair_variable	20261010	OH	6	24
+test	0	C10	3	0.9398496240601504	0.9765625	0.9578544061302682	125	128	5	128	1.0	True	0.9765625	S6_pair_variable	20261010	OH	6	24
+development	1	C01	0	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+development	1	C01	1	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+development	1	C01	2	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+development	1	C01	3	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+test	1	C01	0	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+test	1	C01	1	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+test	1	C01	2	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24
+test	1	C01	3	0.0	0.0	0.0	0	0	0	128	1.0	True	0.0	S6_pair_variable	20261010	OH	6	24

@@ -1,0 +1,15 @@
+{
+  "device": "cpu",
+  "dependencies": {
+    "torch": "2.7.1",
+    "transformers": "5.8.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "huggingface-hub": "1.14.0"
+  },
+  "environment_sha256": "7e31b292dd8d20c1c042c2a371dd87a550b52aad0904c0f65225f481a46dbfe8",
+  "annotation_scope": "post-run annotation of the unchanged environment observed throughout this task; original run manifests preserved"
+}

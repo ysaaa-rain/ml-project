@@ -1,0 +1,2031 @@
+source	method	motif	gc_left	gc_right	positive_groups	natural_groups	positive_hit_rate	natural_hit_rate	cmh_eligible	risk_difference
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C00	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C00	0.2	0.4	56	19	0.14285714285714285	0.21052631578947367	True	-0.06766917293233082
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C00	0.4	0.6	7	58	0.0	0.06896551724137931	True	-0.06896551724137931
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C00	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C00	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C01	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C01	0.2	0.4	56	19	0.125	0.10526315789473684	True	0.019736842105263164
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C01	0.4	0.6	7	58	0.14285714285714285	0.017241379310344827	True	0.12561576354679801
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C01	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C01	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C02	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C02	0.2	0.4	56	19	0.08928571428571429	0.0	True	0.08928571428571429
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C02	0.4	0.6	7	58	0.0	0.08620689655172414	True	-0.08620689655172414
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C02	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C02	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C03	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C03	0.2	0.4	56	19	0.125	0.10526315789473684	True	0.019736842105263164
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C03	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C03	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C03	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C04	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C04	0.2	0.4	56	19	0.07142857142857142	0.05263157894736842	True	0.018796992481203006
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C04	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C04	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C04	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C05	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C05	0.2	0.4	56	19	0.10714285714285714	0.10526315789473684	True	0.0018796992481203006
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C05	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C05	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C05	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C06	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C06	0.2	0.4	56	19	0.17857142857142858	0.15789473684210525	True	0.02067669172932332
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C06	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C06	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C06	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C07	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C07	0.2	0.4	56	19	0.017857142857142856	0.0	True	0.017857142857142856
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C07	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C07	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C07	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C08	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C08	0.2	0.4	56	19	0.07142857142857142	0.15789473684210525	True	-0.08646616541353383
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C08	0.4	0.6	7	58	0.0	0.08620689655172414	True	-0.08620689655172414
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C08	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C08	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C09	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C09	0.2	0.4	56	19	0.17857142857142858	0.15789473684210525	True	0.02067669172932332
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C09	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C09	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C09	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C10	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C10	0.2	0.4	56	19	0.14285714285714285	0.05263157894736842	True	0.09022556390977443
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C10	0.4	0.6	7	58	0.14285714285714285	0.08620689655172414	True	0.056650246305418706
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C10	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C10	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C11	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C11	0.2	0.4	56	19	0.19642857142857142	0.0	True	0.19642857142857142
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C11	0.4	0.6	7	58	0.42857142857142855	0.034482758620689655	True	0.3940886699507389
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C11	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C11	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C12	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C12	0.2	0.4	56	19	0.017857142857142856	0.0	True	0.017857142857142856
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C12	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C12	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C12	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C13	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C13	0.2	0.4	56	19	0.125	0.2631578947368421	True	-0.1381578947368421
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C13	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C13	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C13	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C14	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C14	0.2	0.4	56	19	0.017857142857142856	0.0	True	0.017857142857142856
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C14	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C14	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C14	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C15	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C15	0.2	0.4	56	19	0.17857142857142858	0.21052631578947367	True	-0.0319548872180451
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C15	0.4	0.6	7	58	0.0	0.06896551724137931	True	-0.06896551724137931
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C15	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C15	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C16	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C16	0.2	0.4	56	19	0.16071428571428573	0.21052631578947367	True	-0.049812030075187946
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C16	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C16	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C16	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C17	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C17	0.2	0.4	56	19	0.05357142857142857	0.05263157894736842	True	0.0009398496240601503
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C17	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C17	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C17	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C18	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C18	0.2	0.4	56	19	0.05357142857142857	0.05263157894736842	True	0.0009398496240601503
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C18	0.4	0.6	7	58	0.14285714285714285	0.034482758620689655	True	0.1083743842364532
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C18	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C18	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C19	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C19	0.2	0.4	56	19	0.10714285714285714	0.10526315789473684	True	0.0018796992481203006
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C19	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C19	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C19	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C20	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C20	0.2	0.4	56	19	0.14285714285714285	0.05263157894736842	True	0.09022556390977443
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C20	0.4	0.6	7	58	0.14285714285714285	0.034482758620689655	True	0.1083743842364532
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C20	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C20	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C21	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C21	0.2	0.4	56	19	0.16071428571428573	0.10526315789473684	True	0.05545112781954889
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C21	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C21	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C21	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C22	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C22	0.2	0.4	56	19	0.21428571428571427	0.0	True	0.21428571428571427
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C22	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C22	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C22	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C23	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C23	0.2	0.4	56	19	0.23214285714285715	0.21052631578947367	True	0.021616541353383478
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C23	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C23	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	onehot	EMB_onehot_C23	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_1-TATAATAAAWA	0.0	0.2	3	0	1.0		False	
+tjupan_bacillus_subtilis	STREME	STREME_1-TATAATAAAWA	0.2	0.4	56	19	0.375	0.15789473684210525	True	0.21710526315789475
+tjupan_bacillus_subtilis	STREME	STREME_1-TATAATAAAWA	0.4	0.6	7	58	0.14285714285714285	0.017241379310344827	True	0.12561576354679801
+tjupan_bacillus_subtilis	STREME	STREME_1-TATAATAAAWA	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_1-TATAATAAAWA	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_2-TAAAAAWA	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	STREME	STREME_2-TAAAAAWA	0.2	0.4	56	19	0.25	0.10526315789473684	True	0.14473684210526316
+tjupan_bacillus_subtilis	STREME	STREME_2-TAAAAAWA	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	STREME	STREME_2-TAAAAAWA	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_2-TAAAAAWA	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_3-AAAGGAGG	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	STREME	STREME_3-AAAGGAGG	0.2	0.4	56	19	0.21428571428571427	0.05263157894736842	True	0.16165413533834586
+tjupan_bacillus_subtilis	STREME	STREME_3-AAAGGAGG	0.4	0.6	7	58	0.5714285714285714	0.06896551724137931	True	0.5024630541871921
+tjupan_bacillus_subtilis	STREME	STREME_3-AAAGGAGG	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	STREME	STREME_3-AAAGGAGG	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C00	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C00	0.2	0.4	56	19	0.23214285714285715	0.21052631578947367	True	0.021616541353383478
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C00	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C00	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C00	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C01	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C01	0.2	0.4	56	19	0.16071428571428573	0.05263157894736842	True	0.10808270676691731
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C01	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C01	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C01	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C02	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C02	0.2	0.4	56	19	0.25	0.2631578947368421	True	-0.01315789473684209
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C02	0.4	0.6	7	58	0.14285714285714285	0.034482758620689655	True	0.1083743842364532
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C02	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C02	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C03	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C03	0.2	0.4	56	19	0.14285714285714285	0.05263157894736842	True	0.09022556390977443
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C03	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C03	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C03	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C04	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C04	0.2	0.4	56	19	0.05357142857142857	0.15789473684210525	True	-0.10432330827067668
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C04	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C04	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C04	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C06	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C06	0.2	0.4	56	19	0.17857142857142858	0.2631578947368421	True	-0.08458646616541352
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C06	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C06	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C06	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C08	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C08	0.2	0.4	56	19	0.39285714285714285	0.10526315789473684	True	0.287593984962406
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C08	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C08	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C08	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C09	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C09	0.2	0.4	56	19	0.05357142857142857	0.0	True	0.05357142857142857
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C09	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C09	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C09	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C10	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C10	0.2	0.4	56	19	0.3392857142857143	0.10526315789473684	True	0.23402255639097747
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C10	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C10	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C10	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C11	0.0	0.2	3	0	1.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C11	0.2	0.4	56	19	0.30357142857142855	0.21052631578947367	True	0.09304511278195488
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C11	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C11	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C11	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C12	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C12	0.2	0.4	56	19	0.125	0.05263157894736842	True	0.07236842105263158
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C12	0.4	0.6	7	58	0.5714285714285714	0.034482758620689655	True	0.5369458128078818
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C12	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C12	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C13	0.0	0.2	3	0	1.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C13	0.2	0.4	56	19	0.35714285714285715	0.15789473684210525	True	0.1992481203007519
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C13	0.4	0.6	7	58	0.14285714285714285	0.034482758620689655	True	0.1083743842364532
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C13	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C13	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C14	0.0	0.2	3	0	1.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C14	0.2	0.4	56	19	0.32142857142857145	0.10526315789473684	True	0.21616541353383462
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C14	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C14	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C14	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C15	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C15	0.2	0.4	56	19	0.07142857142857142	0.0	True	0.07142857142857142
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C15	0.4	0.6	7	58	0.14285714285714285	0.06896551724137931	True	0.07389162561576354
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C15	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C15	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C16	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C16	0.2	0.4	56	19	0.16071428571428573	0.0	True	0.16071428571428573
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C16	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C16	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C16	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C17	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C17	0.2	0.4	56	19	0.23214285714285715	0.21052631578947367	True	0.021616541353383478
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C17	0.4	0.6	7	58	0.0	0.06896551724137931	True	-0.06896551724137931
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C17	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C17	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C18	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C18	0.2	0.4	56	19	0.08928571428571429	0.10526315789473684	True	-0.01597744360902255
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C18	0.4	0.6	7	58	0.2857142857142857	0.08620689655172414	True	0.19950738916256155
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C18	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C18	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C21	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C21	0.2	0.4	56	19	0.03571428571428571	0.0	True	0.03571428571428571
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C21	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C21	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C21	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C22	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C22	0.2	0.4	56	19	0.19642857142857142	0.15789473684210525	True	0.03853383458646617
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C22	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C22	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C22	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C23	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C23	0.2	0.4	56	19	0.10714285714285714	0.15789473684210525	True	-0.05075187969924812
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C23	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C23	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	prokbert	EMB_prokbert_C23	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	56	19	0.17857142857142858	0.21052631578947367	True	-0.0319548872180451
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	56	19	0.23214285714285715	0.10526315789473684	True	0.12687969924812031
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	56	19	0.21428571428571427	0.10526315789473684	True	0.10902255639097744
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	56	19	0.30357142857142855	0.21052631578947367	True	0.09304511278195488
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	56	19	0.03571428571428571	0.05263157894736842	True	-0.016917293233082706
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	7	58	0.0	0.0	True	0.0
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	56	19	0.19642857142857142	0.15789473684210525	True	0.03853383458646617
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	56	19	0.125	0.15789473684210525	True	-0.032894736842105254
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	7	58	0.42857142857142855	0.034482758620689655	True	0.3940886699507389
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	56	19	0.14285714285714285	0.10526315789473684	True	0.03759398496240601
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	56	19	0.16071428571428573	0.2631578947368421	True	-0.10244360902255636
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C10	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C10	0.2	0.4	56	19	0.10714285714285714	0.15789473684210525	True	-0.05075187969924812
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C10	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C10	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C10	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	3	0	0.6666666666666666		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	56	19	0.14285714285714285	0.15789473684210525	True	-0.015037593984962405
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	3	0	1.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	56	19	0.2857142857142857	0.15789473684210525	True	0.12781954887218044
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	56	19	0.21428571428571427	0.15789473684210525	True	0.05639097744360902
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	7	58	0.0	0.05172413793103448	True	-0.05172413793103448
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C14	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C14	0.2	0.4	56	19	0.19642857142857142	0.21052631578947367	True	-0.014097744360902248
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C14	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C14	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C14	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	56	19	0.05357142857142857	0.05263157894736842	True	0.0009398496240601503
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	7	58	0.0	0.08620689655172414	True	-0.08620689655172414
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	56	19	0.017857142857142856	0.21052631578947367	True	-0.19266917293233082
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	7	58	0.0	0.034482758620689655	True	-0.034482758620689655
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C17	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C17	0.2	0.4	56	19	0.17857142857142858	0.10526315789473684	True	0.07330827067669174
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C17	0.4	0.6	7	58	0.14285714285714285	0.05172413793103448	True	0.09113300492610837
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C17	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C17	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C18	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C18	0.2	0.4	56	19	0.07142857142857142	0.15789473684210525	True	-0.08646616541353383
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C18	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C18	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C18	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	3	0	0.3333333333333333		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	56	19	0.08928571428571429	0.21052631578947367	True	-0.12124060150375938
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	56	19	0.017857142857142856	0.05263157894736842	True	-0.03477443609022556
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	7	58	0.2857142857142857	0.05172413793103448	True	0.23399014778325122
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C22	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C22	0.2	0.4	56	19	0.125	0.05263157894736842	True	0.07236842105263158
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C22	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C22	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C22	0.8	1.0	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	3	0	0.0		False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	56	19	0.10714285714285714	0.05263157894736842	True	0.05451127819548872
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	7	58	0.0	0.017241379310344827	True	-0.017241379310344827
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	0	0			False	
+tjupan_bacillus_subtilis	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C00	0.0	0.2	5	1	0.2	1.0	False	-0.8
+tjupan_baumannii	onehot	EMB_onehot_C00	0.2	0.4	82	55	0.12195121951219512	0.09090909090909091	True	0.031042128603104208
+tjupan_baumannii	onehot	EMB_onehot_C00	0.4	0.6	19	73	0.10526315789473684	0.0684931506849315	True	0.03677000720980533
+tjupan_baumannii	onehot	EMB_onehot_C00	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C00	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C01	0.0	0.2	5	1	0.0	1.0	False	-1.0
+tjupan_baumannii	onehot	EMB_onehot_C01	0.2	0.4	82	55	0.036585365853658534	0.07272727272727272	True	-0.03614190687361419
+tjupan_baumannii	onehot	EMB_onehot_C01	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	onehot	EMB_onehot_C01	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C01	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C02	0.0	0.2	5	1	0.8	1.0	False	-0.19999999999999996
+tjupan_baumannii	onehot	EMB_onehot_C02	0.2	0.4	82	55	0.08536585365853659	0.01818181818181818	True	0.06718403547671842
+tjupan_baumannii	onehot	EMB_onehot_C02	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	onehot	EMB_onehot_C02	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C02	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C03	0.0	0.2	5	1	0.2	1.0	False	-0.8
+tjupan_baumannii	onehot	EMB_onehot_C03	0.2	0.4	82	55	0.21951219512195122	0.01818181818181818	True	0.20133037694013303
+tjupan_baumannii	onehot	EMB_onehot_C03	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	onehot	EMB_onehot_C03	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C03	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C04	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C04	0.2	0.4	82	55	0.07317073170731707	0.12727272727272726	True	-0.05410199556541019
+tjupan_baumannii	onehot	EMB_onehot_C04	0.4	0.6	19	73	0.05263157894736842	0.0547945205479452	True	-0.0021629416005767843
+tjupan_baumannii	onehot	EMB_onehot_C04	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C04	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C05	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C05	0.2	0.4	82	55	0.024390243902439025	0.05454545454545454	True	-0.030155210643015518
+tjupan_baumannii	onehot	EMB_onehot_C05	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	onehot	EMB_onehot_C05	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C05	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C06	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	onehot	EMB_onehot_C06	0.2	0.4	82	55	0.08536585365853659	0.07272727272727272	True	0.012638580931263868
+tjupan_baumannii	onehot	EMB_onehot_C06	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	onehot	EMB_onehot_C06	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C06	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C07	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	onehot	EMB_onehot_C07	0.2	0.4	82	55	0.12195121951219512	0.05454545454545454	True	0.06740576496674058
+tjupan_baumannii	onehot	EMB_onehot_C07	0.4	0.6	19	73	0.0	0.0684931506849315	True	-0.0684931506849315
+tjupan_baumannii	onehot	EMB_onehot_C07	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C07	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C08	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C08	0.2	0.4	82	55	0.024390243902439025	0.03636363636363636	True	-0.011973392461197337
+tjupan_baumannii	onehot	EMB_onehot_C08	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	onehot	EMB_onehot_C08	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C08	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C09	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	onehot	EMB_onehot_C09	0.2	0.4	82	55	0.07317073170731707	0.05454545454545454	True	0.018625277161862526
+tjupan_baumannii	onehot	EMB_onehot_C09	0.4	0.6	19	73	0.10526315789473684	0.0273972602739726	True	0.07786589762076424
+tjupan_baumannii	onehot	EMB_onehot_C09	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C09	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C10	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	onehot	EMB_onehot_C10	0.2	0.4	82	55	0.07317073170731707	0.10909090909090909	True	-0.03592017738359202
+tjupan_baumannii	onehot	EMB_onehot_C10	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	onehot	EMB_onehot_C10	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C10	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C11	0.0	0.2	5	1	0.4	1.0	False	-0.6
+tjupan_baumannii	onehot	EMB_onehot_C11	0.2	0.4	82	55	0.10975609756097561	0.05454545454545454	True	0.05521064301552107
+tjupan_baumannii	onehot	EMB_onehot_C11	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	onehot	EMB_onehot_C11	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C11	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C12	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	onehot	EMB_onehot_C12	0.2	0.4	82	55	0.036585365853658534	0.03636363636363636	True	0.00022172949002217252
+tjupan_baumannii	onehot	EMB_onehot_C12	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	onehot	EMB_onehot_C12	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C12	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C13	0.0	0.2	5	1	0.2	1.0	False	-0.8
+tjupan_baumannii	onehot	EMB_onehot_C13	0.2	0.4	82	55	0.21951219512195122	0.10909090909090909	True	0.11042128603104213
+tjupan_baumannii	onehot	EMB_onehot_C13	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	onehot	EMB_onehot_C13	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C13	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C14	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	onehot	EMB_onehot_C14	0.2	0.4	82	55	0.07317073170731707	0.18181818181818182	True	-0.10864745011086475
+tjupan_baumannii	onehot	EMB_onehot_C14	0.4	0.6	19	73	0.10526315789473684	0.0273972602739726	True	0.07786589762076424
+tjupan_baumannii	onehot	EMB_onehot_C14	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C14	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C15	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	onehot	EMB_onehot_C15	0.2	0.4	82	55	0.08536585365853659	0.03636363636363636	True	0.04900221729490023
+tjupan_baumannii	onehot	EMB_onehot_C15	0.4	0.6	19	73	0.05263157894736842	0.0684931506849315	True	-0.015861571737563085
+tjupan_baumannii	onehot	EMB_onehot_C15	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C15	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C16	0.0	0.2	5	1	0.6	0.0	False	0.6
+tjupan_baumannii	onehot	EMB_onehot_C16	0.2	0.4	82	55	0.24390243902439024	0.05454545454545454	True	0.1893569844789357
+tjupan_baumannii	onehot	EMB_onehot_C16	0.4	0.6	19	73	0.0	0.0684931506849315	True	-0.0684931506849315
+tjupan_baumannii	onehot	EMB_onehot_C16	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C16	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C17	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	onehot	EMB_onehot_C17	0.2	0.4	82	55	0.14634146341463414	0.05454545454545454	True	0.0917960088691796
+tjupan_baumannii	onehot	EMB_onehot_C17	0.4	0.6	19	73	0.05263157894736842	0.0	True	0.05263157894736842
+tjupan_baumannii	onehot	EMB_onehot_C17	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C17	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C18	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C18	0.2	0.4	82	55	0.036585365853658534	0.07272727272727272	True	-0.03614190687361419
+tjupan_baumannii	onehot	EMB_onehot_C18	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	onehot	EMB_onehot_C18	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C18	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C19	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C19	0.2	0.4	82	55	0.04878048780487805	0.0	True	0.04878048780487805
+tjupan_baumannii	onehot	EMB_onehot_C19	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	onehot	EMB_onehot_C19	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C19	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C20	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	onehot	EMB_onehot_C20	0.2	0.4	82	55	0.024390243902439025	0.0	True	0.024390243902439025
+tjupan_baumannii	onehot	EMB_onehot_C20	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	onehot	EMB_onehot_C20	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C20	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C21	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C21	0.2	0.4	82	55	0.06097560975609756	0.03636363636363636	True	0.024611973392461198
+tjupan_baumannii	onehot	EMB_onehot_C21	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	onehot	EMB_onehot_C21	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C21	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C22	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	onehot	EMB_onehot_C22	0.2	0.4	82	55	0.15853658536585366	0.03636363636363636	True	0.1221729490022173
+tjupan_baumannii	onehot	EMB_onehot_C22	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	onehot	EMB_onehot_C22	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C22	0.8	1.0	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C23	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	onehot	EMB_onehot_C23	0.2	0.4	82	55	0.08536585365853659	0.03636363636363636	True	0.04900221729490023
+tjupan_baumannii	onehot	EMB_onehot_C23	0.4	0.6	19	73	0.10526315789473684	0.0821917808219178	True	0.023071377072819033
+tjupan_baumannii	onehot	EMB_onehot_C23	0.6	0.8	0	0			False	
+tjupan_baumannii	onehot	EMB_onehot_C23	0.8	1.0	0	0			False	
+tjupan_baumannii	STREME	STREME_1-ATTWTARMADAWWW	0.0	0.2	5	1	0.8	0.0	False	0.8
+tjupan_baumannii	STREME	STREME_1-ATTWTARMADAWWW	0.2	0.4	82	55	0.34146341463414637	0.12727272727272726	True	0.2141906873614191
+tjupan_baumannii	STREME	STREME_1-ATTWTARMADAWWW	0.4	0.6	19	73	0.15789473684210525	0.0273972602739726	True	0.13049747656813265
+tjupan_baumannii	STREME	STREME_1-ATTWTARMADAWWW	0.6	0.8	0	0			False	
+tjupan_baumannii	STREME	STREME_1-ATTWTARMADAWWW	0.8	1.0	0	0			False	
+tjupan_baumannii	STREME	STREME_2-AYAAAAAA	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	STREME	STREME_2-AYAAAAAA	0.2	0.4	82	55	0.2926829268292683	0.12727272727272726	True	0.16541019955654102
+tjupan_baumannii	STREME	STREME_2-AYAAAAAA	0.4	0.6	19	73	0.05263157894736842	0.0958904109589041	True	-0.043258832011535686
+tjupan_baumannii	STREME	STREME_2-AYAAAAAA	0.6	0.8	0	0			False	
+tjupan_baumannii	STREME	STREME_2-AYAAAAAA	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C00	0.0	0.2	5	1	0.4	1.0	False	-0.6
+tjupan_baumannii	prokbert	EMB_prokbert_C00	0.2	0.4	82	55	0.17073170731707318	0.03636363636363636	True	0.13436807095343684
+tjupan_baumannii	prokbert	EMB_prokbert_C00	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	prokbert	EMB_prokbert_C00	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C00	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C01	0.0	0.2	5	1	0.8	0.0	False	0.8
+tjupan_baumannii	prokbert	EMB_prokbert_C01	0.2	0.4	82	55	0.18292682926829268	0.07272727272727272	True	0.11019955654101996
+tjupan_baumannii	prokbert	EMB_prokbert_C01	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	prokbert	EMB_prokbert_C01	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C01	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C02	0.0	0.2	5	1	0.6	0.0	False	0.6
+tjupan_baumannii	prokbert	EMB_prokbert_C02	0.2	0.4	82	55	0.2804878048780488	0.09090909090909091	True	0.1895787139689579
+tjupan_baumannii	prokbert	EMB_prokbert_C02	0.4	0.6	19	73	0.10526315789473684	0.0136986301369863	True	0.09156452775775054
+tjupan_baumannii	prokbert	EMB_prokbert_C02	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C02	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C03	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	prokbert	EMB_prokbert_C03	0.2	0.4	82	55	0.12195121951219512	0.05454545454545454	True	0.06740576496674058
+tjupan_baumannii	prokbert	EMB_prokbert_C03	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	prokbert	EMB_prokbert_C03	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C03	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C04	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C04	0.2	0.4	82	55	0.036585365853658534	0.0	True	0.036585365853658534
+tjupan_baumannii	prokbert	EMB_prokbert_C04	0.4	0.6	19	73	0.05263157894736842	0.0547945205479452	True	-0.0021629416005767843
+tjupan_baumannii	prokbert	EMB_prokbert_C04	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C04	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C05	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C05	0.2	0.4	82	55	0.04878048780487805	0.01818181818181818	True	0.03059866962305987
+tjupan_baumannii	prokbert	EMB_prokbert_C05	0.4	0.6	19	73	0.15789473684210525	0.0684931506849315	True	0.08940158615717375
+tjupan_baumannii	prokbert	EMB_prokbert_C05	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C05	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C06	0.0	0.2	5	1	0.8	1.0	False	-0.19999999999999996
+tjupan_baumannii	prokbert	EMB_prokbert_C06	0.2	0.4	82	55	0.2926829268292683	0.10909090909090909	True	0.1835920177383592
+tjupan_baumannii	prokbert	EMB_prokbert_C06	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	prokbert	EMB_prokbert_C06	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C06	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C08	0.0	0.2	5	1	0.6	0.0	False	0.6
+tjupan_baumannii	prokbert	EMB_prokbert_C08	0.2	0.4	82	55	0.3048780487804878	0.09090909090909091	True	0.2139689578713969
+tjupan_baumannii	prokbert	EMB_prokbert_C08	0.4	0.6	19	73	0.05263157894736842	0.0	True	0.05263157894736842
+tjupan_baumannii	prokbert	EMB_prokbert_C08	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C08	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C09	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C09	0.2	0.4	82	55	0.0	0.03636363636363636	True	-0.03636363636363636
+tjupan_baumannii	prokbert	EMB_prokbert_C09	0.4	0.6	19	73	0.10526315789473684	0.0410958904109589	True	0.06416726748377793
+tjupan_baumannii	prokbert	EMB_prokbert_C09	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C09	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C10	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C10	0.2	0.4	82	55	0.04878048780487805	0.03636363636363636	True	0.012416851441241689
+tjupan_baumannii	prokbert	EMB_prokbert_C10	0.4	0.6	19	73	0.0	0.0273972602739726	True	-0.0273972602739726
+tjupan_baumannii	prokbert	EMB_prokbert_C10	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C10	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C12	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	prokbert	EMB_prokbert_C12	0.2	0.4	82	55	0.23170731707317074	0.07272727272727272	True	0.15898004434589802
+tjupan_baumannii	prokbert	EMB_prokbert_C12	0.4	0.6	19	73	0.10526315789473684	0.0821917808219178	True	0.023071377072819033
+tjupan_baumannii	prokbert	EMB_prokbert_C12	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C12	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C13	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C13	0.2	0.4	82	55	0.036585365853658534	0.0	True	0.036585365853658534
+tjupan_baumannii	prokbert	EMB_prokbert_C13	0.4	0.6	19	73	0.10526315789473684	0.0684931506849315	True	0.03677000720980533
+tjupan_baumannii	prokbert	EMB_prokbert_C13	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C13	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C14	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C14	0.2	0.4	82	55	0.012195121951219513	0.0	True	0.012195121951219513
+tjupan_baumannii	prokbert	EMB_prokbert_C14	0.4	0.6	19	73	0.15789473684210525	0.0410958904109589	True	0.11679884643114635
+tjupan_baumannii	prokbert	EMB_prokbert_C14	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C14	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C16	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C16	0.2	0.4	82	55	0.04878048780487805	0.07272727272727272	True	-0.023946784922394673
+tjupan_baumannii	prokbert	EMB_prokbert_C16	0.4	0.6	19	73	0.05263157894736842	0.0958904109589041	True	-0.043258832011535686
+tjupan_baumannii	prokbert	EMB_prokbert_C16	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C16	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C19	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	prokbert	EMB_prokbert_C19	0.2	0.4	82	55	0.07317073170731707	0.09090909090909091	True	-0.017738359201773843
+tjupan_baumannii	prokbert	EMB_prokbert_C19	0.4	0.6	19	73	0.10526315789473684	0.0273972602739726	True	0.07786589762076424
+tjupan_baumannii	prokbert	EMB_prokbert_C19	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C19	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C20	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	prokbert	EMB_prokbert_C20	0.2	0.4	82	55	0.0975609756097561	0.05454545454545454	True	0.04301552106430156
+tjupan_baumannii	prokbert	EMB_prokbert_C20	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	prokbert	EMB_prokbert_C20	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C20	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C21	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	prokbert	EMB_prokbert_C21	0.2	0.4	82	55	0.04878048780487805	0.05454545454545454	True	-0.005764966740576492
+tjupan_baumannii	prokbert	EMB_prokbert_C21	0.4	0.6	19	73	0.05263157894736842	0.0547945205479452	True	-0.0021629416005767843
+tjupan_baumannii	prokbert	EMB_prokbert_C21	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C21	0.8	1.0	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C23	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	prokbert	EMB_prokbert_C23	0.2	0.4	82	55	0.21951219512195122	0.10909090909090909	True	0.11042128603104213
+tjupan_baumannii	prokbert	EMB_prokbert_C23	0.4	0.6	19	73	0.15789473684210525	0.0273972602739726	True	0.13049747656813265
+tjupan_baumannii	prokbert	EMB_prokbert_C23	0.6	0.8	0	0			False	
+tjupan_baumannii	prokbert	EMB_prokbert_C23	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	82	55	0.04878048780487805	0.01818181818181818	True	0.03059866962305987
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	19	73	0.05263157894736842	0.0547945205479452	True	-0.0021629416005767843
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	82	55	0.04878048780487805	0.07272727272727272	True	-0.023946784922394673
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	19	73	0.10526315789473684	0.0958904109589041	True	0.009372746935832732
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	5	1	0.4	1.0	False	-0.6
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	82	55	0.24390243902439024	0.09090909090909091	True	0.15299334811529933
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	5	1	0.8	1.0	False	-0.19999999999999996
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	82	55	0.18292682926829268	0.03636363636363636	True	0.1465631929046563
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	19	73	0.0	0.0136986301369863	True	-0.0136986301369863
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	82	55	0.08536585365853659	0.03636363636363636	True	0.04900221729490023
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	19	73	0.0	0.0684931506849315	True	-0.0684931506849315
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	82	55	0.10975609756097561	0.07272727272727272	True	0.037028824833702886
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	19	73	0.0	0.0273972602739726	True	-0.0273972602739726
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	82	55	0.024390243902439025	0.03636363636363636	True	-0.011973392461197337
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	19	73	0.10526315789473684	0.0410958904109589	True	0.06416726748377793
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	5	1	0.6	0.0	False	0.6
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	82	55	0.18292682926829268	0.09090909090909091	True	0.09201773835920177
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	19	73	0.0	0.0273972602739726	True	-0.0273972602739726
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	5	1	0.4	0.0	False	0.4
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	82	55	0.08536585365853659	0.05454545454545454	True	0.03082039911308205
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	19	73	0.05263157894736842	0.0547945205479452	True	-0.0021629416005767843
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C09	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C09	0.2	0.4	82	55	0.12195121951219512	0.05454545454545454	True	0.06740576496674058
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C09	0.4	0.6	19	73	0.05263157894736842	0.0273972602739726	True	0.025234318673395817
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C09	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C09	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	82	55	0.036585365853658534	0.01818181818181818	True	0.018403547671840353
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	19	73	0.05263157894736842	0.0684931506849315	True	-0.015861571737563085
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	82	55	0.06097560975609756	0.10909090909090909	True	-0.048115299334811526
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	19	73	0.0	0.0410958904109589	True	-0.0410958904109589
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	82	55	0.0975609756097561	0.10909090909090909	True	-0.011529933481152985
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	19	73	0.0	0.0958904109589041	True	-0.0958904109589041
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C14	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C14	0.2	0.4	82	55	0.06097560975609756	0.07272727272727272	True	-0.011751662971175164
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C14	0.4	0.6	19	73	0.10526315789473684	0.0410958904109589	True	0.06416726748377793
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C14	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C14	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	82	55	0.024390243902439025	0.03636363636363636	True	-0.011973392461197337
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	19	73	0.15789473684210525	0.0547945205479452	True	0.10310021629416005
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	82	55	0.2804878048780488	0.09090909090909091	True	0.1895787139689579
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	19	73	0.0	0.0547945205479452	True	-0.0547945205479452
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C17	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C17	0.2	0.4	82	55	0.04878048780487805	0.05454545454545454	True	-0.005764966740576492
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C17	0.4	0.6	19	73	0.05263157894736842	0.0821917808219178	True	-0.029560201874549386
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C17	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C17	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C18	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C18	0.2	0.4	82	55	0.07317073170731707	0.10909090909090909	True	-0.03592017738359202
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C18	0.4	0.6	19	73	0.05263157894736842	0.0136986301369863	True	0.03893294881038212
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C18	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C18	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	5	1	0.8	1.0	False	-0.19999999999999996
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	82	55	0.12195121951219512	0.07272727272727272	True	0.049223946784922396
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	19	73	0.0	0.0547945205479452	True	-0.0547945205479452
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C20	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C20	0.2	0.4	82	55	0.07317073170731707	0.09090909090909091	True	-0.017738359201773843
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C20	0.4	0.6	19	73	0.0	0.0410958904109589	True	-0.0410958904109589
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C20	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C20	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	5	1	0.0	0.0	False	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	82	55	0.06097560975609756	0.03636363636363636	True	0.024611973392461198
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	19	73	0.10526315789473684	0.0273972602739726	True	0.07786589762076424
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C22	0.0	0.2	5	1	0.2	0.0	False	0.2
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C22	0.2	0.4	82	55	0.08536585365853659	0.09090909090909091	True	-0.00554323725055432
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C22	0.4	0.6	19	73	0.05263157894736842	0.0410958904109589	True	0.011535688536409516
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C22	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C22	0.8	1.0	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	5	1	0.6	1.0	False	-0.4
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	82	55	0.2682926829268293	0.07272727272727272	True	0.19556541019955656
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	19	73	0.0	0.0	True	0.0
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	0	0			False	
+tjupan_baumannii	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C00	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C00	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C00	0.4	0.6	82	30	0.036585365853658534	0.13333333333333333	True	-0.09674796747967479
+tjupan_bradyrhizobium	onehot	EMB_onehot_C00	0.6	0.8	86	137	0.05813953488372093	0.051094890510948905	True	0.007044644372772024
+tjupan_bradyrhizobium	onehot	EMB_onehot_C00	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C01	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C01	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C01	0.4	0.6	82	30	0.012195121951219513	0.06666666666666667	True	-0.05447154471544716
+tjupan_bradyrhizobium	onehot	EMB_onehot_C01	0.6	0.8	86	137	0.03488372093023256	0.0364963503649635	True	-0.001612629434730943
+tjupan_bradyrhizobium	onehot	EMB_onehot_C01	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C02	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C02	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C02	0.4	0.6	82	30	0.04878048780487805	0.13333333333333333	True	-0.08455284552845528
+tjupan_bradyrhizobium	onehot	EMB_onehot_C02	0.6	0.8	86	137	0.05813953488372093	0.072992700729927	True	-0.014853165846206072
+tjupan_bradyrhizobium	onehot	EMB_onehot_C02	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C03	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C03	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C03	0.4	0.6	82	30	0.06097560975609756	0.1	True	-0.039024390243902446
+tjupan_bradyrhizobium	onehot	EMB_onehot_C03	0.6	0.8	86	137	0.011627906976744186	0.043795620437956206	True	-0.03216771346121202
+tjupan_bradyrhizobium	onehot	EMB_onehot_C03	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C04	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C04	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C04	0.4	0.6	82	30	0.06097560975609756	0.0	True	0.06097560975609756
+tjupan_bradyrhizobium	onehot	EMB_onehot_C04	0.6	0.8	86	137	0.023255813953488372	0.06569343065693431	True	-0.04243761670344594
+tjupan_bradyrhizobium	onehot	EMB_onehot_C04	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C05	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C05	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C05	0.4	0.6	82	30	0.04878048780487805	0.06666666666666667	True	-0.017886178861788615
+tjupan_bradyrhizobium	onehot	EMB_onehot_C05	0.6	0.8	86	137	0.05813953488372093	0.06569343065693431	True	-0.00755389577321338
+tjupan_bradyrhizobium	onehot	EMB_onehot_C05	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C06	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C06	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C06	0.4	0.6	82	30	0.012195121951219513	0.03333333333333333	True	-0.02113821138211382
+tjupan_bradyrhizobium	onehot	EMB_onehot_C06	0.6	0.8	86	137	0.05813953488372093	0.051094890510948905	True	0.007044644372772024
+tjupan_bradyrhizobium	onehot	EMB_onehot_C06	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C07	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C07	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C07	0.4	0.6	82	30	0.0	0.03333333333333333	True	-0.03333333333333333
+tjupan_bradyrhizobium	onehot	EMB_onehot_C07	0.6	0.8	86	137	0.03488372093023256	0.08759124087591241	True	-0.052707519945679855
+tjupan_bradyrhizobium	onehot	EMB_onehot_C07	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C08	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C08	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C08	0.4	0.6	82	30	0.036585365853658534	0.1	True	-0.06341463414634146
+tjupan_bradyrhizobium	onehot	EMB_onehot_C08	0.6	0.8	86	137	0.046511627906976744	0.029197080291970802	True	0.01731454761500594
+tjupan_bradyrhizobium	onehot	EMB_onehot_C08	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C09	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C09	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C09	0.4	0.6	82	30	0.012195121951219513	0.06666666666666667	True	-0.05447154471544716
+tjupan_bradyrhizobium	onehot	EMB_onehot_C09	0.6	0.8	86	137	0.023255813953488372	0.058394160583941604	True	-0.03513834663045323
+tjupan_bradyrhizobium	onehot	EMB_onehot_C09	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C10	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C10	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C10	0.4	0.6	82	30	0.024390243902439025	0.06666666666666667	True	-0.04227642276422764
+tjupan_bradyrhizobium	onehot	EMB_onehot_C10	0.6	0.8	86	137	0.023255813953488372	0.029197080291970802	True	-0.00594126633848243
+tjupan_bradyrhizobium	onehot	EMB_onehot_C10	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C11	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C11	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C11	0.4	0.6	82	30	0.012195121951219513	0.13333333333333333	True	-0.12113821138211382
+tjupan_bradyrhizobium	onehot	EMB_onehot_C11	0.6	0.8	86	137	0.046511627906976744	0.051094890510948905	True	-0.004583262603972162
+tjupan_bradyrhizobium	onehot	EMB_onehot_C11	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C12	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C12	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C12	0.4	0.6	82	30	0.024390243902439025	0.03333333333333333	True	-0.008943089430894308
+tjupan_bradyrhizobium	onehot	EMB_onehot_C12	0.6	0.8	86	137	0.05813953488372093	0.08759124087591241	True	-0.029451705992191483
+tjupan_bradyrhizobium	onehot	EMB_onehot_C12	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C13	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C13	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C13	0.4	0.6	82	30	0.07317073170731707	0.2	True	-0.12682926829268293
+tjupan_bradyrhizobium	onehot	EMB_onehot_C13	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	onehot	EMB_onehot_C13	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C14	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C14	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C14	0.4	0.6	82	30	0.06097560975609756	0.16666666666666666	True	-0.1056910569105691
+tjupan_bradyrhizobium	onehot	EMB_onehot_C14	0.6	0.8	86	137	0.03488372093023256	0.021897810218978103	True	0.012985910711254454
+tjupan_bradyrhizobium	onehot	EMB_onehot_C14	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C15	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C15	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C15	0.4	0.6	82	30	0.036585365853658534	0.06666666666666667	True	-0.03008130081300813
+tjupan_bradyrhizobium	onehot	EMB_onehot_C15	0.6	0.8	86	137	0.011627906976744186	0.0364963503649635	True	-0.024868443388219315
+tjupan_bradyrhizobium	onehot	EMB_onehot_C15	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C16	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C16	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C16	0.4	0.6	82	30	0.024390243902439025	0.0	True	0.024390243902439025
+tjupan_bradyrhizobium	onehot	EMB_onehot_C16	0.6	0.8	86	137	0.03488372093023256	0.08029197080291971	True	-0.04540824987268715
+tjupan_bradyrhizobium	onehot	EMB_onehot_C16	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C17	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C17	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C17	0.4	0.6	82	30	0.0	0.03333333333333333	True	-0.03333333333333333
+tjupan_bradyrhizobium	onehot	EMB_onehot_C17	0.6	0.8	86	137	0.03488372093023256	0.0364963503649635	True	-0.001612629434730943
+tjupan_bradyrhizobium	onehot	EMB_onehot_C17	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C18	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C18	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C18	0.4	0.6	82	30	0.012195121951219513	0.06666666666666667	True	-0.05447154471544716
+tjupan_bradyrhizobium	onehot	EMB_onehot_C18	0.6	0.8	86	137	0.046511627906976744	0.06569343065693431	True	-0.019181802749957566
+tjupan_bradyrhizobium	onehot	EMB_onehot_C18	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C19	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C19	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C19	0.4	0.6	82	30	0.024390243902439025	0.1	True	-0.07560975609756099
+tjupan_bradyrhizobium	onehot	EMB_onehot_C19	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	onehot	EMB_onehot_C19	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C20	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C20	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C20	0.4	0.6	82	30	0.012195121951219513	0.1	True	-0.0878048780487805
+tjupan_bradyrhizobium	onehot	EMB_onehot_C20	0.6	0.8	86	137	0.08139534883720931	0.0364963503649635	True	0.04489899847224581
+tjupan_bradyrhizobium	onehot	EMB_onehot_C20	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C21	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C21	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C21	0.4	0.6	82	30	0.024390243902439025	0.03333333333333333	True	-0.008943089430894308
+tjupan_bradyrhizobium	onehot	EMB_onehot_C21	0.6	0.8	86	137	0.023255813953488372	0.029197080291970802	True	-0.00594126633848243
+tjupan_bradyrhizobium	onehot	EMB_onehot_C21	0.8	1.0	0	1		1.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C22	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C22	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C22	0.4	0.6	82	30	0.04878048780487805	0.03333333333333333	True	0.015447154471544718
+tjupan_bradyrhizobium	onehot	EMB_onehot_C22	0.6	0.8	86	137	0.03488372093023256	0.0364963503649635	True	-0.001612629434730943
+tjupan_bradyrhizobium	onehot	EMB_onehot_C22	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C23	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C23	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	onehot	EMB_onehot_C23	0.4	0.6	82	30	0.13414634146341464	0.03333333333333333	True	0.10081300813008132
+tjupan_bradyrhizobium	onehot	EMB_onehot_C23	0.6	0.8	86	137	0.03488372093023256	0.06569343065693431	True	-0.030809709726701752
+tjupan_bradyrhizobium	onehot	EMB_onehot_C23	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	STREME	STREME_1-BYTARV	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	STREME	STREME_1-BYTARV	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	STREME	STREME_1-BYTARV	0.4	0.6	82	30	0.3048780487804878	0.06666666666666667	True	0.23821138211382115
+tjupan_bradyrhizobium	STREME	STREME_1-BYTARV	0.6	0.8	86	137	0.11627906976744186	0.0072992700729927005	True	0.10897979969444915
+tjupan_bradyrhizobium	STREME	STREME_1-BYTARV	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	STREME	STREME_2-GAATSA	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	STREME	STREME_2-GAATSA	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	STREME	STREME_2-GAATSA	0.4	0.6	82	30	0.1951219512195122	0.06666666666666667	True	0.12845528455284555
+tjupan_bradyrhizobium	STREME	STREME_2-GAATSA	0.6	0.8	86	137	0.1511627906976744	0.0364963503649635	True	0.11466644033271091
+tjupan_bradyrhizobium	STREME	STREME_2-GAATSA	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	STREME	STREME_3-CCYCTCCC	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	STREME	STREME_3-CCYCTCCC	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	STREME	STREME_3-CCYCTCCC	0.4	0.6	82	30	0.04878048780487805	0.03333333333333333	True	0.015447154471544718
+tjupan_bradyrhizobium	STREME	STREME_3-CCYCTCCC	0.6	0.8	86	137	0.11627906976744186	0.043795620437956206	True	0.07248344932948565
+tjupan_bradyrhizobium	STREME	STREME_3-CCYCTCCC	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	STREME	STREME_4-SAAAAAAB	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	STREME	STREME_4-SAAAAAAB	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	STREME	STREME_4-SAAAAAAB	0.4	0.6	82	30	0.21951219512195122	0.1	True	0.11951219512195121
+tjupan_bradyrhizobium	STREME	STREME_4-SAAAAAAB	0.6	0.8	86	137	0.05813953488372093	0.08029197080291971	True	-0.022152435919198778
+tjupan_bradyrhizobium	STREME	STREME_4-SAAAAAAB	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C00	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C00	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C00	0.4	0.6	82	30	0.024390243902439025	0.0	True	0.024390243902439025
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C00	0.6	0.8	86	137	0.06976744186046512	0.0948905109489051	True	-0.02512306908843999
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C00	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C01	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C01	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C01	0.4	0.6	82	30	0.2804878048780488	0.26666666666666666	True	0.013821138211382145
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C01	0.6	0.8	86	137	0.03488372093023256	0.051094890510948905	True	-0.016211169580716348
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C01	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C02	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C02	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C02	0.4	0.6	82	30	0.2804878048780488	0.23333333333333334	True	0.04715447154471547
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C02	0.6	0.8	86	137	0.03488372093023256	0.0364963503649635	True	-0.001612629434730943
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C02	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C04	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C04	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C04	0.4	0.6	82	30	0.024390243902439025	0.0	True	0.024390243902439025
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C04	0.6	0.8	86	137	0.011627906976744186	0.051094890510948905	True	-0.03946698353420472
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C04	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C06	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C06	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C06	0.4	0.6	82	30	0.0975609756097561	0.0	True	0.0975609756097561
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C06	0.6	0.8	86	137	0.10465116279069768	0.058394160583941604	True	0.046257002206756076
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C06	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C07	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C07	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C07	0.4	0.6	82	30	0.10975609756097561	0.1	True	0.009756097560975605
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C07	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C07	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C08	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C08	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C08	0.4	0.6	82	30	0.17073170731707318	0.23333333333333334	True	-0.06260162601626015
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C08	0.6	0.8	86	137	0.05813953488372093	0.051094890510948905	True	0.007044644372772024
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C08	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C09	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C09	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C09	0.4	0.6	82	30	0.23170731707317074	0.23333333333333334	True	-0.0016260162601625938
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C09	0.6	0.8	86	137	0.03488372093023256	0.06569343065693431	True	-0.030809709726701752
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C09	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C11	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C11	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C11	0.4	0.6	82	30	0.08536585365853659	0.03333333333333333	True	0.05203252032520326
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C11	0.6	0.8	86	137	0.12790697674418605	0.06569343065693431	True	0.06221354608725174
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C11	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C12	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C12	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C12	0.4	0.6	82	30	0.24390243902439024	0.16666666666666666	True	0.07723577235772358
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C12	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C12	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C13	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C13	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C13	0.4	0.6	82	30	0.2073170731707317	0.23333333333333334	True	-0.02601626016260164
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C13	0.6	0.8	86	137	0.046511627906976744	0.058394160583941604	True	-0.01188253267696486
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C13	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C14	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C14	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C14	0.4	0.6	82	30	0.17073170731707318	0.3	True	-0.1292682926829268
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C14	0.6	0.8	86	137	0.046511627906976744	0.0364963503649635	True	0.010015277542013243
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C14	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C15	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C15	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C15	0.4	0.6	82	30	0.13414634146341464	0.2	True	-0.06585365853658537
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C15	0.6	0.8	86	137	0.09302325581395349	0.029197080291970802	True	0.06382617552198269
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C15	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C16	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C16	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C16	0.4	0.6	82	30	0.2682926829268293	0.2	True	0.06829268292682927
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C16	0.6	0.8	86	137	0.03488372093023256	0.051094890510948905	True	-0.016211169580716348
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C16	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C17	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C17	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C17	0.4	0.6	82	30	0.2926829268292683	0.16666666666666666	True	0.12601626016260162
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C17	0.6	0.8	86	137	0.05813953488372093	0.058394160583941604	True	-0.0002546257002206745
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C17	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C18	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C18	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C18	0.4	0.6	82	30	0.13414634146341464	0.13333333333333333	True	0.0008130081300813108
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C18	0.6	0.8	86	137	0.09302325581395349	0.021897810218978103	True	0.07112544559497538
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C18	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C19	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C19	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C19	0.4	0.6	82	30	0.2804878048780488	0.13333333333333333	True	0.14715447154471548
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C19	0.6	0.8	86	137	0.05813953488372093	0.08029197080291971	True	-0.022152435919198778
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C19	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C21	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C21	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C21	0.4	0.6	82	30	0.18292682926829268	0.16666666666666666	True	0.01626016260162602
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C21	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C21	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C22	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C22	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C22	0.4	0.6	82	30	0.21951219512195122	0.2	True	0.01951219512195121
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C22	0.6	0.8	86	137	0.03488372093023256	0.072992700729927	True	-0.038108979799694444
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C22	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C23	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C23	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C23	0.4	0.6	82	30	0.012195121951219513	0.0	True	0.012195121951219513
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C23	0.6	0.8	86	137	0.046511627906976744	0.08029197080291971	True	-0.033780342895942964
+tjupan_bradyrhizobium	prokbert	EMB_prokbert_C23	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	82	30	0.1951219512195122	0.2	True	-0.004878048780487809
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	86	137	0.05813953488372093	0.029197080291970802	True	0.028942454591750127
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	82	30	0.07317073170731707	0.06666666666666667	True	0.006504065040650403
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	86	137	0.05813953488372093	0.058394160583941604	True	-0.0002546257002206745
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	82	30	0.14634146341463414	0.1	True	0.04634146341463413
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	86	137	0.023255813953488372	0.0364963503649635	True	-0.013240536411475129
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	82	30	0.15853658536585366	0.0	True	0.15853658536585366
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	86	137	0.023255813953488372	0.021897810218978103	True	0.0013580037345102686
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	82	30	0.15853658536585366	0.16666666666666666	True	-0.008130081300812997
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	86	137	0.023255813953488372	0.043795620437956206	True	-0.020539806484467835
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	82	30	0.13414634146341464	0.16666666666666666	True	-0.032520325203252015
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	86	137	0.05813953488372093	0.029197080291970802	True	0.028942454591750127
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	82	30	0.24390243902439024	0.13333333333333333	True	0.11056910569105691
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	86	137	0.06976744186046512	0.029197080291970802	True	0.04057036156849431
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	82	30	0.08536585365853659	0.03333333333333333	True	0.05203252032520326
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	86	137	0.011627906976744186	0.058394160583941604	True	-0.04676625360719742
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	82	30	0.10975609756097561	0.1	True	0.009756097560975605
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	86	137	0.046511627906976744	0.043795620437956206	True	0.002716007469020537
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C09	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C09	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C09	0.4	0.6	82	30	0.25609756097560976	0.1	True	0.15609756097560976
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C09	0.6	0.8	86	137	0.11627906976744186	0.0364963503649635	True	0.07978271940247836
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C09	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C10	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C10	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C10	0.4	0.6	82	30	0.06097560975609756	0.13333333333333333	True	-0.07235772357723577
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C10	0.6	0.8	86	137	0.09302325581395349	0.043795620437956206	True	0.04922763537599728
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C10	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	82	30	0.13414634146341464	0.06666666666666667	True	0.06747967479674798
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	86	137	0.10465116279069768	0.058394160583941604	True	0.046257002206756076
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	82	30	0.2073170731707317	0.13333333333333333	True	0.07398373983739837
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	86	137	0.05813953488372093	0.043795620437956206	True	0.014343914445764723
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	82	30	0.12195121951219512	0.06666666666666667	True	0.055284552845528454
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	86	137	0.09302325581395349	0.051094890510948905	True	0.04192836530300458
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	82	30	0.2682926829268293	0.1	True	0.16829268292682928
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	86	137	0.046511627906976744	0.08029197080291971	True	-0.033780342895942964
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	82	30	0.36585365853658536	0.1	True	0.2658536585365854
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	86	137	0.09302325581395349	0.029197080291970802	True	0.06382617552198269
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C17	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C17	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C17	0.4	0.6	82	30	0.14634146341463414	0.0	True	0.14634146341463414
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C17	0.6	0.8	86	137	0.1511627906976744	0.0364963503649635	True	0.11466644033271091
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C17	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C18	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C18	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C18	0.4	0.6	82	30	0.24390243902439024	0.16666666666666666	True	0.07723577235772358
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C18	0.6	0.8	86	137	0.05813953488372093	0.08029197080291971	True	-0.022152435919198778
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C18	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	82	30	0.24390243902439024	0.2	True	0.04390243902439023
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	86	137	0.046511627906976744	0.058394160583941604	True	-0.01188253267696486
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C20	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C20	0.2	0.4	2	0	0.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C20	0.4	0.6	82	30	0.012195121951219513	0.0	True	0.012195121951219513
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C20	0.6	0.8	86	137	0.03488372093023256	0.06569343065693431	True	-0.030809709726701752
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C20	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	2	0	1.0		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	82	30	0.14634146341463414	0.1	True	0.04634146341463413
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	86	137	0.03488372093023256	0.021897810218978103	True	0.012985910711254454
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	1		0.0	False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	0	0			False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	2	0	0.5		False	
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	82	30	0.23170731707317074	0.1	True	0.13170731707317074
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	86	137	0.11627906976744186	0.058394160583941604	True	0.057884909183500255
+tjupan_bradyrhizobium	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	1		0.0	False	
+tjupan_diphtheria	onehot	EMB_onehot_C00	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C00	0.2	0.4	22	4	0.09090909090909091	0.25	False	-0.1590909090909091
+tjupan_diphtheria	onehot	EMB_onehot_C00	0.4	0.6	121	134	0.049586776859504134	0.05970149253731343	True	-0.010114715677809298
+tjupan_diphtheria	onehot	EMB_onehot_C00	0.6	0.8	3	28	0.3333333333333333	0.0	False	0.3333333333333333
+tjupan_diphtheria	onehot	EMB_onehot_C00	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C01	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C01	0.2	0.4	22	4	0.09090909090909091	0.25	False	-0.1590909090909091
+tjupan_diphtheria	onehot	EMB_onehot_C01	0.4	0.6	121	134	0.049586776859504134	0.05970149253731343	True	-0.010114715677809298
+tjupan_diphtheria	onehot	EMB_onehot_C01	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C01	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C02	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C02	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C02	0.4	0.6	121	134	0.05785123966942149	0.05970149253731343	True	-0.0018502528678919425
+tjupan_diphtheria	onehot	EMB_onehot_C02	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	onehot	EMB_onehot_C02	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C03	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C03	0.2	0.4	22	4	0.13636363636363635	0.25	False	-0.11363636363636365
+tjupan_diphtheria	onehot	EMB_onehot_C03	0.4	0.6	121	134	0.0743801652892562	0.08208955223880597	True	-0.007709386949549771
+tjupan_diphtheria	onehot	EMB_onehot_C03	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C03	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C04	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C04	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C04	0.4	0.6	121	134	0.06611570247933884	0.03731343283582089	True	0.028802269643517953
+tjupan_diphtheria	onehot	EMB_onehot_C04	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C04	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C05	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C05	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C05	0.4	0.6	121	134	0.03305785123966942	0.03731343283582089	True	-0.00425558159615147
+tjupan_diphtheria	onehot	EMB_onehot_C05	0.6	0.8	3	28	0.3333333333333333	0.03571428571428571	False	0.2976190476190476
+tjupan_diphtheria	onehot	EMB_onehot_C05	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C06	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C06	0.2	0.4	22	4	0.13636363636363635	0.0	False	0.13636363636363635
+tjupan_diphtheria	onehot	EMB_onehot_C06	0.4	0.6	121	134	0.05785123966942149	0.08208955223880597	True	-0.024238312569384482
+tjupan_diphtheria	onehot	EMB_onehot_C06	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C06	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C07	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C07	0.2	0.4	22	4	0.045454545454545456	0.5	False	-0.45454545454545453
+tjupan_diphtheria	onehot	EMB_onehot_C07	0.4	0.6	121	134	0.04132231404958678	0.022388059701492536	True	0.018934254348094242
+tjupan_diphtheria	onehot	EMB_onehot_C07	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C07	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C08	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C08	0.2	0.4	22	4	0.09090909090909091	0.0	False	0.09090909090909091
+tjupan_diphtheria	onehot	EMB_onehot_C08	0.4	0.6	121	134	0.05785123966942149	0.029850746268656716	True	0.028000493400764773
+tjupan_diphtheria	onehot	EMB_onehot_C08	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C08	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C09	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C09	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C09	0.4	0.6	121	134	0.08264462809917356	0.029850746268656716	True	0.05279388183051684
+tjupan_diphtheria	onehot	EMB_onehot_C09	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C09	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C10	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C10	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C10	0.4	0.6	121	134	0.04132231404958678	0.05970149253731343	True	-0.018379178487726654
+tjupan_diphtheria	onehot	EMB_onehot_C10	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C10	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C11	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C11	0.2	0.4	22	4	0.18181818181818182	0.0	False	0.18181818181818182
+tjupan_diphtheria	onehot	EMB_onehot_C11	0.4	0.6	121	134	0.1322314049586777	0.05970149253731343	True	0.07252991242136425
+tjupan_diphtheria	onehot	EMB_onehot_C11	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C11	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C12	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C12	0.2	0.4	22	4	0.3181818181818182	0.0	False	0.3181818181818182
+tjupan_diphtheria	onehot	EMB_onehot_C12	0.4	0.6	121	134	0.09917355371900827	0.08208955223880597	True	0.017084001480202296
+tjupan_diphtheria	onehot	EMB_onehot_C12	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	onehot	EMB_onehot_C12	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C13	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C13	0.2	0.4	22	4	0.18181818181818182	0.0	False	0.18181818181818182
+tjupan_diphtheria	onehot	EMB_onehot_C13	0.4	0.6	121	134	0.10743801652892562	0.03731343283582089	True	0.07012458369310473
+tjupan_diphtheria	onehot	EMB_onehot_C13	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C13	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C14	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C14	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C14	0.4	0.6	121	134	0.024793388429752067	0.022388059701492536	True	0.002405328728259531
+tjupan_diphtheria	onehot	EMB_onehot_C14	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C14	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C15	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C15	0.2	0.4	22	4	0.18181818181818182	0.25	False	-0.06818181818181818
+tjupan_diphtheria	onehot	EMB_onehot_C15	0.4	0.6	121	134	0.08264462809917356	0.1044776119402985	True	-0.021832983841124948
+tjupan_diphtheria	onehot	EMB_onehot_C15	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C15	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C16	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C16	0.2	0.4	22	4	0.2727272727272727	0.0	False	0.2727272727272727
+tjupan_diphtheria	onehot	EMB_onehot_C16	0.4	0.6	121	134	0.09917355371900827	0.05970149253731343	True	0.039472061181694836
+tjupan_diphtheria	onehot	EMB_onehot_C16	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	onehot	EMB_onehot_C16	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C17	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C17	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C17	0.4	0.6	121	134	0.09917355371900827	0.03731343283582089	True	0.061860120883187375
+tjupan_diphtheria	onehot	EMB_onehot_C17	0.6	0.8	3	28	0.3333333333333333	0.07142857142857142	False	0.26190476190476186
+tjupan_diphtheria	onehot	EMB_onehot_C17	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C18	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C18	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C18	0.4	0.6	121	134	0.06611570247933884	0.007462686567164179	True	0.058653015912174665
+tjupan_diphtheria	onehot	EMB_onehot_C18	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C18	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C19	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C19	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	onehot	EMB_onehot_C19	0.4	0.6	121	134	0.05785123966942149	0.06716417910447761	True	-0.009312939435056122
+tjupan_diphtheria	onehot	EMB_onehot_C19	0.6	0.8	3	28	0.3333333333333333	0.10714285714285714	False	0.22619047619047616
+tjupan_diphtheria	onehot	EMB_onehot_C19	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C20	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C20	0.2	0.4	22	4	0.13636363636363635	0.0	False	0.13636363636363635
+tjupan_diphtheria	onehot	EMB_onehot_C20	0.4	0.6	121	134	0.14049586776859505	0.09701492537313433	True	0.043480942395460714
+tjupan_diphtheria	onehot	EMB_onehot_C20	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C20	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C21	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C21	0.2	0.4	22	4	0.13636363636363635	0.5	False	-0.36363636363636365
+tjupan_diphtheria	onehot	EMB_onehot_C21	0.4	0.6	121	134	0.0743801652892562	0.09701492537313433	True	-0.02263476008387813
+tjupan_diphtheria	onehot	EMB_onehot_C21	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C21	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C22	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C22	0.2	0.4	22	4	0.09090909090909091	0.25	False	-0.1590909090909091
+tjupan_diphtheria	onehot	EMB_onehot_C22	0.4	0.6	121	134	0.05785123966942149	0.08208955223880597	True	-0.024238312569384482
+tjupan_diphtheria	onehot	EMB_onehot_C22	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C22	0.8	1.0	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C23	0.0	0.2	0	0			False	
+tjupan_diphtheria	onehot	EMB_onehot_C23	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	onehot	EMB_onehot_C23	0.4	0.6	121	134	0.04132231404958678	0.04477611940298507	True	-0.003453805353398294
+tjupan_diphtheria	onehot	EMB_onehot_C23	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	onehot	EMB_onehot_C23	0.8	1.0	0	0			False	
+tjupan_diphtheria	STREME	STREME_1-ABHBTARHVVNDWW	0.0	0.2	0	0			False	
+tjupan_diphtheria	STREME	STREME_1-ABHBTARHVVNDWW	0.2	0.4	22	4	0.4090909090909091	0.5	False	-0.09090909090909088
+tjupan_diphtheria	STREME	STREME_1-ABHBTARHVVNDWW	0.4	0.6	121	134	0.33884297520661155	0.03731343283582089	True	0.30152954237079066
+tjupan_diphtheria	STREME	STREME_1-ABHBTARHVVNDWW	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	STREME	STREME_1-ABHBTARHVVNDWW	0.8	1.0	0	0			False	
+tjupan_diphtheria	STREME	STREME_2-WTWWSWWAW	0.0	0.2	0	0			False	
+tjupan_diphtheria	STREME	STREME_2-WTWWSWWAW	0.2	0.4	22	4	0.4090909090909091	0.25	False	0.15909090909090912
+tjupan_diphtheria	STREME	STREME_2-WTWWSWWAW	0.4	0.6	121	134	0.14049586776859505	0.08208955223880597	True	0.058406315529789074
+tjupan_diphtheria	STREME	STREME_2-WTWWSWWAW	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	STREME	STREME_2-WTWWSWWAW	0.8	1.0	0	0			False	
+tjupan_diphtheria	STREME	STREME_3-TATAA	0.0	0.2	0	0			False	
+tjupan_diphtheria	STREME	STREME_3-TATAA	0.2	0.4	22	4	0.4090909090909091	0.0	False	0.4090909090909091
+tjupan_diphtheria	STREME	STREME_3-TATAA	0.4	0.6	121	134	0.09090909090909091	0.014925373134328358	True	0.07598371777476255
+tjupan_diphtheria	STREME	STREME_3-TATAA	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	STREME	STREME_3-TATAA	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C00	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C00	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C00	0.4	0.6	121	134	0.09917355371900827	0.029850746268656716	True	0.06932280745035155
+tjupan_diphtheria	prokbert	EMB_prokbert_C00	0.6	0.8	3	28	0.0	0.10714285714285714	False	-0.10714285714285714
+tjupan_diphtheria	prokbert	EMB_prokbert_C00	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C01	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C01	0.2	0.4	22	4	0.5454545454545454	0.75	False	-0.20454545454545459
+tjupan_diphtheria	prokbert	EMB_prokbert_C01	0.4	0.6	121	134	0.1487603305785124	0.05970149253731343	True	0.08905883804119896
+tjupan_diphtheria	prokbert	EMB_prokbert_C01	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C01	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C02	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C02	0.2	0.4	22	4	0.18181818181818182	0.5	False	-0.3181818181818182
+tjupan_diphtheria	prokbert	EMB_prokbert_C02	0.4	0.6	121	134	0.09917355371900827	0.03731343283582089	True	0.061860120883187375
+tjupan_diphtheria	prokbert	EMB_prokbert_C02	0.6	0.8	3	28	0.0	0.10714285714285714	False	-0.10714285714285714
+tjupan_diphtheria	prokbert	EMB_prokbert_C02	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C03	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C03	0.2	0.4	22	4	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C03	0.4	0.6	121	134	0.09090909090909091	0.05970149253731343	True	0.03120759837177748
+tjupan_diphtheria	prokbert	EMB_prokbert_C03	0.6	0.8	3	28	0.0	0.10714285714285714	False	-0.10714285714285714
+tjupan_diphtheria	prokbert	EMB_prokbert_C03	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C04	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C04	0.2	0.4	22	4	0.13636363636363635	0.25	False	-0.11363636363636365
+tjupan_diphtheria	prokbert	EMB_prokbert_C04	0.4	0.6	121	134	0.0743801652892562	0.05970149253731343	True	0.014678672751942769
+tjupan_diphtheria	prokbert	EMB_prokbert_C04	0.6	0.8	3	28	0.0	0.10714285714285714	False	-0.10714285714285714
+tjupan_diphtheria	prokbert	EMB_prokbert_C04	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C05	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C05	0.2	0.4	22	4	0.22727272727272727	0.5	False	-0.2727272727272727
+tjupan_diphtheria	prokbert	EMB_prokbert_C05	0.4	0.6	121	134	0.1322314049586777	0.05223880597014925	True	0.07999259898852844
+tjupan_diphtheria	prokbert	EMB_prokbert_C05	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C05	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C07	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C07	0.2	0.4	22	4	0.09090909090909091	0.0	False	0.09090909090909091
+tjupan_diphtheria	prokbert	EMB_prokbert_C07	0.4	0.6	121	134	0.0743801652892562	0.09701492537313433	True	-0.02263476008387813
+tjupan_diphtheria	prokbert	EMB_prokbert_C07	0.6	0.8	3	28	0.0	0.14285714285714285	False	-0.14285714285714285
+tjupan_diphtheria	prokbert	EMB_prokbert_C07	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C08	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C08	0.2	0.4	22	4	0.5454545454545454	0.75	False	-0.20454545454545459
+tjupan_diphtheria	prokbert	EMB_prokbert_C08	0.4	0.6	121	134	0.10743801652892562	0.05223880597014925	True	0.05519921055877637
+tjupan_diphtheria	prokbert	EMB_prokbert_C08	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C08	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C09	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C09	0.2	0.4	22	4	0.5	0.75	False	-0.25
+tjupan_diphtheria	prokbert	EMB_prokbert_C09	0.4	0.6	121	134	0.06611570247933884	0.05223880597014925	True	0.013876896509189593
+tjupan_diphtheria	prokbert	EMB_prokbert_C09	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C09	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C10	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C10	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	prokbert	EMB_prokbert_C10	0.4	0.6	121	134	0.024793388429752067	0.06716417910447761	True	-0.042370790674725545
+tjupan_diphtheria	prokbert	EMB_prokbert_C10	0.6	0.8	3	28	0.3333333333333333	0.17857142857142858	False	0.15476190476190474
+tjupan_diphtheria	prokbert	EMB_prokbert_C10	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C11	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C11	0.2	0.4	22	4	0.5	0.75	False	-0.25
+tjupan_diphtheria	prokbert	EMB_prokbert_C11	0.4	0.6	121	134	0.12396694214876033	0.06716417910447761	True	0.05680276304428272
+tjupan_diphtheria	prokbert	EMB_prokbert_C11	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C11	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C12	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C12	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	prokbert	EMB_prokbert_C12	0.4	0.6	121	134	0.03305785123966942	0.04477611940298507	True	-0.01171826816331565
+tjupan_diphtheria	prokbert	EMB_prokbert_C12	0.6	0.8	3	28	0.6666666666666666	0.10714285714285714	False	0.5595238095238095
+tjupan_diphtheria	prokbert	EMB_prokbert_C12	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C13	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C13	0.2	0.4	22	4	0.5	1.0	False	-0.5
+tjupan_diphtheria	prokbert	EMB_prokbert_C13	0.4	0.6	121	134	0.15702479338842976	0.05223880597014925	True	0.1047859874182805
+tjupan_diphtheria	prokbert	EMB_prokbert_C13	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C13	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C15	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C15	0.2	0.4	22	4	0.22727272727272727	0.5	False	-0.2727272727272727
+tjupan_diphtheria	prokbert	EMB_prokbert_C15	0.4	0.6	121	134	0.10743801652892562	0.029850746268656716	True	0.0775872702602689
+tjupan_diphtheria	prokbert	EMB_prokbert_C15	0.6	0.8	3	28	0.0	0.10714285714285714	False	-0.10714285714285714
+tjupan_diphtheria	prokbert	EMB_prokbert_C15	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C17	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C17	0.2	0.4	22	4	0.6363636363636364	0.75	False	-0.11363636363636365
+tjupan_diphtheria	prokbert	EMB_prokbert_C17	0.4	0.6	121	134	0.11570247933884298	0.06716417910447761	True	0.04853830023436537
+tjupan_diphtheria	prokbert	EMB_prokbert_C17	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C17	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C18	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C18	0.2	0.4	22	4	0.18181818181818182	0.0	False	0.18181818181818182
+tjupan_diphtheria	prokbert	EMB_prokbert_C18	0.4	0.6	121	134	0.08264462809917356	0.029850746268656716	True	0.05279388183051684
+tjupan_diphtheria	prokbert	EMB_prokbert_C18	0.6	0.8	3	28	0.3333333333333333	0.0	False	0.3333333333333333
+tjupan_diphtheria	prokbert	EMB_prokbert_C18	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C19	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C19	0.2	0.4	22	4	0.5	0.75	False	-0.25
+tjupan_diphtheria	prokbert	EMB_prokbert_C19	0.4	0.6	121	134	0.1487603305785124	0.07462686567164178	True	0.07413346490687062
+tjupan_diphtheria	prokbert	EMB_prokbert_C19	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C19	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C20	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C20	0.2	0.4	22	4	0.2727272727272727	0.25	False	0.022727272727272707
+tjupan_diphtheria	prokbert	EMB_prokbert_C20	0.4	0.6	121	134	0.11570247933884298	0.06716417910447761	True	0.04853830023436537
+tjupan_diphtheria	prokbert	EMB_prokbert_C20	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C20	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C22	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C22	0.2	0.4	22	4	0.22727272727272727	0.5	False	-0.2727272727272727
+tjupan_diphtheria	prokbert	EMB_prokbert_C22	0.4	0.6	121	134	0.10743801652892562	0.03731343283582089	True	0.07012458369310473
+tjupan_diphtheria	prokbert	EMB_prokbert_C22	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	prokbert	EMB_prokbert_C22	0.8	1.0	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C23	0.0	0.2	0	0			False	
+tjupan_diphtheria	prokbert	EMB_prokbert_C23	0.2	0.4	22	4	0.6363636363636364	0.75	False	-0.11363636363636365
+tjupan_diphtheria	prokbert	EMB_prokbert_C23	0.4	0.6	121	134	0.1322314049586777	0.07462686567164178	True	0.057604539287035905
+tjupan_diphtheria	prokbert	EMB_prokbert_C23	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	prokbert	EMB_prokbert_C23	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	22	4	0.7272727272727273	0.5	False	0.2272727272727273
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	121	134	0.17355371900826447	0.04477611940298507	True	0.1287775996052794
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	22	4	0.045454545454545456	0.25	False	-0.20454545454545453
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	121	134	0.08264462809917356	0.09701492537313433	True	-0.014370297273960775
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	22	4	0.09090909090909091	0.0	False	0.09090909090909091
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	121	134	0.09917355371900827	0.05970149253731343	True	0.039472061181694836
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	22	4	0.5454545454545454	0.25	False	0.2954545454545454
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	121	134	0.14049586776859505	0.12686567164179105	True	0.013630196126803995
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	22	4	0.5	0.0	False	0.5
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	121	134	0.10743801652892562	0.022388059701492536	True	0.08504995682743309
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	22	4	0.3181818181818182	0.5	False	-0.18181818181818182
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	121	134	0.14049586776859505	0.06716417910447761	True	0.07333168866411743
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	22	4	0.18181818181818182	0.5	False	-0.3181818181818182
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	121	134	0.09917355371900827	0.08955223880597014	True	0.009621314913038123
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	121	134	0.049586776859504134	0.08955223880597014	True	-0.03996546194646601
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	22	4	0.4090909090909091	0.5	False	-0.09090909090909088
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	121	134	0.06611570247933884	0.04477611940298507	True	0.021339583076353773
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C09	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C09	0.2	0.4	22	4	0.36363636363636365	0.25	False	0.11363636363636365
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C09	0.4	0.6	121	134	0.12396694214876033	0.06716417910447761	True	0.05680276304428272
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C09	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C09	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C10	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C10	0.2	0.4	22	4	0.22727272727272727	0.0	False	0.22727272727272727
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C10	0.4	0.6	121	134	0.19008264462809918	0.12686567164179105	True	0.06321697298630813
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C10	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C10	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	22	4	0.4090909090909091	0.25	False	0.15909090909090912
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	121	134	0.09090909090909091	0.1044776119402985	True	-0.013568521031207592
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	22	4	0.18181818181818182	0.25	False	-0.06818181818181818
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	121	134	0.09917355371900827	0.05970149253731343	True	0.039472061181694836
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	22	4	0.09090909090909091	0.25	False	-0.1590909090909091
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	121	134	0.049586776859504134	0.04477611940298507	True	0.004810657456519062
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	3	28	0.0	0.14285714285714285	False	-0.14285714285714285
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C14	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C14	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C14	0.4	0.6	121	134	0.09090909090909091	0.06716417910447761	True	0.0237449118046133
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C14	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C14	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	22	4	0.09090909090909091	0.0	False	0.09090909090909091
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	121	134	0.10743801652892562	0.05970149253731343	True	0.04773652399161219
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	22	4	0.45454545454545453	0.75	False	-0.29545454545454547
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	121	134	0.15702479338842976	0.08208955223880597	True	0.07493524114962379
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C17	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C17	0.2	0.4	22	4	0.3181818181818182	0.25	False	0.06818181818181818
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C17	0.4	0.6	121	134	0.10743801652892562	0.03731343283582089	True	0.07012458369310473
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C17	0.6	0.8	3	28	0.3333333333333333	0.0	False	0.3333333333333333
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C17	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C18	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C18	0.2	0.4	22	4	0.4090909090909091	0.5	False	-0.09090909090909088
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C18	0.4	0.6	121	134	0.1487603305785124	0.08955223880597014	True	0.05920809177254226
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C18	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C18	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	22	4	0.5454545454545454	0.25	False	0.2954545454545454
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	121	134	0.09917355371900827	0.03731343283582089	True	0.061860120883187375
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C20	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C20	0.2	0.4	22	4	0.6363636363636364	0.25	False	0.38636363636363635
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C20	0.4	0.6	121	134	0.15702479338842976	0.08208955223880597	True	0.07493524114962379
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C20	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C20	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	22	4	0.13636363636363635	0.5	False	-0.36363636363636365
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	121	134	0.09917355371900827	0.06716417910447761	True	0.032009374614530656
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	3	28	0.0	0.07142857142857142	False	-0.07142857142857142
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C22	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C22	0.2	0.4	22	4	0.5	0.5	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C22	0.4	0.6	121	134	0.17355371900826447	0.08955223880597014	True	0.08400148020229432
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C22	0.6	0.8	3	28	0.0	0.0	False	0.0
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C22	0.8	1.0	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	0	0			False	
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	22	4	0.045454545454545456	0.0	False	0.045454545454545456
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	121	134	0.05785123966942149	0.1044776119402985	True	-0.046626372270877015
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	3	28	0.0	0.03571428571428571	False	-0.03571428571428571
+tjupan_diphtheria	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C00	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C00	0.2	0.4	50	5	0.06	0.4	True	-0.34
+tjupan_escherichia_coli	onehot	EMB_onehot_C00	0.4	0.6	103	153	0.02912621359223301	0.0718954248366013	True	-0.04276921124436829
+tjupan_escherichia_coli	onehot	EMB_onehot_C00	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C00	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C01	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C01	0.2	0.4	50	5	0.06	0.0	True	0.06
+tjupan_escherichia_coli	onehot	EMB_onehot_C01	0.4	0.6	103	153	0.009708737864077669	0.0457516339869281	True	-0.03604289612285043
+tjupan_escherichia_coli	onehot	EMB_onehot_C01	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C01	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C02	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C02	0.2	0.4	50	5	0.06	0.2	True	-0.14
+tjupan_escherichia_coli	onehot	EMB_onehot_C02	0.4	0.6	103	153	0.06796116504854369	0.05228758169934641	True	0.01567358334919728
+tjupan_escherichia_coli	onehot	EMB_onehot_C02	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C02	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C03	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C03	0.2	0.4	50	5	0.0	0.0	True	0.0
+tjupan_escherichia_coli	onehot	EMB_onehot_C03	0.4	0.6	103	153	0.02912621359223301	0.032679738562091505	True	-0.0035535249698584945
+tjupan_escherichia_coli	onehot	EMB_onehot_C03	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C03	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C04	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C04	0.2	0.4	50	5	0.2	0.6	True	-0.39999999999999997
+tjupan_escherichia_coli	onehot	EMB_onehot_C04	0.4	0.6	103	153	0.0970873786407767	0.09803921568627451	True	-0.0009518370454978109
+tjupan_escherichia_coli	onehot	EMB_onehot_C04	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C04	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C05	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C05	0.2	0.4	50	5	0.02	0.0	True	0.02
+tjupan_escherichia_coli	onehot	EMB_onehot_C05	0.4	0.6	103	153	0.019417475728155338	0.058823529411764705	True	-0.03940605368360937
+tjupan_escherichia_coli	onehot	EMB_onehot_C05	0.6	0.8	0	7		0.2857142857142857	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C05	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C06	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C06	0.2	0.4	50	5	0.06	0.0	True	0.06
+tjupan_escherichia_coli	onehot	EMB_onehot_C06	0.4	0.6	103	153	0.019417475728155338	0.026143790849673203	True	-0.006726315121517865
+tjupan_escherichia_coli	onehot	EMB_onehot_C06	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C06	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C07	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C07	0.2	0.4	50	5	0.02	0.0	True	0.02
+tjupan_escherichia_coli	onehot	EMB_onehot_C07	0.4	0.6	103	153	0.038834951456310676	0.026143790849673203	True	0.012691160606637473
+tjupan_escherichia_coli	onehot	EMB_onehot_C07	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C07	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C08	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C08	0.2	0.4	50	5	0.12	0.0	True	0.12
+tjupan_escherichia_coli	onehot	EMB_onehot_C08	0.4	0.6	103	153	0.06796116504854369	0.05228758169934641	True	0.01567358334919728
+tjupan_escherichia_coli	onehot	EMB_onehot_C08	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C08	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C09	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C09	0.2	0.4	50	5	0.2	0.0	True	0.2
+tjupan_escherichia_coli	onehot	EMB_onehot_C09	0.4	0.6	103	153	0.07766990291262135	0.0457516339869281	True	0.03191826892569325
+tjupan_escherichia_coli	onehot	EMB_onehot_C09	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C09	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C10	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C10	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	onehot	EMB_onehot_C10	0.4	0.6	103	153	0.07766990291262135	0.0392156862745098	True	0.03845421663811155
+tjupan_escherichia_coli	onehot	EMB_onehot_C10	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C10	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C11	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C11	0.2	0.4	50	5	0.06	0.2	True	-0.14
+tjupan_escherichia_coli	onehot	EMB_onehot_C11	0.4	0.6	103	153	0.04854368932038835	0.06535947712418301	True	-0.01681578780379466
+tjupan_escherichia_coli	onehot	EMB_onehot_C11	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C11	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C12	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C12	0.2	0.4	50	5	0.1	0.2	True	-0.1
+tjupan_escherichia_coli	onehot	EMB_onehot_C12	0.4	0.6	103	153	0.038834951456310676	0.06535947712418301	True	-0.026524525667872334
+tjupan_escherichia_coli	onehot	EMB_onehot_C12	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C12	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C13	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C13	0.2	0.4	50	5	0.18	0.0	True	0.18
+tjupan_escherichia_coli	onehot	EMB_onehot_C13	0.4	0.6	103	153	0.04854368932038835	0.05228758169934641	True	-0.003743892378958058
+tjupan_escherichia_coli	onehot	EMB_onehot_C13	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C13	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C14	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C14	0.2	0.4	50	5	0.04	0.4	True	-0.36000000000000004
+tjupan_escherichia_coli	onehot	EMB_onehot_C14	0.4	0.6	103	153	0.038834951456310676	0.0392156862745098	True	-0.00038073481819912713
+tjupan_escherichia_coli	onehot	EMB_onehot_C14	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C14	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C15	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C15	0.2	0.4	50	5	0.1	0.0	True	0.1
+tjupan_escherichia_coli	onehot	EMB_onehot_C15	0.4	0.6	103	153	0.038834951456310676	0.032679738562091505	True	0.006155212894219171
+tjupan_escherichia_coli	onehot	EMB_onehot_C15	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C15	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C16	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C16	0.2	0.4	50	5	0.04	0.0	True	0.04
+tjupan_escherichia_coli	onehot	EMB_onehot_C16	0.4	0.6	103	153	0.038834951456310676	0.0457516339869281	True	-0.006916682530617425
+tjupan_escherichia_coli	onehot	EMB_onehot_C16	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C16	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C17	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C17	0.2	0.4	50	5	0.16	0.0	True	0.16
+tjupan_escherichia_coli	onehot	EMB_onehot_C17	0.4	0.6	103	153	0.07766990291262135	0.006535947712418301	True	0.07113395520020305
+tjupan_escherichia_coli	onehot	EMB_onehot_C17	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C17	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C18	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C18	0.2	0.4	50	5	0.1	0.0	True	0.1
+tjupan_escherichia_coli	onehot	EMB_onehot_C18	0.4	0.6	103	153	0.038834951456310676	0.0457516339869281	True	-0.006916682530617425
+tjupan_escherichia_coli	onehot	EMB_onehot_C18	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C18	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C19	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C19	0.2	0.4	50	5	0.08	0.4	True	-0.32
+tjupan_escherichia_coli	onehot	EMB_onehot_C19	0.4	0.6	103	153	0.05825242718446602	0.06535947712418301	True	-0.007107049939716989
+tjupan_escherichia_coli	onehot	EMB_onehot_C19	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C19	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C20	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C20	0.2	0.4	50	5	0.14	0.0	True	0.14
+tjupan_escherichia_coli	onehot	EMB_onehot_C20	0.4	0.6	103	153	0.07766990291262135	0.0392156862745098	True	0.03845421663811155
+tjupan_escherichia_coli	onehot	EMB_onehot_C20	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C20	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C21	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C21	0.2	0.4	50	5	0.02	0.0	True	0.02
+tjupan_escherichia_coli	onehot	EMB_onehot_C21	0.4	0.6	103	153	0.04854368932038835	0.0392156862745098	True	0.009328003045878545
+tjupan_escherichia_coli	onehot	EMB_onehot_C21	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C21	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C22	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C22	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	onehot	EMB_onehot_C22	0.4	0.6	103	153	0.038834951456310676	0.058823529411764705	True	-0.01998857795545403
+tjupan_escherichia_coli	onehot	EMB_onehot_C22	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C22	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C23	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C23	0.2	0.4	50	5	0.24	0.6	True	-0.36
+tjupan_escherichia_coli	onehot	EMB_onehot_C23	0.4	0.6	103	153	0.0970873786407767	0.058823529411764705	True	0.03826384922901199
+tjupan_escherichia_coli	onehot	EMB_onehot_C23	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	onehot	EMB_onehot_C23	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_1-TTADWHTAA	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_1-TTADWHTAA	0.2	0.4	50	5	0.54	0.4	True	0.14
+tjupan_escherichia_coli	STREME	STREME_1-TTADWHTAA	0.4	0.6	103	153	0.1262135922330097	0.0784313725490196	True	0.0477822196839901
+tjupan_escherichia_coli	STREME	STREME_1-TTADWHTAA	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	STREME	STREME_1-TTADWHTAA	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_2-AGTATA	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_2-AGTATA	0.2	0.4	50	5	0.18	0.0	True	0.18
+tjupan_escherichia_coli	STREME	STREME_2-AGTATA	0.4	0.6	103	153	0.08737864077669903	0.0392156862745098	True	0.04816295450218923
+tjupan_escherichia_coli	STREME	STREME_2-AGTATA	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	STREME	STREME_2-AGTATA	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_3-CTTWAAG	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	STREME	STREME_3-CTTWAAG	0.2	0.4	50	5	0.14	0.0	True	0.14
+tjupan_escherichia_coli	STREME	STREME_3-CTTWAAG	0.4	0.6	103	153	0.02912621359223301	0.05228758169934641	True	-0.023161368107113396
+tjupan_escherichia_coli	STREME	STREME_3-CTTWAAG	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	STREME	STREME_3-CTTWAAG	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C00	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C00	0.2	0.4	50	5	0.38	0.6	True	-0.21999999999999997
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C00	0.4	0.6	103	153	0.06796116504854369	0.06535947712418301	True	0.0026016879243606766
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C00	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C00	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C01	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C01	0.2	0.4	50	5	0.14	0.2	True	-0.06
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C01	0.4	0.6	103	153	0.038834951456310676	0.06535947712418301	True	-0.026524525667872334
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C01	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C01	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C02	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C02	0.2	0.4	50	5	0.5	0.8	True	-0.30000000000000004
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C02	0.4	0.6	103	153	0.07766990291262135	0.058823529411764705	True	0.018846373500856647
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C02	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C02	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C03	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C03	0.2	0.4	50	5	0.02	0.0	True	0.02
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C03	0.4	0.6	103	153	0.04854368932038835	0.0784313725490196	True	-0.029887683228631258
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C03	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C03	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C06	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C06	0.2	0.4	50	5	0.16	0.2	True	-0.04000000000000001
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C06	0.4	0.6	103	153	0.08737864077669903	0.05228758169934641	True	0.035091059077352625
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C06	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C06	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C07	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C07	0.2	0.4	50	5	0.28	0.4	True	-0.12
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C07	0.4	0.6	103	153	0.04854368932038835	0.026143790849673203	True	0.022399898470715145
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C07	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C07	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C08	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C08	0.2	0.4	50	5	0.02	0.0	True	0.02
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C08	0.4	0.6	103	153	0.038834951456310676	0.05228758169934641	True	-0.01345263024303573
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C08	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C08	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C09	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C09	0.2	0.4	50	5	0.24	0.2	True	0.03999999999999998
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C09	0.4	0.6	103	153	0.05825242718446602	0.058823529411764705	True	-0.0005711022272986838
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C09	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C09	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C10	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C10	0.2	0.4	50	5	0.06	0.2	True	-0.14
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C10	0.4	0.6	103	153	0.019417475728155338	0.0784313725490196	True	-0.05901389682086427
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C10	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C10	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C11	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C11	0.2	0.4	50	5	0.12	0.0	True	0.12
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C11	0.4	0.6	103	153	0.07766990291262135	0.0457516339869281	True	0.03191826892569325
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C11	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C11	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C12	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C12	0.2	0.4	50	5	0.06	0.0	True	0.06
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C12	0.4	0.6	103	153	0.1262135922330097	0.0718954248366013	True	0.05431816739640841
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C12	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C12	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C13	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C13	0.2	0.4	50	5	0.24	0.6	True	-0.36
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C13	0.4	0.6	103	153	0.11650485436893204	0.06535947712418301	True	0.05114537724474903
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C13	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C13	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C15	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C15	0.2	0.4	50	5	0.26	0.2	True	0.06
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C15	0.4	0.6	103	153	0.08737864077669903	0.058823529411764705	True	0.028555111364934327
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C15	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C15	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C16	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C16	0.2	0.4	50	5	0.1	0.0	True	0.1
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C16	0.4	0.6	103	153	0.08737864077669903	0.0457516339869281	True	0.04162700678977093
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C16	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C16	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C17	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C17	0.2	0.4	50	5	0.28	0.2	True	0.08000000000000002
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C17	0.4	0.6	103	153	0.02912621359223301	0.032679738562091505	True	-0.0035535249698584945
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C17	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C17	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C18	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C18	0.2	0.4	50	5	0.0	0.0	True	0.0
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C18	0.4	0.6	103	153	0.02912621359223301	0.05228758169934641	True	-0.023161368107113396
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C18	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C18	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C21	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C21	0.2	0.4	50	5	0.26	0.4	True	-0.14
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C21	0.4	0.6	103	153	0.04854368932038835	0.0392156862745098	True	0.009328003045878545
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C21	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C21	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C22	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C22	0.2	0.4	50	5	0.0	0.0	True	0.0
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C22	0.4	0.6	103	153	0.009708737864077669	0.0196078431372549	True	-0.009899105273177233
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C22	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C22	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C23	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C23	0.2	0.4	50	5	0.58	0.4	True	0.17999999999999994
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C23	0.4	0.6	103	153	0.0970873786407767	0.0784313725490196	True	0.01865600609175709
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C23	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	prokbert	EMB_prokbert_C23	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	103	153	0.05825242718446602	0.0457516339869281	True	0.01250079319753792
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	50	5	0.3	0.2	True	0.09999999999999998
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	103	153	0.11650485436893204	0.0457516339869281	True	0.07075322038200393
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	50	5	0.1	0.0	True	0.1
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	103	153	0.04854368932038835	0.06535947712418301	True	-0.01681578780379466
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	50	5	0.3	0.4	True	-0.10000000000000003
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	103	153	0.0970873786407767	0.0457516339869281	True	0.051335744653848596
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	50	5	0.16	0.2	True	-0.04000000000000001
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	103	153	0.02912621359223301	0.05228758169934641	True	-0.023161368107113396
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	103	153	0.04854368932038835	0.08496732026143791	True	-0.03642363094104956
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	50	5	0.18	0.4	True	-0.22000000000000003
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	103	153	0.08737864077669903	0.058823529411764705	True	0.028555111364934327
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	103	153	0.04854368932038835	0.06535947712418301	True	-0.01681578780379466
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	0	7		0.14285714285714285	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	50	5	0.14	0.0	True	0.14
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	103	153	0.038834951456310676	0.0457516339869281	True	-0.006916682530617425
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C09	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C09	0.2	0.4	50	5	0.36	0.4	True	-0.040000000000000036
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C09	0.4	0.6	103	153	0.07766990291262135	0.058823529411764705	True	0.018846373500856647
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C09	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C09	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C10	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C10	0.2	0.4	50	5	0.08	0.0	True	0.08
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C10	0.4	0.6	103	153	0.02912621359223301	0.06535947712418301	True	-0.03623326353195
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C10	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C10	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	50	5	0.04	0.0	True	0.04
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	103	153	0.02912621359223301	0.026143790849673203	True	0.0029824227425598072
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	50	5	0.1	0.2	True	-0.1
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	103	153	0.04854368932038835	0.0718954248366013	True	-0.023351735516212953
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	50	5	0.48	0.4	True	0.07999999999999996
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	103	153	0.14563106796116504	0.08496732026143791	True	0.06066374769972713
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C14	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C14	0.2	0.4	50	5	0.2	0.8	True	-0.6000000000000001
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C14	0.4	0.6	103	153	0.009708737864077669	0.026143790849673203	True	-0.016435052985595534
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C14	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C14	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	50	5	0.2	0.6	True	-0.39999999999999997
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	103	153	0.06796116504854369	0.0392156862745098	True	0.028745478774033884
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	50	5	0.24	0.2	True	0.03999999999999998
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	103	153	0.0970873786407767	0.058823529411764705	True	0.03826384922901199
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C18	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C18	0.2	0.4	50	5	0.12	0.2	True	-0.08000000000000002
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C18	0.4	0.6	103	153	0.06796116504854369	0.058823529411764705	True	0.009137635636778982
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C18	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C18	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	50	5	0.18	0.0	True	0.18
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	103	153	0.038834951456310676	0.0784313725490196	True	-0.03959642109270893
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C20	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C20	0.2	0.4	50	5	0.26	0.2	True	0.06
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C20	0.4	0.6	103	153	0.06796116504854369	0.058823529411764705	True	0.009137635636778982
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C20	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C20	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	50	5	0.34	0.2	True	0.14
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	103	153	0.04854368932038835	0.058823529411764705	True	-0.010279840091376356
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C22	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C22	0.2	0.4	50	5	0.38	0.4	True	-0.020000000000000018
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C22	0.4	0.6	103	153	0.11650485436893204	0.058823529411764705	True	0.05768132495716734
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C22	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C22	0.8	1.0	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	0	0			False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	50	5	0.36	0.2	True	0.15999999999999998
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	103	153	0.11650485436893204	0.08496732026143791	True	0.03153753410749413
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	0	7		0.0	False	
+tjupan_escherichia_coli	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C00	0.0	0.2	36	3	0.2222222222222222	0.3333333333333333	False	-0.1111111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C00	0.2	0.4	147	108	0.16326530612244897	0.05555555555555555	True	0.10770975056689341
+tjupan_staphylococcus	onehot	EMB_onehot_C00	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C00	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C00	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C01	0.0	0.2	36	3	0.16666666666666666	0.0	False	0.16666666666666666
+tjupan_staphylococcus	onehot	EMB_onehot_C01	0.2	0.4	147	108	0.10204081632653061	0.037037037037037035	True	0.06500377928949358
+tjupan_staphylococcus	onehot	EMB_onehot_C01	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C01	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C01	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C02	0.0	0.2	36	3	0.4166666666666667	0.0	False	0.4166666666666667
+tjupan_staphylococcus	onehot	EMB_onehot_C02	0.2	0.4	147	108	0.19047619047619047	0.037037037037037035	True	0.15343915343915343
+tjupan_staphylococcus	onehot	EMB_onehot_C02	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C02	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C02	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C03	0.0	0.2	36	3	0.3611111111111111	0.0	False	0.3611111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C03	0.2	0.4	147	108	0.1564625850340136	0.027777777777777776	True	0.12868480725623582
+tjupan_staphylococcus	onehot	EMB_onehot_C03	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C03	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C03	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C04	0.0	0.2	36	3	0.3055555555555556	0.3333333333333333	False	-0.027777777777777735
+tjupan_staphylococcus	onehot	EMB_onehot_C04	0.2	0.4	147	108	0.12244897959183673	0.027777777777777776	True	0.09467120181405896
+tjupan_staphylococcus	onehot	EMB_onehot_C04	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C04	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C04	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C05	0.0	0.2	36	3	0.5	0.6666666666666666	False	-0.16666666666666663
+tjupan_staphylococcus	onehot	EMB_onehot_C05	0.2	0.4	147	108	0.25170068027210885	0.037037037037037035	True	0.2146636432350718
+tjupan_staphylococcus	onehot	EMB_onehot_C05	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C05	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C05	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C06	0.0	0.2	36	3	0.1388888888888889	0.0	False	0.1388888888888889
+tjupan_staphylococcus	onehot	EMB_onehot_C06	0.2	0.4	147	108	0.12244897959183673	0.08333333333333333	True	0.0391156462585034
+tjupan_staphylococcus	onehot	EMB_onehot_C06	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	onehot	EMB_onehot_C06	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C06	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C07	0.0	0.2	36	3	0.1111111111111111	0.3333333333333333	False	-0.2222222222222222
+tjupan_staphylococcus	onehot	EMB_onehot_C07	0.2	0.4	147	108	0.07482993197278912	0.046296296296296294	True	0.02853363567649282
+tjupan_staphylococcus	onehot	EMB_onehot_C07	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	onehot	EMB_onehot_C07	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C07	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C08	0.0	0.2	36	3	0.1388888888888889	0.3333333333333333	False	-0.19444444444444442
+tjupan_staphylococcus	onehot	EMB_onehot_C08	0.2	0.4	147	108	0.09523809523809523	0.0	True	0.09523809523809523
+tjupan_staphylococcus	onehot	EMB_onehot_C08	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C08	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C08	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C09	0.0	0.2	36	3	0.1388888888888889	0.3333333333333333	False	-0.19444444444444442
+tjupan_staphylococcus	onehot	EMB_onehot_C09	0.2	0.4	147	108	0.19727891156462585	0.06481481481481481	True	0.13246409674981102
+tjupan_staphylococcus	onehot	EMB_onehot_C09	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C09	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C09	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C10	0.0	0.2	36	3	0.3333333333333333	0.0	False	0.3333333333333333
+tjupan_staphylococcus	onehot	EMB_onehot_C10	0.2	0.4	147	108	0.12244897959183673	0.046296296296296294	True	0.07615268329554044
+tjupan_staphylococcus	onehot	EMB_onehot_C10	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C10	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C10	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C11	0.0	0.2	36	3	0.19444444444444445	0.3333333333333333	False	-0.13888888888888887
+tjupan_staphylococcus	onehot	EMB_onehot_C11	0.2	0.4	147	108	0.1292517006802721	0.08333333333333333	True	0.045918367346938785
+tjupan_staphylococcus	onehot	EMB_onehot_C11	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C11	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C11	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C12	0.0	0.2	36	3	0.16666666666666666	0.0	False	0.16666666666666666
+tjupan_staphylococcus	onehot	EMB_onehot_C12	0.2	0.4	147	108	0.061224489795918366	0.05555555555555555	True	0.0056689342403628135
+tjupan_staphylococcus	onehot	EMB_onehot_C12	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C12	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C12	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C13	0.0	0.2	36	3	0.5	0.0	False	0.5
+tjupan_staphylococcus	onehot	EMB_onehot_C13	0.2	0.4	147	108	0.4489795918367347	0.05555555555555555	True	0.39342403628117917
+tjupan_staphylococcus	onehot	EMB_onehot_C13	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C13	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C13	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C14	0.0	0.2	36	3	0.1388888888888889	0.3333333333333333	False	-0.19444444444444442
+tjupan_staphylococcus	onehot	EMB_onehot_C14	0.2	0.4	147	108	0.1360544217687075	0.05555555555555555	True	0.08049886621315194
+tjupan_staphylococcus	onehot	EMB_onehot_C14	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C14	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C14	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C15	0.0	0.2	36	3	0.1111111111111111	0.3333333333333333	False	-0.2222222222222222
+tjupan_staphylococcus	onehot	EMB_onehot_C15	0.2	0.4	147	108	0.08843537414965986	0.08333333333333333	True	0.005102040816326536
+tjupan_staphylococcus	onehot	EMB_onehot_C15	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C15	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C15	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C16	0.0	0.2	36	3	0.3611111111111111	0.0	False	0.3611111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C16	0.2	0.4	147	108	0.14285714285714285	0.06481481481481481	True	0.07804232804232804
+tjupan_staphylococcus	onehot	EMB_onehot_C16	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C16	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C16	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C17	0.0	0.2	36	3	0.2222222222222222	0.3333333333333333	False	-0.1111111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C17	0.2	0.4	147	108	0.08163265306122448	0.06481481481481481	True	0.016817838246409672
+tjupan_staphylococcus	onehot	EMB_onehot_C17	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C17	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C17	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C18	0.0	0.2	36	3	0.2222222222222222	0.0	False	0.2222222222222222
+tjupan_staphylococcus	onehot	EMB_onehot_C18	0.2	0.4	147	108	0.12244897959183673	0.07407407407407407	True	0.04837490551776266
+tjupan_staphylococcus	onehot	EMB_onehot_C18	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	onehot	EMB_onehot_C18	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C18	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C19	0.0	0.2	36	3	0.05555555555555555	0.3333333333333333	False	-0.2777777777777778
+tjupan_staphylococcus	onehot	EMB_onehot_C19	0.2	0.4	147	108	0.08163265306122448	0.037037037037037035	True	0.04459561602418745
+tjupan_staphylococcus	onehot	EMB_onehot_C19	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C19	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C19	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C20	0.0	0.2	36	3	0.2222222222222222	0.3333333333333333	False	-0.1111111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C20	0.2	0.4	147	108	0.1360544217687075	0.10185185185185185	True	0.03420256991685565
+tjupan_staphylococcus	onehot	EMB_onehot_C20	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C20	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C20	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C21	0.0	0.2	36	3	0.1111111111111111	0.0	False	0.1111111111111111
+tjupan_staphylococcus	onehot	EMB_onehot_C21	0.2	0.4	147	108	0.10204081632653061	0.046296296296296294	True	0.05574452003023432
+tjupan_staphylococcus	onehot	EMB_onehot_C21	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	onehot	EMB_onehot_C21	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C21	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C22	0.0	0.2	36	3	0.3888888888888889	0.0	False	0.3888888888888889
+tjupan_staphylococcus	onehot	EMB_onehot_C22	0.2	0.4	147	108	0.2585034013605442	0.027777777777777776	True	0.23072562358276644
+tjupan_staphylococcus	onehot	EMB_onehot_C22	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C22	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C22	0.8	1.0	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C23	0.0	0.2	36	3	0.08333333333333333	0.0	False	0.08333333333333333
+tjupan_staphylococcus	onehot	EMB_onehot_C23	0.2	0.4	147	108	0.1360544217687075	0.046296296296296294	True	0.0897581254724112
+tjupan_staphylococcus	onehot	EMB_onehot_C23	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	onehot	EMB_onehot_C23	0.6	0.8	0	0			False	
+tjupan_staphylococcus	onehot	EMB_onehot_C23	0.8	1.0	0	0			False	
+tjupan_staphylococcus	STREME	STREME_1-WWWATTWTAWYATWW	0.0	0.2	36	3	0.5833333333333334	0.6666666666666666	False	-0.08333333333333326
+tjupan_staphylococcus	STREME	STREME_1-WWWATTWTAWYATWW	0.2	0.4	147	108	0.38095238095238093	0.046296296296296294	True	0.33465608465608465
+tjupan_staphylococcus	STREME	STREME_1-WWWATTWTAWYATWW	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	STREME	STREME_1-WWWATTWTAWYATWW	0.6	0.8	0	0			False	
+tjupan_staphylococcus	STREME	STREME_1-WWWATTWTAWYATWW	0.8	1.0	0	0			False	
+tjupan_staphylococcus	STREME	STREME_2-AATATAA	0.0	0.2	36	3	0.2777777777777778	0.6666666666666666	False	-0.38888888888888884
+tjupan_staphylococcus	STREME	STREME_2-AATATAA	0.2	0.4	147	108	0.19047619047619047	0.07407407407407407	True	0.1164021164021164
+tjupan_staphylococcus	STREME	STREME_2-AATATAA	0.4	0.6	2	18	0.5	0.0	False	0.5
+tjupan_staphylococcus	STREME	STREME_2-AATATAA	0.6	0.8	0	0			False	
+tjupan_staphylococcus	STREME	STREME_2-AATATAA	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C00	0.0	0.2	36	3	0.19444444444444445	0.6666666666666666	False	-0.4722222222222222
+tjupan_staphylococcus	prokbert	EMB_prokbert_C00	0.2	0.4	147	108	0.11564625850340136	0.046296296296296294	True	0.06934996220710507
+tjupan_staphylococcus	prokbert	EMB_prokbert_C00	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C00	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C00	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C02	0.0	0.2	36	3	0.25	0.3333333333333333	False	-0.08333333333333331
+tjupan_staphylococcus	prokbert	EMB_prokbert_C02	0.2	0.4	147	108	0.11564625850340136	0.08333333333333333	True	0.032312925170068035
+tjupan_staphylococcus	prokbert	EMB_prokbert_C02	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C02	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C02	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C05	0.0	0.2	36	3	0.16666666666666666	0.3333333333333333	False	-0.16666666666666666
+tjupan_staphylococcus	prokbert	EMB_prokbert_C05	0.2	0.4	147	108	0.10204081632653061	0.027777777777777776	True	0.07426303854875284
+tjupan_staphylococcus	prokbert	EMB_prokbert_C05	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C05	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C05	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C06	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	prokbert	EMB_prokbert_C06	0.2	0.4	147	108	0.013605442176870748	0.046296296296296294	True	-0.032690854119425544
+tjupan_staphylococcus	prokbert	EMB_prokbert_C06	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	prokbert	EMB_prokbert_C06	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C06	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C07	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C07	0.2	0.4	147	108	0.034013605442176874	0.09259259259259259	True	-0.058578987150415714
+tjupan_staphylococcus	prokbert	EMB_prokbert_C07	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C07	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C07	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C09	0.0	0.2	36	3	0.0	0.3333333333333333	False	-0.3333333333333333
+tjupan_staphylococcus	prokbert	EMB_prokbert_C09	0.2	0.4	147	108	0.04081632653061224	0.05555555555555555	True	-0.01473922902494331
+tjupan_staphylococcus	prokbert	EMB_prokbert_C09	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C09	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C09	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C10	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C10	0.2	0.4	147	108	0.047619047619047616	0.06481481481481481	True	-0.017195767195767195
+tjupan_staphylococcus	prokbert	EMB_prokbert_C10	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	prokbert	EMB_prokbert_C10	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C10	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C12	0.0	0.2	36	3	0.1388888888888889	0.3333333333333333	False	-0.19444444444444442
+tjupan_staphylococcus	prokbert	EMB_prokbert_C12	0.2	0.4	147	108	0.11564625850340136	0.12962962962962962	True	-0.013983371126228258
+tjupan_staphylococcus	prokbert	EMB_prokbert_C12	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C12	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C12	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C13	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	prokbert	EMB_prokbert_C13	0.2	0.4	147	108	0.08843537414965986	0.037037037037037035	True	0.05139833711262283
+tjupan_staphylococcus	prokbert	EMB_prokbert_C13	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C13	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C13	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C14	0.0	0.2	36	3	0.027777777777777776	0.3333333333333333	False	-0.3055555555555555
+tjupan_staphylococcus	prokbert	EMB_prokbert_C14	0.2	0.4	147	108	0.04081632653061224	0.018518518518518517	True	0.022297808012093724
+tjupan_staphylococcus	prokbert	EMB_prokbert_C14	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C14	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C14	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C15	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C15	0.2	0.4	147	108	0.05442176870748299	0.046296296296296294	True	0.008125472411186697
+tjupan_staphylococcus	prokbert	EMB_prokbert_C15	0.4	0.6	2	18	0.0	0.1111111111111111	False	-0.1111111111111111
+tjupan_staphylococcus	prokbert	EMB_prokbert_C15	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C15	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C21	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	prokbert	EMB_prokbert_C21	0.2	0.4	147	108	0.09523809523809523	0.06481481481481481	True	0.03042328042328042
+tjupan_staphylococcus	prokbert	EMB_prokbert_C21	0.4	0.6	2	18	0.0	0.1111111111111111	False	-0.1111111111111111
+tjupan_staphylococcus	prokbert	EMB_prokbert_C21	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C21	0.8	1.0	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C22	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	prokbert	EMB_prokbert_C22	0.2	0.4	147	108	0.047619047619047616	0.046296296296296294	True	0.0013227513227513227
+tjupan_staphylococcus	prokbert	EMB_prokbert_C22	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	prokbert	EMB_prokbert_C22	0.6	0.8	0	0			False	
+tjupan_staphylococcus	prokbert	EMB_prokbert_C22	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C00	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C00	0.2	0.4	147	108	0.027210884353741496	0.027777777777777776	True	-0.0005668934240362807
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C00	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C00	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C00	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C01	0.0	0.2	36	3	0.05555555555555555	0.3333333333333333	False	-0.2777777777777778
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C01	0.2	0.4	147	108	0.034013605442176874	0.027777777777777776	True	0.006235827664399098
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C01	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C01	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C01	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C02	0.0	0.2	36	3	0.05555555555555555	0.0	False	0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C02	0.2	0.4	147	108	0.027210884353741496	0.06481481481481481	True	-0.03760393046107331
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C02	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C02	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C02	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C03	0.0	0.2	36	3	0.2222222222222222	0.3333333333333333	False	-0.1111111111111111
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C03	0.2	0.4	147	108	0.047619047619047616	0.037037037037037035	True	0.010582010582010581
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C03	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C03	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C03	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C04	0.0	0.2	36	3	0.1388888888888889	0.6666666666666666	False	-0.5277777777777777
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C04	0.2	0.4	147	108	0.1564625850340136	0.06481481481481481	True	0.0916477702191988
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C04	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C04	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C04	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C05	0.0	0.2	36	3	0.05555555555555555	0.0	False	0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C05	0.2	0.4	147	108	0.047619047619047616	0.05555555555555555	True	-0.007936507936507936
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C05	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C05	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C05	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C06	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C06	0.2	0.4	147	108	0.07482993197278912	0.046296296296296294	True	0.02853363567649282
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C06	0.4	0.6	2	18	0.0	0.1111111111111111	False	-0.1111111111111111
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C06	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C06	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C07	0.0	0.2	36	3	0.1388888888888889	0.0	False	0.1388888888888889
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C07	0.2	0.4	147	108	0.08163265306122448	0.037037037037037035	True	0.04459561602418745
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C07	0.4	0.6	2	18	0.5	0.0	False	0.5
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C07	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C07	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C08	0.0	0.2	36	3	0.05555555555555555	0.0	False	0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C08	0.2	0.4	147	108	0.08843537414965986	0.07407407407407407	True	0.014361300075585795
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C08	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C08	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C08	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C09	0.0	0.2	36	3	0.08333333333333333	0.0	False	0.08333333333333333
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C09	0.2	0.4	147	108	0.06802721088435375	0.05555555555555555	True	0.012471655328798195
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C09	0.4	0.6	2	18	0.0	0.1111111111111111	False	-0.1111111111111111
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C09	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C09	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C11	0.0	0.2	36	3	0.08333333333333333	0.0	False	0.08333333333333333
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C11	0.2	0.4	147	108	0.047619047619047616	0.046296296296296294	True	0.0013227513227513227
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C11	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C11	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C11	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C12	0.0	0.2	36	3	0.08333333333333333	0.0	False	0.08333333333333333
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C12	0.2	0.4	147	108	0.05442176870748299	0.05555555555555555	True	-0.0011337868480725613
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C12	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C12	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C12	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C13	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C13	0.2	0.4	147	108	0.08843537414965986	0.07407407407407407	True	0.014361300075585795
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C13	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C13	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C13	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C15	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C15	0.2	0.4	147	108	0.06802721088435375	0.027777777777777776	True	0.04024943310657597
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C15	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C15	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C15	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C16	0.0	0.2	36	3	0.08333333333333333	0.0	False	0.08333333333333333
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C16	0.2	0.4	147	108	0.10204081632653061	0.07407407407407407	True	0.027966742252456545
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C16	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C16	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C16	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C17	0.0	0.2	36	3	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C17	0.2	0.4	147	108	0.04081632653061224	0.046296296296296294	True	-0.005479969765684052
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C17	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C17	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C17	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C19	0.0	0.2	36	3	0.1111111111111111	0.0	False	0.1111111111111111
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C19	0.2	0.4	147	108	0.1292517006802721	0.037037037037037035	True	0.09221466364323508
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C19	0.4	0.6	2	18	0.5	0.0	False	0.5
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C19	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C19	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C20	0.0	0.2	36	3	0.1388888888888889	0.0	False	0.1388888888888889
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C20	0.2	0.4	147	108	0.14965986394557823	0.10185185185185185	True	0.047808012093726385
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C20	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C20	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C20	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C21	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C21	0.2	0.4	147	108	0.06802721088435375	0.046296296296296294	True	0.021730914588057454
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C21	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C21	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C21	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C22	0.0	0.2	36	3	0.027777777777777776	0.0	False	0.027777777777777776
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C22	0.2	0.4	147	108	0.08163265306122448	0.046296296296296294	True	0.03533635676492819
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C22	0.4	0.6	2	18	0.0	0.05555555555555555	False	-0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C22	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C22	0.8	1.0	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C23	0.0	0.2	36	3	0.05555555555555555	0.0	False	0.05555555555555555
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C23	0.2	0.4	147	108	0.04081632653061224	0.018518518518518517	True	0.022297808012093724
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C23	0.4	0.6	2	18	0.0	0.0	False	0.0
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C23	0.6	0.8	0	0			False	
+tjupan_staphylococcus	tokenwindow	EMB_tokenwindow_C23	0.8	1.0	0	0			False	

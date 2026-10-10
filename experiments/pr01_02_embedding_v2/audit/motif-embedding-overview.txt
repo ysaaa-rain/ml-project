@@ -1,0 +1,314 @@
+基于 Embedding的序列 Motif发现最新进展综述
+摘要
+序列 motif（基序）是生物序列中具有功能意义的保守模式，其发现对于理解基因调控、蛋
+白质功能和疾病机制至关重要。近年来，随着深度学习尤其是表示学习（ representation 
+learning）的快速发展， 基于embedding的 motif发现方法已成为生物信息学领域的研究热点。
+本文综述了 2024–2026年间该方向在顶刊顶会上的最新进展，系统梳理了从经典 CNN卷积
+核到 Transformer预训练 embedding、从注意力权重解释到稀疏自编码器 （SAE）的多条技术
+路线，分析了各方法的技术特点与适用场景，并探讨了当前面临的挑战与未来发展方向。
+1. 研究背景与意义
+序列 motif是 DNA、RNA或蛋白质序列中反复出现的、 具有生物学功能的保守序列模式。 在
+基因组学中， 转录因子结合位点 （TFBS） 、剪接位点、 启动子元件等都是典型的DNA motif；
+在蛋白质组学中，酶活位点、结合结构域、翻译后修饰位点等构成了蛋白质motif。准确识
+别这些 motif是理解基因表达调控、蛋白质功能以及疾病遗传机制的基础。
+传统 motif发现方法 （如MEME、HOMER、STREME等） 主要基于统计模型和序列比对， 在处
+理复杂调控模式和大规模数据时面临计算效率和检测灵敏度的双重瓶颈。随着深度表示学
+习的兴起， 将序列映射到高维embedding空间并从中提取功能模式已成为新的研究范式。 该
+范式的核心假设是： 经过大规模数据预训练的神经网络能够在其embedding空间中隐式编码
+进化保守的序列特征，通过适当的解释方法可以将这些“黑箱”特征转化为可解释的 motif。
+2. 技术路线分类
+基于 embedding的 motif发现方法可按技术路线分为以下六大类：
+2.1 卷积核作为 Motif检测器（ CNN-based）
+代表工作：DeepBind、DeepSEA、scBasset
+卷积神经网络 （CNN）是最早用于序列 motif发现的深度学习框架。 其基本思想是： 第一层
+卷积核天然充当 motif扫描器， 每个卷积核学习一种序列模式， 其权重矩阵可直接转化为位
+置权重矩阵（PWM）或位置特异性打分矩阵（PSSM） 。
+DeepBind是该方向的开创性工作，使用单层卷积从 ChIP-seq和 CLIP-seq数据中预测 DNA/
+RNA结合蛋白的特异性， 首次证明了卷积核能够重述已知的motif模式 𝑇 𝑅𝐴𝐸𝑅𝐸𝐹 ](ℎ𝑡𝑡𝑝𝑠 : //𝑝𝑚𝑐.𝑛𝑐𝑏𝑖.𝑛𝑙𝑚.𝑛𝑖ℎ.𝑔𝑜𝑣/𝑎𝑟𝑡𝑖𝑐𝑙𝑒𝑠/𝑃 𝑀 𝐶6612801/)。𝐷𝑒𝑒𝑝𝑆𝐸𝐴进一步将网络加深至三层卷积 +
+池化 + 全连接，从染色质特征中学习调控序列编码[TRAE_REF。
+scBasset将该思想拓展到单细胞 ATAC-seq领域，通过 CNN从 DNA序列学习可及性区域的
+embedding表示， 其初始卷积层学习TF motif和其他序列因子， 后续层计算这些特征的非线
+性组合以产生序列的低维 embedding$TRAE_REF。实验表明 scBasset在细胞类型识别、
+scATAC去噪、数据整合和 TF活性推断等任务上均达到了当时的最优水平。
+1
+技术特点：
+• 架构简单，可解释性强，卷积核直接对应 motif
+• 受限于卷积的局部感受野，难以捕捉长程调控关系
+• 通常需要监督训练，依赖标注数据
+2.2 预训练 DNA语言模型的 Embedding表示
+代表工作：DNABERT、Nucleotide Transformer、GPN、HyenaDNA
+受自然语言处理中预训练语言模型的启发，研究者开始在大规模基因组序列上进行无监督
+预训练， 以获取更丰富的序列embedding表示。 这类模型通常采用掩码语言模型 （MLM）或
+因果语言模型（CLM）作为预训练目标，在全基因组或多物种基因组数据上训练。
+DNABERT（Bioinformatics 2023）是最早的 DNA BERT模型之一，采用 6-mer tokenization，
+在预训练后通过 DNABERT-viz工具从注意力权重中提取保守 motif区域，经超几何检验筛
+选后对齐合并为 PWM。在 ENCODE 690数据集上， 其发现的motif与 JASPAR数据库高度吻
+合 $TRAE_REF。DNABERT-2进一步用 BPE和 SentencePiece替代固定 k-mer分词， 效率提升
+三倍。
+Nucleotide Transformer（NT）（Nature Methods 2024）由 InstaDeep和 NVIDIA联合提出，
+是基因组学基础模型的里程碑工作。 NT 家族模型在人类和多物种基因组大数据上预
+训练， 采用6-mer token的 Transformer编码器架构， 通过MLM目标学习上下文相关的核苷
+酸表示。NT在多种功能基因组学任务上刷新了记录， 包括分子表型预测和遗传变异优先级
+排 序 𝑇 𝑅𝐴𝐸𝑅𝐸𝐹 ](ℎ𝑡𝑡𝑝𝑠 : //𝑖𝑛𝑠𝑡𝑎𝑑𝑒𝑒𝑝.𝑐𝑜𝑚/2024/12/𝑑𝑒𝑐𝑜𝑑𝑖𝑛𝑔 − 𝑜𝑢𝑟 − 𝑔𝑒𝑛𝑜𝑚𝑒 − 𝑤𝑖𝑡ℎ −
+𝑛𝑢𝑐𝑙𝑒𝑜𝑡𝑖𝑑𝑒 − 𝑡𝑟𝑎𝑛𝑠𝑓𝑜𝑟𝑚𝑒𝑟𝑠/)。后续研究进一步表明，专门在3′𝑈 𝑇 𝑅序列上训练的𝑁 𝑇 −
+3𝑈 𝑇 𝑅 − 𝑅𝑁 𝐴模型在𝑅𝐵𝑃 结合𝑚𝑜𝑡𝑖𝑓识别任务上表现最优[TRAE_REF。
+GPN（Genomic Pre-trained Network）采用膨胀卷积架构，以单核苷酸为单位进行 MLM
+预训练，在拟南芥基因组上训练后通过核苷酸重建方法发现序列 motif。GPN的最后一层
+embedding无监督聚类能清晰区分 CDS、内含子、UTR等不同基因组功能区域 $TRAE_REF。
+HyenaDNA引入 Hyena状态空间模型替代标准注意力， 在保持单核苷酸分辨率的同时将序
+列上下文长度扩展至前所未有的规模 （最高可达百万碱基级） ， 为长程调控motif的发现提供
+了新的可能性 $TRAE_REF。
+技术特点：
+• 无监督/自监督预训练，可充分利用海量未标注基因组数据
+• 上下文感知的 embedding表示，能捕捉碱基间的长程依赖
+• 可迁移性强，同一预训练模型可适配多种下游任务
+• 模型“黑箱”特性显著，需要专门的解释方法提取 motif
+2.3 稀疏自编码器（SAE）解释范式
+代表工作：MotifAE、InterPLM、SAE-RNA
+2
+稀疏自编码器 （Sparse Autoencoder, SAE）是 2024–2025年间涌现的最具影响力的 motif发现
+新范式。 该方法最初起源于NLP领域对大语言模型的可解释性研究， 后被迅速引入计算生物
+学领域。 其核心思想是： 将预训练语言模型的embedding作为输入， 训练一个高维但稀疏的
+自编码器，使得每个潜在特征（latent feature）仅在少数序列位置被激活，从而每个特征对
+应一种可解释的生物学模式。
+MotifAE（Nature Communications 2025）由哥伦比亚大学 Shen Lab提出， 是蛋白质领域首个
+系统性基于 SAE的无监督 motif发现框架。 MotifAE以 ESM2蛋白质语言模型的 embedding
+为输入，在传统 SAE的重构损失和稀疏约束之外，创新性地加入了局部相似性损失（ local 
+similarity loss） ，鼓励相邻氨基酸位置的潜在特征激活保持一致性， 从而产生更连贯的motif
+模式 $TRAE_REF。在 ELM数据库 motif检测基准上， MotifAE取得了 0.88的中位 AUROC，
+显著优于标准 SAE的 0.80。 进一步， 通过门控特征选择将MotifAE特征与实验数据对齐， 研
+究人员成功识别了与蛋白质折叠稳定性相关的特征，并通过操控这些特征实现了稳定性增
+强的蛋白质设计。
+InterPLM（Nature Methods 2025）由斯坦福大学 James Zou团队提出， 同样采用稀疏自编码
+器和 transcoder变体从 ESM2中提取可解释的稀疏特征。 研究发现， 从蛋白质层面和氨基酸
+层面表征中提取的许多稀疏特征对应着可识别的生物化学模式，且整个特征提取过程完全
+无监督 $TRAE_REF。
+SAE-RNA将 SAE解释方法拓展到 RNA语言模型领域，通过训练 SAE对 RNA LM的 token-
+level隐藏表示进行解释， 发现了可重用的、 位置分辨的特征， 并将其与生物学结构和功能进
+行了对齐 $TRAE_REF。
+技术特点：
+• 完全无监督，不依赖任何 motif标注
+• 特征具有明确的空间定位和序列模式
+• 可发现数据库中尚未收录的新型 motif
+• 特征与功能数据（如稳定性、结合亲和力）的可对齐性为功能基因组学提供了新工具
+2.4 注意力权重解释方法
+代表工作：DNABERT-viz、TF-EPI、BertSNR
+Transformer模型中的自注意力机制天然地编码了序列位置之间的依赖关系。通过分析注意
+力权重矩阵，可以识别对模型预测至关重要的序列片段，进而推断 motif模式。
+DNABERT-viz是 DNABERT配套的 motif可视化工具，其工作流程为：找到连续的高注意
+力区域 → 超几何检验筛选显著 motif实例  → 对齐合并生成 PWM → 用 TOMTOM与已知
+数据库比对验证 $TRAE_REF。
+TF-EPI（Enhancer-Promoter Interaction）从 Transformer最后一层编码器的注意力矩阵出发，
+对所有注意力头取平均， 然后计算每个6-mer对所有 token的平均注意力， 将 6-mer注意力
+分解到单个碱基并归一化，从而实现 de novo motif发现 $TRAE_REF。
+3
+BertSNR（Bioinformatics 2024）则是在 DNA语言模型基础上构建的单核苷酸分辨率 TF结合
+位点识别框架，其 motif分析模块利用模型预测的结合位点信息，通过后处理的 motif发现
+算法识别具有生物学意义的子序列模式 $TRAE_REF。
+MINTS工作进一步系统评估了 DNABERT-2中 QK注意力与已知 motif的相关性， 发现在特
+定层和头中相关性可达 r=0.30，为注意力头作为 motif检测器提供了定量证据。
+技术特点：
+• 直接利用 Transformer内部注意力机制，无需额外训练
+• 可同时捕捉局部 motif和长程调控相互作用
+• 注意力头存在冗余和异质性，需筛选有效头
+• 注意力权重与功能重要性不完全等价
+2.5 图神经网络 Embedding方法
+代表工作：MMGAT
+图神经网络 （GNN）为 motif发现提供了另一种 embedding视角， 即将序列的 k-mer组成建
+模为图结构，通过节点 embedding学习发现 motif模式。
+MMGAT（Multi-scale Motif Graph Attention Network ）是一种用于 ATAC-seq motif发现和
+TFBS预测的图注意力网络框架。其第一层利用注意力机制区分 k-mer节点间权重的相对重
+要性，调整注意力系数以学习 k-mer节点 embedding；第二层使用 GAT进一步聚合信
+息 $TRAE_REF。 该方法的优势在于能够建模不同k-mer之间的共现关系， 发现组合式motif
+模式。
+2.6 特征归因与 In Silico突变分析
+代表方法：ISM、Integrated Gradients、TF-MoDISco
+In Silico Saturation Mutagenesis（ISM）是一种经典的特征归因方法， 通过对序列中每个位置
+进行所有可能的突变， 计算突变对模型输出的影响， 从而构建碱基重要性图谱， 进而识别功
+能 motif。
+ISM虽然计算成本高昂（需要 3L次前向传播， L为序列长度） ，但因其结果的直观性
+和可靠性被广泛用作基准方法。 fastISM等加速算法针对 CNN架构优化了 ISM计算效率
+𝑇 𝑅𝐴𝐸𝑅𝐸𝐹 ](ℎ𝑡𝑡𝑝𝑠 : //𝑎𝑐𝑎𝑑𝑒𝑚𝑖𝑐.𝑜𝑢𝑝.𝑐𝑜𝑚/𝑏𝑖𝑜𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑐𝑠/𝑎𝑟𝑡𝑖𝑐𝑙𝑒/38/9/2397/6541633)。𝑀 𝐷𝐼𝐺（𝑀 𝑢𝑡𝑎𝑡𝑖𝑜𝑛 −
+𝐷𝑖𝑟𝑒𝑐𝑡𝑒𝑑𝐼𝑛𝑡𝑒𝑔𝑟𝑎𝑡𝑒𝑑𝐺𝑟𝑎𝑑𝑖𝑒𝑛𝑡𝑠）则通过积分梯度方法近似𝐼𝑆𝑀 ，实现了高效并行计算[
+TRAE_REF。
+TF-MoDISco 是 另 一 种 重 要 的 motif 发 现 工 具 ， 它 将 基 于 梯 度 的 特 征 归 因 得 分 （ 如
+DeepSHAP）作为输入， 通过序列片段的聚类和比对提取保守motif模式。 该方法已被广泛应
+用于从深度学习模型中提取调控 motif的研究中 $TRAE_REF。
+4
+3. 代表性方法对比
+方 法
+类别
+代表模型 发表期刊/会议 核心技术 监督方
+式
+适 用
+序列
+可
+解
+释
+性
+长
+程
+依
+赖
+CNN
+卷 积
+核
+DeepBind, 
+DeepSEA, 
+scBasset
+Nature Biotech, 
+Cell Systems
+卷 积 核=mo-
+tif检测器
+监督 DNA/
+RNA/
+蛋白
+高 弱
+预 训
+练
+LM
+DNABERT, NT, 
+GPN
+Nature Methods, 
+Bioinformatics
+MLM预训练
+embedding
+自监督 DNA 中 强
+稀 疏
+自 编
+码器
+MotifAE, Inter -
+PLM
+Nat. Commun., Nat. 
+Methods 2025
+SAE 稀 疏 特
+征
+无监督 蛋白/
+RNA/
+DNA
+高 中
+注 意
+力 解
+释
+DNABERT-viz, 
+TF-EPI
+Bioinformatics, 
+BMC Genomics
+注意力权重
+分析
+无监督
+（解释）
+DNA 中 强
+图 神
+经 网
+络
+MMGAT BMC Genomics GAT k-mer
+节 点 embed-
+ding
+半监督DNA（ATAC）中 中
+特 征
+归因
+ISM, TF-
+MoDISco
+Nature Methods等 梯度/突变归
+因
+无监督
+（解释）
+DNA/
+RNA/
+蛋白
+高 中
+4. 关键进展与趋势
+4.1 从监督到无监督：Motif发现范式的转变
+传统 motif发现方法 （包括早期的深度学习方法） 大多依赖监督标注数据， 只能发现已知类型
+的 motif。2024–2025年的一个显著趋势是向完全无监督的范式转变。 以MotifAE和 InterPLM
+为代表的稀疏自编码器方法， 能够从预训练语言模型的embedding空间中自动发现新型功能
+性 motif，而无需任何 motif级别的标注。 这一转变极大地拓展了可发现的motif范围， 为发
+现新的生物学机制提供了可能。
+4.2 从卷积核到稀疏特征：表示空间的精细化
+早期 CNN方法中，一个卷积核对应一个 motif，motif数量受限于卷积核数量（通常为数十
+到数百） 。 而基于SAE的方法将 embedding投射到维度远超原始 embedding的稀疏潜在空间
+5
+（如MotifAE使用数万维稀疏特征） ， 每个特征对应一种精细的序列模式。 这使得模型能够同
+时编码更多样、更精细的 motif，包括弱 motif和条件性 motif。
+4.3 基础模型时代的 Motif发现
+基因组学和蛋白质组学基础模型 （如Nucleotide Transformer、ESM系列、HyenaDNA等） 的快
+速发展为 motif发现提供了更强大的 embedding表示。 这些模型在进化规模的序列数据上预
+训练， 其embedding空间编码了丰富的进化保守信息。 研究表明， 预训练模型的embedding
+质量直接影响下游 motif发现的性能， 区域特异性预训练 （如3′UTR专门模型） 相比全基因
+组通用模型能更好地捕捉区域特有 motif$TRAE_REF。
+4.4 Tokenization的生物学化
+DNA序列的 tokenization方式直接影响 embedding质量和 motif发现能力。从早期的固定
+k-mer（如 DNABERT的 6-mer） ，到 BPE/SentencePiece（DNABERT-2） ，再到最新的 DNAMo-
+tifTokenizer（ICLR 2025）采用 PWM驱动的生物学信息 tokenizer，tokenization正从纯统计方
+法向生物学知情方法演进。DNAMotifTokenizer能够修剪低信息侧翼、 处理反向互补， 并通过
+贪心 trie匹配进行序列分割，为 motif发现提供了更具生物学意义的基本单元 $TRAE_REF。
+4.5 功能对齐与可操控性
+新一代 embedding-based motif 发现方法不仅追求与已知数据库的匹配度，更强调发现的特
+征与功能表型的可对齐性。MotifAE通过门控特征选择将 SAE特征与折叠稳定性数据对齐，
+并成功通过操控特定特征实现蛋白质稳定性设计，展示了 “发现—验证—操控”的完整闭环
+$TRAE_REF。这种从描述性发现到功能性操控的转变，标志着该领域正走向成熟。
+5. 挑战与展望
+5.1 现有挑战
+评估标准的局限性： 当前评估多依赖与已知motif数据库 （如JASPAR、ELM、CIS-BP）的匹
+配度， 但这些数据库本身是不完整的。 新发现的motif可能因数据库未收录而被误判为假阳
+性，导致方法性能被低估。
+计算效率与可扩展性： 高维稀疏自编码器和长序列Transformer模型训练成本高昂， 限制了
+其在大规模基因组扫描中的应用。 如何在保持motif发现精度的同时提升计算效率是一个重
+要问题。
+跨物种/跨组织泛化性：多数方法在特定物种或特定组织上验证，其 embedding表示和发现
+的 motif在多大程度上可跨物种迁移仍有待系统评估。
+motif组合与高阶调控逻辑 ： 生物调控通常涉及多个motif的组合作用 （如增强子中的motif
+语法） 。 当前方法主要关注单个motif的发现， 对motif间组合逻辑和高阶调控语法的建模仍
+显不足。
+6
+5.2 未来方向
+多模态 embedding融合 ： 整合序列、 结构、 表观遗传、 三维基因组等多模态信息的embedding
+表示，将有助于发现更全面的功能 motif。
+单细胞分辨率的 motif发现 ： 随着单细胞测序技术的发展， 从单细胞水平的序列embedding
+中发现细胞类型特异性 motif将成为重要方向。 scBasset等方法已展示了初步潜力。
+基于检索增强的 motif发现 ：Gengram等工作提出将显式 motif记忆模块集成到基因组基础
+模型中， 通过检索增强的方式提升motif发现效率和可解释性 $TRAE_REF。 这一方向值得持
+续关注。
+因果性与可验证性： 当前方法多为相关性发现， 如何建立motif与功能之间的因果关系， 并
+通过实验验证计算发现的 motif，是连接计算生物学与实验生物学的关键桥梁。
+6. 结论
+基于 embedding的序列 motif发现正在经历从 CNN卷积核到预训练语言模型、 从监督到无监
+督、从描述到功能的深刻范式转变。2024–2025年间，以稀疏自编码器为代表的无监督解释
+方法在 Nature Methods、Nature Communications等顶刊上集中涌现，标志着该领域进入了
+新的发展阶段。 同时， 基因组基础模型的快速迭代为motif发现提供了越来越强大的表示基
+础。 未来， 随着方法的不断成熟和多组学数据的进一步整合， 基于embedding的 motif发现
+有望在解码基因调控密码、 理解疾病机制和指导生物工程设计等方面发挥更加重要的作用。
+参考文献
+1. Hou C, Liu D, Shen Y. MotifAE Reveals Functional Motifs from Protein Language Model: 
+Unsupervised Discovery and Interpretability Analysis. Nature Communications, 2025. 
+$TRAE_REF
+2. Simon E, Zou J. InterPLM: discovering interpretable features in protein language models via 
+sparse autoencoders. Nature Methods, 2025. $TRAE_REF
+3. Dalla-Torre L, et al.  Nucleotide Transformer: building and evaluating robust foundation 
+models for human genomics. Nature Methods, 2024. $TRAE_REF
+4. Ji Y, et al. DNABERT: pre-trained Bidirectional Encoder Representations from Transformers 
+model for DNA-language in genome. Bioinformatics, 2021. $TRAE_REF
+5. Nguyen GH, et al. HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide 
+Resolution. NeurIPS, 2023. $TRAE_REF
+6. Alipanahi B, et al. Predicting the sequence specificities of DNA- and RNA-binding proteins 
+by deep learning. Nature Biotechnology, 2015. $TRAE_REF
+7. Zhou J, Troyanskaya OG. Predicting effects of noncoding variants with deep learning-based 
+sequence model. Nature Methods, 2015. $TRAE_REF
+7
+8. Jin V, et al. scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional 
+neural networks. Nature Methods, 2022. $TRAE_REF
+9. Li H, et al. DNAMotifTokenizer: Towards Biologically Informed Tokenization of Genomic 
+Sequences. ICLR, 2025. $TRAE_REF
+10. Sieg J, et al. SAE-RNA: Interpreting RNA language models with sparse autoencoders. bioRxiv, 
+2025. $TRAE_REF
+11. Shrikumar A, et al.  TF-MoDISco: extracting predictive motifs from deep learning models. 
+bioRxiv, 2018. $TRAE_REF
+12. MMGAT: a graph attention network framework for ATAC-seq motifs finding. BMC Genomics, 
+2024. $TRAE_REF
+13. Chen S, et al.  Investigating the performance of foundation models on human 3′UTR 
+sequences. Nucleic Acids Research, 2025. $TRAE_REF
+14. Gengram: Retrieval-Augmented Genomic Foundation Models. arXiv, 2026. $TRAE_REF
+15. Shamail A, McWhite C. Automated Protein Motif Localization using Concept Activation 
+Vectors in Protein Language Model Embedding Space. arXiv, 2025. $TRAE_REF
+8

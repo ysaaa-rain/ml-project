@@ -1,0 +1,9 @@
+split	family	candidate	tolerance_bp	precision	recall	f1	true_positives	prediction_count_positive	prediction_count_control	truth_count	pwm_similarity	reference_eligible	mean_interval_iou_of_predictions	scenario	seed	method	width	candidate_count
+development	0	C21	0	0.920863309352518	1.0	0.9588014981273408	128	128	11	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+development	0	C21	1	0.920863309352518	1.0	0.9588014981273408	128	128	11	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+development	0	C21	2	0.920863309352518	1.0	0.9588014981273408	128	128	11	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+development	0	C21	3	0.920863309352518	1.0	0.9588014981273408	128	128	11	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+test	0	C21	0	0.9411764705882353	1.0	0.9696969696969697	128	128	8	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+test	0	C21	1	0.9411764705882353	1.0	0.9696969696969697	128	128	8	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+test	0	C21	2	0.9411764705882353	1.0	0.9696969696969697	128	128	8	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24
+test	0	C21	3	0.9411764705882353	1.0	0.9696969696969697	128	128	8	128	1.0	True	1.0	S1_strong_fixed	20261012	A1	10	24

@@ -1,0 +1,237 @@
+# PR01-02 Embedding 分支：实验事实汇总
+
+日期：2026-10-10。仅从已有代码、报告和运行表读取、汇总，未新增训练、扫描或统计检验，未修改旧产物。下文 A0=`prokbert`，A1=`tokenwindow`，OH=`onehot`。
+
+**核实结论：A2 主种子共116个保留PWM，45个天然对照显著、0个Shuffle显著，准确。** 范围为 EMB-next-1、六物种、L6/W10、seed=20261005、Development组级检验；显著性使用加入A2后的跨物种探索检验族 `q_new_exploratory≤.05`，每类背景522个检验。不是18次A2运行的总数，不是功能Motif数量。
+
+## 1. 技术路线与实际实现
+
+参考材料 [motif-embedding-methods.pdf](../../../docs/参考资料/motif-embedding-methods.pdf) 第4–5页列出预训练表示的注意力提取、输入重建、Embedding聚类、SAE解释等路线；说明表示模型本身不完成Motif提取。后续章节讨论注意力不等同于因果贡献，以及SAE需要额外训练和特征验证。这些是**路线选项与研究动机**，并没有给本项目指定ProkBERT-mini、PCA=24或K=24。文档中的外部论文案例和性能数字未作为本项目实验事实。
+
+**我们自行确定的方案**是冻结ProkBERT-mini，先实现局部表示→聚类→真实片段→PWM→独立验证的基础闭环，与One-hot共用后端，便于隔离表示差异、控制CPU成本、保留坐标追溯。SAE作为基础候选通过稳定性和富集门槛后的扩展；基础证据不足，因此未启动。注意力解释也未执行。没有注意力/SAE对照，不能宣称这两类方法更差。来源：[README.md](../README.md)、[config.json](../config.json)、[encoder.py](../encoder.py)、[run.py](../run.py)。
+
+| 项目 | 实际设置 |
+| --- | --- |
+| 编码器 | Frozen `neuralbioinfo/prokbert-mini`；eval、关闭梯度，无分类微调 |
+| 模型版本 | revision `feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc`，加载证据在 `audit/model.json` |
+| 真实输入 | TJU六物种81bp，TSS 1-based=61 / 0-based=60；6745条Discovery正序列、967条Development正序列；上下游方向沿用冻结输入 |
+| Token | 6-mer、stride=1；81bp有76个真实Token，排除首尾特殊Token；hidden维度384 |
+| 主设置 | hidden layer6、窗口10bp、步长1；每序列72个窗口 |
+| 降维与聚类 | PCA24（randomized、给定seed）；实际是MiniBatchKMeans，K=24、n_init=5、batch_size=2048；CPU4线程 |
+| PWM | 同长片段，伪计数每位置每碱基0.5；最低20个启动子ID/簇 |
+| 种子 | 真实OH/A0六物种各3种子20261005/06/07；A1六物种主种子，额外2种子只在枯草芽孢杆菌；A2六物种各3种子 |
+
+**实际窗口范围：** 首轮六物种主比较、A1诊断、A2真实对照、首轮toy均默认10bp。首轮枯草芽孢杆菌A0主种子额外运行6/8/12/16bp，L3/W10层消融，以及OH/W16。`multiscale`实际在该物种3种子运行：6/8/10/12/16按共同中心对齐后拼接（1920维），再PCA；用16bp外包络取DNA。缓存所有尺度不代表六物种都执行了全部宽度实验。后续合成单模式主宽10bp、双模式6bp；S3随机强模式另测6/16bp。来源：[run_summary.tsv](../summary/run_summary.tsv)、[benchmark.py](../next_round/benchmark.py)。
+
+设目标窗口W=[s,s+w)，Token区间I_t=[t,t+6)，向量h_t，覆盖数c_b，重合长度o_t=|W∩I_t|：
+
+- **A0**：先碱基平均 g_b=Σ[t:b∈I_t]h_t/c_b，再窗口平均 z_W=Σ[b∈W]g_b/w。Token权重 α_t=Σ[b∈W∩I_t]1/(w·c_b)。
+- **A1**：仅取I_t完整包含于W内的Token，z_W=Σ[t:s≤t,t+6≤s+w]h_t/(w−5)。10bp窗口平均5个Token，6bp窗口仅1个。
+- **A2**：α_t=(o_t/6)/Σ_u(o_u/6)，z_W=Σ_tα_th_t。实现为归一化权重矩阵与Token数组einsum；不是重新编码局部片段。
+
+所有h_t来自整条81bp输入的上下文化表示；A1/A2不能宣称消除了窗口外上下文。公式与实现见 [common.py](../next_round/common.py)、[encoder.py](../encoder.py)。
+
+**聚类到候选的真实步骤：** 对全部Discovery正类窗口拟合PCA及MiniBatchKMeans → 计算每窗口在PCA空间到所属簇中心的欧氏距离 → 每簇按距离升序稳定排序 → 同一启动子ID只保留最近的一个窗口 → 少于20个启动子则弃簇 → 按原始DNA坐标截取同长正向片段，无重新对齐/变长边界 → 计算P(i,b)=(N(i,b)+0.5)/(N+2) → 按簇编号顺序与先保留候选比较，全宽、允许反向互补的中心化cosine≥.95则映射到代表，否则保留 → 保存 `motifs.meme`、Logo、实例、PFM及merge_map。
+
+这里“合并”只是**丢弃相似矩阵、保留较早代表及映射**，没有合并两簇片段重新估计PWM。`instances.tsv`仍含被丢弃候选的实例，首轮 `candidates.tsv`也为去重前候选；最终数必须数 `motifs.meme` 或manifest的motifs。一个簇不保证对应一个最终PWM。同一启动子可进入不同簇；拟合片段按启动子ID去重，未按leakage_group降权，也未按相同DNA字符串去重。
+
+## 2. 六物种主要结果
+
+每格为**保留候选数 / 天然显著数 / Shuffle显著数**。统一主种子20261005；OH/A0/A1取首轮冻结结果，A2取后续轮次，STREME取20261008冻结天然主候选，并在本分支以相同自定义扫描口径重评价。所有显著数使用同一个新增探索族，天然与Shuffle分别BH，每族522个。
+
+| 物种 | One-hot | ProkBERT A0 | A1 | A2 | STREME |
+| --- | --- | --- | --- | --- | --- |
+| 枯草芽孢杆菌 | 24/4/0 | 20/10/0 | 22/4/0 | 19/8/0 | 3/3/0 |
+| 鲍曼不动杆菌 | 24/6/0 | 18/8/0 | 23/5/0 | 19/10/0 | 2/2/0 |
+| 慢生根瘤菌 | 24/0/0 | 20/5/0 | 22/8/0 | 20/7/0 | 4/2/0 |
+| 白喉杆菌 | 24/2/0 | 20/10/0 | 24/10/0 | 22/10/0 | 3/3/0 |
+| 大肠杆菌 | 24/2/0 | 19/6/0 | 23/8/0 | 21/9/0 | 3/2/0 |
+| 葡萄球菌 | 24/14/0 | 13/1/0 | 21/1/0 | 15/1/0 | 2/2/0 |
+| 合计 | 144/28/0 | 110/40/0 | 135/36/0 | 116/45/0 | 17/14/0 |
+
+来源：[primary_seed_counts.tsv](../next_round/real_data_comparison/primary_seed_counts.tsv)、[all_methods_enrichment.tsv](../next_round/real_data_comparison/all_methods_enrichment.tsv)。
+
+旧主种子族只有406个检验（未加入A2），天然显著数为OH27、A0 39、A1 35、STREME14，Shuffle均0。新增族变成OH28、A0 40、A1 36、A2 45、STREME14，**差异来自校正族变化，不是重跑导致性能提升**。旧证据：[baseline_significant_counts.tsv](../summary/baseline_significant_counts.tsv)。
+
+A2三个种子分别保留116/109/113个、天然显著45/32/37个、Shuffle均0；后两个种子的新增族分别402/409个，因为A1其他五物种没有重复种子。因此不能把116说成全部18次运行的候选总数，也不能把跨种子相加当不同新Motif。
+
+STREME原发现为6物种×天然/二核苷酸背景12个运行，搜索宽5–15、order=2、nmotifs=10；只从天然发现结果按内部holdout p≤.05排序，每物种最多5个，精确PWM或精确RC重复去重，合计17个。**STREME内部holdout是Discovery内部10%划分，不是项目Holdout**。其候选规则与Embedding的24簇/≥.95相似去重不同；17个不是双背景所有发现的总数。依据：[run_manifest.json](../../../results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json)。
+
+数量不能直接排名：预算、长度、候选去重与发现目标不同；天然背景有组成差异；一个候选可高度依赖其他候选；q是背景关联而非功能证据。本分支对STREME的Development计数也不是原STREME内部p、严格FIMO位点q或其他主线阶段的计数。
+
+## 3. 三个真实候选的完整例子
+
+选例全部来自**枯草芽孢杆菌、主种子20261005、L6/W10**，用于对比证据类型，不代表六物种总体。共识为每列最大概率碱基（ACGT顺序处理并列），不是IUPAC，也不要求某条实例完全等于共识。位置为Motif中心相对TSS，负值表示上游；以下分布是描述性分位数，无位置富集p/q。
+
+### 例1：EMB_prokbert_C22（A0）
+
+**证据类型：PWM相似而建模位置不一致，GC分层后不支持关联。** 长度10bp，共识 `AAAAAAAAAA`；构建片段266条、启动子ID266个、关联组262个；本代表无其他候选合并到它。Logo：[EMB_prokbert_C22.png](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/EMB_prokbert_C22.png)。
+
+真实建模片段示例：`TTAAAAGTAT`，父ID `tjupan_bacillus_subtilis_main_32a70db45859cbb9`，0-based区间[59,69)，中心相对TSS=3.5bp。完整片段与PWM：[instances.tsv](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/instances.tsv)、[motifs.meme](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/motifs.meme)。
+
+| Development对照 | 命中序列/扫描序列 | 命中组/评价组 |
+| --- | --- | --- |
+| 正启动子 | 13/67 | 13/66 |
+| 天然负例 | 4/77 | 4/77 |
+| 配对Shuffle | 16/67 | 16/66 |
+
+命中阈值=7.68542 bits，严格大于阈值；Development正类命中方向：{'+': 9, '-': 4}。
+
+| 检验 | 效应量 | 原始p | 新探索族q（522） |
+| --- | --- | --- | --- |
+| 天然单侧Fisher | OR=4.47642；命中率 13/66 对 4/77 | 0.00748433 | 0.0283103 |
+| Shuffle配对单侧二项 | 正独有b=6，null独有c=9；率差=-0.045455 | 0.849121 | 1 |
+
+本候选旧406族天然q=0.0313262、Shuffle q=0.999939；单运行q分别0.0156491/0.887718。
+
+| 位置分布 | n | 中位数bp | Q25–Q75 bp | 范围bp |
+| --- | --- | --- | --- | --- |
+| Discovery建模片段 | 266 | -8.50 | [-29.50, -1.50] | [-55.50, 15.50] |
+| Development正类命中 | 13 | -32.50 | [-45.50, -25.50] | [-55.50, 10.50] |
+
+| 匹配种子 | 匹配PWM | 全宽cosine | 建模J精确 | 建模J±2 | 扫描J精确 | 扫描J±2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 20261006 | EMB_prokbert_C05 | 0.9723 | 0.0424 | 0.1917 | 0.1600 | 0.3810 |
+| 20261007 | EMB_prokbert_C07 | 0.9826 | 0.0485 | 0.2789 | 0.7143 | 0.8462 |
+
+GC分层CMH探索：OR=1.23011，p=0.771221，独立CMH族q=0.923645，正组覆盖0.9545、天然组覆盖1.0000。这提示背景组成需考虑，不证明全部关联由GC造成。
+
+与STREME已实际做描述性矩阵比对：最高对应 `1-TATAATAAAWA`，cosine=0.8849、offset=-6、方向+；该对齐仅5列重合（默认最小重合5），无TOMTOM显著性，不能叫同一个功能Motif。[streme_pwm_similarity.tsv](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/streme_pwm_similarity.tsv)。该Embedding候选的已知位点、结合蛋白或功能检验：当前没有证据。
+
+**最终定位：低复杂度A-rich PWM候选；有天然背景关联及矩阵重复性，未获得GC分层和Shuffle的独立支持，不认定新功能模式。**
+
+扫描/检验原表：[development_scans.tsv](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/development_scans.tsv)、[development_enrichment.tsv](../runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/development_enrichment.tsv)；跨种子证据：[tolerance_stability.tsv](../next_round/stability_diagnostics/tolerance_stability.tsv)。
+
+### 例2：A2_C10（A2）
+
+**证据类型：天然富集明显，但Shuffle不支持。** 长度10bp，共识 `TTTTTAAAAA`；构建片段255条、启动子ID255个、关联组250个；本代表无其他候选合并到它。Logo：[A2_C10.png](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/A2_C10.png)。
+
+真实建模片段示例：`TATTGAAACA`，父ID `tjupan_bacillus_subtilis_main_c2d54a415a7d048a`，0-based区间[23,33)，中心相对TSS=-32.5bp。完整片段与PWM：[instances.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/instances.tsv)、[motifs.meme](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/motifs.meme)。
+
+| Development对照 | 命中序列/扫描序列 | 命中组/评价组 |
+| --- | --- | --- |
+| 正启动子 | 20/67 | 20/66 |
+| 天然负例 | 2/77 | 2/77 |
+| 配对Shuffle | 20/67 | 20/66 |
+
+命中阈值=5.72412 bits，严格大于阈值；Development正类命中方向：{'+': 11, '-': 9}。
+
+| 检验 | 效应量 | 原始p | 新探索族q（522） |
+| --- | --- | --- | --- |
+| 天然单侧Fisher | OR=16.3043；命中率 20/66 对 2/77 | 2.9745e-06 | 6.21076e-05 |
+| Shuffle配对单侧二项 | 正独有b=8，null独有c=8；率差=0.000000 | 0.59819 | 1 |
+
+本候选没有旧406族q；A2单运行19候选族q分别为2.82578e-05/0.80651，不能冒充跨六物种q。
+
+| 位置分布 | n | 中位数bp | Q25–Q75 bp | 范围bp |
+| --- | --- | --- | --- | --- |
+| Discovery建模片段 | 255 | -29.50 | [-41.50, -11.50] | [-55.50, 15.50] |
+| Development正类命中 | 20 | -25.50 | [-41.25, -2.50] | [-55.50, 13.50] |
+
+| 匹配种子 | 匹配PWM | 全宽cosine | 建模精确Jaccard |
+| --- | --- | --- | --- |
+| 20261006 | A2_C10 | 0.8945 | 0.0000 |
+| 20261007 | A2_C18 | 0.9051 | 0.0000 |
+
+本A2候选的扫描位点跨种子容差稳定性、候选级CMH、STREME矩阵比对：**未计算**；已知位点/功能对应：**当前没有证据**。已有A2总体矩阵/建模实例匹配不能替代这些检验。
+
+**最终定位：天然背景富集的AT-rich PWM候选；没有超过二核苷酸背景的显著支持，建模精确定位在两次匹配中均为0，不认定新功能模式。**
+
+扫描/检验原表：[development_scans.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/development_scans.tsv)、[development_enrichment.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/development_enrichment.tsv)；跨种子证据：[A2_seed_stability.tsv](../next_round/real_data_comparison/A2_seed_stability.tsv)。
+
+### 例3：A2_C18（A2）
+
+**证据类型：Shuffle原始p较小，BH后仍未获支持。** 长度10bp，共识 `CTCCTTCCTT`；构建片段159条、启动子ID159个、关联组154个；本代表无其他候选合并到它。Logo：[A2_C18.png](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/A2_C18.png)。
+
+真实建模片段示例：`GCCTCTTGTT`，父ID `tjupan_bacillus_subtilis_main_8b7394af6b78d50f`，0-based区间[15,25)，中心相对TSS=-40.5bp。完整片段与PWM：[instances.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/instances.tsv)、[motifs.meme](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/motifs.meme)。
+
+| Development对照 | 命中序列/扫描序列 | 命中组/评价组 |
+| --- | --- | --- |
+| 正启动子 | 9/67 | 9/66 |
+| 天然负例 | 5/77 | 5/77 |
+| 配对Shuffle | 1/67 | 1/66 |
+
+命中阈值=5.19723 bits，严格大于阈值；Development正类命中方向：{'-': 6, '+': 3}。
+
+| 检验 | 效应量 | 原始p | 新探索族q（522） |
+| --- | --- | --- | --- |
+| 天然单侧Fisher | OR=2.27368；命中率 9/66 对 5/77 | 0.125054 | 0.240879 |
+| Shuffle配对单侧二项 | 正独有b=9，null独有c=1；率差=0.121212 | 0.0107422 | 0.560742 |
+
+本候选没有旧406族q；A2单运行19候选族q分别为0.198002/0.204102，不能冒充跨六物种q。
+
+| 位置分布 | n | 中位数bp | Q25–Q75 bp | 范围bp |
+| --- | --- | --- | --- | --- |
+| Discovery建模片段 | 159 | -27.50 | [-40.50, -19.50] | [-55.50, 15.50] |
+| Development正类命中 | 9 | -16.50 | [-19.50, 7.50] | [-42.50, 15.50] |
+
+| 匹配种子 | 匹配PWM | 全宽cosine | 建模精确Jaccard |
+| --- | --- | --- | --- |
+| 20261006 | A2_C21 | 0.9559 | 0.1095 |
+| 20261007 | A2_C15 | 0.9373 | 0.2470 |
+
+本A2候选的扫描位点跨种子容差稳定性、候选级CMH、STREME矩阵比对：**未计算**；已知位点/功能对应：**当前没有证据**。已有A2总体矩阵/建模实例匹配不能替代这些检验。
+
+**最终定位：未校正Shuffle富集趋势的探索候选；两类跨物种q均未通过，不能以p≈.011称为显著发现。**
+
+扫描/检验原表：[development_scans.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/development_scans.tsv)、[development_enrichment.tsv](../next_round/real_data_comparison/tjupan_bacillus_subtilis__A2__s20261005/development_enrichment.tsv)；跨种子证据：[A2_seed_stability.tsv](../next_round/real_data_comparison/A2_seed_stability.tsv)。
+
+## 4. PWM验证的实际执行顺序与结论边界
+
+1. **发现/校准分离。** Discovery正启动子用于PCA、聚类、实例和PWM；标签已用于筛选启动子，但无位点标签指导聚类。Discovery天然负例用于对称零阶背景b（各碱基总数加0.5，再令A=T、C=G）及阈值；不是最终独立检验。真实Development正/天然/Shuffle用于固定PWM验证，反复查看后属于探索性。真实Holdout在本分支未评价；不能据此宣称最终泛化或对照全部方法的最终性能。
+2. **双链最大分扫描。** 对每个PWM、每条序列所有合法起点算 S=Σ_i log₂[P(i,x_i)/b(x_i)]，同时扫描反向互补PWM；每序列仅保留全局最高分位点。并列默认先正链、再较早位置。阈值为该PWM在Discovery天然负序列最大分的95%分位（`method='higher'`），命中严格score>threshold。它是经验序列级校准，不是FIMO单个位点p/q，也不验证同一序列内所有实例。
+3. **天然富集。** 每leakage_group的presence取组内最大值；两类共享组从双方排除。2×2命中/未命中表做Fisher单侧greater，保存OR及0.5校正近似区间。支持给定背景下的出现率关联，不支持因果功能；序列级命中数不等于组数。
+4. **二核苷酸Shuffle。** 复用冻结FASTA，每正序列一个null，ID追加`__dinucleotide_null`并继承父组；原重建seed20261005。随机Euler trail重排相邻碱基边，保持长度、单碱基和二核苷酸计数；不是所有重排均匀抽样。原构建拒绝原序列不变，最多128尝试，Discovery另排除与测试端关联的重排。组级配对后，正独有b、null独有c，p=Pr[Binomial(b+c,.5)≥b]，b+c=0时p=1。支持超出该二核苷酸背景的关联，仍不是功能证明。来源：[shuffle.py](../../../preprocessing/shuffle.py)、[rebuild_audited_data.py](../../../preprocessing/rebuild_audited_data.py)。
+5. **GC诊断。** Discovery/Development按物种/标签看GC均值和20bin分布重合；Development组GC取均值、presence取最大，排除混合组后固定[0,.2,.4,.6,.8,1]分层，层内两类各≥5组才纳入CMH。CMH检验的原假设为共同OR=1，使用双侧检验，独立对406个有限p做BH，不替换原q。保存层效应和覆盖比例。它检查粗GC组成的替代解释，未解决二核苷酸、局部背景和样本来源混杂；只覆盖首轮主种子OH/A0/A1/STREME，没有A2候选级CMH。
+6. **BH范围。** 原单运行`q`：同物种/方法/seed内，本方法保留候选加固定STREME，按天然/Shuffle分开。A2单运行`q_run`仅该运行A2候选。首轮`q_six_species`/后续`q_original`：每seed六物种主配置OH/A0/A1+一份STREME，背景分开；主种子m=406。新增`q_new_exploratory`追加A2、排除A0_recalc，主种子m=522，其他seed m=402/409；其他层/宽消融不入这个主族。各族均不等于把所有尝试过的实验合成一个全局校正，因此整个探索仍需保留选择偏差限制。
+7. **跨种子匹配。** PWM逐列减.25后展平成向量，搜索相对偏移及正/反向互补，cosine取最大；核心同宽10bp比较要求全宽重合，局部诊断另用最低6列。Hungarian一对一匹配最大总相似度；它是描述性匹配，没有矩阵相似p/q。
+8. **位点Jaccard。** 首轮建模集合为(sequence_id,start0)，J=交集/并集。后续在共有ID上一对一比较起点，容差t下匹配m，J=m/(n_a+n_b−m)，未共有ID仍留在分母。物理位置版忽略链；方向版按PWM匹配方向翻转B链并按offset平移。独立扫描只取Development正类present位点。不是逐碱基交并，也不是关联组集合；家族种子配对不是独立生物学重复。200次均匀/经验位置参照没有转换为正式p。
+
+实现依据：[discovery.py](../discovery.py)、[run.py](../run.py)、[real.py](../next_round/real.py)、[summarize.py](../summarize.py)、[collect.py](../next_round/collect.py)、[diagnostics.py](../next_round/diagnostics.py)。扫描位置支持描述性位置/间距观察，未计算候选例子的TSS显著性或组合功能。
+
+## 5. 最重要的结果与适用范围
+
+**矩阵相似而实例不稳。** A0主配置六物种3种子共323个全宽家族配对，全部匹配的PWM cosine中位数0.9159，建模精确Jaccard中位数0.005057。A2对应323对，分别0.9143/0.008052，不能凭小数差异宣称改善。
+
+进一步限定A0全宽cosine≥.8且有共同ID后：
+| 对象 | 家族配对数 | J精确 | J±1bp | J±2bp | J±3bp |
+| --- | --- | --- | --- | --- | --- |
+| Discovery建模片段 | 280 | 0.0054 | 0.0173 | 0.0304 | 0.0465 |
+| Development独立扫描 | 263 | 0.1642 | 0.3333 | 0.3913 | 0.4250 |
+
+上述忽略方向；方向版精确/±2bp分别为建模.0011/.0033、扫描.1579/.3600。两阶段分母和抽取逻辑不同，不能解释成同一组位点得到修复。图：[F02_stability.png](../next_round/figures/F02_stability.png)；表：[A0_stability_summary.tsv](../next_round/stability_diagnostics/A0_stability_summary.tsv)。
+
+**A2等价性。** 窗口6/10/16bp的等价位置分别66/76、62/72、56/66。10bp时s=5…66等价，只有两端各5个位置不同；因为内部每碱基被6个Token覆盖，A0权重变成o_t/(6w)，与归一化A2相同。这是聚合权重事实，不是“模型完全等价”或“定位问题已解决”。边缘变化可通过全局PCA/聚类影响内部候选。六物种主种子的A0同einsum重实现对照候选数均未变、匹配PWM中位cosine均1.0，属于实现控制。依据：[weight_equivalence.tsv](../next_round/pooling_ablation/weight_equivalence.tsv)、[A0_numerical_control.tsv](../next_round/real_data_comparison/A0_numerical_control.tsv)、[F06_pooling.png](../next_round/figures/F06_pooling.png)。
+
+**合成结果。** 九类条件×3种子；每条件Discovery正256、Development正128、独立合成Test正128及相应空白对照，另256条校准对照；共132个表示/窗口拟合。下表是严格参考匹配后的Test±2bp定位F1，3种子均值，双模式再平均2个家族。
+| 条件 | 窗口bp | OH | A0 | A1 | A2 |
+| --- | --- | --- | --- | --- | --- |
+| 强模式固定位置 | 10 | 0.987 | 0.975 | 0.977 | 0.982 |
+| 固定位置15%替换 | 10 | 0.840 | 0.000 | 0.000 | 0.000 |
+| 固定位置30%替换 | 10 | 0.448 | 0.000 | 0.000 | 0.000 |
+| 强模式随机位置 | 10 | 0.981 | 0.970 | 0.982 | 0.992 |
+| 随机位置，背景GC=.25 | 10 | 0.968 | 0.971 | 0.960 | 0.971 |
+| 随机位置，背景GC=.75 | 10 | 0.980 | 0.977 | 0.649 | 0.660 |
+| 双模式gap=17 | 6 | 0.803 | 0.150 | 0.803 | 0.471 |
+| 双模式gap=10–24 | 6 | 0.811 | 0.651 | 0.811 | 0.793 |
+| 随机位置，Markov持续=.7 | 10 | 0.991 | 0.659 | 0.991 | 0.655 |
+
+指标限定：候选与预设真值PWM一对一匹配，cosine≥.8且至少覆盖较短矩阵全宽；扫描方向正确、起点投射误差≤2bp记TP。precision分母包含正序列全部阳性预测和空白对照误报，位置错误计FP且漏真值，recall分母为全部植入真值；每家族每序列仅一个最大分预测。**未过PWM匹配门槛也记0，不等于hidden state无信息。** 真值只用于家族映射和评价、不进拟合；这是参考辅助恢复，非真实功能验证。双模式零值范围可由某家族失败产生，需与逐家族表一起读。
+
+宽度消融（S3随机强模式）：6bp OH/A0/A1/A2=.981/.649/.963/.977；10bp=.981/.970/.982/.992；16bp=.955/0/.624/0。6bp匹配12bp真值只证明部分锚点定位，不能称完整边界恢复。高GC和Markov部分Embedding种子失败，完整min/max在原表，均值非置信区间。
+
+双模式整体gap±3bp恢复率（分母每方法384条Test，包含漏检）：固定gap OH/A0/A1/A2=.6458/0/.6458/.2969；可变gap=.6536/.6536/.6536/.6276。该指标与上表的家族定位F1不同；只画双检出者会漏掉失败，不能据间距图证明真实启动子grammar。
+
+首轮强模式toy的合格候选数：OH3、A0 0；窗口内Token版本OH3、A0 0、A1 1。旧准则是建模片段重叠≥8bp的purity≥.5、PWM全宽相似≥.8且Development q≤.05，**与后续Test定位F1不同，不能拼成提升曲线**。后续严格评价版本保留了原宽松6列局部匹配结果，所有方法统一改为较短矩阵全宽再评价冻结PWM；本次直接使用已保存严格结果，没有改规则。
+
+来源：[strict_test_summary.tsv](../next_round/synthetic_benchmark/strict_test_summary.tsv)、[strict_metrics.tsv](../next_round/synthetic_benchmark/strict_metrics.tsv)、[grammar_summary.tsv](../next_round/synthetic_benchmark/grammar_summary.tsv)、[strict_evaluation.json](../next_round/configs/strict_evaluation.json)、[benchmark.py](../next_round/benchmark.py)、[manifest.json](../synthetic/manifest.json)、[manifest.json](../synthetic_tokenwindow/manifest.json)。已有图：[F07_synthetic.png](../next_round/figures/F07_synthetic.png)、[F08_width.png](../next_round/figures/F08_width.png)、[F09_pair.png](../next_round/figures/F09_pair.png)。
+
+## 6. 能支持与尚未完成的结论
+
+可以说：在本项目冻结ProkBERT-mini+窗口/PCA/聚类/PWM流程和既有合成条件下，One-hot在退化模式及部分宽度/背景条件更可靠；Embedding能产生真实可追溯候选，强模式部分条件表现好，但没有可靠整体额外发现价值。不能说：One-hot在所有启动子/所有预训练表示上都更优，或预训练模型完全无用。本轮合成没有STREME，真实数据没有完整位点真值，不具备总体真实召回率排名。
+
+**本分支当前没有获得独立支持的新功能Motif。** 已完成的是候选发现、PWM恢复、背景关联评价、定位/聚合诊断和受控合成恢复能力分析。天然q通过不等于功能确认，STREME局部相似不等于已知功能对应，候选数量不等于新调控元件数量。
+
+尚未完成：真实Holdout/独立来源的最终候选验证；Embedding候选可靠已知位点/数据库显著匹配；完整真实位点召回率；功能扰动或结合蛋白确认；显著位置/间距/组合机制；A2候选级CMH与独立扫描跨种子容差诊断。A1六物种3种子未齐，A3拟合、A4局部重新编码、SAE、模型微调均未执行。本次不安排补做。
+
+完整研究依据保留在 [REPORT.md](../REPORT.md) 和 [REPORT.md](../next_round/REPORT.md)。本次机器可读提取为 [事实数据.json](事实数据.json)，只汇总原表；候选位置分位数及共识属于允许的简单描述统计，并非新显著性检验。

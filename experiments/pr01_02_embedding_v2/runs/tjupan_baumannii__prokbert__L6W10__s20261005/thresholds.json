@@ -1,0 +1,28 @@
+{
+  "calibration_split": "discovery_natural",
+  "comparison": ">",
+  "target_sequence_fpr": 0.05,
+  "thresholds": {
+    "EMB_prokbert_C00": 4.187792206255125,
+    "EMB_prokbert_C01": 3.0116305386439737,
+    "EMB_prokbert_C02": 7.625772540071142,
+    "EMB_prokbert_C03": 5.853548934848866,
+    "EMB_prokbert_C04": 4.4201128188497245,
+    "EMB_prokbert_C05": 3.917227328739096,
+    "EMB_prokbert_C06": 5.421307604879017,
+    "EMB_prokbert_C08": 6.195955619105153,
+    "EMB_prokbert_C09": 1.7360367631046887,
+    "EMB_prokbert_C10": 3.5633059292391756,
+    "EMB_prokbert_C12": 6.125128688454134,
+    "EMB_prokbert_C13": 4.716600629623159,
+    "EMB_prokbert_C14": 3.896413644992222,
+    "EMB_prokbert_C16": 5.480300129878077,
+    "EMB_prokbert_C19": 3.789556641073894,
+    "EMB_prokbert_C20": 2.9991948899465246,
+    "EMB_prokbert_C21": 4.38782020801055,
+    "EMB_prokbert_C23": 3.5738536028768593,
+    "STREME_1-ATTWTARMADAWWW": 8.130048438252858,
+    "STREME_2-AYAAAAAA": 9.116492679351698
+  },
+  "scan": "maximum zero-order log-odds over both strands; not FIMO site p/q"
+}

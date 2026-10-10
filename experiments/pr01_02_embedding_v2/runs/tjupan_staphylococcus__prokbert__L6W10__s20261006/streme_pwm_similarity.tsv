@@ -1,0 +1,25 @@
+embedding	streme	cosine_similarity	offset	strand	interpretation
+EMB_prokbert_C00	1-WWWATTWTAWYATWW	0.7038121018793446	5	-	descriptive alignment only; no significance
+EMB_prokbert_C00	2-AATATAA	0.6808139143711387	2	+	descriptive alignment only; no significance
+EMB_prokbert_C01	1-WWWATTWTAWYATWW	0.5800381207081116	-9	+	descriptive alignment only; no significance
+EMB_prokbert_C01	2-AATATAA	0.64198290779281	-2	+	descriptive alignment only; no significance
+EMB_prokbert_C02	1-WWWATTWTAWYATWW	0.7050525033843609	-9	+	descriptive alignment only; no significance
+EMB_prokbert_C02	2-AATATAA	0.6645833727447283	5	+	descriptive alignment only; no significance
+EMB_prokbert_C03	1-WWWATTWTAWYATWW	0.6695770930804692	-9	+	descriptive alignment only; no significance
+EMB_prokbert_C03	2-AATATAA	0.6616154788367218	5	+	descriptive alignment only; no significance
+EMB_prokbert_C06	1-WWWATTWTAWYATWW	0.40648744077464605	4	+	descriptive alignment only; no significance
+EMB_prokbert_C06	2-AATATAA	0.5215675602470041	5	-	descriptive alignment only; no significance
+EMB_prokbert_C07	1-WWWATTWTAWYATWW	0.7468353550970137	-8	-	descriptive alignment only; no significance
+EMB_prokbert_C07	2-AATATAA	0.710148294338411	3	+	descriptive alignment only; no significance
+EMB_prokbert_C08	1-WWWATTWTAWYATWW	0.5969672504655393	2	+	descriptive alignment only; no significance
+EMB_prokbert_C08	2-AATATAA	0.6350492277444739	5	-	descriptive alignment only; no significance
+EMB_prokbert_C10	1-WWWATTWTAWYATWW	0.6816058429882343	2	+	descriptive alignment only; no significance
+EMB_prokbert_C10	2-AATATAA	0.7181727422405798	1	-	descriptive alignment only; no significance
+EMB_prokbert_C11	1-WWWATTWTAWYATWW	0.6977685017091007	4	-	descriptive alignment only; no significance
+EMB_prokbert_C11	2-AATATAA	0.6635276809095139	5	+	descriptive alignment only; no significance
+EMB_prokbert_C18	1-WWWATTWTAWYATWW	0.5310157209040187	2	-	descriptive alignment only; no significance
+EMB_prokbert_C18	2-AATATAA	0.4791236781018433	-2	-	descriptive alignment only; no significance
+EMB_prokbert_C20	1-WWWATTWTAWYATWW	0.437066572396344	-6	+	descriptive alignment only; no significance
+EMB_prokbert_C20	2-AATATAA	0.45631973774756485	5	+	descriptive alignment only; no significance
+EMB_prokbert_C22	1-WWWATTWTAWYATWW	0.6914264969793452	-10	-	descriptive alignment only; no significance
+EMB_prokbert_C22	2-AATATAA	0.6766135311352268	2	+	descriptive alignment only; no significance

@@ -1,0 +1,33 @@
+{
+  "calibration_split": "discovery_natural",
+  "comparison": ">",
+  "target_sequence_fpr": 0.05,
+  "thresholds": {
+    "EMB_tokenwindow_C00": 4.863120668991301,
+    "EMB_tokenwindow_C01": 9.116489660727458,
+    "EMB_tokenwindow_C02": 5.348914375877753,
+    "EMB_tokenwindow_C03": 5.651493484622886,
+    "EMB_tokenwindow_C04": 3.7228384367141745,
+    "EMB_tokenwindow_C05": 8.195234278450409,
+    "EMB_tokenwindow_C06": 7.647447956308442,
+    "EMB_tokenwindow_C07": 4.075394458231044,
+    "EMB_tokenwindow_C08": 7.515169222717456,
+    "EMB_tokenwindow_C10": 7.774287415530731,
+    "EMB_tokenwindow_C11": 5.671916802567182,
+    "EMB_tokenwindow_C12": 6.146466075476448,
+    "EMB_tokenwindow_C13": 4.82440797074623,
+    "EMB_tokenwindow_C14": 8.333519327916497,
+    "EMB_tokenwindow_C15": 4.79143681858197,
+    "EMB_tokenwindow_C16": 7.215557073085047,
+    "EMB_tokenwindow_C17": 9.394516026264604,
+    "EMB_tokenwindow_C18": 5.6102511806096995,
+    "EMB_tokenwindow_C19": 9.25157515007609,
+    "EMB_tokenwindow_C21": 5.4985749547104055,
+    "EMB_tokenwindow_C22": 6.62246561382008,
+    "EMB_tokenwindow_C23": 5.949266902222036,
+    "STREME_1-TATAATAAAWA": 7.857664431278852,
+    "STREME_2-TAAAAAWA": 9.267838025520733,
+    "STREME_3-AAAGGAGG": 7.9378779844522525
+  },
+  "scan": "maximum zero-order log-odds over both strands; not FIMO site p/q"
+}

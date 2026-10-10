@@ -1,0 +1,46 @@
+[
+  {
+    "motif": "A0_recalc_C01",
+    "representative": "A0_recalc_C00"
+  },
+  {
+    "motif": "A0_recalc_C03",
+    "representative": "A0_recalc_C00"
+  },
+  {
+    "motif": "A0_recalc_C04",
+    "representative": "A0_recalc_C00"
+  },
+  {
+    "motif": "A0_recalc_C08",
+    "representative": "A0_recalc_C05"
+  },
+  {
+    "motif": "A0_recalc_C11",
+    "representative": "A0_recalc_C02"
+  },
+  {
+    "motif": "A0_recalc_C16",
+    "representative": "A0_recalc_C09"
+  },
+  {
+    "motif": "A0_recalc_C17",
+    "representative": "A0_recalc_C00"
+  },
+  {
+    "motif": "A0_recalc_C18",
+    "representative": "A0_recalc_C00"
+  },
+  {
+    "motif": "A0_recalc_C19",
+    "representative": "A0_recalc_C12"
+  },
+  {
+    "motif": "A0_recalc_C20",
+    "representative": "A0_recalc_C02"
+  },
+  {
+    "motif": "A0_recalc_C23",
+    "representative": "A0_recalc_C06"
+  }
+]

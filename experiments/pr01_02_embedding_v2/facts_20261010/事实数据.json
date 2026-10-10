@@ -1,0 +1,1936 @@
+{
+  "primary_seed": 20261005,
+  "main_width": 10,
+  "main_embedding_layer": 6,
+  "new_family_sizes": [
+    {
+      "seed": 20261005,
+      "control": "natural",
+      "m": 522
+    },
+    {
+      "seed": 20261005,
+      "control": "shuffle",
+      "m": 522
+    },
+    {
+      "seed": 20261006,
+      "control": "natural",
+      "m": 402
+    },
+    {
+      "seed": 20261006,
+      "control": "shuffle",
+      "m": 402
+    },
+    {
+      "seed": 20261007,
+      "control": "natural",
+      "m": 409
+    },
+    {
+      "seed": 20261007,
+      "control": "shuffle",
+      "m": 409
+    }
+  ],
+  "new_counts": [
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 20,
+      "significant_new_family": 10
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 20,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 22,
+      "significant_new_family": 4
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 22,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 19,
+      "significant_new_family": 8
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 19,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 4
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "significant_new_family": 3
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 18,
+      "significant_new_family": 8
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 18,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 23,
+      "significant_new_family": 5
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 23,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 19,
+      "significant_new_family": 10
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 19,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 6
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 2,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 2,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 20,
+      "significant_new_family": 5
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 20,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 22,
+      "significant_new_family": 8
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 22,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 20,
+      "significant_new_family": 7
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 20,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 4,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 4,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 20,
+      "significant_new_family": 10
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 20,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 10
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 22,
+      "significant_new_family": 10
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 22,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "significant_new_family": 3
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 19,
+      "significant_new_family": 6
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 19,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 23,
+      "significant_new_family": 8
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 23,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 21,
+      "significant_new_family": 9
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 21,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A0",
+      "control": "natural",
+      "candidates": 13,
+      "significant_new_family": 1
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A0",
+      "control": "shuffle",
+      "candidates": 13,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A1",
+      "control": "natural",
+      "candidates": 21,
+      "significant_new_family": 1
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A1",
+      "control": "shuffle",
+      "candidates": 21,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A2",
+      "control": "natural",
+      "candidates": 15,
+      "significant_new_family": 1
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "A2",
+      "control": "shuffle",
+      "candidates": 15,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "OH",
+      "control": "natural",
+      "candidates": 24,
+      "significant_new_family": 14
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "OH",
+      "control": "shuffle",
+      "candidates": 24,
+      "significant_new_family": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 2,
+      "significant_new_family": 2
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 2,
+      "significant_new_family": 0
+    }
+  ],
+  "original_counts": [
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "bh_significant": 3
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 3
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 20,
+      "bh_significant": 10
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 20,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 22,
+      "bh_significant": 4
+    },
+    {
+      "source": "tjupan_bacillus_subtilis",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 22,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 2,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 2,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 6
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 18,
+      "bh_significant": 8
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 18,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 23,
+      "bh_significant": 5
+    },
+    {
+      "source": "tjupan_baumannii",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 23,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 4,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 4,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 20,
+      "bh_significant": 4
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 20,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 22,
+      "bh_significant": 7
+    },
+    {
+      "source": "tjupan_bradyrhizobium",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 22,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "bh_significant": 3
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 20,
+      "bh_significant": 10
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 20,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 10
+    },
+    {
+      "source": "tjupan_diphtheria",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 3,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 3,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 19,
+      "bh_significant": 6
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 19,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 23,
+      "bh_significant": 8
+    },
+    {
+      "source": "tjupan_escherichia_coli",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 23,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "STREME",
+      "control": "natural",
+      "candidates": 2,
+      "bh_significant": 2
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "STREME",
+      "control": "shuffle",
+      "candidates": 2,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "onehot",
+      "control": "natural",
+      "candidates": 24,
+      "bh_significant": 14
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "onehot",
+      "control": "shuffle",
+      "candidates": 24,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "prokbert",
+      "control": "natural",
+      "candidates": 13,
+      "bh_significant": 1
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "prokbert",
+      "control": "shuffle",
+      "candidates": 13,
+      "bh_significant": 0
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "tokenwindow",
+      "control": "natural",
+      "candidates": 21,
+      "bh_significant": 1
+    },
+    {
+      "source": "tjupan_staphylococcus",
+      "method": "tokenwindow",
+      "control": "shuffle",
+      "candidates": 21,
+      "bh_significant": 0
+    }
+  ],
+  "examples": [
+    {
+      "method": "A0",
+      "motif": "EMB_prokbert_C22",
+      "source": "tjupan_bacillus_subtilis",
+      "seed": 20261005,
+      "folder": "experiments\\pr01_02_embedding_v2\\runs\\tjupan_bacillus_subtilis__prokbert__L6W10__s20261005",
+      "width": 10,
+      "consensus_argmax": "AAAAAAAAAA",
+      "logo": "experiments\\pr01_02_embedding_v2\\runs\\tjupan_bacillus_subtilis__prokbert__L6W10__s20261005\\EMB_prokbert_C22.png",
+      "instance_fragments": 266,
+      "unique_promoter_ids": 266,
+      "unique_leakage_groups": 262,
+      "construction_center_tss": {
+        "n": 266,
+        "min": -55.5,
+        "q25": -29.5,
+        "median": -8.5,
+        "q75": -1.5,
+        "max": 15.5,
+        "mean": -14.936090225563909
+      },
+      "first_five_fragments": [
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_32a70db45859cbb9",
+          "start0": 59,
+          "end0_exclusive": 69,
+          "sequence": "TTAAAAGTAT",
+          "center_tss": 3.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_ff3d11f785ddd890",
+          "start0": 30,
+          "end0_exclusive": 40,
+          "sequence": "AAAACATATT",
+          "center_tss": -25.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_f7fb3b6a673b2fe9",
+          "start0": 45,
+          "end0_exclusive": 55,
+          "sequence": "AGTTATAATG",
+          "center_tss": -10.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_7c1cf5cd36017844",
+          "start0": 46,
+          "end0_exclusive": 56,
+          "sequence": "ACATAAAATA",
+          "center_tss": -9.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_94d81586c680a254",
+          "start0": 19,
+          "end0_exclusive": 29,
+          "sequence": "CATTAAAATA",
+          "center_tss": -36.5
+        }
+      ],
+      "development": [
+        {
+          "control": "natural",
+          "scanned_sequences": 77,
+          "hit_sequences": 4,
+          "hits_center_tss": {
+            "n": 4,
+            "min": -21.5,
+            "q25": -6.5,
+            "median": 3.5,
+            "q75": 10.0,
+            "max": 14.5,
+            "mean": 0.0
+          },
+          "hit_strands": {
+            "+": 4
+          }
+        },
+        {
+          "control": "positive",
+          "scanned_sequences": 67,
+          "hit_sequences": 13,
+          "hits_center_tss": {
+            "n": 13,
+            "min": -55.5,
+            "q25": -45.5,
+            "median": -32.5,
+            "q75": -25.5,
+            "max": 10.5,
+            "mean": -31.884615384615383
+          },
+          "hit_strands": {
+            "+": 9,
+            "-": 4
+          }
+        },
+        {
+          "control": "shuffle",
+          "scanned_sequences": 67,
+          "hit_sequences": 16,
+          "hits_center_tss": {
+            "n": 16,
+            "min": -52.5,
+            "q25": -37.25,
+            "median": -32.5,
+            "q75": -12.75,
+            "max": 11.5,
+            "mean": -25.25
+          },
+          "hit_strands": {
+            "+": 12,
+            "-": 4
+          }
+        }
+      ],
+      "enrichment": [
+        {
+          "motif": "EMB_prokbert_C22",
+          "method": "A0",
+          "control": "natural",
+          "threshold": 7.685416278084693,
+          "test": "group_fisher",
+          "positive_groups": 66,
+          "control_groups": 77,
+          "positive_hits": 13,
+          "control_hits": 4,
+          "odds_ratio": 4.476415094339623,
+          "p": 0.0074843290201729,
+          "or_ci_low": 1.3400193496602235,
+          "or_ci_high": 12.676476452103037,
+          "shared_groups_excluded": 0.0,
+          "discordant_pos_only": null,
+          "discordant_null_only": null,
+          "q": 0.0156490515876343,
+          "run": "tjupan_bacillus_subtilis__prokbert__L6W10__s20261005",
+          "source": "tjupan_bacillus_subtilis",
+          "layer": 6.0,
+          "width": 10.0,
+          "seed": 20261005,
+          "q_original": 0.031326160641136,
+          "q_run": null,
+          "q_new_exploratory": 0.0283102880328279
+        },
+        {
+          "motif": "EMB_prokbert_C22",
+          "method": "A0",
+          "control": "shuffle",
+          "threshold": 7.685416278084693,
+          "test": "paired_binomial",
+          "positive_groups": 66,
+          "control_groups": 66,
+          "positive_hits": 13,
+          "control_hits": 16,
+          "odds_ratio": null,
+          "p": 0.84912109375,
+          "or_ci_low": null,
+          "or_ci_high": null,
+          "shared_groups_excluded": null,
+          "discordant_pos_only": 6.0,
+          "discordant_null_only": 9.0,
+          "q": 0.8877175071022727,
+          "run": "tjupan_bacillus_subtilis__prokbert__L6W10__s20261005",
+          "source": "tjupan_bacillus_subtilis",
+          "layer": 6.0,
+          "width": 10.0,
+          "seed": 20261005,
+          "q_original": 0.9999394416809082,
+          "q_run": null,
+          "q_new_exploratory": 1.0
+        }
+      ],
+      "merge_map_for_candidate": [],
+      "seed_stability": [
+        {
+          "stage": "discovery_instances",
+          "seed_a": 20261005,
+          "seed_b": 20261006,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C05",
+          "pwm_similarity": 0.9722527593506314,
+          "alignment_orientation": "+",
+          "tolerance_bp": 0,
+          "n_a": 266,
+          "n_b": 250,
+          "common_sequence_ids": 179,
+          "physical_position_jaccard": 0.0424242424242424,
+          "direction_aware_aligned_jaccard": 0.0424242424242424
+        },
+        {
+          "stage": "discovery_instances",
+          "seed_a": 20261005,
+          "seed_b": 20261006,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C05",
+          "pwm_similarity": 0.9722527593506314,
+          "alignment_orientation": "+",
+          "tolerance_bp": 2,
+          "n_a": 266,
+          "n_b": 250,
+          "common_sequence_ids": 179,
+          "physical_position_jaccard": 0.1916859122401847,
+          "direction_aware_aligned_jaccard": 0.1916859122401847
+        },
+        {
+          "stage": "development_scans",
+          "seed_a": 20261005,
+          "seed_b": 20261006,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C05",
+          "pwm_similarity": 0.9722527593506314,
+          "alignment_orientation": "+",
+          "tolerance_bp": 0,
+          "n_a": 13,
+          "n_b": 16,
+          "common_sequence_ids": 10,
+          "physical_position_jaccard": 0.16,
+          "direction_aware_aligned_jaccard": 0.16
+        },
+        {
+          "stage": "development_scans",
+          "seed_a": 20261005,
+          "seed_b": 20261006,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C05",
+          "pwm_similarity": 0.9722527593506314,
+          "alignment_orientation": "+",
+          "tolerance_bp": 2,
+          "n_a": 13,
+          "n_b": 16,
+          "common_sequence_ids": 10,
+          "physical_position_jaccard": 0.3809523809523809,
+          "direction_aware_aligned_jaccard": 0.3809523809523809
+        },
+        {
+          "stage": "discovery_instances",
+          "seed_a": 20261005,
+          "seed_b": 20261007,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C07",
+          "pwm_similarity": 0.9825888916711136,
+          "alignment_orientation": "+",
+          "tolerance_bp": 0,
+          "n_a": 266,
+          "n_b": 188,
+          "common_sequence_ids": 161,
+          "physical_position_jaccard": 0.0484988452655889,
+          "direction_aware_aligned_jaccard": 0.0484988452655889
+        },
+        {
+          "stage": "discovery_instances",
+          "seed_a": 20261005,
+          "seed_b": 20261007,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C07",
+          "pwm_similarity": 0.9825888916711136,
+          "alignment_orientation": "+",
+          "tolerance_bp": 2,
+          "n_a": 266,
+          "n_b": 188,
+          "common_sequence_ids": 161,
+          "physical_position_jaccard": 0.2788732394366197,
+          "direction_aware_aligned_jaccard": 0.2788732394366197
+        },
+        {
+          "stage": "development_scans",
+          "seed_a": 20261005,
+          "seed_b": 20261007,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C07",
+          "pwm_similarity": 0.9825888916711136,
+          "alignment_orientation": "+",
+          "tolerance_bp": 0,
+          "n_a": 13,
+          "n_b": 11,
+          "common_sequence_ids": 11,
+          "physical_position_jaccard": 0.7142857142857143,
+          "direction_aware_aligned_jaccard": 0.7142857142857143
+        },
+        {
+          "stage": "development_scans",
+          "seed_a": 20261005,
+          "seed_b": 20261007,
+          "motif_a": "EMB_prokbert_C22",
+          "motif_b": "EMB_prokbert_C07",
+          "pwm_similarity": 0.9825888916711136,
+          "alignment_orientation": "+",
+          "tolerance_bp": 2,
+          "n_a": 13,
+          "n_b": 11,
+          "common_sequence_ids": 11,
+          "physical_position_jaccard": 0.8461538461538461,
+          "direction_aware_aligned_jaccard": 0.8461538461538461
+        }
+      ],
+      "streme_alignment": [
+        {
+          "embedding": "EMB_prokbert_C22",
+          "streme": "1-TATAATAAAWA",
+          "cosine_similarity": 0.8848980424450115,
+          "offset": -6,
+          "strand": "+",
+          "interpretation": "descriptive alignment only; no significance"
+        },
+        {
+          "embedding": "EMB_prokbert_C22",
+          "streme": "2-TAAAAAWA",
+          "cosine_similarity": 0.8366192333471346,
+          "offset": -2,
+          "strand": "+",
+          "interpretation": "descriptive alignment only; no significance"
+        },
+        {
+          "embedding": "EMB_prokbert_C22",
+          "streme": "3-AAAGGAGG",
+          "cosine_similarity": 0.3741125384045886,
+          "offset": 4,
+          "strand": "+",
+          "interpretation": "descriptive alignment only; no significance"
+        }
+      ],
+      "gc_adjustment": [
+        {
+          "source": "tjupan_bacillus_subtilis",
+          "method": "prokbert",
+          "motif": "EMB_prokbert_C22",
+          "pwm_gc": 0.1757462684,
+          "natural_risk_difference": 0.145021645021645,
+          "original_natural_q": 0.031326160641136,
+          "cmh_or_exploratory": 1.2301075268817203,
+          "cmh_p_exploratory": 0.7712208622312748,
+          "cmh_positive_coverage": 0.9545454545454546,
+          "cmh_natural_coverage": 1.0,
+          "cmh_q_exploratory": 0.9236450444421758
+        }
+      ],
+      "known_function_support": "No independent known-site/function validation for this candidate in branch artifacts"
+    },
+    {
+      "method": "A2",
+      "motif": "A2_C10",
+      "source": "tjupan_bacillus_subtilis",
+      "seed": 20261005,
+      "folder": "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261005",
+      "width": 10,
+      "consensus_argmax": "TTTTTAAAAA",
+      "logo": "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261005\\A2_C10.png",
+      "instance_fragments": 255,
+      "unique_promoter_ids": 255,
+      "unique_leakage_groups": 250,
+      "construction_center_tss": {
+        "n": 255,
+        "min": -55.5,
+        "q25": -41.5,
+        "median": -29.5,
+        "q75": -11.5,
+        "max": 15.5,
+        "mean": -25.65686274509804
+      },
+      "first_five_fragments": [
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_c2d54a415a7d048a",
+          "start0": 23,
+          "end0_exclusive": 33,
+          "sequence": "TATTGAAACA",
+          "center_tss": -32.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_8b7394af6b78d50f",
+          "start0": 46,
+          "end0_exclusive": 56,
+          "sequence": "ACTTTAAATT",
+          "center_tss": -9.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_fe2a626ec63a594e",
+          "start0": 51,
+          "end0_exclusive": 61,
+          "sequence": "ACTAATTTCA",
+          "center_tss": -4.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_8a0979b032bb35c1",
+          "start0": 4,
+          "end0_exclusive": 14,
+          "sequence": "CTAAACAATT",
+          "center_tss": -51.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_daaf0c7fa42ef2fa",
+          "start0": 49,
+          "end0_exclusive": 59,
+          "sequence": "ACCATTTAAA",
+          "center_tss": -6.5
+        }
+      ],
+      "development": [
+        {
+          "control": "natural",
+          "scanned_sequences": 77,
+          "hit_sequences": 2,
+          "hits_center_tss": {
+            "n": 2,
+            "min": -0.5,
+            "q25": 2.5,
+            "median": 5.5,
+            "q75": 8.5,
+            "max": 11.5,
+            "mean": 5.5
+          },
+          "hit_strands": {
+            "-": 1,
+            "+": 1
+          }
+        },
+        {
+          "control": "positive",
+          "scanned_sequences": 67,
+          "hit_sequences": 20,
+          "hits_center_tss": {
+            "n": 20,
+            "min": -55.5,
+            "q25": -41.25,
+            "median": -25.5,
+            "q75": -2.5,
+            "max": 13.5,
+            "mean": -21.05
+          },
+          "hit_strands": {
+            "+": 11,
+            "-": 9
+          }
+        },
+        {
+          "control": "shuffle",
+          "scanned_sequences": 67,
+          "hit_sequences": 20,
+          "hits_center_tss": {
+            "n": 20,
+            "min": -54.5,
+            "q25": -35.0,
+            "median": -27.0,
+            "q75": -11.5,
+            "max": 5.5,
+            "mean": -23.75
+          },
+          "hit_strands": {
+            "+": 11,
+            "-": 9
+          }
+        }
+      ],
+      "enrichment": [
+        {
+          "motif": "A2_C10",
+          "method": "A2",
+          "control": "natural",
+          "threshold": 5.724121529627166,
+          "test": null,
+          "positive_groups": 66,
+          "control_groups": 77,
+          "positive_hits": 20,
+          "control_hits": 2,
+          "odds_ratio": 16.304347826086957,
+          "p": 2.9745029848258773e-06,
+          "or_ci_low": 3.407235753489352,
+          "or_ci_high": 52.02517118862911,
+          "shared_groups_excluded": 0.0,
+          "discordant_pos_only": null,
+          "discordant_null_only": null,
+          "q": null,
+          "run": null,
+          "source": "tjupan_bacillus_subtilis",
+          "layer": null,
+          "width": null,
+          "seed": 20261005,
+          "q_original": null,
+          "q_run": 2.8257778355845835e-05,
+          "q_new_exploratory": 6.210762232316432e-05
+        },
+        {
+          "motif": "A2_C10",
+          "method": "A2",
+          "control": "shuffle",
+          "threshold": 5.724121529627166,
+          "test": null,
+          "positive_groups": 66,
+          "control_groups": 66,
+          "positive_hits": 20,
+          "control_hits": 20,
+          "odds_ratio": null,
+          "p": 0.5981903076171875,
+          "or_ci_low": null,
+          "or_ci_high": null,
+          "shared_groups_excluded": null,
+          "discordant_pos_only": 8.0,
+          "discordant_null_only": 8.0,
+          "q": null,
+          "run": null,
+          "source": "tjupan_bacillus_subtilis",
+          "layer": null,
+          "width": null,
+          "seed": 20261005,
+          "q_original": null,
+          "q_run": 0.8065104166666667,
+          "q_new_exploratory": 1.0
+        }
+      ],
+      "merge_map_for_candidate": [],
+      "seed_stability": [
+        {
+          "source": "tjupan_bacillus_subtilis",
+          "run_a": "tjupan_bacillus_subtilis__A2__s20261005",
+          "run_b": "tjupan_bacillus_subtilis__A2__s20261006",
+          "motif_a": "A2_C10",
+          "motif_b": "A2_C10",
+          "full_pwm_similarity": 0.8945296907685114,
+          "instance_exact_jaccard": 0.0
+        },
+        {
+          "source": "tjupan_bacillus_subtilis",
+          "run_a": "tjupan_bacillus_subtilis__A2__s20261005",
+          "run_b": "tjupan_bacillus_subtilis__A2__s20261007",
+          "motif_a": "A2_C10",
+          "motif_b": "A2_C18",
+          "full_pwm_similarity": 0.905146094500468,
+          "instance_exact_jaccard": 0.0
+        }
+      ],
+      "streme_alignment": "not calculated for A2 in existing artifacts",
+      "gc_adjustment": "not calculated for A2; existing CMH used first-round main seed candidates",
+      "known_function_support": "No independent known-site/function validation for this candidate in branch artifacts"
+    },
+    {
+      "method": "A2",
+      "motif": "A2_C18",
+      "source": "tjupan_bacillus_subtilis",
+      "seed": 20261005,
+      "folder": "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261005",
+      "width": 10,
+      "consensus_argmax": "CTCCTTCCTT",
+      "logo": "experiments\\pr01_02_embedding_v2\\next_round\\real_data_comparison\\tjupan_bacillus_subtilis__A2__s20261005\\A2_C18.png",
+      "instance_fragments": 159,
+      "unique_promoter_ids": 159,
+      "unique_leakage_groups": 154,
+      "construction_center_tss": {
+        "n": 159,
+        "min": -55.5,
+        "q25": -40.5,
+        "median": -27.5,
+        "q75": -19.5,
+        "max": 15.5,
+        "mean": -27.871069182389938
+      },
+      "first_five_fragments": [
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_8b7394af6b78d50f",
+          "start0": 15,
+          "end0_exclusive": 25,
+          "sequence": "GCCTCTTGTT",
+          "center_tss": -40.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_8f9b814f5e8b18ae",
+          "start0": 33,
+          "end0_exclusive": 43,
+          "sequence": "CGCTGTTCCA",
+          "center_tss": -22.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_7a6037ae36a0870c",
+          "start0": 6,
+          "end0_exclusive": 16,
+          "sequence": "GCAACTCTTC",
+          "center_tss": -49.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_0b565809576a9e0f",
+          "start0": 9,
+          "end0_exclusive": 19,
+          "sequence": "ATTCACTCTG",
+          "center_tss": -46.5
+        },
+        {
+          "sequence_id": "tjupan_bacillus_subtilis_main_5d881eac8b46d627",
+          "start0": 22,
+          "end0_exclusive": 32,
+          "sequence": "TCCTCATTTG",
+          "center_tss": -33.5
+        }
+      ],
+      "development": [
+        {
+          "control": "natural",
+          "scanned_sequences": 77,
+          "hit_sequences": 5,
+          "hits_center_tss": {
+            "n": 5,
+            "min": -53.5,
+            "q25": -22.5,
+            "median": 7.5,
+            "q75": 7.5,
+            "max": 9.5,
+            "mean": -10.3
+          },
+          "hit_strands": {
+            "-": 4,
+            "+": 1
+          }
+        },
+        {
+          "control": "positive",
+          "scanned_sequences": 67,
+          "hit_sequences": 9,
+          "hits_center_tss": {
+            "n": 9,
+            "min": -42.5,
+            "q25": -19.5,
+            "median": -16.5,
+            "q75": 7.5,
+            "max": 15.5,
+            "mean": -11.277777777777779
+          },
+          "hit_strands": {
+            "-": 6,
+            "+": 3
+          }
+        },
+        {
+          "control": "shuffle",
+          "scanned_sequences": 67,
+          "hit_sequences": 1,
+          "hits_center_tss": {
+            "n": 1,
+            "min": -17.5,
+            "q25": -17.5,
+            "median": -17.5,
+            "q75": -17.5,
+            "max": -17.5,
+            "mean": -17.5
+          },
+          "hit_strands": {
+            "-": 1
+          }
+        }
+      ],
+      "enrichment": [
+        {
+          "motif": "A2_C18",
+          "method": "A2",
+          "control": "natural",
+          "threshold": 5.197225355557277,
+          "test": null,
+          "positive_groups": 66,
+          "control_groups": 77,
+          "positive_hits": 9,
+          "control_hits": 5,
+          "odds_ratio": 2.273684210526316,
+          "p": 0.1250541018124704,
+          "or_ci_low": 0.7208028695873622,
+          "or_ci_high": 6.580299311892156,
+          "shared_groups_excluded": 0.0,
+          "discordant_pos_only": null,
+          "discordant_null_only": null,
+          "q": null,
+          "run": null,
+          "source": "tjupan_bacillus_subtilis",
+          "layer": null,
+          "width": null,
+          "seed": 20261005,
+          "q_original": null,
+          "q_run": 0.1980023278697448,
+          "q_new_exploratory": 0.2408791186203304
+        },
+        {
+          "motif": "A2_C18",
+          "method": "A2",
+          "control": "shuffle",
+          "threshold": 5.197225355557277,
+          "test": null,
+          "positive_groups": 66,
+          "control_groups": 66,
+          "positive_hits": 9,
+          "control_hits": 1,
+          "odds_ratio": null,
+          "p": 0.0107421875,
+          "or_ci_low": null,
+          "or_ci_high": null,
+          "shared_groups_excluded": null,
+          "discordant_pos_only": 9.0,
+          "discordant_null_only": 1.0,
+          "q": null,
+          "run": null,
+          "source": "tjupan_bacillus_subtilis",
+          "layer": null,
+          "width": null,
+          "seed": 20261005,
+          "q_original": null,
+          "q_run": 0.2041015625,
+          "q_new_exploratory": 0.5607421875
+        }
+      ],
+      "merge_map_for_candidate": [],
+      "seed_stability": [
+        {
+          "source": "tjupan_bacillus_subtilis",
+          "run_a": "tjupan_bacillus_subtilis__A2__s20261005",
+          "run_b": "tjupan_bacillus_subtilis__A2__s20261006",
+          "motif_a": "A2_C18",
+          "motif_b": "A2_C21",
+          "full_pwm_similarity": 0.9559077803645636,
+          "instance_exact_jaccard": 0.1094890510948905
+        },
+        {
+          "source": "tjupan_bacillus_subtilis",
+          "run_a": "tjupan_bacillus_subtilis__A2__s20261005",
+          "run_b": "tjupan_bacillus_subtilis__A2__s20261007",
+          "motif_a": "A2_C18",
+          "motif_b": "A2_C15",
+          "full_pwm_similarity": 0.9373010257681684,
+          "instance_exact_jaccard": 0.247011952191235
+        }
+      ],
+      "streme_alignment": "not calculated for A2 in existing artifacts",
+      "gc_adjustment": "not calculated for A2; existing CMH used first-round main seed candidates",
+      "known_function_support": "No independent known-site/function validation for this candidate in branch artifacts"
+    }
+  ],
+  "first_round_A0_stability": {
+    "pwm_family_pairs": 323,
+    "all_family_median_pwm_cosine": 0.9159021702984774,
+    "all_family_median_exact_jaccard": 0.0050568900126422
+  },
+  "A0_tolerance_summary": [
+    {
+      "stage": "development_scans",
+      "tolerance_bp": 0,
+      "paired_families": 263,
+      "position_only_median": 0.1641791044776119,
+      "direction_aware_median": 0.1578947368421052,
+      "uniform_null_median": 0.0040974529346622
+    },
+    {
+      "stage": "development_scans",
+      "tolerance_bp": 1,
+      "paired_families": 263,
+      "position_only_median": 0.3333333333333333,
+      "direction_aware_median": 0.3055555555555556,
+      "uniform_null_median": 0.0123809523809523
+    },
+    {
+      "stage": "development_scans",
+      "tolerance_bp": 2,
+      "paired_families": 263,
+      "position_only_median": 0.391304347826087,
+      "direction_aware_median": 0.36,
+      "uniform_null_median": 0.021856136447905
+    },
+    {
+      "stage": "development_scans",
+      "tolerance_bp": 3,
+      "paired_families": 263,
+      "position_only_median": 0.425,
+      "direction_aware_median": 0.3720930232558139,
+      "uniform_null_median": 0.0295318144853249
+    },
+    {
+      "stage": "discovery_instances",
+      "tolerance_bp": 0,
+      "paired_families": 280,
+      "position_only_median": 0.005398709070615,
+      "direction_aware_median": 0.0011251517911353,
+      "uniform_null_median": 0.0013132530717833
+    },
+    {
+      "stage": "discovery_instances",
+      "tolerance_bp": 1,
+      "paired_families": 280,
+      "position_only_median": 0.0172859820956659,
+      "direction_aware_median": 0.0018531929960087,
+      "uniform_null_median": 0.0039619055533387
+    },
+    {
+      "stage": "discovery_instances",
+      "tolerance_bp": 2,
+      "paired_families": 280,
+      "position_only_median": 0.0304330254527696,
+      "direction_aware_median": 0.0033071920226838,
+      "uniform_null_median": 0.0062604995406232
+    },
+    {
+      "stage": "discovery_instances",
+      "tolerance_bp": 3,
+      "paired_families": 280,
+      "position_only_median": 0.0465042420942788,
+      "direction_aware_median": 0.0043682601046979,
+      "uniform_null_median": 0.0084429616619354
+    }
+  ],
+  "A2_all_family_stability": {
+    "pairs": 323,
+    "median_pwm_cosine": 0.914251398484752,
+    "median_exact_jaccard": 0.0080515297906602
+  },
+  "pooling_equivalence": [
+    {
+      "width": 6,
+      "windows": 76,
+      "equivalent": 66
+    },
+    {
+      "width": 10,
+      "windows": 72,
+      "equivalent": 62
+    },
+    {
+      "width": 16,
+      "windows": 66,
+      "equivalent": 56
+    }
+  ],
+  "synthetic_test_summary": [
+    {
+      "scenario": "S1_strong_fixed",
+      "method": "A0",
+      "mean": 0.9748509001009976,
+      "min": 0.962406015037594,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S1_strong_fixed",
+      "method": "A1",
+      "mean": 0.9771371969845252,
+      "min": 0.9696969696969696,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S1_strong_fixed",
+      "method": "A2",
+      "mean": 0.982119712311868,
+      "min": 0.9770992366412212,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S1_strong_fixed",
+      "method": "OH",
+      "mean": 0.9871497871497872,
+      "min": 0.9846153846153848,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S2_mut15_fixed",
+      "method": "A0",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut15_fixed",
+      "method": "A1",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut15_fixed",
+      "method": "A2",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut15_fixed",
+      "method": "OH",
+      "mean": 0.8401440916900055,
+      "min": 0.7963800904977376,
+      "max": 0.8680851063829788
+    },
+    {
+      "scenario": "S2_mut30_fixed",
+      "method": "A0",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut30_fixed",
+      "method": "A1",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut30_fixed",
+      "method": "A2",
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "scenario": "S2_mut30_fixed",
+      "method": "OH",
+      "mean": 0.4484528520140785,
+      "min": 0.4293785310734463,
+      "max": 0.4777777777777778
+    },
+    {
+      "scenario": "S3_strong_random",
+      "method": "A0",
+      "mean": 0.9698454116364564,
+      "min": 0.955223880597015,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S3_strong_random",
+      "method": "A1",
+      "mean": 0.982100402790058,
+      "min": 0.9808429118773946,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S3_strong_random",
+      "method": "A2",
+      "mean": 0.9922777611493564,
+      "min": 0.9846153846153848,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S3_strong_random",
+      "method": "OH",
+      "mean": 0.980852511044667,
+      "min": 0.9770992366412212,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S4_gc25_random",
+      "method": "A0",
+      "mean": 0.9709608438658958,
+      "min": 0.9588014981273408,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S4_gc25_random",
+      "method": "A1",
+      "mean": 0.9601167909363156,
+      "min": 0.9372693726937268,
+      "max": 0.973384030418251
+    },
+    {
+      "scenario": "S4_gc25_random",
+      "method": "A2",
+      "mean": 0.9708867051356864,
+      "min": 0.9657794676806084,
+      "max": 0.9808429118773946
+    },
+    {
+      "scenario": "S4_gc25_random",
+      "method": "OH",
+      "mean": 0.9684956717176048,
+      "min": 0.962406015037594,
+      "max": 0.973384030418251
+    },
+    {
+      "scenario": "S4_gc75_random",
+      "method": "A0",
+      "mean": 0.977277957053238,
+      "min": 0.9588014981273408,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S4_gc75_random",
+      "method": "A1",
+      "mean": 0.6490071332176596,
+      "min": 0.0,
+      "max": 0.9846153846153848
+    },
+    {
+      "scenario": "S4_gc75_random",
+      "method": "A2",
+      "mean": 0.6602216834774975,
+      "min": 0.0,
+      "max": 0.992248062015504
+    },
+    {
+      "scenario": "S4_gc75_random",
+      "method": "OH",
+      "mean": 0.9797466639571902,
+      "min": 0.962406015037594,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A0",
+      "mean": 0.1501272264631043,
+      "min": 0.0,
+      "max": 0.900763358778626
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A1",
+      "mean": 0.8029747272813315,
+      "min": 0.0,
+      "max": 0.9808429118773946
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A2",
+      "mean": 0.4709993893296978,
+      "min": 0.0,
+      "max": 0.9808429118773946
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "OH",
+      "mean": 0.8029747272813315,
+      "min": 0.0,
+      "max": 0.9808429118773946
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A0",
+      "mean": 0.6512868486771614,
+      "min": 0.0,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A1",
+      "mean": 0.8109292496988726,
+      "min": 0.0,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A2",
+      "mean": 0.7933610074799446,
+      "min": 0.0,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "OH",
+      "mean": 0.8109292496988726,
+      "min": 0.0,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S7_markov_random",
+      "method": "A0",
+      "mean": 0.6589446589446589,
+      "min": 0.0,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S7_markov_random",
+      "method": "A1",
+      "mean": 0.9909809754167732,
+      "min": 0.9884169884169884,
+      "max": 0.9961089494163424
+    },
+    {
+      "scenario": "S7_markov_random",
+      "method": "A2",
+      "mean": 0.6551720750194032,
+      "min": 0.0,
+      "max": 0.9884169884169884
+    },
+    {
+      "scenario": "S7_markov_random",
+      "method": "OH",
+      "mean": 0.9909907986824104,
+      "min": 0.9846153846153848,
+      "max": 0.9961089494163424
+    }
+  ],
+  "synthetic_grammar_summary": [
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "OH",
+      "test_pairs": 384,
+      "both_detected": 254,
+      "correct_order_rate_all_pairs": 0.6510416666666666,
+      "gap_within3_rate_all_pairs": 0.6458333333333334
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A0",
+      "test_pairs": 384,
+      "both_detected": 0,
+      "correct_order_rate_all_pairs": 0.0,
+      "gap_within3_rate_all_pairs": 0.0
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A1",
+      "test_pairs": 384,
+      "both_detected": 254,
+      "correct_order_rate_all_pairs": 0.6510416666666666,
+      "gap_within3_rate_all_pairs": 0.6458333333333334
+    },
+    {
+      "scenario": "S5_pair_fixed",
+      "method": "A2",
+      "test_pairs": 384,
+      "both_detected": 119,
+      "correct_order_rate_all_pairs": 0.2994791666666667,
+      "gap_within3_rate_all_pairs": 0.296875
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "OH",
+      "test_pairs": 384,
+      "both_detected": 256,
+      "correct_order_rate_all_pairs": 0.65625,
+      "gap_within3_rate_all_pairs": 0.6536458333333334
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A0",
+      "test_pairs": 384,
+      "both_detected": 256,
+      "correct_order_rate_all_pairs": 0.65625,
+      "gap_within3_rate_all_pairs": 0.6536458333333334
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A1",
+      "test_pairs": 384,
+      "both_detected": 256,
+      "correct_order_rate_all_pairs": 0.65625,
+      "gap_within3_rate_all_pairs": 0.6536458333333334
+    },
+    {
+      "scenario": "S6_pair_variable",
+      "method": "A2",
+      "test_pairs": 384,
+      "both_detected": 246,
+      "correct_order_rate_all_pairs": 0.6302083333333334,
+      "gap_within3_rate_all_pairs": 0.6276041666666666
+    }
+  ]
+}

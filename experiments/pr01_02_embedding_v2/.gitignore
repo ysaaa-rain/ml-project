@@ -1,0 +1,9 @@
+cache/
+synthetic/cache/
+synthetic_tokenwindow/cache/
+model_cache/
+runs/**/base_*.npy
+runs/**/token_*.npy
+runs/**/window_*.npy
+runs/**/fitted.joblib
+next_round/synthetic_benchmark/**/token_*.npy
