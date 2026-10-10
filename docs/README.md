@@ -31,3 +31,10 @@
 本轮已废止 GC-matched 分组/背景要求。采用真实 `label=0` 作为 STREME 主对照、已冻结 `dinucleotide_null` 作为稳健性对照。DBTBS 不做独立外部统计验证；仍供 B. subtilis σ/TSS/文献注释。TJU 正式流水线仅使用 Dataset.csv；positive_samples.csv 原件保留 raw 归档。
 
 > **目录整编状态（2026-10-08）：已实施。** 甲乙丙 84 个历史交付文件退出当前工作树，15 份重要 TSV 按原 blob SHA 转存至 `evidence/`，6 份独立历史审计记录转入 `archive/history/`；过时的根级重复说明已清除。组员完整原稿可从 `archive/README.md` 的固定 Git 提交还原。本次未执行 M1/M2 尚欠缺的三来源只读复算，亦未参与本地 agent 正在进行的 STREME。
+
+## M3 中期汇报（2026-10-10）
+
+- [M3 中期 RQ1 综合分析与汇报初稿](../reports/M3_中期RQ1综合分析与汇报初稿_20261010.md)：MEME/STREME 双方法、已知元件、FIMO/SEA、探索性 holdout 和现有局限。
+- [本地 agent 的 RQ1 已知位点重合补证任务](M3_RQ1_本地agent只读补证任务_20261010.md)：指定本地原生位点/参考注释的只读汇总口径，禁止虚构实际位点重合率。
+
+上述两份是阶段性分析与工作交接，不覆盖冻结的原始 17 个 STREME 主候选或既有实验清单。
