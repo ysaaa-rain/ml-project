@@ -1,0 +1,38 @@
+{
+  "run_id": "m3_rq1_annotation_audit_20261010",
+  "public_inputs_sha256": {
+    "experiments/audit_m3_rq1_annotations.py": "5906221d97edfff2ef1e30583b4695c7fd0393c981b31939ab5a9f5ead9be0e0",
+    "tmp/m3_expanded_followup_20261009/manifest.json": "6018fdfb33e474d06a34c6dba0b6665cdac2af875a846a125418587fb73b3e00",
+    "results/motif/m3_expanded_20261009/candidates.tsv": "d5e42a447b5cd587f1023ae85ec042583fa22395eaf5d358257ef90b8d3b55c5",
+    "results/motif/m3_expanded_20261009/PWM_similarity.tsv": "458b933d55285e9cf00e5bc769215110f0c2013ae61fddb63cc615c0dc0dc154",
+    "results/motif/m3_expanded_20261009/cluster_tests.tsv": "c9af526bf48fc101b15f2c0696077ded6f15d57afaf6e806f095c25a0a85b34d",
+    "tmp/reference_library_v1_20261008/reference_sites.tsv": "d59250eb8e4cc044564a53d7457a9be6bbb5d11f12a10577cd1c715fa66e538e",
+    "data/processed/pr01_02_data_v2/manifest.json": "449dca1e3ba5efb3d49b4427515b9cb953fff4e1061ef311c081ddf681927608"
+  },
+  "outputs_sha256": {
+    "results/motif/m3_rq1_annotation_audit_20261010/element_overlap.tsv": "d7028ebc145100fca4d27a8924b4342e79c61ad7007d71a1ff364082eccf0c92",
+    "results/motif/m3_rq1_annotation_audit_20261010/evidence_scopes.tsv": "e015be28f9dbedf583778a415d75ee98d32f6133018d484f3da0a3d1c4e7b38c",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_a_tju_method_counts.png": "161965a0e1f54e6ff487354a60629bf5f8547bf2967d27019c29d969ba972dd8",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_a_tju_method_counts.svg": "ccf3c072c1b4e7ce3e65b965a3fd08455973a027e4aa1b145dd1b6c347bd007c",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_b_method_pwm_matches.png": "dc76edcb8a4bcb11c26593a5bc40c6a27bf33efb4f33cbf15dcd2251b54b1205",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_b_method_pwm_matches.svg": "f055e75c2e124894f419c14bd70395424e3f3a9bb89856572e11e3e5ac789c71",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_c_tss_and_annotation_coverage.png": "0a8c14ee91aa052a154584cee91cc66d9d66ce0329aef9371be46601180b7406",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_c_tss_and_annotation_coverage.svg": "bc995879c4ab0c0d8f7d6a961f9e202c45ed928a28d05404f84e8bf59ed5a2f1",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_d_holdout_cluster_effects.png": "f69d199aeba33967bea06e0de98a1a1243062509cfabbe9e4cb31e6597540e57",
+    "results/motif/m3_rq1_annotation_audit_20261010/fig_d_holdout_cluster_effects.svg": "75cd164779de20f850785d857001d5a37c72da9f1ccce03e50496e8d133faeb0",
+    "results/motif/m3_rq1_annotation_audit_20261010/holdout_three_exploration.tsv": "589f76dbd70927a45338192b820bc3b711f9d52f0d6a96ed1260f74d154c17b7",
+    "results/motif/m3_rq1_annotation_audit_20261010/mapping_coverage.tsv": "0ec376e3df6cdb7a6fe1aad3274448cc0707dc03d02c0a1845c803e2228b1e6e",
+    "results/motif/m3_rq1_annotation_audit_20261010/reference_coverage.tsv": "ec8a137a6df5292a16f1d294cd5ae8bbd20db852c8d7092e3af24d06a77472f7",
+    "results/motif/m3_rq1_annotation_audit_20261010/tss_window_distribution.tsv": "25b612ce62f6a4e53eef61a9937c2e72e063913a4356270ee5af0351a8dd2113",
+    "results/motif/m3_rq1_annotation_audit_20261010/summary.md": "50371c88da5770ded5e5b4aa6b9768080dec8800330e3925e13c68e05e9d9aee"
+  },
+  "aggregate_counts": {
+    "reference_sites": 462,
+    "projected_reference_sites": 462,
+    "projection_failures": {},
+    "FIMO_cases": 54,
+    "mapping_rows": 54,
+    "overlap_rows": 3020,
+    "TSS_rows": 15144
+  }
+}

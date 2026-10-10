@@ -1,0 +1,6 @@
+scope	method	cases	all_reported_PWMs	native_significant_PWMs	FIMO_policy
+expanded_discovery	meme	27	270	50	all reported PWMs scanned; downstream tables carry both scopes
+expanded_discovery	streme	27	270	29	all reported PWMs scanned; downstream tables carry both scopes
+method_Tomtom	MEME_vs_STREME				
+known_reference_Tomtom	all_methods				
+first_FIMO_diagnostic	old17				
