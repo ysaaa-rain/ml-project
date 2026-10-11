@@ -1,9 +1,17 @@
-cache/
-synthetic/cache/
-synthetic_tokenwindow/cache/
+# Ignore large recomputable arrays, but retain their provenance and row mapping.
+cache/**
+!cache/*/
+!cache/*/cache_manifest.json
+!cache/*/index.tsv
+synthetic/cache/**
+!synthetic/cache/cache_manifest.json
+!synthetic/cache/index.tsv
+synthetic_tokenwindow/cache/**
+!synthetic_tokenwindow/cache/cache_manifest.json
+!synthetic_tokenwindow/cache/index.tsv
 model_cache/
 runs/**/base_*.npy
 runs/**/token_*.npy
 runs/**/window_*.npy
-runs/**/fitted.joblib
 next_round/synthetic_benchmark/**/token_*.npy
+# Saved PCA/K-Means fitted.joblib files are experiment outputs and are versioned.
