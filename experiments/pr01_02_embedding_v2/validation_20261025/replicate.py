@@ -74,6 +74,25 @@ def score():
     print('Original recipe replication scored, 90 actual fits',flush=True)
 
 
+def verify():
+    assert_locked(); cfg=read(PROTOCOL); lock=read(SUMMARY/'replication_lock.json')
+    assert lock['protocol_sha256']==sha(PROTOCOL) and lock['recipe_sha256']==sha(RECIPE)
+    assert lock['source_sha256']==sha(HERE/'replicate.py') and lock['original_fit_source_sha256']==sha(OLD/'pilot.py')
+    assert all(sha(HERE/name)==digest for name,digest in lock['outputs'].items())
+    manifest=read(SUMMARY/'replication_manifest.json')
+    assert manifest['status']=='COMPLETED' and len(manifest['runs'])==read(RECIPE)['expected_fits']
+    instances=0
+    for item in manifest['runs']:
+        data=read(ART/item['condition']/'data.json')
+        path=DEST/item['condition']/f'{item["method"]}__a{item["algorithm_seed"]}'/'instances.tsv'
+        for row in pd.read_csv(path,sep='\t').itertuples():
+            assert data['discovery'][row.sequence_index][row.start0:row.end0]==row.fragment
+            instances+=1
+    result={'status':'PASSED','fits':len(manifest['runs']),'hashes_checked':len(lock['outputs']),
+            'instances_checked':instances,'real_holdout_used':False}
+    save(SUMMARY/'replication_verification.json',result);print(result,flush=True)
+
+
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('action',choices=['fit','score'])
-    {'fit':fit,'score':score}[parser.parse_args().action]()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('action',choices=['fit','score','verify'])
+    {'fit':fit,'score':score,'verify':verify}[parser.parse_args().action]()
