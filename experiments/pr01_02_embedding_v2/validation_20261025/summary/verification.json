@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "discovery_outputs": 324,
+  "cluster_fits": 234,
+  "supervised_probes": 25,
+  "hashes_checked": 1902,
+  "protected_files_unchanged": 460,
+  "instances_checked": 1778439,
+  "truth_sites_checked": 10752,
+  "crop_core_checks": 376320,
+  "real_holdout_used": false,
+  "limits": [
+    "hash consistency, not independent historical reexecution",
+    "no exhaustive near-homology audit",
+    "main independent units are five data seeds; stress has only two",
+    "STREME not available in current runtime"
+  ]
+}

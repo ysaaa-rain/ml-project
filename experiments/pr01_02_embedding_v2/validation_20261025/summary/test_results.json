@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "experiments/pr01_02_embedding_v2/validation_20261025/test_pipeline.py",
+    "experiments/pr01_02_embedding_v2/bottleneck_20261025/test_pilot.py",
+    "experiments/pr01_02_embedding_v2/test_pipeline.py",
+    "experiments/pr01_02_embedding_v2/next_round/test_methods.py",
+    "-q"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 8.428218364715576,
+  "stdout": "....................                                                     [100%]\n20 passed in 5.68s\n",
+  "stderr": ""
+}

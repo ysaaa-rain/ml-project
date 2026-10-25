@@ -1,0 +1,8 @@
+{
+  "streme_available": false,
+  "docker_available": false,
+  "wsl_executable_available": true,
+  "wsl_distribution_output_bytes": 0,
+  "wsl_returncode": 0,
+  "traditional_baseline_status": "unavailable in current runtime; not substituted"
+}

@@ -1,0 +1,912 @@
+{
+  "status": "COMPLETED",
+  "started_unix": 1792939446.3388393,
+  "protocol_sha256": "713278d1426e8c7559e0fc211e07b360699fb5e28f9afa11fa2c32264fbc6b13",
+  "recipe_sha256": "2333ee3dc69b8cd279cfe5775548eb3c7f07eaee0d036ccda13c9c643a1f6c1b",
+  "source_sha256": "8460edb3dabbfa7d9773c31f0b2a447586197d19165618a91e4798d3d36ea05c",
+  "original_fit_source_sha256": "33cb8eadf89e60029a87007ffbcfe868304953bcc90bef33fb17c3459da9f3a2",
+  "runs": [
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7215888500213623,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7220458984375,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.721688985824585,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38469773530960083,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3847157955169678,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610253",
+      "scenario": "strong_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38455337285995483,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7245491147041321,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7247191071510315,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7240989208221436,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38558802008628845,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38563281297683716,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610254",
+      "scenario": "strong_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3856229782104492,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7225878238677979,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7227315902709961,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7232270240783691,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3854299783706665,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3855946958065033,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610255",
+      "scenario": "strong_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38555771112442017,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7207303047180176,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.720890998840332,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7207058072090149,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38310033082962036,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38320642709732056,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610256",
+      "scenario": "strong_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38313329219818115,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7229405641555786,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7228880524635315,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7228695154190063,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38531261682510376,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38540637493133545,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610257",
+      "scenario": "strong_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.38542282581329346,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7098414897918701,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7098915576934814,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7099509239196777,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3590216636657715,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3591299057006836,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "scenario": "mut15_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3590696454048157,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7089633345603943,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7088988423347473,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7079677581787109,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3599902093410492,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3601498603820801,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610254",
+      "scenario": "mut15_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.36009326577186584,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7050997018814087,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7051215171813965,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7044805288314819,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3582999110221863,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.358429878950119,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610255",
+      "scenario": "mut15_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3584292531013489,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7074358463287354,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.707522451877594,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.707260251045227,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3589693307876587,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.35924041271209717,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610256",
+      "scenario": "mut15_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3590344488620758,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7089011669158936,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7088730335235596,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.7090287208557129,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.35849523544311523,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3585820198059082,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610257",
+      "scenario": "mut15_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.35850709676742554,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6964028477668762,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6961195468902588,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.695719838142395,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.34611427783966064,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3460923135280609,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "scenario": "mut30_random",
+      "data_seed": 202610253,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.34610989689826965,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6960985064506531,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6954846382141113,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6950218081474304,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3460744023323059,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3461754322052002,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610254",
+      "scenario": "mut30_random",
+      "data_seed": 202610254,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3459315299987793,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6944659948348999,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6945744752883911,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6940422058105469,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3473203182220459,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.34725192189216614,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610255",
+      "scenario": "mut30_random",
+      "data_seed": 202610255,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3471031188964844,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6950048208236694,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6950094699859619,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6947751641273499,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3469659686088562,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.34686729311943054,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610256",
+      "scenario": "mut30_random",
+      "data_seed": 202610256,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.346896767616272,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6971378922462463,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.69663405418396,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "OH_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.6968739032745361,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261025,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.3457540273666382,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261026,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.34584474563598633,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610257",
+      "scenario": "mut30_random",
+      "data_seed": 202610257,
+      "algorithm_seed": 20261027,
+      "method": "LOCAL_RECIPE_P24",
+      "candidate_count": 24,
+      "pca_variance": 0.345660924911499,
+      "status": "COMPLETED"
+    }
+  ],
+  "real_holdout_used": false,
+  "elapsed_seconds": 57.73744511604309
+}

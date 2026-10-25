@@ -1,0 +1,60 @@
+{
+  "status": "PASSED",
+  "checks": [
+    {
+      "condition": "strong_random__s202610253",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    },
+    {
+      "condition": "mut15_random__s202610253",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    },
+    {
+      "condition": "mut30_random__s202610253",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    },
+    {
+      "condition": "gc75_strong__s202610258",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    },
+    {
+      "condition": "markov_strong__s202610258",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610258",
+      "checked_sequences": 1,
+      "checked_core_windows": 70,
+      "reference_batch": 64,
+      "current_batch": 96,
+      "max_absolute_error": 0.0,
+      "allclose_rtol1e_4_atol1e_5": true
+    }
+  ],
+  "limits": "six Discovery sequences only; numerical equivalence, not bitwise or exhaustive replay"
+}

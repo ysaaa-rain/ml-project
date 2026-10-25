@@ -50,6 +50,8 @@ def figures(per_seed,probes):
 def main():
     cfg=read(PROTOCOL); manifest=read(SUMMARY/'manifest.json'); verification=read(SUMMARY/'verification.json')
     replication=read(SUMMARY/'replication_manifest.json')
+    replication_verification=read(SUMMARY/'replication_verification.json')
+    feature_equivalence=read(SUMMARY/'feature_equivalence.json')
     assert manifest['status']=='COMPLETED' and verification['status']=='PASSED' and replication['status']=='COMPLETED'
     summary=pd.read_csv(SUMMARY/'test_summary.tsv',sep='\t')
     seeds=pd.read_csv(SUMMARY/'per_data_seed.tsv',sep='\t')
@@ -100,6 +102,15 @@ PCA消融固定一个Discovery PCA128基底，取前24/64/128维，固定PCA种�
 
 主统计**先平均同一数据种子内的3个聚类运行，再汇总5个数据种子**；不是15个独立样本。压力测试仅两个数据种子，只描述。以下范围是5个数据均值的min/max，不是置信区间。
 
+## 本轮已能支持的结论
+
+1. **上一轮约0.900的15%退化结果尚未稳定复现。** 原计算流程扩大到5数据种子×3算法种子后，局部有序表示均值约0.695，One-hot约0.901；局部表示12/15次运行通过参考门槛，不能只报告成功运行的高分。强模式两者均约0.976；30%退化局部表示仍全部未过门槛。One-hot在30%退化也有部分算法运行失败，说明随机发现流程的问题并非Embedding独有。
+2. **PCA维度是一个影响环节，但不是完整解释。** 在共用基底的受控消融中，15%退化从24维约0.697提高到128维约0.790，5个数据种子中4个改善；仍低于One-hot约0.900。30%退化从0提高到约0.103，仍低于One-hot约0.413。更高保留方差本身不是模式信息充分的证明。
+3. **固定距离筛选没有形成普遍提升。** CORE50使24维15%退化约0.697降到0.624；128维则约0.790到0.797，30%退化约0.103到0.124。不同配置方向不一致，不能把它作为已验证有效的默认改进。
+4. **主要短板包括退化信号与方向混合。** 高GC与Markov强模式表现接近One-hot；混合反向链15%退化时，局部24维为0、128维约0.387，One-hot约0.890。后者仅2数据种子，且未做片段方向对齐，只能作为流程问题的证据线索。
+5. **可读信息仍在，单纯换模型缺乏依据。** 30%退化的监督top1±2bp定位率均值：原始局部表示约0.730、PCA24约0.594、PCA64约0.702、PCA128约0.730，One-hot约0.805。信息并未完全消失，强降维会影响监督可读性；而PCA128的无监督PWM恢复仍弱，提示聚类和实例构建也值得优先研究。探针与PWM使用不同训练信号/指标，不能相减计算“损失比例”，更不能把探针算作发现成功。
+6. **下一轮优先改发现与实例对齐，暂不进入真实数据、不扩大模型规模。** 建议用新的合成Test版本，先对实际候选片段做反向互补/偏移对齐的单因素对照，再检查允许拒绝背景窗口的聚类或局部相似度策略；One-hot同样执行对照。128维只是后续候选设置，不是已确定最佳维度。候选片段方向对齐与对整条TSS标准化序列翻链严格区分，不能改写冻结数据方向处理。弱模式、方向鲁棒性及传统基线未闭合前，不启动真实拟合、SAE或微调。
+
 ## 原流程复核
 
 {table(recipes)}
@@ -146,6 +157,8 @@ PCA消融固定一个Discovery PCA128基底，取前24/64/128维，固定PCA种�
 
 20项相关测试通过。{verification['hashes_checked']}项产物哈希、{verification['instances_checked']}条实例、{verification['truth_sites_checked']}条植入真值、{verification['crop_core_checks']}次核心还原核查通过；{verification['protected_files_unchanged']}个历史保护文件不变。原流程复核输出另有独立 `replication_lock.json`，原fit源码哈希保留。哈希一致不等于独立重跑历史实验。
 
+原流程复核另验收{replication_verification['hashes_checked']}项哈希和{replication_verification['instances_checked']}条片段。编码数值对照抽查{len(feature_equivalence['checks'])}个Discovery序列、各70窗，对比历史batch64和本轮batch96/裁剪去重，抽样最大绝对误差为{max(r['max_absolute_error'] for r in feature_equivalence['checks']):.3g}；仅限抽样，不推断全量逐字节一致。
+
 Python {manifest['python']}，Torch {manifest['dependencies']['torch']} CPU，Transformers {manifest['dependencies']['transformers']}，4线程，无GPU。主矩阵拟合约{manifest['fit_elapsed_seconds']:.1f}秒，后续评价、探针和复核分别执行，不将混合墙钟时间当单一方法成本。编码器revision/文件哈希与无缺失权重加载证据在 `summary/encoder.json`。
 
 ## 尚未闭合与真实数据门槛
@@ -163,6 +176,8 @@ python -m experiments.pr01_02_embedding_v2.validation_20261025.pipeline score
 python -m experiments.pr01_02_embedding_v2.validation_20261025.replicate score
 python -m experiments.pr01_02_embedding_v2.validation_20261025.pipeline probes
 python -m experiments.pr01_02_embedding_v2.validation_20261025.pipeline verify
+python -m experiments.pr01_02_embedding_v2.validation_20261025.replicate verify
+python -m experiments.pr01_02_embedding_v2.validation_20261025.check_features
 python -m experiments.pr01_02_embedding_v2.validation_20261025.report
 ```
 

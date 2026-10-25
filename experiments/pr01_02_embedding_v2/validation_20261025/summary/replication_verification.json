@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "fits": 90,
+  "hashes_checked": 270,
+  "instances_checked": 530979,
+  "real_holdout_used": false
+}

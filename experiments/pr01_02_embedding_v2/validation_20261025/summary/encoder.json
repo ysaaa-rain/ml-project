@@ -1,0 +1,60 @@
+{
+  "repository": "neuralbioinfo/prokbert-mini",
+  "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+  "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+  "weights_sha256": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+  "kmer": 6,
+  "files": {
+    "config.json": "6d68c922f919e0de3f87de60c07ebc1823927df806645937f94911c5b8245de6",
+    "model.safetensors": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+    "models.py": "a439e05c2964051697a0a40d6d2d5207eb4be67c949a9b3c8510ef6ba44bea1e",
+    "tokenizer.py": "baf8437c2ced0f49da60cc9e56d43b8940476f3ac25cf03dd01a8fc8e40965b3",
+    "vocab.txt": "09ac66138ad9a2a5cbf2ae7f4057021489986c85f2772ddf3b1d9a7c4e408603"
+  },
+  "config": {
+    "architectures": [
+      "ProkBertForMaskedLM"
+    ],
+    "attention_probs_dropout_prob": 0.1,
+    "auto_map": {
+      "AutoConfig": "neuralbioinfo/nbrg-transformers--models.ProkBertConfig",
+      "AutoModel": "neuralbioinfo/nbrg-transformers--models.ProkBertModel",
+      "AutoModelForMaskedLM": "neuralbioinfo/nbrg-transformers--models.ProkBertForMaskedLM",
+      "AutoModelForSequenceClassification": "neuralbioinfo/nbrg-transformers--models.ProkBertForSequenceClassification"
+    },
+    "classifier_dropout": 0.1,
+    "classifier_head_type": "linear",
+    "classifier_mlp_hidden_size": null,
+    "classifier_pooling": "attention",
+    "curricular_embedding_size": null,
+    "curricular_margin": 0.5,
+    "curricular_scale": 64.0,
+    "dtype": "float32",
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 384,
+    "initializer_range": 0.02,
+    "intermediate_size": 3072,
+    "kmer": 6,
+    "layer_norm_eps": 1e-12,
+    "max_position_embeddings": 1024,
+    "model_type": "prokbert",
+    "num_attention_heads": 6,
+    "num_hidden_layers": 6,
+    "pad_token_id": 0,
+    "position_embedding_type": "relative_key_query",
+    "shift": 1,
+    "transformers_version": "4.57.6",
+    "type_vocab_size": 2,
+    "use_cache": true,
+    "vocab_size": 4101
+  },
+  "loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "parameters": 20489472,
+  "device": "cpu"
+}
