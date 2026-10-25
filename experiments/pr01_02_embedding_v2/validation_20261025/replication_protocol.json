@@ -1,0 +1,13 @@
+{
+  "version": "EMB-validation-20261025-recipe-replication-v1",
+  "frozen_before_any_new_Test_evaluation": true,
+  "purpose": "separate original PCA24-per-algorithm recipe replication from nested PCA128-prefix dimension ablation",
+  "conditions": "same15 main conditions and3 algorithm seeds as protocol.json; stress excluded",
+  "methods": ["OH_RECIPE_P24", "LOCAL_RECIPE_P24"],
+  "pca": "original bottleneck_20261025.pilot.fit, randomized PCA24 with each algorithm seed; same seed for KMeans",
+  "feature_note": "same local-token concatenation and coordinates; this version deduplicates equal edge crops and uses batch96 rather than historical batch64; no bitwise encoder equivalence claim",
+  "discovery_only_fit": true,
+  "expected_fits": 90,
+  "test_policy": "fit and lock all supplemental outputs before scoring; no recipe selection from Test",
+  "real_holdout_enabled": false
+}

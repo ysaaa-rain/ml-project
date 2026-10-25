@@ -1,3 +1,4 @@
 artifacts/
+replication_artifacts/
 model_cache/
 *.log
