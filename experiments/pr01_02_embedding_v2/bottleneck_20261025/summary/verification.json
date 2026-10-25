@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "hashes_checked": 185,
+  "mismatches": [],
+  "fits": 42,
+  "instances_checked": 171305,
+  "truth_sites_checked": 3072,
+  "crop_core_checks": 107520,
+  "real_holdout_used": false,
+  "protected_files_unchanged": 267,
+  "limits": [
+    "artifact consistency is not an independent rerun",
+    "two data seeds; one algorithm seed",
+    "no exhaustive synthetic homology audit; exact/RC duplicates checked during generation"
+  ]
+}

@@ -1,5 +1,7 @@
 # PR01-02 文档导航（2026-10-09）
 
+2026-10-25 Embedding探索更新：[定位瓶颈与mini-c阶段报告](../experiments/pr01_02_embedding_v2/bottleneck_20261025/REPORT.md)。已完成6条件、42个合成拟合；局部重编码+token拼接在15%退化中约0.900，One-hot约0.919；30%退化与mini-c均值方案仍失败。两数据种子仅作描述性诊断，未进入真实数据或使用真实Holdout。现行主线规范和冻结结果不改写。
+
 2026-10-09 实测完成：新增 42 组 MEME/STREME（27 MEME、15 STREME）与原 12 组 STREME 合计 54 套；540 个报告 PWM 均接 FIMO，344 次扫描成功且无截断。157 项测试通过。8 次辅助 SEA 因 development 仅 1 条正样本失败，保留日志；原 17 主候选和旧结果哈希不变。扩展 holdout 出现率 3 项 BH 显著、σ 特异性 0 项，全部按探索性报告。 [完整结果](../reports/M3_扩展双方法与sigma实验_20261009.md)。
 
 最新执行入口：[扩展 M3 规范](PR01-02_expanded_M3_protocol_20261009.md)（2026-10-09）。MEME/STREME 双方法与 σ 整体/分组、每套 FIMO，覆盖旧文档的方法范围；DBTBS 不恢复独立外部验证。

@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-25 Embedding 独立分支推进：完成定位瓶颈与 mini-c 对照小试，6个新合成条件、42个拟合。15%退化中局部重编码+token拼接F1约0.900，仍低于One-hot的0.919；30%退化仍未恢复；mini-c均值方案未显示优势。13项相关测试通过，冻结输入和历史证据不覆盖，未使用真实Holdout。[阶段报告](experiments/pr01_02_embedding_v2/bottleneck_20261025/REPORT.md)｜[协议与复现](experiments/pr01_02_embedding_v2/bottleneck_20261025/README.md)。
+
 2026-10-09 实测完成：新增 42 组 MEME/STREME（27 MEME、15 STREME）与原 12 组 STREME 合计 54 套；540 个报告 PWM 均接 FIMO，344 次扫描成功且无截断。157 项测试通过。8 次辅助 SEA 因 development 仅 1 条正样本失败，保留日志；原 17 主候选和旧结果哈希不变。扩展 holdout 出现率 3 项 BH 显著、σ 特异性 0 项，全部按探索性报告。 [完整结果](reports/M3_扩展双方法与sigma实验_20261009.md)。
 
 2026-10-09 新执行要求：[扩展 M3 规范](docs/PR01-02_expanded_M3_protocol_20261009.md)；MEME/STREME 均覆盖 TJU 六物种双背景及 RegulonDB/DBTBS 整体和可用 σ 组，每套 PWM 接 FIMO。[首次 FIMO 诊断](reports/M3_首次FIMO诊断_20261009.md)未发现明显输入/截断错误，原严格阈值与 17 主候选不变。

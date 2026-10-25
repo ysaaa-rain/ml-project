@@ -1,0 +1,104 @@
+{
+  "protocol_sha256": "b99b1f6214f0c41b2bd464729fb6d5dad96c6896312085a7ec665f5d92775323",
+  "models": {
+    "mini": {
+      "repository": "neuralbioinfo/prokbert-mini",
+      "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+      "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+      "weights_sha256": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+      "kmer": 6,
+      "files": {
+        "config.json": "6d68c922f919e0de3f87de60c07ebc1823927df806645937f94911c5b8245de6",
+        "model.safetensors": "19ede01f2ef0420e111c0be8879357fba23332fad88a27571bd8d9b3b04bca3b",
+        "models.py": "a439e05c2964051697a0a40d6d2d5207eb4be67c949a9b3c8510ef6ba44bea1e",
+        "tokenizer.py": "baf8437c2ced0f49da60cc9e56d43b8940476f3ac25cf03dd01a8fc8e40965b3",
+        "vocab.txt": "09ac66138ad9a2a5cbf2ae7f4057021489986c85f2772ddf3b1d9a7c4e408603"
+      },
+      "config": {
+        "architectures": [
+          "ProkBertForMaskedLM"
+        ],
+        "attention_probs_dropout_prob": 0.1,
+        "auto_map": {
+          "AutoConfig": "neuralbioinfo/nbrg-transformers--models.ProkBertConfig",
+          "AutoModel": "neuralbioinfo/nbrg-transformers--models.ProkBertModel",
+          "AutoModelForMaskedLM": "neuralbioinfo/nbrg-transformers--models.ProkBertForMaskedLM",
+          "AutoModelForSequenceClassification": "neuralbioinfo/nbrg-transformers--models.ProkBertForSequenceClassification"
+        },
+        "classifier_dropout": 0.1,
+        "classifier_head_type": "linear",
+        "classifier_mlp_hidden_size": null,
+        "classifier_pooling": "attention",
+        "curricular_embedding_size": null,
+        "curricular_margin": 0.5,
+        "curricular_scale": 64.0,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.1,
+        "hidden_size": 384,
+        "initializer_range": 0.02,
+        "intermediate_size": 3072,
+        "kmer": 6,
+        "layer_norm_eps": 1e-12,
+        "max_position_embeddings": 1024,
+        "model_type": "prokbert",
+        "num_attention_heads": 6,
+        "num_hidden_layers": 6,
+        "pad_token_id": 0,
+        "position_embedding_type": "relative_key_query",
+        "shift": 1,
+        "transformers_version": "4.57.6",
+        "type_vocab_size": 2,
+        "use_cache": true,
+        "vocab_size": 4101
+      }
+    },
+    "mini_c": {
+      "repository": "neuralbioinfo/prokbert-mini-c",
+      "revision": "417ebe73d355bc68b01d4fbe9dc2b0cb274b86e0",
+      "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+      "kmer": 1,
+      "weights_sha256": "4d15e8d1ba806a6be74115d5ef12b7afc4f477819ed10df91d6fd3fec8f4596d",
+      "files": {
+        "config.json": "217d3febb961af2684159c76f8348acbad5c17a7adf0ad4a212a5fb211d14aa1",
+        "model.safetensors": "4d15e8d1ba806a6be74115d5ef12b7afc4f477819ed10df91d6fd3fec8f4596d",
+        "models.py": "a439e05c2964051697a0a40d6d2d5207eb4be67c949a9b3c8510ef6ba44bea1e",
+        "tokenizer.py": "baf8437c2ced0f49da60cc9e56d43b8940476f3ac25cf03dd01a8fc8e40965b3",
+        "vocab.txt": "1d02ca35ea79ef83d1d759a544ef1e1273f2d67bf6ccf8741a65d28755e1fb0f"
+      },
+      "config": {
+        "_name_or_path": "neuralbioinfo/prokbert-mini-c",
+        "architectures": [
+          "ProkBertForMaskedLM"
+        ],
+        "attention_probs_dropout_prob": 0.1,
+        "auto_map": {
+          "AutoConfig": "models.ProkBertConfig",
+          "AutoModel": "neuralbioinfo/prokbert-mini-c--models.ProkBertModel",
+          "AutoModelForMaskedLM": "models.ProkBertForMaskedLM",
+          "AutoModelForSequenceClassification": "neuralbioinfo/prokbert-mini-c--models.ProkBertForSequenceClassification"
+        },
+        "classification_dropout_rate": 0.1,
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.1,
+        "hidden_size": 384,
+        "initializer_range": 0.02,
+        "intermediate_size": 4096,
+        "kmer": 1,
+        "layer_norm_eps": 1e-12,
+        "max_position_embeddings": 2048,
+        "model_type": "prokbert",
+        "num_attention_heads": 6,
+        "num_hidden_layers": 6,
+        "pad_token_id": 0,
+        "position_embedding_type": "relative_key_query",
+        "shift": 1,
+        "torch_dtype": "float32",
+        "transformers_version": "4.48.0.dev0",
+        "type_vocab_size": 2,
+        "use_cache": true,
+        "vocab_size": 20
+      }
+    }
+  }
+}

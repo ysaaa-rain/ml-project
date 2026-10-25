@@ -1,0 +1,14 @@
+{
+  "loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "parameters": 20489472,
+  "hidden_size": 384,
+  "layers": 6,
+  "kmer": 6,
+  "device": "cpu",
+  "implementation_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43"
+}
