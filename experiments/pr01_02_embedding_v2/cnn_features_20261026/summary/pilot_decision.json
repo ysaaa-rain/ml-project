@@ -1,0 +1,14 @@
+{
+  "mean_delta": -0.26979998055903526,
+  "wins": 0,
+  "data_seeds": 3,
+  "checks": {
+    "matched_mean_positive": false,
+    "all3_data_seeds_positive": false,
+    "cap5_exceeds_controls_and_oh": false,
+    "no_zero_common_budget": true,
+    "family_fpr_not_above_oh": false
+  },
+  "advance_gate_passed": false,
+  "limits": "screening only; supervised vs unsupervised pipelines; not significance, standalone embedding advantage or functional motif proof"
+}

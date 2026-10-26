@@ -1,0 +1,9 @@
+{
+  "action": "pipeline verify",
+  "status": "FAILED",
+  "exception": "AssertionError",
+  "line": 285,
+  "condition": "exact equality of rankings recomputed from rounded MEME PWM",
+  "repair_scope": "independent verification only; frozen scientific pipeline and all fits/rankings/scoring unchanged",
+  "replacement": "verify_artifacts.py reconstructs original precision from saved DNA instances; records rounded precision differences explicitly"
+}

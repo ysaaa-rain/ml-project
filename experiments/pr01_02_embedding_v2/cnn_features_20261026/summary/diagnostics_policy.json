@@ -1,0 +1,8 @@
+{
+  "phase": "post-Test descriptive analysis, not preregistered endpoint",
+  "minimum_overlap": 8,
+  "reference_used": true,
+  "source_sha256": "c1086d68ad94f55bbc86c374d0bb3c0a6eecc29b73253309d5e9dc67b1969426",
+  "selection": "only already-locked CNN_LABEL CAP5 candidates; no model/PWM/score/budget changes",
+  "limits": "partial matches and Discovery offsets are diagnostic, not successful full-width recovery or validation"
+}

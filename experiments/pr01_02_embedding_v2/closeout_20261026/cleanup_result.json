@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETED",
+  "executed_utc": "2026-10-26T05:53:55.8644403Z",
+  "plan_sha256": "93bc65b9fc851327b2e17201e32409a674d9c8d0fab00cfb03f86c40f6502290",
+  "deleted_files": 84,
+  "reclaimed_bytes": 10671140352,
+  "retained": "source DNA, weights, index.tsv, cache_manifest.json, all per-run evidence, negative results, logs and user work",
+  "availability": "inventoried historical cache arrays intentionally evicted; regenerate in a new directory before reuse"
+}

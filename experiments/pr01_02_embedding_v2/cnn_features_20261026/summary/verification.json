@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "artifact_hashes": 458,
+  "historical_files_unchanged": 4732,
+  "instances_rebuilt": 58735,
+  "pwms_rebuilt": 493,
+  "rankings_recomputed": 72,
+  "cnn_activation_maps_recomputed": 54,
+  "truth_sites_checked": 4608,
+  "evaluation_sets": 180,
+  "exact_RC_duplicates_per_condition": 0,
+  "real_holdout_used": false,
+  "verification_source_sha256": "02c6620aebaba68639897f955e51424bbb99c321381a5f9e0944803c937e9748",
+  "precision_policy": "ranking recomputed from original-precision PWM reconstructed from instances; rounded PWM order unchanged",
+  "limits": "saved-model activation recomputation and artifact consistency, not independent retraining or near-homology audit"
+}

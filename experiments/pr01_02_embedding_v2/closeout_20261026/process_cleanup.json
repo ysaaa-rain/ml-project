@@ -1,0 +1,8 @@
+{
+  "status": "NOT_EXECUTED_POLICY_DENIAL",
+  "attempted_scope": "named scientific __pycache__ folders, excluding presentation, and five PDF review PNGs generated in this task",
+  "tool_result": "exec_command rejected before execution: blocked by policy",
+  "files_deleted_by_this_attempt": 0,
+  "resolution": "retain optional bytecode and PDF previews; do not bypass denial",
+  "main_cleanup": "separate cleanup_result.json confirms84 historical .npy arrays deleted successfully"
+}

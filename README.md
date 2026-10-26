@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-26 已按用户决定收束当前BERT聚类/筛选线路，整理[四轮材料与清理记录](experiments/pr01_02_embedding_v2/closeout_20261026/CLOSEOUT.md)，腾退84份可再生成旧编码缓存（约9.94GiB），保留原始数据、权重、实例/PWM与负面结果。优先老师文档的CNN卷积特征路线，已完成36次CNN训练、18随机模型和18次OH48聚类；30%退化匹配预算F1约0.277/0.547，未通过小试门槛，混合链约0.894/0.871。评分后诊断提示窗口边界错位，下一步优先研究CNN的参考无关边界处理，不恢复BERT常规调参。22项相关测试及独立产物核验通过，真实Holdout未用。[CNN首轮报告](experiments/pr01_02_embedding_v2/cnn_features_20261026/REPORT.md)｜[老师方法核对](experiments/pr01_02_embedding_v2/closeout_20261026/teacher_methods.md)。
+
 2026-10-26 Embedding第四轮独立复核完成：5个新数据种子×3聚类种子，135次聚类、270组PWM池、900组预算评价。30%退化、背景拒绝、双方各5个候选时，BERT F1约0.295，完整One-hot48约0.543；BERT在5/5组数据均较低，候选集误报约0.163/0.146。上一轮均值优势未复现，建议收束当前流程的常规调参，保留为补充探索。37项相关测试及实例/PWM/排名核验通过，真实Holdout未使用。[完整报告](experiments/pr01_02_embedding_v2/budget_validation_20261026/REPORT.md)。
 
 2026-10-26 Embedding第三轮小试完成：48次聚类、240组方向/偏移/背景拒绝对照。30%退化中BERT BG_ONLY的F1从本轮RAW的0提高到约0.482；同处理One-hot约0.418，但BERT仅1/3数据种子更好，候选集空白误报更高，不能宣称稳定优于One-hot。对齐组合未形成一致收益。28项相关测试通过，旧证据和真实Holdout不改。[完整报告](experiments/pr01_02_embedding_v2/refinement_20261026/REPORT.md)。

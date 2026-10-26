@@ -1,0 +1,18 @@
+{
+  "status": "EXPLAINED",
+  "original_verifier": "pipeline.verify exact equality from rounded PWM fails",
+  "cause": "ranking originally uses full-precision PWM; MEME text stores8 decimal places, with strict threshold ties",
+  "original_rankings_exactly_rebuilt_from_saved_instances": 72,
+  "rounded_PWM_candidate_order_changes": 0,
+  "max_PWM_absolute_error": 4.979757084119796e-10,
+  "max_ranking_field_changes_after_PWM_rounding": {
+    "score": 0.00390625,
+    "positive_presence": 0.00390625,
+    "blank_presence": 0.00390625,
+    "threshold": 1.471650371343003e-06,
+    "information_bits": 1.1949267531008445e-07,
+    "support": 0.0
+  },
+  "scientific_sources_models_rankings_scores_modified": false,
+  "audit_source_sha256": "02c6620aebaba68639897f955e51424bbb99c321381a5f9e0944803c937e9748"
+}

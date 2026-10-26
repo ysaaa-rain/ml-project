@@ -21,8 +21,12 @@
 
 SAE列为后续候选：老师材料重点介绍它，但MotifAE/InterPLM的代表证据是蛋白质，移植DNA需要独立假设；本轮暂不启动。详见 [老师材料核对与方法选择](teacher_methods.md)。
 
+CNN首轮现已完成：弱模式F1约0.277/One-hot48约0.547，未通过小试门槛；混合链约0.894/0.871。继续研究的具体候选问题为卷积窗口边界错位，而非恢复BERT调参；完整控制、监督差异、舍入审计和探索性诊断见新报告。
+
 ## 缓存清理与复现
 
 仅腾退 `../cache/<六物种>/*.npy` 中与已存manifest哈希一致、Git忽略且未被末轮历史保护清单引用的可再生成编码数组；保留原始数据、权重、源码、cache_manifest.json和index.tsv。各轮独立实验的artifacts、失败记录和日志均保留。未知的PPT草稿、用户已有删除和其他目录不纳入清理。
 
-这些旧缓存不再是“当前可直接读取的特征文件”。如需重做早期全物种表示，先在独立新目录使用保留的固定模型/代码/config以及对应index.tsv中的冻结输入调用 `encoder.cache_features`，再逐文件与历史cache_manifest.json比较哈希；不同数值环境未必逐字节一致，应报告差异。现存PWM/实例/模型核验不依赖这些编码数组。清理后的可用性以cleanup_result.json为准，旧manifest保留为生成时快照。
+主清理已实际完成：84份数组、10671140352字节（约9.94GiB）。额外删除字节缓存和本轮5张PDF临时预览的命令被自动执行策略以“blocked by policy”拒绝，未执行、不绕过；这些少量过程文件保留，见 `process_cleanup.json`。不能宣称工作区已完全没有临时文件。
+
+这些旧缓存不再是“当前可直接读取的特征文件”。如需重做早期全物种表示，先在独立新目录使用保留的固定模型/代码/config以及对应index.tsv中的冻结输入调用 `encoder.extract(frame, out, config, model, tokenizer)`，再逐文件与历史cache_manifest.json比较哈希；不同数值环境未必逐字节一致，应报告差异。现存PWM/实例/模型核验不依赖这些编码数组。清理后的可用性以cleanup_result.json为准，旧manifest保留为生成时快照。

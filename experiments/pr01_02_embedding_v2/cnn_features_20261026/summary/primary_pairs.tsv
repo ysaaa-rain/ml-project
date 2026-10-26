@@ -1,0 +1,4 @@
+scenario	data_seed	view	representation_cnn	f1_cnn	family_blank_fpr_cnn	budget_cnn	success_fraction_cnn	zero_budget_count_cnn	underfill_count_cnn	representation_oh	f1_oh	family_blank_fpr_oh	budget_oh	success_fraction_oh	zero_budget_count_oh	underfill_count_oh	delta
+mut30_random	202610270	MATCH_OH48	CNN_LABEL	0.28865979381443296	0.1640625	5.0	0.5	0	0	OH48_BG	0.5552487793536387	0.14453125	5.0	1.0	0	0	-0.26658898553920574
+mut30_random	202610271	MATCH_OH48	CNN_LABEL	0.27411167512690354	0.14453125	5.0	0.5	0	0	OH48_BG	0.5350838990649417	0.12890625	5.0	1.0	0	0	-0.26097222393803815
+mut30_random	202610272	MATCH_OH48	CNN_LABEL	0.26881720430107525	0.19921875	5.0	0.5	0	0	OH48_BG	0.5506559365009371	0.17578125	5.0	1.0	0	0	-0.2818387321998619
