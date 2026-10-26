@@ -1,0 +1,36 @@
+{
+  "version":"EMB-background-budget-validation-20261026-v1",
+  "data_seeds":[202610263,202610264,202610265,202610266,202610267],
+  "algorithm_seeds":[20261030,20261031,20261032],
+  "pca_seed":20261102,
+  "sequence_length":81,"width":12,"local_context":24,"layer":6,
+  "discovery_n":256,"development_n":128,"test_n":128,"calibration_n":256,
+  "batch_size":96,"threads":4,"clusters":24,"n_init":5,"minimum_promoters":20,
+  "synthetic_pattern":"TTGACATATAAT",
+  "scenarios":[
+    {"id":"strong_random","gc":0.5,"mutation":0.0},
+    {"id":"mut30_random","gc":0.5,"mutation":0.30},
+    {"id":"mixed_strand_mut15","gc":0.5,"mutation":0.15,"reverse_probability":0.5}
+  ],
+  "representations":[{"id":"EMB128","pca":128},{"id":"OH24","pca":24},{"id":"OH48","pca":null}],
+  "variants":["RAW","BG_ONLY"],
+  "background_rejection":{"quantile":0.95,"comparison":">","calibration":"Discovery blank double-strand maximum scores of RAW PWM","action":"reject selected instance below threshold; require20 promoters; rebuild once"},
+  "candidate_ranking":"Discovery positive minus Discovery blank sequence presence at rebuilt PWM's Discovery-blank maximum-score95th percentile; descending, ties: information bits descending, support count descending, candidate id ascending; no reference or truth",
+  "budget_cap":5,
+  "views":{
+    "FULL":"all candidates for each representation",
+    "CAP5":"top min(5,available) by frozen Discovery ranking, underfill retained and reported",
+    "MATCH_OH24":"EMB128 and OH24 each top m=min(5,n_EMB,n_OH24)",
+    "MATCH_OH48":"EMB128 and OH48 each top m=min(5,n_EMB,n_OH48)"
+  },
+  "underfill_policy":"zero common budget yields0 F1 for both, never dropped or counted as win; retain FULL and CAP5 to expose performance suppressed by common-min trimming",
+  "primary_endpoint":"mut30_random, BG_ONLY, MATCH_OH48: EMB128-minus-OH48 reference-assisted localizationF1, average3 cluster seeds inside each data seed first",
+  "secondary_endpoints":"FULL, CAP5, OH24 comparison, strong control, mixed strand, candidate-family blankFPR and budget coverage; exploratory",
+  "interpretation_gate":"only advance an advantage claim for further study if matched and CAP5 mean deltas both positive, at least4/5 matched data-seed wins, no zero common budget, and matched family blankFPR <= OH48; not functional or general superiority proof",
+  "evaluation":{"reference_cosine_gate":0.8,"primary_tolerance":2,"position_tolerances":[0,1,2,3],"calibration_quantile":0.95},
+  "statistics":"5 independent synthetic data repeats; clustering seeds not extra samples; report paired deltas, wins, min/max and exact two-sided sign-flip mean test over32 sign assignments; n5 minimum two-sided p=.0625, no p<.05 claim possible",
+  "test_policy":"all fits, Discovery ranks and every candidate membership locked before Development/Test scoring; no Test-based ranking, tuning or subset choice; any later method change requires new Test seeds",
+  "real_holdout_enabled":false,
+  "not_in_this_version":["alignment","SAE","fine tuning","new encoders","real fitting","synthetic STREME"],
+  "expected_cluster_fits":135,"expected_pwm_pools":270,"expected_evaluation_sets":900
+}
