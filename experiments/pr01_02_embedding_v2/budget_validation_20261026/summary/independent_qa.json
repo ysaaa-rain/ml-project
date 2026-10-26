@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "source_sha256": "d04dbb8868785099a43d518886fe765d6b510e35acb6ffe20493bc34b28099e7",
+  "truth_sites_checked": 7680,
+  "synthetic_sequences_checked": 19200,
+  "discovery_rankings_recomputed": 270,
+  "exact_RC_partition_duplicates": 0,
+  "real_holdout_used": false,
+  "cluster_input_dimensions": {
+    "EMB128": [
+      128
+    ],
+    "OH24": [
+      24
+    ],
+    "OH48": [
+      48
+    ]
+  },
+  "duplicate_scope": "within each condition; blank streams can repeat across difficulty conditions sharing a seed",
+  "limits": "persisted-artifact consistency; no independent encoder/clustering refit or near-homology audit"
+}

@@ -1,0 +1,17 @@
+{
+  "endpoint": "mut30_random, BG_ONLY, MATCH_OH48: EMB128-minus-OH48 reference-assisted localizationF1, average3 cluster seeds inside each data seed first",
+  "data_seeds": 5,
+  "mean_delta": -0.24790200072762855,
+  "wins": 0,
+  "cap5_mean_delta": -0.24790200072762855,
+  "paired_sign_flip_p": 0.0625,
+  "gate_checks": {
+    "matched_mean_positive": false,
+    "cap5_mean_positive": false,
+    "at_least4_of5_wins": false,
+    "no_zero_common_budget": true,
+    "family_fpr_not_above_OH48": false
+  },
+  "advance_gate_passed": false,
+  "interpretation": "gate only prioritizes further study, never functional/general superiority proof; n5 two-sided p minimum .0625"
+}

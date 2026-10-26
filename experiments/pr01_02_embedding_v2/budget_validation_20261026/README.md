@@ -1,5 +1,7 @@
 # 背景拒绝的独立复核与候选预算匹配（2026-10-26）
 
+已完成：[结果报告](REPORT.md)。主要终点BERT F1约0.295、完整One-hot48约0.543，双方每次均取5个候选，BERT在5/5新数据种子均较低且误报更高。背景拒绝改善自身但相对优势未复现；建议收束当前流程的常规调参，保留补充探索角色。37项相关测试和产物核验通过，真实Holdout未使用。
+
 冻结协议：`protocol.json`。本轮聚焦30%退化和混合反向链15%退化，保留强模式控制；每条件5个新数据种子、3个聚类种子。比较Frozen ProkBERT局部128维、One-hot PCA24和不降维One-hot48，RAW/BG_ONLY均执行。实际135次聚类、270组PWM池；预算视图复用这些池，共900组评价集合，不增加拟合。
 
 候选仅按Discovery正类减空白命中率排序，平局按信息量、支持序列数、ID排序，禁止参考PWM/植入真值/Test参与排名。先锁定全部拟合、排名和候选集合，再评分Development/Test。
@@ -14,7 +16,9 @@
 python -m pytest experiments/pr01_02_embedding_v2/budget_validation_20261026/test_pipeline.py -q
 python -m experiments.pr01_02_embedding_v2.budget_validation_20261026.pipeline fit
 python -m experiments.pr01_02_embedding_v2.budget_validation_20261026.pipeline score
+python -m experiments.pr01_02_embedding_v2.budget_validation_20261026.qa
 python -m experiments.pr01_02_embedding_v2.budget_validation_20261026.pipeline verify
+python -m experiments.pr01_02_embedding_v2.budget_validation_20261026.report
 ```
 
-旧实验、冻结v2与真实Holdout只读；不微调、不换编码器、不叠加对齐。完整人工序列、特征、实例和拟合对象留本地；公开代码、配置、排名/预算统计、图表与哈希。`fit`拒绝覆盖artifacts。最终结果见完成后生成的`REPORT.md`。
+旧实验、冻结v2与真实Holdout只读；不微调、不换编码器、不叠加对齐。完整人工序列、特征、实例和拟合对象留本地；公开代码、配置、排名/预算统计、图表与哈希。`fit`拒绝覆盖artifacts。

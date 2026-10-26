@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETED",
+  "started_unix": 1792989208.4551382,
+  "protocol_sha256": "c52d35bc9982db59b5e1b57f18042f4c0e80283fa0ae56e238f246e0ead5f367",
+  "source_sha256": {
+    "experiments/pr01_02_embedding_v2/budget_validation_20261026/protocol.json": "c52d35bc9982db59b5e1b57f18042f4c0e80283fa0ae56e238f246e0ead5f367",
+    "experiments/pr01_02_embedding_v2/budget_validation_20261026/pipeline.py": "5b56ed0d574f59b996716eb174c57643ec08f0c707ab3d4afe36ace30e9ecb90",
+    "experiments/pr01_02_embedding_v2/budget_validation_20261026/__init__.py": "8fb66eace0f6c129ede9265cdeaf31ffa89b229b3e35587acf7ce108a67b7933",
+    "experiments/pr01_02_embedding_v2/refinement_20261026/pipeline.py": "749055c22de0b6854a5c9c94a45362b8a161f10357eea9a28e36ef69a7b08005",
+    "experiments/pr01_02_embedding_v2/validation_20261025/pipeline.py": "6561f0b92765e4e4b491cfc6d1c781cc6452ff0d1ea72afb3f1cdc28a3214ffa",
+    "experiments/pr01_02_embedding_v2/bottleneck_20261025/pilot.py": "33cb8eadf89e60029a87007ffbcfe868304953bcc90bef33fb17c3459da9f3a2",
+    "experiments/pr01_02_embedding_v2/encoder.py": "a21d83a8f517978dc7a1632d28220a8dff6190b7d83fb3b92d8673d70bc275c2",
+    "experiments/pr01_02_embedding_v2/discovery.py": "f69c4b98b4f694865ab2cbdac9499a5a624948b75317c9ea05aaea96ee9abb8d"
+  },
+  "git_head": "450d4f29e8f80132fc6b7b5fd7dc4f9ca0f2fb78",
+  "python": "3.13.5",
+  "dependencies": {
+    "torch": "2.7.1",
+    "transformers": "5.8.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1"
+  },
+  "real_holdout_used": false,
+  "cluster_fits": 135,
+  "pwm_pools": 270,
+  "evaluation_sets": 900,
+  "conditions": [
+    "strong_random__s202610263",
+    "strong_random__s202610264",
+    "strong_random__s202610265",
+    "strong_random__s202610266",
+    "strong_random__s202610267",
+    "mut30_random__s202610263",
+    "mut30_random__s202610264",
+    "mut30_random__s202610265",
+    "mut30_random__s202610266",
+    "mut30_random__s202610267",
+    "mixed_strand_mut15__s202610263",
+    "mixed_strand_mut15__s202610264",
+    "mixed_strand_mut15__s202610265",
+    "mixed_strand_mut15__s202610266",
+    "mixed_strand_mut15__s202610267"
+  ],
+  "fit_elapsed_seconds": 889.624039888382,
+  "elapsed_seconds": 981.308920621872
+}

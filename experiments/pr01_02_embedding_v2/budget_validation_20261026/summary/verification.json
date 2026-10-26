@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "hashes_checked": 1380,
+  "protected_files_unchanged": 3342,
+  "cluster_fits": 135,
+  "pwm_pools": 270,
+  "evaluation_sets": 900,
+  "instances_checked": 996602,
+  "pwms_rebuilt": 4851,
+  "background_subset_pairs": 135,
+  "real_holdout_used": false,
+  "limits": [
+    "five synthetic data seeds; algorithm seeds not extra independent samples",
+    "artifact consistency, not independent model rerun"
+  ]
+}
