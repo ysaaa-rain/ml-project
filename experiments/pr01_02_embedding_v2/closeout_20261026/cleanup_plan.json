@@ -1,0 +1,682 @@
+{
+  "scope": "six historical species caches only; no source DNA, weights, per-run artifacts, logs, presentation or user changes",
+  "files": [
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\base_L3.npy",
+      "bytes": 58848896,
+      "sha256": "4e54d26df76ca778ea2e2584b93d47ab21f8f0799430d6cab1d4b3c02621d3b4",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\base_L6.npy",
+      "bytes": 58848896,
+      "sha256": "5ea1afb331b6f59c62c84b04f91b132f3413ce36d1a2964c5e1e6f9a99f07b3a",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\token_L3.npy",
+      "bytes": 55216256,
+      "sha256": "70350cae73073e33b8fee8ab642e50a1e5eb031a46ce7d32a0bcefe290dad057",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\token_L6.npy",
+      "bytes": 55216256,
+      "sha256": "6ff160a494e57ca7a5698e41dd8d15a51f0c13840ce76d55a254a0eb12c1a67e",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L3_W10.npy",
+      "bytes": 52310144,
+      "sha256": "584b36980e3d297982620500e8722d50392c90580fe7c9e7eb1756772b9cc2c7",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L3_W12.npy",
+      "bytes": 50857088,
+      "sha256": "78437382c547d57ad2b7a33884b7e8d68c78454e8954469bfd86f40a95af990b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L3_W16.npy",
+      "bytes": 47950976,
+      "sha256": "29dd8858dfdf65d7868459103ed8204920451079549e7e1bb3dfb8eb0f49e599",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L3_W6.npy",
+      "bytes": 55216256,
+      "sha256": "3d1dac6eeaa949fe3061049951c03f397c2cf15a3911f5e0e6ad9738a4fa24ab",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L3_W8.npy",
+      "bytes": 53763200,
+      "sha256": "554fb6ab8695cb8db6dd221050950b2210ca3355469c571356236fda5b79b22d",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L6_W10.npy",
+      "bytes": 52310144,
+      "sha256": "55922a090f1ea44c490f3b741f257018897a766d295da67cf31435145010b2d3",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L6_W12.npy",
+      "bytes": 50857088,
+      "sha256": "9a10b159dd9217ca9a356346edda3ebedf064c0861cb67dec8b2604d42fefa66",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L6_W16.npy",
+      "bytes": 47950976,
+      "sha256": "500eb5a986bd3f87fb3ee0cd255e9d290182766b51e5a983b1296678923c90bb",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L6_W6.npy",
+      "bytes": 55216256,
+      "sha256": "73010ba6c8b286fecf82424604ab3a2ac28bd606a2cd32f33ee1e82c7be4dbc5",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bacillus_subtilis\\window_L6_W8.npy",
+      "bytes": 53763200,
+      "sha256": "07d077ac099291b07df62e3ad94600903aaf1c6bce3c8a396d3822bcb52e1430",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bacillus_subtilis/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\base_L3.npy",
+      "bytes": 136733312,
+      "sha256": "4cddaec749d1a582b212465dd743b3be1b36bc54f348394af1f34633e846a8da",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\base_L6.npy",
+      "bytes": 136733312,
+      "sha256": "2632269a80048b86f8748f79cf0c60d3ba2a915db8cee0eecbb0e44e2368cb23",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\token_L3.npy",
+      "bytes": 128292992,
+      "sha256": "11c94ccab57d9c6d91393dbb080faae47d0da20fb120a8297d8de723777764bd",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\token_L6.npy",
+      "bytes": 128292992,
+      "sha256": "6f4aa1466bbc7da6f9a755849c195a110c1feefbfd42fde0ea179c4e20a4eb01",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L3_W10.npy",
+      "bytes": 121540736,
+      "sha256": "1172022e3807affe737d5d2752a07b7c6ad68011c5932f202c67a7a51b9edaf3",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L3_W12.npy",
+      "bytes": 118164608,
+      "sha256": "500bcc377ff705c0f6d94031764e57d9181cea302c6d7baa4da9dd84123e0871",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L3_W16.npy",
+      "bytes": 111412352,
+      "sha256": "d88b5434a6505bcb2899e46fefb6c8ff2e54232bdaf7f2ca9192830c6180933f",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L3_W6.npy",
+      "bytes": 128292992,
+      "sha256": "f287a6551bc7b0589bd959e78bd0716a7d0b7aaf77ac074f93ff25d8abbc3d4c",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L3_W8.npy",
+      "bytes": 124916864,
+      "sha256": "fb1df899dbfc15f83b2926b1445c1970f087534e819439ce5c2b9a95907fc404",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L6_W10.npy",
+      "bytes": 121540736,
+      "sha256": "2fbb2a57ed429916eae219fc2693a66ec1d1739b66dd6530c1882cf9e29f1ef5",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L6_W12.npy",
+      "bytes": 118164608,
+      "sha256": "e3233ec1c1f1e6ecd53ad3df6d6a28f29caef84d20b9f4362e56d8414482da57",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L6_W16.npy",
+      "bytes": 111412352,
+      "sha256": "e68a5a5191b3538e32edf3dc1c0223b5fd8ef276d1a93cd3744fb447270d4f4a",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L6_W6.npy",
+      "bytes": 128292992,
+      "sha256": "874fc3646f7f640ee2e846de3cd76954e55ec40df1e5c337a240745f8fb3138b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_baumannii\\window_L6_W8.npy",
+      "bytes": 124916864,
+      "sha256": "f6ef01499c6cd1949ac410a483bf3d738787b7595db720c4fe788c56a23515d0",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_baumannii/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\base_L3.npy",
+      "bytes": 169703552,
+      "sha256": "bfa35e891024b4af2f8d006f68be60fba2f5ffe2dd7c32dd681e7cc5809d2b98",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\base_L6.npy",
+      "bytes": 169703552,
+      "sha256": "168dd8c3ff4f53fc7acc7c7ec5333a25207eb67611ffa969516426fc8c0530dc",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\token_L3.npy",
+      "bytes": 159228032,
+      "sha256": "dadaab79dbc925566184ef6555eb3e1f5e542e0354cf650fadda0837724791b8",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\token_L6.npy",
+      "bytes": 159228032,
+      "sha256": "875036fc02b7457be29f926156297c2eecad7b464fdf4ab788f39d5c11867701",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L3_W10.npy",
+      "bytes": 150847616,
+      "sha256": "c3051737ae712549fda6a5332635eaf67b0577c6b4a4cd096b774c7d65cfc61d",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L3_W12.npy",
+      "bytes": 146657408,
+      "sha256": "ed7a79107b0971e368b62ec742c17b7c9cd16146a091195c0896620dc36dc163",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L3_W16.npy",
+      "bytes": 138276992,
+      "sha256": "e618a8239e1599def03dc22ffcf6ce10d81ee098937860f553bf361274f9a12a",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L3_W6.npy",
+      "bytes": 159228032,
+      "sha256": "9c169edea35e85d8ff3818cac45d33265cae770af8f32a58174c308deacb1cd4",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L3_W8.npy",
+      "bytes": 155037824,
+      "sha256": "5b11b2d65c4260e9b806a2ae1c0f680e72d0e092fc37197df435afc540bd8265",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L6_W10.npy",
+      "bytes": 150847616,
+      "sha256": "4cc32ace607a2af3cc567d91422759f59720071e5b1062d399da1e44915dd4bb",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L6_W12.npy",
+      "bytes": 146657408,
+      "sha256": "b16a8effe9a3efa25ca54cf69573891874d6b7583a8a617ae5ecfab022707650",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L6_W16.npy",
+      "bytes": 138276992,
+      "sha256": "f862135d26d2276f8689e98f039c51c182569823b573fb729072d80076d62a5d",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L6_W6.npy",
+      "bytes": 159228032,
+      "sha256": "ba5b07241c69a9e242c98bbd36b5d7075a5786c5516f909bfb206675e7bb36a4",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_bradyrhizobium\\window_L6_W8.npy",
+      "bytes": 155037824,
+      "sha256": "f47d5912b79278c2b7238692d666f49aec85e3f982558f70bcc13db988e58747",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_bradyrhizobium/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\base_L3.npy",
+      "bytes": 147557504,
+      "sha256": "09db6226a047c15db89d93277e47c7b655c9bcb2186138ed16f38f256c093692",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\base_L6.npy",
+      "bytes": 147557504,
+      "sha256": "dc1bd5cda2c831b35e8e0410755464a2d41dff5440540f157d774e6b9c4c854a",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\token_L3.npy",
+      "bytes": 138449024,
+      "sha256": "fecb5d6a99bc67c06f0da4333f042e6400c7d5493badf30bf26feb2aa67db4f2",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\token_L6.npy",
+      "bytes": 138449024,
+      "sha256": "d566d5061a3cd37c0367b0340b7b265c5c9afc282a8a9fd3a01db44d2c2c3e8e",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L3_W10.npy",
+      "bytes": 131162240,
+      "sha256": "525fabcac106c2c12b832ffcfa67bea6ca0cf504590201b6dfd245a51dc6cda3",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L3_W12.npy",
+      "bytes": 127518848,
+      "sha256": "9d47dee7e610ac683bce969e9096791a45c97fb7d87f7caa4a8091f284d17831",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L3_W16.npy",
+      "bytes": 120232064,
+      "sha256": "111363c63b865f8902ff13733b12a6986f1674aa23c55233dba4bd757c563890",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L3_W6.npy",
+      "bytes": 138449024,
+      "sha256": "9fa543247a045774af32c335be362be95eb012a0d9195670b84db3d063ba7b88",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L3_W8.npy",
+      "bytes": 134805632,
+      "sha256": "374ec7d343b53aaa10924ce764d43b12eb9e96aaf4e12500fab6e60320656fdd",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L6_W10.npy",
+      "bytes": 131162240,
+      "sha256": "59fa7d055688ccc095c882b3f59e6c5f300f22e17ffd77965bc17ee881268c1b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L6_W12.npy",
+      "bytes": 127518848,
+      "sha256": "0a9d9d6c42401dbbc2df4ac462f8ec35c0300691e5158540d65249cd5d151810",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L6_W16.npy",
+      "bytes": 120232064,
+      "sha256": "5984a4f7703c237e58bbc3e477936ad87473844bb27c6a611f22281cf62cfe1b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L6_W6.npy",
+      "bytes": 138449024,
+      "sha256": "120f415177a2783d1d78e2bbee0b22f17943c7f96bfa5956afac9a4dc9812614",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_diphtheria\\window_L6_W8.npy",
+      "bytes": 134805632,
+      "sha256": "64135c656d5affb3b3ce75aaa344f1b4503a4c9b8ddf4d0d3d6438caff3e0b34",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_diphtheria/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\base_L3.npy",
+      "bytes": 142207616,
+      "sha256": "7bd70e8dba8cbb9e416476496baec7b32e1f94ae85fc174f433b564cccb0211c",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\base_L6.npy",
+      "bytes": 142207616,
+      "sha256": "acbd217e782912ea211db23a6a7a9b5a5d7d52aa10887a67a63806d93507a44b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\token_L3.npy",
+      "bytes": 133429376,
+      "sha256": "5231276cade0c392999ae60c205977189be6a397d3a93fcd28a9435ee51bdb33",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\token_L6.npy",
+      "bytes": 133429376,
+      "sha256": "bc0990d4e92a8c0df9d67582a10256750b3413ea30b3f9ce3e03ead20e4e53e1",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L3_W10.npy",
+      "bytes": 126406784,
+      "sha256": "6612218a3fd84cc9ef743ac0a85817f6ee27cf4bfed1273c640e315fb67bb0f8",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L3_W12.npy",
+      "bytes": 122895488,
+      "sha256": "c8dd08816ffe703f5e49e8ffd92894ec41564cfd4aa8d92cc58e882e8eea71d1",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L3_W16.npy",
+      "bytes": 115872896,
+      "sha256": "3c4b16d175b41c897b411f1b22af68936fe1d87fe7f7511731c8d0d1e7033f0d",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L3_W6.npy",
+      "bytes": 133429376,
+      "sha256": "311171fc48b8a644bef10dac53c695864fd5cc2fdd01b1a8ade41e0efac5b75f",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L3_W8.npy",
+      "bytes": 129918080,
+      "sha256": "b0b266a586075591f6c38e23ac3e6e13c58eee6b3a2dd2a6e2f3071c61119890",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L6_W10.npy",
+      "bytes": 126406784,
+      "sha256": "94717d9fdf9ffba30e8ab199a0f95ac2828d0325a5c883a1b8ecda44b0d6fa69",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L6_W12.npy",
+      "bytes": 122895488,
+      "sha256": "cec64d380fe93ebd90f1cfae7da44520966ca96018c553ce3af577685a43765f",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L6_W16.npy",
+      "bytes": 115872896,
+      "sha256": "78ba4b66dff087a14b4a50da9f4bb348e1c29bd2bbfe651d33e0471acd89dc99",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L6_W6.npy",
+      "bytes": 133429376,
+      "sha256": "3df166af55663408fb157be407006662d4cf6f6df0c4aae6fc0470e8a9a2ae87",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_escherichia_coli\\window_L6_W8.npy",
+      "bytes": 129918080,
+      "sha256": "b2fd9d68aa1b6d44f084a6ebcaf2106b8f5c719076cf29264d97c1ae46a1b8ea",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_escherichia_coli/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/base_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\base_L3.npy",
+      "bytes": 184135808,
+      "sha256": "f922ad7ea661a8a21ebdfec03d26dd6fd444a83573236a6548dba802e3f4bc93",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/base_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\base_L6.npy",
+      "bytes": 184135808,
+      "sha256": "abe508bb5a616be4ac00427e39bdeaff771e4bee484d90082eef9e490a852ef0",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/token_L3.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\token_L3.npy",
+      "bytes": 172769408,
+      "sha256": "0f20e5fc0f17800615f9af458c2f3500953cf425062c41c4cfe78f5c42cddc9b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/token_L6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\token_L6.npy",
+      "bytes": 172769408,
+      "sha256": "23f54c22e8038cfffeb90f436f9e82476e0e33b89020c078d6d35ae46eff78ad",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L3_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L3_W10.npy",
+      "bytes": 163676288,
+      "sha256": "52118fac983557e5176d68d4eb212be177c786fd4f9b61a8b7df22167cc2bd39",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L3_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L3_W12.npy",
+      "bytes": 159129728,
+      "sha256": "9a2f8481da969b20813ffa439cb9bf12f12e593a74e290168f9c66db9ab21268",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L3_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L3_W16.npy",
+      "bytes": 150036608,
+      "sha256": "95d4c8606da09d556b3d079a5eaaf7482b53f5e807994317ca12928efa390ced",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L3_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L3_W6.npy",
+      "bytes": 172769408,
+      "sha256": "4c5dc6e43f6d90d97755f3951f13cf15befc79cc9dbe829c22f5c3a0ec6fd0e5",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L3_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L3_W8.npy",
+      "bytes": 168222848,
+      "sha256": "0047a3281d92206f3d177ef8abbf5678979f019d6b95a166a21d7e6589f07c3b",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L6_W10.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L6_W10.npy",
+      "bytes": 163676288,
+      "sha256": "bc52062d5b3f03a01d7b2652789d399e98b0e0246b42b197e7952e8728f789a1",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L6_W12.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L6_W12.npy",
+      "bytes": 159129728,
+      "sha256": "9efe792fe02092958a7617e717704f1135fb322672f8cf90c4fb418daea096d1",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L6_W16.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L6_W16.npy",
+      "bytes": 150036608,
+      "sha256": "817ddaee241222333f5373c45bcab6678ca52c96e6033745951bd9de309cf263",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L6_W6.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L6_W6.npy",
+      "bytes": 172769408,
+      "sha256": "715caf3f377742e805d3579b1361697d389df8e7b171fdc9945e7de10a88ffef",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    },
+    {
+      "path": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/window_L6_W8.npy",
+      "absolute_path": "D:\\大三上小学期\\机器学习综合实践\\ml-project\\experiments\\pr01_02_embedding_v2\\cache\\tjupan_staphylococcus\\window_L6_W8.npy",
+      "bytes": 168222848,
+      "sha256": "940c2ef5cebf9fa639296449b209b669e629d8fab63420407052df8e60c26eda",
+      "action": "delete_recomputable_cache",
+      "manifest": "experiments/pr01_02_embedding_v2/cache/tjupan_staphylococcus/cache_manifest.json"
+    }
+  ],
+  "file_count": 84,
+  "total_bytes": 10671140352,
+  "historical_protected_paths_intersect": 0,
+  "all_manifest_hashes_match": true,
+  "restore": "fixed encoder/config and cache index in a NEW output directory, then compare original manifest hashes"
+}
