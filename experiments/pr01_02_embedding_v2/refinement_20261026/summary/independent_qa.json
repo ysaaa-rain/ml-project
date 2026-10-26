@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "source_sha256": "0ac51259f65790fcdbb859d3aa321b10f27bcdd148ec226263a0b34e1ffe7a67",
+  "candidate_pwms_rebuilt": 4536,
+  "instances_checked": 980912,
+  "background_subset_pairs": 96,
+  "bounds_orientation_unique_per_sequence": true,
+  "real_holdout_used": false,
+  "limits": "persisted-artifact consistency; not independent model refitting"
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "observed pre-fit test execution",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "experiments/pr01_02_embedding_v2/refinement_20261026/test_pipeline.py",
+    "experiments/pr01_02_embedding_v2/validation_20261025/test_pipeline.py",
+    "experiments/pr01_02_embedding_v2/bottleneck_20261025/test_pilot.py",
+    "experiments/pr01_02_embedding_v2/test_pipeline.py",
+    "experiments/pr01_02_embedding_v2/next_round/test_methods.py",
+    "-q"
+  ],
+  "returncode": 0,
+  "passed": 28,
+  "failed": 0,
+  "reported_pytest_seconds": 4.79
+}

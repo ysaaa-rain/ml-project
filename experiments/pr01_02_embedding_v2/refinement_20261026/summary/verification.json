@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "cluster_fits": 48,
+  "discovery_outputs": 240,
+  "hashes_checked": 688,
+  "protected_files_unchanged": 2644,
+  "instances_checked": 980912,
+  "reversed_instances_checked": 71454,
+  "shifted_instances_checked": 75479,
+  "truth_sites_checked": 6144,
+  "real_holdout_used": false,
+  "limits": [
+    "three data seeds and two clustering seeds; bounded pilot",
+    "no independent rerun or full near-homology audit",
+    "background rejection is post-cluster, not new clustering"
+  ]
+}

@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-26 Embedding第三轮小试完成：48次聚类、240组方向/偏移/背景拒绝对照。30%退化中BERT BG_ONLY的F1从本轮RAW的0提高到约0.482；同处理One-hot约0.418，但BERT仅1/3数据种子更好，候选集空白误报更高，不能宣称稳定优于One-hot。对齐组合未形成一致收益。28项相关测试通过，旧证据和真实Holdout不改。[完整报告](experiments/pr01_02_embedding_v2/refinement_20261026/REPORT.md)。
+
 2026-10-25 Embedding第二轮完成：5数据种子×3聚类种子复核及PCA/筛选消融，含压力测试，合计324次聚类拟合、414组PWM输出，另25个监督定位探针。原流程15%退化F1约0.695；128维约0.790，仍低于One-hot约0.900。30%退化监督定位率约0.730表明信息仍可读出，但不等于无监督发现成功。20项相关测试通过；当前优先研究聚类/实例对齐，未进入真实数据或使用真实Holdout。[完整报告](experiments/pr01_02_embedding_v2/validation_20261025/REPORT.md)。
 
 2026-10-25 Embedding 独立分支推进：完成定位瓶颈与 mini-c 对照小试，6个新合成条件、42个拟合。15%退化中局部重编码+token拼接F1约0.900，仍低于One-hot的0.919；30%退化仍未恢复；mini-c均值方案未显示优势。13项相关测试通过，冻结输入和历史证据不覆盖，未使用真实Holdout。[阶段报告](experiments/pr01_02_embedding_v2/bottleneck_20261025/REPORT.md)｜[协议与复现](experiments/pr01_02_embedding_v2/bottleneck_20261025/README.md)。

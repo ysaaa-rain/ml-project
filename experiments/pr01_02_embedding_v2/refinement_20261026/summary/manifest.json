@@ -1,0 +1,2430 @@
+{
+  "status": "COMPLETED",
+  "started_unix": 1792984585.9048505,
+  "protocol_sha256": "08656d97f627f0071fd6d7c5a51e611e21ce7416a7acb69de87b7a00a3691292",
+  "source_sha256": {
+    "experiments/pr01_02_embedding_v2/refinement_20261026/protocol.json": "08656d97f627f0071fd6d7c5a51e611e21ce7416a7acb69de87b7a00a3691292",
+    "experiments/pr01_02_embedding_v2/refinement_20261026/pipeline.py": "749055c22de0b6854a5c9c94a45362b8a161f10357eea9a28e36ef69a7b08005",
+    "experiments/pr01_02_embedding_v2/refinement_20261026/__init__.py": "091ddae4eea1c27aea1d47013980901a95b26053e8047caa0668d379538b61c8",
+    "experiments/pr01_02_embedding_v2/validation_20261025/pipeline.py": "6561f0b92765e4e4b491cfc6d1c781cc6452ff0d1ea72afb3f1cdc28a3214ffa",
+    "experiments/pr01_02_embedding_v2/bottleneck_20261025/pilot.py": "33cb8eadf89e60029a87007ffbcfe868304953bcc90bef33fb17c3459da9f3a2",
+    "experiments/pr01_02_embedding_v2/encoder.py": "a21d83a8f517978dc7a1632d28220a8dff6190b7d83fb3b92d8673d70bc275c2",
+    "experiments/pr01_02_embedding_v2/discovery.py": "f69c4b98b4f694865ab2cbdac9499a5a624948b75317c9ea05aaea96ee9abb8d"
+  },
+  "git_head": "9ee57219481328ce11d644df914c72cae6e22b33",
+  "python": "3.13.5",
+  "dependencies": {
+    "torch": "2.7.1",
+    "transformers": "5.8.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1"
+  },
+  "real_holdout_used": false,
+  "cluster_fits": 48,
+  "runs": [
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610260",
+      "scenario": "strong_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610261",
+      "scenario": "strong_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 15,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 17,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "strong_random__s202610262",
+      "scenario": "strong_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610260",
+      "scenario": "mut15_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610261",
+      "scenario": "mut15_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut15_random__s202610262",
+      "scenario": "mut15_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 5,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 5,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 9,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610260",
+      "scenario": "mut30_random",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 7,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610261",
+      "scenario": "mut30_random",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 7,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 8,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 7,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mut30_random__s202610262",
+      "scenario": "mut30_random",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 7,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610260",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610260,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610261",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610261,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 11,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "BG_ONLY",
+      "candidate_count": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "OH",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261028,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RAW",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_ONLY",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT",
+      "candidate_count": 24,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "BG_ONLY",
+      "candidate_count": 14,
+      "status": "COMPLETED"
+    },
+    {
+      "condition": "mixed_strand_mut15__s202610262",
+      "scenario": "mixed_strand_mut15",
+      "data_seed": 202610262,
+      "algorithm_seed": 20261029,
+      "representation": "EMB",
+      "variant": "RC_SHIFT_BG",
+      "candidate_count": 13,
+      "status": "COMPLETED"
+    }
+  ],
+  "fit_elapsed_seconds": 1316.7689054012299,
+  "elapsed_seconds": 1469.043025970459
+}
