@@ -1,0 +1,15 @@
+{
+  "version":"real-bsub-common-pwm-scan-20261027-v1",
+  "input":"TJU B. subtilis frozen v2, same Discovery/Development as MEME/STREME",
+  "methods":["STREME_ALL10","CNN_SHIFT","ONEHOT","PROKBERT"],
+  "cnn_supervised":true,
+  "algorithm_seeds":[20261005,20261006],
+  "streme":"existing Discovery natural-background full streme.txt, one run",
+  "embedding":"existing Discovery L6W10 candidate pools per method and seed, natural background data",
+  "ranking":"Discovery positive minus natural control leakage-group presence; zero-order complementary-symmetric natural background; per PWM natural-control 90th percentile, strict >, both strands; tie by information, ID",
+  "views":["TOP5","ALL"],
+  "evaluation":"identical PWM scoring and fixed Discovery threshold on same Development positive, natural control and paired shuffled controls; group-level OR over each candidate set",
+  "similarity":"CNN Discovery-ranked top5 vs STREME all10; centered cosine over best offset and strand; overlap at least max(5,ceil(0.6*shorter width)); no cosine threshold; report overlap",
+  "position":"per CNN top3 Discovery-selected instance, PWM center relative to TSS=local index60, raw sequence-level counts, not Development reference positions",
+  "limitations":"retrospective data already observed; CNN training uses sequence labels and its candidate extraction differs; STREME one run not two seeds; MEME full PWM unavailable; no new Holdout access"
+}
