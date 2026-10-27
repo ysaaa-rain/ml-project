@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "model_count": 2,
+  "candidate_rows": 59,
+  "family_rows": 10,
+  "source_hashes": 11,
+  "locked_files": 19,
+  "pwm_instance_reconstruction": "passed"
+}

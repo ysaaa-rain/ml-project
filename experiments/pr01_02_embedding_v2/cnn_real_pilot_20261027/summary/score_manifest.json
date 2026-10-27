@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "fit_lock_sha256": "bb38190205c7323055b9ad4fc7abc6e859ebf5d7eede2a91dd336b9d3ee3d2fb",
+  "outputs": {
+    "candidates.tsv": "b49984c5abf17c3d7fdfdd3c80111bea947038a4a03f266aac80948d9ca0287c",
+    "family.tsv": "8e96144cb15cce1603f4debea21770bb2ce6ae2a02e650440926089b6c1f911d"
+  },
+  "development_positive": 67,
+  "development_natural": 77,
+  "development_mixed_groups": 0,
+  "holdout_used": false,
+  "evaluation": "retrospective Development; same-data STREME reference"
+}

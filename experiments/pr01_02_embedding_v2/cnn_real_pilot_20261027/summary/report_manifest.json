@@ -1,0 +1,8 @@
+{
+  "report_source_sha256": "378db2531299d9db57232be327c96e380a60d755089533c4abbf9cb05bc0c907",
+  "outputs_sha256": {
+    "REPORT.md": "867269b41d2467958d7095e11f7dfa721a8537b3711a76ffa4565c50a2d91d88",
+    "candidate_profiles.png": "53ac1c98aa6b377840af7396163a6d5139900b0e4c294b83784bd53872527b03",
+    "selected_candidates.tsv": "6fae5025536260d61061a60dcc9e8d79a03ce89994ecca3b3d4648b951ffeaf8"
+  }
+}
