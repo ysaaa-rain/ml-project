@@ -1,0 +1,8 @@
+{
+  "stage": "observed pre-fit execution",
+  "passed": 25,
+  "failed": 0,
+  "returncode": 0,
+  "reported_pytest_seconds": 13.39,
+  "command": "python -m pytest experiments/pr01_02_embedding_v2/cnn_boundary_20261027/test_pipeline.py experiments/pr01_02_embedding_v2/cnn_features_20261026/test_pipeline.py -q"
+}
