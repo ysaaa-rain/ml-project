@@ -1,0 +1,19 @@
+{
+  "version": "cnn-real-bsub-practice-20261027-v1",
+  "source": "tjupan_bacillus_subtilis",
+  "data": "data/processed/pr01_02_data_v2/tjupan_bacillus_subtilis/main/sequence_master.tsv",
+  "discovery": "use frozen Discovery positive and natural control, no new split",
+  "development": "frozen Development positive, natural control and paired dinucleotide shuffle; previously observed, exploratory",
+  "holdout": false,
+  "algorithm_seeds": [20261005, 20261006],
+  "cnn": {"filters": 24, "width": 12, "epochs": 80, "batch_size": 64, "learning_rate": 0.005, "weight_decay": 0.0001},
+  "threads": 4,
+  "activation_control_quantile": 0.90,
+  "minimum_support": 10,
+  "candidate_variants": ["RAW", "SHIFT"],
+  "shift": "single per filter maximizing Discovery information among -2..2, same edge-eligible instances",
+  "scan_control_quantile": 0.90,
+  "scan": "uniform double-strand PWM log odds with symmetric Discovery natural background; positive/negative mixed leakage groups excluded; Discovery-only rank by positive minus natural-control group presence, ties by information then name; top 3 and all candidates",
+  "descriptive_comparator": "three existing STREME selected_main PWMs on same input and scan settings; original STREME candidate selection differs, not a complete cross-method benchmark",
+  "interpretation": "CNN has Discovery sequence-level supervised labels; PWM hit rates and same-data STREME similarity do not establish a functional motif; no fabricated results"
+}
