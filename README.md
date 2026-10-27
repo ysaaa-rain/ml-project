@@ -1,10 +1,6 @@
 # PR01-02：启动子调控模式发现
 
-2026-10-27 同批统一比较：[BERT、One-hot与CNN合成实验](reports/same_batch_motif_equal_20261027/REPORT.md)｜[STREME、One-hot与BERT六物种真实数据](reports/same_batch_real_equal_20261027/REPORT.md)。各比较使用相同数据、排序和共同候选数量；两份报告分别注明监督和候选来源差异。
-
-2026-10-27 [统一片段口径的同批合成比较](reports/practice_comparison_20261027/REPORT.md)：分别展示BERT/One-hot和CNN/One-hot的已有数据；真实数据统一扫描与跨线路同批运行尚待完成。
-
-2026-10-27 [课程实践 Motif 候选总览](reports/practice_motif_20261027/REPORT.md)｜[本地交互浏览](reports/practice_motif_20261027/index.html)：汇集传统方法 540 条和真实数据 Embedding 1,289 条运行级候选记录，另对四轮已有合成实验的 2,400 组候选集合补充片段匹配分析。记录可能跨运行重复；合成定位为事后参考辅助评价，历史结果及原始数据保留。
+2026-10-27：以 MEME/STREME 使用的真实数据与划分为共同基础，所有线路统一采用适合课程实践的较宽松候选及局部匹配评价；CNN 尚待收尾，未来横向比较时同样对齐。[重做计划](docs/PR01-02_真实数据统一比较重做计划_20261027.md)｜[候选规范](docs/PR01-02_课程实践候选与展示规范_20261027.md)。
 
 2026-10-27 CNN边界处理多算法种子独立复核：三条件×5组新合成数据×6算法种子（2旧+4新），90次CNN训练、90次OH48聚类、270组PWM池及900组预算评价。30%退化、匹配5候选时，RAW/SHIFT F1约0.506/0.539；5组数据2胜1负2平，4个新算法种子仅1个平均差为正，未通过进一步合成研究门槛。同批OH48约0.510，CNN采用序列级监督，不能据此声称总体优势。算法种子同时控制初始权重与批次顺序；真实Holdout未使用。[完整报告](experiments/pr01_02_embedding_v2/cnn_seed_validation_20261027/REPORT.md)。
 
