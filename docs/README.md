@@ -1,5 +1,7 @@
 # PR01-02 文档导航（2026-10-09）
 
+2026-10-27 [CNN参考无关窗口边界与方向消融](../experiments/pr01_02_embedding_v2/cnn_boundary_20261027/REPORT.md)已完成：60次CNN训练、30次OH48聚类、150组PWM池、420组评价。30%退化匹配候选下，CNN平移前/后F1约0.350/0.564，5数据种子4胜1平，空白误报约0.186/0.170；同批OH48约0.579。10次算法运行的4次收益均来自同一初始化，需新数据与更多初始化复核；不能声称稳定超越OH48。25项相关测试及产物核验通过，真实Holdout未用。
+
 2026-10-26 当前Embedding状态：[BERT收束与清理材料](../experiments/pr01_02_embedding_v2/closeout_20261026/CLOSEOUT.md)｜[老师推荐方法核对](../experiments/pr01_02_embedding_v2/closeout_20261026/teacher_methods.md)｜[CNN局部特征首轮结果](../experiments/pr01_02_embedding_v2/cnn_features_20261026/REPORT.md)。已腾退84份旧编码缓存约9.94GiB，保留复现实验依据。CNN新路线完成36训练+18随机模型+18次聚类、72组PWM池与180组评价；弱模式F1约0.277/One-hot48约0.547，混合链约0.894/0.871，尚无稳定总体优势。探索性诊断提示卷积窗口边界问题，后续应另开协议检验；22项相关测试及独立产物核验通过，真实Holdout未用。
 
 2026-10-26 Embedding第四轮：[背景拒绝独立复核与候选预算匹配](../experiments/pr01_02_embedding_v2/budget_validation_20261026/REPORT.md)。135次聚类、270组PWM池、900组评价已完成；30%退化双方各5个候选时，BERT F1约0.295，完整One-hot48约0.543，5/5新数据种子均较低且候选集误报更高。背景拒绝有自身改进，但稳定优势未复现；建议收束当前流程的常规调参，保留补充研究定位。37项相关测试及产物核验通过，真实Holdout未用。

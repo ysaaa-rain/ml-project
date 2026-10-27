@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "source_sha256": "97b00926c0f4e60a461711aee147ee78a59a66ec519b531249049318283f31f4",
+  "paired_initial_states_recomputed": 30,
+  "label_streams_and_weight_changes_checked": 60,
+  "OH48_pools_reconstructed": 30,
+  "real_holdout_used": false,
+  "limits": "saved-state consistency, no independent full retraining or near-homology audit"
+}

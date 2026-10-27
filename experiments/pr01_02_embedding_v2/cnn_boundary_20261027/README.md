@@ -1,5 +1,7 @@
 # CNN参考无关窗口边界与方向消融（2026-10-27）
 
+已完成：[结果报告](REPORT.md)。30%退化、相同候选预算时，双向CNN的RAW F1约0.350、SHIFT约0.564，5数据种子4胜1平；候选集误报约0.186/0.170，通过预设合成复核门槛。同批OH48约0.579，SHIFT仅1/5数据种子更高。10次算法运行中4次改善全部来自同一模型初始化，下一步优先扩展初始化并换新数据；不能宣称总体优势或功能发现。25项预拟合测试、实例/PWM/排序与历史保护核验通过，真实Holdout未用。
+
 依据[上一轮报告](../cnn_features_20261026/REPORT.md)的评分后诊断，检验候选窗口存在1–2bp偏移时，是否可只依据Discovery序列使同一filter的实例整体平移；另比较双向共享和单向训练/提取。冻结协议在 `protocol.json`，新数据种子、独立版本，不改上一轮模型、结果或真实数据。
 
 每filter先按固定激活阈值选择Discovery正序列，筛去任一±2bp候选窗口会越界的实例；RAW和SHIFT共享这批序列。SHIFT只比较5个统一偏移的PWM相对Discovery空白背景的信息量，按固定平局规则取一个；没有输入参考motif或植入位置。此处不是逐实例自由对齐，信息量选择可能偏爱随机波动，必须比较新Test。
@@ -16,4 +18,4 @@ python -m experiments.pr01_02_embedding_v2.cnn_boundary_20261027.pipeline verify
 python -m experiments.pr01_02_embedding_v2.cnn_boundary_20261027.report
 ```
 
-`fit`拒绝覆盖既有artifacts。人工序列、实例和拟合对象留本地；公开代码、协议、训练曲线、摘要、诊断与哈希。状态以 `summary/manifest.json` 为准。
+`fit`拒绝覆盖既有artifacts。人工序列、实例和拟合对象留本地；公开代码、协议、训练曲线、摘要、诊断与哈希。状态以 `summary/manifest.json` 和报告为准。

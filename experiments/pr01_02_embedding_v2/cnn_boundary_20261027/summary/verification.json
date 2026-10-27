@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "artifact_hashes": 779,
+  "historical_files_unchanged": 5202,
+  "instances_checked": 227770,
+  "pwms_rebuilt": 1741,
+  "rankings_recomputed": 150,
+  "cnn_activation_maps_recomputed": 60,
+  "filter_shift_decisions_recomputed": 1440,
+  "selected_instances_before_edge": 95707,
+  "edge_excluded": 4021,
+  "truth_sites_checked": 7680,
+  "evaluation_sets": 420,
+  "exact_RC_duplicates_per_condition": 0,
+  "real_holdout_used": false,
+  "limits": "saved-model and artifact consistency; no independent retraining or near-homology audit"
+}

@@ -1,0 +1,17 @@
+{
+  "mean_delta": 0.21382611840157936,
+  "wins": 4,
+  "losses": 0,
+  "cap5_mean_delta": 0.21382611840157936,
+  "sign_flip_p": 0.125,
+  "gate_checks": {
+    "matched_mean_positive": true,
+    "at_least4_of5_wins": true,
+    "cap5_mean_positive": true,
+    "no_zero_budget": true,
+    "family_fpr_not_above_raw": true,
+    "strong_mean_delta_at_least_minus_0_05": true
+  },
+  "advance_gate_passed": true,
+  "limits": "independent synthetic screening, five data seeds; no claim of significance, biological function or general model superiority"
+}
