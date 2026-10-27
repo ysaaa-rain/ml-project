@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "source_files": 20,
+  "outputs": 9,
+  "candidate_pools": 7,
+  "family_views_recomputed": 14,
+  "cnn_instance_position_groups_checked": 6,
+  "holdout_used": false
+}

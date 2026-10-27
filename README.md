@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-27 [枯草芽孢杆菌同数据候选比较](experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/summary/REPORT.md)：完整10个STREME候选池及两种子CNN、One-hot、BERT使用同一Discovery排序及90%分位阈值、Development正类和两类对照，另展示CNN训练实例位置。结果为探索，MEME完整PWM尚缺；CNN使用序列级监督。
+
 2026-10-27 [CNN真实数据小试](experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/summary/REPORT.md)：使用传统方法相同的枯草芽孢杆菌数据和划分，训练2个CNN并生成候选，统一扫描正类、天然负类和配对Shuffle。前3候选正类命中0.848/0.818，天然负类0.325/0.247，Shuffle 0.667/0.652；为监督训练和已观察Development的探索，不是完整方法排名。
 
 2026-10-27：以 MEME/STREME 使用的真实数据与划分为共同基础，所有线路统一采用适合课程实践的较宽松候选及局部匹配评价；CNN 尚待收尾，未来横向比较时同样对齐。[重做计划](docs/PR01-02_真实数据统一比较重做计划_20261027.md)｜[候选规范](docs/PR01-02_课程实践候选与展示规范_20261027.md)。

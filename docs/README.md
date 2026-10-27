@@ -1,5 +1,7 @@
 # PR01-02 文档导航（2026-10-09）
 
+2026-10-27 [真实数据同口径比较与CNN位置图](../experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/summary/REPORT.md)：同一枯草芽孢杆菌数据，完整STREME候选池与CNN、One-hot、BERT按统一规则扫描；MEME PWM待补齐。
+
 2026-10-27 [CNN真实数据小试](../experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/summary/REPORT.md)：沿用B. subtilis真实数据、两次CNN训练与统一候选扫描；保留天然及Shuffle对照，尚未完成全部方法的横向比较。
 
 2026-10-27 [真实数据统一比较重做计划](PR01-02_真实数据统一比较重做计划_20261027.md)｜[候选展示规范](PR01-02_课程实践候选与展示规范_20261027.md)：采用 MEME/STREME 的基础数据，所有方法统一使用适合课程实践的候选和局部匹配评价；CNN 待收尾后再对齐。

@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "source_sha256": {
+    "experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/protocol.json": "e8a6edd9892eda68c6e8c625ec66727ccd6d45b5ac8e83d1435b63f9a2d1da67",
+    "experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/run.py": "5cb7f6a5bbbbb597971cc4a8c9985fa4bb315eb6e18d494412ce3e10642d9953",
+    "data/processed/pr01_02_data_v2/tjupan_bacillus_subtilis/main/sequence_master.tsv": "3777bea90a8d03236cce2d694b41346026e7d162e3644169bc1ae2e6dda11e08",
+    "data/processed/pr01_02_data_v2/tjupan_bacillus_subtilis/main/discovery.dinucleotide_null.fasta": "1bacd06f8155bc2d4b53dbe205aa86e7d6e757f3c3c24884640b62d7b2114e2e",
+    "data/processed/pr01_02_data_v2/tjupan_bacillus_subtilis/main/development.dinucleotide_null.fasta": "13ff7a7529dfe3f8144705c2ec429347fb48d864d6c084f7ea105926b45e96f3",
+    "results/motif/tju_streme_v2_20261008/tjupan_bacillus_subtilis/natural/streme.txt": "93f031ed85060ab902aa6fb00b90a01ce202084749dc4ada3f28619b3daef0ff",
+    "results/motif/tju_streme_v2_20261008/public_evidence/run_manifest.json": "1d9986d631a4d2abe230998472f13cdf8ad9a0a617fc5f2fb3d4ced686c6cb74",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/summary/fit_lock.json": "bb38190205c7323055b9ad4fc7abc6e859ebf5d7eede2a91dd336b9d3ee3d2fb",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261005/SHIFT/motifs.meme": "359cb34adb64286094a018af91a6dc646ce4527727e123ac6bab40e57eaa540b",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261005/SHIFT/instances.tsv": "ae18de9746e1f4725124c67ac9900e49fb79aa0b2d85b4ecc12de8a5b0cb5bab",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261005/manifest.json": "a2b2f2e74ac791e95bff2583e3c26b94209e70709780d232ce4746948067bd0f",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261005/motifs.meme": "a13a474fa3fe6c21acba119eec3c09fea28df491e8f2820575acfc4734c9532c",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/manifest.json": "c1d126be6a6960b91fe3e744de125aaced3459536d977158d3c6006d73c87a97",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/motifs.meme": "965a162f920c8c679d1e3e9fbf1f95ad5fe616be8677ee70924dd2e2f6d3ac63",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261006/SHIFT/motifs.meme": "e5bc3b96c95d8362a0bf415e07d5d7a9056eb9ee97a2b694336a37f78b7cc53e",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261006/SHIFT/instances.tsv": "872184d2053627f6b729922bb3a41ec999d64756815ce2686deb7b6c4de4eb30",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261006/manifest.json": "c097cb4131c132929cb1a1233d863bdff714528023570054a0301feb7f2a8622",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261006/motifs.meme": "6714c3b9a8718c1fe52f7e2d161122f797a9d845d42c2d3a6c3fb2b1e89bb209",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261006/manifest.json": "bc365834e1fce04964d14275fbbcd2c4525dbe4566cd8a50ab488d1e31d1ddfa",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261006/motifs.meme": "5a2ccc3d3ebd5d836e4db610c1cd3db3d1de7b6e4da1585a4c7f5e3f893a4f57"
+  },
+  "outputs_sha256": {
+    "candidates.tsv": "ff50ad272990af6c709b7daf97ad7d5956db7ad6d87e818cf2b90470a788f496",
+    "cnn_discovery_positions.tsv": "3f7d3cae262831eeea06baf49c77e97fd5254484fad7908d1ab762a7971c865b",
+    "cnn_streme_similarity.tsv": "51d031a71c7b71a2733e134ce975e76aa4290c84ecad57746294a4e6bd6ad194",
+    "discovery_rankings.tsv": "9551a031c0727351f30c64c17581780e0004bb3b05044d94bbb01f2ea9d0328d",
+    "family.tsv": "a79c42eb757d7873d2a6872c9a56786ab1c1f47bd19aaf590ea1f57651496355",
+    "input_lock.json": "f3b6957238149ace7028abad1cb87fb903718924d4ee1a4403a4b7e5abd71d73",
+    "REPORT.md": "8590d5dfcc961211976d863ee08522a41be7ad70c58830fb36d679f6ae16a96d",
+    "comparison.png": "42acfc303cdf832ddc285e6e097d906e6cc99b7cad7c0b34d2ceb17a8ff06bfb",
+    "cnn_positions.png": "7ce19256eaaefb0af3718e2dd6cb627e765bc954080742568555fba3e5a360e1"
+  },
+  "source_count": 20,
+  "candidate_pools": 7,
+  "family_rows": 14,
+  "holdout_used": false,
+  "limitations": "retrospective data already observed; CNN training uses sequence labels and its candidate extraction differs; STREME one run not two seeds; MEME full PWM unavailable; no new Holdout access",
+  "report_source_sha256": "317c22a453aea7fb849843693722257b5b5f8e8c7211d26e809f4512f2669d0b"
+}

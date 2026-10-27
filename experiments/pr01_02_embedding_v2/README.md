@@ -1,5 +1,7 @@
 # PR01-02 DNA Embedding 独立实验路线
 
+2026-10-27：[枯草芽孢杆菌统一候选扫描](real_bsub_comparison_20261027/summary/REPORT.md)，完整STREME自然背景候选池与CNN、One-hot、BERT在同一真实数据和同一较宽松规则下比较，另整理CNN实例位置；MEME PWM尚待恢复。
+
 2026-10-27：[CNN在传统方法同一真实数据上的小试](cnn_real_pilot_20261027/summary/REPORT.md)已完成。TJU B. subtilis 两种子监督训练、候选与天然/Shuffle对照的统一扫描；正类与对照均有命中，尚不是完整横向排名，CNN路线继续推进。
 
 2026-10-27：以 MEME/STREME 的真实数据和划分作为后续比较基础，统一使用适合课程实践的候选和局部匹配评价。[重做计划](../../docs/PR01-02_真实数据统一比较重做计划_20261027.md)。CNN 路线尚待收尾，未来比较时同样对齐；以下为各轮历史结果及当时建议。
