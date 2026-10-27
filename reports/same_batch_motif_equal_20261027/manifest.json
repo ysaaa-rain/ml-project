@@ -1,0 +1,59 @@
+{
+  "protocol": {
+    "version": "same-batch-course-comparison-20261027-v1",
+    "data_source": "experiments/pr01_02_embedding_v2/budget_validation_20261026",
+    "scenario_ids": [
+      "strong_random",
+      "mut30_random",
+      "mixed_strand_mut15"
+    ],
+    "data_seeds": [
+      202610263,
+      202610264,
+      202610265,
+      202610266,
+      202610267
+    ],
+    "algorithm_seeds": [
+      20261030,
+      20261031,
+      20261032
+    ],
+    "methods": [
+      "EMB128",
+      "OH24",
+      "OH48",
+      "TIED_RAW",
+      "TIED_SHIFT"
+    ],
+    "existing_variant": "BG_ONLY",
+    "cnn": {
+      "filters": 24,
+      "width": 12,
+      "epochs": 80,
+      "batch_size": 64,
+      "learning_rate": 0.005,
+      "weight_decay": 0.0001
+    },
+    "threads": 4,
+    "candidate_budget": 5,
+    "partial_min_overlap_bp": 8,
+    "position_tolerance_bp": 3,
+    "ranking": "Discovery positive minus blank presence; tie-break by information, support, id. Same rank function for all methods.",
+    "status": "retrospective exploratory comparison: original BERT/OH test outcomes previously observed; CNN discovery-only fit on same data, not an independent confirmation",
+    "limit": "CNN has sequence-level supervision, BERT and one-hot clustering do not; no real-data outcome or training claim"
+  },
+  "fit_lock_sha256": "6fe287b024a50d032af0c947cd56e6033618f638c1c3c05dcba2b63e3ca697af",
+  "equal_budget_script_sha256": "110e4e739ac58ddabbb694fe3a40fda2d0c26d0c573f8f617b17714f48a7bdc6",
+  "budget_rule": "min(5, candidate counts of all five methods in each same data/algorithm seed)",
+  "budget_counts": "{('development', 2): 1, ('development', 4): 1, ('development', 5): 43, ('test', 2): 1, ('test', 4): 1, ('test', 5): 43}",
+  "run_rows": 450,
+  "outputs_sha256": {
+    "per_data_seed.tsv": "84097d83a7c301e5af779fe91e6ab062199bed3d0f4c5b13fb80fa3d2b81605a",
+    "runs.tsv": "e0ff108f1e27cabc4bd34723ec801f4d9d68242c3e32abbe5285a3a08f00ee56",
+    "summary.tsv": "e5235b11447586894202934baa156557dfc8dd4527ef61c408a5c7f0a9debb14",
+    "REPORT.md": "f3e194d0e6329eda3eec8b596a10abe193a7433f0c82a571896a8033b6b86b97",
+    "comparison.png": "1f5e6d8491e83a115d68b012380d83da3a38f53e3d1deaa46e7bc358d5918585"
+  },
+  "report_source_sha256": "8344c3556e642453205142691da85d39d5375a1d13a231f2a4976f08298003de"
+}
