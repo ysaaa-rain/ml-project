@@ -1,0 +1,19 @@
+{
+  "mean_delta": 0.03300218562884151,
+  "wins": 2,
+  "losses": 1,
+  "new_initializations_positive": 1,
+  "cap5_mean_delta": 0.03300218562884151,
+  "sign_flip_p": 0.5,
+  "gate_checks": {
+    "matched_mean_positive": true,
+    "at_least4_of5_data_wins": false,
+    "at_least3_of4_new_initializations_positive": false,
+    "cap5_mean_positive": true,
+    "no_zero_budget": true,
+    "family_fpr_not_above_raw": true,
+    "strong_mean_delta_at_least_minus_0_05": true
+  },
+  "advance_gate_passed": false,
+  "limits": "independent synthetic replication, five data seeds; initialization seeds share data; no claim of biological function or general superiority"
+}

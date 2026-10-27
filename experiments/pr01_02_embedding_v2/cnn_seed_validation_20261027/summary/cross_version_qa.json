@@ -1,0 +1,27 @@
+{
+  "status": "PASSED",
+  "source_sha256": "a9616c0be99c0e7d921c12e55a0fe57cf7d715bb80e395bd76f972a283da7050",
+  "new_distinct_canonical_sequences": 11515,
+  "versions": [
+    {
+      "version": "cnn_boundary_20261027",
+      "old_conditions": 15,
+      "distinct_canonical_sequences": 11519,
+      "exact_or_reverse_complement_overlaps": 0
+    },
+    {
+      "version": "cnn_features_20261026",
+      "old_conditions": 9,
+      "distinct_canonical_sequences": 6909,
+      "exact_or_reverse_complement_overlaps": 0
+    },
+    {
+      "version": "budget_validation_20261026",
+      "old_conditions": 15,
+      "distinct_canonical_sequences": 11515,
+      "exact_or_reverse_complement_overlaps": 0
+    }
+  ],
+  "real_holdout_used": false,
+  "limits": "only exact/RC matches audited; not a near-homology audit or proof of biological independence"
+}

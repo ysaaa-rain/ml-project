@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "initialized_models_recomputed": 90,
+  "OH48_pools_reconstructed": 90,
+  "real_holdout_used": false,
+  "limits": "saved-state and input consistency; no independent full model retraining"
+}
