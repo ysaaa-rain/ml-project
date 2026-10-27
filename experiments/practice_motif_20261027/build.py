@@ -217,7 +217,8 @@ def browser(traditional_frame,embedding_frame):
             'control_n':r.development_control_count,'natural_q':r.dev_natural_presence_BH_q,
             'shuffle_q':r.dev_paired_null_presence_BH_q,'reference':r.reference_id,'logo':''})
     for r in embedding_frame.itertuples():
-        rows.append({'kind':'Embedding历史','source':r.source,'method':r.method,'group':'run '+str(r.seed),'background':'natural + shuffle',
+        rows.append({'kind':'Embedding历史','source':r.source,'method':r.method,
+            'group':f'L{r.layer} / W{r.width} / s{r.seed}','background':'natural + shuffle',
             'motif':r.motif,'consensus':r.consensus,'width':r.width,'positive_hits':r.natural_positive_hits,
             'positive_n':r.natural_positive_groups,'control_hits':r.natural_control_hits,'control_n':r.natural_control_groups,
             'natural_q':r.natural_q,'shuffle_q':r.shuffle_q,'reference':'','logo':r.logo_path})
@@ -234,7 +235,7 @@ input,select,button{font:inherit;border:1px solid #bccbd9;border-radius:6px;padd
 <h1>Motif 候选浏览</h1><p>浏览已有真实数据运行记录，按来源、方法或关键词筛选。每一行是一条运行级候选，跨运行重复不算独立发现。</p>
 <div class="panel"><div class="filters"><label>结果来源<select id="kind"><option value="">全部</option><option>传统方法</option><option>Embedding历史</option></select></label>
 <label>方法<select id="method"><option value="">全部</option></select></label><label>搜索来源、序列或候选名<input id="search" type="search" placeholder="例如 ecoli、TATAAT"></label><label>每页<select id="size"><option>25</option><option selected>50</option><option>100</option></select></label></div>
-<p class="muted">正/对照命中均取既有 Development 汇总；传统方法和 Embedding 的扫描、q 值计算口径不同，不宜直接比较。参考名称仅表示相似对照。</p>
+<p class="muted">正/对照命中均取既有 Development 汇总；传统方法和 Embedding 的扫描、q 值计算口径不同，不宜直接比较。参考名称仅表示相似对照。表格可左右滚动。</p>
 <div class="scroll"><table><thead><tr><th>来源</th><th>方法</th><th>组/背景</th><th>候选</th><th>共识</th><th>宽度</th><th>正类命中</th><th>对照命中</th><th>天然 q</th><th>shuffle q</th><th>参考/图</th></tr></thead><tbody id="body"></tbody></table></div>
 <div class="pages"><button id="prev">上一页</button><span id="count" aria-live="polite"></span><button id="next">下一页</button></div></div>
 <p class="muted">完整字段与来源见 <a href="REPORT.md">汇总说明</a>、<a href="traditional_candidates.tsv">传统候选表</a> 和 <a href="embedding_candidates.tsv">Embedding候选表</a>。</p>
@@ -339,4 +340,15 @@ def main():
     print(json.dumps({k:v for k,v in manifest.items() if k not in ['source_hashes','output_sha256']},ensure_ascii=False),flush=True)
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--refresh-browser',action='store_true')
+    if parser.parse_args().refresh_browser:
+        assert (OUT/'manifest.json').is_file()
+        browser(pd.read_csv(OUT/'traditional_candidates.tsv',sep='\t'),pd.read_csv(OUT/'embedding_candidates.tsv',sep='\t'))
+        manifest=read(OUT/'manifest.json')
+        manifest['source_hashes'][(HERE/'build.py').relative_to(ROOT).as_posix()]=sha(HERE/'build.py')
+        manifest['output_sha256']['index.html']=sha(OUT/'index.html')
+        manifest['browser_revision']='Updated only the browser labels; scientific tables and figures are unchanged.'
+        save(OUT/'manifest.json',manifest);print('Candidate browser refreshed')
+    else:main()

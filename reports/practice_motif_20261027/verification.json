@@ -1,0 +1,29 @@
+{
+  "status": "PASSED",
+  "verify_source_sha256": "aaae9fe4def0ecd58204a93224b9efc912b08fc4339ac38ac02997858c8165fe",
+  "source_hashes_checked": 2312,
+  "output_hashes_checked": 9,
+  "traditional_candidates_checked": 540,
+  "embedding_rows_checked": 1289,
+  "synthetic_split_rows_checked": 4800,
+  "frozen_memberships_checked": 4800,
+  "synthetic_overlap_lengths": {
+    "0": 12,
+    "8": 103,
+    "9": 159,
+    "10": 478,
+    "11": 636,
+    "12": 1012
+  },
+  "browser": {
+    "status": "PASSED",
+    "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "desktop_and_mobile_screenshots": true,
+    "rows_all": 1829,
+    "traditional": 540,
+    "embedding": 1289,
+    "prokbert": 436,
+    "pagination_search_logo_layer_labels": "PASSED"
+  },
+  "limits": "existing post-hoc synthetic evaluation and prior aggregate outputs; no real Holdout access or new biological confirmation"
+}
