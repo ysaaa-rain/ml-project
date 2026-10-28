@@ -15,3 +15,7 @@ data/processed/pr01_02_data_v2/** -text whitespace=-blank-at-eol
 # Preserve native M3 matrix bytes and their recorded hashes.
 results/motif/tju_streme_v2_20261008/**/*.meme -text whitespace=-blank-at-eol,-blank-at-eof
 results/motif/tju_streme_v2_20261008/**/streme.txt -text whitespace=-blank-at-eol
+
+# Course comparison outputs keep the bytes recorded by their manifests.
+experiments/aligned_motif_display_20261028/** -text !eol whitespace=-blank-at-eol,-blank-at-eof
+results/eda/m1m2_course_20261028/** -text !eol whitespace=-blank-at-eol,-blank-at-eof

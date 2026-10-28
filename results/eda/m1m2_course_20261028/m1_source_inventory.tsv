@@ -1,0 +1,10 @@
+cohort	sequences	positive	natural	leakage_groups	sigma_labeled_sequences	multi_sigma_sequences	missing_sigma_sequences	tss_missing
+dbtbs_bsub/core	432	432	0	426	432	12	0	0
+regulondb_ecoli/core	1793	1793	0	1716	1182	104	611	0
+regulondb_ecoli/extended	2020	2020	0	1810	1990	20	30	0
+tjupan_bacillus_subtilis/main	1500	691	809	1487	0	0	691	0
+tjupan_baumannii/main	2900	1540	1360	2474	0	0	1540	0
+tjupan_bradyrhizobium/main	3935	1983	1952	3880	0	0	1983	0
+tjupan_diphtheria/main	3308	1653	1655	3188	0	0	1653	0
+tjupan_escherichia_coli/main	3338	1635	1703	3234	0	0	1635	0
+tjupan_staphylococcus/main	3368	2206	1162	2835	0	0	2206	0

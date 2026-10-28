@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "source_code_sha256": "2e89c1d18518df9554faebc8c9215dcbf1329ccc805976cec66479bd11b385ab",
+  "frozen_outputs_checked": 210,
+  "exact_scan_independent_checks": 35942,
+  "new_model_training": false,
+  "template_splits": [
+    "discovery",
+    "development"
+  ],
+  "holdout_use": "counts/length/GC QC only; no template scan, candidate generation or model evaluation"
+}

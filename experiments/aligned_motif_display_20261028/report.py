@@ -40,7 +40,7 @@ def logo(ax, pwm):
     ax.set_xlim(0, len(pwm))
     ax.set_ylim(0, 2)
     ax.set_xticks(np.arange(len(pwm)) + .5, np.arange(1, len(pwm) + 1), fontsize=7)
-    ax.set_yticks([0, 1, 2], fontsize=7)
+    ax.set_yticks([0, 1, 2], ['0', '1', '2'], fontsize=7)
     ax.spines[['top', 'right']].set_visible(False)
 
 
@@ -161,6 +161,10 @@ def main():
               '10月3日旧MEME六物种60个PWM继续保留；该批使用全量数据，包含当前Development和Holdout，因此未混入本轮同划分比较。完整五方法对齐范围为枯草芽孢杆菌；其余五物种已有STREME、One-hot和BERT候选的覆盖情况见 [coverage.tsv](coverage.tsv)，CNN未运行、新版MEME未恢复的格子如实留缺。', '',
               '本轮以课程展示完整性作为停止条件：数据和规则对齐、真实候选可追溯、图表与表格一致即可收束。BERT保持阶段收束；CNN现有批次作为课程方法案例，不继续为了提高分数扩大调参。', '',
               '[协议](../protocol.json)｜[数据计数](data_counts.tsv)｜[输入审计](audit.json)｜[MEME运行记录](meme_runs.json)｜[锁定排序](discovery_rankings.tsv)｜[结果核验](verification.json)。']
+    native = read(OUT / 'meme_runs.json')
+    recovered = [r for r in native['runs'] if r.get('postprocess_exit_code') == 0]
+    if recovered:
+        lines += ['', '运行说明：天然背景首次搜索已达到10个候选并生成完整XML，但HTML导出因缺少XML::Parser依赖而返回1。安装依赖后仅重做HTML导出并成功，原退出码和日志保留；没有重跑搜索、选择参数或更换PWM。']
     (OUT / 'REPORT.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     output_hashes = {p.relative_to(OUT).as_posix(): sha(p) for p in OUT.rglob('*')
                      if p.is_file() and p.name not in ['manifest.json', 'verification.json']}

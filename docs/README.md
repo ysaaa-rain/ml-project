@@ -1,5 +1,7 @@
 # PR01-02 文档导航（2026-10-09）
 
+2026-10-28 **课程展示入口**：[同数据五方法结果](../experiments/aligned_motif_display_20261028/summary/REPORT.md)｜[逐方法对齐验收](../experiments/aligned_motif_display_20261028/summary/alignment.tsv)｜[六物种覆盖清单](../experiments/aligned_motif_display_20261028/summary/coverage.tsv)｜[M1/M2统一统计](../results/eda/m1m2_course_20261028/findings.md)。枯草芽孢杆菌完整比较已补齐MEME；按机器学习课程目标收束，其他物种覆盖如实标注，不追加BERT/CNN调参。
+
 2026-10-27 [真实数据同口径比较与CNN位置图](../experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/summary/REPORT.md)：同一枯草芽孢杆菌数据，完整STREME候选池与CNN、One-hot、BERT按统一规则扫描；MEME PWM待补齐。
 
 2026-10-27 [CNN真实数据小试](../experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/summary/REPORT.md)：沿用B. subtilis真实数据、两次CNN训练与统一候选扫描；保留天然及Shuffle对照，尚未完成全部方法的横向比较。

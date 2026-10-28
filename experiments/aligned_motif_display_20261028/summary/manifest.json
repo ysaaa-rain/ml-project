@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETED",
+  "protocol_sha256": "4eab2776fe834c0ee4921b08f8bbf89635bce8f2b6b13211d7763fe8d75ca438",
+  "report_source_sha256": "d7c58ce5819b01fa095b4301867355e8d0d07004ddbda2bd3b81bdc574dbad23",
+  "outputs_sha256": {
+    "alignment.tsv": "059f61bd6abb26c2df77a2a613b6089c2cd75da298b6d76470ae66ce788b2eee",
+    "audit.json": "20ace4fc01a68f1ac87b2d441eeae628e2e7adc7543a3f71f520ba42b5a2b008",
+    "candidates.tsv": "5aab52e757dfae39614ac0cfb291079366597ff9f81a56daf4397c76d26c3e15",
+    "candidate_logos.png": "bdcc4830771a637888a2c004d8f1fc45029e39e6c006c529c56e8f3ac96de9ac",
+    "candidate_positions.png": "3270b33109cfacaedfb1f78945df010732e4ee1a5560fe1018131803014f757a",
+    "comparison.png": "31fce68022a23f7802695cf7386e1a53e8943faa40c10f85ba623afbb22ce985",
+    "coverage.tsv": "37e072a84b047544e0931df98d2712c50df2e6c5863a57be928ef78deb8b3181",
+    "data_counts.tsv": "e316a4970052fe4d428df4c3bf173a1ea30eae547aaf37d2a7b5a4ad17de1d54",
+    "discovery_rankings.tsv": "137cf316e0aca3eeaa5214bb3d40d13997bdb32345a55a24f125c8c946a12220",
+    "family.tsv": "c73e089407fe1e9e3ce289508085825a950f3974efd9a733952effcf8fcf9895",
+    "figure_candidates.tsv": "306b9bf87faec7bfd4c800dec3ce8d95b0b17d459f3007b1460bf0e7cf577124",
+    "fit_lock.json": "3de10a0a68fa2d9e7202335755afda9f226c9a11f2a85fa05aadbbacdd9894f0",
+    "meme_runs.json": "7fd2fe8d4c041508ba569cf1df7cd40c6676b0e5ebc43ad134ca34a4de3d6296",
+    "method_means.tsv": "4c68fba419c94f81b2c25200f839e9455f8d3e53e6aff3fa8ead291f749f9796",
+    "positions.tsv": "f5dccb61ad98034b71d10ca1b3e85974dfca405dd81048186bb0419a4487b5c0",
+    "protected_history.json": "b9353b02a6008a53e3677161e4987fed7ef0baba9265d47f1f854d15e3f958c6",
+    "REPORT.md": "184c0b5477264d0d29ea55e1513cfd7fd80c9d588345d9257723536e5e207172",
+    "similarity.tsv": "d75d6ae6c4e5f69f926022d0da0f4100b630dd93ef705b273bb41e2050aa2956",
+    "matrices/meme_dinucleotide_null.meme": "3bd9f08f12e108b874100f7c43cf3c621f83bd474a4f32d39962b25feb44ce02",
+    "matrices/meme_natural_control.meme": "c3de67d82e760458f7d0d9a54e7cdfd630654cad5503e4d6f1093c2337fe652c"
+  },
+  "primary_methods": [
+    "MEME",
+    "STREME",
+    "ONEHOT",
+    "PROKBERT",
+    "CNN_SHIFT"
+  ],
+  "primary_runs": 8,
+  "new_meme_runs": 2,
+  "new_cnn_bert_onehot_training": 0,
+  "holdout_scored": false,
+  "scope": "B. subtilis complete case; other species inventory only"
+}

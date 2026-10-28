@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "frozen_outputs_checked": 210,
+  "historical_files_unchanged": 339,
+  "candidate_pools": 12,
+  "family_views_recomputed": 24,
+  "legacy_family_views_identical": 14,
+  "scalar_scan_checks": 384,
+  "forward_reverse_coordinate_fixture": "passed",
+  "figure_candidates_checked": 24,
+  "holdout_scored": false,
+  "primary_method_count": 5
+}

@@ -1,0 +1,25 @@
+{
+  "source_sha256": {
+    "experiments/aligned_motif_display_20261028/summary/matrices/meme_natural_control.meme": "c3de67d82e760458f7d0d9a54e7cdfd630654cad5503e4d6f1093c2337fe652c",
+    "results/motif/tju_streme_v2_20261008/tjupan_bacillus_subtilis/natural/streme.txt": "93f031ed85060ab902aa6fb00b90a01ce202084749dc4ada3f28619b3daef0ff",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261005/motifs.meme": "a13a474fa3fe6c21acba119eec3c09fea28df491e8f2820575acfc4734c9532c",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__onehot__L6W10__s20261006/motifs.meme": "6714c3b9a8718c1fe52f7e2d161122f797a9d845d42c2d3a6c3fb2b1e89bb209",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261005/motifs.meme": "965a162f920c8c679d1e3e9fbf1f95ad5fe616be8677ee70924dd2e2f6d3ac63",
+    "experiments/pr01_02_embedding_v2/runs/tjupan_bacillus_subtilis__prokbert__L6W10__s20261006/motifs.meme": "5a2ccc3d3ebd5d836e4db610c1cd3db3d1de7b6e4da1585a4c7f5e3f893a4f57",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261005/SHIFT/motifs.meme": "359cb34adb64286094a018af91a6dc646ce4527727e123ac6bab40e57eaa540b",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261006/SHIFT/motifs.meme": "e5bc3b96c95d8362a0bf415e07d5d7a9056eb9ee97a2b694336a37f78b7cc53e",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261005/RAW/motifs.meme": "caaad2d309f031fa366d2aaed9938a113a179c1724293b093006f32560d41240",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/artifacts/seed_20261006/RAW/motifs.meme": "9594387865d76d8608bc1fab426dacb279fad1dffb9832c3fce3f51b96cafb40",
+    "experiments/aligned_motif_display_20261028/summary/matrices/meme_dinucleotide_null.meme": "3bd9f08f12e108b874100f7c43cf3c621f83bd474a4f32d39962b25feb44ce02",
+    "results/motif/tju_streme_v2_20261008/tjupan_bacillus_subtilis/dinucleotide/streme.txt": "abe53a4da7c42c93a9918497b5de95227988a03f280e7864a96444b03f11f9f0"
+  },
+  "ranking_sha256": "137cf316e0aca3eeaa5214bb3d40d13997bdb32345a55a24f125c8c946a12220",
+  "protocol_sha256": "4eab2776fe834c0ee4921b08f8bbf89635bce8f2b6b13211d7763fe8d75ca438",
+  "background": [
+    0.2697599434641461,
+    0.2302400565358539,
+    0.2302400565358539,
+    0.2697599434641461
+  ],
+  "holdout_scored": false
+}

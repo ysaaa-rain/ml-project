@@ -10,6 +10,7 @@ import json
 import math
 import subprocess
 import time
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import numpy as np
@@ -172,16 +173,19 @@ def linux(path):
 
 def discover():
     unchanged()
-    ART.mkdir(exist_ok=False)
+    ART.mkdir(exist_ok=True)
     cfg = read(PROTOCOL)['meme']
     binary = '/opt/meme-5.5.9/bin/meme'
     version = subprocess.check_output(['wsl', '-d', DISTRO, '--exec', binary, '-version'], text=True).strip()
     assert version == cfg['version'], version
-    native = {'version': version, 'new_run': True, 'historical_output_replacement': False,
-              'input_split': 'discovery', 'holdout_scored': False, 'runs': []}
+    manifest_path = OUT / 'meme_runs.json'
+    native = read(manifest_path) if manifest_path.exists() else {
+        'version': version, 'new_run': True, 'historical_output_replacement': False,
+        'input_split': 'discovery', 'holdout_scored': False, 'runs': []}
+    assert native.get('status') != 'COMPLETED', 'MEME already completed; refuse to rerun'
     for control in ['natural_control', 'dinucleotide_null']:
         folder = ART / control
-        folder.mkdir()
+        folder.mkdir(exist_ok=True)
         positive = DATA / 'discovery.positive.fasta'
         negative = DATA / f'discovery.{control}.fasta'
         # Reproduce the native background writer in run_expanded_m3.py.
@@ -198,18 +202,38 @@ def discover():
                    '-hsfrac', str(cfg['hsfrac']), '-searchsize', str(cfg['searchsize']),
                    '-nmotifs', str(cfg['nmotifs']), '-minw', str(cfg['minw']), '-maxw', str(cfg['maxw']),
                    '-seed', str(cfg['seed']), '-maxsize', str(cfg['maxsize']), '-o', linux(folder / 'native')]
-        before = time.monotonic()
-        with (folder / 'stdout.log').open('wb') as stdout, (folder / 'stderr.log').open('wb') as stderr:
-            result = subprocess.run(['wsl', '-d', DISTRO, '--exec', *command], stdout=stdout, stderr=stderr)
-        record = {'control': control, 'exit_code': result.returncode, 'elapsed_seconds': round(time.monotonic() - before, 3),
+        previous = [r for r in native['runs'] if r['control'] == control]
+        if previous:
+            record = previous[0]
+            assert record['positive_sha256'] == sha(positive) and record['negative_sha256'] == sha(negative)
+        else:
+            assert not (folder / 'native').exists(), 'Unknown native output; refuse overwrite'
+            before = time.monotonic()
+            with (folder / 'stdout.log').open('wb') as stdout, (folder / 'stderr.log').open('wb') as stderr:
+                result = subprocess.run(['wsl', '-d', DISTRO, '--exec', *command], stdout=stdout, stderr=stderr)
+            record = {'control': control, 'exit_code': result.returncode, 'elapsed_seconds': round(time.monotonic() - before, 3),
                   'positive_n': len(fasta(positive)), 'negative_n': len(fasta(negative)),
                   'positive_sha256': sha(positive), 'negative_sha256': sha(negative),
-                  'command': [binary, relative(positive), *command[2:]], 'output': relative(folder / 'native')}
+                      'command': [binary, relative(positive), *command[2:]], 'output': relative(folder / 'native')}
         # Keep commands portable and do not publish machine-specific paths.
         record['command'] = [str(x).replace(linux(ROOT) + '/', '') for x in record['command']]
-        native['runs'].append(record)
+        if not previous:
+            native['runs'].append(record)
         save(OUT / 'meme_runs.json', native)
-        assert result.returncode == 0, f'MEME failed; see {folder}/stderr.log'
+        if record['exit_code'] != 0:
+            error = (folder / 'stderr.log').read_text(encoding='utf-8', errors='replace')
+            xml = ET.parse(folder / 'native/meme.xml').getroot()
+            assert 'XML/Parser/Expat.pm' in error and 'meme_xml_to_html exited abnormally' in error
+            assert len(xml.findall('./motifs/motif')) == cfg['nmotifs']
+            assert xml.findtext('./model/reason_for_stopping') == 'Stopped because requested number of motifs (10) found.'
+            helper = ['/opt/meme-5.5.9/libexec/meme-5.5.9/meme_xml_to_html',
+                      linux(folder / 'native/meme.xml'), linux(folder / 'native/meme.html')]
+            with (folder / 'html_recovery.log').open('wb') as log:
+                recovered = subprocess.run(['wsl', '-d', DISTRO, '--exec', *helper], stdout=log, stderr=log)
+            record['postprocess_exit_code'] = recovered.returncode
+            record['recovery'] = 'Search reached 10 motifs and complete XML; only failed HTML conversion retried after installing XML::Parser; original native exit/log retained'
+            save(OUT / 'meme_runs.json', native)
+            assert recovered.returncode == 0 and (folder / 'native/meme.html').is_file(), 'HTML recovery failed'
         path = folder / 'native/meme.txt'
         motifs = checked_pwm(path)
         record['motifs'] = len(motifs)

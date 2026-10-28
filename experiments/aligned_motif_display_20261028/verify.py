@@ -4,7 +4,7 @@ import pandas as pd
 
 from ..pr01_02_embedding_v2.discovery import max_scan, make_pwm
 from .pipeline import (HERE, ROOT, OUT, BRANCH, DATA, read, save, sha, unchanged,
-                       pools, load_split, background, rank, evaluate, sequence_windows, scan_windows)
+                       pools, load_split, background, rank, evaluate, sequence_windows, scan_windows, checked_pwm)
 
 
 def main():
@@ -18,6 +18,19 @@ def main():
     for name, digest in lock['source_sha256'].items():
         assert sha(ROOT / name) == digest, name
     assert not lock['holdout_scored'] and not manifest['holdout_scored']
+    native = read(OUT / 'meme_runs.json')
+    assert native['status'] == 'COMPLETED' and len(native['runs']) == 2
+    for record in native['runs']:
+        assert record['positive_sha256'] == sha(DATA / 'discovery.positive.fasta')
+        assert record['negative_sha256'] == sha(DATA / f"discovery.{record['control']}.fasta")
+        assert record['exit_code'] == 0 or (record['exit_code'] == 1 and record['postprocess_exit_code'] == 0)
+        for name, digest in record['native_sha256'].items():
+            assert sha(ROOT / record['output'] / name) == digest
+        exported = OUT / f"matrices/meme_{record['control']}.meme"
+        assert sha(exported) == record['matrix_sha256']
+        raw = checked_pwm(ROOT / record['output'] / 'meme.txt')
+        for name, pwm in checked_pwm(exported).items():
+            assert np.allclose(pwm, raw[name], atol=1e-8)
     pos, neg, _, mixed = load_split('discovery')
     dp, dn, shuffled, dmixed = load_split('development')
     bg = background(neg.sequence.tolist())

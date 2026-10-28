@@ -1,5 +1,7 @@
 # PR01-02：启动子调控模式发现
 
+2026-10-28 **机器学习课程五方法对齐展示已完成**：[结果报告](experiments/aligned_motif_display_20261028/summary/REPORT.md)｜[对齐验收表](experiments/aligned_motif_display_20261028/summary/alignment.tsv)｜[比较图](experiments/aligned_motif_display_20261028/summary/comparison.png)。枯草芽孢杆菌同一冻结Discovery/Development，MEME、STREME、One-hot、BERT、CNN统一阈值规则、TOP5/ALL和天然/Shuffle评价；仅补跑MEME两背景共20个PWM，已有模型不重训。24组候选集合、384次独立标量扫描和24个图中候选核验通过，339个历史文件不变；三张展示图已目视检查。其他物种覆盖单列，不声称CNN全物种完成。[M1/M2统一课程统计](results/eda/m1m2_course_20261028/findings.md)也已补充。以下日期段保留当时的历史进展。
+
 2026-10-27 [枯草芽孢杆菌同数据候选比较](experiments/pr01_02_embedding_v2/real_bsub_comparison_20261027/summary/REPORT.md)：完整10个STREME候选池及两种子CNN、One-hot、BERT使用同一Discovery排序及90%分位阈值、Development正类和两类对照，另展示CNN训练实例位置。结果为探索，MEME完整PWM尚缺；CNN使用序列级监督。
 
 2026-10-27 [CNN真实数据小试](experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/summary/REPORT.md)：使用传统方法相同的枯草芽孢杆菌数据和划分，训练2个CNN并生成候选，统一扫描正类、天然负类和配对Shuffle。前3候选正类命中0.848/0.818，天然负类0.325/0.247，Shuffle 0.667/0.652；为监督训练和已观察Development的探索，不是完整方法排名。

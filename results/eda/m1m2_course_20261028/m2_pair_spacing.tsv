@@ -1,0 +1,277 @@
+cohort	group	split	view	mismatches_le	sequences	sequences_with_both_templates	all_unfiltered_pairs	overlap_or_wrong_order_pairs	sequences_with_selected_pair	gap_median	gap_min	gap_max
+dbtbs_bsub/core	overall	discovery	positive	0	296	7	8	3	4	17.0	12.0	28.0
+dbtbs_bsub/core	overall	discovery	positive	1	296	124	326	130	93	18.0	0.0	45.0
+dbtbs_bsub/core	overall	discovery	paired_shuffle	0	296	0	0	0	0			
+dbtbs_bsub/core	overall	discovery	paired_shuffle	1	296	89	203	110	49	22.0	0.0	54.0
+dbtbs_bsub/core	overall	development	positive	0	39	0	0	0	0			
+dbtbs_bsub/core	overall	development	positive	1	39	16	38	13	14	18.5	4.0	58.0
+dbtbs_bsub/core	overall	development	paired_shuffle	0	39	0	0	0	0			
+dbtbs_bsub/core	overall	development	paired_shuffle	1	39	14	33	17	6	29.0	14.0	42.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	discovery	positive	0	163	6	7	2	4	17.0	12.0	28.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	discovery	positive	1	163	81	249	90	67	17.0	0.0	44.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	discovery	paired_shuffle	0	163	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	discovery	paired_shuffle	1	163	52	137	76	29	20.0	0.0	49.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	development	positive	0	24	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	development	positive	1	24	11	33	13	9	17.0	4.0	40.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	development	paired_shuffle	0	24	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigA	development	paired_shuffle	1	24	8	18	9	2	21.5	14.0	29.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	discovery	positive	0	22	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	discovery	positive	1	22	7	12	7	4	18.0	0.0	38.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	discovery	paired_shuffle	0	22	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	discovery	paired_shuffle	1	22	5	10	3	4	4.0	2.0	27.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	development	positive	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	development	positive	1	3	1	1	0	1	53.0	53.0	53.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	development	paired_shuffle	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigB	development	paired_shuffle	1	3	1	6	4	1	29.0	29.0	29.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	discovery	positive	0	5	1	1	1	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	discovery	positive	1	5	1	1	1	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	discovery	paired_shuffle	0	5	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	discovery	paired_shuffle	1	5	1	2	1	1	21.0	21.0	21.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	development	positive	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	development	positive	1	3	2	2	0	2	30.0	20.0	40.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	development	paired_shuffle	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigD	development	paired_shuffle	1	3	2	4	2	1	42.0	42.0	42.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	discovery	positive	0	22	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	discovery	positive	1	22	9	19	9	5	26.0	0.0	35.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	discovery	paired_shuffle	0	22	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	discovery	paired_shuffle	1	22	7	9	4	5	33.0	16.0	54.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	development	positive	0	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	development	positive	1	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	development	paired_shuffle	0	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigE	development	paired_shuffle	1	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigF	discovery	positive	0	7	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigF	discovery	positive	1	7	1	2	0	1	28.0	28.0	28.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigF	discovery	paired_shuffle	0	7	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigF	discovery	paired_shuffle	1	7	2	4	2	1	40.0	40.0	40.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	discovery	positive	0	24	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	discovery	positive	1	24	7	12	6	4	22.0	18.0	27.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	discovery	paired_shuffle	0	24	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	discovery	paired_shuffle	1	24	6	10	10	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	development	positive	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	development	positive	1	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	development	paired_shuffle	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigG	development	paired_shuffle	1	1	1	1	1	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	discovery	positive	0	10	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	discovery	positive	1	10	1	2	1	1	11.0	11.0	11.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	discovery	paired_shuffle	0	10	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	discovery	paired_shuffle	1	10	1	1	1	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	development	positive	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	development	positive	1	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	development	paired_shuffle	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigH	development	paired_shuffle	1	1	1	3	1	1	33.0	33.0	33.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigI	discovery	positive	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigI	discovery	positive	1	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigI	discovery	paired_shuffle	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigI	discovery	paired_shuffle	1	1	1	1	0	1	42.0	42.0	42.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	discovery	positive	0	18	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	discovery	positive	1	18	8	12	8	3	19.0	5.0	19.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	discovery	paired_shuffle	0	18	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	discovery	paired_shuffle	1	18	5	12	5	3	27.0	8.0	40.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	development	positive	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	development	positive	1	3	1	1	0	1	58.0	58.0	58.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	development	paired_shuffle	0	3	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigK	development	paired_shuffle	1	3	1	1	0	1	19.0	19.0	19.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	discovery	positive	0	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	discovery	positive	1	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	discovery	paired_shuffle	0	2	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	discovery	paired_shuffle	1	2	1	1	1	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	development	positive	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	development	positive	1	1	1	1	0	1	15.0	15.0	15.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	development	paired_shuffle	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigL	development	paired_shuffle	1	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigM	discovery	positive	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigM	discovery	positive	1	1	1	3	2	1	9.0	9.0	9.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigM	discovery	paired_shuffle	0	1	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigM	discovery	paired_shuffle	1	1	1	2	0	1	31.0	31.0	31.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigW	discovery	positive	0	10	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigW	discovery	positive	1	10	4	8	4	4	21.5	9.0	45.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigW	discovery	paired_shuffle	0	10	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigW	discovery	paired_shuffle	1	10	3	7	4	1	19.0	19.0	19.0
+dbtbs_bsub/core	single:bacillus_subtilis:SigX	discovery	positive	0	4	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigX	discovery	positive	1	4	1	2	2	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigX	discovery	paired_shuffle	0	4	0	0	0	0			
+dbtbs_bsub/core	single:bacillus_subtilis:SigX	discovery	paired_shuffle	1	4	3	6	3	2	13.5	5.0	22.0
+regulondb_ecoli/core	overall	discovery	positive	0	1284	2	2	1	1	18.0	18.0	18.0
+regulondb_ecoli/core	overall	discovery	positive	1	1284	314	592	291	196	18.0	0.0	64.0
+regulondb_ecoli/core	overall	discovery	paired_shuffle	0	1284	3	3	2	1	24.0	24.0	24.0
+regulondb_ecoli/core	overall	discovery	paired_shuffle	1	1284	242	462	252	132	20.0	0.0	59.0
+regulondb_ecoli/core	overall	development	positive	0	160	0	0	0	0			
+regulondb_ecoli/core	overall	development	positive	1	160	26	39	12	17	16.0	1.0	41.0
+regulondb_ecoli/core	overall	development	paired_shuffle	0	160	0	0	0	0			
+regulondb_ecoli/core	overall	development	paired_shuffle	1	160	31	52	26	18	33.5	3.0	58.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	discovery	positive	0	45	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	discovery	positive	1	45	14	24	15	5	29.0	18.0	50.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	discovery	paired_shuffle	0	45	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	discovery	paired_shuffle	1	45	5	9	5	4	17.5	3.0	35.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	development	positive	0	8	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	development	positive	1	8	1	1	0	1	10.0	10.0	10.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	development	paired_shuffle	0	8	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma24	development	paired_shuffle	1	8	1	1	1	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	discovery	positive	0	10	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	discovery	positive	1	10	2	5	1	2	31.5	25.0	38.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	discovery	paired_shuffle	0	10	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	discovery	paired_shuffle	1	10	2	2	1	1	22.0	22.0	22.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	development	positive	0	1	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	development	positive	1	1	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	development	paired_shuffle	0	1	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma28	development	paired_shuffle	1	1	1	1	0	1	29.0	29.0	29.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	discovery	positive	0	34	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	discovery	positive	1	34	10	15	5	7	20.0	8.0	45.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	discovery	paired_shuffle	0	34	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	discovery	paired_shuffle	1	34	3	4	3	1	2.0	2.0	2.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	development	positive	0	5	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	development	positive	1	5	1	2	0	1	16.0	16.0	16.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	development	paired_shuffle	0	5	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma32	development	paired_shuffle	1	5	2	3	2	1	46.0	46.0	46.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	discovery	positive	0	84	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	discovery	positive	1	84	23	49	20	15	27.0	3.0	54.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	discovery	paired_shuffle	0	84	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	discovery	paired_shuffle	1	84	17	32	17	8	24.5	8.0	56.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	development	positive	0	10	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	development	positive	1	10	3	5	3	1	18.0	18.0	18.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	development	paired_shuffle	0	10	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma38	development	paired_shuffle	1	10	2	2	1	1	32.0	32.0	32.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	discovery	positive	0	14	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	discovery	positive	1	14	3	4	3	1	7.0	7.0	7.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	discovery	paired_shuffle	0	14	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	discovery	paired_shuffle	1	14	4	9	4	3	19.0	11.0	36.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	development	positive	0	1	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	development	positive	1	1	1	1	0	1	14.0	14.0	14.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	development	paired_shuffle	0	1	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma54	development	paired_shuffle	1	1	1	3	0	1	51.0	51.0	51.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	discovery	positive	0	583	2	2	1	1	18.0	18.0	18.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	discovery	positive	1	583	163	306	160	103	18.0	0.0	64.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	discovery	paired_shuffle	0	583	2	2	2	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	discovery	paired_shuffle	1	583	114	223	130	59	17.0	1.0	59.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	development	positive	0	67	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	development	positive	1	67	6	8	2	4	11.0	5.0	41.0
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	development	paired_shuffle	0	67	0	0	0	0			
+regulondb_ecoli/core	single:escherichia_coli:Sigma70	development	paired_shuffle	1	67	16	30	17	8	30.0	3.0	58.0
+regulondb_ecoli/extended	overall	discovery	positive	0	1421	2	2	1	1	12.0	12.0	12.0
+regulondb_ecoli/extended	overall	discovery	positive	1	1421	353	772	355	244	18.0	0.0	59.0
+regulondb_ecoli/extended	overall	discovery	paired_shuffle	0	1421	0	0	0	0			
+regulondb_ecoli/extended	overall	discovery	paired_shuffle	1	1421	285	575	303	173	22.0	0.0	62.0
+regulondb_ecoli/extended	overall	development	positive	0	191	0	0	0	0			
+regulondb_ecoli/extended	overall	development	positive	1	191	59	101	55	35	21.0	0.0	49.0
+regulondb_ecoli/extended	overall	development	paired_shuffle	0	191	0	0	0	0			
+regulondb_ecoli/extended	overall	development	paired_shuffle	1	191	39	79	45	22	22.5	3.0	49.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	discovery	positive	0	308	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	discovery	positive	1	308	52	104	50	30	16.0	2.0	43.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	discovery	paired_shuffle	0	308	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	discovery	paired_shuffle	1	308	47	93	50	25	22.0	0.0	43.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	development	positive	0	42	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	development	positive	1	42	5	8	6	2	13.5	2.0	25.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	development	paired_shuffle	0	42	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma24	development	paired_shuffle	1	42	11	23	15	4	15.0	3.0	27.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	discovery	positive	0	91	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	discovery	positive	1	91	10	14	8	5	25.0	2.0	59.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	discovery	paired_shuffle	0	91	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	discovery	paired_shuffle	1	91	16	25	16	8	17.0	1.0	54.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	development	positive	0	11	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	development	positive	1	11	3	3	2	1	41.0	41.0	41.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	development	paired_shuffle	0	11	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma28	development	paired_shuffle	1	11	2	3	2	1	3.0	3.0	3.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	discovery	positive	0	167	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	discovery	positive	1	167	19	24	13	10	27.0	2.0	36.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	discovery	paired_shuffle	0	167	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	discovery	paired_shuffle	1	167	23	43	23	15	18.0	2.0	47.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	development	positive	0	23	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	development	positive	1	23	3	5	3	1	18.0	18.0	18.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	development	paired_shuffle	0	23	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma32	development	paired_shuffle	1	23	3	4	3	1	30.0	30.0	30.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	discovery	positive	0	23	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	discovery	positive	1	23	5	7	5	2	17.0	14.0	20.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	discovery	paired_shuffle	0	23	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	discovery	paired_shuffle	1	23	4	6	5	1	16.0	16.0	16.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	development	positive	0	6	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	development	positive	1	6	2	2	2	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	development	paired_shuffle	0	6	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma38	development	paired_shuffle	1	6	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	discovery	positive	0	47	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	discovery	positive	1	47	2	2	1	1	18.0	18.0	18.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	discovery	paired_shuffle	0	47	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	discovery	paired_shuffle	1	47	4	7	5	2	14.0	3.0	25.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	development	positive	0	7	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	development	positive	1	7	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	development	paired_shuffle	0	7	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma54	development	paired_shuffle	1	7	1	2	1	1	27.0	27.0	27.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	discovery	positive	0	745	2	2	1	1	12.0	12.0	12.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	discovery	positive	1	745	253	587	265	186	18.0	0.0	57.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	discovery	paired_shuffle	0	745	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	discovery	paired_shuffle	1	745	184	386	194	119	23.0	0.0	62.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	development	positive	0	100	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	development	positive	1	100	45	81	42	30	21.0	0.0	49.0
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	development	paired_shuffle	0	100	0	0	0	0			
+regulondb_ecoli/extended	single:escherichia_coli:Sigma70	development	paired_shuffle	1	100	20	44	23	14	22.0	4.0	45.0
+tjupan_bacillus_subtilis/main	overall	discovery	natural	0	559	1	1	0	1	2.0	2.0	2.0
+tjupan_bacillus_subtilis/main	overall	discovery	natural	1	559	53	74	39	24	27.5	0.0	60.0
+tjupan_bacillus_subtilis/main	overall	discovery	positive	0	473	9	10	3	6	19.0	12.0	42.0
+tjupan_bacillus_subtilis/main	overall	discovery	positive	1	473	192	484	199	143	18.0	0.0	53.0
+tjupan_bacillus_subtilis/main	overall	discovery	paired_shuffle	0	473	1	1	0	1	4.0	4.0	4.0
+tjupan_bacillus_subtilis/main	overall	discovery	paired_shuffle	1	473	140	326	179	85	19.0	0.0	57.0
+tjupan_bacillus_subtilis/main	overall	development	natural	0	77	0	0	0	0			
+tjupan_bacillus_subtilis/main	overall	development	natural	1	77	5	6	2	3	21.0	12.0	69.0
+tjupan_bacillus_subtilis/main	overall	development	positive	0	67	0	0	0	0			
+tjupan_bacillus_subtilis/main	overall	development	positive	1	67	23	59	22	18	17.0	0.0	58.0
+tjupan_bacillus_subtilis/main	overall	development	paired_shuffle	0	67	0	0	0	0			
+tjupan_bacillus_subtilis/main	overall	development	paired_shuffle	1	67	15	34	15	10	17.0	4.0	47.0
+tjupan_baumannii/main	overall	discovery	natural	0	959	0	0	0	0			
+tjupan_baumannii/main	overall	discovery	natural	1	959	114	171	93	60	23.5	0.0	61.0
+tjupan_baumannii/main	overall	discovery	positive	0	1099	3	3	1	2	10.0	10.0	10.0
+tjupan_baumannii/main	overall	discovery	positive	1	1099	343	743	347	213	18.0	0.0	62.0
+tjupan_baumannii/main	overall	discovery	paired_shuffle	0	1099	2	2	2	0			
+tjupan_baumannii/main	overall	discovery	paired_shuffle	1	1099	303	665	358	190	19.0	0.0	60.0
+tjupan_baumannii/main	overall	development	natural	0	130	0	0	0	0			
+tjupan_baumannii/main	overall	development	natural	1	130	14	21	10	8	15.5	1.0	37.0
+tjupan_baumannii/main	overall	development	positive	0	162	0	0	0	0			
+tjupan_baumannii/main	overall	development	positive	1	162	56	99	49	34	15.5	4.0	54.0
+tjupan_baumannii/main	overall	development	paired_shuffle	0	162	0	0	0	0			
+tjupan_baumannii/main	overall	development	paired_shuffle	1	162	43	92	44	27	23.0	1.0	60.0
+tjupan_bradyrhizobium/main	overall	discovery	natural	0	1383	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	discovery	natural	1	1383	8	10	8	2	22.5	21.0	24.0
+tjupan_bradyrhizobium/main	overall	discovery	positive	0	1364	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	discovery	positive	1	1364	35	44	17	24	14.5	0.0	49.0
+tjupan_bradyrhizobium/main	overall	discovery	paired_shuffle	0	1364	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	discovery	paired_shuffle	1	1364	29	36	19	15	32.0	2.0	57.0
+tjupan_bradyrhizobium/main	overall	development	natural	0	168	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	development	natural	1	168	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	development	positive	0	171	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	development	positive	1	171	4	6	5	1	2.0	2.0	2.0
+tjupan_bradyrhizobium/main	overall	development	paired_shuffle	0	171	0	0	0	0			
+tjupan_bradyrhizobium/main	overall	development	paired_shuffle	1	171	4	4	2	2	29.5	9.0	50.0
+tjupan_diphtheria/main	overall	discovery	natural	0	1143	0	0	0	0			
+tjupan_diphtheria/main	overall	discovery	natural	1	1143	21	24	18	6	36.5	19.0	53.0
+tjupan_diphtheria/main	overall	discovery	positive	0	1186	0	0	0	0			
+tjupan_diphtheria/main	overall	discovery	positive	1	1186	162	235	117	93	17.0	0.0	60.0
+tjupan_diphtheria/main	overall	discovery	paired_shuffle	0	1186	1	1	0	1	48.0	48.0	48.0
+tjupan_diphtheria/main	overall	discovery	paired_shuffle	1	1186	135	193	107	67	16.0	1.0	61.0
+tjupan_diphtheria/main	overall	development	natural	0	167	0	0	0	0			
+tjupan_diphtheria/main	overall	development	natural	1	167	3	3	1	2	11.5	4.0	19.0
+tjupan_diphtheria/main	overall	development	positive	0	156	0	0	0	0			
+tjupan_diphtheria/main	overall	development	positive	1	156	20	28	13	14	15.0	1.0	46.0
+tjupan_diphtheria/main	overall	development	paired_shuffle	0	156	0	0	0	0			
+tjupan_diphtheria/main	overall	development	paired_shuffle	1	156	20	29	19	9	25.0	11.0	52.0
+tjupan_escherichia_coli/main	overall	discovery	natural	0	1183	0	0	0	0			
+tjupan_escherichia_coli/main	overall	discovery	natural	1	1183	49	64	29	30	22.5	2.0	56.0
+tjupan_escherichia_coli/main	overall	discovery	positive	0	1143	2	2	2	0			
+tjupan_escherichia_coli/main	overall	discovery	positive	1	1143	194	407	196	126	17.5	0.0	64.0
+tjupan_escherichia_coli/main	overall	discovery	paired_shuffle	0	1143	1	1	0	1	0.0	0.0	0.0
+tjupan_escherichia_coli/main	overall	discovery	paired_shuffle	1	1143	170	329	172	106	18.0	0.0	67.0
+tjupan_escherichia_coli/main	overall	development	natural	0	167	0	0	0	0			
+tjupan_escherichia_coli/main	overall	development	natural	1	167	6	6	4	2	26.0	20.0	32.0
+tjupan_escherichia_coli/main	overall	development	positive	0	163	0	0	0	0			
+tjupan_escherichia_coli/main	overall	development	positive	1	163	25	37	16	14	17.5	0.0	50.0
+tjupan_escherichia_coli/main	overall	development	paired_shuffle	0	163	0	0	0	0			
+tjupan_escherichia_coli/main	overall	development	paired_shuffle	1	163	29	51	41	9	3.0	1.0	50.0
+tjupan_staphylococcus/main	overall	discovery	natural	0	801	0	0	0	0			
+tjupan_staphylococcus/main	overall	discovery	natural	1	801	185	329	202	90	23.0	1.0	62.0
+tjupan_staphylococcus/main	overall	discovery	positive	0	1480	9	9	5	4	8.0	8.0	11.0
+tjupan_staphylococcus/main	overall	discovery	positive	1	1480	627	2072	1034	437	17.0	0.0	54.0
+tjupan_staphylococcus/main	overall	discovery	paired_shuffle	0	1480	6	7	1	5	7.0	1.0	44.0
+tjupan_staphylococcus/main	overall	discovery	paired_shuffle	1	1480	594	1860	992	405	19.0	0.0	67.0
+tjupan_staphylococcus/main	overall	development	natural	0	131	0	0	0	0			
+tjupan_staphylococcus/main	overall	development	natural	1	131	26	50	28	15	21.0	1.0	57.0
+tjupan_staphylococcus/main	overall	development	positive	0	248	3	3	0	3	43.0	16.0	43.0
+tjupan_staphylococcus/main	overall	development	positive	1	248	106	379	197	81	17.0	2.0	53.0
+tjupan_staphylococcus/main	overall	development	paired_shuffle	0	248	2	2	2	0			
+tjupan_staphylococcus/main	overall	development	paired_shuffle	1	248	83	264	124	62	21.0	0.0	53.0

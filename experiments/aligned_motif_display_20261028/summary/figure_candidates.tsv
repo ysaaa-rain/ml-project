@@ -1,0 +1,25 @@
+method	seed	rank	candidate	selection
+MEME	20261005	1	TTTTTTWWHATWWW	Discovery ranking only
+MEME	20261005	2	TATAGWWTTWAKGA	Discovery ranking only
+MEME	20261005	3	ATTATAMY	Discovery ranking only
+STREME	existing	1	1-TATAATAAAWA	Discovery ranking only
+STREME	existing	2	8-WCATAATA	Discovery ranking only
+STREME	existing	3	2-TAAAAAWA	Discovery ranking only
+ONEHOT	20261005	1	EMB_onehot_C10	Discovery ranking only
+ONEHOT	20261005	2	EMB_onehot_C11	Discovery ranking only
+ONEHOT	20261005	3	EMB_onehot_C06	Discovery ranking only
+ONEHOT	20261006	1	EMB_onehot_C19	Discovery ranking only
+ONEHOT	20261006	2	EMB_onehot_C18	Discovery ranking only
+ONEHOT	20261006	3	EMB_onehot_C05	Discovery ranking only
+PROKBERT	20261005	1	EMB_prokbert_C13	Discovery ranking only
+PROKBERT	20261005	2	EMB_prokbert_C10	Discovery ranking only
+PROKBERT	20261005	3	EMB_prokbert_C14	Discovery ranking only
+PROKBERT	20261006	1	EMB_prokbert_C04	Discovery ranking only
+PROKBERT	20261006	2	EMB_prokbert_C14	Discovery ranking only
+PROKBERT	20261006	3	EMB_prokbert_C19	Discovery ranking only
+CNN_SHIFT	20261005	1	F04	Discovery ranking only
+CNN_SHIFT	20261005	2	F06	Discovery ranking only
+CNN_SHIFT	20261005	3	F03	Discovery ranking only
+CNN_SHIFT	20261006	1	F21	Discovery ranking only
+CNN_SHIFT	20261006	2	F18	Discovery ranking only
+CNN_SHIFT	20261006	3	F13	Discovery ranking only

@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "frozen_outputs_checked": 210,
+  "protected_files": 339,
+  "source_sha256": {
+    "experiments/aligned_motif_display_20261028/protocol.json": "4eab2776fe834c0ee4921b08f8bbf89635bce8f2b6b13211d7763fe8d75ca438",
+    "experiments/aligned_motif_display_20261028/pipeline.py": "8c0b64384fbe33a608ccdd67e9334f56bfa3f4b1d694120882645d72a28ad62b",
+    "data/processed/pr01_02_data_v2/manifest.json": "449dca1e3ba5efb3d49b4427515b9cb953fff4e1061ef311c081ddf681927608",
+    "experiments/pr01_02_embedding_v2/audit.py": "bfe10f41004eabb86ef994224715756b28f62d1bcb6299df4312e392e3661995",
+    "experiments/pr01_02_embedding_v2/discovery.py": "f69c4b98b4f694865ab2cbdac9499a5a624948b75317c9ea05aaea96ee9abb8d",
+    "experiments/pr01_02_embedding_v2/cnn_real_pilot_20261027/pipeline.py": "b2a314e573714c4101f3c168d51d1c2795a18dc0fb8dc8a71ce0c5f44276111f",
+    "experiments/pr01_02_embedding_v2/refinement_20261026/pipeline.py": "749055c22de0b6854a5c9c94a45362b8a161f10357eea9a28e36ef69a7b08005"
+  },
+  "holdout_scored": false,
+  "new_model_training": false,
+  "initial_pipeline_sha256": "ddf11f6ba2e3ff7eb33a6e9a4514ebc928e66ecb375656a97737671a5108449a",
+  "implementation_update": "Resume complete native XML after known HTML-only dependency failure; no data, model search parameters or existing outputs changed"
+}
