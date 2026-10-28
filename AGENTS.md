@@ -1,5 +1,9 @@
 # Repository instructions
 
+## 课程实验收束与统一展示（用户确认，2026-10-28）
+
+本项目按机器学习课程实验交付，不扩展为深入生物研究。当前范围为：以冻结v2的枯草芽孢杆菌数据完成MEME、STREME、One-hot、ProkBERT、CNN五方法的统一候选展示；已有模型不重新调参，MEME缺失时仅按原参数补跑天然/Shuffle两背景。统一候选预算、Discovery排序/阈值与Development扫描；已有Development按探索展示，天然和Shuffle分开。其他物种使用真实覆盖清单，不将缺项填成零或声称CNN已全物种运行。具体执行与停止条件见 `experiments/aligned_motif_display_20261028/protocol.json`。10月3日六物种MEME的60个PWM存在，但其全量输入包含当前评价分区，仅保留历史展示，不代替冻结Discovery上的比较。
+
 ## 课程实践候选展示（用户决定，2026-10-27）
 
 当前工作以 MEME/STREME 的真实数据和原有划分为共同基础，Embedding 等线路对齐相同数据；横向评价统一采用适合课程实践的较宽松规则，可考虑局部重叠、偏移及双向相似，完整实际候选均可展示。具体参数见 `docs/PR01-02_课程实践候选与展示规范_20261027.md` 和运行记录。
